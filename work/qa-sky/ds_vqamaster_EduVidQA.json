@@ -1,0 +1,37 @@
+[
+  {
+    "source": "huggingface",
+    "id": "vqamaster/EduVidQA",
+    "url": "https://huggingface.co/datasets/vqamaster/EduVidQA",
+    "name": "vqamaster/EduVidQA",
+    "license": "mit",
+    "gated": false,
+    "private": false,
+    "disabled": false,
+    "downloads": 87,
+    "likes": 1,
+    "last_modified": "2025-09-14T10:27:00.000Z",
+    "tasks": [],
+    "languages": [],
+    "modalities": [
+      "image"
+    ],
+    "formats": [],
+    "size_category": null,
+    "arxiv_ids": [],
+    "configs": [],
+    "ref": "vqamaster/EduVidQA",
+    "exists": true,
+    "missing": [
+      "size (rows)",
+      "download size"
+    ],
+    "blockers": [],
+    "notes": [],
+    "num_rows": 0,
+    "download_bytes": 0,
+    "in_memory_bytes": 0,
+    "splits": [],
+    "storage_estimate": null
+  }
+]

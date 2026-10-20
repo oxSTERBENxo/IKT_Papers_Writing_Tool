@@ -1,0 +1,50 @@
+{
+  "paper": {
+    "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+    "authors": [
+      "Ujun Jeong",
+      "Kaize Ding",
+      "Lu Cheng",
+      "Ruocheng Guo",
+      "Kai Shu",
+      "Huan Liu"
+    ],
+    "year": 2022,
+    "date": "2022-12-24",
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv_id": "2212.12621",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2212.12621",
+    "pdf_url": "https://arxiv.org/pdf/2212.12621v1",
+    "abstract": "Nowadays, fake news easily propagates through online social networks and becomes a grand threat to individuals and society. Assessing the authenticity of news is challenging due to its elaborately fabricated contents, making it difficult to obtain large-scale annotations for fake news data. Due to such data scarcity issues, detecting fake news tends to fail and overfit in the supervised setting. Recently, graph neural networks (GNNs) have been adopted to leverage the richer relational information among both labeled and unlabeled instances. Despite their promising results, they are inherently focused on pairwise relations between news, which can limit the expressive power for capturing fake news that spreads in a group-level. For example, detecting fake news can be more effective when we better understand relations between news pieces shared among susceptible users. To address those issues, we propose to leverage a hypergraph to represent group-wise interaction among news, while focusing on important news relations with its dual-level attention mechanism. Experiments based on two benchmark datasets show that our approach yields remarkable performance and maintains the high performance even with a small subset of labeled news data.",
+    "citations": null,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "Accepted in IEEE Big Data 22",
+      "arxiv_category": "cs.SI"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

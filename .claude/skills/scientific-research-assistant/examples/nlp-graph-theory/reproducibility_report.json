@@ -1,0 +1,942 @@
+{
+  "date": "2026-10-13",
+  "constraints": {
+    "field": "NLP and graph theory (graph neural networks for text classification)",
+    "experience": "undergraduate, comfortable with Python",
+    "hardware": "one consumer GPU, 8 GB VRAM",
+    "gpu_vram_gb": 8,
+    "time_budget_weeks": 8,
+    "language": "Python",
+    "difficulty": "moderate",
+    "mode": "any",
+    "defaults_used": [
+      "experience",
+      "hardware",
+      "gpu_vram_gb",
+      "time_budget_weeks",
+      "language",
+      "difficulty",
+      "mode"
+    ]
+  },
+  "search_log": {
+    "sources_ok": [
+      "openalex",
+      "arxiv",
+      "crossref",
+      "huggingface"
+    ],
+    "sources_failed": [
+      {
+        "source": "semantic_scholar",
+        "reason": "rate_limited: HTTP 429 after retries"
+      }
+    ],
+    "strategies": [
+      "keyword",
+      "recent",
+      "foundational",
+      "limitations",
+      "surveys",
+      "citation exploration",
+      "novelty challenge (keyword, surveys, recent)"
+    ],
+    "date_range": "2018 onwards",
+    "n_retrieved": 1113,
+    "n_after_dedup": 397,
+    "date": "2026-10-13",
+    "queries": [
+      "graph neural network text classification",
+      "graph neural network document classification",
+      "graph convolutional network text classification",
+      "graph convolutional network document classification"
+    ],
+    "notes": [
+      "Semantic Scholar answered single-paper lookups but rejected search requests (HTTP 429, no API key).",
+      "OpenAlex's keyless daily budget ran out late in the session; the reproduction check for [@abdalla2023] could not query citing works.",
+      "Summaries in the table come from abstracts only. No full text was read."
+    ]
+  },
+  "papers": [
+    {
+      "key": "yao2019",
+      "title": "Graph Convolutional Networks for Text Classification",
+      "authors": [
+        "Liang Yao",
+        "Chengsheng Mao",
+        "Yuan Luo"
+      ],
+      "year": 2019,
+      "date": "2019-07-17",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "doi": "10.1609/aaai.v33i01.33017370",
+      "arxiv_id": "1809.05679",
+      "url": "https://www.semanticscholar.org/paper/6017e81c5ede6c38b306a3df9738aeb04baa7619",
+      "role": "foundational",
+      "method": "One corpus-level graph of words and documents (word co-occurrence and document-word edges); GCN on one-hot inputs (TextGCN)",
+      "datasets": "Multiple benchmark datasets (not named in the abstract)",
+      "findings": "Reports outperforming the then state of the art without external embeddings; the margin grows as training data shrinks",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Graph Convolutional Networks for Text Classification",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "zhang2020",
+      "title": "Every Document Owns Its Structure: Inductive Text Classification via Graph Neural Networks",
+      "authors": [
+        "Yufeng Zhang",
+        "Xueli Yu",
+        "Zeyu Cui",
+        "Shu Wu",
+        "Zhongzhen Wen",
+        "Liang Wang"
+      ],
+      "year": 2020,
+      "date": "2020",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "doi": "10.18653/v1/2020.acl-main.31",
+      "arxiv_id": "2004.13826",
+      "url": "https://arxiv.org/abs/2004.13826",
+      "role": "foundational",
+      "method": "One graph per document; GNN learns word representations inductively (TextING)",
+      "datasets": "Four benchmark datasets (not named in the abstract)",
+      "findings": "Reports outperforming prior text classifiers; handles words unseen in training",
+      "limitations": "Abstract criticises earlier corpus-level graphs for missing in-document context and not being inductive",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Every Document Owns Its Structure: Inductive Text Classification via Graph Neural Networks",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "galke2022",
+      "title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+      "authors": [
+        "Lukas Galke",
+        "Ansgar Scherp"
+      ],
+      "year": 2022,
+      "date": "2022",
+      "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "doi": "10.18653/v1/2022.acl-long.279",
+      "arxiv_id": "2109.03777",
+      "url": "https://arxiv.org/abs/2109.03777",
+      "role": "closest",
+      "method": "Wide MLP on bag-of-words; fine-tuned BERT and DistilBERT; compared with TextGCN, HeteGCN, HyperGAT",
+      "datasets": "Not named in the abstract",
+      "findings": "BoW wide MLP outperforms TextGCN and HeteGCN in the inductive setting and is comparable with HyperGAT; fine-tuned BERT and DistilBERT outperform all",
+      "limitations": "Abstract notes TextGCN needs an O(N^2) graph and Transformers O(L^2) attention; own limitations not stated in the abstract",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "shchur2019",
+      "title": "Pitfalls of Graph Neural Network Evaluation",
+      "authors": [
+        "Oleksandr Shchur",
+        "Maximilian Mumme",
+        "Aleksandar Bojchevski",
+        "Stephan Günnemann"
+      ],
+      "year": 2018,
+      "date": "2018-11-14",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "1811.05868",
+      "url": "https://arxiv.org/abs/1811.05868",
+      "role": "supporting",
+      "method": "Re-evaluation of four GNN models for node classification under varied data splits",
+      "datasets": "Node-classification graphs (not text)",
+      "findings": "Different splits give dramatically different model rankings; simpler GNNs can beat complex ones under fair tuning",
+      "limitations": "Concerns node classification, not text graphs",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Pitfalls of Graph Neural Network Evaluation",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "donabauer2025",
+      "title": "Token-Level Graphs for Short Text Classification",
+      "authors": [
+        "Gregor Donabauer",
+        "Udo Kruschwitz"
+      ],
+      "year": 2025,
+      "date": "2025",
+      "venue": "Lecture Notes in Computer Science Advances in Information Retrieval",
+      "doi": "10.1007/978-3-031-88714-7_42",
+      "arxiv_id": "2412.12754",
+      "url": "https://arxiv.org/abs/2412.12754",
+      "role": "recent",
+      "method": "Text graphs built from pre-trained language model tokens and embeddings (TokenGraph)",
+      "datasets": "Short-text datasets (not named in the abstract)",
+      "findings": "Reports higher or on-par scores versus existing methods with few training samples; code stated to be public",
+      "limitations": "Abstract lists limits of earlier graph methods (word sense, transductive setting), not its own",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Token-Level Graphs for Short Text Classification",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "wang2024",
+      "title": "Graph Neural Networks for Text Classification: A Survey",
+      "authors": [
+        "Kunze Wang",
+        "Yihao Ding",
+        "Soyeon Caren Han"
+      ],
+      "year": 2024,
+      "date": "2024-07-01",
+      "venue": "Artificial Intelligence Review",
+      "doi": "10.1007/s10462-024-10808-0",
+      "arxiv_id": "2304.11534",
+      "url": "https://arxiv.org/abs/2304.11534",
+      "role": "survey",
+      "method": "Survey of corpus-level and document-level GNNs for text classification up to 2023",
+      "datasets": "Summarises public benchmarks",
+      "findings": "Compares published performance, graph construction and evaluation practice; lists open issues",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Graph Neural Networks for Text Classification: A Survey",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "abdalla2023",
+      "title": "BoW-based neural networks vs. cutting-edge models for single-label text classification",
+      "authors": [
+        "Hassan I. Abdalla",
+        "Ali A. Amer",
+        "Sri Devi Ravana"
+      ],
+      "year": 2023,
+      "date": "2023-07-18",
+      "venue": "Neural Computing and Applications",
+      "doi": "10.1007/s00521-023-08754-z",
+      "arxiv_id": null,
+      "url": "https://doi.org/10.1007/s00521-023-08754-z",
+      "role": "closest",
+      "method": "Bag-of-words neural networks compared with recent models (from the title; abstract unavailable to the sources queried)",
+      "datasets": null,
+      "findings": null,
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "BoW-based neural networks vs. cutting-edge models for single-label text classification",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "rizvi2025",
+      "title": "Text Classification Using Graph Convolutional Networks: A Comprehensive Survey",
+      "authors": [
+        "Syed Tarif Abbas Rizvi",
+        "Ramsha Imran",
+        "Arif Mahmood"
+      ],
+      "year": 2025,
+      "date": "2025-01-21",
+      "venue": "ACM Computing Surveys",
+      "doi": "10.1145/3714456",
+      "arxiv_id": "2410.09399",
+      "url": "https://doi.org/10.1145/3714456",
+      "role": "survey",
+      "method": "Survey of GCN-based text classification by architecture and supervision mode",
+      "datasets": "Compares methods on benchmark datasets",
+      "findings": "Identifies strengths and limitations and future directions",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Text Classification using Graph Convolutional Networks: A Comprehensive Survey",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "ghosh2022",
+      "title": "GNoM: Graph Neural Network Enhanced Language Models for Disaster Related Multilingual Text Classification",
+      "authors": [
+        "Samujjwal Ghosh",
+        "Subhadeep Maji",
+        "Maunendra Sankar Desarkar"
+      ],
+      "year": 2022,
+      "date": "2022-06-26",
+      "venue": "14th ACM Web Science Conference 2022",
+      "doi": "10.1145/3501247.3531561",
+      "arxiv_id": null,
+      "url": "https://doi.org/10.1145/3501247.3531561",
+      "role": "closest",
+      "method": "Corpus-level GNN combined with transformer language models through cross-attention (GNoM)",
+      "datasets": "Nine English and non-English disaster datasets",
+      "findings": "Reports outperforming a multilingual BERT baseline in weighted F1 under limited supervision",
+      "limitations": "Abstract says prior work is mostly English-only; own limitations not stated",
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "GNoM: Graph Neural Network Enhanced Language Models for Disaster Related Multilingual Text Classification",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "name": "TextGCN benchmark data folder",
+      "url": "https://github.com/yao8839836/text_gcn/tree/master/data",
+      "purpose": "Benchmark files used by TextGCN and reused by later work",
+      "size": null,
+      "format": null,
+      "license": null,
+      "access": "reachable (HTTP 200)",
+      "preprocessing": "Repository scripts (remove_words.py, build_graph.py)",
+      "suitability": "Needed for O1, O2 and all reproductions; only reachability was checked",
+      "verified": true
+    },
+    {
+      "name": "SetFit/20_newsgroups",
+      "url": "https://huggingface.co/datasets/SetFit/20_newsgroups",
+      "purpose": "Topic classification (20 Newsgroups mirror)",
+      "size": "18846 rows",
+      "format": "json",
+      "license": null,
+      "access": "open",
+      "preprocessing": "Tokenisation; bag-of-words or graph construction",
+      "suitability": "Convenient mirror; confirm it matches the benchmark split before comparing with published numbers",
+      "verified": true
+    },
+    {
+      "name": "RottenTomatoes - MR Movie Review Data",
+      "url": "https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes",
+      "purpose": "Sentence-level sentiment (MR)",
+      "size": "10662 rows",
+      "format": "parquet",
+      "license": "unknown",
+      "access": "open",
+      "preprocessing": "Tokenisation",
+      "suitability": "Short texts; splits may differ from the benchmark version",
+      "verified": true
+    },
+    {
+      "name": "Ohsumed",
+      "url": "https://huggingface.co/datasets/community-datasets/ohsumed",
+      "purpose": "Medical abstracts with subject headings",
+      "size": "348564 rows",
+      "format": "parquet",
+      "license": "cc-by-nc-4.0",
+      "access": "open",
+      "preprocessing": "Subset selection and single-label filtering would be needed",
+      "suitability": "Much larger than a typical benchmark subset and multi-label; not a drop-in replacement",
+      "verified": true
+    }
+  ],
+  "type": "reproducibility_report",
+  "title": "Reproduction Candidates in Graph-Based Text Classification",
+  "sections": {
+    "summary": "Four papers were assessed from metadata, repositories and READMEs. One is blocked because its full text could not be located. Of the other three, the bag-of-words study [@galke2022] has the best-specified environment; the two graph-model repositories lack dependency files, seeds and licences.",
+    "recommendation": "Reproduce [@galke2022] first. Treat every status below as a pre-assessment: open each repository and the paper's experiment section before committing."
+  },
+  "reproduction_candidates": [
+    {
+      "paper": "galke2022",
+      "mode": "reproduction",
+      "result_status": "assessed_only",
+      "executed": false,
+      "code": "https://github.com/lgalke/text-clf-baselines (licence MIT, 29 stars, last push 2026-04-21, 0 open issues)",
+      "checklist": {
+        "full_text": {
+          "label": "Full paper publicly available",
+          "status": "verified",
+          "evidence": [
+            "https://arxiv.org/abs/2109.03777"
+          ],
+          "note": null
+        },
+        "code": {
+          "label": "Implementation available",
+          "status": "found",
+          "evidence": [
+            "https://github.com/lgalke/text-clf-baselines"
+          ],
+          "note": null
+        },
+        "license": {
+          "label": "Code licence",
+          "status": "verified",
+          "evidence": [
+            "SPDX: MIT"
+          ],
+          "note": null
+        },
+        "dependencies": {
+          "label": "Dependencies / environment specified",
+          "status": "found",
+          "evidence": [
+            "file: pyproject.toml",
+            "file: requirements.txt"
+          ],
+          "note": null
+        },
+        "data_instructions": {
+          "label": "Dataset access and preprocessing instructions",
+          "status": "found",
+          "evidence": [
+            "README: \"...on datasets with long sequences.\", } ``` ## Get up and running 1. Download the data folder from the [TextGCN repository](https:/"
+          ],
+          "note": null
+        },
+        "configs": {
+          "label": "Training configuration and hyperparameters",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "training": {
+          "label": "Training entry point",
+          "status": "found",
+          "evidence": [
+            "file: main.py",
+            "file: run_glue.py"
+          ],
+          "note": null
+        },
+        "seeds": {
+          "label": "Random seeds / determinism controls",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "hardware": {
+          "label": "Hardware requirements stated",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "evaluation": {
+          "label": "Evaluation script or protocol",
+          "status": "found",
+          "evidence": [
+            "file: test_textgraph.py"
+          ],
+          "note": null
+        },
+        "pretrained": {
+          "label": "Pretrained weights or checkpoints",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "reported_results": {
+          "label": "Published results to compare against",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "architecture": {
+          "label": "Model architecture fully specified",
+          "status": "manual_review",
+          "evidence": [],
+          "note": null
+        },
+        "maintenance": {
+          "label": "Repository maintenance",
+          "status": "verified",
+          "evidence": [
+            "last push 2026-04-21",
+            "archived: False"
+          ],
+          "note": null
+        },
+        "prior_reproductions": {
+          "label": "Existing reproduction attempts",
+          "status": "manual_review",
+          "evidence": [
+            "Token-Level Graphs for Short Text Classification (2025) https://doi.org/10.1007/978-3-031-88714-7_42"
+          ],
+          "note": null
+        }
+      },
+      "value": [
+        {
+          "text": "The paper reports that a simple model beats or matches graph models; confirming that independently tells a student which baseline to trust",
+          "level": "estimate"
+        }
+      ],
+      "hardware": [
+        {
+          "text": "No hardware requirement is stated in the README",
+          "level": "verified"
+        },
+        {
+          "text": "An MLP on bag-of-words should train on CPU or any GPU",
+          "level": "estimate"
+        }
+      ],
+      "missing": [
+        "Random seeds",
+        "Hyperparameter configuration files",
+        "Licence of the benchmark data"
+      ],
+      "risks": [
+        {
+          "text": "The BERT comparison may exceed 8 GB VRAM on long documents; DistilBERT is the fallback",
+          "level": "estimate"
+        }
+      ],
+      "suggested_experiments": [
+        "Reproduction: rerun the wide MLP on the same benchmarks with 5 seeds and report mean and standard deviation next to the published numbers",
+        "Replication: re-implement the MLP independently (for example with scikit-learn) and test whether the conclusion holds",
+        "Extension: add one graph model published after 2022"
+      ]
+    },
+    {
+      "paper": "zhang2020",
+      "mode": "reproduction",
+      "result_status": "assessed_only",
+      "executed": false,
+      "code": "https://github.com/CRIPAC-DIG/TextING (licence None, 182 stars, last push 2024-04-25, 15 open issues)",
+      "checklist": {
+        "full_text": {
+          "label": "Full paper publicly available",
+          "status": "verified",
+          "evidence": [
+            "https://arxiv.org/abs/2004.13826"
+          ],
+          "note": null
+        },
+        "code": {
+          "label": "Implementation available",
+          "status": "found",
+          "evidence": [
+            "https://github.com/CRIPAC-DIG/TextING"
+          ],
+          "note": null
+        },
+        "license": {
+          "label": "Code licence",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "dependencies": {
+          "label": "Dependencies / environment specified",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "data_instructions": {
+          "label": "Dataset access and preprocessing instructions",
+          "status": "found",
+          "evidence": [
+            "file: build_graph.py",
+            "README: \"...`data/corpus/` and the label file under `data/` as other datasets do. Preprocess the text by running `remove_words.py` before bu"
+          ],
+          "note": null
+        },
+        "configs": {
+          "label": "Training configuration and hyperparameters",
+          "status": "found",
+          "evidence": [
+            "README: \"...raining and inference as: python train.py [--dataset DATASET] [--learning_rate LR] [--epochs EPOCHS] [--batch_size BATCHSIZE]..."
+          ],
+          "note": null
+        },
+        "training": {
+          "label": "Training entry point",
+          "status": "found",
+          "evidence": [
+            "file: train.py"
+          ],
+          "note": null
+        },
+        "seeds": {
+          "label": "Random seeds / determinism controls",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "hardware": {
+          "label": "Hardware requirements stated",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "evaluation": {
+          "label": "Evaluation script or protocol",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "pretrained": {
+          "label": "Pretrained weights or checkpoints",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "reported_results": {
+          "label": "Published results to compare against",
+          "status": "found",
+          "evidence": [
+            "README: \"...dden size and batch size are suggested as long as your memory allows. We report our result based on 96 hidden size with 1 batch."
+          ],
+          "note": null
+        },
+        "architecture": {
+          "label": "Model architecture fully specified",
+          "status": "manual_review",
+          "evidence": [],
+          "note": null
+        },
+        "maintenance": {
+          "label": "Repository maintenance",
+          "status": "verified",
+          "evidence": [
+            "last push 2024-04-25",
+            "archived: False"
+          ],
+          "note": null
+        },
+        "prior_reproductions": {
+          "label": "Existing reproduction attempts",
+          "status": "manual_review",
+          "evidence": [
+            "Token-Level Graphs for Short Text Classification (2025) https://doi.org/10.1007/978-3-031-88714-7_42",
+            "Smoothed-ModernBERT: Cross-Modal Gated Attention of Probabilistic Topic Models and ModernBERT Through Dynamic Fusion (2026) https://doi.org/"
+          ],
+          "note": null
+        }
+      },
+      "value": [
+        {
+          "text": "Frequently used as a baseline, so a checked number is useful",
+          "level": "estimate"
+        }
+      ],
+      "hardware": [
+        {
+          "text": "README gives no memory figure and suggests larger sizes 'as long as your memory allows'",
+          "level": "verified"
+        }
+      ],
+      "missing": [
+        "Dependency versions",
+        "Random seeds",
+        "Code licence",
+        "Hardware requirements"
+      ],
+      "risks": [
+        {
+          "text": "Without pinned dependencies the code may need porting",
+          "level": "estimate"
+        }
+      ],
+      "suggested_experiments": [
+        "Reproduction with the README's stated configuration over 5 seeds"
+      ]
+    },
+    {
+      "paper": "yao2019",
+      "mode": "reproduction",
+      "result_status": "assessed_only",
+      "executed": false,
+      "code": "https://github.com/yao8839836/text_gcn (licence None, 1390 stars, last push 2021-12-29, 112 open issues)",
+      "checklist": {
+        "full_text": {
+          "label": "Full paper publicly available",
+          "status": "verified",
+          "evidence": [
+            "https://arxiv.org/abs/1809.05679"
+          ],
+          "note": null
+        },
+        "code": {
+          "label": "Implementation available",
+          "status": "found",
+          "evidence": [
+            "https://github.com/yao8839836/text_gcn"
+          ],
+          "note": null
+        },
+        "license": {
+          "label": "Code licence",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "dependencies": {
+          "label": "Dependencies / environment specified",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "data_instructions": {
+          "label": "Dataset access and preprocessing instructions",
+          "status": "found",
+          "evidence": [
+            "file: build_corpus.py",
+            "file: build_graph.py"
+          ],
+          "note": null
+        },
+        "configs": {
+          "label": "Training configuration and hyperparameters",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "training": {
+          "label": "Training entry point",
+          "status": "found",
+          "evidence": [
+            "file: train.py"
+          ],
+          "note": null
+        },
+        "seeds": {
+          "label": "Random seeds / determinism controls",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "hardware": {
+          "label": "Hardware requirements stated",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "evaluation": {
+          "label": "Evaluation script or protocol",
+          "status": "found",
+          "evidence": [
+            "README: \"...), 7370-7377 ## Require Python 2.7 or 3.6 Tensorflow >= 1.4.0 ## Reproducing Results 1. Run `python remove_words.py 20ng` 2. Run"
+          ],
+          "note": null
+        },
+        "pretrained": {
+          "label": "Pretrained weights or checkpoints",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "reported_results": {
+          "label": "Published results to compare against",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "architecture": {
+          "label": "Model architecture fully specified",
+          "status": "manual_review",
+          "evidence": [],
+          "note": null
+        },
+        "maintenance": {
+          "label": "Repository maintenance",
+          "status": "verified",
+          "evidence": [
+            "last push 2021-12-29",
+            "archived: False"
+          ],
+          "note": null
+        },
+        "prior_reproductions": {
+          "label": "Existing reproduction attempts",
+          "status": "manual_review",
+          "evidence": [
+            "Incorporating Syntactic and Semantic Information in Word Embeddings using Graph Convolutional Networks (2019) https://doi.org/10.18653/v1/p1",
+            "Detecting hate speech in memes: a review (2023) https://doi.org/10.1007/s10462-023-10459-7"
+          ],
+          "note": null
+        }
+      },
+      "value": [
+        {
+          "text": "The reference method of the area; later claims are measured against it",
+          "level": "verified",
+          "sources": [
+            "wang2024"
+          ]
+        }
+      ],
+      "hardware": [
+        {
+          "text": "Not stated",
+          "level": "verified"
+        },
+        {
+          "text": "The single corpus graph is O(N^2) in vocabulary plus corpus size",
+          "level": "verified",
+          "sources": [
+            "galke2022"
+          ]
+        }
+      ],
+      "missing": [
+        "Dependency file",
+        "Random seeds",
+        "Code licence",
+        "Hardware requirements"
+      ],
+      "risks": [
+        {
+          "text": "Legacy TensorFlow 1 stack may not install on current systems; a third-party PyTorch port exists but would make this a replication",
+          "level": "estimate"
+        }
+      ],
+      "suggested_experiments": [
+        "Reproduction in a container with the legacy stack",
+        "Replication with the third-party PyTorch port (iworldtong/text_gcn.pytorch), reported as a replication"
+      ]
+    },
+    {
+      "paper": "abdalla2023",
+      "mode": "reproduction",
+      "result_status": "assessed_only",
+      "executed": false,
+      "code": "https://github.com/aliamer/BoW-Based-Neural-Networks-for-Text-Classification (licence None, 2 stars, last push 2023-06-15, 0 open issues)",
+      "checklist": {
+        "full_text": {
+          "label": "Full paper publicly available",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "code": {
+          "label": "Implementation available",
+          "status": "found",
+          "evidence": [
+            "https://github.com/aliamer/BoW-Based-Neural-Networks-for-Text-Classification"
+          ],
+          "note": null
+        },
+        "license": {
+          "label": "Code licence",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "dependencies": {
+          "label": "Dependencies / environment specified",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "data_instructions": {
+          "label": "Dataset access and preprocessing instructions",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "configs": {
+          "label": "Training configuration and hyperparameters",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "training": {
+          "label": "Training entry point",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "seeds": {
+          "label": "Random seeds / determinism controls",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "hardware": {
+          "label": "Hardware requirements stated",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "evaluation": {
+          "label": "Evaluation script or protocol",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "pretrained": {
+          "label": "Pretrained weights or checkpoints",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "reported_results": {
+          "label": "Published results to compare against",
+          "status": "not_found",
+          "evidence": [],
+          "note": null
+        },
+        "architecture": {
+          "label": "Model architecture fully specified",
+          "status": "manual_review",
+          "evidence": [],
+          "note": null
+        },
+        "maintenance": {
+          "label": "Repository maintenance",
+          "status": "verified",
+          "evidence": [
+            "last push 2023-06-15",
+            "archived: False"
+          ],
+          "note": null
+        },
+        "prior_reproductions": {
+          "label": "Existing reproduction attempts",
+          "status": "unavailable",
+          "evidence": [],
+          "note": null
+        }
+      },
+      "value": null,
+      "hardware": null,
+      "missing": [
+        "Open-access full text",
+        "Abstract",
+        "Training and evaluation scripts",
+        "Dependencies",
+        "Licence"
+      ],
+      "risks": [
+        {
+          "text": "Blocked unless the paper can be obtained through a library",
+          "level": "verified"
+        }
+      ],
+      "suggested_experiments": null
+    }
+  ],
+  "limitations": [
+    "Paper summaries rest on abstracts; no full text was read, so limitations stated only in the body of a paper are missing.",
+    "Semantic Scholar search and, late in the session, OpenAlex were unavailable without API keys; coverage is narrower than it could be.",
+    "Novelty checks match wording, not meaning. Every novelty statement here is an unverified hypothesis.",
+    "No code was run and no dataset was downloaded. Time and hardware figures are estimates."
+  ]
+}

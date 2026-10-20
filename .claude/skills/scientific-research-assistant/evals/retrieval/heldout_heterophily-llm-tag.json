@@ -1,0 +1,43 @@
+{
+  "id": "heterophily-llm-tag",
+  "split": "heldout",
+  "claim": "Evaluating whether LLM-derived node features help graph neural networks on heterophilic text-attributed graphs, where linked nodes tend to have different labels",
+  "queries": [
+    "heterophily text-attributed graph large language model",
+    "heterophilic graphs LLM node features GNN",
+    "LLM enhanced heterophilic graph representation learning",
+    "text-rich heterophilic graph benchmark dataset",
+    "language model embeddings low homophily node classification"
+  ],
+  "anchor": "heterophilic graphs",
+  "design": [
+    "low homophily datasets with text",
+    "language model node embeddings",
+    "benchmark of heterophilic text graphs"
+  ],
+  "seeds": [],
+  "known_relevant": [
+    {
+      "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+      "arxiv_id": "2503.04822",
+      "doi": null,
+      "year": 2025,
+      "why": "benchmark of heterophilic text-attributed graphs"
+    },
+    {
+      "title": "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+      "arxiv_id": "2408.14134",
+      "doi": null,
+      "year": 2024,
+      "why": "LLMs for heterophilic graphs"
+    },
+    {
+      "title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+      "arxiv_id": "2302.11640",
+      "doi": null,
+      "year": 2023,
+      "why": "critique of heterophily benchmarks"
+    }
+  ],
+  "provenance": "Claim and queries copied from the challenge run of the first opportunity report (work/challenge_hetero.json), written before the known papers were found. Design elements, anchor and seeds were added later by an author who knew the answers; they are generic but not blind."
+}

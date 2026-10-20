@@ -1,0 +1,53 @@
+{
+  "id": "upfd-graph-vs-no-graph",
+  "split": "dev",
+  "claim": "A multi-seed re-evaluation of UPFD propagation-graph GNNs for fake news detection on PolitiFact and GossipCop showing whether the graph adds accuracy over a text-only classifier using a modern sentence encoder on the same news content",
+  "queries": [
+    "UPFD fake news detection reproducibility text-only baseline",
+    "propagation graph versus news content fake news detection ablation pretrained language model",
+    "do graph neural networks help fake news detection FakeNewsNet strong text baseline",
+    "GNN fake news detection evaluation variance small datasets PolitiFact",
+    "rethinking graph-based fake news detection benchmark"
+  ],
+  "anchor": "fake news propagation graph",
+  "design": [
+    "MLP baseline on the same node features",
+    "randomly rewired edges",
+    "shuffled node features",
+    "users shared between training and test"
+  ],
+  "seeds": [
+    "2104.12259"
+  ],
+  "known_relevant": [
+    {
+      "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+      "arxiv_id": "2512.06638",
+      "doi": null,
+      "year": 2025,
+      "why": "same experiment (GNN vs same-feature MLP, edge rewiring)"
+    },
+    {
+      "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+      "arxiv_id": "2212.12621",
+      "doi": "10.1109/bigdata55660.2022.10020234",
+      "year": 2022,
+      "why": "shared users as predictive signal"
+    },
+    {
+      "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+      "arxiv_id": "2411.12775",
+      "doi": "10.1145/3701551.3703524",
+      "year": 2025,
+      "why": "content-only vs graph under temporal split"
+    },
+    {
+      "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+      "arxiv_id": "2512.09974",
+      "doi": "10.48550/arxiv.2512.09974",
+      "year": 2025,
+      "why": "topology features on UPFD"
+    }
+  ],
+  "provenance": "Claim and queries copied from the challenge run of the first opportunity report (work/challenge_upfd.json), written before the known papers were found. Design elements, anchor and seeds were added later by an author who knew the answers; they are generic but not blind."
+}

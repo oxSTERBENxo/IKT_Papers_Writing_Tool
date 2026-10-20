@@ -1,0 +1,1254 @@
+{
+  "claim": "Evaluating robustness of LLM-enhanced graph neural networks on text-attributed graphs to text-level perturbations of node attributes (typos, paraphrases, adversarial word substitutions)",
+  "queries": [
+    "adversarial text attack text-attributed graph node classification",
+    "robustness LLM-enhanced GNN textual perturbation",
+    "text-level graph adversarial attack language model node features",
+    "poisoning attack text attributes graph neural network LLM"
+  ],
+  "sources_ok": [
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [],
+  "sources_status": {
+    "arxiv": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 14,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "crossref": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 240,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 240,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "n_papers_examined": 140,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 7,
+  "n_without_abstract": 31,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "medium",
+  "interpretation": "No closely worded paper was retrieved among related work. This supports only an 'unverified novelty hypothesis'; coverage was reasonable.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+        "authors": [
+          "Bowen Fan",
+          "Zhilin Guo",
+          "Xunkai Li",
+          "Yihan Zhou",
+          "Bing Zhou",
+          "Zhenjun Li",
+          "Rong-Hua Li",
+          "Guoren Wang"
+        ],
+        "year": 2025,
+        "date": "2025-10-14",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2510.12233",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2510.12233",
+        "pdf_url": "https://arxiv.org/pdf/2510.12233v1",
+        "abstract": "Graph Neural Networks (GNNs) have become a pivotal framework for modeling graph-structured data, enabling a wide range of applications from social network analysis to molecular chemistry. By integrating large language models (LLMs), text-attributed graphs (TAGs) enhance node representations with rich textual semantics, significantly boosting the expressive power of graph-based learning. However, this sophisticated synergy introduces critical vulnerabilities, as Graph-LLMs are susceptible to adversarial attacks on both their structural topology and textual attributes. Although specialized attack methods have been designed for each of these aspects, no work has yet unified them into a comprehensive approach. In this work, we propose the Interpretable Multi-Dimensional Graph Attack (IMDGA), a novel human-centric adversarial attack framework designed to orchestrate multi-level perturbations across both graph structure and textual features. IMDGA utilizes three tightly integrated modules to craft attacks that balance interpretability and impact, enabling a deeper understanding of Graph-LLM vulnerabilities. Through rigorous theoretical analysis and comprehensive empirical evaluations on diverse datasets and architectures, IMDGA demonstrates superior interpretability, attack effectiveness, stealthiness, and robustness compared to existing methods. By exposing critical weaknesses in TAG representation learning, this work uncovers a previously underexplored semantic dimension of vulnerability in Graph-LLMs, offering valuable insights for improving their resilience. Our code and resources are publicly available at https://anonymous.4open.science/r/IMDGA-7289.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "robustness LLM-enhanced GNN textual perturbation"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "text-level graph adversarial attack language model node features"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "robustness LLM-enhanced GNN textual perturbation"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "text-level graph adversarial attack language model node features"
+          }
+        ],
+        "extra": {
+          "arxiv_comment": "12 pages, 4 figures",
+          "arxiv_category": "cs.LG",
+          "abstract_source": "arxiv",
+          "rank": {
+            "query_match": 1.0,
+            "title_match": 0.429,
+            "retrieval_hits": 2,
+            "score": 2.679
+          }
+        }
+      },
+      "term_overlap": 0.421,
+      "tfidf_similarity": 0.127,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Are LLM-Enhanced Graph Neural Networks Robust Against Poisoning Attacks?",
+        "authors": [
+          "Yuhang Ma",
+          "Jie Wang",
+          "Zheng Yan"
+        ],
+        "year": 2026,
+        "date": "2026-05-18",
+        "venue": "2026 IEEE Symposium on Security and Privacy (SP)",
+        "doi": "10.1109/sp63933.2026.00212",
+        "arxiv_id": "2603.26105",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/sp63933.2026.00212",
+        "pdf_url": null,
+        "abstract": "Large Language Models (LLMs) have advanced Graph Neural Networks (GNNs) by enriching node representations with semantic features, giving rise to LLM-enhanced GNNs that achieve notable performance gains. However, the robustness of these models against poisoning attacks, which manipulate both graph structures and textual attributes during training, remains unexplored. To bridge this gap, we propose a robustness assessment framework that systematically evaluates LLM-enhanced GNNs under poisoning attacks. Our framework enables comprehensive evaluation across multiple dimensions. Specifically, we assess 24 victim models by combining eight LLM- or Language Model (LM)-based feature enhancers with three representative GNN backbones. To ensure diversity in attack coverage, we incorporate six structural poisoning attacks (both targeted and non-targeted) and three textual poisoning attacks operating at the character, word, and sentence levels. Furthermore, we employ four real-world datasets, including one released after the emergence of LLMs, to avoid potential ground truth leakage during LLM pretraining, thereby ensuring fair evaluation. Extensive experiments show that LLM-enhanced GNNs exhibit significantly higher accuracy and lower Relative Drop in Accuracy (RDA) than a shallow embedding-based baseline across various attack settings. Our in-depth analysis identifies key factors that contribute to this robustness, such as the effective encoding of structural and label information in node representations. Based on these insights, we outline future research directions from both offensive and defensive perspectives, and propose a new combined attack along with a graph purification defense. To support future research, we release the source code of our framework at~https://github.com/CyberAlSec/LLMEGNNRP.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "poisoning attack text attributes graph neural network LLM survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "poisoning attack text attributes graph neural network LLM review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "robustness LLM-enhanced GNN textual perturbation"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "text-level graph adversarial attack language model node features"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "adversarial text attack text-attributed graph node classification review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "robustness LLM-enhanced GNN textual perturbation survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "robustness LLM-enhanced GNN textual perturbation review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-level graph adversarial attack language model node features survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-level graph adversarial attack language model node features review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "poisoning attack text attributes graph neural network LLM survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "poisoning attack text attributes graph neural network LLM review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "robustness LLM-enhanced GNN textual perturbation"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "text-level graph adversarial attack language model node features"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.875,
+            "title_match": 0.75,
+            "retrieval_hits": 13,
+            "score": 3.0
+          }
+        }
+      },
+      "term_overlap": 0.387,
+      "tfidf_similarity": 0.14,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "BadSKP: Backdoor Attacks on Knowledge Graph-Enhanced LLMs with Soft Prompts",
+        "authors": [
+          "Xiaoting Lyu",
+          "Yufei Han",
+          "Hangwei Qian",
+          "Haoyuan Yu",
+          "Xiang Ao",
+          "Bin Wang",
+          "Chenxu Wang",
+          "Xiaobo Ma",
+          "Wei Wang"
+        ],
+        "year": 2026,
+        "date": "2026-05-12",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2605.11996",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2605.11996",
+        "pdf_url": "https://arxiv.org/pdf/2605.11996v1",
+        "abstract": "Recent knowledge graph (KG)-enhanced large language models (LLMs) move beyond purely textual knowledge augmentation by encoding retrieved subgraphs into continuous soft prompts via graph neural networks, introducing a graph-conditioned channel that operates alongside the standard text interface. However, existing backdoor attacks are largely designed for the textual channel, and their effectiveness against this dual-channel architecture remains unclear. We show that this architecture creates a robustness gap: text-channel backdoor attacks that readily compromise textual KG prompting systems become largely ineffective against soft-prompt-based counterparts. We interpret this gap through semantic anchoring, whereby graph-derived soft prompts bias the generation-driving hidden state toward query-consistent semantics and suppress surface-level malicious instructions. Because this anchoring effect is itself induced by the graph channel, an attacker who manipulates graph-level representations can in turn redirect it toward adversarial semantics. To demonstrate this risk, we propose BadSKP, a backdoor attack that targets the graph-to-prompt interface through a multi-stage optimization strategy: it constructs adversarial target embeddings, optimizes poisoned node embeddings to steer the induced soft prompt, and approximates the optimized representations with fluent adversarial node attributes. Experiments on two soft-prompt KG-enhanced LLMs across four datasets show that BadSKP achieves high attack success under both frozen and trojaned settings, while text-only attacks remain unreliable even under perplexity-based defenses.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          }
+        ],
+        "extra": {
+          "arxiv_category": "cs.AI",
+          "abstract_source": "arxiv",
+          "rank": {
+            "query_match": 0.889,
+            "title_match": 0.375,
+            "retrieval_hits": 1,
+            "score": 2.278
+          }
+        }
+      },
+      "term_overlap": 0.383,
+      "tfidf_similarity": 0.134,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Leveraging Large Language Models for Node Generation in Few-Shot Learning on Text-Attributed Graphs",
+        "authors": [
+          "Jianxiang Yu",
+          "Yuxiang Ren",
+          "Chenghua Gong",
+          "Jiaqi Tan",
+          "Xiang Li",
+          "Xuecang Zhang"
+        ],
+        "year": 2023,
+        "date": "2023-10-15",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2310.09872",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2310.09872",
+        "pdf_url": null,
+        "abstract": "Text-attributed graphs have recently garnered significant attention due to their wide range of applications in web domains. Existing methodologies employ word embedding models for acquiring text representations as node features, which are subsequently fed into Graph Neural Networks (GNNs) for training. Recently, the advent of Large Language Models (LLMs) has introduced their powerful capabilities in information retrieval and text generation, which can greatly enhance the text attributes of graph data. Furthermore, the acquisition and labeling of extensive datasets are both costly and time-consuming endeavors. Consequently, few-shot learning has emerged as a crucial problem in the context of graph learning tasks. In order to tackle this challenge, we propose a lightweight paradigm called LLM4NG, which adopts a plug-and-play approach to empower text-attributed graphs through node generation using LLMs. Specifically, we utilize LLMs to extract semantic information from the labels and generate samples that belong to these categories as exemplars. Subsequently, we employ an edge predictor to capture the structural information inherent in the raw dataset and integrate the newly generated samples into the original graph. This approach harnesses LLMs for enhancing class-level information and seamlessly introduces labeled nodes and edges without modifying the raw dataset, thereby facilitating the node classification task in few-shot scenarios. Extensive experiments demonstrate the outstanding performance of our proposed paradigm, particularly in low-shot scenarios. For instance, in the 1-shot setting of the ogbn-arxiv dataset, LLM4NG achieves a 76% improvement over the baseline model.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "adversarial text attack text-attributed graph node classification"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "text-level graph adversarial attack language model node features"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "adversarial text attack text-attributed graph node classification survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "adversarial text attack text-attributed graph node classification review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-level graph adversarial attack language model node features survey"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.778,
+            "title_match": 0.571,
+            "retrieval_hits": 5,
+            "score": 2.627
+          }
+        }
+      },
+      "term_overlap": 0.364,
+      "tfidf_similarity": 0.136,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+        "authors": [
+          "Xiaoxin He",
+          "Xavier Bresson",
+          "Thomas Laurent",
+          "Adam Perold",
+          "Yann LeCun",
+          "Bryan Hooi"
+        ],
+        "year": 2023,
+        "date": "2023-05-31",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2305.19523",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2305.19523",
+        "pdf_url": null,
+        "abstract": "Representation learning on text-attributed graphs (TAGs) has become a critical research problem in recent years. A typical example of a TAG is a paper citation graph, where the text of each paper serves as node attributes. Initial graph neural network (GNN) pipelines handled these text attributes by transforming them into shallow or hand-crafted features, such as skip-gram or bag-of-words features. Recent efforts have focused on enhancing these pipelines with language models (LMs), which typically demand intricate designs and substantial computational resources. With the advent of powerful large language models (LLMs) such as GPT or Llama2, which demonstrate an ability to reason and to utilize general knowledge, there is a growing need for techniques which combine the textual modelling abilities of LLMs with the structural learning capabilities of GNNs. Hence, in this work, we focus on leveraging LLMs to capture textual information as features, which can be used to boost GNN performance on downstream tasks. A key innovation is our use of explanations as features: we prompt an LLM to perform zero-shot classification, request textual explanations for its decision-making process, and design an LLM-to-LM interpreter to translate these explanations into informative features for downstream GNNs. Our experiments demonstrate that our method achieves state-of-the-art results on well-established TAG datasets, including Cora, PubMed, ogbn-arxiv, as well as our newly introduced dataset, tape-arxiv23. Furthermore, our method significantly speeds up training, achieving a 2.88 times improvement over the closest baseline on ogbn-arxiv. Lastly, we believe the versatility of the proposed method extends beyond TAGs and holds the potential to enhance other tasks involving graph-text data. Our codes and datasets are available at: https://github.com/XiaoxinHe/TAPE.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "adversarial text attack text-attributed graph node classification"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "robustness LLM-enhanced GNN textual perturbation"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "text-level graph adversarial attack language model node features"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "adversarial text attack text-attributed graph node classification survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "adversarial text attack text-attributed graph node classification review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "robustness LLM-enhanced GNN textual perturbation review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-level graph adversarial attack language model node features survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-level graph adversarial attack language model node features review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.429,
+            "retrieval_hits": 8,
+            "score": 2.429
+          }
+        }
+      },
+      "term_overlap": 0.372,
+      "tfidf_similarity": 0.122,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Intruding with Words: Towards Understanding Graph Injection Attacks at the Text Level",
+        "authors": [
+          "Runlin Lei",
+          "Yuwei Hu",
+          "Yuchen Ren",
+          "Zhewei Wei"
+        ],
+        "year": 2024,
+        "date": "2024-05-26",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2405.16405",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2405.16405",
+        "pdf_url": "https://arxiv.org/pdf/2405.16405v2",
+        "abstract": "Graph Neural Networks (GNNs) excel across various applications but remain vulnerable to adversarial attacks, particularly Graph Injection Attacks (GIAs), which inject malicious nodes into the original graph and pose realistic threats. Text-attributed graphs (TAGs), where nodes are associated with textual features, are crucial due to their prevalence in real-world applications and are commonly used to evaluate these vulnerabilities. However, existing research only focuses on embedding-level GIAs, which inject node embeddings rather than actual textual content, limiting their applicability and simplifying detection. In this paper, we pioneer the exploration of GIAs at the text level, presenting three novel attack designs that inject textual content into the graph. Through theoretical and empirical analysis, we demonstrate that text interpretability, a factor previously overlooked at the embedding level, plays a crucial role in attack strength. Among the designs we investigate, the Word-frequency-based Text-level GIA (WTGIA) is particularly notable for its balance between performance and interpretability. Despite the success of WTGIA, we discover that defenders can easily enhance their defenses with customized text embedding methods or large language model (LLM)--based predictors. These insights underscore the necessity for further research into the potential and practical significance of text-level GIAs.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "text-level graph adversarial attack language model node features"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "text-level graph adversarial attack language model node features"
+          }
+        ],
+        "extra": {
+          "arxiv_comment": "Accepted by NeurIPS 2024",
+          "arxiv_category": "cs.LG",
+          "abstract_source": "arxiv",
+          "rank": {
+            "query_match": 1.0,
+            "title_match": 0.444,
+            "retrieval_hits": 1,
+            "score": 2.569
+          }
+        }
+      },
+      "term_overlap": 0.328,
+      "tfidf_similarity": 0.15,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "GRAPHTEXTACK: A Realistic Black-Box Node Injection Attack on LLM-Enhanced GNNs",
+        "authors": [
+          "Jiaji Ma",
+          "Puja Trivedi",
+          "Danai Koutra"
+        ],
+        "year": 2025,
+        "date": "2025-11-16",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2511.12423",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2511.12423",
+        "pdf_url": "https://arxiv.org/pdf/2511.12423v1",
+        "abstract": "Text-attributed graphs (TAGs), which combine structural and textual node information, are ubiquitous across many domains. Recent work integrates Large Language Models (LLMs) with Graph Neural Networks (GNNs) to jointly model semantics and structure, resulting in more general and expressive models that achieve state-of-the-art performance on TAG benchmarks. However, this integration introduces dual vulnerabilities: GNNs are sensitive to structural perturbations, while LLM-derived features are vulnerable to prompt injection and adversarial phrasing. While existing adversarial attacks largely perturb structure or text independently, we find that uni-modal attacks cause only modest degradation in LLM-enhanced GNNs. Moreover, many existing attacks assume unrealistic capabilities, such as white-box access or direct modification of graph data. To address these gaps, we propose GRAPHTEXTACK, the first black-box, multi-modal{, poisoning} node injection attack for LLM-enhanced GNNs. GRAPHTEXTACK injects nodes with carefully crafted structure and semantics to degrade model performance, operating under a realistic threat model without relying on model internals or surrogate models. To navigate the combinatorial, non-differentiable search space of connectivity and feature assignments, GRAPHTEXTACK introduces a novel evolutionary optimization framework with a multi-objective fitness function that balances local prediction disruption and global graph influence. Extensive experiments on five datasets and two state-of-the-art LLM-enhanced GNN models show that GRAPHTEXTACK significantly outperforms 12 strong baselines.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          }
+        ],
+        "extra": {
+          "arxiv_comment": "AAAI 2026",
+          "arxiv_category": "cs.CR",
+          "abstract_source": "arxiv",
+          "rank": {
+            "query_match": 0.889,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 2.403
+          }
+        }
+      },
+      "term_overlap": 0.33,
+      "tfidf_similarity": 0.126,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Graph Neural Network with Heterogeneous Attributes for Node Classification",
+        "authors": [
+          "Bohou Jiang",
+          "Jiahui Wang",
+          "Kun Yue"
+        ],
+        "year": 2024,
+        "date": "2024-01-19",
+        "venue": "2024 4th International Conference on Neural Networks, Information and Communication (NNICE)",
+        "doi": "10.1109/nnice61279.2024.10498196",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/nnice61279.2024.10498196",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "poisoning attack text attributes graph neural network LLM survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "poisoning attack text attributes graph neural network LLM review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 1.875
+          }
+        }
+      },
+      "term_overlap": 0.171,
+      "tfidf_similarity": 0.262,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "A Survey of Unifying Large Language Models with Graph Learning: Concepts, Methods, and Recent Advancements for Text-attributed Graph",
+        "authors": [
+          "Lihui Liu"
+        ],
+        "year": 2026,
+        "date": "2026-03-05",
+        "venue": null,
+        "doi": "10.36227/techrxiv.177272839.92930143/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.36227/techrxiv.177272839.92930143/v1",
+        "pdf_url": null,
+        "abstract": "Graphs are ubiquitous and have been used in a wide range of applications. Before the rise of large language models (LLMs), graph neural networks (GNNs) were among the most popular methods for graph learning. Techniques such as node embedding, graph convolution, graph attention, and random walkbased methods have been widely adopted. When handling graphs with textual node attributes, shallow text embeddings are typically used as initial node representations. However, these embeddings often capture only limited general knowledge. In recent years, LLMs have demonstrated remarkable capabilities in natural language processing, opening new opportunities for handling text data. In this survey, we explore how to leverage LLMs for graph machine learning. We focus on different types of tasks, including node classification, link prediction, and graph-based question answering. Specifically, we investigate two main approaches: LLMs as Enhancers and LLMs as Predictors. In the first approach, LLMs enrich node textual attributes with their vast knowledge, after which graph learning methods are used to make predictions. In the second approach, graph data is treated as input for LLMs, which directly solve various graph-related tasks. Through a thorough investigation of these two directions, we share observations and new insights on integrating LLMs with graph learning.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "adversarial text attack text-attributed graph node classification"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "adversarial text attack text-attributed graph node classification survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "adversarial text attack text-attributed graph node classification review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "text-level graph adversarial attack language model node features survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "adversarial text attack text-attributed graph node classification"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.444,
+            "retrieval_hits": 4,
+            "score": 2.444
+          }
+        }
+      },
+      "term_overlap": 0.258,
+      "tfidf_similarity": 0.137,
+      "is_survey_like": true,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "STAGE: Simplified Text-Attributed Graph Embeddings Using Pre-trained LLMs",
+        "authors": [
+          "Aaron Zolnai-Lucas",
+          "Jack Boylan",
+          "Chris Hokamp",
+          "Parsa Ghaffari"
+        ],
+        "year": 2024,
+        "date": "2024-07-10",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2407.12860",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2407.12860",
+        "pdf_url": null,
+        "abstract": "We present Simplified Text-Attributed Graph Embeddings (STAGE), a straightforward yet effective method for enhancing node features in Graph Neural Network (GNN) models that encode Text-Attributed Graphs (TAGs). Our approach leverages Large-Language Models (LLMs) to generate embeddings for textual attributes. STAGE achieves competitive results on various node classification benchmarks while also maintaining a simplicity in implementation relative to current state-of-the-art (SoTA) techniques. We show that utilizing pre-trained LLMs as embedding generators provides robust features for ensemble GNN training, enabling pipelines that are simpler than current SoTA approaches which require multiple expensive training and prompting stages. We also implement diffusion-pattern GNNs in an effort to make this pipeline scalable to graphs beyond academic benchmarks.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "adversarial text attack text-attributed graph node classification"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "robustness LLM-enhanced GNN textual perturbation"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "text-level graph adversarial attack language model node features"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "adversarial text attack text-attributed graph node classification survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "adversarial text attack text-attributed graph node classification review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-level graph adversarial attack language model node features survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-level graph adversarial attack language model node features review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "adversarial text attack text-attributed graph node classification"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "robustness LLM-enhanced GNN textual perturbation"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "text-level graph adversarial attack language model node features"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.429,
+            "retrieval_hits": 7,
+            "score": 2.429
+          }
+        }
+      },
+      "term_overlap": 0.258,
+      "tfidf_similarity": 0.137,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses",
+        "authors": [
+          "Runlin Lei",
+          "Lu Yi",
+          "Mingguo He",
+          "Pengyu Qiu",
+          "Zhewei Wei",
+          "Yongchao Liu",
+          "Chuntao Hong"
+        ],
+        "year": 2025,
+        "date": "2025-10-20",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2510.17185",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2510.17185",
+        "pdf_url": "https://arxiv.org/pdf/2510.17185v1",
+        "abstract": "While Graph Neural Networks (GNNs) and Large Language Models (LLMs) are powerful approaches for learning on Text-Attributed Graphs (TAGs), a comprehensive understanding of their robustness remains elusive. Current evaluations are fragmented, failing to systematically investigate the distinct effects of textual and structural perturbations across diverse models and attack scenarios. To address these limitations, we introduce a unified and comprehensive framework to evaluate robustness in TAG learning. Our framework evaluates classical GNNs, robust GNNs (RGNNs), and GraphLLMs across ten datasets from four domains, under diverse text-based, structure-based, and hybrid perturbations in both poisoning and evasion scenarios. Our extensive analysis reveals multiple findings, among which three are particularly noteworthy: 1) models have inherent robustness trade-offs between text and structure, 2) the performance of GNNs and RGNNs depends heavily on the text encoder and attack type, and 3) GraphLLMs are particularly vulnerable to training data corruption. To overcome the identified trade-offs, we introduce SFT-auto, a novel framework that delivers superior and balanced robustness against both textual and structural attacks within a single model. Our work establishes a foundation for future research on TAG security and offers practical solutions for robust TAG learning in adversarial environments. Our code is available at: https://github.com/Leirunlin/TGRB.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "poisoning attack text attributes graph neural network LLM"
+          }
+        ],
+        "extra": {
+          "arxiv_category": "cs.LG",
+          "abstract_source": "arxiv",
+          "rank": {
+            "query_match": 0.875,
+            "title_match": 0.429,
+            "retrieval_hits": 1,
+            "score": 2.304
+          }
+        }
+      },
+      "term_overlap": 0.274,
+      "tfidf_similarity": 0.115,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "DeepSculpt Attack: Word-Level Adversarial Perturbations on Clinical Text in Electronic Health Records (EHR) Systems",
+        "authors": [
+          "P.Selvi Grija",
+          "M.Nandhini"
+        ],
+        "year": 2025,
+        "date": "2025-11-22",
+        "venue": "2025 5th International Conference on Artificial Intelligence and Signal Processing (AISP)",
+        "doi": "10.1109/aisp68263.2025.11396316",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/aisp68263.2025.11396316",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "text-level graph adversarial attack language model node features"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "text-level graph adversarial attack language model node features review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "text-level graph adversarial attack language model node features"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.444,
+            "title_match": 0.444,
+            "retrieval_hits": 2,
+            "score": 1.583
+          }
+        }
+      },
+      "term_overlap": 0.207,
+      "tfidf_similarity": 0.16,
+      "is_survey_like": false,
+      "has_abstract": false
+    }
+  ],
+  "log": [
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "adversarial text attack text-attributed graph node classification",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "adversarial text attack text-attributed graph node classification",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "adversarial text attack text-attributed graph node classification",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "robustness LLM-enhanced GNN textual perturbation",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "robustness LLM-enhanced GNN textual perturbation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "robustness LLM-enhanced GNN textual perturbation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "text-level graph adversarial attack language model node features",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "text-level graph adversarial attack language model node features",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "text-level graph adversarial attack language model node features",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "poisoning attack text attributes graph neural network LLM",
+      "results": 3,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "poisoning attack text attributes graph neural network LLM",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "poisoning attack text attributes graph neural network LLM",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "adversarial text attack text-attributed graph node classification survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "adversarial text attack text-attributed graph node classification survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "adversarial text attack text-attributed graph node classification survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "adversarial text attack text-attributed graph node classification review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "adversarial text attack text-attributed graph node classification review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "adversarial text attack text-attributed graph node classification review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "robustness LLM-enhanced GNN textual perturbation survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "robustness LLM-enhanced GNN textual perturbation survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "robustness LLM-enhanced GNN textual perturbation survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "robustness LLM-enhanced GNN textual perturbation review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "robustness LLM-enhanced GNN textual perturbation review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "robustness LLM-enhanced GNN textual perturbation review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "text-level graph adversarial attack language model node features survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "text-level graph adversarial attack language model node features survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "text-level graph adversarial attack language model node features survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "text-level graph adversarial attack language model node features review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "text-level graph adversarial attack language model node features review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "text-level graph adversarial attack language model node features review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "poisoning attack text attributes graph neural network LLM survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "poisoning attack text attributes graph neural network LLM survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "poisoning attack text attributes graph neural network LLM survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "poisoning attack text attributes graph neural network LLM review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "poisoning attack text attributes graph neural network LLM review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "poisoning attack text attributes graph neural network LLM review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "adversarial text attack text-attributed graph node classification",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "adversarial text attack text-attributed graph node classification",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "adversarial text attack text-attributed graph node classification",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "robustness LLM-enhanced GNN textual perturbation",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "robustness LLM-enhanced GNN textual perturbation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "robustness LLM-enhanced GNN textual perturbation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "text-level graph adversarial attack language model node features",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "text-level graph adversarial attack language model node features",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "text-level graph adversarial attack language model node features",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "poisoning attack text attributes graph neural network LLM",
+      "results": 3,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "poisoning attack text attributes graph neural network LLM",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "poisoning attack text attributes graph neural network LLM",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-17"
+}

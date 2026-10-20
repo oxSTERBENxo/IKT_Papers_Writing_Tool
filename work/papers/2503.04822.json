@@ -1,0 +1,48 @@
+{
+  "paper": {
+    "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+    "authors": [
+      "Shujie Li",
+      "Yuxia Wu",
+      "Yuan Fang",
+      "Chuan Shi"
+    ],
+    "year": 2025,
+    "date": "2025-03-05",
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv_id": "2503.04822",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2503.04822",
+    "pdf_url": "https://arxiv.org/pdf/2503.04822v2",
+    "abstract": "Graph neural networks (GNNs) have demonstrated success in modeling relational data primarily under the assumption of homophily. However, many real-world graphs exhibit heterophily, where linked nodes belong to different categories or possess diverse attributes, such as webpages, Wikipedia articles, social networks, and e-commerce platforms. Additionally, nodes in many domains are associated with textual descriptions, forming heterophilic text-attributed graphs (TAGs). Despite their significance, heterophilic TAGs remain underexplored due to the lack of dedicated benchmarks that jointly capture heterophilic structures and rich textual attributes. To address this gap, we introduce the \\textbf{He}terophilic \\textbf{T}ext-attributed \\textbf{G}raph \\textbf{B}enchmark (HeTGB), a novel benchmark comprising five real-world heterophilic graph datasets from diverse domains, with nodes enriched by extensive textual descriptions. HeTGB enables systematic evaluation of GNNs, pre-trained language models (PLMs) and co-training methods on the node classification task. Through extensive benchmarking experiments, we showcase the utility of text attributes in heterophilic graphs, analyze the challenges posed by heterophilic TAGs and the limitations of existing models, and provide insights into the interplay between graph structures and textual attributes.",
+    "citations": null,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "EMNLP Findings, 2026",
+      "arxiv_category": "cs.CL"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

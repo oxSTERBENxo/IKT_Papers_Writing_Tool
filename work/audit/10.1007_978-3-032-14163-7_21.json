@@ -1,0 +1,56 @@
+{
+  "paper": {
+    "title": "Multi-dataset Analysis of Misinformation Networks: Divergent Graph Structures and Challenges for Fake News Detection",
+    "authors": [
+      "Michał Bryła",
+      "Rafał Kasprzyk"
+    ],
+    "year": 2026,
+    "date": "2026-01-01",
+    "venue": "Lecture notes in networks and systems",
+    "doi": "10.1007/978-3-032-14163-7_21",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W7118188089",
+    "s2_id": null,
+    "url": "https://doi.org/10.1007/978-3-032-14163-7_21",
+    "pdf_url": null,
+    "abstract": null,
+    "citations": 0,
+    "is_oa": false,
+    "is_retracted": false,
+    "type": "conference-paper",
+    "sources": [
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W2051405935",
+        "W2138621811",
+        "W2232384272",
+        "W2410465342",
+        "W2737907513",
+        "W2742144412",
+        "W2767220239",
+        "W2783564496",
+        "W2790166049",
+        "W2911715381",
+        "W3011345566",
+        "W3125491592",
+        "W3153567752",
+        "W4238452917",
+        "W4312248975"
+      ]
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    }
+  ]
+}

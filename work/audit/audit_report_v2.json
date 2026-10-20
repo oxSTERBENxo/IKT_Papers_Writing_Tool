@@ -1,0 +1,995 @@
+{
+  "type": "opportunity_report",
+  "title": "Novelty and reproducibility audit of the UPFD fake-news proposal",
+  "date": "2026-10-18",
+  "constraints": {
+    "field": "Graph neural networks for fake news detection (UPFD benchmark)",
+    "experience": "undergraduate, comfortable with Python",
+    "hardware": "one consumer GPU, 8 GB VRAM (or a free cloud notebook)",
+    "gpu_vram_gb": 8,
+    "time_budget_weeks": 8,
+    "language": "Python",
+    "difficulty": "moderate",
+    "mode": "any",
+    "defaults_used": [
+      "experience",
+      "hardware",
+      "gpu_vram_gb",
+      "time_budget_weeks",
+      "language",
+      "difficulty",
+      "mode"
+    ]
+  },
+  "search_log": {
+    "sources_ok": [
+      "openalex",
+      "arxiv",
+      "crossref",
+      "huggingface"
+    ],
+    "sources_failed": [
+      {
+        "source": "semantic_scholar",
+        "reason": "rate_limited / HTTP 429 during challenge searches and paper resolution"
+      }
+    ],
+    "strategies": [
+      "challenge",
+      "citations of UPFD (OpenAlex citing works)",
+      "web search",
+      "full-text reading of arXiv TeX sources",
+      "code reading"
+    ],
+    "queries": [
+      "UPFD fake news graph neural network content-only baseline",
+      "does propagation structure help fake news detection",
+      "propagation graph ablation fake news detection text-only baseline outperforms",
+      "rethinking evaluation fake news detection graph neural networks benchmark",
+      "user engagement graph necessary fake news detection GNN",
+      "FakeNewsNet propagation-based detection reproducibility",
+      "simple baseline fake news detection propagation graphs",
+      "user overlap train test leakage fake news detection social context",
+      "user-disjoint split fake news detection graph",
+      "fake news detection shortcut user identity memorization",
+      "spurious correlations social context fake news detection evaluation",
+      "unseen users generalization propagation-based fake news detection",
+      "FakeNewsNet data leakage evaluation bias"
+    ],
+    "date_range": "2019 onwards (citing works of UPFD); challenge searches unrestricted",
+    "n_retrieved": 626,
+    "n_after_dedup": null,
+    "date": "2026-10-18",
+    "notes": [
+      "217 and 223 records examined by the two challenge commands; 186 works citing UPFD screened by title.",
+      "Karn and Jensen 2025 and Xu 2025 were found by web search, not by the challenge command.",
+      "Full texts read from arXiv TeX sources: UPFD (2104.12259), Karn and Jensen (2512.06638), DAWN (2411.12775), Xu (2512.09974, partly).",
+      "Code read: safe-graph/GNN-FakeNews gnn_model/gnn.py, utils/data_loader.py, utils/eval_helper.py, hyper_parameters.md; PyG torch_geometric/datasets/upfd.py and examples/upfd.py.",
+      "Continuation (same day): official split files and small feature files fetched by HTTP range requests from the PyG UPFD archives (about 60 MB of 1.6 GB; no BERT features, no full GossipCop download).",
+      "Continuation: full text read for HGFND (arXiv 2212.12621) and the Maurya et al. PDF; Springer chapters redirected to a login page and stayed unread.",
+      "Improved challenge (eval 5) with design elements and the UPFD paper as seed: signal close_prior_work_found, 194 papers via citations, 20 flagged as possibly the same design."
+    ]
+  },
+  "papers": [
+    {
+      "key": "dou2021upfd",
+      "title": "User Preference-aware Fake News Detection",
+      "authors": [
+        "Yingtong Dou",
+        "Kai Shu",
+        "Congyin Xia",
+        "Philip S. Yu",
+        "Li-Chao Sun"
+      ],
+      "year": 2021,
+      "date": "2021-07-11",
+      "venue": "Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "doi": "10.1145/3404835.3462990",
+      "arxiv_id": "2104.12259",
+      "pmid": null,
+      "url": "https://www.semanticscholar.org/paper/081a386a2a314b5bc2da6fd20ed3e7cafbcad76e",
+      "role": "closest",
+      "method": "UPFD: news root node plus user nodes (features from users' historical tweets) in a retweet tree; one GNN layer, readout, concatenation with the news embedding",
+      "datasets": "PolitiFact 314 graphs, GossipCop 5,464 graphs (Table 1)",
+      "findings": "Full text (TeX source): Table 2 already includes news-only baselines (BERT+MLP 71.04 / 85.76 acc, word2vec+MLP 76.47 / 84.61 on POL / GOS) against UPFD 84.62 / 97.23. Section 3.3 ablation '-EXO' removes all edges: accuracy 85.61 vs 81.63 on PolitiFact and 95.47 vs 93.92 on the second dataset (the text labels both sentences 'Politifact'). Five runs, t-test, 20/10/70 split.",
+      "limitations": "No standard deviations reported. The ablation's full model (GCNFN, word2vec, no news concatenation) reports 85.61, above the 80.54 for GCNFN with word2vec in Table 3; the difference is not explained.",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "User Preference-aware Fake News Detection",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "full_text"
+    },
+    {
+      "key": "karn2025structure",
+      "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+      "authors": [
+        "Isha Karn",
+        "David Jensen"
+      ],
+      "year": 2025,
+      "date": "2025-12-07",
+      "venue": "arXiv",
+      "doi": "10.48550/arxiv.2512.06638",
+      "arxiv_id": "2512.06638",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2512.06638",
+      "role": "closest",
+      "method": "Five GNNs (GCN, GAT, GraphSAGE, GCNFN, GNNCL) against an MLP that mean-pools all node features; feature shuffling, edge rewiring and synthetic ego-graphs",
+      "datasets": "UPFD PolitiFact and GossipCop, BERT (768-d) features only",
+      "findings": "Full text (TeX source): stratified 10-fold CV, mean validation accuracy with 95% CI. Table 2: GossipCop GCNFN 96.1 +/- 1.6 vs MLP 90.8 +/- 3.0; PolitiFact GCNFN 82.7 +/- 5.5 vs MLP 74.3 +/- 7.4. Edge rewiring leaves accuracy above 90% on GossipCop; feature shuffling collapses GAT/GraphSAGE to chance while GCN and GNNCL keep about 80% on GossipCop, which the authors attribute to graph size or density. Over 75% of nodes are one hop from the root.",
+      "limitations": "Preprint, no code found (author portfolio lists it as a preprint). Text and table disagree: MLP on GossipCop 93.87% in text vs 90.8% in Table 2; MLP on PolitiFact 80.93% vs 74.3%; GAT on GossipCop 95.26% vs 91.5%. Reports validation accuracy only (no held-out test). The MLP pools user nodes too, so it does not separate news content from user features.",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "full_text"
+    },
+    {
+      "key": "kim2025dawn",
+      "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+      "authors": [
+        "Junghoon Kim",
+        "Junmo Lee",
+        "Yeonjun In",
+        "Kanghoon Yoon",
+        "Chanyoung Park"
+      ],
+      "year": 2025,
+      "date": "2025-02-26",
+      "venue": "Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining",
+      "doi": "10.1145/3701551.3703524",
+      "arxiv_id": "2411.12775",
+      "pmid": null,
+      "url": "https://doi.org/10.1145/3701551.3703524",
+      "role": "closest",
+      "method": "Temporality-aware evaluation (70/10/20 temporal split, social context split accordingly) and DAWN edge reweighting by engagement earliness",
+      "datasets": "FakeNewsNet PolitiFact (597 articles) and GossipCop (8,763 articles) built from raw FakeNewsNet, not the UPFD release",
+      "findings": "Full text (arXiv 2411.12775 TeX source): Table 2, average of 5 runs, no standard deviations: BERT content-only 84.2 / 76.4 acc vs GCN 86.4 / 87.4 and GraphSAGE 85.4 / 87.5 on PolitiFact / GossipCop. Figure caption: users tend to engage with either only fake or only real news.",
+      "limitations": "Code at github.com/LeeJunmo/DAWN has no licence; automated check found no seed control.",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "full_text"
+    },
+    {
+      "key": "kim2026dawn",
+      "title": "A New DAWN for Fake News Detection: Exploiting Engagement Earliness for Temporality-aware Evaluation",
+      "authors": [
+        "Junghoon Kim",
+        "Junmo Lee",
+        "Yeonjun In",
+        "Kanghoon Yoon",
+        "Chanyoung Park"
+      ],
+      "year": 2026,
+      "date": "2026-05-07",
+      "venue": "ACM Transactions on Intelligent Systems and Technology",
+      "doi": "10.1145/3815193",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.1145/3815193",
+      "role": "related",
+      "method": "Journal version of DAWN (ACM TIST)",
+      "datasets": null,
+      "findings": "Abstract only: same temporality-aware evaluation claim as the WSDM paper",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "A New DAWN for Fake News Detection: Exploiting Engagement Earliness for Temporality-aware Evaluation",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "abstract"
+    },
+    {
+      "key": "xu2025topo",
+      "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+      "authors": [
+        "Kaiyuan Xu"
+      ],
+      "year": 2025,
+      "date": "2025-12-10",
+      "venue": "arXiv",
+      "doi": "10.48550/arxiv.2512.09974",
+      "arxiv_id": "2512.09974",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2512.09974",
+      "role": "closest",
+      "method": "Appends degree centrality and local clustering coefficient to UPFD node features",
+      "datasets": "UPFD PolitiFact and GossipCop, BERT features",
+      "findings": "Abstract and full text: PolitiFact macro-F1 0.7753 to 0.8344; on GossipCop the baseline has slightly better F1 (0.9551 vs 0.9451)",
+      "limitations": "No split, seed or number of runs found in the TeX source",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "full_text"
+    },
+    {
+      "key": "wu2023decor",
+      "title": "DECOR: Degree-Corrected Social Graph Refinement for Fake News Detection",
+      "authors": [
+        "Jiaying Wu",
+        "Bryan Hooi"
+      ],
+      "year": 2023,
+      "date": "2023-08-04",
+      "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+      "doi": "10.1145/3580305.3599298",
+      "arxiv_id": "2307.00077",
+      "pmid": null,
+      "url": "https://doi.org/10.1145/3580305.3599298",
+      "role": "supporting",
+      "method": "Degree-corrected social graph refinement for fake news detection",
+      "datasets": "Two real-world benchmarks (abstract)",
+      "findings": "Abstract: degrees of news article nodes show distinctive patterns indicative of veracity",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "DECOR: Degree-Corrected Social Graph Refinement for Fake News Detection",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "abstract"
+    },
+    {
+      "key": "nguyen2020fang",
+      "title": "FANG: Leveraging Social Context for Fake News Detection Using Graph Representation",
+      "authors": [
+        "Van-Hoang Nguyen",
+        "Kazunari Sugiyama",
+        "Preslav Nakov",
+        "Min-Yen Kan"
+      ],
+      "year": 2020,
+      "date": "2020-10-19",
+      "venue": "Proceedings of the 29th ACM International Conference on Information &amp; Knowledge Management",
+      "doi": "10.1145/3340531.3412046",
+      "arxiv_id": "2008.07939",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2008.07939",
+      "role": "related",
+      "method": "FANG: graph representation of the social context (users, sources, news)",
+      "datasets": null,
+      "findings": "Abstract: learned social-context representations improve fake news detection; cited here because user reuse across news is an intended signal in such social-context models",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "FANG: Leveraging Social Context for Fake News Detection Using Graph Representation",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "abstract"
+    },
+    {
+      "key": "tuan2026review",
+      "title": "Beyond Reported Accuracy: A Verifiability-Focused, Multi-Axis Review of Content and Context Based Fake News Detection",
+      "authors": [
+        "Long Dinh Tuan",
+        "Le Ngoc An",
+        "Duong Dinh Thai"
+      ],
+      "year": 2026,
+      "date": "2026-09-11",
+      "venue": "Journal of Computing Theories and Applications",
+      "doi": "10.62411/jcta.17476",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.62411/jcta.17476",
+      "role": "supporting",
+      "method": "Verifiability-focused review of 45 fake news detection studies",
+      "datasets": null,
+      "findings": "Abstract: reported performance appears shaped as much by data and evaluation design as by architecture; near-perfect results may reflect separability, leakage or favourable evaluation",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "Beyond Reported Accuracy: A Verifiability-Focused, Multi-Axis Review of Content and Context Based Fake News Detection",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "abstract"
+    },
+    {
+      "key": "platonov2023hetero",
+      "title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+      "authors": [
+        "Oleg Platonov",
+        "Denis Kuznedelev",
+        "Michael Diskin",
+        "Artem Babenko",
+        "Liudmila Prokhorenkova"
+      ],
+      "year": 2023,
+      "date": "2023-02-22",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2302.11640",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2302.11640",
+      "role": "related",
+      "method": "Critique of heterophily benchmarks",
+      "datasets": null,
+      "findings": "Abstract: duplicate nodes cause train-test leakage in standard benchmarks; precedent for a data-overlap audit",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "abstract"
+    },
+    {
+      "key": "bryla2026networks",
+      "title": "Multi-dataset Analysis of Misinformation Networks: Divergent Graph Structures and Challenges for Fake News Detection",
+      "authors": [
+        "Michał Bryła",
+        "Rafał Kasprzyk"
+      ],
+      "year": 2026,
+      "date": "2026-01-01",
+      "venue": "Lecture notes in networks and systems",
+      "doi": "10.1007/978-3-032-14163-7_21",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.1007/978-3-032-14163-7_21",
+      "role": "closest",
+      "method": null,
+      "datasets": null,
+      "findings": "Abstract not retrievable programmatically (publisher login redirect). A web-search summary describes a structural comparison of true and false propagation graphs across platforms; not verified against the text.",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "Multi-dataset Analysis of Misinformation Networks: Divergent Graph Structures and Challenges for Fake News Detection",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "not_accessible"
+    },
+    {
+      "key": "rai2025attention",
+      "title": "Exploring the Efficacy of Attention Mechanisms in GNN-Based Fake News Detection on UPFD Dataset",
+      "authors": [
+        "Vandana Rai",
+        "Sakshi Rai"
+      ],
+      "year": 2025,
+      "date": "2025-01-01",
+      "venue": "Learning and analytics in intelligent systems",
+      "doi": "10.1007/978-981-97-9855-1_7",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.1007/978-981-97-9855-1_7",
+      "role": "related",
+      "method": null,
+      "datasets": "UPFD (title)",
+      "findings": "Title only; not read",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "Exploring the Efficacy of Attention Mechanisms in GNN-Based Fake News Detection on UPFD Dataset",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "not_accessible"
+    },
+    {
+      "key": "rai2025hypergraph",
+      "title": "Leveraging Hypergraph Neural Network for Fake News Detection on UPFD Dataset",
+      "authors": [
+        "Vandana Rai",
+        "Sakshi Rai"
+      ],
+      "year": 2025,
+      "date": "2025-01-01",
+      "venue": "Springer eBooks",
+      "doi": "10.1007/978-981-96-4722-4_9",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.1007/978-981-96-4722-4_9",
+      "role": "related",
+      "method": null,
+      "datasets": "UPFD (title)",
+      "findings": "Title only; not read",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "Leveraging Hypergraph Neural Network for Fake News Detection on UPFD Dataset",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "not_accessible"
+    },
+    {
+      "key": "phan2023fakesurvey",
+      "title": "Fake news detection: A survey of graph neural network methods",
+      "authors": [
+        "Huyen Trang Phan",
+        "Ngoc Thanh Nguyên",
+        "Dosam Hwang"
+      ],
+      "year": 2023,
+      "date": "2023-03-23",
+      "venue": "Applied Soft Computing",
+      "doi": "10.1016/j.asoc.2023.110235",
+      "arxiv_id": null,
+      "pmid": "36999094",
+      "url": "https://doi.org/10.1016/j.asoc.2023.110235",
+      "role": "survey",
+      "method": "Survey of GNN methods for fake news detection",
+      "datasets": null,
+      "findings": "Cited as evidence the area is surveyed; abstract not read",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "Fake news detection: A survey of graph neural network methods",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      },
+      "read_level": "title_only"
+    },
+    {
+      "key": "jeong2022hgfnd",
+      "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+      "authors": [
+        "Ujun Jeong",
+        "Kaize Ding",
+        "Lu Cheng",
+        "Ruocheng Guo",
+        "Kai Shu",
+        "Huan Liu"
+      ],
+      "year": 2022,
+      "date": "2022-12-24",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2212.12621",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2212.12621",
+      "role": "closest",
+      "method": "HGFND: hypergraph neural network over news items, with hyperedges for shared users, shared time windows and shared entities; transductive node classification",
+      "datasets": "UPFD PolitiFact and GossipCop (news and user information from the UPFD release)",
+      "findings": "Full text (TeX source): user hyperedges connect news items that share a Twitter user ID (2,953 such users in PolitiFact, 15,646 in GossipCop). With user hyperedges alone the model reaches 87.23 +/- 2.32 (PolitiFact) and 97.29 +/- 0.16 (GossipCop) accuracy; all three hyperedge types give 91.13 / 97.46. Baselines trained with 10 seeds, model chosen on validation. The authors conclude that users play a key role in detecting fake news.",
+      "limitations": "Treats shared users as intended signal in a transductive setting and states there is no label leakage because test labels are hidden; does not evaluate on unseen users",
+      "read_level": "full_text",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "maurya2024gnndp",
+      "title": "Implementation of Weight Adjusting GNN With Differentiable Pooling for User Preference-aware Fake News Detection",
+      "authors": [
+        "Jay Prakash Maurya",
+        "Vivek Richhariya",
+        "Bhupesh Gour",
+        "V. K. Kumar"
+      ],
+      "year": 2024,
+      "date": "2024-02-09",
+      "venue": "Research Square",
+      "doi": "10.21203/rs.3.rs-3942141/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.21203/rs.3.rs-3942141/v1",
+      "role": "related",
+      "method": "GCN and DiffPool-based GNN on UPFD PolitiFact",
+      "datasets": "UPFD PolitiFact only",
+      "findings": "Full text (Research Square PDF): single reported run; test accuracy 0.82 for GCN",
+      "limitations": "No seeds, no structure-free baseline, no user-overlap or user-disjoint analysis",
+      "read_level": "full_text",
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "Implementation of Weight Adjusting GNN With Differentiable Pooling for User Preference-aware Fake News Detection",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    }
+  ],
+  "sections": {
+    "summary": "No-go for the proposal as written: the graph-vs-no-graph comparison on UPFD is already published [@karn2025structure; @dou2021upfd]. The continuation measured on the official split files that a model-free vote over users seen in training reaches 86.0% on PolitiFact and 90.3% on GossipCop, and that repeat users carry identical feature vectors, so every per-graph model can use the shortcut. That shared users predict labels is itself already published [@jeong2022hgfnd]; what appears open is treating it as a confound of per-graph benchmark results. Conditional go for that narrower question, scoped to PolitiFact for controlled experiments.",
+    "well_explored": [
+      {
+        "text": "GNN vs news-only or structure-agnostic baselines on UPFD, including edge removal, edge rewiring and feature shuffling",
+        "level": "verified",
+        "sources": [
+          "dou2021upfd",
+          "karn2025structure"
+        ]
+      },
+      {
+        "text": "Content-only vs social-graph models under temporality-aware splits on FakeNewsNet",
+        "level": "verified",
+        "sources": [
+          "kim2025dawn"
+        ]
+      },
+      {
+        "text": "Adding explicit topology features to UPFD node features",
+        "level": "verified",
+        "sources": [
+          "xu2025topo"
+        ]
+      },
+      {
+        "text": "New GNN architectures on UPFD (inferred from titles screened among 186 citing works)",
+        "level": "estimate",
+        "sources": [
+          "rai2025attention",
+          "rai2025hypergraph"
+        ]
+      }
+    ],
+    "recommendation": [
+      {
+        "text": "Drop the original proposal (no-go) and the stand-alone replication of Karn and Jensen (no-go).",
+        "level": "estimate"
+      },
+      {
+        "text": "Conditional go for the recurring-user question as a 4-6 week benchmark-validity study. Its first deliverable needs no training: the overlap measurements in this report, written up with the code. Model runs on masked PolitiFact follow only if the three conditions are met.",
+        "level": "estimate"
+      },
+      {
+        "text": "If the unread chapters turn out to cover it, or a methods-focused project is preferred, switch to the aspect-based sentiment candidate from the opportunity report.",
+        "level": "speculative"
+      }
+    ]
+  },
+  "opportunities": [
+    {
+      "title": "As proposed: multi-seed graph vs no-graph re-evaluation of UPFD",
+      "category": "well_studied",
+      "mode": "replication",
+      "status": "rejected",
+      "revision_note": "Reading the full texts showed the experiment has been done three times: the UPFD paper itself reports news-only baselines and an edge-removal ablation [@dou2021upfd]; Karn and Jensen benchmark five GNNs against a same-feature MLP with 10-fold CIs, edge rewiring and feature shuffling on both UPFD datasets [@karn2025structure]; and DAWN compares a BERT content-only model with GNNs under temporal splits [@kim2025dawn]. A further multi-seed rerun would mainly confirm Karn and Jensen. The audit also found the comparison as designed cannot isolate graph structure (see the revised question).",
+      "research_question": "On UPFD PolitiFact and GossipCop, how much do GNNs over user-engagement graphs add beyond a classifier on news features alone, under 10+ seeds and repeated splits?",
+      "motivation": "Originally proposed as the top-ranked idea of the NLP+GNN opportunity report.",
+      "supporting_papers": [
+        "dou2021upfd",
+        "phan2023fakesurvey"
+      ],
+      "closest_existing_work": [
+        {
+          "key": "karn2025structure",
+          "read_level": "full_text",
+          "overlap": "same_experiment",
+          "how_it_differs": "Same comparison (GNNs vs an MLP on identical features, edge rewiring, feature shuffling, CIs) on the same datasets; differs only in reporting validation accuracy and using BERT features only."
+        },
+        {
+          "key": "dou2021upfd",
+          "read_level": "full_text",
+          "overlap": "same_question_different_design",
+          "how_it_differs": "News-only MLP baselines and an edge-removal ablation (-EXO), five runs with t-tests."
+        },
+        {
+          "key": "kim2025dawn",
+          "read_level": "full_text",
+          "overlap": "partial",
+          "how_it_differs": "Content-only BERT vs GNNs under temporal splits on raw FakeNewsNet."
+        }
+      ],
+      "gap_evidence": [
+        {
+          "text": "UPFD Table 2 reports news-only baselines (BERT+MLP 71.04% / 85.76%) against UPFD (84.62% / 97.23%) on PolitiFact / GossipCop; the -EXO ablation removes all edges (85.61% vs 81.63% on PolitiFact)",
+          "level": "verified",
+          "sources": [
+            "dou2021upfd"
+          ]
+        },
+        {
+          "text": "An MLP on the same BERT node features reaches 90.8% +/- 3.0 vs 96.1% +/- 1.6 for GCNFN on GossipCop and 74.3% +/- 7.4 vs 82.7% +/- 5.5 on PolitiFact; edge rewiring leaves GossipCop accuracy above 90%",
+          "level": "verified",
+          "sources": [
+            "karn2025structure"
+          ]
+        },
+        {
+          "text": "Under temporal splits a BERT content-only model reaches 84.2% on PolitiFact against 86.4% for GCN (5-run averages, no SD)",
+          "level": "verified",
+          "sources": [
+            "kim2025dawn"
+          ]
+        }
+      ],
+      "contribution": "Little beyond confirming published results.",
+      "novelty": {
+        "confidence": "very_low",
+        "uncertainty": "Rejected because the full texts of three papers describe the experiment. The tool's challenge searches returned 'no close match' both times and missed Karn and Jensen, which was found by web search; tool signals for this topic are unreliable.",
+        "signal": "no_close_match_in_this_search",
+        "challenge_searches": [
+          "UPFD fake news detection reproducibility text-only baseline",
+          "propagation graph versus news content fake news detection ablation pretrained language model",
+          "do graph neural networks help fake news detection FakeNewsNet strong text baseline",
+          "GNN fake news detection evaluation variance small datasets PolitiFact",
+          "rethinking graph-based fake news detection benchmark",
+          "UPFD fake news graph neural network content-only baseline",
+          "does propagation structure help fake news detection",
+          "propagation graph ablation fake news detection text-only baseline outperforms",
+          "rethinking evaluation fake news detection graph neural networks benchmark",
+          "user engagement graph necessary fake news detection GNN",
+          "FakeNewsNet propagation-based detection reproducibility",
+          "simple baseline fake news detection propagation graphs"
+        ],
+        "ceiling": "low"
+      },
+      "feasibility": [
+        {
+          "text": "Cheap (CPU-scale), but feasibility is moot given the prior work",
+          "level": "estimate"
+        }
+      ],
+      "decision": {
+        "verdict": "no_go",
+        "rationale": "Already performed under other wording [@karn2025structure], and the comparison as designed is confounded by recurring users."
+      }
+    },
+    {
+      "title": "Revised (twice): do per-graph UPFD results reflect recurring users rather than content or structure?",
+      "category": "unverified_novelty_hypothesis",
+      "mode": "extension",
+      "status": "revised",
+      "revision_note": "First revision: the graph-vs-no-graph question is answered [@karn2025structure; @dou2021upfd]. Second revision (this continuation): full-text reading of [@jeong2022hgfnd] showed that the predictive power of users shared between news items is already published, as a deliberate transductive signal. What remains open in the sources read is the evaluation question: how much of the accuracy reported for per-graph models on the official UPFD split, and of conclusions such as 'structure adds little', comes from recurring users that the models can recognise through identical feature vectors.",
+      "research_question": "On the official UPFD split, how much of the accuracy of per-graph GNNs and of same-feature MLPs is explained by test users seen in training, and do published conclusions about news content versus propagation structure hold when that shortcut is controlled (PolitiFact: masking seen users; GossipCop: descriptive only)?",
+      "motivation": "Published comparisons on UPFD attribute performance to news content, user preferences or propagation structure [@dou2021upfd; @karn2025structure]. Every model that pools user-node features, including Karn and Jensen's MLP, can also exploit recurring users, and DAWN observes that users tend to engage with only one class [@kim2025dawn]. A review of fake news studies argues reported accuracies are shaped by evaluation design and possible leakage [@tuan2026review].",
+      "supporting_papers": [
+        "karn2025structure",
+        "kim2025dawn",
+        "jeong2022hgfnd",
+        "tuan2026review",
+        "platonov2023hetero"
+      ],
+      "closest_existing_work": [
+        {
+          "key": "jeong2022hgfnd",
+          "read_level": "full_text",
+          "overlap": "partial",
+          "how_it_differs": "Uses shared users as a feature (user hyperedges) and reports their predictive power; does not treat them as a confound of per-graph benchmark results or evaluate on unseen users."
+        },
+        {
+          "key": "karn2025structure",
+          "read_level": "full_text",
+          "overlap": "partial",
+          "how_it_differs": "Isolates edges and features with rewiring and shuffling; keeps user nodes and random stratified folds in every condition, so the user shortcut is present throughout."
+        },
+        {
+          "key": "kim2025dawn",
+          "read_level": "full_text",
+          "overlap": "partial",
+          "how_it_differs": "Temporal split on raw FakeNewsNet; notes users' label consistency but does not measure user overlap between splits."
+        },
+        {
+          "key": "dou2021upfd",
+          "read_level": "full_text",
+          "overlap": "different",
+          "how_it_differs": "Defines the benchmark and split; no overlap analysis."
+        },
+        {
+          "key": "bryla2026networks",
+          "read_level": "not_accessible",
+          "overlap": "unknown",
+          "how_it_differs": "Not read; title and a search summary suggest structural analysis, not split leakage."
+        },
+        {
+          "key": "rai2025hypergraph",
+          "read_level": "not_accessible",
+          "overlap": "unknown",
+          "how_it_differs": "Not read; title suggests a hypergraph model on UPFD, possibly with user hyperedges."
+        }
+      ],
+      "gap_evidence": [
+        {
+          "text": "Official split files (PyG/UPFD train_idx/test_idx; 62 PolitiFact and 1092 GossipCop training graphs): a vote over the training labels of a test graph's users, with no model, text or edges, reaches 86.0% on PolitiFact and 90.2% on GossipCop (majority class 48.9% and 49.9%). 79.6% and 98.8% of test graphs share a user with training.",
+          "level": "verified",
+          "sources": [
+            "dou2021upfd"
+          ]
+        },
+        {
+          "text": "The shortcut is visible to any model through its inputs: 94.3% (spaCy history features) and 94.7% (profile features) of PolitiFact repeat users, and 86.4% of GossipCop repeat users (profile features), carry an identical feature vector in every graph they appear in. Using the feature vector itself as the identity gives the same vote accuracy (86.0% PolitiFact, 90.8% GossipCop). BERT features were not downloaded and not checked.",
+          "level": "verified",
+          "sources": [
+            "dou2021upfd"
+          ]
+        },
+        {
+          "text": "Published accuracies on the same data: UPFD 84.62 (PolitiFact) and 97.23 (GossipCop), its news-only MLPs 71.04-76.47 and 84.61-85.76; the same-feature MLP of Karn and Jensen 74.3 and 90.8; HGFND with user hyperedges only 87.23 and 97.29. The model-free user vote is at or above several of these.",
+          "level": "verified",
+          "sources": [
+            "dou2021upfd",
+            "karn2025structure",
+            "jeong2022hgfnd"
+          ]
+        },
+        {
+          "text": "That shared users predict veracity is already published: HGFND builds one hyperedge per user shared between news items (2,953 PolitiFact, 15,646 GossipCop, the same counts measured here) and reaches 87.23 / 97.29 accuracy from them alone. It treats this as a legitimate transductive signal, not as a confound of per-graph evaluations.",
+          "level": "verified",
+          "sources": [
+            "jeong2022hgfnd"
+          ]
+        },
+        {
+          "text": "No source read in full (UPFD, Karn and Jensen, DAWN, HGFND, Xu, Maurya) reports train/test user overlap for per-graph models or evaluates on unseen users.",
+          "level": "verified",
+          "sources": [
+            "dou2021upfd",
+            "karn2025structure",
+            "kim2025dawn",
+            "jeong2022hgfnd",
+            "xu2025topo",
+            "maurya2024gnndp"
+          ]
+        }
+      ],
+      "contribution": "A short benchmark-validity study: the identity shortcut quantified on the official split, its availability through feature vectors, and whether per-graph models and the 'structure adds little' conclusion change when it is controlled on PolitiFact. Either outcome is reportable; the scope suits a workshop or reproducibility track.",
+      "novelty": {
+        "confidence": "low",
+        "uncertainty": "The observation that users predict labels is published [@jeong2022hgfnd]; only its use as an evaluation confound appears open in the papers read. Three UPFD-related chapters could not be read, Semantic Scholar was rate-limited, and user-disjoint evaluation is common in neighbouring areas under other names (cold-start, inductive users).",
+        "signal": "no_close_match_in_this_search",
+        "ceiling": "low",
+        "challenge_searches": [
+          "user overlap train test leakage fake news detection social context",
+          "user-disjoint split fake news detection graph",
+          "fake news detection shortcut user identity memorization",
+          "spurious correlations social context fake news detection evaluation",
+          "unseen users generalization propagation-based fake news detection",
+          "FakeNewsNet data leakage evaluation bias",
+          "propagation graph contribution fake news detection GNN ablation",
+          "structure-agnostic baseline graph neural network misinformation benchmark",
+          "do graph neural networks need social context for fake news detection",
+          "PolitiFact GossipCop graph structure node features evaluation"
+        ]
+      },
+      "feasibility": [
+        {
+          "text": "A strict user-disjoint split is infeasible on both datasets: shared users link 93.0% of PolitiFact and 99.6% of GossipCop graphs into one component; even ignoring users in 3+ graphs the largest component holds 85.4% and 54.6%.",
+          "level": "verified"
+        },
+        {
+          "text": "Masking test-graph users seen in training is a small change on PolitiFact (8.9% of test user nodes removed; median users per test graph 91 -> 78; 2 graphs emptied) but a large distribution shift on GossipCop (71.6% removed; median 48.0 -> 6.0; 359 graphs emptied).",
+          "level": "verified"
+        },
+        {
+          "text": "PolitiFact has 221 official test graphs, so a 95% interval on accuracy is roughly +/- 5-6 points; only large differences between conditions will be detectable.",
+          "level": "estimate"
+        },
+        {
+          "text": "All checks ran on CPU from about 60 MB of index, label and feature files; models would also be CPU-scale.",
+          "level": "verified"
+        }
+      ],
+      "methodological_risks": [
+        {
+          "type": "train_test_overlap",
+          "status": "found",
+          "evidence": {
+            "text": "Official split files (PyG/UPFD train_idx/test_idx; 62 PolitiFact and 1092 GossipCop training graphs): a vote over the training labels of a test graph's users, with no model, text or edges, reaches 86.0% on PolitiFact and 90.2% on GossipCop (majority class 48.9% and 49.9%). 79.6% and 98.8% of test graphs share a user with training.",
+            "level": "verified",
+            "sources": [
+              "dou2021upfd"
+            ]
+          },
+          "mitigation": "Mask seen users in PolitiFact test graphs; report the user vote as a baseline everywhere."
+        },
+        {
+          "type": "weak_baseline",
+          "status": "found",
+          "evidence": {
+            "text": "No published UPFD comparison includes a user-identity vote or a graph-size rule; the size rule reaches 74.9% on GossipCop's official test split (fails on PolitiFact: 48.4%).",
+            "level": "verified"
+          },
+          "mitigation": "Include user vote, size rule, root-only MLP and same-feature MLP as baselines."
+        },
+        {
+          "type": "protocol_mismatch",
+          "status": "found",
+          "evidence": {
+            "text": "The official GNN-FakeNews script draws a random split instead of the fixed split files used by PyG, selects no model on validation, and differs from the paper on pooling and weight decay.",
+            "level": "verified",
+            "sources": [
+              "dou2021upfd"
+            ]
+          },
+          "mitigation": "Use the fixed split files plus repeated random splits; select on validation."
+        },
+        {
+          "type": "metric_definition",
+          "status": "found",
+          "evidence": {
+            "text": "The official evaluation helper averages macro-F1 over batches.",
+            "level": "verified",
+            "sources": [
+              "dou2021upfd"
+            ]
+          },
+          "mitigation": "Compute metrics on the whole test set."
+        },
+        {
+          "type": "insufficient_runs",
+          "status": "found",
+          "evidence": {
+            "text": "221 PolitiFact test graphs and 62 training graphs; published comparisons use 5 runs.",
+            "level": "verified",
+            "sources": [
+              "dou2021upfd"
+            ]
+          },
+          "mitigation": "10+ seeds and repeated splits with paired comparisons; report intervals."
+        },
+        {
+          "type": "distribution_shift",
+          "status": "found",
+          "evidence": {
+            "text": "Masking test-graph users seen in training is a small change on PolitiFact (8.9% of test user nodes removed; median users per test graph 91 -> 78; 2 graphs emptied) but a large distribution shift on GossipCop (71.6% removed; median 48.0 -> 6.0; 359 graphs emptied).",
+            "level": "verified"
+          },
+          "mitigation": "Make causal claims only for PolitiFact; GossipCop analysed descriptively."
+        },
+        {
+          "type": "label_leakage",
+          "status": "checked_ok",
+          "evidence": {
+            "text": "graph_labels match FakeNewsNet's fake/real lists for 313 of 314 PolitiFact and all 5,464 GossipCop graphs (one PolitiFact mismatch unexplained).",
+            "level": "verified"
+          }
+        },
+        {
+          "type": "temporal_leakage",
+          "status": "not_checked",
+          "evidence": "User features come from historical tweets crawled after the news; their timing was not examined."
+        }
+      ],
+      "decision": {
+        "verdict": "conditional_go",
+        "rationale": "The shortcut is real, large and measured on the official split, and no source read treats it as a confound of per-graph results. But the signal itself is known [@jeong2022hgfnd], the controlled experiment is only clean on PolitiFact (221 test graphs), and three related chapters are unread. Worth doing as a short, scoped benchmark-validity study, not as a full-semester flagship.",
+        "conditions": [
+          "Read [@rai2025hypergraph], [@rai2025attention] and [@bryla2026networks] through the library; if any evaluates per-graph models on unseen users or reports split overlap, reframe as a replication.",
+          "Before running models, state the smallest accuracy change on masked PolitiFact that would matter, and check it exceeds the roughly +/- 5-6 point interval from 221 test graphs; if not, keep the study descriptive.",
+          "Frame against [@jeong2022hgfnd] (users as a feature) and [@karn2025structure] (structure ablation), not as a discovery that users matter."
+        ],
+        "unresolved_risks": [
+          "BERT user features not checked for identity (only spaCy and profile features were).",
+          "Whether the user-feature timing leaks post-publication information is unknown.",
+          "Reviewers may consider the result implied by HGFND."
+        ]
+      }
+    },
+    {
+      "title": "Fallback: independent replication of Karn and Jensen with a held-out test set",
+      "category": "reported_limitation",
+      "mode": "replication",
+      "status": "rejected",
+      "research_question": "Do Karn and Jensen's conclusions (MLP within a few points of GNNs; structure negligible) hold when measured on held-out test data, on the official UPFD split and with all four feature types, and which of their inconsistent reported numbers is correct?",
+      "motivation": "The paper is the closest and most recent evidence on the question, but it is an unreviewed preprint without code whose text and table disagree [@karn2025structure].",
+      "supporting_papers": [
+        "karn2025structure",
+        "dou2021upfd"
+      ],
+      "closest_existing_work": [
+        {
+          "key": "karn2025structure",
+          "how_it_differs": "The study being replicated; no code is available, so the project is a replication, not a reproduction.",
+          "read_level": "full_text",
+          "overlap": "same_experiment"
+        }
+      ],
+      "gap_evidence": [
+        {
+          "text": "Text and Table 2 disagree (MLP on GossipCop 93.87% vs 90.8%; on PolitiFact 80.93% vs 74.3%; GAT on GossipCop 95.26% vs 91.5%)",
+          "level": "verified",
+          "sources": [
+            "karn2025structure"
+          ]
+        },
+        {
+          "text": "Results are mean validation accuracy over 10 folds; no held-out test set is described",
+          "level": "verified",
+          "sources": [
+            "karn2025structure"
+          ]
+        }
+      ],
+      "contribution": "A checked set of numbers for a claim others are likely to cite; low novelty.",
+      "novelty": {
+        "confidence": "low",
+        "uncertainty": "A camera-ready version (the acknowledgements mention one) may already correct the inconsistencies; it was not found.",
+        "signal": "no_close_match_in_this_search",
+        "challenge_searches": [
+          "UPFD fake news graph neural network content-only baseline",
+          "does propagation structure help fake news detection",
+          "propagation graph ablation fake news detection text-only baseline outperforms",
+          "rethinking evaluation fake news detection graph neural networks benchmark",
+          "user engagement graph necessary fake news detection GNN",
+          "FakeNewsNet propagation-based detection reproducibility",
+          "simple baseline fake news detection propagation graphs"
+        ]
+      },
+      "feasibility": [
+        {
+          "text": "CPU-scale; requires reimplementation from the paper's description",
+          "level": "estimate"
+        }
+      ],
+      "revision_note": "Folded into the revised question: replicating Karn and Jensen without controlling recurring users would repeat the confound; their comparison is re-run inside the PolitiFact masking study instead.",
+      "decision": {
+        "verdict": "no_go",
+        "rationale": "Subsumed by the revised question."
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "name": "UPFD (PolitiFact, GossipCop) via PyTorch Geometric",
+      "url": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.UPFD.html",
+      "purpose": "All three options",
+      "size": "PolitiFact 314 graphs / 41,054 nodes; GossipCop 5,464 graphs / 314,262 nodes (paper Table 1, confirmed by node counts in the id mappings); README states about 1.2 GB for the raw release",
+      "format": "PyG InMemoryDataset; loader reads fixed train_idx/val_idx/test_idx files",
+      "license": null,
+      "access": "reachable (HTTP 200); download via the loader from Google Drive",
+      "preprocessing": "Choose feature type: profile, spacy, bert, content",
+      "suitability": "Small; the PyG loader uses the fixed split while the original training script does not, so results from the two are not directly comparable",
+      "verified": true
+    },
+    {
+      "name": "GNN-FakeNews id mappings (node id to Twitter user id, node id to timestamp)",
+      "url": "https://github.com/safe-graph/GNN-FakeNews/tree/main/data",
+      "purpose": "User-overlap measurement (revised question)",
+      "size": "pol_id_twitter_mapping.pkl 676 KB; gos_id_twitter_mapping.pkl 6.2 MB",
+      "format": "Python pickle of dict[int, str] (opcodes checked: no object construction)",
+      "license": "Repository licence Apache-2.0 (covers the repository; data terms not stated)",
+      "access": "reachable (HTTP 200)",
+      "preprocessing": "Graphs rebuilt by walking node ids; root order matched the released news lists exactly",
+      "suitability": "Sufficient to measure overlap without downloading features",
+      "verified": true
+    },
+    {
+      "name": "FakeNewsNet fake/real id lists",
+      "url": "https://github.com/KaiDMML/FakeNewsNet/tree/master/dataset",
+      "purpose": "Labels for the overlap diagnostic",
+      "size": "four CSV files, about 44 MB in total",
+      "format": "CSV (id, news_url, title, tweet_ids)",
+      "license": null,
+      "access": "reachable (HTTP 200)",
+      "preprocessing": "Label by file name (fake/real); counts matched UPFD (157 and 2,732 fake)",
+      "suitability": "Labels only",
+      "verified": true
+    }
+  ],
+  "limitations": [
+    "Novelty of the revised question rests on searches that missed the closest paper on the original question; treat it as unverified until the library check is done.",
+    "Graph reconstruction assumes node ids are contiguous per graph with the news node first; this matched the released news list order and the paper's node totals, but was not checked against node_graph_id.npy.",
+    "Accounts appearing in thousands of GossipCop graphs were not identified; removing users in 50+ graphs lowered the GossipCop vote accuracy from 91.1% to 83.9%.",
+    "Karn and Jensen's text and table disagree; the audit quotes the table where it gives CIs and notes the conflict.",
+    "Semantic Scholar was rate-limited throughout; citing works came from OpenAlex and were screened by title only.",
+    "No model was trained and no published number was reproduced.",
+    "Not read: Bryla et al. 2026, Rai et al. 2025 (two chapters); publisher pages require login.",
+    "BERT user features (125 MB PolitiFact, 862 MB GossipCop) were not downloaded; identity was checked on spaCy and profile features (PolitiFact) and profile features (GossipCop).",
+    "The user-vote diagnostic shows that identity carries label information; it does not show how much any trained model relies on it. No model was trained."
+  ]
+}

@@ -1,0 +1,2323 @@
+{
+  "claim": "No prior work tests whether user-engagement propagation graphs add predictive value over news-content-only classifiers on the UPFD benchmark under multi-seed evaluation",
+  "queries": [
+    "UPFD fake news graph neural network content-only baseline",
+    "does propagation structure help fake news detection",
+    "propagation graph ablation fake news detection text-only baseline outperforms",
+    "rethinking evaluation fake news detection graph neural networks benchmark",
+    "user engagement graph necessary fake news detection GNN",
+    "FakeNewsNet propagation-based detection reproducibility",
+    "simple baseline fake news detection propagation graphs"
+  ],
+  "sources_ok": [
+    "openalex",
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [
+    "semantic_scholar"
+  ],
+  "sources_status": {
+    "openalex": {
+      "calls": 28,
+      "ok_calls": 28,
+      "results": 4,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "arxiv": {
+      "calls": 28,
+      "ok_calls": 28,
+      "results": 4,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "crossref": {
+      "calls": 28,
+      "ok_calls": 28,
+      "results": 418,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 28,
+      "ok_calls": 28,
+      "results": 420,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "n_papers_examined": 217,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 11,
+  "n_without_abstract": 88,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "interpretation": "No closely worded paper was retrieved, but only 1 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+        "authors": [
+          "Xu, Kaiyuan"
+        ],
+        "year": 2025,
+        "date": "2025-12-10",
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2512.09974",
+        "arxiv_id": "2512.09974",
+        "pmid": null,
+        "openalex_id": "W4417293512",
+        "s2_id": null,
+        "url": "http://arxiv.org/abs/2512.09974",
+        "pdf_url": "https://arxiv.org/pdf/2512.09974",
+        "abstract": "In recent years, the proliferation of misinformation and fake news has posed serious threats to individuals and society, spurring intense research into automated detection methods. Previous work showed that integrating content, user preferences, and propagation structure achieves strong performance, but leaves all graph-level representation learning entirely to the GNN, hiding any explicit topological cues. To close this gap, we introduce a lightweight enhancement: for each node, we append two classical graph-theoretic metrics, degree centrality and local clustering coefficient, to its original BERT and profile embeddings, thus explicitly flagging the roles of hub and community. In the UPFD Politifact subset, this simple modification boosts macro F1 from 0.7753 to 0.8344 over the original baseline. Our study not only demonstrates the practical value of explicit topology features in fake-news detection but also provides an interpretable, easily reproducible template for fusing graph metrics in other information-diffusion tasks.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "preprint",
+        "sources": [
+          "arxiv",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "keyword",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "openalex",
+            "strategy": "recent",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "simple baseline fake news detection propagation graphs"
+          }
+        ],
+        "extra": {
+          "abstract_source": "arxiv",
+          "arxiv_category": "cs.SI",
+          "rank": {
+            "query_match": 1.0,
+            "title_match": 0.5,
+            "retrieval_hits": 2,
+            "score": 2.75
+          }
+        }
+      },
+      "term_overlap": 0.341,
+      "tfidf_similarity": 0.121,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "MOSAIC: Modeling Social AI for Content Dissemination and Regulation in Multi-Agent Simulations",
+        "authors": [
+          "Genglin Liu",
+          "Salman Rahman",
+          "Elisa Kreiss",
+          "Marzyeh Ghassemi",
+          "Saadia Gabriel"
+        ],
+        "year": 2025,
+        "date": "2025-04-10",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2504.07830",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2504.07830",
+        "pdf_url": null,
+        "abstract": "We present a novel, open-source social network simulation framework, MOSAIC, where generative language agents predict user behaviors such as liking, sharing, and flagging content. This simulation combines LLM agents with a directed social graph to analyze emergent deception behaviors and gain a better understanding of how users determine the veracity of online social content. By constructing user representations from diverse fine-grained personas, our system enables multi-agent simulations that model content dissemination and engagement dynamics at scale. Within this framework, we evaluate three different content moderation strategies with simulated misinformation dissemination, and we find that they not only mitigate the spread of non-factual content but also increase user engagement. In addition, we analyze the trajectories of popular content in our simulations, and explore whether simulation agents' articulated reasoning for their social interactions truly aligns with their collective engagement patterns. We open-source our simulation software to encourage further research within AI and social sciences.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "user engagement graph necessary fake news detection GNN"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.444,
+            "title_match": 0.111,
+            "retrieval_hits": 1,
+            "score": 1.125
+          }
+        }
+      },
+      "term_overlap": 0.236,
+      "tfidf_similarity": 0.125,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "FakeNewsNet: A Data Repository with News Content, Social Context and Spatialtemporal Information for Studying Fake News on Social Media",
+        "authors": [
+          "Kai Shu",
+          "Deepak Mahudeswaran",
+          "Suhang Wang",
+          "Dongwon Lee",
+          "Huan Liu"
+        ],
+        "year": 2018,
+        "date": "2018-09-05",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "1809.01286",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/1809.01286",
+        "pdf_url": null,
+        "abstract": "Social media has become a popular means for people to consume news. Meanwhile, it also enables the wide dissemination of fake news, i.e., news with intentionally false information, which brings significant negative effects to the society. Thus, fake news detection is attracting increasing attention. However, fake news detection is a non-trivial task, which requires multi-source information such as news content, social context, and dynamic information. First, fake news is written to fool people, which makes it difficult to detect fake news simply based on news contents. In addition to news contents, we need to explore social contexts such as user engagements and social behaviors. For example, a credible user's comment that \"this is a fake news\" is a strong signal for detecting fake news. Second, dynamic information such as how fake news and true news propagate and how users' opinions toward news pieces are very important for extracting useful patterns for (early) fake news detection and intervention. Thus, comprehensive datasets which contain news content, social context, and dynamic information could facilitate fake news propagation, detection, and mitigation; while to the best of our knowledge, existing datasets only contains one or two aspects. Therefore, in this paper, to facilitate fake news related researches, we provide a fake news data repository FakeNewsNet, which contains two comprehensive datasets that includes news content, social context, and dynamic information. We present a comprehensive description of datasets collection, demonstrate an exploratory analysis of this data repository from different perspectives, and discuss the benefits of FakeNewsNet for potential applications on fake news study on social media.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "does propagation structure help fake news detection"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "user engagement graph necessary fake news detection GNN"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does propagation structure help fake news detection survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does propagation structure help fake news detection review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "FakeNewsNet propagation-based detection reproducibility survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "FakeNewsNet propagation-based detection reproducibility review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "simple baseline fake news detection propagation graphs survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "simple baseline fake news detection propagation graphs review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.333,
+            "retrieval_hits": 11,
+            "score": 2.333
+          }
+        }
+      },
+      "term_overlap": 0.257,
+      "tfidf_similarity": 0.097,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Unraveling Hidden Representations: A Multi-Modal Layer Analysis for Better Synthetic Content Forensics",
+        "authors": [
+          "Tom Or",
+          "Omri Azencot"
+        ],
+        "year": 2025,
+        "date": "2025-08-01",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2508.00784",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2508.00784",
+        "pdf_url": null,
+        "abstract": "Generative models achieve remarkable results in multiple data domains, including images and texts, among other examples. Unfortunately, malicious users exploit synthetic media for spreading misinformation and disseminating deepfakes. Consequently, the need for robust and stable fake detectors is pressing, especially when new generative models appear everyday. While the majority of existing work train classifiers that discriminate between real and fake information, such tools typically generalize only within the same family of generators and data modalities, yielding poor results on other generative classes and data domains. Towards a universal classifier, we propose the use of large pre-trained multi-modal models for the detection of generative content. Effectively, we show that the latent code of these models naturally captures information discriminating real from fake. Building on this observation, we demonstrate that linear classifiers trained on these features can achieve state-of-the-art results across various modalities, while remaining computationally efficient, fast to train, and effective even in few-shot settings. Our work primarily focuses on fake detection in audio and images, achieving performance that surpasses or matches that of strong baseline methods.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "does propagation structure help fake news detection"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.111,
+            "retrieval_hits": 2,
+            "score": 1.361
+          }
+        }
+      },
+      "term_overlap": 0.223,
+      "tfidf_similarity": 0.106,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Multilevel User Credibility Assessment in Social Networks",
+        "authors": [
+          "Mohammad Moradi",
+          "Mostafa Haghir Chehreghani"
+        ],
+        "year": 2023,
+        "date": "2023-09-23",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2309.13305",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2309.13305",
+        "pdf_url": null,
+        "abstract": "Online social networks serve as major platforms for disseminating both real and fake news. Many users--intentionally or unintentionally--spread harmful content, misinformation, and rumors in domains such as politics and business. Consequently, user credibility assessment has become a prominent area of research in recent years. Most existing methods suffer from two key limitations. First, they treat credibility as a binary task, labeling users as either genuine or fake, whereas real-world applications often demand a more nuanced, multilevel evaluation. Second, they rely on only a subset of relevant features, which constrains their predictive performance. In this paper, we address the lack of a dataset suitable for multilevel credibility assessment by first devising a collection method tailored to this task. We then propose the MultiCred model, which assigns users to one of several credibility tiers based on a rich and diverse set of features extracted from their profiles, tweets, and comments. MultiCred leverages deep language models for textual analysis and deep neural networks for non-textual data processing. Our extensive experiments demonstrate that MultiCred significantly outperforms existing approaches across multiple accuracy metrics. Our code is publicly available at https://github.com/Mohammad-Moradi/MultiCred.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "user engagement graph necessary fake news detection GNN"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.125,
+            "retrieval_hits": 6,
+            "score": 1.958
+          }
+        }
+      },
+      "term_overlap": 0.239,
+      "tfidf_similarity": 0.084,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Implementation of Weight Adjusting GNN With Differentiable Pooling for User Preference-aware Fake News Detection",
+        "authors": [
+          "Jay Prakash Maurya",
+          "Vivek Richhariya",
+          "Bhupesh Gour",
+          "Vinesh Kumar"
+        ],
+        "year": 2024,
+        "date": "2024-02-09",
+        "venue": null,
+        "doi": "10.21203/rs.3.rs-3942141/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21203/rs.3.rs-3942141/v1",
+        "pdf_url": null,
+        "abstract": "Abstract In the last few years, false news has hurt people and society, drawing attention to classify and identify news as fake or True. Major fake news detection algorithms either largely trust textual information via learning the internal knowledge of the extracted news material or writing style, or they focus on mining news content. To differentiate between fake and real news, the proposed experiment processes news information as a graph neural network with an attention-based differentiable pooling model. This sets the way for the user preference-aware fake detection (UPFD) in a graph-based structure. The attention-based differentiable pooling approach allows GNNs to adaptively extract information from the network by focusing on the most relevant nodes for a given task. One significant improvement is in the way the input data is formatted for the learning schema; in paired scenarios, tweet vectors are essential. Each pair includes a potential fake vector and a true vector; the latter's classification accuracy depends on how similar or different it is from the former. In particular, when it comes to historical events, the novel way that knowledge sets are handled in graph form and arranged in pairs of related terms provides a unique method for determining the veracity of news. To improve validation accuracy and learning, the proposed GNN-DP model also presents a comparison between the standard layer and the embedding layer. Moreover, comprehensive analyses and direct comparisons of the graph convolutional network (GCN) model's performance have been achieved by experimental evaluations.",
+        "citations": 2,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "user engagement graph necessary fake news detection GNN"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "user engagement graph necessary fake news detection GNN"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.778,
+            "title_match": 0.625,
+            "retrieval_hits": 3,
+            "score": 2.591
+          }
+        }
+      },
+      "term_overlap": 0.224,
+      "tfidf_similarity": 0.078,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Novel approaches to fake news and fake account detection in OSNs: user social engagement and visual content centric model",
+        "authors": [
+          "Santosh Kumar Uppada",
+          "K. Manasa",
+          "B. Vidhathri",
+          "R. Harini",
+          "B. Sivaselvan"
+        ],
+        "year": 2022,
+        "date": "2022-05-10",
+        "venue": "Social Network Analysis and Mining",
+        "doi": "10.1007/s13278-022-00878-9",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/s13278-022-00878-9",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 41,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "user engagement graph necessary fake news detection GNN"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.625,
+            "retrieval_hits": 1,
+            "score": 2.122
+          }
+        }
+      },
+      "term_overlap": 0.135,
+      "tfidf_similarity": 0.158,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "RP-DNN: A Tweet level propagation context based deep neural networks for early rumor detection in Social Media",
+        "authors": [
+          "Jie Gao",
+          "Sooji Han",
+          "Xingyi Song",
+          "Fabio Ciravegna"
+        ],
+        "year": 2020,
+        "date": "2020-02-28",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2002.12683",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2002.12683",
+        "pdf_url": null,
+        "abstract": "Early rumor detection (ERD) on social media platform is very challenging when limited, incomplete and noisy information is available. Most of the existing methods have largely worked on event-level detection that requires the collection of posts relevant to a specific event and relied only on user-generated content. They are not appropriate to detect rumor sources in the very early stages, before an event unfolds and becomes widespread. In this paper, we address the task of ERD at the message level. We present a novel hybrid neural network architecture, which combines a task-specific character-based bidirectional language model and stacked Long Short-Term Memory (LSTM) networks to represent textual contents and social-temporal contexts of input source tweets, for modelling propagation patterns of rumors in the early stages of their development. We apply multi-layered attention models to jointly learn attentive context embeddings over multiple context inputs. Our experiments employ a stringent leave-one-out cross-validation (LOO-CV) evaluation setup on seven publicly available real-life rumor event data sets. Our models achieve state-of-the-art(SoA) performance for detecting unseen rumors on large augmented data which covers more than 12 events and 2,967 rumors. An ablation study is conducted to understand the relative contribution of each component of our proposed model.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "propagation graph ablation fake news detection text-only baseline outperforms"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "propagation graph ablation fake news detection text-only baseline outperforms survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "propagation graph ablation fake news detection text-only baseline outperforms review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 1.875
+          }
+        }
+      },
+      "term_overlap": 0.225,
+      "tfidf_similarity": 0.062,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "How well are open sourced AI-generated image detection models out-of-the-box: A comprehensive benchmark study",
+        "authors": [
+          "Simiao Ren",
+          "Yuchen Zhou",
+          "Xingyu Shen",
+          "Kidus Zewde",
+          "Tommy Duong",
+          "George Huang",
+          "Hatsanai",
+          "Tiangratanakul",
+          "Tsang",
+          "Ng",
+          "En Wei",
+          "Jiayu Xue"
+        ],
+        "year": 2026,
+        "date": "2026-02-08",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2602.07814",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2602.07814",
+        "pdf_url": null,
+        "abstract": "As AI-generated images proliferate across digital platforms, reliable detection methods have become critical for combating misinformation and maintaining content authenticity. While numerous deepfake detection methods have been proposed, existing benchmarks predominantly evaluate fine-tuned models, leaving a critical gap in understanding out-of-the-box performance -- the most common deployment scenario for practitioners. We present the first comprehensive zero-shot evaluation of 16 state-of-the-art detection methods, comprising 23 pretrained detector variants (due to multiple released versions of certain detectors), across 12 diverse datasets, comprising 2.6~million image samples spanning 291 unique generators including modern diffusion models. Our systematic analysis reveals striking findings: (1)~no universal winner exists, with detector rankings exhibiting substantial instability (Spearman~ρ: 0.01 -- 0.87 across dataset pairs); (2)~a 37~percentage-point performance gap separates the best detector (75.0\\% mean accuracy) from the worst (37.5\\%); (3)~training data alignment critically impacts generalization, causing up to 20--60\\% performance variance within architecturally identical detector families; (4)~modern commercial generators (Flux~Dev, Firefly~v4, Midjourney~v7) defeat most detectors, achieving only 18--30\\% average accuracy; and (5)~we identify three systematic failure patterns affecting cross-dataset generalization. Statistical analysis confirms significant performance differences between detectors (Friedman test: χ^2=121.01, p<10^{-16}, Kendall~W=0.524). Our findings challenge the ``one-size-fits-all'' detector paradigm and provide actionable deployment guidelines, demonstrating that practitioners must carefully select detectors based on their specific threat landscape rather than relying on published benchmark performance.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "FakeNewsNet propagation-based detection reproducibility survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "FakeNewsNet propagation-based detection reproducibility review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.333,
+            "title_match": 0.25,
+            "retrieval_hits": 3,
+            "score": 1.292
+          }
+        }
+      },
+      "term_overlap": 0.229,
+      "tfidf_similarity": 0.057,
+      "is_survey_like": true,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "How to Train Your Fact Verifier: Knowledge Transfer with Multimodal Open Models",
+        "authors": [
+          "Jaeyoung Lee",
+          "Ximing Lu",
+          "Jack Hessel",
+          "Faeze Brahman",
+          "Youngjae Yu",
+          "Yonatan Bisk",
+          "Yejin Choi",
+          "Saadia Gabriel"
+        ],
+        "year": 2024,
+        "date": "2024-06-29",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2407.00369",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2407.00369",
+        "pdf_url": null,
+        "abstract": "Given the growing influx of misinformation across news and social media, there is a critical need for systems that can provide effective real-time verification of news claims. Large language or multimodal model based verification has been proposed to scale up online policing mechanisms for mitigating spread of false and harmful content. While these can potentially reduce burden on human fact-checkers, such efforts may be hampered by foundation model training data becoming outdated. In this work, we test the limits of improving foundation model performance without continual updating through an initial study of knowledge transfer using either existing intra- and inter- domain benchmarks or explanations generated from large language models (LLMs). We evaluate on 12 public benchmarks for fact-checking and misinformation detection as well as two other tasks relevant to content moderation -- toxicity and stance detection. Our results on two recent multi-modal fact-checking benchmarks, Mocheg and Fakeddit, indicate that knowledge transfer strategies can improve Fakeddit performance over the state-of-the-art by up to 1.7% and Mocheg performance by up to 2.9%.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.333,
+            "title_match": 0.0,
+            "retrieval_hits": 3,
+            "score": 1.042
+          }
+        }
+      },
+      "term_overlap": 0.197,
+      "tfidf_similarity": 0.079,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Leveraging Hypergraph Neural Network for Fake News Detection on UPFD Dataset",
+        "authors": [
+          "Vandana Rai",
+          "Sakshi Rai"
+        ],
+        "year": 2025,
+        "date": "2025",
+        "venue": "Studies in Smart Technologies Intelligent Vision and Computing",
+        "doi": "10.1007/978-981-96-4722-4_9",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/978-981-96-4722-4_9",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "book-chapter",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.556,
+            "retrieval_hits": 3,
+            "score": 2.042
+          }
+        }
+      },
+      "term_overlap": 0.095,
+      "tfidf_similarity": 0.177,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Digital cloning of online social networks for language-sensitive agent-based modeling of misinformation spread",
+        "authors": [
+          "Prateek Puri",
+          "Gabriel Hassler",
+          "Anton Shenk",
+          "Sai Katragadda"
+        ],
+        "year": 2024,
+        "date": "2024-01-23",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2401.12509",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2401.12509",
+        "pdf_url": null,
+        "abstract": "We develop a simulation framework for studying misinformation spread within online social networks that blends agent-based modeling and natural language processing techniques. While many other agent-based simulations exist in this space, questions over their fidelity and generalization to existing networks in part hinders their ability to provide actionable insights. To partially address these concerns, we create a 'digital clone' of a known misinformation sharing network by downloading social media histories for over ten thousand of its users. We parse these histories to both extract the structure of the network and model the nuanced ways in which information is shared and spread among its members. Unlike many other agent-based methods in this space, information sharing between users in our framework is sensitive to topic of discussion, user preferences, and online community dynamics. To evaluate the fidelity of our method, we seed our cloned network with a set of posts recorded in the base network and compare propagation dynamics between the two, observing reasonable agreement across the twin networks over a variety of metrics. Lastly, we explore how the cloned network may serve as a flexible, low-cost testbed for misinformation countermeasure evaluation and red teaming analysis. We hope the tools explored here augment existing efforts in the space and unlock new opportunities for misinformation countermeasure evaluation, a field that may become increasingly important to consider with the anticipated rise of misinformation campaigns fueled by generative artificial intelligence.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "does propagation structure help fake news detection"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does propagation structure help fake news detection survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does propagation structure help fake news detection review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "FakeNewsNet propagation-based detection reproducibility survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "FakeNewsNet propagation-based detection reproducibility review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "does propagation structure help fake news detection"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "propagation graph ablation fake news detection text-only baseline outperforms"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "simple baseline fake news detection propagation graphs"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.333,
+            "title_match": 0.111,
+            "retrieval_hits": 8,
+            "score": 1.278
+          }
+        }
+      },
+      "term_overlap": 0.193,
+      "tfidf_similarity": 0.066,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "A hybrid contrastive graph neural network framework for fake news and hate speech detection using content and user interaction signals",
+        "authors": [
+          "V. S. Nivedita",
+          "A. Bazila Banu"
+        ],
+        "year": 2025,
+        "date": "2025-12-04",
+        "venue": "Scientific Reports",
+        "doi": "10.1038/s41598-025-30299-5",
+        "arxiv_id": null,
+        "pmid": "41345193",
+        "openalex_id": "W4417002127",
+        "s2_id": null,
+        "url": "https://doi.org/10.1038/s41598-025-30299-5",
+        "pdf_url": "https://www.nature.com/articles/s41598-025-30299-5_reference.pdf",
+        "abstract": "Detecting fake discussions and aggressive speech on social platforms remains a complex task due to evolving user dynamics and the minimal overlap between normal and harmful content. Traditional detection methods lag in classifying these contents as they focus only on textual features or user behavior. This leads to limited performance specially in sparse interaction environments. To overcome these limitations a hybrid graph-based classification model is proposed in this research work which incorporates semantic, behavioral, and contextual data into a combined architecture. The proposed system models content and users as nodes, with interaction types such as replies, mentions, and shares to create a forming weighted edges based on temporal and behavioral factors. Also, a contrastive strategy is incorporated to differentiate the aligned and conflicting user-content associations. The textual representation in the comments is captured using a semantic encoder and the relational dependencies are modeled through graph attention layers which further enhanced with metadata like credibility scores and user activity. Experimental evaluations using the FakeNewsNet dataset confirm the proposed model superior performance through the attained 97.12% accuracy which is superior over conventional methods like GRU-MCAF (94.82%) and Attention-LSTM (93.57%). The proposed model also recorded the highest F1-score of 96.43%, precision of 96.72%, and recall of 96.15% which indicates the model consistent classification across labels over conventional methods.",
+        "citations": 1,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "user engagement graph necessary fake news detection GNN"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "user engagement graph necessary fake news detection GNN"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 6,
+            "score": 2.523
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W3100763318",
+            "W4205415902",
+            "W4225158996",
+            "W4226530281",
+            "W4288064511",
+            "W4317496106",
+            "W4328008002",
+            "W4328008031",
+            "W4380607273",
+            "W4391590786",
+            "W4392881469",
+            "W4398788568",
+            "W4399796149",
+            "W4404459606",
+            "W4405566696",
+            "W4407128422",
+            "W4410301129",
+            "W4411446363"
+          ]
+        }
+      },
+      "term_overlap": 0.186,
+      "tfidf_similarity": 0.07,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "DPSG: Dynamic Propagation Social Graphs for multi-modal fake news detection",
+        "authors": [
+          "Caixia Jing",
+          "Hang Gao",
+          "Xinpeng Zhang",
+          "Tiegang Gao",
+          "Chuan Zhou"
+        ],
+        "year": 2025,
+        "date": "2025-01",
+        "venue": "Information Fusion",
+        "doi": "10.1016/j.inffus.2024.102595",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.inffus.2024.102595",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 21,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "simple baseline fake news detection propagation graphs survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "simple baseline fake news detection propagation graphs review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "simple baseline fake news detection propagation graphs"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.714,
+            "title_match": 0.714,
+            "retrieval_hits": 3,
+            "score": 2.619
+          }
+        }
+      },
+      "term_overlap": 0.113,
+      "tfidf_similarity": 0.142,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Multi-view Fake News Detection method based on graph neural network",
+        "authors": [
+          "Zhiqiang Wang",
+          "Qianli Huang",
+          "Kaixin Wang",
+          "Junlai Luo",
+          "Zhenguo Dong"
+        ],
+        "year": 2025,
+        "date": "2025-09-30",
+        "venue": "KSII Transactions on Internet and Information Systems",
+        "doi": "10.3837/tiis.2025.09.016",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4414623217",
+        "s2_id": null,
+        "url": "https://doi.org/10.3837/tiis.2025.09.016",
+        "pdf_url": "https://itiis.org/digital-library/manuscript/file/103318/TIIS Vol 19, No 9-16.pdf",
+        "abstract": "The rapid growth of content on social media-ranging from videos and images to text-has made information highly accessible but also increasingly vulnerable to manipulation.Malicious entities exploit this openness to spread false news that influences public opinion, especially during critical events.This phenomenon has driven significant attention toward automatic fake news detection.Our proposed approach addresses this challenge by integrating structural, temporal, and semantic cues within a dynamic graph-based framework.Unlike traditional methods that rely solely on static features or standalone natural language processing, our model captures the evolving nature of social interactions and news propagation patterns over time.This enables a more comprehensive and context aware detection of fake news, outperforming existing static graph models in both accuracy and temporal sensitivity.Therefore, in this paper, we propose a novel method called Multi-view Fake News Detection (MvFD), which simultaneously captures the temporal interaction of entities in social networks, user preferences, and news content, and utilizes the captured signals for modeling.Experimental results demonstrate the effectiveness of the model on real-world datasets.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 4,
+            "score": 2.5
+          },
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.177,
+      "tfidf_similarity": 0.077,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "A Hybrid Multimodal Graph Neural Network for Explainable Fake News Detection on Social Media",
+        "authors": [
+          "Vinit Kumar",
+          "Shubham Kumar Singh"
+        ],
+        "year": 2026,
+        "date": "2026-01-27",
+        "venue": null,
+        "doi": "10.36227/techrxiv.176948905.59357369/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.36227/techrxiv.176948905.59357369/v1",
+        "pdf_url": null,
+        "abstract": "The rapid spread of misinformation across social media platforms has created significant problems for information integrity and public trust. This research presents a new hybrid multimodal graph neural network architecture that combines text, images, and social network patterns to identify fake news articles while explaining its reasoning. Our proposed system uses heterogeneous graph construction techniques to map out the complex relationships between users, the content they share, and how it spreads. By using attention mechanisms and graph convolution, the system achieves excellent classification results and provides human-readable explanations by highlighting key subgraphs and features. Experiments on three benchmark datasets show that our approach achieves 92.4% accuracy, outperforming existing stateof-the-art methods while offering meaningful visual and textual explanations. These explanations help identify the specific propagation patterns and content features that separate real news from fake, giving content moderators and platform administrators the tools they need to make better decisions.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "user engagement graph necessary fake news detection GNN"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.833,
+            "title_match": 0.667,
+            "retrieval_hits": 5,
+            "score": 2.833
+          }
+        }
+      },
+      "term_overlap": 0.178,
+      "tfidf_similarity": 0.073,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Beyond Planar Road Networks: Integrating AI-Based Incident Detection with 3D Vertical Topology for Urban Congestion Propagation",
+        "authors": [
+          "Mohamed El Mekawy"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": null,
+        "doi": "10.2139/ssrn.7570289",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.7570289",
+        "pdf_url": null,
+        "abstract": "Urban road networks are three-dimensional structures, yet most geospatial models represent them as planar graphs that collapse bridges, tunnels, and elevated highways onto a single level, erasing the vertical topological connections that govern how traffic disruptions propagate through a city. This paper presents a proof-of-concept GeoAI pipeline integrating AI-based vehicle detection, a 3D topological road network with explicit vertical levels extracted from OpenStreetMap, and a vertical-decay breadth-first search propagation model validated against independent microscopic traffic simulation (SUMO), rather than the model&amp;apos;s own internal assumptions. Applied to a confirmed high-traffic bridge segment in Berlin&amp;apos;s road network, the 3D model shows a small positive correlation with observed simulated congestion (Spearman rho = 0.317, p = 0.186) and is shown to structurally converge to a connectivity-restricted 2D baseline as vertical decay strength increases, an internal consistency property independent of the statistical result. YOLOv8, applied without fine-tuning to a 184-image subset of UA-DETRAC frames, achieves 0.777 precision and 0.847 recall. Results are reported as a single-incident, single-seed proof of concept with full transparency about statistical power, and the multi-incident, multi-seed extension needed for a stronger quantitative claim is outlined as future work. The framework relies entirely on open-source components and freely available geographic data, supporting potential deployment across any city with adequate OpenStreetMap coverage.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.768
+          }
+        }
+      },
+      "term_overlap": 0.185,
+      "tfidf_similarity": 0.063,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Bots Shield Fake News: Adversarial Attack on User Engagement based Fake News Detection",
+        "authors": [
+          "Lanjun Wang",
+          "Zehao Wang",
+          "Le Wu",
+          "An-An Liu"
+        ],
+        "year": 2024,
+        "date": "2024-10-21",
+        "venue": "Proceedings of the 33rd ACM International Conference on Information and Knowledge Management",
+        "doi": "10.1145/3627673.3679583",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/3627673.3679583",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 6,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "user engagement graph necessary fake news detection GNN"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "user engagement graph necessary fake news detection GNN"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.625,
+            "retrieval_hits": 3,
+            "score": 2.313
+          }
+        }
+      },
+      "term_overlap": 0.106,
+      "tfidf_similarity": 0.141,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Fake News Detection on Social Media: A Data Mining Perspective",
+        "authors": [
+          "Kai Shu",
+          "Amy Sliva",
+          "Suhang Wang",
+          "Jiliang Tang",
+          "Huan Liu"
+        ],
+        "year": 2017,
+        "date": "2017-09-03",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "1708.01967",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/1708.01967",
+        "pdf_url": null,
+        "abstract": "Social media for news consumption is a double-edged sword. On the one hand, its low cost, easy access, and rapid dissemination of information lead people to seek out and consume news from social media. On the other hand, it enables the wide spread of \"fake news\", i.e., low quality news with intentionally false information. The extensive spread of fake news has the potential for extremely negative impacts on individuals and society. Therefore, fake news detection on social media has recently become an emerging research that is attracting tremendous attention. Fake news detection on social media presents unique characteristics and challenges that make existing detection algorithms from traditional news media ineffective or not applicable. First, fake news is intentionally written to mislead readers to believe false information, which makes it difficult and nontrivial to detect based on news content; therefore, we need to include auxiliary information, such as user social engagements on social media, to help make a determination. Second, exploiting this auxiliary information is challenging in and of itself as users' social engagements with fake news produce data that is big, incomplete, unstructured, and noisy. Because the issue of fake news detection on social media is both challenging and relevant, we conducted this survey to further facilitate research on the problem. In this survey, we present a comprehensive review of detecting fake news on social media, including fake news characterizations on psychology and social theories, existing algorithms from a data mining perspective, evaluation metrics and representative datasets. We also discuss related research areas, open problems, and future research directions for fake news detection on social media.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "does propagation structure help fake news detection"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "propagation graph ablation fake news detection text-only baseline outperforms"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "user engagement graph necessary fake news detection GNN"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does propagation structure help fake news detection survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does propagation structure help fake news detection review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "propagation graph ablation fake news detection text-only baseline outperforms survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "propagation graph ablation fake news detection text-only baseline outperforms review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "simple baseline fake news detection propagation graphs survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "simple baseline fake news detection propagation graphs review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.5,
+            "retrieval_hits": 14,
+            "score": 2.333
+          }
+        }
+      },
+      "term_overlap": 0.175,
+      "tfidf_similarity": 0.069,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Towards Real-Time Fake News Detection under Evidence Scarcity",
+        "authors": [
+          "Guangyu Wei",
+          "Ke Han",
+          "Yueming Lyu",
+          "Yu Luo",
+          "Yue Jiang",
+          "Caifeng Shan",
+          "Nicu Sebe"
+        ],
+        "year": 2025,
+        "date": "2025-10-13",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2510.11277",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2510.11277",
+        "pdf_url": null,
+        "abstract": "Fake news detection becomes particularly challenging in real-time scenarios, where emerging events often lack sufficient supporting evidence. Existing approaches often rely heavily on external evidence and therefore struggle to generalize under evidence scarcity. To address this issue, we propose Evaluation-Aware Selection of Experts (EASE), a novel framework for real-time fake news detection that dynamically adapts its decision-making process according to the assessed sufficiency of available evidence. EASE introduces a sequential evaluation mechanism comprising three independent perspectives: (1) Evidence-based evaluation, which assesses evidence and incorporates it into decision-making only when the evidence is sufficiently supportive; (2) Reasoning-based evaluation, which leverages the world knowledge of large language models (LLMs) and applies them only when their reliability is adequately established; and (3) Sentiment-based fallback, which integrates sentiment cues when neither evidence nor reasoning is reliable. To enhance the accuracy of evaluation processes, EASE employs instruction tuning with pseudo labels to guide each evaluator in justifying its perspective-specific knowledge through interpretable reasoning. Furthermore, the expert modules integrate the evaluators' justified assessments with the news content to enable evaluation-aware decision-making, thereby enhancing overall detection accuracy. Moreover, we introduce RealTimeNews-25, a new benchmark comprising recent news for evaluating model generalization on emerging news with limited evidence. Extensive experiments demonstrate that EASE not only achieves state-of-the-art performance across multiple benchmarks, but also significantly improves generalization to real-time news. The code and dataset are available: https://github.com/wgyhhhh/EASE.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "propagation graph ablation fake news detection text-only baseline outperforms review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "FakeNewsNet propagation-based detection reproducibility review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "propagation graph ablation fake news detection text-only baseline outperforms"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "rethinking evaluation fake news detection graph neural networks benchmark"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "user engagement graph necessary fake news detection GNN"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "simple baseline fake news detection propagation graphs"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.5,
+            "retrieval_hits": 12,
+            "score": 2.111
+          }
+        }
+      },
+      "term_overlap": 0.168,
+      "tfidf_similarity": 0.074,
+      "is_survey_like": false,
+      "has_abstract": true
+    }
+  ],
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "does propagation structure help fake news detection",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "does propagation structure help fake news detection",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "does propagation structure help fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "does propagation structure help fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility survey",
+      "results": 13,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "does propagation structure help fake news detection",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "does propagation structure help fake news detection",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "does propagation structure help fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "does propagation structure help fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-18"
+}

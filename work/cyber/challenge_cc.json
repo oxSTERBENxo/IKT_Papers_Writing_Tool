@@ -1,0 +1,4454 @@
+{
+  "claim": "Replicating the Allodi-Massacci case-control study of CVSS severity versus exploitation using the CISA Known Exploited Vulnerabilities catalog as ground truth",
+  "queries": [
+    "case-control study CVSS known exploited vulnerabilities",
+    "CVSS score KEV odds ratio",
+    "replication CVSS exploitation case-control",
+    "does high CVSS severity predict CISA KEV inclusion",
+    "CVSS sub-scores exploited in the wild statistical test"
+  ],
+  "design_elements": [
+    "case-control sampling",
+    "odds ratio",
+    "CISA KEV ground truth"
+  ],
+  "design_queries": [
+    "case-control sampling Allodi-Massacci case-control Vulnerabilities",
+    "odds ratio Allodi-Massacci case-control Vulnerabilities",
+    "CISA KEV ground truth Allodi-Massacci case-control Vulnerabilities"
+  ],
+  "anchor": "Allodi-Massacci case-control Vulnerabilities",
+  "seeds": [
+    {
+      "seed": "1301.1275",
+      "resolved": true,
+      "title": "My Software has a Vulnerability, should I worry?",
+      "openalex_id": null
+    }
+  ],
+  "sources_ok": [
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [
+    "openalex",
+    "semantic_scholar"
+  ],
+  "sources_status": {
+    "openalex": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: quota exhausted (X-RateLimit-Reset=8450). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "arxiv": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "crossref": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 285,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "query_diversity": {
+    "n_queries": 5,
+    "distinct_terms": 21,
+    "mean_pairwise_term_overlap": 0.151,
+    "near_paraphrases": false
+  },
+  "n_papers_examined": 325,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 7,
+  "n_without_abstract": 128,
+  "n_from_citation_expansion": 50,
+  "n_possible_same_design": 0,
+  "n_design_matches_off_topic": 8,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "ceiling_lowered_because": [
+    "sources failed: openalex, semantic_scholar",
+    "citation expansion partly failed (4 call(s): not_found, rate_limited)",
+    "50% of the ten closest records have no abstract"
+  ],
+  "interpretation": "No closely worded paper was retrieved among related work. This supports only an 'unverified novelty hypothesis'; coverage was degraded (openalex, semantic_scholar failed).",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Prediction Meets Patch Queues: Empirical Limits of EPSS-Only Prioritization Using CISA KEV Additions in 2025",
+        "authors": [
+          "Sergey Gordeychik"
+        ],
+        "year": 2026,
+        "date": "2026-01-16",
+        "venue": null,
+        "doi": "10.36227/techrxiv.176857939.95987957/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.36227/techrxiv.176857939.95987957/v1",
+        "pdf_url": null,
+        "abstract": "The Exploit Prediction Scoring System (EPSS) is often operationalized as a \"patch gate\": remediate vulnerabilities whose predicted exploitation probability exceeds a chosen threshold. The CISA Known Exploited Vulnerabilities (KEV) catalog represents a stricter notion of ground truth: exploitation has been observed and confirmed. Using all KEV entries added in 2025, endof-year EPSS scores for the 2025 CVE population, and weekly EPSS snapshots throughout 2025, we quantify: (i) the coverage gap where EPSS scores are unavailable at the KEV decision time; (ii) the recall of exploited vulnerabilities under common EPSS thresholds; (iii) score drift and \"catch-up\" latency as EPSS evolves over time; and (iv) the operational consequences of EPSSonly intake under finite patch capacity. We further decompose the delay at the KEV inclusion moment into signal lag (EPSS not yet actionable) and ops lag (actionable but queued), showing that increasing patch capacity cannot compensate for a missing or late signal. Code, datasets: https://github.com/scadastrangelove/kev_vs_epss.",
+        "citations": 3,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "does high CVSS severity predict CISA KEV inclusion",
+            "position": 5
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does high CVSS severity predict CISA KEV inclusion survey",
+            "position": 5
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does high CVSS severity predict CISA KEV inclusion review",
+            "position": 5
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "does high CVSS severity predict CISA KEV inclusion",
+            "position": 5
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "CISA KEV ground truth Allodi-Massacci case-control Vulnerabilities",
+            "position": 5
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.286,
+            "retrieval_hits": 3,
+            "score": 1.706
+          }
+        }
+      },
+      "term_overlap": 0.46,
+      "tfidf_similarity": 0.168,
+      "design_elements_matched": [
+        "CISA KEV ground truth"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "A methodology to perform cross-ecosystems case-control security studies",
+        "authors": [
+          "Yuan Feng",
+          "Ranindya Paramitha",
+          "Carlos E. Budde",
+          "Fabio Massacci"
+        ],
+        "year": 2026,
+        "date": "2026-07-18",
+        "venue": "Empirical Software Engineering",
+        "doi": "10.1007/s10664-026-10873-9",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "340ffb255311ce14a49f0bdf4d977383963144cd",
+        "url": "https://www.semanticscholar.org/paper/340ffb255311ce14a49f0bdf4d977383963144cd",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10664-026-10873-9.pdf",
+        "abstract": "The choice of one’s programming language and relative ecosystem of libraries can affect the likelihood of encountering a critical vulnerability. Simply counting the vulnerabilities by mining a software repository is not enough, and case-control studies are a well-accepted methodology to determine relative risk. Yet, they require the ability to compare ‘equals with equals’ as a library for text processing is likely subject to less security scrutiny than a library for web applications. To compare libraries, we implemented a human-guided protocol to transfer classification categories from an ecosystem to libraries of another ecosystem. By building of this categorization, we performed a case-control study with the vulnerabilities available on Snyk and with status ’reviewed’ in the Github security Advisories till 2024. We mapped 76 Java/Maven libraries and 221 Python/PyPI packages as ’cases’ (libraries with vulnerabilities with a CVSS critical score) compared them against 58 Java/Maven and 166 Python/PyPI ’controls’ (Only with a high CVSS score). We found and overall the odds ratio of ending with a critical vulnerability is slightly higher when using a Java/Maven library in comparison to using a Python/PyPi package (1.13x). We refine the analysis to understand possible reasons for our result by using the CVSS vector metric. A possible explanation is that a vulnerability with low attack complexity has disproportionately higher chances to be critical in Java/Maven (38.9x) than in Python/PyPI (5.9x). Such results might be explained by the lack of past security interest in the Python ecosystem. By using the introduction of the OWASP dependency checker in 2023 for Python as possible indication of community interest, we found a risk reversal: after 2023 the risk of ending with a critical vulnerability (as opposed to just a high severity one) is significantly higher (2.4x) for a Python/PyPI package than for a Java/Maven library. To allow replication and updates, we make the dataset and the protocol individual steps available as open data.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "1301.1275"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "1301.1275"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.173,
+      "tfidf_similarity": 0.062,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Odds Ratio Methods for Case‐Control Data",
+        "authors": [],
+        "year": 2002,
+        "date": "2002-01-11",
+        "venue": "Wiley Series in Probability and Statistics Biostatistical Methods in Epidemiology",
+        "doi": "10.1002/0471272612.ch11",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1002/0471272612.ch11",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "other",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 7
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.839
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.141,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Explainable Risk-Based Vulnerability Prioritization in Hybrid Cloud: Integrating CVSS, EPSS, and CISA KEV with Asset Criticality Signals",
+        "authors": [
+          "Kelvin Gyimah Agyei",
+          "Marlon Bryce Monjoma",
+          "Claude Anesu Samushonga",
+          "Hilton Hatitye Chisora",
+          "Tendai Nemure",
+          "Salvation Gwangwava",
+          "Munashe Naphtali Mupa"
+        ],
+        "year": 2026,
+        "date": "2026-04-30",
+        "venue": "World Journal of Advanced Research and Reviews",
+        "doi": "10.30574/wjarr.2026.30.1.1006",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.30574/wjarr.2026.30.1.1006",
+        "pdf_url": null,
+        "abstract": "The paper describes a risk-based, explainable vulnerability prioritization scheme that is specific to a hybrid cloud environment, incorporates CVSS (severity), EPSS (probability of exploitation), CISA KEV (evidence of active exploitation), and asset criticality indicators (criticality tier, exposure, compensating controls), to make optimal remediation decisions. The hybrid clouds, which consist of on-premises, public (AWS, Azure, Google Cloud), and private cases, generate dynamic and fragmented surfaces of attack, with temporary assets and collective security efforts. By 2025, the NVD will have published to the database around 48,185 new CVEs (an increase of 20.6% over 2024), bringing the overall count to more than 308,000 and producing tens of thousands of findings per scan cycle in an average enterprise. Conventional CVSS-only prioritization causes alert fatigue, ineffective utilization of resources and long-term exposure since scores are fixed, theoretical, and context-independent, and do not correlate well with actual exploitation. The framework combines these signals into a clear weighted linear composite score, augmented with rule-based overrides (e.g. KEV-listed CVEs automatically escalate to Critical) and a transparency layer, which gives contribution breakdowns, natural-language descriptions, and audit-readable logs. Simulated hybrid dataset (approximately 25,000 vulnerabilities on 12,000 asset) evaluations have demonstrated 80-95 percent decrease in urgent remediation tasks compared to CVSS baseline, 85-92 percent exploit vulnerability recall, efficiency ratio of about 4.7 times, and a reduction in exposure period of high-risk items to around 9 days versus 41 days. The internet-facing critical assets were properly raised by the Hybrid-specific context amplification. This provides a lightweight, interpretable model that can be deployed using existing tools/APIs and governance-aligned transparency that can be audited and reported using ISO 27001/SOC 2 tools and executive reporting. Guidelines on implementation include workflows, SLAS (e.g. 7 days in case of KEV) and dashboards. Limitations (e.g. dependency on asset tagging, non-linearity in KEV) are identified, and directions of future research, which may potentially include non-linear ML with SHAP explainability and cloud-native signals are noted.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "does high CVSS severity predict CISA KEV inclusion",
+            "position": 4
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does high CVSS severity predict CISA KEV inclusion survey",
+            "position": 4
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does high CVSS severity predict CISA KEV inclusion review",
+            "position": 4
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "does high CVSS severity predict CISA KEV inclusion",
+            "position": 4
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.8,
+            "title_match": 0.429,
+            "retrieval_hits": 3,
+            "score": 2.404
+          }
+        }
+      },
+      "term_overlap": 0.353,
+      "tfidf_similarity": 0.097,
+      "design_elements_matched": [
+        "case-control sampling"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Confidence intervals for the odds ratio in case-control studies: the state of the art",
+        "authors": [
+          "J Fleiss"
+        ],
+        "year": 1978,
+        "date": "1978-04-01",
+        "venue": null,
+        "doi": "10.2172/6087393",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2172/6087393",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "report",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 2
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.839
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.095,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Estimation of a Common Odds Ratio in Case-Control Studies of Familial Aggregation",
+        "authors": [
+          "Allan Donner",
+          "Walter Hauck"
+        ],
+        "year": 1988,
+        "date": "1988-06",
+        "venue": "Biometrics",
+        "doi": "10.2307/2531851",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2307/2531851",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 11,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 10
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.92
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.08,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Appendix H: Odds Ratio Estimate in a Matched Case‐Control Study",
+        "authors": [],
+        "year": 2002,
+        "date": "2002-01-11",
+        "venue": "Wiley Series in Probability and Statistics Biostatistical Methods in Epidemiology",
+        "doi": "10.1002/0471272612.app8",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1002/0471272612.app8",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "other",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 15
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.839
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.079,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Small-Sample Properties of Odds Ratio Estimators Under Multiple Matching in Case-Control Studies",
+        "authors": [
+          "Ayenew Ejigou"
+        ],
+        "year": 1990,
+        "date": "1990-03",
+        "venue": "Biometrics",
+        "doi": "10.2307/2531630",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2307/2531630",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 8,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 8
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.911
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.076,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Semiparametric odds ratio model for case–control and matched case–control designs",
+        "authors": [
+          "Hua Yun Chen",
+          "Muredach P. Reilly",
+          "Mingyao Li"
+        ],
+        "year": 2013,
+        "date": "2013-01-11",
+        "venue": "Statistics in Medicine",
+        "doi": "10.1002/sim.5742",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1002/sim.5742",
+        "pdf_url": null,
+        "abstract": "We propose a semiparametric odds ratio model that extends Umbach and Weinberg's approach to exploiting gene–environment association model for efficiency gains in case–control designs to both discrete and continuous data. We directly model the gene–environment association in the control population to avoid estimating the intercept in the disease risk model, which is inherently difficult because of the scarcity of information on the parameter with the sampling designs. We propose a novel permutation‐based approach to eliminate the high‐dimensional nuisance parameters in the matched case–control design. The proposed approach reduces to the conditional logistic regression when the model for the gene–environment association is unrestricted. Simulation studies demonstrate good performance of the proposed approach. We apply the proposed approach to a study of gene–environment interaction on coronary artery disease. Copyright © 2013 John Wiley &amp; Sons, Ltd.",
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 11
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.862
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.05,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "A study of a deterministic model for meningitis epidemic",
+        "authors": [
+          "S. J Yaga",
+          "F. W. O Saporu"
+        ],
+        "year": 2023,
+        "date": "2023-03-31",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2304.00148",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2304.00148",
+        "pdf_url": null,
+        "abstract": "A compartmental deterministic model that allows (1) immunity from two stages of infection and carriage, and (2) disease induced death, is used in studying the dynamics of meningitis epidemic process in a closed population. It allows for difference in the transmission rate of infection to a susceptible by a carrier and an infective. It is generalized to allow a proportion ({\\phi}) of those susceptibles infected to progress directly to infectives in stage I. Both models are used in this study. The threshold conditions for the spread of carrier and infectives in stage I are derived for the two models. Sensitivity analysis is performed on the reproductive number derived from the next generation matrix. The case-carrier ratio profile for various parameters and threshold values are shown. So also are the graphs of the total number ever infected as influenced by {\\epsilon} and {\\phi}. The infection transmission rate (eta), the odds in favor of a carrier, over an infective, in transmitting an infection to a susceptible ({\\epsilon}) and the carrier conversion rate ({\\phi}) to an infective in stage I, are identified as key parameters that should be subject of attention for any control intervention strategy. The case-carrier ratio profiles provide evidence of a critical case-carrier ratio attained before the number of reported cases grows to an epidemic level. They also provide visual evidence of epidemiological context, in this case, epidemic incidence (in later part of dry season) and endemic incidence (during rainy season). Results from total proportion ever infected suggest that the model, in which {\\phi}=0 obtained, can adequately represent, in essence, the generalized model for this study.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 8
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 1.268
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.025,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "When Severity and Exploitation Signals Diverge: A Cross-Sectional Study of CISA Known Exploited Vulnerabilities",
+        "authors": [
+          "Zigmārs Ancveirs"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": null,
+        "doi": "10.2139/ssrn.7355200",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.7355200",
+        "pdf_url": null,
+        "abstract": "&lt;p&gt;Vulnerability-management programmes frequently use technical-severity thresholds even though severity, exploitation probability, confirmed exploitation, and response context are distinct signals. This study examines every CVE added to the U.S. Cybersecurity and Infrastructure Security Agency Known Exploited Vulnerabilities (CISA KEV) Catalog during 18-24 August 2026 (n=9), the last complete seven-day interval preceding the official 25 August catalog snapshot. For each vulnerability, the study records CVSS v3.1 Base severity, the EPSS probability available at data collection, CISA-ADP SSVC decision points, CVE publication date, and KEV addition date. Eight of nine vulnerabilities (88.9%) had CVSS v3.1 Base scores in the Critical range (&amp;gt;=9.0); CVE-2026-73570 had a score of 8.9 despite confirmed exploitation. EPSS probabilities ranged from 1.506% to 72.695%, a 48.3-fold spread, with a median of 10.431%. Illustrative current-score EPSS thresholds of 5%, 10%, and 20% retained 66.7%, 55.6%, and 33.3% of this known-exploited cohort, respectively. All nine records were marked “Exploitation: active” and “Technical Impact: total” in CISA-ADP SSVC data, while two were “Automatable: no.” The elapsed time between CVE publication and KEV addition ranged from 1 to 216 days (median 12 days). These descriptive findings show that technical severity, exploitation forecasts, confirmed exploitation, and exploit automation are non interchangeable. The study does not estimate predictive performance outside the KEV-selected cohort. Its operational implication is narrower: vulnerability prioritisation systems should preserve the semantics, timestamps, and provenance of distinct signals rather than treating any single threshold or synthetic score as a substitute for confirmed exploitation and local context.&lt;/p&gt;",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "case-control study CVSS known exploited vulnerabilities",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "does high CVSS severity predict CISA KEV inclusion",
+            "position": 10
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "case-control study CVSS known exploited vulnerabilities survey",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "case-control study CVSS known exploited vulnerabilities review",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does high CVSS severity predict CISA KEV inclusion survey",
+            "position": 10
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does high CVSS severity predict CISA KEV inclusion review",
+            "position": 15
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "case-control study CVSS known exploited vulnerabilities",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "does high CVSS severity predict CISA KEV inclusion",
+            "position": 8
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "CISA KEV ground truth Allodi-Massacci case-control Vulnerabilities",
+            "position": 10
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.5,
+            "retrieval_hits": 6,
+            "score": 2.333
+          }
+        }
+      },
+      "term_overlap": 0.386,
+      "tfidf_similarity": 0.17,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Case-Control Study",
+        "authors": [],
+        "year": 2008,
+        "date": "2008",
+        "venue": "Encyclopedia of Survey Research Methods",
+        "doi": "10.4135/9781412963947.n57",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.4135/9781412963947.n57",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "reference-entry",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "case-control study CVSS known exploited vulnerabilities survey",
+            "position": 13
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "replication CVSS exploitation case-control survey",
+            "position": 13
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 2,
+            "score": 1.45
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.229,
+      "design_elements_matched": [
+        "case-control sampling"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Comparing Vulnerability Severity and Exploits Using Case-Control Studies",
+        "authors": [
+          "Luca Allodi",
+          "Fabio Massacci"
+        ],
+        "year": 2014,
+        "date": "2014-08",
+        "venue": "ACM Transactions on Information and System Security",
+        "doi": "10.1145/2630069",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/2630069",
+        "pdf_url": null,
+        "abstract": "(U.S.) Rule-based policies for mitigating software risk suggest using the CVSS score to measure the risk of an individual vulnerability and act accordingly. A key issue is whether the ‘danger’ score does actually match the risk of exploitation in the wild, and if and how such a score could be improved. To address this question, we propose using a case-control study methodology similar to the procedure used to link lung cancer and smoking in the 1950s. A case-control study allows the researcher to draw conclusions on the relation between some risk factor (e.g., smoking) and an effect (e.g., cancer) by looking backward at the cases (e.g., patients) and comparing them with controls (e.g., randomly selected patients with similar characteristics). The methodology allows us to quantify the risk reduction achievable by acting on the risk factor. We illustrate the methodology by using publicly available data on vulnerabilities, exploits, and exploits in the wild to (1) evaluate the performances of the current risk factor in the industry, the CVSS base score; (2) determine whether it can be improved by considering additional factors such the existence of a proof-of-concept exploit, or of an exploit in the black markets. Our analysis reveals that (a) fixing a vulnerability just because it was assigned a high CVSS score is equivalent to randomly picking vulnerabilities to fix; (b) the existence of proof-of-concept exploits is a significantly better risk factor; (c) fixing in response to exploit presence in black markets yields the largest risk reduction.",
+        "citations": 161,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "case-control sampling Allodi-Massacci case-control Vulnerabilities",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "CISA KEV ground truth Allodi-Massacci case-control Vulnerabilities",
+            "position": 2
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 2.041
+          }
+        }
+      },
+      "term_overlap": 0.218,
+      "tfidf_similarity": 0.084,
+      "design_elements_matched": [
+        "case-control sampling"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "A Machine Learning-Driven Visual Analytics Framework for Cybersecurity Risk Prioritization Using the CISA KEV Catalog",
+        "authors": [
+          "Ahad Anwer",
+          "Loubna Ali"
+        ],
+        "year": 2026,
+        "date": "2026-06-02",
+        "venue": "European Modern Studies Journal",
+        "doi": "10.59573/emsj.10(2).2026.40",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "4a3fa21e56e57bdb20f787ca8c0e1ad96fb0170c",
+        "url": "https://doi.org/10.59573/emsj.10(2).2026.40",
+        "pdf_url": "https://lorojournals.com/index.php/emsj/article/download/1910/1823",
+        "abstract": "The growing volume of actively exploited software vulnerabilities has introduced significant operational challenges for cybersecurity analysts and vulnerability management teams. Conventional prioritization approaches frequently rely on static severity metrics such as the Common Vulnerability Scoring System (CVSS), which often fail to adequately represent real-world exploitation behavior, ransomware-driven threats, and remediation urgency. This paper presents a machine learning-driven visual analytics framework for operational cyber-risk prioritization using the Cybersecurity and Infrastructure Security Agency (CISA) Known Exploited Vulnerabilities (KEV) catalog. The proposed framework integrates exploitation intelligence, ransomware association analysis, remediation responsiveness, interactive visual analytics, and unsupervised machine learning within a unified cybersecurity decision-support environment. To support operational prioritization, a Vendor Exploitation Risk Score (VERS) model is introduced to quantify vendor-level cyber-risk exposure by combining exploited vulnerability volume, ransomware-linked activity, and remediation delay. The framework further incorporates K-Means clustering and Tableau-TabPy integration to enable machine learning-assisted exploration of operational cybersecurity patterns and vendor risk behavior. Experimental evaluation was conducted using 1,577 KEV records associated with 257 vendors. The proposed framework successfully identified operationally critical vendors characterized by persistent exploitation activity, elevated ransomware association, and prolonged remediation exposure. Sensitivity analysis demonstrated strong robustness across alternative weighting configurations, with Spearman rank correlation values consistently exceeding 0.96. The results demonstrate that integrating operational exploitation intelligence with machine learning and interactive visual analytics provides a more effective vulnerability prioritization strategy than traditional severity-centric approaches. The proposed framework offers a scalable and operationally interpretable methodology for cyber-risk assessment, vulnerability management, and Security Operations Center (SOC) decision support.",
+        "citations": 1,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "does high CVSS severity predict CISA KEV inclusion",
+            "position": 10
+          },
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "1301.1275"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "1301.1275"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.286,
+            "retrieval_hits": 1,
+            "score": 1.744
+          },
+          "abstract_source": "crossref"
+        }
+      },
+      "term_overlap": 0.386,
+      "tfidf_similarity": 0.143,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Adaptive Vulnerability Prioritization under Active Exploitation Using the CISA Known Exploited Vulnerabilities Catalog",
+        "authors": [
+          "Babek Habibi Norouzlou"
+        ],
+        "year": 2026,
+        "date": "2026-05-31",
+        "venue": "Proceedings of the Workshop on Advances in Malware Analysis and Software Security",
+        "doi": "10.1145/3807501.3808240",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W7162141089",
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/3807501.3808240",
+        "pdf_url": "https://doi.org/10.1145/3807501.3808240",
+        "abstract": "Due to operational constraints, security teams can patch only a small portion of disclosed vulnerabilities each week, while static scoring methods like CVSS and EPSS are unable to model this as a sequential decision problem. We model vulnerability remediation as a capacity-constrained Markov Decision Process and train a Deep Q-Network (DQN) agent on 1,053 CISA KEV-confirmed CVEs from 2022-2023, evaluating on a temporally held-out test set of 357 vulnerabilities from the second half of 2024. With 100% KEV recall, the learned policy outperforms VPrioritizer by 4.3% cumulative reward and closes 19.7% of the oracle upper bound gap. Ablation studies corroborate that the policy is multi-signal: stripping away the ransomware flag lowers reward by 15.5%. These results suggest that adaptive, exploitation-aware policies can meaningfully reduce exposure time to vulnerabilities that are actively targeted in the wild.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "case-control study CVSS known exploited vulnerabilities",
+            "position": 5
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "case-control study CVSS known exploited vulnerabilities survey",
+            "position": 5
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "case-control study CVSS known exploited vulnerabilities review",
+            "position": 5
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "case-control study CVSS known exploited vulnerabilities",
+            "position": 5
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 1.875
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W2145339207",
+            "W2967263059",
+            "W3136969503",
+            "W4392397402",
+            "W4403391333",
+            "W4403537118",
+            "W4410771543"
+          ]
+        }
+      },
+      "term_overlap": 0.35,
+      "tfidf_similarity": 0.141,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Ransomware-Aware Analysis of Exploited Vulnerabilities and Remediation Dynamics",
+        "authors": [
+          "Bamdad Moraghebi",
+          "Loubna Ali"
+        ],
+        "year": 2026,
+        "date": "2026-06-02",
+        "venue": "European Modern Studies Journal",
+        "doi": "10.59573/emsj.10(2).2026.41",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "05fbcb2ffe6b51efa510e930406409f90e659789",
+        "url": "https://doi.org/10.59573/emsj.10(2).2026.41",
+        "pdf_url": "https://lorojournals.com/index.php/emsj/article/download/1911/1824",
+        "abstract": "The increasing frequency of ransomware-driven cyberattacks has intensified the operational challenges associated with vulnerability management and remediation prioritization. While many cybersecurity studies focus on vulnerability severity and exploit prediction, comparatively limited attention has been given to ransomware-linked exploited vulnerabilities and their remediation dynamics. This paper presents a ransomware-aware analytical study of exploited vulnerabilities using data derived from the Cybersecurity and Infrastructure Security Agency (CISA) Known Exploited Vulnerabilities (KEV) catalog. The study investigates temporal exploitation trends, ransomware-linked vulnerability behavior, Common Weakness Enumeration (CWE) distributions, vendor exposure patterns, and remediation timelines within operational cybersecurity environments. The analysis distinguishes ransomware-associated vulnerabilities from general exploited vulnerabilities in order to examine whether ransomware-linked threats exhibit different operational characteristics and remediation urgency. Multiple analytical perspectives were explored, including temporal vulnerability evolution, vendor-level ransomware exposure, remediation window trends, and weakness-category concentration. Experimental analysis was conducted using more than 1,600 exploited vulnerability records collected from the KEV catalog. The results demonstrate that ransomware-linked vulnerabilities represent a disproportionately critical subset of the exploitation ecosystem, frequently exhibiting concentrated vendor targeting, elevated operational urgency, and accelerated remediation requirements. The analysis further revealed significant temporal changes in remediation dynamics, suggesting increased operational pressure on organizations to reduce exposure windows for actively exploited vulnerabilities. The findings indicate that ransomware-aware exploitation intelligence can provide valuable operational insight beyond traditional vulnerability severity analysis. The proposed analytical perspective contributes to improved cybersecurity situational awareness, remediation prioritization, and operational threat intelligence for vulnerability management teams and Security Operations Centers (SOCs).",
+        "citations": 1,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "case-control study CVSS known exploited vulnerabilities",
+            "position": 13
+          },
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "1301.1275"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "1301.1275"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.333,
+            "retrieval_hits": 1,
+            "score": 1.458
+          },
+          "abstract_source": "crossref"
+        }
+      },
+      "term_overlap": 0.348,
+      "tfidf_similarity": 0.138,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Severity Impact Discrepancy in Supply Chain Vulnerabilities: An Empirical Analysis Using the CISA Known Exploited Vulnerabilities (KEV) Database",
+        "authors": [
+          "Stephen Mujeye"
+        ],
+        "year": 2026,
+        "date": "2026-01-21",
+        "venue": "Proceedings of the 2026 9th International Conference on Software Engineering and Information Management",
+        "doi": "10.1145/3796315.3796349",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/3796315.3796349",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "case-control study CVSS known exploited vulnerabilities",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "does high CVSS severity predict CISA KEV inclusion",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "case-control study CVSS known exploited vulnerabilities survey",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "case-control study CVSS known exploited vulnerabilities review",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does high CVSS severity predict CISA KEV inclusion survey",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does high CVSS severity predict CISA KEV inclusion review",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "case-control study CVSS known exploited vulnerabilities",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "does high CVSS severity predict CISA KEV inclusion",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "CISA KEV ground truth Allodi-Massacci case-control Vulnerabilities",
+            "position": 1
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 6,
+            "score": 2.0
+          }
+        }
+      },
+      "term_overlap": 0.236,
+      "tfidf_similarity": 0.244,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Matched case-control studies",
+        "authors": [],
+        "year": 2014,
+        "date": "2014-03-06",
+        "venue": "Case-Control Studies",
+        "doi": "10.1017/cbo9781139094757.006",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1017/cbo9781139094757.006",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 2,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "book-chapter",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "case-control sampling Allodi-Massacci case-control Vulnerabilities",
+            "position": 13
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.333,
+            "title_match": 0.333,
+            "retrieval_hits": 1,
+            "score": 1.161
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.154,
+      "design_elements_matched": [
+        "case-control sampling"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Accounting Control and the Misrecognition of Worker Exploitation: A Case Study of a Compliant Clothing Factory",
+        "authors": [
+          "Homaira Semeen",
+          "Annette Quayle"
+        ],
+        "year": 2023,
+        "date": "2023",
+        "venue": null,
+        "doi": "10.2139/ssrn.4373204",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.4373204",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "replication CVSS exploitation case-control",
+            "position": 8
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "replication CVSS exploitation case-control survey",
+            "position": 11
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "replication CVSS exploitation case-control review",
+            "position": 14
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.6,
+            "retrieval_hits": 3,
+            "score": 2.175
+          }
+        }
+      },
+      "term_overlap": 0.12,
+      "tfidf_similarity": 0.1,
+      "design_elements_matched": [
+        "case-control sampling"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "A Model for Android and iOS Applications Risk Calculation: CVSS Analysis and Enhancement Using Case-Control Studies",
+        "authors": [
+          "Milda Petraityte",
+          "Ali Dehghantanha",
+          "Gregory Epiphaniou"
+        ],
+        "year": 2018,
+        "date": "2018",
+        "venue": "Advances in Information Security Cyber Threat Intelligence",
+        "doi": "10.1007/978-3-319-73951-9_11",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/978-3-319-73951-9_11",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 9,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "book-chapter",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "replication CVSS exploitation case-control",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "replication CVSS exploitation case-control survey",
+            "position": 5
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "replication CVSS exploitation case-control review",
+            "position": 3
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.6,
+            "retrieval_hits": 3,
+            "score": 2.25
+          }
+        }
+      },
+      "term_overlap": 0.113,
+      "tfidf_similarity": 0.105,
+      "design_elements_matched": [
+        "case-control sampling"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    }
+  ],
+  "possible_same_design": [],
+  "design_matches_off_topic": [
+    {
+      "paper": {
+        "title": "A methodology to perform cross-ecosystems case-control security studies",
+        "authors": [
+          "Yuan Feng",
+          "Ranindya Paramitha",
+          "Carlos E. Budde",
+          "Fabio Massacci"
+        ],
+        "year": 2026,
+        "date": "2026-07-18",
+        "venue": "Empirical Software Engineering",
+        "doi": "10.1007/s10664-026-10873-9",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "340ffb255311ce14a49f0bdf4d977383963144cd",
+        "url": "https://www.semanticscholar.org/paper/340ffb255311ce14a49f0bdf4d977383963144cd",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10664-026-10873-9.pdf",
+        "abstract": "The choice of one’s programming language and relative ecosystem of libraries can affect the likelihood of encountering a critical vulnerability. Simply counting the vulnerabilities by mining a software repository is not enough, and case-control studies are a well-accepted methodology to determine relative risk. Yet, they require the ability to compare ‘equals with equals’ as a library for text processing is likely subject to less security scrutiny than a library for web applications. To compare libraries, we implemented a human-guided protocol to transfer classification categories from an ecosystem to libraries of another ecosystem. By building of this categorization, we performed a case-control study with the vulnerabilities available on Snyk and with status ’reviewed’ in the Github security Advisories till 2024. We mapped 76 Java/Maven libraries and 221 Python/PyPI packages as ’cases’ (libraries with vulnerabilities with a CVSS critical score) compared them against 58 Java/Maven and 166 Python/PyPI ’controls’ (Only with a high CVSS score). We found and overall the odds ratio of ending with a critical vulnerability is slightly higher when using a Java/Maven library in comparison to using a Python/PyPi package (1.13x). We refine the analysis to understand possible reasons for our result by using the CVSS vector metric. A possible explanation is that a vulnerability with low attack complexity has disproportionately higher chances to be critical in Java/Maven (38.9x) than in Python/PyPI (5.9x). Such results might be explained by the lack of past security interest in the Python ecosystem. By using the introduction of the OWASP dependency checker in 2023 for Python as possible indication of community interest, we found a risk reversal: after 2023 the risk of ending with a critical vulnerability (as opposed to just a high severity one) is significantly higher (2.4x) for a Python/PyPI package than for a Java/Maven library. To allow replication and updates, we make the dataset and the protocol individual steps available as open data.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "1301.1275"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "1301.1275"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.173,
+      "tfidf_similarity": 0.062,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Odds Ratio Methods for Case‐Control Data",
+        "authors": [],
+        "year": 2002,
+        "date": "2002-01-11",
+        "venue": "Wiley Series in Probability and Statistics Biostatistical Methods in Epidemiology",
+        "doi": "10.1002/0471272612.ch11",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1002/0471272612.ch11",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "other",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 7
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.839
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.141,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Confidence intervals for the odds ratio in case-control studies: the state of the art",
+        "authors": [
+          "J Fleiss"
+        ],
+        "year": 1978,
+        "date": "1978-04-01",
+        "venue": null,
+        "doi": "10.2172/6087393",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2172/6087393",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "report",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 2
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.839
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.095,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Estimation of a Common Odds Ratio in Case-Control Studies of Familial Aggregation",
+        "authors": [
+          "Allan Donner",
+          "Walter Hauck"
+        ],
+        "year": 1988,
+        "date": "1988-06",
+        "venue": "Biometrics",
+        "doi": "10.2307/2531851",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2307/2531851",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 11,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 10
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.92
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.08,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Appendix H: Odds Ratio Estimate in a Matched Case‐Control Study",
+        "authors": [],
+        "year": 2002,
+        "date": "2002-01-11",
+        "venue": "Wiley Series in Probability and Statistics Biostatistical Methods in Epidemiology",
+        "doi": "10.1002/0471272612.app8",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1002/0471272612.app8",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "other",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 15
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.839
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.079,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Small-Sample Properties of Odds Ratio Estimators Under Multiple Matching in Case-Control Studies",
+        "authors": [
+          "Ayenew Ejigou"
+        ],
+        "year": 1990,
+        "date": "1990-03",
+        "venue": "Biometrics",
+        "doi": "10.2307/2531630",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2307/2531630",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 8,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 8
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.911
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.076,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Semiparametric odds ratio model for case–control and matched case–control designs",
+        "authors": [
+          "Hua Yun Chen",
+          "Muredach P. Reilly",
+          "Mingyao Li"
+        ],
+        "year": 2013,
+        "date": "2013-01-11",
+        "venue": "Statistics in Medicine",
+        "doi": "10.1002/sim.5742",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1002/sim.5742",
+        "pdf_url": null,
+        "abstract": "We propose a semiparametric odds ratio model that extends Umbach and Weinberg's approach to exploiting gene–environment association model for efficiency gains in case–control designs to both discrete and continuous data. We directly model the gene–environment association in the control population to avoid estimating the intercept in the disease risk model, which is inherently difficult because of the scarcity of information on the parameter with the sampling designs. We propose a novel permutation‐based approach to eliminate the high‐dimensional nuisance parameters in the matched case–control design. The proposed approach reduces to the conditional logistic regression when the model for the gene–environment association is unrestricted. Simulation studies demonstrate good performance of the proposed approach. We apply the proposed approach to a study of gene–environment interaction on coronary artery disease. Copyright © 2013 John Wiley &amp; Sons, Ltd.",
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 11
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.862
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.05,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "A study of a deterministic model for meningitis epidemic",
+        "authors": [
+          "S. J Yaga",
+          "F. W. O Saporu"
+        ],
+        "year": 2023,
+        "date": "2023-03-31",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2304.00148",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2304.00148",
+        "pdf_url": null,
+        "abstract": "A compartmental deterministic model that allows (1) immunity from two stages of infection and carriage, and (2) disease induced death, is used in studying the dynamics of meningitis epidemic process in a closed population. It allows for difference in the transmission rate of infection to a susceptible by a carrier and an infective. It is generalized to allow a proportion ({\\phi}) of those susceptibles infected to progress directly to infectives in stage I. Both models are used in this study. The threshold conditions for the spread of carrier and infectives in stage I are derived for the two models. Sensitivity analysis is performed on the reproductive number derived from the next generation matrix. The case-carrier ratio profile for various parameters and threshold values are shown. So also are the graphs of the total number ever infected as influenced by {\\epsilon} and {\\phi}. The infection transmission rate (eta), the odds in favor of a carrier, over an infective, in transmitting an infection to a susceptible ({\\epsilon}) and the carrier conversion rate ({\\phi}) to an infective in stage I, are identified as key parameters that should be subject of attention for any control intervention strategy. The case-carrier ratio profiles provide evidence of a critical case-carrier ratio attained before the number of reported cases grows to an epidemic level. They also provide visual evidence of epidemiological context, in this case, epidemic incidence (in later part of dry season) and endemic incidence (during rainy season). Results from total proportion ever infected suggest that the model, in which {\\phi}=0 obtained, can adequately represent, in essence, the generalized model for this study.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+            "position": 8
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 1.268
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.025,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    }
+  ],
+  "found_via_citations": [
+    {
+      "paper": {
+        "title": "A methodology to perform cross-ecosystems case-control security studies",
+        "authors": [
+          "Yuan Feng",
+          "Ranindya Paramitha",
+          "Carlos E. Budde",
+          "Fabio Massacci"
+        ],
+        "year": 2026,
+        "date": "2026-07-18",
+        "venue": "Empirical Software Engineering",
+        "doi": "10.1007/s10664-026-10873-9",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "340ffb255311ce14a49f0bdf4d977383963144cd",
+        "url": "https://www.semanticscholar.org/paper/340ffb255311ce14a49f0bdf4d977383963144cd",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10664-026-10873-9.pdf",
+        "abstract": "The choice of one’s programming language and relative ecosystem of libraries can affect the likelihood of encountering a critical vulnerability. Simply counting the vulnerabilities by mining a software repository is not enough, and case-control studies are a well-accepted methodology to determine relative risk. Yet, they require the ability to compare ‘equals with equals’ as a library for text processing is likely subject to less security scrutiny than a library for web applications. To compare libraries, we implemented a human-guided protocol to transfer classification categories from an ecosystem to libraries of another ecosystem. By building of this categorization, we performed a case-control study with the vulnerabilities available on Snyk and with status ’reviewed’ in the Github security Advisories till 2024. We mapped 76 Java/Maven libraries and 221 Python/PyPI packages as ’cases’ (libraries with vulnerabilities with a CVSS critical score) compared them against 58 Java/Maven and 166 Python/PyPI ’controls’ (Only with a high CVSS score). We found and overall the odds ratio of ending with a critical vulnerability is slightly higher when using a Java/Maven library in comparison to using a Python/PyPi package (1.13x). We refine the analysis to understand possible reasons for our result by using the CVSS vector metric. A possible explanation is that a vulnerability with low attack complexity has disproportionately higher chances to be critical in Java/Maven (38.9x) than in Python/PyPI (5.9x). Such results might be explained by the lack of past security interest in the Python ecosystem. By using the introduction of the OWASP dependency checker in 2023 for Python as possible indication of community interest, we found a risk reversal: after 2023 the risk of ending with a critical vulnerability (as opposed to just a high severity one) is significantly higher (2.4x) for a Python/PyPI package than for a Java/Maven library. To allow replication and updates, we make the dataset and the protocol individual steps available as open data.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "1301.1275"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "1301.1275"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.173,
+      "tfidf_similarity": 0.062,
+      "design_elements_matched": [
+        "case-control sampling",
+        "odds ratio"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "A Case-Control Measurement Study of OSINT Source Effectiveness for Critical Infrastructure Defense",
+        "authors": [
+          "E. Emeksiz",
+          "Jeel Piyushkumar Khatiwala",
+          "Divyangkumar Patel",
+          "Wei-Feng Xu"
+        ],
+        "year": 2026,
+        "date": "2026-08-21",
+        "venue": "IEEE Conference on Communications and Network Security",
+        "doi": "10.1109/cns69863.2026.11720880",
+        "arxiv_id": "2608.21471",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "4dc5fbc01885ccfec9ba243f2c7a48cc28f85316",
+        "url": "https://www.semanticscholar.org/paper/4dc5fbc01885ccfec9ba243f2c7a48cc28f85316",
+        "pdf_url": "https://arxiv.org/pdf/2608.21471",
+        "abstract": "Defenders of critical infrastructure (CI) subscribe to many public open-source intelligence (OSINT) feeds without an empirical basis for which feeds actually precede attacks. We provide one. Across 54 confirmed CI cyberattacks from 2010 through 2024 spanning twelve named CI sectors plus a cross-sector category (consolidation rules in §IV), paired with 12 null-control vulnerability cases drawn from the same source space, we audit per-source attack coverage, null-case contamination, and signal lead time for ten public OSINT source classes that meet a minimum-volume threshold. Sources separate cleanly into three operationally distinct mission profiles (pooled Fisher exact $p=3.4 \\times 10^{-8}$): precursor (six classes with zero observed null firings at coverage at or above 5%), disclosure-exposure (three classes whose null contamination meets or exceeds attack coverage), and one large broad-coverage class that mixes the two profiles but retains 91.3% within-corpus precision. The precision-side classification is stable across a 2019 temporal partition and across a US-versus-non-US geographic partition. Two sources, one broad-coverage and one precursor, cover 92.6% of corpus attacks; three cover 96.3%. The greedy portfolio at $k=3$ outperforms the mean random three-source subset by 39.8 percentage points. Several source classes widely treated as canonical for industrial control system defense fall into the disclosure-exposure profile by operational mission, not by quality. Per-sector, per-actor, and per-jurisdiction portfolios diverge in rank order despite a shared rank-one source. The corpus, linkage protocol, and classification rules are released.",
+        "citations": 1,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "1301.1275"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "1301.1275"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.169,
+      "tfidf_similarity": 0.047,
+      "design_elements_matched": [
+        "case-control sampling"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    }
+  ],
+  "ranked": [
+    {
+      "title": "Prediction Meets Patch Queues: Empirical Limits of EPSS-Only Prioritization Using CISA KEV Additions in 2025",
+      "arxiv_id": null,
+      "doi": "10.36227/techrxiv.176857939.95987957/v1",
+      "year": 2026
+    },
+    {
+      "title": "A methodology to perform cross-ecosystems case-control security studies",
+      "arxiv_id": null,
+      "doi": "10.1007/s10664-026-10873-9",
+      "year": 2026
+    },
+    {
+      "title": "Odds Ratio Methods for Case‐Control Data",
+      "arxiv_id": null,
+      "doi": "10.1002/0471272612.ch11",
+      "year": 2002
+    },
+    {
+      "title": "Explainable Risk-Based Vulnerability Prioritization in Hybrid Cloud: Integrating CVSS, EPSS, and CISA KEV with Asset Criticality Signals",
+      "arxiv_id": null,
+      "doi": "10.30574/wjarr.2026.30.1.1006",
+      "year": 2026
+    },
+    {
+      "title": "Confidence intervals for the odds ratio in case-control studies: the state of the art",
+      "arxiv_id": null,
+      "doi": "10.2172/6087393",
+      "year": 1978
+    },
+    {
+      "title": "Estimation of a Common Odds Ratio in Case-Control Studies of Familial Aggregation",
+      "arxiv_id": null,
+      "doi": "10.2307/2531851",
+      "year": 1988
+    },
+    {
+      "title": "Appendix H: Odds Ratio Estimate in a Matched Case‐Control Study",
+      "arxiv_id": null,
+      "doi": "10.1002/0471272612.app8",
+      "year": 2002
+    },
+    {
+      "title": "Small-Sample Properties of Odds Ratio Estimators Under Multiple Matching in Case-Control Studies",
+      "arxiv_id": null,
+      "doi": "10.2307/2531630",
+      "year": 1990
+    },
+    {
+      "title": "Semiparametric odds ratio model for case–control and matched case–control designs",
+      "arxiv_id": null,
+      "doi": "10.1002/sim.5742",
+      "year": 2013
+    },
+    {
+      "title": "A study of a deterministic model for meningitis epidemic",
+      "arxiv_id": "2304.00148",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "When Severity and Exploitation Signals Diverge: A Cross-Sectional Study of CISA Known Exploited Vulnerabilities",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.7355200",
+      "year": 2026
+    },
+    {
+      "title": "Case-Control Study",
+      "arxiv_id": null,
+      "doi": "10.4135/9781412963947.n57",
+      "year": 2008
+    },
+    {
+      "title": "Comparing Vulnerability Severity and Exploits Using Case-Control Studies",
+      "arxiv_id": null,
+      "doi": "10.1145/2630069",
+      "year": 2014
+    },
+    {
+      "title": "A Machine Learning-Driven Visual Analytics Framework for Cybersecurity Risk Prioritization Using the CISA KEV Catalog",
+      "arxiv_id": null,
+      "doi": "10.59573/emsj.10(2).2026.40",
+      "year": 2026
+    },
+    {
+      "title": "Adaptive Vulnerability Prioritization under Active Exploitation Using the CISA Known Exploited Vulnerabilities Catalog",
+      "arxiv_id": null,
+      "doi": "10.1145/3807501.3808240",
+      "year": 2026
+    },
+    {
+      "title": "Ransomware-Aware Analysis of Exploited Vulnerabilities and Remediation Dynamics",
+      "arxiv_id": null,
+      "doi": "10.59573/emsj.10(2).2026.41",
+      "year": 2026
+    },
+    {
+      "title": "Severity Impact Discrepancy in Supply Chain Vulnerabilities: An Empirical Analysis Using the CISA Known Exploited Vulnerabilities (KEV) Database",
+      "arxiv_id": null,
+      "doi": "10.1145/3796315.3796349",
+      "year": 2026
+    },
+    {
+      "title": "Matched case-control studies",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781139094757.006",
+      "year": 2014
+    },
+    {
+      "title": "Accounting Control and the Misrecognition of Worker Exploitation: A Case Study of a Compliant Clothing Factory",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.4373204",
+      "year": 2023
+    },
+    {
+      "title": "A Model for Android and iOS Applications Risk Calculation: CVSS Analysis and Enhancement Using Case-Control Studies",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-319-73951-9_11",
+      "year": 2018
+    },
+    {
+      "title": "Nested case-control studies",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781139094757.010",
+      "year": 2014
+    },
+    {
+      "title": "A Case-Control Measurement Study of OSINT Source Effectiveness for Critical Infrastructure Defense",
+      "arxiv_id": "2608.21471",
+      "doi": "10.1109/cns69863.2026.11720880",
+      "year": 2026
+    },
+    {
+      "title": "Chained Exploitation of Metadata Leakage and IDOR: A Case Study in Weak Access Control",
+      "arxiv_id": null,
+      "doi": "10.1109/asyu67174.2025.11208347",
+      "year": 2025
+    },
+    {
+      "title": "Nested Case‐Control Sampling",
+      "arxiv_id": null,
+      "doi": "10.1002/9781118445112.stat00287",
+      "year": 2014
+    },
+    {
+      "title": "Highlights of the combination of &amp;#8220;Ground truth&amp;#8221; &gt;28 keV in-situ ions from the Voyagers and &gt;5.2 keV ENAs from Cassini in the study of the global heliosphere",
+      "arxiv_id": null,
+      "doi": "10.5194/egusphere-egu22-4316",
+      "year": 2022
+    },
+    {
+      "title": "Nested Case‐Control Sampling (Sampling from the Risk Sets)",
+      "arxiv_id": null,
+      "doi": "10.1002/0471667196.ess1111",
+      "year": 2004
+    },
+    {
+      "title": "Control sampling strategies for case-crossover designs in air pollution epidemiology",
+      "arxiv_id": null,
+      "doi": "10.1097/00001648-200007000-00057",
+      "year": 2000
+    },
+    {
+      "title": "An Odds Ratio Parameterization for ROC Diagram and Skill Score Indices",
+      "arxiv_id": null,
+      "doi": "10.1175/waf899.1",
+      "year": 2005
+    },
+    {
+      "title": "APP-021 Replication of Prostate Cancer Risk Loci in a Japanese Case-control Association Study",
+      "arxiv_id": null,
+      "doi": "10.5980/jpnjurol.101.191_1",
+      "year": 2010
+    },
+    {
+      "title": "Schema Evolution in the CISA Known Exploited Vulnerabilities Catalog, 2021-2026: A Three-Source Reconstruction",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.7620220",
+      "year": 2026
+    },
+    {
+      "title": "Random Digit Dialing Sampling for Case–Control Studies",
+      "arxiv_id": null,
+      "doi": "10.1002/9781118445112.stat05200",
+      "year": 2014
+    },
+    {
+      "title": "Longitudinal Studies of Binary Response Data Following Case–Control and Stratified Case–Control Sampling: Design and Analysis",
+      "arxiv_id": null,
+      "doi": "10.1111/j.1541-0420.2009.01306.x",
+      "year": 2010
+    },
+    {
+      "title": "Modeling Local Exploit Hazard - A Bayesian Framework for Quantifying Exploit Risk and Operational Efficiency",
+      "arxiv_id": "2607.24618",
+      "doi": "10.48550/arxiv.2607.24618",
+      "year": 2026
+    },
+    {
+      "title": "From ATT&CK Technique to Remediation Priority: Bayesian Estimation of Weakness-Class Likelihood for Operational Cyber Defence",
+      "arxiv_id": null,
+      "doi": "10.60097/acig/224570",
+      "year": 2026
+    },
+    {
+      "title": "Case-control down-sampling in corpus research",
+      "arxiv_id": null,
+      "doi": "10.31219/osf.io/g74bk_v1",
+      "year": 2025
+    },
+    {
+      "title": "A Controlled Candidate-Set Benchmark for Offline Satellite-Security Plan Decomposition",
+      "arxiv_id": "2607.26371",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "SocioVerse2: A Longitudinal Dynamic Social Simulation Framework under a Human-AI Co-evolutionary Paradigm",
+      "arxiv_id": "2609.24911",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "A Quantum Risk Index for Cryptographic CVEs: Empirical Evidence from the National Vulnerability Database, 2016–2026",
+      "arxiv_id": null,
+      "doi": "10.3390/computers15080495",
+      "year": 2026
+    },
+    {
+      "title": "Business Analytics for Cybersecurity Vulnerability Prioritization in Banking: Evidence from EPSS, CVSS, and CISA KEV",
+      "arxiv_id": null,
+      "doi": "10.65379/jpes/v1(2)p73",
+      "year": 2026
+    },
+    {
+      "title": "ThreatLens: Evidence-Guided Ranking of High-Priority CVEs",
+      "arxiv_id": "2608.22306",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Fig. 3. Forest plot: odds ratio of complications (loop suture vs control), data before pseudorandomization.",
+      "arxiv_id": null,
+      "doi": "10.17816/psaic1922-2896",
+      "year": null
+    },
+    {
+      "title": "Predicting the Discovery Pattern of Publically Known Exploited Vulnerabilities",
+      "arxiv_id": null,
+      "doi": "10.1109/tdsc.2020.3014872",
+      "year": 2021
+    },
+    {
+      "title": "Influence Scores at Scale for Efficient Language Data Sampling",
+      "arxiv_id": "2311.16298",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "The Gini-Bayes Connection: The CAP Slope as Bayes' Theorem, with Applications to Weight of Evidence, Somers' D, and Calibration",
+      "arxiv_id": "2606.18545",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "CVE Records of Known Exploited Vulnerabilities",
+      "arxiv_id": null,
+      "doi": "10.1109/icccs57501.2023.10150856",
+      "year": 2023
+    },
+    {
+      "title": "Fig. 1. Estimates of odds ratios with 95٪ CI for the studied predictors of the «hs-сTn I above normal» score. Note. ОШ — odds ratio, ДИ — confidence interval.",
+      "arxiv_id": null,
+      "doi": "10.17816/cs628206-4212676",
+      "year": null
+    },
+    {
+      "title": "Semiparametrically Efficient Score for the Survival Odds Ratio",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.4608741",
+      "year": 2023
+    },
+    {
+      "title": "Table 5: Odds ratio of the association between CONUT score and cerebrovascular stenosis risk in subgroup analysis.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.20968/table-5",
+      "year": null
+    },
+    {
+      "title": "Using Kolb's Experiential Learning Cycle to Teach Odds Ratio and Risk Ratio to Non-Quantitative Health Communication Students: A Classroom Practice Report",
+      "arxiv_id": null,
+      "doi": "10.35542/osf.io/uv6yk_v1",
+      "year": 2026
+    },
+    {
+      "title": "A Conditional Probability Computation Method for Vulnerability Exploitation Based on CVSS",
+      "arxiv_id": null,
+      "doi": "10.1109/dsc.2017.33",
+      "year": 2017
+    },
+    {
+      "title": "Odds and Odds Ratio",
+      "arxiv_id": null,
+      "doi": "10.1007/springerreference_61056",
+      "year": null
+    },
+    {
+      "title": "Odds and Odds Ratio, Risk Ratio",
+      "arxiv_id": null,
+      "doi": "10.4135/9781412971980.n243",
+      "year": 2009
+    },
+    {
+      "title": "Odds Ratio (OR)",
+      "arxiv_id": null,
+      "doi": "10.1007/springerreference_83788",
+      "year": null
+    },
+    {
+      "title": "Odds Ratio Parameter and Its Utilities",
+      "arxiv_id": null,
+      "doi": "10.1201/9781351049757-1",
+      "year": 2021
+    },
+    {
+      "title": "Odds Ratio Function and Its Modeling",
+      "arxiv_id": null,
+      "doi": "10.1201/9781351049757-2",
+      "year": 2021
+    },
+    {
+      "title": "Calculating the Odds Ratio",
+      "arxiv_id": null,
+      "doi": "10.4135/9781529790665",
+      "year": 2017
+    },
+    {
+      "title": "Odds and Odds Ratio",
+      "arxiv_id": null,
+      "doi": "10.1002/9781118445112.stat03617",
+      "year": 2014
+    },
+    {
+      "title": "Odds Ratio Plots Predicting Intervention",
+      "arxiv_id": null,
+      "doi": "10.3998/mpub.12903518.cmp.12",
+      "year": null
+    },
+    {
+      "title": "Estimation and Inference on Conditional Odds Ratio Function",
+      "arxiv_id": null,
+      "doi": "10.1201/9781351049757-4",
+      "year": 2021
+    },
+    {
+      "title": "Correcting Label-noise Corruption withlambda-Odds Ratio",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-8419819/v1",
+      "year": 2025
+    },
+    {
+      "title": "Odds and odds ratio",
+      "arxiv_id": null,
+      "doi": "10.1016/b978-0-443-33722-2.00017-8",
+      "year": 2027
+    },
+    {
+      "title": "easyORtables: Easy Odds Ratio Tables",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.easyortables",
+      "year": 2024
+    },
+    {
+      "title": "CORPlot: Cumulative Odds Ratio Plot",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.corplot",
+      "year": 2025
+    },
+    {
+      "title": "Odds Ratio",
+      "arxiv_id": null,
+      "doi": "10.1007/978-981-99-9283-6_1974",
+      "year": 2024
+    },
+    {
+      "title": "odds ratio",
+      "arxiv_id": null,
+      "doi": "10.1351/goldbook.15939",
+      "year": 2025
+    },
+    {
+      "title": "plotor: Odds Ratio Tools for Logistic Regression",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.plotor",
+      "year": 2024
+    },
+    {
+      "title": "Extending the Median Odds Ratio ( <scp>MOR</scp> ), the Interval Odds Ratio ( <scp>IOR</scp> ), and the Proportion of Opposed Odds Ratios ( <scp>POOR</scp> ) for Use With 3‐Level Multilevel Logistic Regression Models",
+      "arxiv_id": null,
+      "doi": "10.1002/sim.70558",
+      "year": 2026
+    },
+    {
+      "title": "flexOR: Flexible Odds Ratio Curves",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.flexor",
+      "year": 2024
+    },
+    {
+      "title": "Likely Exploited Vulnerabilities:",
+      "arxiv_id": null,
+      "doi": "10.6028/nist.ir.8558.ipd",
+      "year": 2025
+    },
+    {
+      "title": "A Quantitative EPSS-Based Risk Scoring Framework for HIPAA Technical Safeguards in Mobile Healthcare Applications",
+      "arxiv_id": null,
+      "doi": "10.1109/compsac69091.2026.00459",
+      "year": 2026
+    },
+    {
+      "title": "GCVE: A Decentralized Model for Vulnerability Identification, Publication, and Operational Enrichment",
+      "arxiv_id": "2606.00856",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Analysis of Vulnerability Severity and Exploit Probability Scoring Frameworks: CVSS and EPSS",
+      "arxiv_id": null,
+      "doi": "10.1109/sieds65500.2025.11021216",
+      "year": 2025
+    },
+    {
+      "title": "How Context Impacts Vulnerability Severity: An Analysis of Product-Specific CVSS Scores",
+      "arxiv_id": null,
+      "doi": "10.1145/3697090.3697109",
+      "year": 2024
+    },
+    {
+      "title": "LLM-Assisted Proactive Threat Intelligence for Automated Reasoning",
+      "arxiv_id": "2504.00428",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "LadderTeam: Dual-Agent Laddering Elicitation Framework",
+      "arxiv_id": "2608.17029",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Predictive Exposure and Cryptographic Readiness: A Vendor-Neutral Framework, a, Bounded Multivocal Evidence Analysis, and Reproducible Synthetic Evaluation for SD-WAN Environments",
+      "arxiv_id": "2608.01728",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Financial Exploitation by Known Others: AARP Survey, Annotated Questionnaire",
+      "arxiv_id": null,
+      "doi": "10.26419/res.00726.002",
+      "year": 2024
+    },
+    {
+      "title": "Comprehensive comparison between versions CVSS v2.0, CVSS v3.x and CVSS v4.0 as vulnerability severity measures",
+      "arxiv_id": null,
+      "doi": "10.1109/icton62926.2024.10647452",
+      "year": 2024
+    },
+    {
+      "title": "Predictive Credit: Measuring What Scientific Explanations Add to Experimental Forecasts",
+      "arxiv_id": "2610.00314",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "A Product-Oriented Assessment of Vulnerability Severity Through NVD CVSS Scores",
+      "arxiv_id": null,
+      "doi": "10.1109/icnc64010.2025.10994117",
+      "year": 2025
+    },
+    {
+      "title": "XplainCVSS: Interpretable Machine Learning for Explainable CVSS Vulnerability Severity Prediction",
+      "arxiv_id": null,
+      "doi": "10.1109/eurospw72509.2026.00040",
+      "year": 2026
+    },
+    {
+      "title": "Orchestrated Vulnerability Management for Heterogeneous Networks: Adaptive Two-Stage Vulnerability Assessment, Context-Aware Risk Prioritization, and Automated Mitigation",
+      "arxiv_id": "2608.08162",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Multi-Modal Machine Learning for Automated CVSS Severity Prediction for Conservative Vulnerability Assessment",
+      "arxiv_id": null,
+      "doi": "10.1109/access.2025.3627919",
+      "year": 2025
+    },
+    {
+      "title": "An available cue is not an exploited cue: testing whether answer-position bias affects scores in a scenario-based competency assessment",
+      "arxiv_id": null,
+      "doi": "10.35542/osf.io/eb49x_v1",
+      "year": 2026
+    },
+    {
+      "title": "Control of DNA replication and its potential clinical exploitation",
+      "arxiv_id": null,
+      "doi": "10.1038/nrc1548",
+      "year": 2005
+    },
+    {
+      "title": "Descriptive Image Quality Assessment in the Wild",
+      "arxiv_id": "2405.18842",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "ReplicatorBench: Benchmarking LLM Agents for Replicability in Social and Behavioral Sciences",
+      "arxiv_id": "2602.11354",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models",
+      "arxiv_id": "2605.03475",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "CISA 2025 TOC",
+      "arxiv_id": null,
+      "doi": "10.1109/cisa64343.2025.11091562",
+      "year": 2025
+    },
+    {
+      "title": "Prompt Injection Attacks on Agentic Coding Assistants: A Systematic Analysis of Vulnerabilities in Skills, Tools, and Protocol Ecosystems",
+      "arxiv_id": "2601.17548",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "A large scale exploratory analysis of software vulnerability life cycles",
+      "arxiv_id": null,
+      "doi": "10.5555/2337223.2337314",
+      "year": 2012
+    },
+    {
+      "title": "On the Impact of Environmental Metrics on CVSS Scores",
+      "arxiv_id": null,
+      "doi": "10.1109/socialcom.2010.146",
+      "year": 2010
+    },
+    {
+      "title": "Vulnerability Discrimination Using CVSS Framework",
+      "arxiv_id": null,
+      "doi": "10.1109/ntms.2011.5720656",
+      "year": 2011
+    },
+    {
+      "title": "VLAI: A RoBERTa-Based Model for Automated Vulnerability Severity Classification",
+      "arxiv_id": "2507.03607",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Artificial Intelligence in Cybersecurity: A Review of Solutions for APT-Exploited Vulnerabilities",
+      "arxiv_id": null,
+      "doi": "10.1109/icccnt61001.2024.10724084",
+      "year": 2024
+    },
+    {
+      "title": "CVSS-BERT: Explainable Natural Language Processing to Determine the Severity of a Computer Security Vulnerability from its Description",
+      "arxiv_id": "2111.08510",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "An analysis of CVSS version 2 vulnerability scoring",
+      "arxiv_id": null,
+      "doi": "10.1109/esem.2009.5314220",
+      "year": 2009
+    },
+    {
+      "title": "Eradicating the Unseen: Detecting, Exploiting, and Remediating a Path Traversal Vulnerability across GitHub",
+      "arxiv_id": "2505.20186",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Application of Large Language Models to automatic classification of vulnerabilities according to the CVSS 3.1 standard",
+      "arxiv_id": null,
+      "doi": "10.24425/ijet.2026.157870",
+      "year": 2026
+    },
+    {
+      "title": "Enhanced Cyber Threat Severity Prediction Leveraging CVSS and BERT-Based Language Models",
+      "arxiv_id": null,
+      "doi": "10.5220/0015081300004103",
+      "year": 2026
+    },
+    {
+      "title": "Doing a Microdata Exploitation: The Case of Extracting Senior Tourists From a Broad Tourism Survey",
+      "arxiv_id": null,
+      "doi": "10.4135/9781526479143",
+      "year": 2019
+    },
+    {
+      "title": "Security evaluation of coal mine industrial control systems based on CVSS v4.0",
+      "arxiv_id": null,
+      "doi": "10.1016/j.rineng.2025.105118",
+      "year": 2025
+    },
+    {
+      "title": "The Wormable Paradox: Why CVSS 10.0 Vulnerabilities Diverge in Real-World Impact (A Comparative Study of SMB Protocol Exploits)",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.6237558",
+      "year": 2026
+    },
+    {
+      "title": "Bounds on Agreement between Subjective and Objective Measurements",
+      "arxiv_id": "2603.13204",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Latent Feature Vulnerability Ranking Of CVSS Vectors",
+      "arxiv_id": null,
+      "doi": "10.22360/summersim.2017.scsc.019",
+      "year": 2017
+    },
+    {
+      "title": "Helping CNAs Generate CVSS Scores Faster and More Confidently Using XAI",
+      "arxiv_id": null,
+      "doi": "10.3390/app14209231",
+      "year": 2024
+    },
+    {
+      "title": "The Limits of External Observability: Evidence Survival from Public Hosts to CVEs in Exposed IoT/IIoT Systems",
+      "arxiv_id": null,
+      "doi": "10.3390/computers15080489",
+      "year": 2026
+    },
+    {
+      "title": "Compute-Budgeted Exploitability Evidence Graphs for Prospective Vulnerability Triage",
+      "arxiv_id": "2606.19076",
+      "doi": "10.48550/arxiv.2606.19076",
+      "year": 2026
+    },
+    {
+      "title": "Predicting CVSS Base Metrics of Software Vulnerabilities Using MultiCNN",
+      "arxiv_id": null,
+      "doi": "10.1109/ispcc66872.2025.11039537",
+      "year": 2025
+    },
+    {
+      "title": "PECR: A Reproducible Specification and Synthetic Stress Test of Telemetry-Informed Vulnerability Prioritization for SD-WAN",
+      "arxiv_id": "2608.03110",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Using CVSS scores can make more informed and more adapted Intrusion Detection Systems",
+      "arxiv_id": null,
+      "doi": "10.3897/jucs.131659",
+      "year": 2024
+    },
+    {
+      "title": "Figure 3: Predictions <i>versus</i> actual log <sub>2</sub> FC activity scores for each model’s respective 20% held-out test set.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.20706/fig-3",
+      "year": null
+    },
+    {
+      "title": "VulSolver: Vulnerability Detection via LLM-Driven Constraint Solving",
+      "arxiv_id": "2509.00882",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Counterfactual Auditing of Bias in Open-Source Large Language Models for Clinical Triage",
+      "arxiv_id": "2610.01963",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Assessing Web Browser Security Vulnerabilities with respect to CVSS",
+      "arxiv_id": null,
+      "doi": "10.9717/kmms.2015.18.2.199",
+      "year": 2015
+    },
+    {
+      "title": "Prioritize Software Vulnerabilities by Classifying based on the CVSS score and Textual Description",
+      "arxiv_id": null,
+      "doi": "10.46254/in01.20210245",
+      "year": 2021
+    },
+    {
+      "title": "Specification-Guided Vulnerability Detection with Large Language Models",
+      "arxiv_id": "2511.04014",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Replication in Visual Diffusion Models: A Survey and Outlook",
+      "arxiv_id": "2408.00001",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Automated Code-centric Software Vulnerability Assessment: How Far Are We? An Empirical Study in C/C++",
+      "arxiv_id": "2407.17053",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Multi-Agent Penetration Testing AI for the Web",
+      "arxiv_id": "2508.20816",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "CXR-LLaVA: Multimodal Large Language Model for Interpreting Chest X-ray Images",
+      "arxiv_id": "2310.18341",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Beyond CVSS: Context-Aware Exploitability Assessment of Vulnerabilities in HPC Containers",
+      "arxiv_id": null,
+      "doi": "10.1109/cloudsummit68932.2026.00040",
+      "year": 2026
+    },
+    {
+      "title": "Fragmentation of CVSS scores in the NVD: A quantitative analysis of inconsistency across vulnerability scoring standards",
+      "arxiv_id": null,
+      "doi": "10.1016/j.cose.2026.104978",
+      "year": 2026
+    },
+    {
+      "title": "Shedding Light on CVSS Scoring Inconsistencies: A User-Centric Study on Evaluating Widespread Security Vulnerabilities",
+      "arxiv_id": null,
+      "doi": "10.1109/sp54263.2024.00058",
+      "year": 2024
+    },
+    {
+      "title": "Assessment of IIoT Sensor Security Vulnerabilities in Digital Wine Manufacturing Leveraging the CVSS",
+      "arxiv_id": null,
+      "doi": "10.1109/access.2024.3467248",
+      "year": 2024
+    },
+    {
+      "title": "An independent validation of vulnerability discovery models",
+      "arxiv_id": "1203.5830",
+      "doi": "10.1145/2414456.2414459",
+      "year": 2012
+    },
+    {
+      "title": "An AI-Resilient Cybersecurity Framework for 5G Telecommunications Networks: Detecting Adversarial Machine Learning, Autonomous Intrusions, and Intelligent Edge Threats in Critical Infrastructure",
+      "arxiv_id": null,
+      "doi": "10.64388/irev10i2-1722431",
+      "year": 2026
+    },
+    {
+      "title": "Diagnosing COVID-19 Severity from Chest X-Ray Images Using ViT and CNN Architectures",
+      "arxiv_id": "2502.16622",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "CVSS implementation guidance",
+      "arxiv_id": null,
+      "doi": "10.6028/nist.ir.7946",
+      "year": 2014
+    },
+    {
+      "title": "A Study on Correlation Analysis of Multidimensional Vulnerability Metrics (KEV, EPSS, CVSS) and Decision-Making Models Based on Optimal Thresholds in Q1 2026",
+      "arxiv_id": null,
+      "doi": "10.5762/kais.2026.27.7.903",
+      "year": 2026
+    },
+    {
+      "title": "Evolutionary demography of exploited populations : the case of the wild boar Sus scrofa",
+      "arxiv_id": null,
+      "doi": "10.70675/e023086ezac63z4773za294z0f47281a65f3",
+      "year": null
+    },
+    {
+      "title": "Control of DNA Replication",
+      "arxiv_id": null,
+      "doi": "10.1201/9781351071512-8",
+      "year": 2018
+    },
+    {
+      "title": "Under-Exploited Wild Edible Fruits of the Western Ghats: A Review on Antioxidant Potential and Phytochemistry",
+      "arxiv_id": null,
+      "doi": "10.1007/978-981-96-0543-9_15",
+      "year": 2025
+    },
+    {
+      "title": "CVSS-based Estimation and Prioritization for Security Risks",
+      "arxiv_id": null,
+      "doi": "10.5220/0007709902970306",
+      "year": 2019
+    },
+    {
+      "title": "Monitoring Vulnerabilities in Next-Generation Automotive Operating Systems",
+      "arxiv_id": "2607.07226",
+      "doi": "10.1109/jiot.2026.3711962",
+      "year": 2026
+    },
+    {
+      "title": "Exploitation and Temporary Migrant Workers",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003606369-2",
+      "year": 2026
+    },
+    {
+      "title": "Criminal Networks, Opportunity Structures and the Process of Exploitation",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-032-09275-5_4",
+      "year": 2025
+    },
+    {
+      "title": "Exploration-exploitation tradeoffs in metaheuristics: Survey and analysis",
+      "arxiv_id": null,
+      "doi": "10.1109/chicc.2014.6896450",
+      "year": 2014
+    },
+    {
+      "title": "WildSAT: Learning Satellite Image Representations from Wildlife Observations",
+      "arxiv_id": "2412.14428",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "SHARP: Social Harm Analysis via Risk Profiles for Measuring Inequities in Large Language Models",
+      "arxiv_id": "2601.21235",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Journeys into the Precariat: Migration, Exploitation and Trafficking",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-032-09275-5_2",
+      "year": 2025
+    },
+    {
+      "title": "Focal periphyseal edema (FOPE) revisited: does injury severity predict presence and frequency of FOPE lesions?",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-6917148/v1",
+      "year": 2025
+    },
+    {
+      "title": "Internet-Mediated Exploitation in the Scottish Online Sex Market",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-032-09275-5",
+      "year": 2025
+    },
+    {
+      "title": "Exploitation and the Policing of Contemporary Sex Markets in Scotland",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-032-09275-5_7",
+      "year": 2025
+    },
+    {
+      "title": "More Choices, Fewer Decisions: Ordinal-Scale Bias in JEV-like Direct-Decision Models",
+      "arxiv_id": "2609.38827",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Learning CNA-Oriented CVSS Scores",
+      "arxiv_id": null,
+      "doi": "10.1109/cloudnet62863.2024.10815736",
+      "year": 2024
+    },
+    {
+      "title": "From Centerlines to Hemodynamics: Anisotropic RBF Decoders for Coronary Arteries",
+      "arxiv_id": "2605.27578",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Fixing a Model That Learned Worse Cancer Means Lower Risk: Monotonic Constraints in Bladder Cancer Recurrence Prediction",
+      "arxiv_id": "2610.00858",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "MegaVul: A C/C++ Vulnerability Dataset with Comprehensive Code Representation",
+      "arxiv_id": "2406.12415",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "LLM Agents can Autonomously Exploit One-day Vulnerabilities",
+      "arxiv_id": "2404.08144",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Risk Management, Internal Controls &amp; Organizational Vulnerabilities",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.759124",
+      "year": 2005
+    },
+    {
+      "title": "Key Messages and Conclusions: Future Directions in the Computational Criminology of Internet-Mediated Exploitation",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-032-09275-5_10",
+      "year": 2025
+    },
+    {
+      "title": "Measuring the accuracy of software vulnerability assessments: experiments with students and professionals",
+      "arxiv_id": null,
+      "doi": "10.1007/s10664-019-09797-4",
+      "year": 2020
+    },
+    {
+      "title": "CVEfixes: Automated Collection of Vulnerabilities and Their Fixes from Open-Source Software",
+      "arxiv_id": "2107.08760",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Quantifying security risk level from CVSS estimates of frequency and impact",
+      "arxiv_id": null,
+      "doi": "10.1016/j.jss.2009.08.023",
+      "year": 2010
+    },
+    {
+      "title": "MCPTox: A Benchmark for Tool Poisoning Attack on Real-World MCP Servers",
+      "arxiv_id": "2508.14925",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Minor lipids with major roles: Viral exploitation of phosphoinositides during RNA replication",
+      "arxiv_id": null,
+      "doi": "10.1016/j.virol.2026.110930",
+      "year": 2026
+    },
+    {
+      "title": "An Independent Safety Evaluation of Kimi K2.5",
+      "arxiv_id": "2604.03121",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Tracing Vulnerabilities in Maven: A Study of CVE lifecycles and Dependency Networks",
+      "arxiv_id": "2502.04621",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "SecVulEval: Benchmarking LLMs for Real-World C/C++ Vulnerability Detection",
+      "arxiv_id": "2505.19828",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Cost-Sensitive Security Controls for Continuous Integration Pipelines",
+      "arxiv_id": null,
+      "doi": "10.1016/j.cose.2026.105124",
+      "year": 2026
+    },
+    {
+      "title": "Refining CVSS-Based Network Security Metrics by Examining the Base Scores",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-319-66505-4_2",
+      "year": 2017
+    },
+    {
+      "title": "Workshop on Hardware CPE and CVSS Updates",
+      "arxiv_id": null,
+      "doi": "10.6028/nist.ir.8624",
+      "year": 2026
+    },
+    {
+      "title": "HARP: Hierarchical Adaptive Ranking with Preference-Adaptive Fusion for Query-Based CVE Prioritization",
+      "arxiv_id": "2608.19430",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Aggregating CVSS Base Scores for Semantics-Rich Network Security Metrics",
+      "arxiv_id": null,
+      "doi": "10.1109/srds.2012.4",
+      "year": 2012
+    },
+    {
+      "title": "Compared to What? A Human-Anchored Security Benchmark for LLM-Generated Infrastructure-as-Code",
+      "arxiv_id": "2608.28021",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Review for \"The metabolic control of DNA replication: mechanism and function\"",
+      "arxiv_id": null,
+      "doi": "10.1098/rsob.230220/v1/review1",
+      "year": 2023
+    },
+    {
+      "title": "M30 Does Not Predict the Severity of Hepatosteatosis, Whereas Adiponectin Level Declined With Increase of ALT and the Severity of Hepatic Steatosis",
+      "arxiv_id": null,
+      "doi": "10.1002/jcla.21697",
+      "year": 2014
+    },
+    {
+      "title": "MCP Safety Audit: LLMs with the Model Context Protocol Allow Major Security Exploits",
+      "arxiv_id": "2504.03767",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Evolution of exploitation and replication of giant viruses and virophages",
+      "arxiv_id": null,
+      "doi": "10.1093/ve/veae021",
+      "year": 2024
+    },
+    {
+      "title": "Review for \"Replication of “Procrastination, Deadlines, And Performance: Self-Control by Precommitment\"\"",
+      "arxiv_id": null,
+      "doi": "10.1177/09567976261460772/v2/review1",
+      "year": 2025
+    },
+    {
+      "title": "Replication and enhanced analysis of the FDA-iRISK comparative risk assessment model: A computational case study in R software",
+      "arxiv_id": null,
+      "doi": "10.1016/j.foodcont.2026.112513",
+      "year": 2027
+    },
+    {
+      "title": "Book Review: Greenhouse Gases, Abatement and Control, the Role of Coal",
+      "arxiv_id": null,
+      "doi": "10.1177/014459879100900545",
+      "year": 1991
+    },
+    {
+      "title": "The SRG/eROSITA All-Sky Survey: Large-scale view of the Centaurus cluster",
+      "arxiv_id": "2404.04909",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Implication for Strategies of Long Term Control of Viral Replication in Patient With Primary HIV Infection (PHI).",
+      "arxiv_id": null,
+      "doi": "10.31525/ct1-nct04225325",
+      "year": 2020
+    },
+    {
+      "title": "After-Life Vulnerabilities: A Study on Firefox Evolution, Its Vulnerabilities, and Fixes",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-642-19125-1_15",
+      "year": 2011
+    },
+    {
+      "title": "Improving vulnerability discovery models",
+      "arxiv_id": null,
+      "doi": "10.1145/1314257.1314261",
+      "year": 2007
+    },
+    {
+      "title": "Review for \"Does lesion type or severity predict outcome of therapy for horses with equine glandular gastric disease? – A retrospective study\"",
+      "arxiv_id": null,
+      "doi": "10.1002/vms3.1034/v1/review3",
+      "year": 2022
+    },
+    {
+      "title": "Why Vehicle Damage Does Not Predict Injury Severity: A Clinical and Biomechanical Perspective on Motor Vehicle Trauma",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.6097047",
+      "year": 2026
+    },
+    {
+      "title": "Does the type and severity of brain injury predict hypothalamo–pituitary dysfunction? Does post-traumatic hypopituitarism predict worse outcome?",
+      "arxiv_id": null,
+      "doi": "10.1007/s11102-008-0102-x",
+      "year": 2008
+    },
+    {
+      "title": "Preference Fine-Tuning for Factuality in Chest X-Ray Interpretation Models Without Human Feedback",
+      "arxiv_id": "2410.07025",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Application of Vulnerability Discovery Models to Major Operating Systems",
+      "arxiv_id": null,
+      "doi": "10.1109/tr.2008.916872",
+      "year": 2008
+    },
+    {
+      "title": "Risk-Set Transported Synthetic Control with Difference-in-Differences Adjustment under Staggered Treatment Adoption",
+      "arxiv_id": "2609.20264",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "SteinDreamer: Variance Reduction for Text-to-3D Score Distillation via Stein Identity",
+      "arxiv_id": "2401.00604",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "From Given to Gathered Evidence: Agentic Learning for Longitudinal Medical Reasoning",
+      "arxiv_id": "2609.39566",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Can traditional fault prediction models be used for vulnerability prediction?",
+      "arxiv_id": null,
+      "doi": "10.1007/s10664-011-9190-8",
+      "year": 2013
+    },
+    {
+      "title": "TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models",
+      "arxiv_id": "2610.23668",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Risk Averse Alert Prioritization for IDS Using Subnormal Gaussian Fuzzy Models",
+      "arxiv_id": "2605.27299",
+      "doi": "10.48550/arxiv.2605.27299",
+      "year": 2026
+    },
+    {
+      "title": "A Bayes Factor for Replications of ANOVA Results",
+      "arxiv_id": "1611.09341",
+      "doi": null,
+      "year": 2016
+    },
+    {
+      "title": "Beyond heuristics: learning to classify vulnerabilities and predict exploits",
+      "arxiv_id": null,
+      "doi": "10.1145/1835804.1835821",
+      "year": 2010
+    },
+    {
+      "title": "Does the Severity of Obstructive Sleep Apnea Predict Patients Requiring High Continuous Positive Airway Pressure?",
+      "arxiv_id": null,
+      "doi": "10.1097/01.mlg.0000215833.68519.7b",
+      "year": 2006
+    },
+    {
+      "title": "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences",
+      "arxiv_id": "2406.11069",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "End-to-end SYNTAX score prediction: benchmark and methods",
+      "arxiv_id": "2407.19894",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "CARDEA: Auditable Reasoning Grounded in Spatial Evidence for End-to-End Coronary Angiography Interpretation",
+      "arxiv_id": "2609.06931",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Does Target Alignment Mean Target Recovery? An Evidence-Ladder Study of Adversarial Claims on Contrastive Encoders",
+      "arxiv_id": "2610.11938",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Remote Auditing: Design-based Tests of Randomization, Selection, and Missingness with Broadly Accessible Satellite Imagery",
+      "arxiv_id": "2510.00128",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Performance of a Deep Learning-Based Segmentation Model for Pancreatic Tumors on Public Endoscopic Ultrasound Datasets",
+      "arxiv_id": "2601.05937",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "A preliminary analysis of vulnerability scores for attacks in wild: the ekits and sym datasets",
+      "arxiv_id": null,
+      "doi": "10.1145/2382416.2382427",
+      "year": 2012
+    },
+    {
+      "title": "A Comparison of Kubernetes Compliance Standards and Configuration Scanners",
+      "arxiv_id": "2606.24438",
+      "doi": "10.48550/arxiv.2606.24438",
+      "year": 2026
+    },
+    {
+      "title": "The orphan impact: HIV-AIDS and student test scores from sub-Saharan Africa",
+      "arxiv_id": null,
+      "doi": "10.1080/00131911.2019.1689100",
+      "year": 2019
+    },
+    {
+      "title": "VERITAS: Towards a General-Purpose Replication Tool for Scientific Research",
+      "arxiv_id": "2607.02931",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "CACSurv: Concordance-Aligned Comparative Learning with Large Language Models for Cancer Survival Prediction",
+      "arxiv_id": "2608.16594",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "WoodBR-Cross: A public wood-image dataset and individual-tree-disjoint benchmark for species identification",
+      "arxiv_id": "2610.12676",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Risk-Adjusted Harm Scoring for Automated Red Teaming for LLMs in Financial Services",
+      "arxiv_id": "2603.10807",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Cybersecurity debt: A conceptual theory of how deferred security decisions accumulate organisational risk",
+      "arxiv_id": null,
+      "doi": "10.68217/psnqe791",
+      "year": 2026
+    },
+    {
+      "title": "The Last Word Often Wins: A Format Confound in Chain-of-Thought Corruption Studies",
+      "arxiv_id": "2605.10799",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Same Agent, Different Answers: A Repeat-Aware Audit of Corpus-Induced Answer Churn in Retrieval-Augmented QA",
+      "arxiv_id": "2608.22856",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Dive into the Agent Matrix: A Realistic Evaluation of Self-Replication Risk in LLM Agents",
+      "arxiv_id": "2509.25302",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "A TEE-Based Architecture for Confidential and Dependable Process Attestation in Authorship Verification",
+      "arxiv_id": "2603.00178",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Beyond Knowledge to Agency: Evaluating Expertise, Autonomy, and Integrity in Finance with CNFinBench",
+      "arxiv_id": "2512.09506",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Vul-RAG: Enhancing LLM-based Vulnerability Detection via Knowledge-level RAG",
+      "arxiv_id": "2406.11147",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Familiarity breeds contempt: the honeymoon effect and the role of legacy code in zero-day vulnerabilities",
+      "arxiv_id": null,
+      "doi": "10.1145/1920261.1920299",
+      "year": 2010
+    },
+    {
+      "title": "Disparate Vulnerability to Membership Inference Attacks",
+      "arxiv_id": "1906.00389",
+      "doi": null,
+      "year": 2019
+    },
+    {
+      "title": "The Work‐Averse Cyberattacker Model: Theory and Evidence from Two Million Attack Signatures",
+      "arxiv_id": null,
+      "doi": "10.1111/risa.13732",
+      "year": 2021
+    },
+    {
+      "title": "PATCHEVAL: A New Benchmark for Evaluating LLMs on Patching Real-World Vulnerabilities",
+      "arxiv_id": "2511.11019",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Words Speak Louder Than Code: Investigating Cognitive Heuristics in LLM-Based Code Vulnerability Detection",
+      "arxiv_id": "2606.30587",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "CleanVul: Automatic Function-Level Vulnerability Detection in Code Commits Using LLM Heuristics",
+      "arxiv_id": "2411.17274",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Reasoning with LLMs for Zero-Shot Vulnerability Detection",
+      "arxiv_id": "2503.17885",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "CVE-Factory: Scaling Expert-Level Agentic Tasks for Code Security Vulnerability",
+      "arxiv_id": "2602.03012",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Security Events and Vulnerability Data for Cybersecurity Risk Estimation",
+      "arxiv_id": null,
+      "doi": "10.1111/risa.12864",
+      "year": 2017
+    },
+    {
+      "title": "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+      "arxiv_id": "2411.12882",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Evaluating the NIST Bugs Framework Against CWE as a Successor for Automated Vulnerability Classification",
+      "arxiv_id": "2609.16433",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "LLM-Enabled Open-Source Systems in the Wild: An Empirical Study of Vulnerabilities in GitHub Security Advisories",
+      "arxiv_id": "2604.04288",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Favia: Forensic Agent for Vulnerability-fix Identification and Analysis",
+      "arxiv_id": "2602.12500",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "A Dual-Loop Agent Framework for Automated Vulnerability Reproduction",
+      "arxiv_id": "2602.05721",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "USB: A Comprehensive and Unified Safety Evaluation Benchmark for Multimodal Large Language Models",
+      "arxiv_id": "2505.23793",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "KSAFE-MM: A Multimodal Safety Benchmark via Localized Contextualization for Korean Cultural Risks",
+      "arxiv_id": "2605.28013",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Running in CIRCLE? A Simple Benchmark for LLM Code Interpreter Security",
+      "arxiv_id": "2507.19399",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Mapping CVEs to MITRE ATT&CK Techniques: A Curated Gold-Set Classifier and the Limits of LLM-Assisted Label Expansion",
+      "arxiv_id": "2607.25572",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Mean Time to Remediate Is Not a Fielding Model: A Cadence Audit for Enterprise Vulnerability Management",
+      "arxiv_id": "2607.04511",
+      "doi": "10.48550/arxiv.2607.04511",
+      "year": 2026
+    },
+    {
+      "title": "Statistical Estimation of Adversarial Risk in Large Language Models under Best-of-N Sampling",
+      "arxiv_id": "2601.22636",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Adversarial Attacks on Large Language Models in Medicine",
+      "arxiv_id": "2406.12259",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Exposing the Illusion of Fairness: Auditing Vulnerabilities to Distributional Manipulation Attacks",
+      "arxiv_id": "2507.20708",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "LLM Swiss Round: Aggregating Multi-Benchmark Performance via Competitive Swiss-System Dynamics",
+      "arxiv_id": "2512.21010",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+      "arxiv_id": "2605.22087",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "SecureCode v2.0: A Production-Grade Dataset for Training Security-Aware Code Generation Models",
+      "arxiv_id": "2512.18542",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Statistical Models for Congeneric Test Scores",
+      "arxiv_id": null,
+      "doi": "10.1037/e473742008-108",
+      "year": 1968
+    },
+    {
+      "title": "A Statistical Perspective on Equating Test Scores",
+      "arxiv_id": null,
+      "doi": "10.1007/978-0-387-98138-3_1",
+      "year": 2009
+    },
+    {
+      "title": "Review of Statistical Theories of Mental Test Scores.",
+      "arxiv_id": null,
+      "doi": "10.1037/013774",
+      "year": 1970
+    },
+    {
+      "title": "A Unified Framework for Statistical Inference and Study Design of Comparative <i>F</i> <sub>1</sub> and <i> F <sub>β</sub> </i> Scores under Paired Classifier Evaluations",
+      "arxiv_id": null,
+      "doi": "10.64898/2026.07.15.26358166",
+      "year": 2026
+    },
+    {
+      "title": "Review for \"Dietary Antioxidant Quality Score and Epilepsy Odds in the US Adults: A Cross‐Sectional NHANES Study\"",
+      "arxiv_id": null,
+      "doi": "10.1002/brb3.71018/v3/review1",
+      "year": 2025
+    },
+    {
+      "title": "Virology Capabilities Test (VCT): A Multimodal Virology Q&A Benchmark",
+      "arxiv_id": "2504.16137",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Does High BMI Predict Outcomes of Patients with ACL Reconstruction?",
+      "arxiv_id": null,
+      "doi": "10.1302/3114-221053",
+      "year": 2022
+    },
+    {
+      "title": "Describing test scores",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9780511667350.004",
+      "year": 2004
+    },
+    {
+      "title": "Reporting and interpreting test scores",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9780511667350.014",
+      "year": 2004
+    },
+    {
+      "title": "<scp>P</scp> uri's Expected Normal Scores Test",
+      "arxiv_id": null,
+      "doi": "10.1002/0471667196.ess2109",
+      "year": 2004
+    },
+    {
+      "title": "Investigating relationships among different sets of test scores",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9780511667350.005",
+      "year": 2004
+    },
+    {
+      "title": "Equating Test Scores: Toward Best Practices",
+      "arxiv_id": null,
+      "doi": "10.1007/978-0-387-98138-3_2",
+      "year": 2009
+    },
+    {
+      "title": "Broad-band High-Energy Resolution Hard X-ray Spectroscopy using Transition Edge Sensors at SPring-8",
+      "arxiv_id": "2604.21846",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "WILDS: A Benchmark of in-the-Wild Distribution Shifts",
+      "arxiv_id": "2012.07421",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "TTS-VAR: A Test-Time Scaling Framework for Visual Auto-Regressive Generation",
+      "arxiv_id": "2507.18537",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Towards Explainable In-the-Wild Video Quality Assessment: A Database and a Language-Prompted Approach",
+      "arxiv_id": "2305.12726",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "A UV to X-ray view of soft excess in type 1 AGNs: I. sample selection and spectral profile",
+      "arxiv_id": "2412.11178",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Inferences of associated latent variables by the observable test scores",
+      "arxiv_id": null,
+      "doi": "10.1111/bmsp.70002",
+      "year": 2025
+    },
+    {
+      "title": "Takeoffs and Test Scores: The Impact of Noise Pollution on Standardized Test Performance",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.6955178",
+      "year": 2026
+    },
+    {
+      "title": "ROCkeTS GEN V2 Study. Refining Ovarian Cancer Test Accuracy Scores: A test accuracy study to validate new risk scores in postmenopausal women with symptoms of suspected ovarian cancer",
+      "arxiv_id": null,
+      "doi": "10.1186/isrctn87528895",
+      "year": 2026
+    },
+    {
+      "title": "Did We Actually Fix It? An Independent Adversarial Stress-Test of Post-Point-Adjustment Evaluation Metrics for Time-Series Anomaly Detection",
+      "arxiv_id": "2607.11969",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Extending the WILDS Benchmark for Unsupervised Adaptation",
+      "arxiv_id": "2112.05090",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Cardiovascular Disease Risk Prediction via Social Media",
+      "arxiv_id": "2309.13147",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Evaluating Reasoning Faithfulness in Medical Vision-Language Models using Multimodal Perturbations",
+      "arxiv_id": "2510.11196",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Aircrew rostering workload patterns and associated fatigue and sleepiness scores in short/medium haul flights under RBAC 117 rules in Brazil",
+      "arxiv_id": "2408.08889",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "WILD: a new in-the-Wild Image Linkage Dataset for synthetic image attribution",
+      "arxiv_id": "2504.19595",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "PlotPick: AI-powered batch extraction of numerical data from scientific figures",
+      "arxiv_id": "2605.06021",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Figure 1—source data 1. Wild-type values for eyeblink conditioning parameters.",
+      "arxiv_id": null,
+      "doi": "10.7554/elife.06085.004",
+      "year": null
+    },
+    {
+      "title": "The SAGES Critical View of Safety Challenge: A Global Benchmark for AI-Assisted Surgical Quality Assessment",
+      "arxiv_id": "2509.17100",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Scaling Reproducibility: An AI-Assisted Workflow for Large-Scale Reanalysis",
+      "arxiv_id": "2602.16733",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "SAS-Bench: A Fine-Grained Benchmark for Evaluating Short Answer Scoring with Large Language Models",
+      "arxiv_id": "2505.07247",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Survey on Data Replication in DRTDBS: Taxonomy and State of the Art",
+      "arxiv_id": null,
+      "doi": "10.5373/jardcs/v12sp1/20201144",
+      "year": 2020
+    },
+    {
+      "title": "Multiscale Score Matching for Out-of-Distribution Detection",
+      "arxiv_id": "2010.13132",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "Do VSR Models Generalize Beyond LRS3?",
+      "arxiv_id": "2311.14063",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Fast-VAT: Accelerating Cluster Tendency Visualization using Cython and Numba",
+      "arxiv_id": "2507.15904",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "CheXpercept: A Benchmark for Evaluating Expert-Level Lesion Perception in Chest X-rays",
+      "arxiv_id": "2606.21020",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Reducing Annotation Burden in Physical Activity Research Using Vision-Language Models",
+      "arxiv_id": "2505.03374",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "DistressBench: Evaluating Multi-Dimensional Crisis Support in Large Language Models",
+      "arxiv_id": "2610.12758",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Coding-agents can replicate scientific machine learning papers",
+      "arxiv_id": "2607.02134",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Highly Imbalanced Regression with Tabular Data in SEP and Other Applications",
+      "arxiv_id": "2509.16339",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "ConvScale: Conversational Interviews for Scale-Aligned Measurement",
+      "arxiv_id": "2603.11988",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Gricea: An Open Science Platform for Conversational AI Research",
+      "arxiv_id": "2609.22039",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "MMR1: Enhancing Multimodal Reasoning with Variance-Aware Sampling and Open Resources",
+      "arxiv_id": "2509.21268",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Assessing Coronary Microvascular Dysfunction using Angiography-based Data-driven Methods",
+      "arxiv_id": "2512.20797",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "retinalysis-vascx: An explainable software toolbox for the extraction of retinal vascular biomarkers",
+      "arxiv_id": "2602.08580",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Super-CLEVR: A Virtual Benchmark to Diagnose Domain Robustness in Visual Reasoning",
+      "arxiv_id": "2212.00259",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection",
+      "arxiv_id": "2605.08070",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "CSnake: Detecting Self-Sustaining Cascading Failure via Causal Stitching of Fault Propagations",
+      "arxiv_id": "2509.26529",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "SVDD 2024: The Inaugural Singing Voice Deepfake Detection Challenge",
+      "arxiv_id": "2408.16132",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Identity-Duplication Auditing in National-Scale Neuroimaging Repositories",
+      "arxiv_id": "2610.09614",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+      "arxiv_id": "2606.27243",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "How Is Automated Research Evaluated? A Survey of Benchmarks and Evaluation Practices",
+      "arxiv_id": "2610.11877",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "MVSS: A Unified Framework for Multi-View Structured Survey Generation",
+      "arxiv_id": "2601.09504",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Cluster on the Subject, Not the Record: Confidence Intervals and Simultaneous Bands for Additive-Hazards Sequential Trial Emulation",
+      "arxiv_id": "2608.01429",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Singapore Soundscape Site Selection Survey (S5): Identification of Characteristic Soundscapes of Singapore via Weighted k-means Clustering",
+      "arxiv_id": "2206.03112",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Stochastic Parrots or Singing in Harmony? Testing Five Leading LLMs for their Ability to Replicate a Human Survey with Synthetic Data",
+      "arxiv_id": "2603.00059",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Should we trust web-scraped data?",
+      "arxiv_id": "2308.02231",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "EXAMS-V: A Multi-Discipline Multilingual Multimodal Exam Benchmark for Evaluating Vision Language Models",
+      "arxiv_id": "2403.10378",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "PRISM: A Framework Harnessing Unsupervised Visual Representations and Textual Prompts for Explainable MACE Survival Prediction from Cardiac Cine MRI",
+      "arxiv_id": "2508.19325",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "WildSVG: Towards Reliable SVG Generation Under Real-Word Conditions",
+      "arxiv_id": "2602.21416",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Special sampling designs",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781139094757.009",
+      "year": 2014
+    },
+    {
+      "title": "Multi-Phase Sampling",
+      "arxiv_id": null,
+      "doi": "10.1201/9781315154084-12",
+      "year": 2018
+    },
+    {
+      "title": "Crime Pays If You Are Just an Average Hacker",
+      "arxiv_id": null,
+      "doi": "10.1109/cybersecurity.2012.15",
+      "year": 2012
+    },
+    {
+      "title": "Quantitative Assessment of Risk Reduction with Cybercrime Black Market Monitoring",
+      "arxiv_id": null,
+      "doi": "10.1109/spw.2013.16",
+      "year": 2013
+    },
+    {
+      "title": "The Work-Averse Cyber Attacker Model: Theory and Evidence From Two Million Attack Signatures",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.2862299",
+      "year": 2017
+    },
+    {
+      "title": "Attack Potential in Impact and Complexity",
+      "arxiv_id": null,
+      "doi": "10.1145/3098954.3098965",
+      "year": 2017
+    },
+    {
+      "title": "Evaluating and Improving the Robustness of Large Language Models to Input Sequence Variations",
+      "arxiv_id": "2610.02432",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "ProtegoFed: Backdoor-Free Federated Instruction Tuning with Interspersed Poisoned Data",
+      "arxiv_id": "2603.00516",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "RASA: Routing-Aware Safety Alignment for Mixture-of-Experts Models",
+      "arxiv_id": "2602.04448",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Skin-Deep: A Geometric Diagnostic for Alignment Fragility in Large Language Model Representations",
+      "arxiv_id": "2606.22676",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "AEGIS: Online Adaptive AI Content Safety Moderation with Ensemble of LLM Experts",
+      "arxiv_id": "2404.05993",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "MalwareLab: Experimentation with Cybercrime Attack Tools",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2013
+    },
+    {
+      "title": "Anatomy of Exploit Kits - Preliminary Analysis of Exploit Kits as Software Artefacts",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-642-36563-8_13",
+      "year": 2013
+    },
+    {
+      "title": "Manufacturing compromise: the emergence of exploit-as-a-service",
+      "arxiv_id": null,
+      "doi": "10.1145/2382196.2382283",
+      "year": 2012
+    },
+    {
+      "title": "Ask WINE: Are We Safer Today? Evaluating Operating System Security through Big Data Analysis",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2012
+    },
+    {
+      "title": "An analysis of underground forums",
+      "arxiv_id": null,
+      "doi": "10.1145/2068816.2068824",
+      "year": 2011
+    },
+    {
+      "title": "An Attack Surface Metric",
+      "arxiv_id": null,
+      "doi": "10.1109/tse.2010.60",
+      "year": 2011
+    },
+    {
+      "title": "Is open source security a myth?",
+      "arxiv_id": null,
+      "doi": "10.1145/1941487.1941516",
+      "year": 2011
+    },
+    {
+      "title": "Toward a standard benchmark for computer security research: the worldwide intelligence network environment (WINE)",
+      "arxiv_id": null,
+      "doi": "10.1145/1978672.1978683",
+      "year": 2011
+    },
+    {
+      "title": "Guide to Adopting and Using the Security Content Automation Protocol (SCAP) Version 1.0",
+      "arxiv_id": null,
+      "doi": "10.6028/nist.sp.800-117",
+      "year": 2010
+    },
+    {
+      "title": "SP 800-117. Guide to Adopting and Using the Security Content Automation Protocol (SCAP) Version 1.0",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2010
+    },
+    {
+      "title": "A Comprehensive and Comparative Analysis of the Patching Behavior of Open Source and Closed Source Software Vendors",
+      "arxiv_id": null,
+      "doi": "10.1109/imf.2009.15",
+      "year": 2009
+    },
+    {
+      "title": "Predicting Attack-prone Components",
+      "arxiv_id": null,
+      "doi": "10.1109/icst.2009.36",
+      "year": 2009
+    },
+    {
+      "title": "An Attack Graph-Based Probabilistic Security Metric",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-540-70567-3_22",
+      "year": 2008
+    },
+    {
+      "title": "Model-driven security analysis of SD-Access fabrics using digital twins: A probabilistic framework in software-defined campus and cyber-physical networks",
+      "arxiv_id": null,
+      "doi": "10.1016/j.future.2026.108698",
+      "year": 2026
+    },
+    {
+      "title": "Cream Skimming the Underground: Identifying Relevant Points in TI Feeds and Online Forums",
+      "arxiv_id": null,
+      "doi": "10.1016/j.nexres.2026.102526",
+      "year": 2026
+    },
+    {
+      "title": "Zero-Day Exploits at the Boundary: A Comparative Analysis of Network-Layer and Application-Layer Attack Vectors, Detection Mechanisms, and Mitigation Strategies",
+      "arxiv_id": null,
+      "doi": "10.1109/isi69914.2026.11685832",
+      "year": 2026
+    },
+    {
+      "title": "An Explainable AI Based Alert Triage Framework for Security Operations Centres: Architecture, Evaluation, And Analyst Centred Design",
+      "arxiv_id": null,
+      "doi": "10.51173/ijds.v3i2.84",
+      "year": 2026
+    },
+    {
+      "title": "Informal carers of stroke survivors",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2012
+    }
+  ],
+  "ranking": "claim",
+  "semantic_model": null,
+  "arxiv_match": "all",
+  "must_read": [
+    {
+      "title": "Prediction Meets Patch Queues: Empirical Limits of EPSS-Only Prioritization Using CISA KEV Additions in 2025",
+      "year": 2026,
+      "arxiv_id": null,
+      "doi": "10.36227/techrxiv.176857939.95987957/v1",
+      "pdf_url": null,
+      "why": "term overlap 0.46, design elements: CISA KEV ground truth",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "A methodology to perform cross-ecosystems case-control security studies",
+      "year": 2026,
+      "arxiv_id": null,
+      "doi": "10.1007/s10664-026-10873-9",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10664-026-10873-9.pdf",
+      "why": "term overlap 0.173, design elements: case-control sampling; odds ratio, found only through the citation graph",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "Odds Ratio Methods for Case‐Control Data",
+      "year": 2002,
+      "arxiv_id": null,
+      "doi": "10.1002/0471272612.ch11",
+      "pdf_url": null,
+      "why": "term overlap 0.075, design elements: case-control sampling; odds ratio, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Explainable Risk-Based Vulnerability Prioritization in Hybrid Cloud: Integrating CVSS, EPSS, and CISA KEV with Asset Criticality Signals",
+      "year": 2026,
+      "arxiv_id": null,
+      "doi": "10.30574/wjarr.2026.30.1.1006",
+      "pdf_url": null,
+      "why": "term overlap 0.353, design elements: case-control sampling",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Confidence intervals for the odds ratio in case-control studies: the state of the art",
+      "year": 1978,
+      "arxiv_id": null,
+      "doi": "10.2172/6087393",
+      "pdf_url": null,
+      "why": "term overlap 0.075, design elements: case-control sampling; odds ratio, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "A Case-Control Measurement Study of OSINT Source Effectiveness for Critical Infrastructure Defense",
+      "year": 2026,
+      "arxiv_id": "2608.21471",
+      "doi": "10.1109/cns69863.2026.11720880",
+      "pdf_url": "https://arxiv.org/pdf/2608.21471",
+      "why": "term overlap 0.169, design elements: case-control sampling, found only through the citation graph",
+      "next": "fulltext --id 2608.21471"
+    }
+  ],
+  "expansion_log": [
+    {
+      "expanded": "Prediction Meets Patch Queues: Empirical Limits of EPSS-Only Prioritization Using CISA KEV Additions in 2025",
+      "citing_and_references": 0
+    },
+    {
+      "expanded": "Odds Ratio Methods for Case‐Control Data",
+      "citing_and_references": 1
+    },
+    {
+      "expanded": "Explainable Risk-Based Vulnerability Prioritization in Hybrid Cloud: Integrating CVSS, EPSS, and CISA KEV with Asset Criticality Signals",
+      "citing_and_references": 2
+    }
+  ],
+  "expansion_errors": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429,
+      "step": "recommended"
+    },
+    {
+      "step": "seed_citations",
+      "source": "openalex",
+      "kind": "not_found",
+      "message": "no OpenAlex record for seed 1301.1275; citing works not searched"
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404,
+      "step": "citations"
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404,
+      "step": "references"
+    }
+  ],
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "case-control study CVSS known exploited vulnerabilities",
+      "results": 0,
+      "error": {
+        "source": "openalex",
+        "kind": "rate_limited",
+        "message": "quota exhausted (X-RateLimit-Reset=8450). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?",
+        "status": 429
+      }
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "case-control study CVSS known exploited vulnerabilities",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "case-control study CVSS known exploited vulnerabilities",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "case-control study CVSS known exploited vulnerabilities",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "case-control study CVSS known exploited vulnerabilities",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "CVSS score KEV odds ratio",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "CVSS score KEV odds ratio",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "CVSS score KEV odds ratio",
+      "results": 13,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "replication CVSS exploitation case-control",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "replication CVSS exploitation case-control",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "replication CVSS exploitation case-control",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "does high CVSS severity predict CISA KEV inclusion",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "does high CVSS severity predict CISA KEV inclusion",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "does high CVSS severity predict CISA KEV inclusion",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "CVSS sub-scores exploited in the wild statistical test",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "CVSS sub-scores exploited in the wild statistical test",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "CVSS sub-scores exploited in the wild statistical test",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "case-control study CVSS known exploited vulnerabilities survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "case-control study CVSS known exploited vulnerabilities survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "case-control study CVSS known exploited vulnerabilities survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "case-control study CVSS known exploited vulnerabilities review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "case-control study CVSS known exploited vulnerabilities review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "case-control study CVSS known exploited vulnerabilities review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "CVSS score KEV odds ratio survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "CVSS score KEV odds ratio survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "CVSS score KEV odds ratio survey",
+      "results": 7,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "CVSS score KEV odds ratio review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "CVSS score KEV odds ratio review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "CVSS score KEV odds ratio review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "replication CVSS exploitation case-control survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "replication CVSS exploitation case-control survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "replication CVSS exploitation case-control survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "replication CVSS exploitation case-control review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "replication CVSS exploitation case-control review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "replication CVSS exploitation case-control review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does high CVSS severity predict CISA KEV inclusion survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does high CVSS severity predict CISA KEV inclusion survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does high CVSS severity predict CISA KEV inclusion survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does high CVSS severity predict CISA KEV inclusion review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does high CVSS severity predict CISA KEV inclusion review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does high CVSS severity predict CISA KEV inclusion review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "CVSS sub-scores exploited in the wild statistical test survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "CVSS sub-scores exploited in the wild statistical test survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "CVSS sub-scores exploited in the wild statistical test survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "CVSS sub-scores exploited in the wild statistical test review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "CVSS sub-scores exploited in the wild statistical test review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "CVSS sub-scores exploited in the wild statistical test review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "case-control study CVSS known exploited vulnerabilities",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "case-control study CVSS known exploited vulnerabilities",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "case-control study CVSS known exploited vulnerabilities",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "CVSS score KEV odds ratio",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "CVSS score KEV odds ratio",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "CVSS score KEV odds ratio",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "replication CVSS exploitation case-control",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "replication CVSS exploitation case-control",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "replication CVSS exploitation case-control",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "does high CVSS severity predict CISA KEV inclusion",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "does high CVSS severity predict CISA KEV inclusion",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "does high CVSS severity predict CISA KEV inclusion",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "CVSS sub-scores exploited in the wild statistical test",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "CVSS sub-scores exploited in the wild statistical test",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "CVSS sub-scores exploited in the wild statistical test",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "case-control sampling Allodi-Massacci case-control Vulnerabilities",
+      "results": 0,
+      "error": {
+        "source": "openalex",
+        "kind": "rate_limited",
+        "message": "quota exhausted (X-RateLimit-Reset=8356). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?",
+        "status": 429
+      }
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "case-control sampling Allodi-Massacci case-control Vulnerabilities",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "case-control sampling Allodi-Massacci case-control Vulnerabilities",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "case-control sampling Allodi-Massacci case-control Vulnerabilities",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "case-control sampling Allodi-Massacci case-control Vulnerabilities",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "odds ratio Allodi-Massacci case-control Vulnerabilities",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "CISA KEV ground truth Allodi-Massacci case-control Vulnerabilities",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "CISA KEV ground truth Allodi-Massacci case-control Vulnerabilities",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "CISA KEV ground truth Allodi-Massacci case-control Vulnerabilities",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-19"
+}

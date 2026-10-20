@@ -1,0 +1,2049 @@
+{
+  "claim": "No prior work measures train-test user overlap in UPFD/FakeNewsNet propagation graphs or evaluates fake news detectors under user-disjoint splits",
+  "queries": [
+    "user overlap train test leakage fake news detection social context",
+    "user-disjoint split fake news detection graph",
+    "fake news detection shortcut user identity memorization",
+    "spurious correlations social context fake news detection evaluation",
+    "unseen users generalization propagation-based fake news detection",
+    "FakeNewsNet data leakage evaluation bias"
+  ],
+  "sources_ok": [
+    "openalex",
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [
+    "semantic_scholar"
+  ],
+  "sources_status": {
+    "openalex": {
+      "calls": 24,
+      "ok_calls": 24,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "arxiv": {
+      "calls": 24,
+      "ok_calls": 24,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "crossref": {
+      "calls": 24,
+      "ok_calls": 24,
+      "results": 360,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 24,
+      "ok_calls": 24,
+      "results": 360,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "n_papers_examined": 223,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 11,
+  "n_without_abstract": 77,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "interpretation": "No closely worded paper was retrieved, but only 0 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "A hybrid contrastive graph neural network framework for fake news and hate speech detection using content and user interaction signals",
+        "authors": [
+          "V. S. Nivedita",
+          "A. Bazila Banu"
+        ],
+        "year": 2025,
+        "date": "2025-12-04",
+        "venue": "Scientific Reports",
+        "doi": "10.1038/s41598-025-30299-5",
+        "arxiv_id": null,
+        "pmid": "41345193",
+        "openalex_id": "W4417002127",
+        "s2_id": null,
+        "url": "https://doi.org/10.1038/s41598-025-30299-5",
+        "pdf_url": "https://www.nature.com/articles/s41598-025-30299-5_reference.pdf",
+        "abstract": "Detecting fake discussions and aggressive speech on social platforms remains a complex task due to evolving user dynamics and the minimal overlap between normal and harmful content. Traditional detection methods lag in classifying these contents as they focus only on textual features or user behavior. This leads to limited performance specially in sparse interaction environments. To overcome these limitations a hybrid graph-based classification model is proposed in this research work which incorporates semantic, behavioral, and contextual data into a combined architecture. The proposed system models content and users as nodes, with interaction types such as replies, mentions, and shares to create a forming weighted edges based on temporal and behavioral factors. Also, a contrastive strategy is incorporated to differentiate the aligned and conflicting user-content associations. The textual representation in the comments is captured using a semantic encoder and the relational dependencies are modeled through graph attention layers which further enhanced with metadata like credibility scores and user activity. Experimental evaluations using the FakeNewsNet dataset confirm the proposed model superior performance through the attained 97.12% accuracy which is superior over conventional methods like GRU-MCAF (94.82%) and Attention-LSTM (93.57%). The proposed model also recorded the highest F1-score of 96.43%, precision of 96.72%, and recall of 96.15% which indicates the model consistent classification across labels over conventional methods.",
+        "citations": 1,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "user-disjoint split fake news detection graph"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user-disjoint split fake news detection graph survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user-disjoint split fake news detection graph review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "user-disjoint split fake news detection graph"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.714,
+            "title_match": 0.714,
+            "retrieval_hits": 3,
+            "score": 2.54
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W3100763318",
+            "W4205415902",
+            "W4225158996",
+            "W4226530281",
+            "W4288064511",
+            "W4317496106",
+            "W4328008002",
+            "W4328008031",
+            "W4380607273",
+            "W4391590786",
+            "W4392881469",
+            "W4398788568",
+            "W4399796149",
+            "W4404459606",
+            "W4405566696",
+            "W4407128422",
+            "W4410301129",
+            "W4411446363"
+          ]
+        }
+      },
+      "term_overlap": 0.264,
+      "tfidf_similarity": 0.105,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Data Leakage and Fair Evaluation in Smart Contract Vulnerability Detection",
+        "authors": [
+          "Junfeng Chen"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": "ITM Web of Conferences",
+        "doi": "10.1051/itmconf/20268904008",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1051/itmconf/20268904008",
+        "pdf_url": null,
+        "abstract": "Smart contract vulnerability detection usually uses public datasets for training and evaluation. However, using datasets that contain duplicate and highly similar pairs can bring implicit data leakage between the training and test sets. This may affect the reliability of the evaluation results. To address this issue, this paper constructs a binary classification task related to reentrancy vulnerabilities based on two public datasets, ScrawlD and DIVE. It proposes an overlap-aware evaluation framework for fair evaluation. The framework further identifies data overlap at two distinct tiers: duplicate samples and high-similarity pairs. Two evaluation settings, random split and strict split, are constructed. Experiments are conducted using Logistic Regression, Linear Support Vector Machine (SVM), and Multinomial Naive Bayes (MultinomialNB). Results show that sample overlap exists in both datasets, with a higher degree of overlap in DIVE. And sample leakage between the training and test sets has been eliminated effectively by a strict split. Further analysis reveals that the impact of a strict split on model performance is dataset-dependent. It changes less on ScrawlD but decreases significantly on DIVE. The findings suggest that conventional random splitting tends to inflate performance metrics when sample overlap occurs.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "FakeNewsNet data leakage evaluation bias"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.6,
+            "retrieval_hits": 1,
+            "score": 1.925
+          }
+        }
+      },
+      "term_overlap": 0.214,
+      "tfidf_similarity": 0.143,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Leakage-Free Evaluation for Employee Attrition Prediction on Tabular Data",
+        "authors": [
+          "Ana Maria Căvescu",
+          "Alina Nirvana Popescu"
+        ],
+        "year": 2026,
+        "date": "2026-03-23",
+        "venue": "Information",
+        "doi": "10.3390/info17030308",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/info17030308",
+        "pdf_url": null,
+        "abstract": "In the context of employee attrition prediction using imbalanced tabular data, we propose a reproducible, leakage-aware evaluation protocol and validate it on the IBM HR Attrition dataset. We perform the train/test split prior to any rebalancing; SMOTE (Synthetic Minority Over-sampling Technique) is applied exclusively within the training portion of each fold in stratified 5-fold cross-validation, while the test set remains untouched. One-Hot Encoding is performed consistently using pd.get_dummies. We benchmark Logistic Regression, Random Forest, ExtraTrees, LightGBM, and XGBoost using imbalance-aware metrics: F1 for the minority class, PR-AUC reported as Average Precision (AP), and ROC-AUC reported both in cross-validation and on the held-out test set. XGBoost attains the best mean AP in cross-validation (0.556 ± 0.056). Logistic Regression achieves the highest mean F1 (0.439 ± 0.048), while LightGBM yields the best mean ROC-AUC (0.791 ± 0.026). On the test set, XGBoost achieves a precision value of 0.65 and a recall value of 0.45 at a fixed threshold of 0.5. Overall, the results highlight a trade-off between stable minority-class detection (Logistic Regression) and stronger risk ranking performance (boosting models) under class imbalance.",
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "FakeNewsNet data leakage evaluation bias"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.6,
+            "retrieval_hits": 1,
+            "score": 1.948
+          }
+        }
+      },
+      "term_overlap": 0.273,
+      "tfidf_similarity": 0.082,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Generalizing to the Future: Mitigating Entity Bias in Fake News Detection",
+        "authors": [
+          "Yongchun Zhu",
+          "Qiang Sheng",
+          "Juan Cao",
+          "Shuokai Li",
+          "Danding Wang",
+          "Fuzhen Zhuang"
+        ],
+        "year": 2022,
+        "date": "2022-04-20",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2204.09484",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2204.09484",
+        "pdf_url": null,
+        "abstract": "The wide dissemination of fake news is increasingly threatening both individuals and society. Fake news detection aims to train a model on the past news and detect fake news of the future. Though great efforts have been made, existing fake news detection methods overlooked the unintended entity bias in the real-world data, which seriously influences models' generalization ability to future data. For example, 97\\% of news pieces in 2010-2017 containing the entity `Donald Trump' are real in our data, but the percentage falls down to merely 33\\% in 2018. This would lead the model trained on the former set to hardly generalize to the latter, as it tends to predict news pieces about `Donald Trump' as real for lower training loss. In this paper, we propose an entity debiasing framework (ENDEF) which generalizes fake news detection models to the future data by mitigating entity bias from a cause-effect perspective. Based on the causal graph among entities, news contents, and news veracity, we separately model the contribution of each cause (entities and contents) during training. In the inference stage, we remove the direct effect of the entities to mitigate entity bias. Extensive offline experiments on the English and Chinese datasets demonstrate that the proposed framework can largely improve the performance of base fake news detectors, and online tests verify its superiority in practice. To the best of our knowledge, this is the first work to explicitly improve the generalization ability of fake news detection models to the future data. The code has been released at https://github.com/ICTMCG/ENDEF-SIGIR2022.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "unseen users generalization propagation-based fake news detection"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "FakeNewsNet data leakage evaluation bias"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "unseen users generalization propagation-based fake news detection survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "unseen users generalization propagation-based fake news detection review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "FakeNewsNet data leakage evaluation bias review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.429,
+            "retrieval_hits": 5,
+            "score": 2.071
+          }
+        }
+      },
+      "term_overlap": 0.259,
+      "tfidf_similarity": 0.075,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Reproducibility Audit of Diabetes Prediction: SMOTE, Data Leakage, and Evaluation Methodology",
+        "authors": [
+          "Aritrik Ghosh"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": null,
+        "doi": "10.2139/ssrn.7396198",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.7396198",
+        "pdf_url": null,
+        "abstract": "This paper presents a reproducibility audit of a publicly shared diabetes-prediction notebook rather than a new clinical prediction model. The source notebook loads 100,000 records from the Diabetes Prediction Dataset and, after duplicate removal and an integer-age filter, evaluates 94,133 observations with an approximately 9% positive class. Eight classifiers are considered: Logistic Regression, K-Nearest Neighbors, linear Support Vector Machine (SVM), radial-basis-function (RBF) SVM, Gaussian Naive Bayes, Decision Tree, Random Forest, and a shallow Artificial Neural Network (ANN). The audit identifies nine methodological issues: a different train-test split in the SMOTE branch, inconsistent preprocessing before SMOTE, use of the test set for ANN early stopping, an incorrectly implemented \"Decision Tree\" SMOTE model, inconsistent Random Forest hyperparameters, an invalid prediction preprocessing path, nondeterministic SMOTE configuration, problematic categorical encoding, and unjustified removal of decimal-age observations. Metrics were independently recalculated from printed confusion matrices where possible. In the source baseline, Random Forest has the highest confusion-matrix-derived accuracy (96.78%) and F1score (0.8007), while the ANN has 95.93% accuracy and 59.94% recall. In the source SMOTE branch, Random Forest has 96.45% accuracy and 69.99% recall, while the ANN has 89.35% accuracy and 86.20% recall. These before-after values are not a controlled estimate of the performance change attributable to SMOTE because the source changes the test split, preprocessing, model settings, and ANN validation strategy. The corrected baseline and corrected SMOTENC experiments were executed using the controlled protocol, and repeated stratified cross-validation was completed for the seven classical models. Age-handling and onehot-plus-ordinary-SMOTE sensitivity analyses remain pending additional execution. The paper consequently separates source results, recalculated metrics, executable correction protocols, and unresolved claims. The contribution is methodological: making hidden evaluation defects explicit and defining a reproducible protocol for a valid rerun.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "FakeNewsNet data leakage evaluation bias"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "FakeNewsNet data leakage evaluation bias survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "FakeNewsNet data leakage evaluation bias review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "FakeNewsNet data leakage evaluation bias"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.6,
+            "retrieval_hits": 3,
+            "score": 2.175
+          }
+        }
+      },
+      "term_overlap": 0.259,
+      "tfidf_similarity": 0.068,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Propagation-Based Fake News Detection Using Graph Neural Networks with Transformer",
+        "authors": [
+          "Hayato Matsumoto",
+          "Soh Yoshida",
+          "Mitsuji Muneyasu"
+        ],
+        "year": 2021,
+        "date": "2021-10-12",
+        "venue": "2021 IEEE 10th Global Conference on Consumer Electronics (GCCE)",
+        "doi": "10.1109/gcce53005.2021.9621803",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/gcce53005.2021.9621803",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 31,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "unseen users generalization propagation-based fake news detection"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "unseen users generalization propagation-based fake news detection survey"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 2,
+            "score": 2.077
+          }
+        }
+      },
+      "term_overlap": 0.125,
+      "tfidf_similarity": 0.199,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Implementation of Weight Adjusting GNN With Differentiable Pooling for User Preference-aware Fake News Detection",
+        "authors": [
+          "Jay Prakash Maurya",
+          "Vivek Richhariya",
+          "Bhupesh Gour",
+          "Vinesh Kumar"
+        ],
+        "year": 2024,
+        "date": "2024-02-09",
+        "venue": null,
+        "doi": "10.21203/rs.3.rs-3942141/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21203/rs.3.rs-3942141/v1",
+        "pdf_url": null,
+        "abstract": "Abstract In the last few years, false news has hurt people and society, drawing attention to classify and identify news as fake or True. Major fake news detection algorithms either largely trust textual information via learning the internal knowledge of the extracted news material or writing style, or they focus on mining news content. To differentiate between fake and real news, the proposed experiment processes news information as a graph neural network with an attention-based differentiable pooling model. This sets the way for the user preference-aware fake detection (UPFD) in a graph-based structure. The attention-based differentiable pooling approach allows GNNs to adaptively extract information from the network by focusing on the most relevant nodes for a given task. One significant improvement is in the way the input data is formatted for the learning schema; in paired scenarios, tweet vectors are essential. Each pair includes a potential fake vector and a true vector; the latter's classification accuracy depends on how similar or different it is from the former. In particular, when it comes to historical events, the novel way that knowledge sets are handled in graph form and arranged in pairs of related terms provides a unique method for determining the veracity of news. To improve validation accuracy and learning, the proposed GNN-DP model also presents a comparison between the standard layer and the embedding layer. Moreover, comprehensive analyses and direct comparisons of the graph convolutional network (GCN) model's performance have been achieved by experimental evaluations.",
+        "citations": 2,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user overlap train test leakage fake news detection social context review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user-disjoint split fake news detection graph review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "fake news detection shortcut user identity memorization review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "fake news detection shortcut user identity memorization"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.714,
+            "title_match": 0.571,
+            "retrieval_hits": 4,
+            "score": 2.536
+          }
+        }
+      },
+      "term_overlap": 0.21,
+      "tfidf_similarity": 0.094,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "FakeNewsNet: A Data Repository with News Content, Social Context and Spatialtemporal Information for Studying Fake News on Social Media",
+        "authors": [
+          "Kai Shu",
+          "Deepak Mahudeswaran",
+          "Suhang Wang",
+          "Dongwon Lee",
+          "Huan Liu"
+        ],
+        "year": 2018,
+        "date": "2018-09-05",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "1809.01286",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/1809.01286",
+        "pdf_url": null,
+        "abstract": "Social media has become a popular means for people to consume news. Meanwhile, it also enables the wide dissemination of fake news, i.e., news with intentionally false information, which brings significant negative effects to the society. Thus, fake news detection is attracting increasing attention. However, fake news detection is a non-trivial task, which requires multi-source information such as news content, social context, and dynamic information. First, fake news is written to fool people, which makes it difficult to detect fake news simply based on news contents. In addition to news contents, we need to explore social contexts such as user engagements and social behaviors. For example, a credible user's comment that \"this is a fake news\" is a strong signal for detecting fake news. Second, dynamic information such as how fake news and true news propagate and how users' opinions toward news pieces are very important for extracting useful patterns for (early) fake news detection and intervention. Thus, comprehensive datasets which contain news content, social context, and dynamic information could facilitate fake news propagation, detection, and mitigation; while to the best of our knowledge, existing datasets only contains one or two aspects. Therefore, in this paper, to facilitate fake news related researches, we provide a fake news data repository FakeNewsNet, which contains two comprehensive datasets that includes news content, social context, and dynamic information. We present a comprehensive description of datasets collection, demonstrate an exploratory analysis of this data repository from different perspectives, and discuss the benefits of FakeNewsNet for potential applications on fake news study on social media.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "user overlap train test leakage fake news detection social context"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "user-disjoint split fake news detection graph"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "spurious correlations social context fake news detection evaluation"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "unseen users generalization propagation-based fake news detection"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user overlap train test leakage fake news detection social context survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user overlap train test leakage fake news detection social context review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user-disjoint split fake news detection graph survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user-disjoint split fake news detection graph review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "fake news detection shortcut user identity memorization survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "fake news detection shortcut user identity memorization review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "spurious correlations social context fake news detection evaluation survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "spurious correlations social context fake news detection evaluation review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "unseen users generalization propagation-based fake news detection survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "unseen users generalization propagation-based fake news detection review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "FakeNewsNet data leakage evaluation bias survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "FakeNewsNet data leakage evaluation bias review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.714,
+            "title_match": 0.5,
+            "retrieval_hits": 16,
+            "score": 2.429
+          }
+        }
+      },
+      "term_overlap": 0.19,
+      "tfidf_similarity": 0.114,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Graph-Based Interpretability for Fake News Detection through Topic- and Propagation-Aware Visualization",
+        "authors": [
+          "Kayato Soga",
+          "Soh Yoshida",
+          "Mitsuji Muneyasu"
+        ],
+        "year": 2024,
+        "date": "2024-04-15",
+        "venue": "Computation",
+        "doi": "10.3390/computation12040082",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/computation12040082",
+        "pdf_url": null,
+        "abstract": "In the context of the increasing spread of misinformation via social network services, in this study, we addressed the critical challenge of detecting and explaining the spread of fake news. Early detection methods focused on content analysis, whereas recent approaches have exploited the distinctive propagation patterns of fake news to analyze network graphs of news sharing. However, these accurate methods lack accountability and provide little insight into the reasoning behind their classifications. We aimed to fill this gap by elucidating the structural differences in the spread of fake and real news, with a focus on opinion consensus within these structures. We present a novel method that improves the interpretability of graph-based propagation detectors by visualizing article topics and propagation structures using BERTopic for topic classification and analyzing the effect of topic agreement on propagation patterns. By applying this method to a real-world dataset and conducting a comprehensive case study, we not only demonstrated the effectiveness of the method in identifying characteristic propagation paths but also propose new metrics for evaluating the interpretability of the detection methods. Our results provide valuable insights into the structural behavior and patterns of news propagation, contributing to the development of more transparent and explainable fake news detection systems.",
+        "citations": 16,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "unseen users generalization propagation-based fake news detection"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "unseen users generalization propagation-based fake news detection survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "unseen users generalization propagation-based fake news detection review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "unseen users generalization propagation-based fake news detection"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.571,
+            "retrieval_hits": 3,
+            "score": 2.289
+          }
+        }
+      },
+      "term_overlap": 0.183,
+      "tfidf_similarity": 0.105,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Capturing Credibility of Users for an Efficient Propagation Network Based Fake News Detection",
+        "authors": [
+          "Sarith Imaduwage",
+          "P.P.N.V. Kumara",
+          "W.J. Samaraweera"
+        ],
+        "year": 2022,
+        "date": "2022-03-18",
+        "venue": "2022 2nd International Conference on Computer, Control and Robotics (ICCCR)",
+        "doi": "10.1109/icccr54399.2022.9790186",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4282931240",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/icccr54399.2022.9790186",
+        "pdf_url": null,
+        "abstract": "There are two types of fake news detection methods, (1) content-based (2) Graph-based methods. Propagation network-based fake news detection method falls under the umbrella of graph-based methods. Due to unique benefits such as being language agnostic and the ability to be less vulnerable to adversarial attacks, Propagation network-based methods have been recently used in fake news detection domain. In this work, we show that associating qualitatively rich user representation rather than quantitative representation inside the propagation networks can significantly increase the accuracy and scalability of the propagation network-based detection methods. Having identified such a requirement, existing works propose solutions that are either not sufficient enough or limit the full capacity of propagation network-based methods. While thoroughly assessing techniques existing works have followed, in this work, motivated by another parallel line of work, we introduce a novel representation learning algorithm for social users which can produce rich user representations that can be ultimately incorporated with propagation networks. Our findings strongly validate the importance of the proposed methodology. With the provided theoretical motivation for the proposed method, the present work has the potential of opening a new research direction in the propagation-network based fake news detection domain.",
+        "citations": 5,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "unseen users generalization propagation-based fake news detection"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "unseen users generalization propagation-based fake news detection survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "unseen users generalization propagation-based fake news detection review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.714,
+            "title_match": 0.714,
+            "retrieval_hits": 3,
+            "score": 2.554
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W2154851992",
+            "W2366141641",
+            "W2790166049",
+            "W2793963910",
+            "W2911710347",
+            "W2949397667",
+            "W2949813784",
+            "W2951307134",
+            "W2964015378",
+            "W3038570070",
+            "W3070920170",
+            "W3097059919",
+            "W3133744637",
+            "W3152893301",
+            "W3155411033",
+            "W3164693331",
+            "W4206482253",
+            "W4206593497",
+            "W4224115874",
+            "W4294558607"
+          ],
+          "related_works": [
+            "W2388687352",
+            "W2502115930",
+            "W2370187191",
+            "W1990162851",
+            "W2369854048",
+            "W2374291020",
+            "W2355907197",
+            "W4246396837",
+            "W2482350142",
+            "W3176240006"
+          ]
+        }
+      },
+      "term_overlap": 0.157,
+      "tfidf_similarity": 0.115,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Table 3: “FakeNewsNet” social network English dataset for fake news.",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.7717/peerj-cs.2432/table-3",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.7717/peerj-cs.2432/table-3",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "component",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "FakeNewsNet data leakage evaluation bias"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "FakeNewsNet data leakage evaluation bias survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "FakeNewsNet data leakage evaluation bias review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.375,
+            "title_match": 0.375,
+            "retrieval_hits": 3,
+            "score": 1.5
+          }
+        }
+      },
+      "term_overlap": 0.105,
+      "tfidf_similarity": 0.159,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "How to Train Your Fact Verifier: Knowledge Transfer with Multimodal Open Models",
+        "authors": [
+          "Jaeyoung Lee",
+          "Ximing Lu",
+          "Jack Hessel",
+          "Faeze Brahman",
+          "Youngjae Yu",
+          "Yonatan Bisk",
+          "Yejin Choi",
+          "Saadia Gabriel"
+        ],
+        "year": 2024,
+        "date": "2024-06-29",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2407.00369",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2407.00369",
+        "pdf_url": null,
+        "abstract": "Given the growing influx of misinformation across news and social media, there is a critical need for systems that can provide effective real-time verification of news claims. Large language or multimodal model based verification has been proposed to scale up online policing mechanisms for mitigating spread of false and harmful content. While these can potentially reduce burden on human fact-checkers, such efforts may be hampered by foundation model training data becoming outdated. In this work, we test the limits of improving foundation model performance without continual updating through an initial study of knowledge transfer using either existing intra- and inter- domain benchmarks or explanations generated from large language models (LLMs). We evaluate on 12 public benchmarks for fact-checking and misinformation detection as well as two other tasks relevant to content moderation -- toxicity and stance detection. Our results on two recent multi-modal fact-checking benchmarks, Mocheg and Fakeddit, indicate that knowledge transfer strategies can improve Fakeddit performance over the state-of-the-art by up to 1.7% and Mocheg performance by up to 2.9%.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "user overlap train test leakage fake news detection social context"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.1,
+            "retrieval_hits": 1,
+            "score": 1.225
+          }
+        }
+      },
+      "term_overlap": 0.198,
+      "tfidf_similarity": 0.061,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Temporal Leakage in Windowed Time-Series Classification: Systematic Evaluation Bias and a Standardized Splitting Protocol for Fault Diagnosis",
+        "authors": [
+          "Zhiwei Wu",
+          "Chenhui Zheng",
+          "Meiqi Shao",
+          "Jing Zhao",
+          "Xianbo Wang",
+          "Zhi-Xin Yang"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": null,
+        "doi": "10.2139/ssrn.7601837",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.7601837",
+        "pdf_url": null,
+        "abstract": "High accuracy in deep learning-based continuous time-series analysis is often regarded as evidence of robust detection and diagnostic capability. However, this assumption is valid only when the test data are strictly blind and free from data leakage. Using vibration-based fault diagnosis as a representative case, this study systematically investigates how random splitting of overlapping sliding windows introduces temporal data leakage and consequently inflates apparent model performance. A comprehensive evaluation assesses four mainstream architectures on a self-built eccentric gear dataset and the CWRU dataset. Experimental results indicate that under random splitting with a 75% overlap rate, the ResNet-1D model achieves an accuracy of 1.00±0.00. However, after enforcing strict temporal isolation, its performance plummets to near random-guessing levels. Models tend to exploit redundant waveform segments as shortcut representations rather than learning physically meaningful fault features. To address this evaluation limitation, a Standardized Data Splitting Protocol (SDSP) is proposed. By enforcing block-level temporal isolation and a safety margin (ΔT) while retaining intra-set overlap for data augmentation, SDSP explicitly decouples evaluation integrity from sample expansion at the operational level. Furthermore, a Leakage Impact Factor (LIF) and a Generalization Deception Gap (ΔGap) are introduced. These serve as supplementary metrics to quantify model vulnerability to temporal redundancy. This research demonstrates that a single accuracy metric is insufficient to reliably evaluate the true performance of windowed time series learning. It also provides a rigorous framework for evaluating trustworthy deep learning in continuous monitoring applications.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "FakeNewsNet data leakage evaluation bias"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "FakeNewsNet data leakage evaluation bias"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.8,
+            "title_match": 0.6,
+            "retrieval_hits": 1,
+            "score": 2.325
+          }
+        }
+      },
+      "term_overlap": 0.195,
+      "tfidf_similarity": 0.058,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "CrediBench: Building Web-Scale Network Datasets for Information Integrity",
+        "authors": [
+          "Emma Kondrup",
+          "Sebastian Sabry",
+          "Hussein Abdallah",
+          "Zachary Yang",
+          "James Zhou",
+          "Kellin Pelrine",
+          "Jean-François Godbout",
+          "Michael M. Bronstein",
+          "Reihaneh Rabbany",
+          "Shenyang Huang"
+        ],
+        "year": 2025,
+        "date": "2025-09-27",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2509.23340",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2509.23340",
+        "pdf_url": null,
+        "abstract": "Online misinformation poses an escalating threat, amplified by the Internet's open nature and increasingly capable LLMs that generate persuasive yet deceptive content. Existing misinformation detection methods typically focus on either textual content or network structure in isolation, failing to leverage the rich, dynamic interplay between website content and hyperlink relationships that characterizes real-world misinformation ecosystems. We introduce CrediBench: a large-scale data processing pipeline for constructing temporal web graphs that jointly model textual content and hyperlink structure for misinformation detection. Unlike prior work, our approach captures the dynamic evolution of general misinformation domains, including changes in both content and inter-site references over time. Our processed one-month snapshot extracted from the Common Crawl archive in December 2024 contains 45 million nodes and 1 billion edges, representing the largest web graph dataset made publicly available for misinformation research to date. From our experiments on this graph snapshot, we demonstrate the strength of both structural and webpage content signals for learning credibility scores, which measure source reliability. The pipeline and experimentation code are all available here, and the dataset is in this folder.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "user-disjoint split fake news detection graph"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "fake news detection shortcut user identity memorization"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user-disjoint split fake news detection graph survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "user-disjoint split fake news detection graph review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "fake news detection shortcut user identity memorization survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "fake news detection shortcut user identity memorization review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "user-disjoint split fake news detection graph"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "fake news detection shortcut user identity memorization"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "spurious correlations social context fake news detection evaluation"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "unseen users generalization propagation-based fake news detection"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.286,
+            "title_match": 0.0,
+            "retrieval_hits": 8,
+            "score": 1.071
+          }
+        }
+      },
+      "term_overlap": 0.186,
+      "tfidf_similarity": 0.065,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Unraveling Hidden Representations: A Multi-Modal Layer Analysis for Better Synthetic Content Forensics",
+        "authors": [
+          "Tom Or",
+          "Omri Azencot"
+        ],
+        "year": 2025,
+        "date": "2025-08-01",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2508.00784",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2508.00784",
+        "pdf_url": null,
+        "abstract": "Generative models achieve remarkable results in multiple data domains, including images and texts, among other examples. Unfortunately, malicious users exploit synthetic media for spreading misinformation and disseminating deepfakes. Consequently, the need for robust and stable fake detectors is pressing, especially when new generative models appear everyday. While the majority of existing work train classifiers that discriminate between real and fake information, such tools typically generalize only within the same family of generators and data modalities, yielding poor results on other generative classes and data domains. Towards a universal classifier, we propose the use of large pre-trained multi-modal models for the detection of generative content. Effectively, we show that the latent code of these models naturally captures information discriminating real from fake. Building on this observation, we demonstrate that linear classifiers trained on these features can achieve state-of-the-art results across various modalities, while remaining computationally efficient, fast to train, and effective even in few-shot settings. Our work primarily focuses on fake detection in audio and images, achieving performance that surpasses or matches that of strong baseline methods.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "unseen users generalization propagation-based fake news detection"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "unseen users generalization propagation-based fake news detection"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.429,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 0.982
+          }
+        }
+      },
+      "term_overlap": 0.175,
+      "tfidf_similarity": 0.074,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Innovative fake health news detection: Integrating emotional features into graph neural networks",
+        "authors": [
+          "Yiheng Wang",
+          "James Wang"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": "Journal of Emerging Investigators",
+        "doi": "10.59720/25-130",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.59720/25-130",
+        "pdf_url": null,
+        "abstract": "In the digital age, the rapid dissemination of fake health news on social media has posed a serious threat to public health decision-making. Artificial intelligence (AI) has been increasingly used in detecting fake health news by analyzing textual content through models such as recurrent neural networks, long short-term memory, and large language models. However, sequence-based AI models often neglect social context information, limiting their detection performance. To address this limitation, we propose a graph-based model, X-Health News Detection (X-HND), which enhances health-related fake news detection by jointly analyzing textual content and propagation information describing how news spreads among users in the social network. Additionally, we constructed a specialized health-related dataset, Health-News Dataset (HNDataset), for this model. The proposed model integrates graph-based propagation structures with emotion-aware textual features within a domain-specific health dataset, enabling it to capture both how information spreads and how it is expressed. We hypothesize that graph structures incorporating spread paths carry valuable information for fake news detection, while emotional cues in text also improve accuracy. Experimental results comparing different models and datasets indicate that incorporating graph-structured propagation information and emotion features improves fake news detection performance. This research offers a promising new approach for enhancing health misinformation detection through emotionally informed graph modeling.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "user-disjoint split fake news detection graph"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.714,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 2.125
+          }
+        }
+      },
+      "term_overlap": 0.157,
+      "tfidf_similarity": 0.088,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Large-scale online deanonymization with LLMs",
+        "authors": [
+          "Simon Lermen",
+          "Daniel Paleka",
+          "Joshua Swanson",
+          "Michael Aerni",
+          "Nicholas Carlini",
+          "Florian Tramèr"
+        ],
+        "year": 2026,
+        "date": "2026-02-25",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2602.16800",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2602.16800",
+        "pdf_url": null,
+        "abstract": "We show that large language models can be used to perform at-scale deanonymization. With full Internet access, our agent can re-identify Hacker News users and Anthropic Interviewer participants at high precision, given pseudonymous online profiles and conversations alone, matching what would take hours for a dedicated human investigator. We then design attacks for the closed-world setting. Given two databases of pseudonymous individuals, each containing unstructured text written by or about that individual, we implement a scalable attack pipeline that uses LLMs to: (1) extract identity-relevant features, (2) search for candidate matches via semantic embeddings, and (3) reason over top candidates to verify matches and reduce false positives. Compared to classical deanonymization work (e.g., on the Netflix prize) that required structured data, our approach works directly on raw user content across arbitrary platforms. We construct three datasets with known ground-truth data to evaluate our attacks. The first links Hacker News to LinkedIn profiles, using cross-platform references that appear in the profiles. Our second dataset matches users across Reddit movie discussion communities; and the third splits a single user's Reddit history in time to create two pseudonymous profiles to be matched. In each setting, LLM-based methods substantially outperform classical baselines, achieving up to 68% recall at 90% precision compared to near 0% for the best non-LLM method. Our results show that the practical obscurity protecting pseudonymous users online no longer holds and that threat models for online privacy need to be reconsidered.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "fake news detection shortcut user identity memorization"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "fake news detection shortcut user identity memorization survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "fake news detection shortcut user identity memorization"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.429,
+            "title_match": 0.0,
+            "retrieval_hits": 2,
+            "score": 1.107
+          }
+        }
+      },
+      "term_overlap": 0.177,
+      "tfidf_similarity": 0.061,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "FakeNewsNet: A Data Repository with News Content, Social Context, and Spatiotemporal Information for Studying Fake News on Social Media",
+        "authors": [
+          "Kai Shu",
+          "Deepak Mahudeswaran",
+          "Suhang Wang",
+          "Dongwon Lee",
+          "Huan Liu"
+        ],
+        "year": 2020,
+        "date": "2020-06-01",
+        "venue": "Big Data",
+        "doi": "10.1089/big.2020.0062",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1089/big.2020.0062",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 948,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "FakeNewsNet data leakage evaluation bias"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.848
+          }
+        }
+      },
+      "term_overlap": 0.105,
+      "tfidf_similarity": 0.131,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "A Hybrid Multimodal Graph Neural Network for Explainable Fake News Detection on Social Media",
+        "authors": [
+          "Vinit Kumar",
+          "Shubham Kumar Singh"
+        ],
+        "year": 2026,
+        "date": "2026-01-27",
+        "venue": null,
+        "doi": "10.36227/techrxiv.176948905.59357369/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.36227/techrxiv.176948905.59357369/v1",
+        "pdf_url": null,
+        "abstract": "The rapid spread of misinformation across social media platforms has created significant problems for information integrity and public trust. This research presents a new hybrid multimodal graph neural network architecture that combines text, images, and social network patterns to identify fake news articles while explaining its reasoning. Our proposed system uses heterogeneous graph construction techniques to map out the complex relationships between users, the content they share, and how it spreads. By using attention mechanisms and graph convolution, the system achieves excellent classification results and provides human-readable explanations by highlighting key subgraphs and features. Experiments on three benchmark datasets show that our approach achieves 92.4% accuracy, outperforming existing stateof-the-art methods while offering meaningful visual and textual explanations. These explanations help identify the specific propagation patterns and content features that separate real news from fake, giving content moderators and platform administrators the tools they need to make better decisions.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "user-disjoint split fake news detection graph"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user-disjoint split fake news detection graph survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user-disjoint split fake news detection graph review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "user-disjoint split fake news detection graph"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.714,
+            "title_match": 0.571,
+            "retrieval_hits": 3,
+            "score": 2.375
+          }
+        }
+      },
+      "term_overlap": 0.157,
+      "tfidf_similarity": 0.075,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Blocking Fake News Propagation exploiting OSNs Users Interests and Connections",
+        "authors": [
+          "Farwa Batool",
+          "Giuseppe Lo Re",
+          "Marco Morana",
+          "Giuseppe Rizzo"
+        ],
+        "year": 2025,
+        "date": "2025-05-19",
+        "venue": "2025 5th Intelligent Cybersecurity Conference (ICSC)",
+        "doi": "10.1109/icsc65596.2025.11139926",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/icsc65596.2025.11139926",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 2,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "unseen users generalization propagation-based fake news detection"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "unseen users generalization propagation-based fake news detection"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 1.875
+          }
+        }
+      },
+      "term_overlap": 0.112,
+      "tfidf_similarity": 0.119,
+      "is_survey_like": false,
+      "has_abstract": false
+    }
+  ],
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "user overlap train test leakage fake news detection social context",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "user overlap train test leakage fake news detection social context",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "user overlap train test leakage fake news detection social context",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "user overlap train test leakage fake news detection social context",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "user overlap train test leakage fake news detection social context",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "user-disjoint split fake news detection graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "user-disjoint split fake news detection graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "user-disjoint split fake news detection graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "user-disjoint split fake news detection graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "fake news detection shortcut user identity memorization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "fake news detection shortcut user identity memorization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "fake news detection shortcut user identity memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "fake news detection shortcut user identity memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "spurious correlations social context fake news detection evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "spurious correlations social context fake news detection evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "spurious correlations social context fake news detection evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "spurious correlations social context fake news detection evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "unseen users generalization propagation-based fake news detection",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "unseen users generalization propagation-based fake news detection",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "unseen users generalization propagation-based fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "unseen users generalization propagation-based fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "FakeNewsNet data leakage evaluation bias",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "FakeNewsNet data leakage evaluation bias",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "FakeNewsNet data leakage evaluation bias",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "FakeNewsNet data leakage evaluation bias",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "user overlap train test leakage fake news detection social context survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "user overlap train test leakage fake news detection social context survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "user overlap train test leakage fake news detection social context survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "user overlap train test leakage fake news detection social context survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "user overlap train test leakage fake news detection social context review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "user overlap train test leakage fake news detection social context review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "user overlap train test leakage fake news detection social context review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "user overlap train test leakage fake news detection social context review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "user-disjoint split fake news detection graph survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "user-disjoint split fake news detection graph survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "user-disjoint split fake news detection graph survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "user-disjoint split fake news detection graph survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "user-disjoint split fake news detection graph review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "user-disjoint split fake news detection graph review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "user-disjoint split fake news detection graph review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "user-disjoint split fake news detection graph review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "fake news detection shortcut user identity memorization survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "fake news detection shortcut user identity memorization survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "fake news detection shortcut user identity memorization survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "fake news detection shortcut user identity memorization survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "fake news detection shortcut user identity memorization review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "fake news detection shortcut user identity memorization review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "fake news detection shortcut user identity memorization review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "fake news detection shortcut user identity memorization review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "spurious correlations social context fake news detection evaluation survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "spurious correlations social context fake news detection evaluation survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "spurious correlations social context fake news detection evaluation survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "spurious correlations social context fake news detection evaluation survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "spurious correlations social context fake news detection evaluation review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "spurious correlations social context fake news detection evaluation review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "spurious correlations social context fake news detection evaluation review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "spurious correlations social context fake news detection evaluation review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "unseen users generalization propagation-based fake news detection survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "unseen users generalization propagation-based fake news detection survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "unseen users generalization propagation-based fake news detection survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "unseen users generalization propagation-based fake news detection survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "unseen users generalization propagation-based fake news detection review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "unseen users generalization propagation-based fake news detection review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "unseen users generalization propagation-based fake news detection review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "unseen users generalization propagation-based fake news detection review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "FakeNewsNet data leakage evaluation bias survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "FakeNewsNet data leakage evaluation bias survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "FakeNewsNet data leakage evaluation bias survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "FakeNewsNet data leakage evaluation bias survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "FakeNewsNet data leakage evaluation bias review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "FakeNewsNet data leakage evaluation bias review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "FakeNewsNet data leakage evaluation bias review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "FakeNewsNet data leakage evaluation bias review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "user overlap train test leakage fake news detection social context",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "user overlap train test leakage fake news detection social context",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "user overlap train test leakage fake news detection social context",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "user overlap train test leakage fake news detection social context",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "user-disjoint split fake news detection graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "user-disjoint split fake news detection graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "user-disjoint split fake news detection graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "user-disjoint split fake news detection graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "fake news detection shortcut user identity memorization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "fake news detection shortcut user identity memorization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "fake news detection shortcut user identity memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "fake news detection shortcut user identity memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "spurious correlations social context fake news detection evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "spurious correlations social context fake news detection evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "spurious correlations social context fake news detection evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "spurious correlations social context fake news detection evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "unseen users generalization propagation-based fake news detection",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "unseen users generalization propagation-based fake news detection",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "unseen users generalization propagation-based fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "unseen users generalization propagation-based fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "FakeNewsNet data leakage evaluation bias",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "FakeNewsNet data leakage evaluation bias",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "FakeNewsNet data leakage evaluation bias",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "FakeNewsNet data leakage evaluation bias",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-18"
+}

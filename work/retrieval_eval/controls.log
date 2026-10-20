@@ -1,0 +1,112 @@
+== absa-beekeeping-hive-graphs (control)
+  [arxiv/keyword] 'beekeeping forum aspect sentiment dependency graph': error rate_limited
+  [crossref/keyword] 'beekeeping forum aspect sentiment dependency graph': 10 results
+  [crossref/keyword] 'hive sensor graph fused with text sentiment': 10 results
+  [crossref/keyword] 'apiculture forum opinion mining graph convolution': 10 results
+  [crossref/keyword] 'beekeeper posts aspect-level sentiment hive data': 10 results
+  [crossref/surveys] 'beekeeping forum aspect sentiment dependency graph survey': 10 results
+  [crossref/surveys] 'beekeeping forum aspect sentiment dependency graph review': 10 results
+  [crossref/surveys] 'hive sensor graph fused with text sentiment survey': 10 results
+  [crossref/surveys] 'hive sensor graph fused with text sentiment review': 10 results
+  [crossref/surveys] 'apiculture forum opinion mining graph convolution survey': 10 results
+  [crossref/surveys] 'apiculture forum opinion mining graph convolution review': 10 results
+  [crossref/surveys] 'beekeeper posts aspect-level sentiment hive data survey': 10 results
+  [crossref/surveys] 'beekeeper posts aspect-level sentiment hive data review': 10 results
+  [crossref/recent] 'beekeeping forum aspect sentiment dependency graph': 10 results
+  [crossref/recent] 'hive sensor graph fused with text sentiment': 10 results
+  [crossref/recent] 'apiculture forum opinion mining graph convolution': 10 results
+  [crossref/recent] 'beekeeper posts aspect-level sentiment hive data': 10 results
+  [arxiv/keyword] 'beekeeping forum aspect sentiment dependency graph': error rate_limited
+  [crossref/keyword] 'beekeeping forum aspect sentiment dependency graph': 10 results
+  [crossref/keyword] 'hive sensor graph fused with text sentiment': 10 results
+  [crossref/keyword] 'apiculture forum opinion mining graph convolution': 10 results
+  [crossref/keyword] 'beekeeper posts aspect-level sentiment hive data': 10 results
+  [crossref/surveys] 'beekeeping forum aspect sentiment dependency graph survey': 10 results
+  [crossref/surveys] 'beekeeping forum aspect sentiment dependency graph review': 10 results
+  [crossref/surveys] 'hive sensor graph fused with text sentiment survey': 10 results
+  [crossref/surveys] 'hive sensor graph fused with text sentiment review': 10 results
+  [crossref/surveys] 'apiculture forum opinion mining graph convolution survey': 10 results
+  [crossref/surveys] 'apiculture forum opinion mining graph convolution review': 10 results
+  [crossref/surveys] 'beekeeper posts aspect-level sentiment hive data survey': 10 results
+  [crossref/surveys] 'beekeeper posts aspect-level sentiment hive data review': 10 results
+  [crossref/recent] 'beekeeping forum aspect sentiment dependency graph': 10 results
+  [crossref/recent] 'hive sensor graph fused with text sentiment': 10 results
+  [crossref/recent] 'apiculture forum opinion mining graph convolution': 10 results
+  [crossref/recent] 'beekeeper posts aspect-level sentiment hive data': 10 results
+  [arxiv/keyword] 'same pretrained encoder with and without dependency tree beekeeping forum': error rate_limited
+  [crossref/keyword] 'same pretrained encoder with and without dependency tree beekeeping forum': 10 results
+  [crossref/keyword] 'model selection on a validation set beekeeping forum': 9 results
+  [crossref/keyword] 'multiple random seeds beekeeping forum': 10 results
+== gnn-chant-floorplans (control)
+  [arxiv/keyword] 'monastery floor plan graph neural network chant sentiment': 0 results
+  [crossref/keyword] 'monastery floor plan graph neural network chant sentiment': 10 results
+  [arxiv/keyword] 'Gregorian chant lyrics sentiment graph': 0 results
+  [crossref/keyword] 'Gregorian chant lyrics sentiment graph': 10 results
+  [arxiv/keyword] 'architectural floor plan graph emotion of liturgical music': 0 results
+  [crossref/keyword] 'architectural floor plan graph emotion of liturgical music': 10 results
+  [arxiv/keyword] 'medieval monastery layout predicts chant mood': 0 results
+  [crossref/keyword] 'medieval monastery layout predicts chant mood': 10 results
+  [arxiv/surveys] 'monastery floor plan graph neural network chant sentiment survey': 0 results
+  [crossref/surveys] 'monastery floor plan graph neural network chant sentiment survey': 10 results
+  [arxiv/surveys] 'monastery floor plan graph neural network chant sentiment review': 0 results
+  [crossref/surveys] 'monastery floor plan graph neural network chant sentiment review': 10 results
+  [arxiv/surveys] 'Gregorian chant lyrics sentiment graph survey': 0 results
+  [crossref/surveys] 'Gregorian chant lyrics sentiment graph survey': 10 results
+  [arxiv/surveys] 'Gregorian chant lyrics sentiment graph review': 0 results
+  [crossref/surveys] 'Gregorian chant lyrics sentiment graph review': 10 results
+  [arxiv/surveys] 'architectural floor plan graph emotion of liturgical music survey': 0 results
+  [crossref/surveys] 'architectural floor plan graph emotion of liturgical music survey': 10 results
+  [arxiv/surveys] 'architectural floor plan graph emotion of liturgical music review': 0 results
+  [crossref/surveys] 'architectural floor plan graph emotion of liturgical music review': 10 results
+  [arxiv/surveys] 'medieval monastery layout predicts chant mood survey': 0 results
+  [crossref/surveys] 'medieval monastery layout predicts chant mood survey': 10 results
+  [arxiv/surveys] 'medieval monastery layout predicts chant mood review': 0 results
+  [crossref/surveys] 'medieval monastery layout predicts chant mood review': 10 results
+  [arxiv/recent] 'monastery floor plan graph neural network chant sentiment': 0 results
+  [crossref/recent] 'monastery floor plan graph neural network chant sentiment': 10 results
+  [arxiv/recent] 'Gregorian chant lyrics sentiment graph': 0 results
+  [crossref/recent] 'Gregorian chant lyrics sentiment graph': 10 results
+  [arxiv/recent] 'architectural floor plan graph emotion of liturgical music': 0 results
+  [crossref/recent] 'architectural floor plan graph emotion of liturgical music': 10 results
+  [arxiv/recent] 'medieval monastery layout predicts chant mood': 0 results
+  [crossref/recent] 'medieval monastery layout predicts chant mood': 10 results
+  [arxiv/keyword] 'monastery floor plan graph neural network chant sentiment': 0 results
+  [crossref/keyword] 'monastery floor plan graph neural network chant sentiment': 10 results
+  [arxiv/keyword] 'Gregorian chant lyrics sentiment graph': 0 results
+  [crossref/keyword] 'Gregorian chant lyrics sentiment graph': 10 results
+  [arxiv/keyword] 'architectural floor plan graph emotion of liturgical music': 0 results
+  [crossref/keyword] 'architectural floor plan graph emotion of liturgical music': 10 results
+  [arxiv/keyword] 'medieval monastery layout predicts chant mood': 0 results
+  [crossref/keyword] 'medieval monastery layout predicts chant mood': 10 results
+  [arxiv/surveys] 'monastery floor plan graph neural network chant sentiment survey': 0 results
+  [crossref/surveys] 'monastery floor plan graph neural network chant sentiment survey': 10 results
+  [arxiv/surveys] 'monastery floor plan graph neural network chant sentiment review': 0 results
+  [crossref/surveys] 'monastery floor plan graph neural network chant sentiment review': 10 results
+  [arxiv/surveys] 'Gregorian chant lyrics sentiment graph survey': 0 results
+  [crossref/surveys] 'Gregorian chant lyrics sentiment graph survey': 10 results
+  [arxiv/surveys] 'Gregorian chant lyrics sentiment graph review': 0 results
+  [crossref/surveys] 'Gregorian chant lyrics sentiment graph review': 10 results
+  [arxiv/surveys] 'architectural floor plan graph emotion of liturgical music survey': 0 results
+  [crossref/surveys] 'architectural floor plan graph emotion of liturgical music survey': 10 results
+  [arxiv/surveys] 'architectural floor plan graph emotion of liturgical music review': 0 results
+  [crossref/surveys] 'architectural floor plan graph emotion of liturgical music review': 10 results
+  [arxiv/surveys] 'medieval monastery layout predicts chant mood survey': 0 results
+  [crossref/surveys] 'medieval monastery layout predicts chant mood survey': 10 results
+  [arxiv/surveys] 'medieval monastery layout predicts chant mood review': 0 results
+  [crossref/surveys] 'medieval monastery layout predicts chant mood review': 10 results
+  [arxiv/recent] 'monastery floor plan graph neural network chant sentiment': 0 results
+  [crossref/recent] 'monastery floor plan graph neural network chant sentiment': 10 results
+  [arxiv/recent] 'Gregorian chant lyrics sentiment graph': 0 results
+  [crossref/recent] 'Gregorian chant lyrics sentiment graph': 10 results
+  [arxiv/recent] 'architectural floor plan graph emotion of liturgical music': 0 results
+  [crossref/recent] 'architectural floor plan graph emotion of liturgical music': 10 results
+  [arxiv/recent] 'medieval monastery layout predicts chant mood': 0 results
+  [crossref/recent] 'medieval monastery layout predicts chant mood': 10 results
+  [arxiv/keyword] 'MLP baseline on the same node features monastery floor plan chant': 0 results
+  [crossref/keyword] 'MLP baseline on the same node features monastery floor plan chant': 10 results
+  [arxiv/keyword] 'randomly rewired edges monastery floor plan chant': 0 results
+  [crossref/keyword] 'randomly rewired edges monastery floor plan chant': 10 results
+  [arxiv/keyword] 'shuffled node features monastery floor plan chant': 0 results
+  [crossref/keyword] 'shuffled node features monastery floor plan chant': 10 results
+  [arxiv/keyword] 'multiple random seeds monastery floor plan chant': 0 results
+  [crossref/keyword] 'multiple random seeds monastery floor plan chant': 10 results

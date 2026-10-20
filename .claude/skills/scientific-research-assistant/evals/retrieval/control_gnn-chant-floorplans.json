@@ -1,0 +1,21 @@
+{
+  "id": "gnn-chant-floorplans",
+  "split": "control",
+  "claim": "Predicting the sentiment of Gregorian chant lyrics with graph neural networks over medieval monastery floor plans",
+  "queries": [
+    "monastery floor plan graph neural network chant sentiment",
+    "Gregorian chant lyrics sentiment graph",
+    "architectural floor plan graph emotion of liturgical music",
+    "medieval monastery layout predicts chant mood"
+  ],
+  "anchor": "monastery floor plan chant",
+  "seeds": [],
+  "design": [
+    "MLP baseline on the same node features",
+    "randomly rewired edges",
+    "shuffled node features",
+    "multiple random seeds"
+  ],
+  "known_relevant": [],
+  "provenance": "Negative control: an implausible idea with generic GNN design elements. Close prior work is not expected; a 'close prior work' signal here is a false alarm."
+}

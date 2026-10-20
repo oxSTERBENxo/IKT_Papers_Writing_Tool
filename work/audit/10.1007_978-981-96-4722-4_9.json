@@ -1,0 +1,71 @@
+{
+  "paper": {
+    "title": "Leveraging Hypergraph Neural Network for Fake News Detection on UPFD Dataset",
+    "authors": [
+      "Vandana Rai",
+      "Sakshi Rai"
+    ],
+    "year": 2025,
+    "date": "2025-01-01",
+    "venue": "Springer eBooks",
+    "doi": "10.1007/978-981-96-4722-4_9",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W4412687864",
+    "s2_id": null,
+    "url": "https://doi.org/10.1007/978-981-96-4722-4_9",
+    "pdf_url": null,
+    "abstract": null,
+    "citations": 0,
+    "is_oa": false,
+    "is_retracted": false,
+    "type": "conference-paper",
+    "sources": [
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W4282926996",
+        "W4293232851",
+        "W4307907065",
+        "W4320009727",
+        "W4320024039",
+        "W4320882921",
+        "W4321485409",
+        "W4382239831",
+        "W4389610092",
+        "W4391816773",
+        "W4395098169",
+        "W4399205999",
+        "W4400259560",
+        "W4403289899",
+        "W4403585096",
+        "W4403791390",
+        "W4409175682",
+        "W6603257565"
+      ],
+      "related_works": [
+        "W4391375266",
+        "W2899084033",
+        "W2748952813",
+        "W4376608589",
+        "W1537073411",
+        "W1948107826",
+        "W3138003926",
+        "W1630514295",
+        "W4300037846",
+        "W4288275998"
+      ]
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    }
+  ]
+}

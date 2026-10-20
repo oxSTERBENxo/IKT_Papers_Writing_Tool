@@ -1,0 +1,73 @@
+{
+  "paper": {
+    "title": "Implementation of Weight Adjusting GNN With Differentiable Pooling for User Preference-aware Fake News Detection",
+    "authors": [
+      "Jay Prakash Maurya",
+      "Vivek Richhariya",
+      "Bhupesh Gour",
+      "V. K. Kumar"
+    ],
+    "year": 2024,
+    "date": "2024-02-09",
+    "venue": "Research Square",
+    "doi": "10.21203/rs.3.rs-3942141/v1",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W4391681466",
+    "s2_id": null,
+    "url": "https://doi.org/10.21203/rs.3.rs-3942141/v1",
+    "pdf_url": "https://www.researchsquare.com/article/rs-3942141/latest.pdf",
+    "abstract": "Abstract In the last few years, false news has hurt people and society, drawing attention to classify and identify news as fake or True. Major fake news detection algorithms either largely trust textual information via learning the internal knowledge of the extracted news material or writing style, or they focus on mining news content. To differentiate between fake and real news, the proposed experiment processes news information as a graph neural network with an attention-based differentiable pooling model. This sets the way for the user preference-aware fake detection (UPFD) in a graph-based structure. The attention-based differentiable pooling approach allows GNNs to adaptively extract information from the network by focusing on the most relevant nodes for a given task. One significant improvement is in the way the input data is formatted for the learning schema; in paired scenarios, tweet vectors are essential. Each pair includes a potential fake vector and a true vector; the latter's classification accuracy depends on how similar or different it is from the former. In particular, when it comes to historical events, the novel way that knowledge sets are handled in graph form and arranged in pairs of related terms provides a unique method for determining the veracity of news. To improve validation accuracy and learning, the proposed GNN-DP model also presents a comparison between the standard layer and the embedding layer. Moreover, comprehensive analyses and direct comparisons of the graph convolutional network (GCN) model's performance have been achieved by experimental evaluations.",
+    "citations": 3,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W3007943998",
+        "W3133496726",
+        "W3153567752",
+        "W3176191710",
+        "W3180140554",
+        "W3184617674",
+        "W3194055126",
+        "W3194651497",
+        "W3198695656",
+        "W3199972443",
+        "W3202630045",
+        "W3216370178",
+        "W4213446467",
+        "W4221148143",
+        "W4285736194",
+        "W4312891395",
+        "W4389610092"
+      ],
+      "related_works": [
+        "W2748952813",
+        "W2953234277",
+        "W2626256601",
+        "W2900413183",
+        "W4390975304",
+        "W147410782",
+        "W3022252430",
+        "W4287804464",
+        "W3103989898",
+        "W3211292372"
+      ],
+      "abstract_source": "crossref"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    }
+  ]
+}

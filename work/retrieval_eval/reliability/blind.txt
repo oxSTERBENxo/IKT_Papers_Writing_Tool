@@ -1,0 +1,70 @@
+
+adam-vs-sgd-generalization [blind] - 1 known relevant paper(s)
+  challenge            found 1.00 | R@20 0.00 | R@50 0.00 | MRR 0.014 | retrieved 234 | 104.8s, 88 calls | signal close_prior_work_found
+  challenge_arxiv_any  found 1.00 | R@20 0.00 | R@50 1.00 | MRR 0.024 | retrieved 241 | 134.1s, 90 calls | signal no_close_match_in_this_search
+  challenge_lexical    found 1.00 | R@20 1.00 | R@50 1.00 | MRR 0.143 | retrieved 262 | 72.2s, 90 calls | signal no_close_match_in_this_search
+  challenge_hybrid     found 1.00 | R@20 1.00 | R@50 1.00 | MRR 0.333 | retrieved 218 | 75.6s, 87 calls | signal no_close_match_in_this_search
+
+continual-learning-vs-replay [blind] - 4 known relevant paper(s)
+  challenge            found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 111 | 89.5s, 74 calls | failed: arxiv | signal no_close_match_in_this_search
+  challenge_arxiv_any  found 0.25 | R@20 0.25 | R@50 0.25 | MRR 0.062 | retrieved 255 | 185.1s, 93 calls | signal no_close_match_in_this_search
+  challenge_lexical    found 0.25 | R@20 0.25 | R@50 0.25 | MRR 0.083 | retrieved 279 | 69.0s, 92 calls | signal no_close_match_in_this_search
+  challenge_hybrid     found 0.25 | R@20 0.25 | R@50 0.25 | MRR 0.036 | retrieved 194 | 84.8s, 89 calls | signal no_close_match_in_this_search
+  missed by every configuration (check with web search):
+    - Three scenarios for continual learning
+    - Class-Incremental Learning: A Survey
+    - An analysis of best-practice strategies for replay and rehearsal in continual learning
+
+cot-beyond-math [blind] - 2 known relevant paper(s)
+  challenge            found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 151 | 100.0s, 70 calls | failed: arxiv | signal no_close_match_in_this_search
+  challenge_arxiv_any  found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 259 | 127.2s, 92 calls | signal no_close_match_in_this_search
+  challenge_lexical    found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 281 | 11.4s, 89 calls | signal no_close_match_in_this_search
+  challenge_hybrid     found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 260 | 7.8s, 89 calls | signal no_close_match_in_this_search
+  missed by every configuration (check with web search):
+    - To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning
+    - The Curse of CoT: On the Limitations of Chain-of-Thought in In-Context Learning
+
+domain-generalization-vs-erm [blind] - 3 known relevant paper(s)
+  challenge            found 0.33 | R@20 0.33 | R@50 0.33 | MRR 0.067 | retrieved 198 | 123.0s, 91 calls | signal no_close_match_in_this_search
+  challenge_arxiv_any  found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 161 | 86.9s, 94 calls | signal no_close_match_in_this_search
+  challenge_lexical    found 0.33 | R@20 0.33 | R@50 0.33 | MRR 0.083 | retrieved 237 | 19.3s, 91 calls | signal no_close_match_in_this_search
+  challenge_hybrid     found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 161 | 16.0s, 91 calls | signal no_close_match_in_this_search
+  missed by every configuration (check with web search):
+    - OoD-Bench: Quantifying and Understanding Two Dimensions of Out-of-Distribution Generalization
+    - Rethinking the Evaluation Protocol of Domain Generalization
+
+kge-old-models-retuned [blind] - 4 known relevant paper(s)
+  challenge            found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 249 | 122.5s, 88 calls | signal no_close_match_in_this_search
+  challenge_arxiv_any  found 0.25 | R@20 0.00 | R@50 0.25 | MRR 0.007 | retrieved 251 | 79.5s, 88 calls | signal no_close_match_in_this_search
+  challenge_lexical    found 0.25 | R@20 0.25 | R@50 0.25 | MRR 0.036 | retrieved 297 | 17.9s, 88 calls | signal no_close_match_in_this_search
+  challenge_hybrid     found 0.25 | R@20 0.00 | R@50 0.25 | MRR 0.007 | retrieved 254 | 13.5s, 88 calls | signal no_close_match_in_this_search
+  missed by every configuration (check with web search):
+    - You CAN Teach an Old Dog New Tricks! On Training Knowledge Graph Embeddings
+    - Bringing Light Into the Dark: A Large-scale Evaluation of Knowledge Graph Embedding Models Under a Unified Fr…
+    - Realistic Re-evaluation of Knowledge Graph Completion Methods: An Experimental Study
+
+long-context-vs-rag [blind] - 4 known relevant paper(s)
+  challenge            found 0.50 | R@20 0.25 | R@50 0.50 | MRR 0.024 | retrieved 206 | 8215.6s, 88 calls | signal close_prior_work_found
+  challenge_arxiv_any  found 0.25 | R@20 0.25 | R@50 0.25 | MRR 0.042 | retrieved 215 | 87.4s, 91 calls | signal close_prior_work_found
+  challenge_lexical    found 0.25 | R@20 0.00 | R@50 0.25 | MRR 0.008 | retrieved 264 | 13.1s, 91 calls | signal close_prior_work_found
+  challenge_hybrid     found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 265 | 16.6s, 88 calls | signal close_prior_work_found
+  missed by every configuration (check with web search):
+    - LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs -- No Silver Bullet for LC or RAG Rou…
+    - Long Context vs. RAG for LLMs: An Evaluation and Revisits
+
+lora-vs-full-finetuning [blind] - 2 known relevant paper(s)
+  challenge            found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 277 | 116.7s, 88 calls | signal no_close_match_in_this_search
+  challenge_arxiv_any  found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 199 | 84.3s, 88 calls | signal no_close_match_in_this_search
+  challenge_lexical    found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 219 | 21.9s, 88 calls | signal no_close_match_in_this_search
+  challenge_hybrid     found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 170 | 13.7s, 88 calls | signal no_close_match_in_this_search
+  missed by every configuration (check with web search):
+    - LoRA Learns Less and Forgets Less
+    - On Fairness of Low-Rank Adaptation of Large Models
+
+meta-learning-vs-pretrained-features [blind] - 1 known relevant paper(s)
+  challenge            found 1.00 | R@20 1.00 | R@50 1.00 | MRR 0.143 | retrieved 180 | 136.5s, 91 calls | signal no_close_match_in_this_search
+  challenge_arxiv_any  found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 254 | 79.7s, 91 calls | signal no_close_match_in_this_search
+  challenge_lexical    found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 254 | 16.9s, 91 calls | signal no_close_match_in_this_search
+  challenge_hybrid     found 0.00 | R@20 0.00 | R@50 0.00 | MRR 0.000 | retrieved 199 | 22.9s, 91 calls | signal no_close_match_in_this_search
+
+metric-learning-losses [blind] - 1 known relevant paper(s)

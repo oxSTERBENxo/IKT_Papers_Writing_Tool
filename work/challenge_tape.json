@@ -1,0 +1,1597 @@
+{
+  "claim": "Replacing GPT-3.5 with small open-weight LLMs (1-8B, quantized) in the TAPE explanations-as-features pipeline for text-attributed graph node classification, measuring how much of the accuracy gain survives per unit of compute",
+  "queries": [
+    "TAPE explanations features open-source LLM Llama text-attributed graph",
+    "small language model LLM enhancer node classification cost accuracy trade-off",
+    "LLM-generated explanations node features smaller models text-attributed graphs",
+    "efficient LLM augmentation text-attributed graph without GPT",
+    "does LLM size matter enhancing node features graph neural network"
+  ],
+  "sources_ok": [
+    "openalex",
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [
+    "semantic_scholar"
+  ],
+  "sources_status": {
+    "openalex": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "arxiv": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "crossref": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "n_papers_examined": 169,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 7,
+  "n_without_abstract": 34,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "interpretation": "No closely worded paper was retrieved, but only 0 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+        "authors": [
+          "Xiaoxin He",
+          "Xavier Bresson",
+          "Thomas Laurent",
+          "Adam Perold",
+          "Yann LeCun",
+          "Bryan Hooi"
+        ],
+        "year": 2023,
+        "date": "2023-05-31",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2305.19523",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2305.19523",
+        "pdf_url": null,
+        "abstract": "Representation learning on text-attributed graphs (TAGs) has become a critical research problem in recent years. A typical example of a TAG is a paper citation graph, where the text of each paper serves as node attributes. Initial graph neural network (GNN) pipelines handled these text attributes by transforming them into shallow or hand-crafted features, such as skip-gram or bag-of-words features. Recent efforts have focused on enhancing these pipelines with language models (LMs), which typically demand intricate designs and substantial computational resources. With the advent of powerful large language models (LLMs) such as GPT or Llama2, which demonstrate an ability to reason and to utilize general knowledge, there is a growing need for techniques which combine the textual modelling abilities of LLMs with the structural learning capabilities of GNNs. Hence, in this work, we focus on leveraging LLMs to capture textual information as features, which can be used to boost GNN performance on downstream tasks. A key innovation is our use of explanations as features: we prompt an LLM to perform zero-shot classification, request textual explanations for its decision-making process, and design an LLM-to-LM interpreter to translate these explanations into informative features for downstream GNNs. Our experiments demonstrate that our method achieves state-of-the-art results on well-established TAG datasets, including Cora, PubMed, ogbn-arxiv, as well as our newly introduced dataset, tape-arxiv23. Furthermore, our method significantly speeds up training, achieving a 2.88 times improvement over the closest baseline on ogbn-arxiv. Lastly, we believe the versatility of the proposed method extends beyond TAGs and holds the potential to enhance other tasks involving graph-text data. Our codes and datasets are available at: https://github.com/XiaoxinHe/TAPE.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "TAPE explanations features open-source LLM Llama text-attributed graph"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "LLM-generated explanations node features smaller models text-attributed graphs"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "efficient LLM augmentation text-attributed graph without GPT"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "TAPE explanations features open-source LLM Llama text-attributed graph survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "TAPE explanations features open-source LLM Llama text-attributed graph review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "LLM-generated explanations node features smaller models text-attributed graphs survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "LLM-generated explanations node features smaller models text-attributed graphs review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "efficient LLM augmentation text-attributed graph without GPT survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "efficient LLM augmentation text-attributed graph without GPT review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.8,
+            "title_match": 0.5,
+            "retrieval_hits": 9,
+            "score": 2.6
+          }
+        }
+      },
+      "term_overlap": 0.278,
+      "tfidf_similarity": 0.17,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Can GNN be Good Adapter for LLMs?",
+        "authors": [
+          "Xuanwen Huang",
+          "Kaiqiao Han",
+          "Yang Yang",
+          "Dezheng Bao",
+          "Quanjin Tao",
+          "Ziwei Chai",
+          "Qi Zhu"
+        ],
+        "year": 2024,
+        "date": "2024-02-20",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2402.12984",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2402.12984",
+        "pdf_url": null,
+        "abstract": "Recently, large language models (LLMs) have demonstrated superior capabilities in understanding and zero-shot learning on textual data, promising significant advances for many text-related domains. In the graph domain, various real-world scenarios also involve textual data, where tasks and node features can be described by text. These text-attributed graphs (TAGs) have broad applications in social media, recommendation systems, etc. Thus, this paper explores how to utilize LLMs to model TAGs. Previous methods for TAG modeling are based on million-scale LMs. When scaled up to billion-scale LLMs, they face huge challenges in computational costs. Additionally, they also ignore the zero-shot inference capabilities of LLMs. Therefore, we propose GraphAdapter, which uses a graph neural network (GNN) as an efficient adapter in collaboration with LLMs to tackle TAGs. In terms of efficiency, the GNN adapter introduces only a few trainable parameters and can be trained with low computation costs. The entire framework is trained using auto-regression on node text (next token prediction). Once trained, GraphAdapter can be seamlessly fine-tuned with task-specific prompts for various downstream tasks. Through extensive experiments across multiple real-world TAGs, GraphAdapter based on Llama 2 gains an average improvement of approximately 5\\% in terms of node classification. Furthermore, GraphAdapter can also adapt to other language models, including RoBERTa, GPT-2. The promising results demonstrate that GNNs can serve as effective adapters for LLMs in TAG modeling.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "efficient LLM augmentation text-attributed graph without GPT"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "does LLM size matter enhancing node features graph neural network"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "TAPE explanations features open-source LLM Llama text-attributed graph survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "efficient LLM augmentation text-attributed graph without GPT survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "efficient LLM augmentation text-attributed graph without GPT review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does LLM size matter enhancing node features graph neural network survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does LLM size matter enhancing node features graph neural network review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "efficient LLM augmentation text-attributed graph without GPT"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "does LLM size matter enhancing node features graph neural network"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.125,
+            "retrieval_hits": 7,
+            "score": 2.125
+          }
+        }
+      },
+      "term_overlap": 0.213,
+      "tfidf_similarity": 0.088,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Label-free Node Classification on Graphs with Large Language Models (LLMS)",
+        "authors": [
+          "Zhikai Chen",
+          "Haitao Mao",
+          "Hongzhi Wen",
+          "Haoyu Han",
+          "Wei Jin",
+          "Haiyang Zhang",
+          "Hui Liu",
+          "Jiliang Tang"
+        ],
+        "year": 2023,
+        "date": "2023-10-07",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2310.04668",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2310.04668",
+        "pdf_url": null,
+        "abstract": "In recent years, there have been remarkable advancements in node classification achieved by Graph Neural Networks (GNNs). However, they necessitate abundant high-quality labels to ensure promising performance. In contrast, Large Language Models (LLMs) exhibit impressive zero-shot proficiency on text-attributed graphs. Yet, they face challenges in efficiently processing structural data and suffer from high inference costs. In light of these observations, this work introduces a label-free node classification on graphs with LLMs pipeline, LLM-GNN. It amalgamates the strengths of both GNNs and LLMs while mitigating their limitations. Specifically, LLMs are leveraged to annotate a small portion of nodes and then GNNs are trained on LLMs' annotations to make predictions for the remaining large portion of nodes. The implementation of LLM-GNN faces a unique challenge: how can we actively select nodes for LLMs to annotate and consequently enhance the GNN training? How can we leverage LLMs to obtain annotations of high quality, representativeness, and diversity, thereby enhancing GNN performance with less cost? To tackle this challenge, we develop an annotation quality heuristic and leverage the confidence scores derived from LLMs to advanced node selection. Comprehensive experimental results validate the effectiveness of LLM-GNN. In particular, LLM-GNN can achieve an accuracy of 74.9% on a vast-scale dataset \\products with a cost less than 1 dollar.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "does LLM size matter enhancing node features graph neural network"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does LLM size matter enhancing node features graph neural network survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does LLM size matter enhancing node features graph neural network review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.727,
+            "title_match": 0.455,
+            "retrieval_hits": 5,
+            "score": 2.409
+          }
+        }
+      },
+      "term_overlap": 0.203,
+      "tfidf_similarity": 0.095,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Graph Convolutional Networks for Few-Shot Node Classification Using LLM-Derived Entity and Explanation Features",
+        "authors": [
+          "Yixiao Zhang"
+        ],
+        "year": 2026,
+        "date": "2026-07",
+        "venue": "2026 9th International Conference on Computer Information Science and Application Technology (CISAT)",
+        "doi": "10.1109/cisat71030.2026.11682228",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/cisat71030.2026.11682228",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "does LLM size matter enhancing node features graph neural network"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.556,
+            "retrieval_hits": 1,
+            "score": 1.792
+          }
+        }
+      },
+      "term_overlap": 0.116,
+      "tfidf_similarity": 0.164,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "STAGE: Simplified Text-Attributed Graph Embeddings Using Pre-trained LLMs",
+        "authors": [
+          "Aaron Zolnai-Lucas",
+          "Jack Boylan",
+          "Chris Hokamp",
+          "Parsa Ghaffari"
+        ],
+        "year": 2024,
+        "date": "2024-07-10",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2407.12860",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2407.12860",
+        "pdf_url": null,
+        "abstract": "We present Simplified Text-Attributed Graph Embeddings (STAGE), a straightforward yet effective method for enhancing node features in Graph Neural Network (GNN) models that encode Text-Attributed Graphs (TAGs). Our approach leverages Large-Language Models (LLMs) to generate embeddings for textual attributes. STAGE achieves competitive results on various node classification benchmarks while also maintaining a simplicity in implementation relative to current state-of-the-art (SoTA) techniques. We show that utilizing pre-trained LLMs as embedding generators provides robust features for ensemble GNN training, enabling pipelines that are simpler than current SoTA approaches which require multiple expensive training and prompting stages. We also implement diffusion-pattern GNNs in an effort to make this pipeline scalable to graphs beyond academic benchmarks.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "efficient LLM augmentation text-attributed graph without GPT"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "efficient LLM augmentation text-attributed graph without GPT survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "efficient LLM augmentation text-attributed graph without GPT review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "efficient LLM augmentation text-attributed graph without GPT"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.778,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 2.431
+          }
+        }
+      },
+      "term_overlap": 0.152,
+      "tfidf_similarity": 0.118,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Small Models, Big Impact: Efficient Corpus and Graph-Based Adaptation of Small Multilingual Language Models for Low-Resource Languages",
+        "authors": [
+          "Daniil Gurgurov",
+          "Ivan Vykopal",
+          "Josef van Genabith",
+          "Simon Ostermann"
+        ],
+        "year": 2025,
+        "date": "2025-02-14",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2502.10140",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2502.10140",
+        "pdf_url": null,
+        "abstract": "Low-resource languages (LRLs) face significant challenges in natural language processing (NLP) due to limited data. While current state-of-the-art large language models (LLMs) still struggle with LRLs, smaller multilingual models (mLMs) such as mBERT and XLM-R offer greater promise due to a better fit of their capacity to low training data sizes. This study systematically investigates parameter-efficient adapter-based methods for adapting mLMs to LRLs, evaluating three architectures: Sequential Bottleneck, Invertible Bottleneck, and Low-Rank Adaptation. Using unstructured text from GlotCC and structured knowledge from ConceptNet, we show that small adaptation datasets (e.g., up to 1 GB of free-text or a few MB of knowledge graph data) yield gains in intrinsic (masked language modeling) and extrinsic tasks (topic classification, sentiment analysis, and named entity recognition). We find that Sequential Bottleneck adapters excel in language modeling, while Invertible Bottleneck adapters slightly outperform other methods on downstream tasks due to better embedding alignment and larger parameter counts. Adapter-based methods match or outperform full fine-tuning while using far fewer parameters, and smaller mLMs prove more effective for LRLs than massive LLMs like LLaMA-3, GPT-4, and DeepSeek-R1-based distilled models. While adaptation improves performance, pre-training data size remains the dominant factor, especially for languages with extensive pre-training coverage.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.273,
+            "retrieval_hits": 3,
+            "score": 1.898
+          }
+        }
+      },
+      "term_overlap": 0.195,
+      "tfidf_similarity": 0.071,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "OpenReviewer: A Specialized Large Language Model for Generating Critical Scientific Paper Reviews",
+        "authors": [
+          "Maximilian Idahl",
+          "Zahra Ahmadi"
+        ],
+        "year": 2024,
+        "date": "2024-12-16",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2412.11948",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2412.11948",
+        "pdf_url": null,
+        "abstract": "We present OpenReviewer, an open-source system for generating high-quality peer reviews of machine learning and AI conference papers. At its core is Llama-OpenReviewer-8B, an 8B parameter language model specifically fine-tuned on 79,000 expert reviews from top conferences. Given a PDF paper submission and review template as input, OpenReviewer extracts the full text, including technical content like equations and tables, and generates a structured review following conference-specific guidelines. Our evaluation on 400 test papers shows that OpenReviewer produces considerably more critical and realistic reviews compared to general-purpose LLMs like GPT-4 and Claude-3.5. While other LLMs tend toward overly positive assessments, OpenReviewer's recommendations closely match the distribution of human reviewer ratings. The system provides authors with rapid, constructive feedback to improve their manuscripts before submission, though it is not intended to replace human peer review. OpenReviewer is available as an online demo and open-source tool.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "TAPE explanations features open-source LLM Llama text-attributed graph review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.182,
+            "retrieval_hits": 1,
+            "score": 1.307
+          }
+        }
+      },
+      "term_overlap": 0.179,
+      "tfidf_similarity": 0.085,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Model Diversity Over Model Size: Unanimous LLM Ensembles Correct Over-Classification in Survey Coding",
+        "authors": [
+          "Chris Soria"
+        ],
+        "year": 2026,
+        "date": "2026-06-05",
+        "venue": null,
+        "doi": "10.31235/osf.io/er6mz_v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.31235/osf.io/er6mz_v1",
+        "pdf_url": null,
+        "abstract": "Large language models are increasingly used to classify open-ended survey responses, but they systematically over-classify, assigning categories too liberally on ambiguous cases and producing high sensitivity but low precision. Drawing on the established principle that aggregating multiple noisy annotators outperforms any single annotator, we test whether ensembles of LLMs can correct this problem. Using four open-ended survey questions with human-coded ground truth (3,208 responses, 6 categories per question), we evaluate ensemble configurations across 16 models spanning three cost tiers and six providers. Unanimous voting (requiring all models to agree before assigning a category) directly corrects over-classification by dramatically improving specificity: on the most ambiguous categories,the false positive rate drops from 50% to 3%, and precision triples. This advantage concentrates precisely where over-classification is worst, on subjectively ambiguous categories with fuzzy boundaries, while categories with clear criteria show no benefit. This pattern replicates across three independent datasets. Decorrelated errors are what drive the correction, and of the sources we test, cross-provider model access is the most reliable: models from different providers err differently on ambiguous cases, and consensus filters the idiosyncratic false positives. Neither temperature variation nor within-family size scaling reliably decorrelates errors. As few as three diverse lower-tier models suffice to reliably exceed GPT-5. For the ambiguous classification problems common in open-ended survey research, the well-established annotation principle of multi-coder agreement transfers directly to LLMs: investing in diverse perspectives is more effective than investingin a single expensive model.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off survey"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.455,
+            "title_match": 0.273,
+            "retrieval_hits": 1,
+            "score": 1.307
+          }
+        }
+      },
+      "term_overlap": 0.188,
+      "tfidf_similarity": 0.069,
+      "is_survey_like": true,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "The Larger the Better? Improved LLM Code-Generation via Budget Reallocation",
+        "authors": [
+          "Michael Hassid",
+          "Tal Remez",
+          "Jonas Gehring",
+          "Roy Schwartz",
+          "Yossi Adi"
+        ],
+        "year": 2024,
+        "date": "2024-03-31",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2404.00725",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2404.00725",
+        "pdf_url": null,
+        "abstract": "It is a common belief that large language models (LLMs) are better than smaller-sized ones. However, larger models also require significantly more time and compute during inference. This begs the question: what happens when both models operate under the same budget? (e.g., compute, run-time). To address this question, we analyze code generation LLMs of various sizes and make comparisons such as running a 70B model once vs. generating five outputs from a 13B model. We consider a standard unit-test setup, which can be used to select the correct output from the smaller model. Our findings reveal that the repeated use of smaller models can yield consistent improvements, with gains of up to 15% across five tasks. On the other hand, in scenarios where unit-tests are unavailable, a ranking-based selection of candidates from the smaller model falls short of the performance of a single output from larger ones. Our results highlight the potential of using smaller models instead of larger ones, and the importance of studying approaches for ranking LLM outputs.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "does LLM size matter enhancing node features graph neural network"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does LLM size matter enhancing node features graph neural network survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "does LLM size matter enhancing node features graph neural network review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "does LLM size matter enhancing node features graph neural network"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.3,
+            "title_match": 0.125,
+            "retrieval_hits": 3,
+            "score": 1.1
+          }
+        }
+      },
+      "term_overlap": 0.139,
+      "tfidf_similarity": 0.102,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Integrating Structural and Semantic Signals in Text-Attributed Graphs with BiGTex",
+        "authors": [
+          "Azadeh Beiranvand",
+          "Seyed Mehdi Vahidipour"
+        ],
+        "year": 2026,
+        "date": "2026-02-08",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2504.12474",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2504.12474",
+        "pdf_url": null,
+        "abstract": "Text-attributed graphs (TAGs) present unique challenges in representation learning by requiring models to capture both the semantic richness of node-associated texts and the structural dependencies of the graph. While graph neural networks (GNNs) excel at modeling topological information, they lack the capacity to process unstructured text. Conversely, large language models (LLMs) are proficient in text understanding but are typically unaware of graph structure. In this work, we propose BiGTex (Bidirectional Graph Text), a novel architecture that tightly integrates GNNs and LLMs through stacked Graph-Text Fusion Units. Each unit allows for mutual attention between textual and structural representations, enabling information to flow in both directions, text influencing structure and structure guiding textual interpretation. The proposed architecture is trained using parameter-efficient fine-tuning (LoRA), keeping the LLM frozen while adapting to task-specific signals. Extensive experiments on five benchmark datasets demonstrate that BiGTex achieves state-of-the-art performance in node classification and generalizes effectively to link prediction. An ablation study further highlights the importance of soft prompting and bi-directional attention in the model's success.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "LLM-generated explanations node features smaller models text-attributed graphs"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "efficient LLM augmentation text-attributed graph without GPT"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "efficient LLM augmentation text-attributed graph without GPT survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "efficient LLM augmentation text-attributed graph without GPT review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "LLM-generated explanations node features smaller models text-attributed graphs"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "efficient LLM augmentation text-attributed graph without GPT"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.375,
+            "retrieval_hits": 4,
+            "score": 2.125
+          }
+        }
+      },
+      "term_overlap": 0.137,
+      "tfidf_similarity": 0.096,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "NPC-TAG: Node Prompts for Classification on Text Attributed Graphs with LLMs",
+        "authors": [
+          "Uras Varolgunes",
+          "Mengnan Du",
+          "Dantong Yu"
+        ],
+        "year": 2025,
+        "date": "2025-11-12",
+        "venue": "2025 IEEE International Conference on Data Mining Workshops (ICDMW)",
+        "doi": "10.1109/icdmw69685.2025.00119",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/icdmw69685.2025.00119",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "LLM-generated explanations node features smaller models text-attributed graphs"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "LLM-generated explanations node features smaller models text-attributed graphs survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "LLM-generated explanations node features smaller models text-attributed graphs review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "LLM-generated explanations node features smaller models text-attributed graphs"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 1.875
+          }
+        }
+      },
+      "term_overlap": 0.089,
+      "tfidf_similarity": 0.143,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Attributed Source in LLM Advice Taking: A Preregistered Judge–Advisor Study Across Five Models",
+        "authors": [
+          "Alexander Panin"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": null,
+        "doi": "10.2139/ssrn.7424179",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.7424179",
+        "pdf_url": null,
+        "abstract": "Proposed agent registries and trust layers attach a Source field to competence claims, naming who produced them. A preregistered judge–advisor experiment — five retained models (four open-weight, one proprietary), 400 items, 59,000 probes, frozen first estimates, byte-constant advice — asks whether the models that pass a deference screen weight advice by who an advisor's 8/10 record is attributed to, or by who relays it. The registered tests did not establish a practically meaningful, model-consistent Source-field effect. C1 (EXTERNAL SCORER minus ADVISOR SELF-REPORT) is SMALL, SUB-MARGIN: D = +0.015 [+0.007, +0.023] at the item level, below the pre-set ±0.05 margin, opposite in sign across models, no longer conventionally significant in the clean sign-stratum subset (+0.0105, p = 0.067), and with a non-registered across-model interval [−0.050, +0.080] that includes zero. C2 and C3 (relaying voice) are DERAIL SHIFT — hurdle components only; a non-registered bounded-imputation check shows the differential exclusion cannot move C3 outside [−0.377, −0.351]. H_attestor-blind: NOT EQUIVALENT; H_channel-blind: NOT EVALUABLE. The largest pattern is exploratory and post hoc: regrouping the nine cells by whether the advisor asserts competence about itself separates all five models (+0.335 [+0.316, +0.354]) and is consistent with a first-person self-claim account that this design cannot identify. Methodologically, the outcome is near-binary in three of five models, and a kill criterion on P(ignore) — a function of the outcome — fired on all three frontier candidates (two also failed a first-estimate check), so the retained panel is selected on the dependent variable; task solvability is strongly implicated by gpt-5.4 (exact first estimates on 82% of the items it froze) and by within-model analyses of the retained panel.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "TAPE explanations features open-source LLM Llama text-attributed graph"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "TAPE explanations features open-source LLM Llama text-attributed graph survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "TAPE explanations features open-source LLM Llama text-attributed graph review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "TAPE explanations features open-source LLM Llama text-attributed graph"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.3,
+            "retrieval_hits": 3,
+            "score": 1.475
+          }
+        }
+      },
+      "term_overlap": 0.182,
+      "tfidf_similarity": 0.05,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Reducing the Cost of Invoice Processing in Small and Medium Enterprises: A Reference Architecture and Economic Model for LLM-Powered Accounts Payable Automation",
+        "authors": [
+          "Gururaj Veershetty"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": null,
+        "doi": "10.2139/ssrn.6835100",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.6835100",
+        "pdf_url": null,
+        "abstract": "Small and medium enterprises (SMEs) bear disproportionately high accounts payable (AP) processing costs relative to invoice volume, with manual per-invoice costs widely benchmarked between $8 and $22. Despite two decades of automation tools, adoption among SMEs has lagged because legacy solutions, template-driven optical character recognition (OCR) and rules-based robotic process automation (RPA), depend on supplier-format stability and lack contextual judgment. The emergence of large language models (LLMs) with strong zero-shot information-extraction capability alters this calculus. This paper proposes a five-stage reference architecture for LLM-enabled AP automation, presents a unit-economics model demonstrating per-invoice costs below $1.30 at SME scale, and outlines an implementation pathway scoped to a single-quarter pilot. The paper also examines the security, compliance, and governance considerations specific to small finance teams operating without dedicated IT staff. The analysis indicates that the binding constraint on SME adoption has shifted from cost and technical complexity to organizational readiness, and that a tiered model-routing strategy combined with confidence-based human-in-the-loop review can deliver enterprise-grade throughput at SME-appropriate cost.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.455,
+            "title_match": 0.364,
+            "retrieval_hits": 1,
+            "score": 1.398
+          }
+        }
+      },
+      "term_overlap": 0.155,
+      "tfidf_similarity": 0.074,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "The Signal is the Ceiling: Measurement Limits of LLM-Predicted Experience Ratings from Open-Ended Survey Text",
+        "authors": [
+          "Andrew Hong",
+          "Jason Potteiger",
+          "Ito Zapata"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": null,
+        "doi": "10.2139/ssrn.6683300",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.6683300",
+        "pdf_url": null,
+        "abstract": "An earlier paper (Hong, Potteiger, and Zapata 'LLM&amp;nbsp;Predictive Scoring and Validation' 2026) established that an unoptimized GPT 4.1 prompt predicts fan-reported experience ratings within one point 67% of the time from open-ended survey text. This paper tests the relative impact of prompt design and model selection on that performance. We compared four configurations on approximately 10,000 post-game surveys from five MLB teams: the original baseline prompt and a moderately customized version, crossed with three GPT models (4.1, 4.1-mini, 5.2). Prompt customization added roughly two percentage points of within-±1 agreement on GPT 4.1 (from 67% to 69%). Both model swaps from that best configuration degraded performance: GPT 5.2 returned to the baseline, and GPT 4.1-mini fell six percentage points below it. Both levers combined were dwarfed by the input itself: across capable configurations, accuracy varied more than an order of magnitude more by the linguistic character of the text than by the choice of prompt or model. The ceiling has two parts. One is a bias in how the model reads text, which prompt design can correct. The other is a difference between what fans write about and what they actually decide, which no engineering can close because the missing information is not in the text. Prompt customization moved the first part; model selection moved neither reliably. The result is not that \"prompt engineering helps a little\" but that prompt engineering helps in a specific and predictable way, on the part of the ceiling it can reach.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "TAPE explanations features open-source LLM Llama text-attributed graph survey"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.375,
+            "title_match": 0.3,
+            "retrieval_hits": 1,
+            "score": 1.175
+          }
+        }
+      },
+      "term_overlap": 0.151,
+      "tfidf_similarity": 0.078,
+      "is_survey_like": true,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "A Little Help Goes a Long Way: Efficient LLM Training by Leveraging Small LMs",
+        "authors": [
+          "Ankit Singh Rawat",
+          "Veeranjaneyulu Sadhanala",
+          "Afshin Rostamizadeh",
+          "Ayan Chakrabarti",
+          "Wittawat Jitkrittum",
+          "Vladimir Feinberg",
+          "Seungyeon Kim",
+          "Hrayr Harutyunyan",
+          "Nikunj Saunshi",
+          "Zachary Nado",
+          "Rakesh Shivanna",
+          "Sashank J. Reddi",
+          "Aditya Krishna Menon",
+          "Rohan Anil",
+          "Sanjiv Kumar"
+        ],
+        "year": 2024,
+        "date": "2024-10-24",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2410.18779",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2410.18779",
+        "pdf_url": null,
+        "abstract": "A primary challenge in large language model (LLM) development is their onerous pre-training cost. Typically, such pre-training involves optimizing a self-supervised objective (such as next-token prediction) over a large corpus. This paper explores a promising paradigm to improve LLM pre-training efficiency and quality by suitably leveraging a small language model (SLM). In particular, this paradigm relies on an SLM to both (1) provide soft labels as additional training supervision, and (2) select a small subset of valuable (\"informative\" and \"hard\") training examples. Put together, this enables an effective transfer of the SLM's predictive distribution to the LLM, while prioritizing specific regions of the training data distribution. Empirically, this leads to reduced LLM training time compared to standard training, while improving the overall quality. Theoretically, we develop a statistical framework to systematically study the utility of SLMs in enabling efficient training of high-quality LLMs. In particular, our framework characterizes how the SLM's seemingly low-quality supervision can enhance the training of a much more capable LLM. Furthermore, it also highlights the need for an adaptive utilization of such supervision, by striking a balance between the bias and variance introduced by the SLM-provided soft labels. We corroborate our theoretical framework by improving the pre-training of an LLM with 2.8B parameters by utilizing a smaller LM with 1.5B parameters on the Pile dataset.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "small language model LLM enhancer node classification cost accuracy trade-off"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.455,
+            "title_match": 0.25,
+            "retrieval_hits": 3,
+            "score": 1.534
+          }
+        }
+      },
+      "term_overlap": 0.15,
+      "tfidf_similarity": 0.075,
+      "is_survey_like": false,
+      "has_abstract": true
+    }
+  ],
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "efficient LLM augmentation text-attributed graph without GPT",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "efficient LLM augmentation text-attributed graph without GPT",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "efficient LLM augmentation text-attributed graph without GPT",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "efficient LLM augmentation text-attributed graph without GPT",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "does LLM size matter enhancing node features graph neural network",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "does LLM size matter enhancing node features graph neural network",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "does LLM size matter enhancing node features graph neural network",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "does LLM size matter enhancing node features graph neural network",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "efficient LLM augmentation text-attributed graph without GPT survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "efficient LLM augmentation text-attributed graph without GPT survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "efficient LLM augmentation text-attributed graph without GPT survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "efficient LLM augmentation text-attributed graph without GPT survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "efficient LLM augmentation text-attributed graph without GPT review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "efficient LLM augmentation text-attributed graph without GPT review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "efficient LLM augmentation text-attributed graph without GPT review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "efficient LLM augmentation text-attributed graph without GPT review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "does LLM size matter enhancing node features graph neural network survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does LLM size matter enhancing node features graph neural network survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does LLM size matter enhancing node features graph neural network survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does LLM size matter enhancing node features graph neural network survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "does LLM size matter enhancing node features graph neural network review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does LLM size matter enhancing node features graph neural network review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does LLM size matter enhancing node features graph neural network review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does LLM size matter enhancing node features graph neural network review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "TAPE explanations features open-source LLM Llama text-attributed graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "small language model LLM enhancer node classification cost accuracy trade-off",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "LLM-generated explanations node features smaller models text-attributed graphs",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "efficient LLM augmentation text-attributed graph without GPT",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "efficient LLM augmentation text-attributed graph without GPT",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "efficient LLM augmentation text-attributed graph without GPT",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "efficient LLM augmentation text-attributed graph without GPT",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "does LLM size matter enhancing node features graph neural network",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "does LLM size matter enhancing node features graph neural network",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "does LLM size matter enhancing node features graph neural network",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "does LLM size matter enhancing node features graph neural network",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-17"
+}

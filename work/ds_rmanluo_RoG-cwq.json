@@ -1,0 +1,57 @@
+[
+  {
+    "source": "huggingface",
+    "id": "rmanluo/RoG-cwq",
+    "url": "https://huggingface.co/datasets/rmanluo/RoG-cwq",
+    "name": "rmanluo/RoG-cwq",
+    "license": null,
+    "gated": false,
+    "private": false,
+    "disabled": false,
+    "downloads": 5066,
+    "likes": 13,
+    "last_modified": "2023-10-01T23:47:36.000Z",
+    "tasks": [],
+    "languages": [],
+    "modalities": [
+      "text"
+    ],
+    "formats": [
+      "parquet"
+    ],
+    "size_category": "10K<n<100K",
+    "arxiv_ids": [],
+    "configs": [],
+    "ref": "rmanluo/RoG-cwq",
+    "exists": true,
+    "missing": [
+      "license",
+      "download size"
+    ],
+    "blockers": [],
+    "notes": [
+      "Licence is missing or 'other': read the dataset card before using or redistributing."
+    ],
+    "num_rows": 23944,
+    "download_bytes": null,
+    "in_memory_bytes": 7744419100,
+    "splits": [
+      {
+        "config": "default",
+        "split": "train",
+        "num_rows": 16894
+      },
+      {
+        "config": "default",
+        "split": "validation",
+        "num_rows": 3519
+      },
+      {
+        "config": "default",
+        "split": "test",
+        "num_rows": 3531
+      }
+    ],
+    "storage_estimate": null
+  }
+]

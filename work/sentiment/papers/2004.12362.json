@@ -1,0 +1,46 @@
+{
+  "paper": {
+    "title": "Relational Graph Attention Network for Aspect-based Sentiment Analysis",
+    "authors": [
+      "Kai Wang",
+      "Weizhou Shen",
+      "Yunyi Yang",
+      "Xiaojun Quan",
+      "Rui Wang"
+    ],
+    "year": 2020,
+    "date": "2020",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "doi": "10.18653/v1/2020.acl-main.295",
+    "arxiv_id": "2004.12362",
+    "pmid": null,
+    "openalex_id": "W3035529900",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2004.12362",
+    "pdf_url": "https://arxiv.org/pdf/2004.12362v1",
+    "abstract": "Aspect-based sentiment analysis aims to determine the sentiment polarity towards a specific aspect in online reviews. Most recent efforts adopt attention-based neural network models to implicitly connect aspects with opinion words. However, due to the complexity of language and the existence of multiple aspects in a single sentence, these models often confuse the connections. In this paper, we address this problem by means of effective encoding of syntax information. Firstly, we define a unified aspect-oriented dependency tree structure rooted at a target aspect by reshaping and pruning an ordinary dependency parse tree. Then, we propose a relational graph attention network (R-GAT) to encode the new tree structure for sentiment prediction. Extensive experiments are conducted on the SemEval 2014 and Twitter datasets, and the experimental results confirm that the connections between aspects and opinion words can be better established with our approach, and the performance of the graph attention network (GAT) is significantly improved as a consequence.",
+    "citations": 721,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "To appear at ACL 2020",
+      "arxiv_category": "cs.CL",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

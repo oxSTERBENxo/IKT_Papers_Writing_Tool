@@ -1,0 +1,1260 @@
+{
+  "type": "opportunity_report",
+  "title": "Adversarial audit: do syntax-tree GCNs help ABSA when the encoder is held fixed?",
+  "date": "2026-10-18",
+  "constraints": {
+    "field": "Aspect-based sentiment analysis with dependency-graph neural networks",
+    "experience": "undergraduate, comfortable with Python",
+    "hardware": "one consumer GPU, 8 GB VRAM",
+    "gpu_vram_gb": 8,
+    "time_budget_weeks": 8,
+    "language": "Python",
+    "difficulty": "moderate",
+    "mode": "any",
+    "defaults_used": [
+      "experience",
+      "hardware",
+      "gpu_vram_gb",
+      "time_budget_weeks",
+      "language",
+      "difficulty",
+      "mode"
+    ]
+  },
+  "search_log": {
+    "sources_ok": [
+      "openalex",
+      "arxiv",
+      "crossref",
+      "huggingface"
+    ],
+    "sources_failed": [
+      {
+        "source": "semantic_scholar",
+        "reason": "rate_limited"
+      }
+    ],
+    "strategies": [
+      "challenge with design elements and seed (arXiv 2104.04986)",
+      "citation expansion",
+      "web search",
+      "full-text reading (fulltext command)",
+      "code reading",
+      "data leakage check"
+    ],
+    "queries": [
+      "does syntax help pretrained transformers aspect-based sentiment",
+      "dependency tree graph neural network on top of BERT ablation sentiment",
+      "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+      "syntax-agnostic versus syntax-aware models frozen encoder probing",
+      "random trees versus dependency trees graph convolution evaluation",
+      "web: does syntax help pretrained transformers dependency tree GNN ablation aspect-based sentiment random trees",
+      "web: aspect-based sentiment GCN reproducibility seeds variance same encoder syntax benefit",
+      "web: aspect sentiment random tree / fully connected graph replace dependency tree GCN ablation BERT",
+      "web: empirical study syntax ABSA pre-trained language models revisiting",
+      "web: ABSA evaluation model selection on test set no development set reproducibility"
+    ],
+    "date_range": "unrestricted",
+    "n_retrieved": 372,
+    "n_after_dedup": null,
+    "date": "2026-10-18",
+    "notes": [
+      "Reused from the NLP+GNN opportunity report: candidate O2, its challenge (work/challenge_absa.json), references and dataset checks.",
+      "The challenge returned no_close_match_in_this_search and flagged an unrelated pharmacy paper on the design element 'frozen pretrained encoder'; Sachan et al., Mukherjee et al. and Lebmeier et al. were found by web search.",
+      "Full texts read via arXiv source: 2104.04986, 2008.09084, 2101.09449, 2110.00171, 2103.04350 (targeted), 2311.04467 (targeted). Lebmeier et al. is behind a publisher login (institutional copy is a viewer link).",
+      "Code read: RoBERTaABSA (finetune.py, ASGCN/train.py, data_utils.py, args and logs), GeneZC/ASGCN train.py, shenwzh3/RGAT-ABSA run.py and trainer.py."
+    ]
+  },
+  "papers": [
+    {
+      "key": "dai2021syntax",
+      "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+      "authors": [
+        "Junqi Dai",
+        "Hang Yan",
+        "Tianxiang Sun",
+        "Peng-Fei Liu",
+        "Xipeng Qiu"
+      ],
+      "year": 2021,
+      "date": "2021",
+      "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "doi": "10.18653/v1/2021.naacl-main.146",
+      "arxiv_id": "2104.04986",
+      "pmid": null,
+      "url": "https://www.semanticscholar.org/paper/0b7b605a2d6e0cb1e53d1fa03311278e95f99260",
+      "role": "closest",
+      "method": "Compares parser trees, PTM-induced trees, FT-PTM-induced trees and left/right-chain trees inside ASGCN, PWCN and RGAT; RoBERTa with an MLP head as baseline",
+      "datasets": "Rest14, Laptop14, Twitter; three SemEval-2016 non-English sets",
+      "findings": "Full text: tree-structure comparison uses GloVe embeddings, 3 runs. SOTA table: RoBERTa-MLP 87.37/83.78 accuracy (Rest14/Laptop14) vs RoBERTa+ASGCN, PWCN, RGAT with parser or FT-RoBERTa trees between 86.87 and 87.52 (Rest14) and 81.66-84.16 (Laptop14); text: 'incorporating trees over the RoBERTa brings no significant improvement'. No variance reported for that table.",
+      "limitations": "Code (README): released logs are single runs; finetune.py uses the test set as dev for model selection; released tree-model code uses GloVe only, so the RoBERTa+tree rows cannot be re-run from the repository; no licence",
+      "read_level": "full_text",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "sachan2021syntax",
+      "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+      "authors": [
+        "Devendra Singh Sachan",
+        "Yuhao Zhang",
+        "Peng Qi",
+        "William Hamilton"
+      ],
+      "year": 2020,
+      "date": "2020-08-20",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2008.09084",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2008.09084",
+      "role": "closest",
+      "method": "Syntax-GNN over BERT outputs (late fusion) and syntax inside attention (joint fusion); same encoder with and without dependency trees; gold vs in-domain vs off-the-shelf parses",
+      "datasets": "CoNLL-2005/2012 SRL, OntoNotes NER, TACRED-style RE",
+      "findings": "Full text: 5 runs; gains on SRL (>2.5 F1) only with gold parses, contingent on parse quality; no gain on NER (within one standard deviation of bert-base); late-fusion gains of about 2 F1 also with RoBERTa when gold parses are used",
+      "limitations": "Information extraction, not sentiment; encoder always fine-tuned",
+      "read_level": "full_text",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "mukherjee2021repro",
+      "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+      "authors": [
+        "Rajdeep Mukherjee",
+        "Shreyas Shetty",
+        "Subrata Chattopadhyay",
+        "Subhadeep Maji",
+        "Samik Datta",
+        "Pawan Goyal"
+      ],
+      "year": 2021,
+      "date": "2021",
+      "venue": "Lecture Notes in Computer Science Advances in Information Retrieval",
+      "doi": "10.1007/978-3-030-72240-1_7",
+      "arxiv_id": "2101.09449",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2101.09449",
+      "role": "closest",
+      "method": "Re-runs six ABSA models (memory-network and BERT-based) with test-set model selection vs a 15% held-out split from training",
+      "datasets": "SemEval-2014 Laptop and Restaurant; two new e-commerce datasets",
+      "findings": "Full text: reproduced accuracy 1-2 points below reported; a further 1-2 point drop when model selection uses a held-out split instead of the test set; 5 runs",
+      "limitations": "No syntax or GCN models among the six",
+      "read_level": "full_text",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "lebmeier2023repro",
+      "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+      "authors": [
+        "Elisabeth Lebmeier",
+        "Matthias Aßenmacher",
+        "Christian Heumann"
+      ],
+      "year": 2023,
+      "date": "2023-01-01",
+      "venue": "Lecture notes in computer science",
+      "doi": "10.1007/978-3-031-26390-3_31",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.1007/978-3-031-26390-3_31",
+      "role": "closest",
+      "method": "Holistic comparison of six (near) state-of-the-art transformer-based ABSA architectures with fixed preprocessing, train/validation splits, metrics and uncertainty quantification",
+      "datasets": "Five public benchmark datasets",
+      "findings": "Abstract: reported results are hardly reproducible; results vary notably across data splits, so uncertainty must be reported",
+      "limitations": "Full text behind publisher login; the six architectures are not named in the abstract",
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "xiao2021bert4gcn",
+      "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+      "authors": [
+        "Zeguan Xiao",
+        "Jiarun Wu",
+        "Qingliang Chen",
+        "Congjian Deng"
+      ],
+      "year": 2021,
+      "date": "2021",
+      "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "doi": "10.18653/v1/2021.emnlp-main.724",
+      "arxiv_id": "2110.00171",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2110.00171",
+      "role": "closest",
+      "method": "GCN over dependency graphs supplemented with BERT intermediate-layer features and relative positions",
+      "datasets": "Twitter, Laptop14, Rest14",
+      "findings": "Full text: ablation shows GCN over BERT sequential features without the supplemented dependency graph already reaches state-of-the-art and the graph adds 'just slightly'; its RoBERTa-MLP baseline is 81.11 on Laptop14 (Dai et al. report 83.78); averages over 10 runs ('10-fold')",
+      "limitations": "Model-selection protocol not stated in the text read",
+      "read_level": "full_text",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "bai2021syntaxbert",
+      "title": "Syntax-BERT: Improving Pre-trained Transformers with Syntax Trees",
+      "authors": [
+        "Jiangang Bai",
+        "Yujing Wang",
+        "Yiren Chen",
+        "Yaming Yang",
+        "Jing Bai",
+        "Jing Yu",
+        "Yunhai Tong"
+      ],
+      "year": 2021,
+      "date": "2021",
+      "venue": "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+      "doi": "10.18653/v1/2021.eacl-main.262",
+      "arxiv_id": "2103.04350",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2103.04350",
+      "role": "related",
+      "method": "Syntax-tree masks inside pre-trained transformers; ablation replaces syntactic masks with random masks of equal parameter size",
+      "datasets": "GLUE-style sentence classification tasks",
+      "findings": "Full text (targeted passages): a random decomposition of the network also gives moderate improvements",
+      "limitations": "Not ABSA; random-mask numbers not extracted here",
+      "read_level": "full_text",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Syntax-BERT: Improving Pre-trained Transformers with Syntax Trees",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "zhao2023rdgcn",
+      "title": "RDGCN: Reinforced Dependency Graph Convolutional Network for Aspect-based Sentiment Analysis",
+      "authors": [
+        "Xusheng Zhao",
+        "Hao Peng",
+        "Qiong Dai",
+        "Xu Bai",
+        "Huailiang Peng",
+        "Yanbing Liu",
+        "Qinglang Guo",
+        "Philip S. Yu"
+      ],
+      "year": 2023,
+      "date": "2023-11-08",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2311.04467",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2311.04467",
+      "role": "supporting",
+      "method": "Reinforced dependency GCN with RL-tuned distance-importance function",
+      "datasets": null,
+      "findings": "Full text (targeted passages): 'Since the datasets do not contain the validation set, the test accuracy is used to implement the reward function'",
+      "limitations": "Test labels enter training through the RL reward",
+      "read_level": "full_text",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "RDGCN: Reinforced Dependency Graph Convolutional Network for Aspect-based Sentiment Analysis",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "hou2021sagcn",
+      "title": "Selective Attention Based Graph Convolutional Networks for Aspect-Level Sentiment Classification",
+      "authors": [
+        "Xiaochen Hou",
+        "Jing Huang",
+        "Guangtao Wang",
+        "Xiaodong He",
+        "Bowen Zhou"
+      ],
+      "year": 2021,
+      "date": "2021",
+      "venue": "Proceedings of the Fifteenth Workshop on Graph-Based Methods for Natural Language Processing (TextGraphs-15)",
+      "doi": "10.18653/v1/2021.textgraphs-1.8",
+      "arxiv_id": "1910.10857",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/1910.10857",
+      "role": "related",
+      "method": "Selective-attention GCN over dependency trees on BERT",
+      "datasets": null,
+      "findings": "Web-search snippet (not verified against text): BERT baselines with 2- and 4-layer GCN, 7-run averages",
+      "limitations": "arXiv source contains only the supplement; main text not read",
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Selective Attention Based Graph Convolutional Networks for Aspect-Level Sentiment Classification",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "zhang2019asgcn",
+      "title": "Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks",
+      "authors": [
+        "Chen Zhang",
+        "Qiuchi Li",
+        "Dawei Song"
+      ],
+      "year": 2019,
+      "date": "2019",
+      "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+      "doi": "10.18653/v1/d19-1464",
+      "arxiv_id": "1909.03477",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/1909.03477",
+      "role": "foundational",
+      "method": "Aspect-specific GCN over dependency trees (GloVe/LSTM)",
+      "datasets": null,
+      "findings": null,
+      "limitations": null,
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "wang2020rgat",
+      "title": "Relational Graph Attention Network for Aspect-based Sentiment Analysis",
+      "authors": [
+        "Kai Wang",
+        "Weizhou Shen",
+        "Yunyi Yang",
+        "Xiaojun Quan",
+        "Rui Wang"
+      ],
+      "year": 2020,
+      "date": "2020",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "doi": "10.18653/v1/2020.acl-main.295",
+      "arxiv_id": "2004.12362",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2004.12362",
+      "role": "foundational",
+      "method": "Relational graph attention over aspect-oriented dependency trees",
+      "datasets": null,
+      "findings": null,
+      "limitations": "Official code (MIT) selects the best epoch on the test set (run.py, trainer.py)",
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Relational Graph Attention Network for Aspect-based Sentiment Analysis",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "fan2024fitegat",
+      "title": "FITE-GAT: Enhancing aspect-level sentiment classification with FT-RoBERTa induced trees and graph attention network",
+      "authors": [
+        "Mengmeng Fan",
+        "Mingming Kong",
+        "Xi Wang",
+        "Fei Hao",
+        "Chao Zhang"
+      ],
+      "year": 2024,
+      "date": "2024-11-23",
+      "venue": "Expert Systems with Applications",
+      "doi": "10.1016/j.eswa.2024.125890",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.1016/j.eswa.2024.125890",
+      "role": "related",
+      "method": "Title: FT-RoBERTa induced trees with graph attention; abstract not retrieved",
+      "datasets": null,
+      "findings": null,
+      "limitations": null,
+      "read_level": "title_only",
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "FITE-GAT: Enhancing aspect-level sentiment classification with FT-RoBERTa induced trees and graph attention network",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "li2024sebert",
+      "title": "Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification",
+      "authors": [
+        "Yuan Li",
+        "Jin Wang",
+        "Lung‐Hao Lee",
+        "Xuejie Zhang"
+      ],
+      "year": 2024,
+      "date": "2024-12-24",
+      "venue": "IEEE Transactions on Computational Social Systems",
+      "doi": "10.1109/tcss.2024.3514901",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.1109/tcss.2024.3514901",
+      "role": "supporting",
+      "method": "SE-BERT: syntax-enhanced transformer layers replacing BERT's final layers",
+      "datasets": null,
+      "findings": "Abstract states that existing methods improve aspect-level sentiment classification by adding syntactic GCN layers on BERT",
+      "limitations": null,
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    },
+    {
+      "key": "huang2025mvasegcn",
+      "title": "Multi-View Attention Syntactic Enhanced Graph Convolutional Network for Aspect-based Sentiment Analysis",
+      "authors": [
+        "Xiang Huang",
+        "Hao Peng",
+        "Shuo Sun",
+        "Zhifeng Hao",
+        "Hui Lin",
+        "Shuhai Wang"
+      ],
+      "year": 2025,
+      "date": "2025-01-27",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2501.15968",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2501.15968",
+      "role": "supporting",
+      "method": "Multi-view attention syntactic enhanced GCN for ABSA",
+      "datasets": null,
+      "findings": "Example of continued dependency-GCN ABSA work after 2021",
+      "limitations": null,
+      "read_level": "title_only",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Multi-View Attention Syntactic Enhanced Graph Convolutional Network for Aspect-based Sentiment Analysis",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-18"
+      }
+    }
+  ],
+  "sections": {
+    "summary": "The question as posed is already answered: Dai et al. ran RoBERTa with and without ASGCN, PWCN and RGAT tree heads on the same SemEval data and found no significant gain [@dai2021syntax]. What remains open is whether that null result, and the 2023-2026 claims of gains, survive a sound protocol: the closest codebases select models on the test set, a selection habit worth 1-2 points elsewhere in ABSA [@mukherjee2021repro], about the size of every claimed syntax gain. A protocol-corrected replication with structure controls is a conditional go; a novel framing (frozen vs fine-tuned encoder) is plausible but unverified.",
+    "well_explored": [
+      {
+        "text": "New dependency-GCN architectures on SemEval-2014 (many 2022-2026 papers; titles screened)",
+        "level": "estimate",
+        "sources": [
+          "li2024sebert",
+          "zhao2023rdgcn"
+        ]
+      },
+      {
+        "text": "On Rest14 and Laptop14, RoBERTa+tree heads lie within about +/-1.1 (Rest14) and -2.1 to +0.4 (Laptop14) accuracy points of RoBERTa-MLP, with no variance reported.",
+        "level": "verified",
+        "sources": [
+          "dai2021syntax"
+        ]
+      },
+      {
+        "text": "Whether syntax helps fine-tuned transformers on information extraction",
+        "level": "verified",
+        "sources": [
+          "sachan2021syntax"
+        ]
+      },
+      {
+        "text": "Reproducibility of ABSA results in general",
+        "level": "verified",
+        "sources": [
+          "mukherjee2021repro"
+        ]
+      }
+    ],
+    "recommendation": [
+      {
+        "text": "No-go for the question as stated, and for the parser-quality variant.",
+        "level": "estimate"
+      },
+      {
+        "text": "Conditional go for D1 followed by D2 as one 6-8 week project: replicate the RoBERTa tree-head comparison with validation-based selection and 10+ seeds, then add chain, random and fully connected graph controls with matched parameters.",
+        "level": "estimate"
+      },
+      {
+        "text": "First action, no compute: read Lebmeier et al. through the library and screen ablation tables of the most cited 2022-2026 syntax-GCN papers for structure controls.",
+        "level": "estimate"
+      },
+      {
+        "text": "D3 (frozen encoder) is the only design with a novel framing; check the probing literature first.",
+        "level": "speculative"
+      }
+    ]
+  },
+  "opportunities": [
+    {
+      "title": "As stated: do syntax-tree GCNs help when the pretrained encoder is held fixed?",
+      "category": "well_studied",
+      "mode": "original",
+      "status": "rejected",
+      "revision_note": "Already performed: Dai et al. compare RoBERTa-MLP with RoBERTa+ASGCN/PWCN/RGAT using parser and induced trees and conclude that trees bring no significant improvement [@dai2021syntax]; BERT4GCN's own ablation finds the dependency graph adds only slightly [@xiao2021bert4gcn]; and the same comparison under identical encoders is done in information extraction [@sachan2021syntax].",
+      "research_question": "With the encoder fixed, do dependency-tree GCN heads improve ABSA accuracy?",
+      "closest_existing_work": [
+        {
+          "key": "dai2021syntax",
+          "read_level": "full_text",
+          "overlap": "same_experiment",
+          "how_it_differs": "Same encoder, with and without tree heads, same datasets; lacks variance and a validation split."
+        },
+        {
+          "key": "xiao2021bert4gcn",
+          "read_level": "full_text",
+          "overlap": "same_question_different_design",
+          "how_it_differs": "Ablates the dependency graph inside one architecture."
+        },
+        {
+          "key": "sachan2021syntax",
+          "read_level": "full_text",
+          "overlap": "same_question_different_design",
+          "how_it_differs": "Same with/without-syntax design on SRL, NER and RE."
+        }
+      ],
+      "gap_evidence": [
+        {
+          "text": "On Rest14 and Laptop14, RoBERTa+tree heads lie within about +/-1.1 (Rest14) and -2.1 to +0.4 (Laptop14) accuracy points of RoBERTa-MLP, with no variance reported.",
+          "level": "verified",
+          "sources": [
+            "dai2021syntax"
+          ]
+        }
+      ],
+      "novelty": {
+        "confidence": "very_low",
+        "uncertainty": "Answered in the full texts read.",
+        "signal": "no_close_match_in_this_search",
+        "ceiling": "low",
+        "challenge_searches": [
+          "does syntax help pretrained transformers aspect-based sentiment",
+          "dependency tree graph neural network on top of BERT ablation sentiment",
+          "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+          "syntax-agnostic versus syntax-aware models frozen encoder probing",
+          "random trees versus dependency trees graph convolution evaluation",
+          "web: does syntax help pretrained transformers dependency tree GNN ablation aspect-based sentiment random trees",
+          "web: aspect-based sentiment GCN reproducibility seeds variance same encoder syntax benefit",
+          "web: aspect sentiment random tree / fully connected graph replace dependency tree GCN ablation BERT",
+          "web: empirical study syntax ABSA pre-trained language models revisiting",
+          "web: ABSA evaluation model selection on test set no development set reproducibility"
+        ]
+      },
+      "decision": {
+        "verdict": "no_go",
+        "rationale": "Already answered; repeating it as stated adds nothing."
+      }
+    },
+    {
+      "title": "D1 (replication): protocol-corrected re-test of Dai et al.'s RoBERTa tree-head comparison",
+      "category": "reported_limitation",
+      "mode": "replication",
+      "status": "revised",
+      "revision_note": "Narrowed from the original question after the full texts showed the comparison exists but was run with test-set model selection, without variance and without released code for the RoBERTa+tree rows.",
+      "research_question": "On the shipped SemEval-2014 Laptop and Restaurant splits, does the reported null result (no gain from tree heads on RoBERTa) survive validation-based model selection, a tuned baseline and 10+ seeds, and does it hold for DeBERTa-v3-base?",
+      "motivation": "The headline null result is cited as settled but rests on test-selected, single-table numbers [@dai2021syntax].",
+      "supporting_papers": [
+        "dai2021syntax",
+        "mukherjee2021repro",
+        "lebmeier2023repro"
+      ],
+      "closest_existing_work": [
+        {
+          "key": "dai2021syntax",
+          "read_level": "full_text",
+          "overlap": "same_experiment",
+          "how_it_differs": "The study being replicated; the replication changes the protocol, not the question."
+        },
+        {
+          "key": "lebmeier2023repro",
+          "read_level": "abstract",
+          "overlap": "unknown",
+          "how_it_differs": "Re-runs six transformer ABSA architectures with validation splits and uncertainty; whether any is a syntax-GCN model is unknown."
+        },
+        {
+          "key": "mukherjee2021repro",
+          "read_level": "full_text",
+          "overlap": "partial",
+          "how_it_differs": "Quantifies test-selection inflation, but for memory-network and BERT models, not tree heads."
+        }
+      ],
+      "gap_evidence": [
+        {
+          "text": "On Rest14 and Laptop14, RoBERTa+tree heads lie within about +/-1.1 (Rest14) and -2.1 to +0.4 (Laptop14) accuracy points of RoBERTa-MLP, with no variance reported.",
+          "level": "verified",
+          "sources": [
+            "dai2021syntax"
+          ]
+        },
+        {
+          "text": "Official code of the closest studies selects on the test set: RoBERTaABSA finetune.py passes the test split as dev_data and reloads the best model; ASGCN (original and Dai et al.'s copy) keeps max_test_acc and max_test_f1 separately, so accuracy and F1 can come from different epochs; RGAT run.py reports the best evaluation on the test set.",
+          "level": "verified",
+          "sources": [
+            "dai2021syntax",
+            "zhang2019asgcn",
+            "wang2020rgat"
+          ]
+        },
+        {
+          "text": "Selecting on a 15% held-out split instead of the test set costs a further 1-2 accuracy points for six non-syntax ABSA models, about the size of the claimed syntax gains.",
+          "level": "verified",
+          "sources": [
+            "mukherjee2021repro"
+          ]
+        },
+        {
+          "text": "The same RoBERTa-MLP baseline is reported at 83.78 (Dai et al.) and 81.11 (BERT4GCN) on Laptop14, so cross-paper syntax gains can be baseline artefacts.",
+          "level": "verified",
+          "sources": [
+            "dai2021syntax",
+            "xiao2021bert4gcn"
+          ]
+        }
+      ],
+      "contribution": "A checked, variance-aware answer to a question the field treats as settled; either outcome is reportable.",
+      "novelty": {
+        "confidence": "low",
+        "uncertainty": "Replication value, not novelty. Lebmeier et al.'s architectures are unknown; a paywalled or non-English replication could exist.",
+        "signal": "no_close_match_in_this_search",
+        "ceiling": "low",
+        "challenge_searches": [
+          "does syntax help pretrained transformers aspect-based sentiment",
+          "dependency tree graph neural network on top of BERT ablation sentiment",
+          "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+          "syntax-agnostic versus syntax-aware models frozen encoder probing",
+          "random trees versus dependency trees graph convolution evaluation",
+          "web: does syntax help pretrained transformers dependency tree GNN ablation aspect-based sentiment random trees",
+          "web: aspect-based sentiment GCN reproducibility seeds variance same encoder syntax benefit",
+          "web: aspect sentiment random tree / fully connected graph replace dependency tree GCN ablation BERT",
+          "web: empirical study syntax ABSA pre-trained language models revisiting",
+          "web: ABSA evaluation model selection on test set no development set reproducibility"
+        ]
+      },
+      "feasibility": [
+        {
+          "text": "Shipped splits and pre-parsed dependency trees (head, deprel fields) are in the RoBERTaABSA repository; RoBERTa-base and DeBERTa-v3-base are MIT-licensed on Hugging Face.",
+          "level": "verified"
+        },
+        {
+          "text": "About 3,600 training aspects; base encoders at batch 16 fit 8 GB with mixed precision; roughly 2 datasets x 2 encoders x 3 heads x 10 seeds = 120 short runs, about 15-30 GPU-hours.",
+          "level": "estimate"
+        },
+        {
+          "text": "Tree heads must be reimplemented on current transformers (repository pins transformers 2.11, PyTorch 1.5, fastNLP).",
+          "level": "verified"
+        }
+      ],
+      "methodological_risks": [
+        {
+          "type": "model_selection_on_test",
+          "status": "found",
+          "evidence": {
+            "text": "Official code of the closest studies selects on the test set: RoBERTaABSA finetune.py passes the test split as dev_data and reloads the best model; ASGCN (original and Dai et al.'s copy) keeps max_test_acc and max_test_f1 separately, so accuracy and F1 can come from different epochs; RGAT run.py reports the best evaluation on the test set.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax",
+              "zhang2019asgcn",
+              "wang2020rgat"
+            ]
+          },
+          "mitigation": "Validation split carved from training, grouped by sentence; select checkpoints and hyperparameters on it only; touch the test set once."
+        },
+        {
+          "type": "metric_definition",
+          "status": "found",
+          "evidence": {
+            "text": "ASGCN reports maximum accuracy and maximum F1 from possibly different epochs.",
+            "level": "verified",
+            "sources": [
+              "zhang2019asgcn"
+            ]
+          },
+          "mitigation": "Report accuracy and macro-F1 of one selected checkpoint."
+        },
+        {
+          "type": "insufficient_runs",
+          "status": "found",
+          "evidence": {
+            "text": "Dai et al.: 3 runs for the tree comparison, no variance for the RoBERTa table, released logs single-run; Lebmeier et al. report notable variance across data splits.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax",
+              "lebmeier2023repro"
+            ]
+          },
+          "mitigation": "At least 10 seeds x repeated train/validation splits; paired comparisons; confidence intervals."
+        },
+        {
+          "type": "weak_baseline",
+          "status": "found",
+          "evidence": {
+            "text": "The same RoBERTa-MLP baseline is reported at 83.78 (Dai et al.) and 81.11 (BERT4GCN) on Laptop14, so cross-paper syntax gains can be baseline artefacts.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax",
+              "xiao2021bert4gcn"
+            ]
+          },
+          "mitigation": "Tune the plain-encoder baseline with the same budget and search space as the tree heads."
+        },
+        {
+          "type": "protocol_mismatch",
+          "status": "found",
+          "evidence": {
+            "text": "No public code for the RoBERTa+tree rows; the Hugging Face SetFit copy has 654 laptop test rows vs 638 aspects in the shipped split.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax"
+            ]
+          },
+          "mitigation": "Use the shipped split files; reimplement heads on one codebase; label the work a replication."
+        },
+        {
+          "type": "confound",
+          "status": "not_checked",
+          "evidence": "Tree heads add parameters and a separate learning rate; Dai et al. note RoBERTa-based tree models are hard to optimise and need different learning rates.",
+          "mitigation": "Parameter-matched no-graph head with the same tuning budget."
+        },
+        {
+          "type": "duplicate_items",
+          "status": "checked_ok",
+          "evidence": {
+            "text": "Shipped splits (Laptop 2328/638, Restaurants 3608/1120 aspects, matching Dai et al.'s statistics): one exact duplicate sentence per dataset, same label; an aspect-term vote reaches 52.5% vs majority 53.4% (Laptop) and 65.4% vs 65.0% (Restaurants), so no aspect-identity shortcut.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax"
+            ]
+          }
+        },
+        {
+          "type": "train_test_overlap",
+          "status": "checked_ok",
+          "evidence": {
+            "text": "Shipped splits (Laptop 2328/638, Restaurants 3608/1120 aspects, matching Dai et al.'s statistics): one exact duplicate sentence per dataset, same label; an aspect-term vote reaches 52.5% vs majority 53.4% (Laptop) and 65.4% vs 65.0% (Restaurants), so no aspect-identity shortcut.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax"
+            ]
+          }
+        },
+        {
+          "type": "pretraining_contamination",
+          "status": "not_checked",
+          "evidence": "SemEval-2014 reviews have been public since 2014 and may be in RoBERTa/DeBERTa pre-training data; this affects both arms of a with/without-syntax comparison alike."
+        }
+      ],
+      "decision": {
+        "verdict": "conditional_go",
+        "rationale": "Feasible and useful as a replication; novelty is low by design.",
+        "conditions": [
+          "Read Lebmeier et al. through the library; if it already re-runs a syntax-GCN model with validation splits and uncertainty, narrow to the DeBERTa-v3 part or drop D1.",
+          "Fix the validation protocol, seeds and the smallest effect of interest (e.g. 1 point) before any run."
+        ],
+        "unresolved_risks": [
+          "Lebmeier et al. unread",
+          "Reimplementation may not match Dai et al.'s unreleased RoBERTa+tree code"
+        ]
+      }
+    },
+    {
+      "title": "D2 (extension): is it syntax, or just an extra graph head? Structure controls on a fixed fine-tuned encoder",
+      "category": "underexplored_setting",
+      "mode": "extension",
+      "status": "kept",
+      "research_question": "With the encoder and head parameter count fixed, do dependency trees beat left/right-chain, degree-matched random trees and a fully connected graph inside the same GCN head?",
+      "motivation": "Dai et al. ran chain-tree controls only with GloVe models [@dai2021syntax]; random masks also help in Syntax-BERT [@bai2021syntaxbert]; BERT4GCN's graph adds only slightly [@xiao2021bert4gcn].",
+      "supporting_papers": [
+        "dai2021syntax",
+        "bai2021syntaxbert",
+        "xiao2021bert4gcn"
+      ],
+      "closest_existing_work": [
+        {
+          "key": "dai2021syntax",
+          "read_level": "full_text",
+          "overlap": "partial",
+          "how_it_differs": "Chain-tree controls with GloVe embeddings only, 3 runs."
+        },
+        {
+          "key": "bai2021syntaxbert",
+          "read_level": "full_text",
+          "overlap": "partial",
+          "how_it_differs": "Random-mask control inside the transformer, GLUE tasks, not ABSA."
+        },
+        {
+          "key": "xiao2021bert4gcn",
+          "read_level": "full_text",
+          "overlap": "partial",
+          "how_it_differs": "Removes the dependency graph but has no random or chain-tree control."
+        },
+        {
+          "key": "lebmeier2023repro",
+          "read_level": "abstract",
+          "overlap": "unknown",
+          "how_it_differs": "Unknown architectures; unlikely to include structure controls."
+        }
+      ],
+      "gap_evidence": [
+        {
+          "text": "Chain-tree controls in Dai et al. use 300-d GloVe embeddings kept fixed, not a pretrained encoder.",
+          "level": "verified",
+          "sources": [
+            "dai2021syntax"
+          ]
+        },
+        {
+          "text": "A random decomposition of the network also gives moderate improvements (Syntax-BERT, GLUE).",
+          "level": "verified",
+          "sources": [
+            "bai2021syntaxbert"
+          ]
+        }
+      ],
+      "contribution": "Separates the effect of syntax from that of adding any graph-structured head.",
+      "novelty": {
+        "confidence": "low",
+        "uncertainty": "No ABSA paper with random/chain-tree controls on a pretrained encoder was found in the full texts read or by web search; ablation tables of the many 2022-2026 GCN papers were not all read and may contain such controls.",
+        "signal": "no_close_match_in_this_search",
+        "ceiling": "low",
+        "challenge_searches": [
+          "does syntax help pretrained transformers aspect-based sentiment",
+          "dependency tree graph neural network on top of BERT ablation sentiment",
+          "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+          "syntax-agnostic versus syntax-aware models frozen encoder probing",
+          "random trees versus dependency trees graph convolution evaluation",
+          "web: does syntax help pretrained transformers dependency tree GNN ablation aspect-based sentiment random trees",
+          "web: aspect-based sentiment GCN reproducibility seeds variance same encoder syntax benefit",
+          "web: aspect sentiment random tree / fully connected graph replace dependency tree GCN ablation BERT",
+          "web: empirical study syntax ABSA pre-trained language models revisiting",
+          "web: ABSA evaluation model selection on test set no development set reproducibility"
+        ]
+      },
+      "feasibility": [
+        {
+          "text": "Same pipeline as D1 plus graph generators; adds about 40 runs.",
+          "level": "estimate"
+        }
+      ],
+      "methodological_risks": [
+        {
+          "type": "model_selection_on_test",
+          "status": "found",
+          "evidence": {
+            "text": "Official code of the closest studies selects on the test set: RoBERTaABSA finetune.py passes the test split as dev_data and reloads the best model; ASGCN (original and Dai et al.'s copy) keeps max_test_acc and max_test_f1 separately, so accuracy and F1 can come from different epochs; RGAT run.py reports the best evaluation on the test set.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax",
+              "zhang2019asgcn",
+              "wang2020rgat"
+            ]
+          },
+          "mitigation": "Validation split carved from training, grouped by sentence; select checkpoints and hyperparameters on it only; touch the test set once."
+        },
+        {
+          "type": "metric_definition",
+          "status": "found",
+          "evidence": {
+            "text": "ASGCN reports maximum accuracy and maximum F1 from possibly different epochs.",
+            "level": "verified",
+            "sources": [
+              "zhang2019asgcn"
+            ]
+          },
+          "mitigation": "Report accuracy and macro-F1 of one selected checkpoint."
+        },
+        {
+          "type": "insufficient_runs",
+          "status": "found",
+          "evidence": {
+            "text": "Dai et al.: 3 runs for the tree comparison, no variance for the RoBERTa table, released logs single-run; Lebmeier et al. report notable variance across data splits.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax",
+              "lebmeier2023repro"
+            ]
+          },
+          "mitigation": "At least 10 seeds x repeated train/validation splits; paired comparisons; confidence intervals."
+        },
+        {
+          "type": "weak_baseline",
+          "status": "found",
+          "evidence": {
+            "text": "The same RoBERTa-MLP baseline is reported at 83.78 (Dai et al.) and 81.11 (BERT4GCN) on Laptop14, so cross-paper syntax gains can be baseline artefacts.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax",
+              "xiao2021bert4gcn"
+            ]
+          },
+          "mitigation": "Tune the plain-encoder baseline with the same budget and search space as the tree heads."
+        },
+        {
+          "type": "protocol_mismatch",
+          "status": "found",
+          "evidence": {
+            "text": "No public code for the RoBERTa+tree rows; the Hugging Face SetFit copy has 654 laptop test rows vs 638 aspects in the shipped split.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax"
+            ]
+          },
+          "mitigation": "Use the shipped split files; reimplement heads on one codebase; label the work a replication."
+        },
+        {
+          "type": "confound",
+          "status": "not_checked",
+          "evidence": "Tree heads add parameters and a separate learning rate; Dai et al. note RoBERTa-based tree models are hard to optimise and need different learning rates.",
+          "mitigation": "Parameter-matched no-graph head with the same tuning budget."
+        },
+        {
+          "type": "duplicate_items",
+          "status": "checked_ok",
+          "evidence": {
+            "text": "Shipped splits (Laptop 2328/638, Restaurants 3608/1120 aspects, matching Dai et al.'s statistics): one exact duplicate sentence per dataset, same label; an aspect-term vote reaches 52.5% vs majority 53.4% (Laptop) and 65.4% vs 65.0% (Restaurants), so no aspect-identity shortcut.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax"
+            ]
+          }
+        },
+        {
+          "type": "train_test_overlap",
+          "status": "checked_ok",
+          "evidence": {
+            "text": "Shipped splits (Laptop 2328/638, Restaurants 3608/1120 aspects, matching Dai et al.'s statistics): one exact duplicate sentence per dataset, same label; an aspect-term vote reaches 52.5% vs majority 53.4% (Laptop) and 65.4% vs 65.0% (Restaurants), so no aspect-identity shortcut.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax"
+            ]
+          }
+        },
+        {
+          "type": "pretraining_contamination",
+          "status": "not_checked",
+          "evidence": "SemEval-2014 reviews have been public since 2014 and may be in RoBERTa/DeBERTa pre-training data; this affects both arms of a with/without-syntax comparison alike."
+        }
+      ],
+      "decision": {
+        "verdict": "conditional_go",
+        "rationale": "The most informative design: it tests the mechanism, and runs on D1's pipeline.",
+        "conditions": [
+          "Run D1 first so the baseline and protocol are trusted.",
+          "Screen ablation tables of the 5-10 most cited 2022-2026 syntax-GCN ABSA papers for random or chain-tree controls on PLMs."
+        ],
+        "unresolved_risks": [
+          "Uncited ablations in recent GCN papers",
+          "Effect sizes may be below the detectable difference on 638/1,120 test aspects"
+        ]
+      }
+    },
+    {
+      "title": "D3 (novel investigation): frozen versus fine-tuned encoder - does syntax matter only when the encoder cannot adapt?",
+      "category": "unverified_novelty_hypothesis",
+      "mode": "original",
+      "status": "kept",
+      "research_question": "When the encoder is frozen (features only), do dependency-tree heads give larger gains over a parameter-matched no-graph head than when it is fine-tuned?",
+      "motivation": "Every closest study fine-tunes the encoder [@dai2021syntax; @sachan2021syntax]; Dai et al. argue fine-tuning makes the encoder learn task-oriented structure implicitly.",
+      "supporting_papers": [
+        "dai2021syntax",
+        "sachan2021syntax"
+      ],
+      "closest_existing_work": [
+        {
+          "key": "sachan2021syntax",
+          "read_level": "full_text",
+          "overlap": "partial",
+          "how_it_differs": "Fine-tuned encoders only, information extraction tasks."
+        },
+        {
+          "key": "dai2021syntax",
+          "read_level": "full_text",
+          "overlap": "partial",
+          "how_it_differs": "Fine-tuned RoBERTa only; frozen GloVe for the tree comparison."
+        },
+        {
+          "key": "hou2021sagcn",
+          "read_level": "abstract",
+          "overlap": "unknown",
+          "how_it_differs": "BERT + GCN depth variants; encoder regime not read."
+        }
+      ],
+      "gap_evidence": [
+        {
+          "text": "The closest full texts fine-tune the encoder in every syntax comparison.",
+          "level": "verified",
+          "sources": [
+            "dai2021syntax",
+            "sachan2021syntax"
+          ]
+        },
+        {
+          "text": "If fine-tuning lets the encoder absorb task structure, a frozen encoder should leave more room for explicit syntax.",
+          "level": "speculative"
+        }
+      ],
+      "contribution": "Identifies when explicit syntax is worth adding (compute-limited, frozen-feature settings).",
+      "novelty": {
+        "confidence": "low",
+        "uncertainty": "Unverified hypothesis: probing and adapter literature with frozen encoders was not searched in depth.",
+        "signal": "no_close_match_in_this_search",
+        "ceiling": "low",
+        "challenge_searches": [
+          "does syntax help pretrained transformers aspect-based sentiment",
+          "dependency tree graph neural network on top of BERT ablation sentiment",
+          "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+          "syntax-agnostic versus syntax-aware models frozen encoder probing",
+          "random trees versus dependency trees graph convolution evaluation",
+          "web: does syntax help pretrained transformers dependency tree GNN ablation aspect-based sentiment random trees",
+          "web: aspect-based sentiment GCN reproducibility seeds variance same encoder syntax benefit",
+          "web: aspect sentiment random tree / fully connected graph replace dependency tree GCN ablation BERT",
+          "web: empirical study syntax ABSA pre-trained language models revisiting",
+          "web: ABSA evaluation model selection on test set no development set reproducibility"
+        ]
+      },
+      "feasibility": [
+        {
+          "text": "Frozen features can be cached once; cheapest of all designs (CPU-trainable heads).",
+          "level": "estimate"
+        }
+      ],
+      "methodological_risks": [
+        {
+          "type": "model_selection_on_test",
+          "status": "found",
+          "evidence": {
+            "text": "Official code of the closest studies selects on the test set: RoBERTaABSA finetune.py passes the test split as dev_data and reloads the best model; ASGCN (original and Dai et al.'s copy) keeps max_test_acc and max_test_f1 separately, so accuracy and F1 can come from different epochs; RGAT run.py reports the best evaluation on the test set.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax",
+              "zhang2019asgcn",
+              "wang2020rgat"
+            ]
+          },
+          "mitigation": "Validation split carved from training, grouped by sentence; select checkpoints and hyperparameters on it only; touch the test set once."
+        },
+        {
+          "type": "metric_definition",
+          "status": "found",
+          "evidence": {
+            "text": "ASGCN reports maximum accuracy and maximum F1 from possibly different epochs.",
+            "level": "verified",
+            "sources": [
+              "zhang2019asgcn"
+            ]
+          },
+          "mitigation": "Report accuracy and macro-F1 of one selected checkpoint."
+        },
+        {
+          "type": "insufficient_runs",
+          "status": "found",
+          "evidence": {
+            "text": "Dai et al.: 3 runs for the tree comparison, no variance for the RoBERTa table, released logs single-run; Lebmeier et al. report notable variance across data splits.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax",
+              "lebmeier2023repro"
+            ]
+          },
+          "mitigation": "At least 10 seeds x repeated train/validation splits; paired comparisons; confidence intervals."
+        },
+        {
+          "type": "weak_baseline",
+          "status": "found",
+          "evidence": {
+            "text": "The same RoBERTa-MLP baseline is reported at 83.78 (Dai et al.) and 81.11 (BERT4GCN) on Laptop14, so cross-paper syntax gains can be baseline artefacts.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax",
+              "xiao2021bert4gcn"
+            ]
+          },
+          "mitigation": "Tune the plain-encoder baseline with the same budget and search space as the tree heads."
+        },
+        {
+          "type": "protocol_mismatch",
+          "status": "found",
+          "evidence": {
+            "text": "No public code for the RoBERTa+tree rows; the Hugging Face SetFit copy has 654 laptop test rows vs 638 aspects in the shipped split.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax"
+            ]
+          },
+          "mitigation": "Use the shipped split files; reimplement heads on one codebase; label the work a replication."
+        },
+        {
+          "type": "confound",
+          "status": "not_checked",
+          "evidence": "Tree heads add parameters and a separate learning rate; Dai et al. note RoBERTa-based tree models are hard to optimise and need different learning rates.",
+          "mitigation": "Parameter-matched no-graph head with the same tuning budget."
+        },
+        {
+          "type": "duplicate_items",
+          "status": "checked_ok",
+          "evidence": {
+            "text": "Shipped splits (Laptop 2328/638, Restaurants 3608/1120 aspects, matching Dai et al.'s statistics): one exact duplicate sentence per dataset, same label; an aspect-term vote reaches 52.5% vs majority 53.4% (Laptop) and 65.4% vs 65.0% (Restaurants), so no aspect-identity shortcut.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax"
+            ]
+          }
+        },
+        {
+          "type": "train_test_overlap",
+          "status": "checked_ok",
+          "evidence": {
+            "text": "Shipped splits (Laptop 2328/638, Restaurants 3608/1120 aspects, matching Dai et al.'s statistics): one exact duplicate sentence per dataset, same label; an aspect-term vote reaches 52.5% vs majority 53.4% (Laptop) and 65.4% vs 65.0% (Restaurants), so no aspect-identity shortcut.",
+            "level": "verified",
+            "sources": [
+              "dai2021syntax"
+            ]
+          }
+        },
+        {
+          "type": "pretraining_contamination",
+          "status": "not_checked",
+          "evidence": "SemEval-2014 reviews have been public since 2014 and may be in RoBERTa/DeBERTa pre-training data; this affects both arms of a with/without-syntax comparison alike."
+        }
+      ],
+      "decision": {
+        "verdict": "conditional_go",
+        "rationale": "Plausible and cheap, but the novelty rests on absence of evidence.",
+        "conditions": [
+          "Run a dedicated challenge and web search on frozen-encoder syntax probing (e.g. 'frozen BERT features dependency GCN') before committing."
+        ],
+        "unresolved_risks": [
+          "Probing literature may already answer it"
+        ]
+      }
+    },
+    {
+      "title": "D4 (extension): parser quality as the moderator of syntax gains in ABSA",
+      "category": "underexplored_setting",
+      "mode": "extension",
+      "status": "rejected",
+      "revision_note": "Sachan et al. show gains depend on gold parses [@sachan2021syntax]; SemEval reviews have no gold dependency trees, so parse quality cannot be measured against a reference and the moderator cannot be isolated.",
+      "research_question": "Do syntax gains in ABSA grow with parser quality?",
+      "closest_existing_work": [
+        {
+          "key": "sachan2021syntax",
+          "read_level": "full_text",
+          "overlap": "same_question_different_design",
+          "how_it_differs": "Gold, in-domain and off-the-shelf parses on IE tasks with gold treebanks."
+        }
+      ],
+      "gap_evidence": [
+        {
+          "text": "Gains contingent on gold parses (SRL); no gain on NER.",
+          "level": "verified",
+          "sources": [
+            "sachan2021syntax"
+          ]
+        }
+      ],
+      "novelty": {
+        "confidence": "low",
+        "uncertainty": "Not pursued.",
+        "signal": "no_close_match_in_this_search",
+        "ceiling": "low",
+        "challenge_searches": [
+          "does syntax help pretrained transformers aspect-based sentiment",
+          "dependency tree graph neural network on top of BERT ablation sentiment",
+          "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+          "syntax-agnostic versus syntax-aware models frozen encoder probing",
+          "random trees versus dependency trees graph convolution evaluation",
+          "web: does syntax help pretrained transformers dependency tree GNN ablation aspect-based sentiment random trees",
+          "web: aspect-based sentiment GCN reproducibility seeds variance same encoder syntax benefit",
+          "web: aspect sentiment random tree / fully connected graph replace dependency tree GCN ablation BERT",
+          "web: empirical study syntax ABSA pre-trained language models revisiting",
+          "web: ABSA evaluation model selection on test set no development set reproducibility"
+        ]
+      },
+      "decision": {
+        "verdict": "no_go",
+        "rationale": "Not isolable without gold parses for the review data."
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "name": "SemEval-2014 Laptop and Restaurant splits shipped with RoBERTaABSA",
+      "url": "https://github.com/ROGERDJQ/RoBERTaABSA/tree/main/Dataset",
+      "purpose": "All designs (reference split)",
+      "size": "Laptop 2,328/638 aspects; Restaurants 3,608/1,120 (counted from Train/Test.json)",
+      "format": "JSON with tokens, POS, dependency heads and relations; original XML",
+      "license": null,
+      "access": "reachable (HTTP 200)",
+      "preprocessing": "Conflict polarities removed; parses precomputed",
+      "suitability": "Matches Dai et al.'s statistics exactly; repository has no licence",
+      "verified": true
+    },
+    {
+      "name": "SemEval-2014 restaurants (SetFit copy)",
+      "url": "https://huggingface.co/datasets/tomaarsen/setfit-absa-semeval-restaurants",
+      "purpose": "Not recommended for comparison",
+      "size": "3,693 / 1,134 rows",
+      "format": "parquet",
+      "license": null,
+      "access": "open, not gated",
+      "preprocessing": null,
+      "suitability": "Row counts differ from the published split (laptop copy: 654 test rows vs 638 aspects)",
+      "verified": true
+    },
+    {
+      "name": "SemEval-2014 laptops (SetFit copy)",
+      "url": "https://huggingface.co/datasets/tomaarsen/setfit-absa-semeval-laptops",
+      "purpose": "Not recommended for comparison",
+      "size": "2,358 / 654 rows",
+      "format": "parquet",
+      "license": null,
+      "access": "open, not gated",
+      "preprocessing": null,
+      "suitability": "As above",
+      "verified": true
+    }
+  ],
+  "limitations": [
+    "Lebmeier et al. (2023) was not read beyond its abstract; it may already contain part of D1.",
+    "The ablation tables of most 2022-2026 syntax-GCN ABSA papers were not read; D2's controls may exist there.",
+    "Semantic Scholar was rate-limited; the challenge command did not retrieve three of the closest papers, which were found by web search.",
+    "Compute and time figures are estimates; no model was trained and no code was run beyond data checks.",
+    "SemEval-2014 data licence is not stated on any copy checked."
+  ]
+}

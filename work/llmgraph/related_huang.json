@@ -1,0 +1,2827 @@
+{
+  "seed": {
+    "title": "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?",
+    "authors": [
+      "Jin Huang",
+      "Xingjian Zhang",
+      "Qiaozhu Mei",
+      "Jiaqi Ma"
+    ],
+    "year": 2023,
+    "date": "2023-09-28",
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv_id": "2309.16595",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": "21510620f0c92dde08741070a00593bcd1815d8c",
+    "url": "https://arxiv.org/abs/2309.16595",
+    "pdf_url": "https://arxiv.org/pdf/2309.16595v4",
+    "abstract": "Large language models (LLMs) are gaining increasing attention for their capability to process graphs with rich text attributes, especially in a zero-shot fashion. Recent studies demonstrate that LLMs obtain decent text classification performance on common text-rich graph benchmarks, and the performance can be improved by appending encoded structural information as natural languages into prompts. We aim to understand why the incorporation of structural information inherent in graph data can improve the prediction performance of LLMs. First, we rule out the concern of data leakage by curating a novel leakage-free dataset and conducting a comparative analysis alongside a previously widely-used dataset. Second, as past work usually encodes the ego-graph by describing the graph structure in natural language, we ask the question: do LLMs understand the graph structure in accordance with the intent of the prompt designers? Third, we investigate why LLMs can improve their performance after incorporating structural information. Our exploration of these questions reveals that (i) there is no substantial evidence that the performance of LLMs is significantly attributed to data leakage; (ii) instead of understanding prompts as graph structures as intended by the prompt designers, LLMs tend to process prompts more as contextual paragraphs and (iii) the most efficient elements of the local neighborhood included in the prompt are phrases that are pertinent to the node label, rather than the graph structure.",
+    "citations": 46,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "Accepted to Transactions on Machine Learning Research (TMLR)",
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "counts": {
+    "references": 25,
+    "citations": 25,
+    "recommended": 25
+  },
+  "errors": [],
+  "papers": [
+    {
+      "title": "Which Modality should I use - Text, Motif, or Image? : Understanding Graphs with Large Language Models",
+      "authors": [
+        "Debarati Das",
+        "Ishaan Gupta",
+        "Jaideep Srivastava",
+        "Dongyeop Kang"
+      ],
+      "year": 2023,
+      "date": "2023-11-16",
+      "venue": "NAACL-HLT",
+      "doi": "10.48550/arxiv.2311.09862",
+      "arxiv_id": "2311.09862",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "a7f801222c4d053c1ac49fb91ce3a4f750e8343b",
+      "url": "https://www.semanticscholar.org/paper/a7f801222c4d053c1ac49fb91ce3a4f750e8343b",
+      "pdf_url": null,
+      "abstract": "Our research integrates graph data with Large Language Models (LLMs), which, despite their advancements in various fields using large text corpora, face limitations in encoding entire graphs due to context size constraints. This paper introduces a new approach to encoding a graph with diverse modalities, such as text, image, and motif, coupled with prompts to approximate a graph's global connectivity, thereby enhancing LLMs' efficiency in processing complex graph structures. The study also presents GraphTMI, a novel benchmark for evaluating LLMs in graph structure analysis, focusing on homophily, motif presence, and graph difficulty. Key findings indicate that the image modality, especially with vision-language models like GPT-4V, is superior to text in balancing token limits and preserving essential information and outperforms prior graph neural net (GNN) encoders. Furthermore, the research assesses how various factors affect the performance of each encoding modality and outlines the existing challenges and potential future developments for LLMs in graph understanding and reasoning tasks. All data will be publicly available upon acceptance.",
+      "citations": 24,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "GraphGPT: Graph Instruction Tuning for Large Language Models",
+      "authors": [
+        "Jiabin Tang",
+        "Yuhao Yang",
+        "Wei Wei",
+        "Lei Shi",
+        "Lixin Su",
+        "Suqi Cheng",
+        "Dawei Yin",
+        "Chao Huang"
+      ],
+      "year": 2023,
+      "date": "2023-10-19",
+      "venue": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "doi": "10.1145/3626772.3657775",
+      "arxiv_id": "2310.13023",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "45872b94798c3125abfb185b7926689c5e767763",
+      "url": "https://www.semanticscholar.org/paper/45872b94798c3125abfb185b7926689c5e767763",
+      "pdf_url": "https://arxiv.org/pdf/2310.13023",
+      "abstract": "Graph Neural Networks (GNNs) have evolved to understand graph structures through recursive exchanges and aggregations among nodes. To enhance robustness, self-supervised learning (SSL) has become a vital tool for data augmentation. Traditional methods often depend on fine-tuning with task-specific labels, limiting their effectiveness when labeled data is scarce. Our research tackles this by advancing graph model generalization in zero-shot learning environments. Inspired by the success of large language models (LLMs), we aim to create a graph-oriented LLM capable of exceptional generalization across various datasets and tasks without relying on downstream graph data. We introduce the GraphGPT framework, which integrates LLMs with graph structural knowledge through graph instruction tuning. This framework includes a text-graph grounding component to link textual and graph structures and a dual-stage instruction tuning approach with a lightweight graph-text alignment projector. These innovations allow LLMs to comprehend complex graph structures and enhance adaptability across diverse datasets and tasks. Our framework demonstrates superior generalization in both supervised and zero-shot graph learning tasks, surpassing existing benchmarks. The open-sourced model implementation of our GraphGPT is available at https://github.com/HKUDS/GraphGPT.",
+      "citations": 425,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Beyond Text: A Deep Dive into Large Language Models' Ability on Understanding Graph Data",
+      "authors": [
+        "Yun-Tong Hu",
+        "Zheng Zhang",
+        "Liang Zhao"
+      ],
+      "year": 2023,
+      "date": "2023-10-07",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2310.04944",
+      "arxiv_id": "2310.04944",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "4ae7c4decd1df71c466f19d66d69b555945098c4",
+      "url": "https://www.semanticscholar.org/paper/4ae7c4decd1df71c466f19d66d69b555945098c4",
+      "pdf_url": "https://arxiv.org/pdf/2310.04944",
+      "abstract": "Large language models (LLMs) have achieved impressive performance on many natural language processing tasks. However, their capabilities on graph-structured data remain relatively unexplored. In this paper, we conduct a series of experiments benchmarking leading LLMs on diverse graph prediction tasks spanning node, edge, and graph levels. We aim to assess whether LLMs can effectively process graph data and leverage topological structures to enhance performance, compared to specialized graph neural networks. Through varied prompt formatting and task/dataset selection, we analyze how well LLMs can interpret and utilize graph structures. By comparing LLMs' performance with specialized graph models, we offer insights into the strengths and limitations of employing LLMs for graph analytics. Our findings provide insights into LLMs' capabilities and suggest avenues for further exploration in applying them to graph analytics.",
+      "citations": 35,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "GraphText: Graph Reasoning in Text Space",
+      "authors": [
+        "Jia-Nan Zhao",
+        "Le Zhuo",
+        "Yikang Shen",
+        "M. Qu",
+        "Kai Liu",
+        "Michael M. Bronstein",
+        "Zhaocheng Zhu",
+        "Jian Tang"
+      ],
+      "year": 2023,
+      "date": "2023-10-02",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2310.01089",
+      "arxiv_id": "2310.01089",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "55367fbade73f96181ffcf52169d0471d4c014a2",
+      "url": "https://www.semanticscholar.org/paper/55367fbade73f96181ffcf52169d0471d4c014a2",
+      "pdf_url": "https://arxiv.org/pdf/2310.01089",
+      "abstract": "Large Language Models (LLMs) have gained the ability to assimilate human knowledge and facilitate natural language interactions with both humans and other LLMs. However, despite their impressive achievements, LLMs have not made significant advancements in the realm of graph machine learning. This limitation arises because graphs encapsulate distinct relational data, making it challenging to transform them into natural language that LLMs understand. In this paper, we bridge this gap with a novel framework, GraphText, that translates graphs into natural language. GraphText derives a graph-syntax tree for each graph that encapsulates both the node attributes and inter-node relationships. Traversal of the tree yields a graph text sequence, which is then processed by an LLM to treat graph tasks as text generation tasks. Notably, GraphText offers multiple advantages. It introduces training-free graph reasoning: even without training on graph data, GraphText with ChatGPT can achieve on par with, or even surpassing, the performance of supervised-trained graph neural networks through in-context learning (ICL). Furthermore, GraphText paves the way for interactive graph reasoning, allowing both humans and LLMs to communicate with the model seamlessly using natural language. These capabilities underscore the vast, yet-to-be-explored potential of LLMs in the domain of graph machine learning.",
+      "citations": 158,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Language is All a Graph Needs",
+      "authors": [
+        "Ruo-Song Ye",
+        "Caiqi Zhang",
+        "Run-Hui Wang",
+        "Shuyuan Xu",
+        "Yongfeng Zhang"
+      ],
+      "year": 2023,
+      "date": "2023-08-14",
+      "venue": "Findings",
+      "doi": "10.18653/v1/2024.findings-eacl.132",
+      "arxiv_id": "2308.07134",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "8d65b5940a4dbed8c18e02ca35e3a9d7a14ea76b",
+      "url": "https://www.semanticscholar.org/paper/8d65b5940a4dbed8c18e02ca35e3a9d7a14ea76b",
+      "pdf_url": "https://aclanthology.org/2024.findings-eacl.132.pdf",
+      "abstract": "The emergence of large-scale pre-trained language models has revolutionized various AI research domains. Transformers-based Large Language Models (LLMs) have gradually replaced CNNs and RNNs to unify fields of computer vision and natural language processing. Compared with independent data like images, videos or texts, graphs usually contain rich structural and relational information. Meanwhile, languages, especially natural language, being one of the most expressive mediums, excels in describing complex structures. However, existing work on incorporating graph problems into the generative language modeling framework remains very limited. Considering the rising prominence of LLMs, it becomes essential to explore whether LLMs can also replace GNNs as the foundation model for graphs. In this paper, we propose InstructGLM (Instruction-finetuned Graph Language Model) with highly scalable prompts based on natural language instructions. We use natural language to describe multi-scale geometric structure of the graph and then instruction finetune an LLM to perform graph tasks, which enables Generative Graph Learning. Our method surpasses all GNN baselines on ogbn-arxiv, Cora and PubMed datasets, underscoring its effectiveness and sheds light on generative LLMs as new foundation model for graph machine learning. Our code is available at https://github.com/agiresearch/InstructGLM.",
+      "citations": 328,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Exploring the Potential of Large Language Models (LLMs)in Learning on Graphs",
+      "authors": [
+        "Zhikai Chen",
+        "Hai-Tao Mao",
+        "Hang Li",
+        "Wei Jin",
+        "Haifang Wen",
+        "Xiaochi Wei",
+        "Shuaiqiang Wang",
+        "Da-Wei Yin",
+        "Wenqi Fan",
+        "Hui Liu",
+        "Ji-Liang Tang"
+      ],
+      "year": 2023,
+      "date": "2023-07-07",
+      "venue": "SIGKDD Explorations",
+      "doi": "10.1145/3655103.3655110",
+      "arxiv_id": "2307.03393",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "105669ec59a58fb2d4dd3021a984af33c227c5ab",
+      "url": "https://www.semanticscholar.org/paper/105669ec59a58fb2d4dd3021a984af33c227c5ab",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3655103.3655110",
+      "abstract": "Learning on Graphs has attracted immense attention due to its wide real-world applications. The most popular pipeline for learning on graphs with textual node attributes primarily relies on Graph Neural Networks (GNNs), and utilizes shallow text embedding as initial node representations, which has limitations in general knowledge and profound semantic understanding. In recent years, Large Language Models (LLMs) have been proven to possess extensive common knowledge and powerful semantic comprehension abilities that have revolutionized existing workflows to handle text data. In this paper, we aim to explore the potential of LLMs in graph machine learning, especially the node classification task, and investigate two possible pipelines: LLMs-as-Enhancers and LLMs-as-Predictors. The former leverages LLMs to enhance nodes' text attributes with their massive knowledge and then generate predictions through GNNs. The latter attempts to directly employ LLMs as standalone predictors. We conduct comprehensive and systematical studies on these two pipelines under various settings. From comprehensive empirical results, we make original observations and find new insights that open new possibilities and suggest promising directions to leverage LLMs for learning on graphs. Our codes and datasets are available at: https://github.com/CurryTang/Graph-LLM .",
+      "citations": 483,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "On Performance Discrepancies Across Local Homophily Levels in Graph Neural Networks",
+      "authors": [
+        "Donald Loveland",
+        "Jiong Zhu",
+        "Mark Heimann",
+        "Benjamin Fish",
+        "Michael T. Schaub",
+        "Danai Koutra"
+      ],
+      "year": 2023,
+      "date": "2023-06-08",
+      "venue": "LOG IN",
+      "doi": "10.48550/arxiv.2306.05557",
+      "arxiv_id": "2306.05557",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "610f0a91b476e3edfcf49523b6789633022ac5a5",
+      "url": "https://www.semanticscholar.org/paper/610f0a91b476e3edfcf49523b6789633022ac5a5",
+      "pdf_url": "https://arxiv.org/pdf/2306.05557",
+      "abstract": "Graph Neural Network (GNN) research has highlighted a relationship between high homophily (i.e., the tendency of nodes of the same class to connect) and strong predictive performance in node classification. However, recent work has found the relationship to be more nuanced, demonstrating that simple GNNs can learn in certain heterophilous settings. To resolve these conflicting findings and align closer to real-world datasets, we go beyond the assumption of a global graph homophily level and study the performance of GNNs when the local homophily level of a node deviates from the global homophily level. Through theoretical and empirical analysis, we systematically demonstrate how shifts in local homophily can introduce performance degradation, leading to performance discrepancies across local homophily levels. We ground the practical implications of this work through granular analysis on five real-world datasets with varying global homophily levels, demonstrating that (a) GNNs can fail to generalize to test nodes that deviate from the global homophily of a graph, and (b) high local homophily does not necessarily confer high performance for a node. We further show that GNNs designed for globally heterophilous graphs can alleviate performance discrepancy by improving performance across local homophily levels, offering a new perspective on how these GNNs achieve stronger global performance.",
+      "citations": 17,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "GPT4Graph: Can Large Language Models Understand Graph Structured Data ? An Empirical Evaluation and Benchmarking",
+      "authors": [
+        "Jiayan Guo",
+        "Lun Du",
+        "Hengyu Liu",
+        "Mengyu Zhou",
+        "Xinyi He",
+        "Shi Han"
+      ],
+      "year": 2023,
+      "date": "2023-05-24",
+      "venue": "arXiv.org",
+      "doi": null,
+      "arxiv_id": "2305.15066",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "2b967d82b25088566980aaaf5a7062d90b2fb14f",
+      "url": "https://www.semanticscholar.org/paper/2b967d82b25088566980aaaf5a7062d90b2fb14f",
+      "pdf_url": null,
+      "abstract": "Large language models~(LLM) like ChatGPT have become indispensable to artificial general intelligence~(AGI), demonstrating excellent performance in various natural language processing tasks. In the real world, graph data is ubiquitous and an essential part of AGI and prevails in domains like social network analysis, bioinformatics and recommender systems. The training corpus of large language models often includes some algorithmic components, which allows them to achieve certain effects on some graph data-related problems. However, there is still little research on their performance on a broader range of graph-structured data. In this study, we conduct an extensive investigation to assess the proficiency of LLMs in comprehending graph data, employing a diverse range of structural and semantic-related tasks. Our analysis encompasses 10 distinct tasks that evaluate the LLMs' capabilities in graph understanding. Through our study, we not only uncover the current limitations of language models in comprehending graph structures and performing associated reasoning tasks but also emphasize the necessity for further advancements and novel approaches to enhance their graph processing capabilities. Our findings contribute valuable insights towards bridging the gap between language models and graph understanding, paving the way for more effective graph mining and knowledge extraction.",
+      "citations": 293,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Can Language Models Solve Graph Problems in Natural Language?",
+      "authors": [
+        "Heng Wang",
+        "Shangbin Feng",
+        "Tian-Xing He",
+        "Zhaoxuan Tan",
+        "Xiaochuang Han",
+        "Yulia Tsvetkov"
+      ],
+      "year": 2023,
+      "date": "2023-05-17",
+      "venue": "Neural Information Processing Systems",
+      "doi": "10.48550/arxiv.2305.10037",
+      "arxiv_id": "2305.10037",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "df2beaae63e4d68ef8e762bcd4704c9f11f856d9",
+      "url": "https://www.semanticscholar.org/paper/df2beaae63e4d68ef8e762bcd4704c9f11f856d9",
+      "pdf_url": "http://arxiv.org/pdf/2305.10037",
+      "abstract": "Large language models (LLMs) are increasingly adopted for a variety of tasks with implicit graphical structures, such as planning in robotics, multi-hop question answering or knowledge probing, structured commonsense reasoning, and more. While LLMs have advanced the state-of-the-art on these tasks with structure implications, whether LLMs could explicitly process textual descriptions of graphs and structures, map them to grounded conceptual spaces, and perform structured operations remains underexplored. To this end, we propose NLGraph (Natural Language Graph), a comprehensive benchmark of graph-based problem solving designed in natural language. NLGraph contains 29,370 problems, covering eight graph reasoning tasks with varying complexity from simple tasks such as connectivity and shortest path up to complex problems such as maximum flow and simulating graph neural networks. We evaluate LLMs (GPT-3/4) with various prompting approaches on the NLGraph benchmark and find that 1) language models do demonstrate preliminary graph reasoning abilities, 2) the benefit of advanced prompting and in-context learning diminishes on more complex graph problems, while 3) LLMs are also (un)surprisingly brittle in the face of spurious correlations in graph and problem settings. We then propose Build-a-Graph Prompting and Algorithmic Prompting, two instruction-based approaches to enhance LLMs in solving natural language graph problems. Build-a-Graph and Algorithmic prompting improve the performance of LLMs on NLGraph by 3.07% to 16.85% across multiple tasks and settings, while how to solve the most complicated graph reasoning tasks in our setup with language models remains an open research question. The NLGraph benchmark and evaluation code are available at https://github.com/Arthur-Heng/NLGraph.",
+      "citations": 425,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Can we trust the evaluation on ChatGPT?",
+      "authors": [
+        "Rachith Aiyappa",
+        "Ji-Sun An",
+        "Haewoon Kwak",
+        "Yong-Yeol Ahn"
+      ],
+      "year": 2023,
+      "date": "2023-03-22",
+      "venue": "TRUSTNLP",
+      "doi": "10.18653/v1/2023.trustnlp-1.5",
+      "arxiv_id": "2303.12767",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "7d40189f3fa56728b8d210628e98fc204961778f",
+      "url": "https://www.semanticscholar.org/paper/7d40189f3fa56728b8d210628e98fc204961778f",
+      "pdf_url": "https://aclanthology.org/2023.trustnlp-1.5.pdf",
+      "abstract": "ChatGPT, the first large language model with mass adoption, has demonstrated remarkableperformance in numerous natural language tasks. Despite its evident usefulness, evaluatingChatGPT’s performance in diverse problem domains remains challenging due to the closednature of the model and its continuous updates via Reinforcement Learning from HumanFeedback (RLHF). We highlight the issue of data contamination in ChatGPT evaluations, with a case study in stance detection. We discuss the challenge of preventing data contamination and ensuring fair model evaluation in the age of closed and continuously trained models.",
+      "citations": 109,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "LLaMA: Open and Efficient Foundation Language Models",
+      "authors": [
+        "Hugo Touvron",
+        "Thibaut Lavril",
+        "Gautier Izacard",
+        "X. Martinet",
+        "M. Lachaux",
+        "Timothée Lacroix",
+        "Baptiste Rozière",
+        "Naman Goyal",
+        "Eric Hambro",
+        "Faisal Azhar",
+        "Aurélien Rodriguez",
+        "A. Joulin",
+        "E. Grave",
+        "Guillaume Lample"
+      ],
+      "year": 2023,
+      "date": "2023-02-27",
+      "venue": "arXiv.org",
+      "doi": null,
+      "arxiv_id": "2302.13971",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "57e849d0de13ed5f91d086936296721d4ff75a75",
+      "url": "https://www.semanticscholar.org/paper/57e849d0de13ed5f91d086936296721d4ff75a75",
+      "pdf_url": null,
+      "abstract": "We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B is competitive with the best models, Chinchilla-70B and PaLM-540B. We release all our models to the research community.",
+      "citations": 22067,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Graph Learning Indexer: A Contributor-Friendly and Metadata-Rich Platform for Graph Learning Benchmarks",
+      "authors": [
+        "Jiaqi W. Ma",
+        "Xing-Jian Zhang",
+        "He-Xun Fan",
+        "Jin Huang",
+        "Tianyu Li",
+        "Tinghong Li",
+        "Yiwen Tu",
+        "Chen Zhu",
+        "Qiao-Zhu Mei"
+      ],
+      "year": 2022,
+      "date": "2022-12-08",
+      "venue": "LOG IN",
+      "doi": "10.48550/arxiv.2212.04537",
+      "arxiv_id": "2212.04537",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "5bee5f0c4084e843fe2a0b6aa14ae8f2714192b9",
+      "url": "https://www.semanticscholar.org/paper/5bee5f0c4084e843fe2a0b6aa14ae8f2714192b9",
+      "pdf_url": "http://arxiv.org/pdf/2212.04537",
+      "abstract": "Establishing open and general benchmarks has been a critical driving force behind the success of modern machine learning techniques. As machine learning is being applied to broader domains and tasks, there is a need to establish richer and more diverse benchmarks to better reflect the reality of the application scenarios. Graph learning is an emerging field of machine learning that urgently needs more and better benchmarks. To accommodate the need, we introduce Graph Learning Indexer (GLI), a benchmark curation platform for graph learning. In comparison to existing graph learning benchmark libraries, GLI highlights two novel design objectives. First, GLI is designed to incentivize \\emph{dataset contributors}. In particular, we incorporate various measures to minimize the effort of contributing and maintaining a dataset, increase the usability of the contributed dataset, as well as encourage attributions to different contributors of the dataset. Second, GLI is designed to curate a knowledge base, instead of a plain collection, of benchmark datasets. We use multiple sources of meta information to augment the benchmark datasets with \\emph{rich characteristics}, so that they can be easily selected and used in downstream research or development. The source code of GLI is available at \\url{https://github.com/Graph-Learning-Benchmarks/gli}.",
+      "citations": 6,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Are Large Pre-Trained Language Models Leaking Your Personal Information?",
+      "authors": [
+        "Jie Huang",
+        "Hanyin Shao",
+        "K. Chang"
+      ],
+      "year": 2022,
+      "date": "2022-05-25",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "doi": "10.48550/arxiv.2205.12628",
+      "arxiv_id": "2205.12628",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "77d25889a59041629e8b2a81aad56544144c6878",
+      "url": "https://www.semanticscholar.org/paper/77d25889a59041629e8b2a81aad56544144c6878",
+      "pdf_url": "http://arxiv.org/pdf/2205.12628",
+      "abstract": "Are Large Pre-Trained Language Models Leaking Your Personal Information? In this paper, we analyze whether Pre-Trained Language Models (PLMs) are prone to leaking personal information. Specifically, we query PLMs for email addresses with contexts of the email address or prompts containing the owner's name. We find that PLMs do leak personal information due to memorization. However, since the models are weak at association, the risk of specific personal information being extracted by attackers is low. We hope this work could help the community to better understand the privacy risk of PLMs and bring new insights to make PLMs safe.",
+      "citations": 313,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Large Language Models are Zero-Shot Reasoners",
+      "authors": [
+        "Takeshi Kojima",
+        "Shi-Xiang Gu",
+        "Machel Reid",
+        "Yutaka Matsuo",
+        "Yusuke Iwasawa"
+      ],
+      "year": 2022,
+      "date": "2022-05-24",
+      "venue": "Neural Information Processing Systems",
+      "doi": "10.52202/068431-1613",
+      "arxiv_id": "2205.11916",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "e7ad08848d5d7c5c47673ffe0da06af443643bda",
+      "url": "https://www.semanticscholar.org/paper/e7ad08848d5d7c5c47673ffe0da06af443643bda",
+      "pdf_url": "https://arxiv.org/pdf/2205.11916",
+      "abstract": "Pretrained large language models (LLMs) are widely used in many sub-fields of natural language processing (NLP) and generally known as excellent few-shot learners with task-specific exemplars. Notably, chain of thought (CoT) prompting, a recent technique for eliciting complex multi-step reasoning through step-by-step answer examples, achieved the state-of-the-art performances in arithmetics and symbolic reasoning, difficult system-2 tasks that do not follow the standard scaling laws for LLMs. While these successes are often attributed to LLMs' ability for few-shot learning, we show that LLMs are decent zero-shot reasoners by simply adding\"Let's think step by step\"before each answer. Experimental results demonstrate that our Zero-shot-CoT, using the same single prompt template, significantly outperforms zero-shot LLM performances on diverse benchmark reasoning tasks including arithmetics (MultiArith, GSM8K, AQUA-RAT, SVAMP), symbolic reasoning (Last Letter, Coin Flip), and other logical reasoning tasks (Date Understanding, Tracking Shuffled Objects), without any hand-crafted few-shot examples, e.g. increasing the accuracy on MultiArith from 17.7% to 78.7% and GSM8K from 10.4% to 40.7% with large InstructGPT model (text-davinci-002), as well as similar magnitudes of improvements with another off-the-shelf large model, 540B parameter PaLM. The versatility of this single prompt across very diverse reasoning tasks hints at untapped and understudied fundamental zero-shot capabilities of LLMs, suggesting high-level, multi-task broad cognitive capabilities may be extracted by simple prompting. We hope our work not only serves as the minimal strongest zero-shot baseline for the challenging reasoning benchmarks, but also highlights the importance of carefully exploring and analyzing the enormous zero-shot knowledge hidden inside LLMs before crafting finetuning datasets or few-shot exemplars.",
+      "citations": 8278,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Quantifying Memorization Across Neural Language Models",
+      "authors": [
+        "Nicholas Carlini",
+        "Daphne Ippolito",
+        "Matthew Jagielski",
+        "Katherine Lee",
+        "Florian Tramèr",
+        "Chiyuan Zhang"
+      ],
+      "year": 2022,
+      "date": "2022-02-15",
+      "venue": "International Conference on Learning Representations",
+      "doi": null,
+      "arxiv_id": "2202.07646",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "28c7e583d90ccfc5c3078dfc1d6b80a9ad90248d",
+      "url": "https://www.semanticscholar.org/paper/28c7e583d90ccfc5c3078dfc1d6b80a9ad90248d",
+      "pdf_url": null,
+      "abstract": "Large language models (LMs) have been shown to memorize parts of their training data, and when prompted appropriately, they will emit the memorized training data verbatim. This is undesirable because memorization violates privacy (exposing user data), degrades utility (repeated easy-to-memorize text is often low quality), and hurts fairness (some texts are memorized over others). We describe three log-linear relationships that quantify the degree to which LMs emit memorized training data. Memorization significantly grows as we increase (1) the capacity of a model, (2) the number of times an example has been duplicated, and (3) the number of tokens of context used to prompt the model. Surprisingly, we find the situation becomes more complicated when generalizing these results across model families. On the whole, we find that memorization in LMs is more prevalent than previously believed and will likely get worse as models continues to scale, at least without active mitigations.",
+      "citations": 1029,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Chain of Thought Prompting Elicits Reasoning in Large Language Models",
+      "authors": [
+        "Jason Wei",
+        "Xue-Zhi Wang",
+        "Dale Schuurmans",
+        "Maarten Bosma",
+        "Ed H. Chi",
+        "F. Xia",
+        "Quoc V. Le",
+        "Denny Zhou"
+      ],
+      "year": 2022,
+      "date": "2022-01-28",
+      "venue": "Neural Information Processing Systems",
+      "doi": "10.52202/068431-1800",
+      "arxiv_id": "2201.11903",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "1b6e810ce0afd0dd093f789d2b2742d047e316d5",
+      "url": "https://www.semanticscholar.org/paper/1b6e810ce0afd0dd093f789d2b2742d047e316d5",
+      "pdf_url": null,
+      "abstract": "We explore how generating a chain of thought -- a series of intermediate reasoning steps -- significantly improves the ability of large language models to perform complex reasoning. In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via a simple method called chain of thought prompting, where a few chain of thought demonstrations are provided as exemplars in prompting. Experiments on three large language models show that chain of thought prompting improves performance on a range of arithmetic, commonsense, and symbolic reasoning tasks. The empirical gains can be striking. For instance, prompting a 540B-parameter language model with just eight chain of thought exemplars achieves state of the art accuracy on the GSM8K benchmark of math word problems, surpassing even finetuned GPT-3 with a verifier.",
+      "citations": 23000,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Large Scale Learning on Non-Homophilous Graphs: New Benchmarks and Strong Simple Methods",
+      "authors": [
+        "Derek Lim",
+        "Felix Hohne",
+        "Xiuyu Li",
+        "Sijia Huang",
+        "Vaishnavi Gupta",
+        "O. Bhalerao",
+        "Ser-Nam Lim"
+      ],
+      "year": 2021,
+      "date": "2021-10-27",
+      "venue": "Neural Information Processing Systems",
+      "doi": null,
+      "arxiv_id": "2110.14446",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "089bb1ecce75936eda1890f8e40a56d4c811dd33",
+      "url": "https://www.semanticscholar.org/paper/089bb1ecce75936eda1890f8e40a56d4c811dd33",
+      "pdf_url": null,
+      "abstract": "Many widely used datasets for graph machine learning tasks have generally been homophilous, where nodes with similar labels connect to each other. Recently, new Graph Neural Networks (GNNs) have been developed that move beyond the homophily regime; however, their evaluation has often been conducted on small graphs with limited application domains. We collect and introduce diverse non-homophilous datasets from a variety of application areas that have up to 384x more nodes and 1398x more edges than prior datasets. We further show that existing scalable graph learning and graph minibatching techniques lead to performance degradation on these non-homophilous datasets, thus highlighting the need for further work on scalable non-homophilous methods. To address these concerns, we introduce LINKX -- a strong simple method that admits straightforward minibatch training and inference. Extensive experimental results with representative simple methods and GNNs across our proposed datasets show that LINKX achieves state-of-the-art performance for learning on non-homophilous graphs. Our codes and data are available at https://github.com/CUAI/Non-Homophily-Large-Scale.",
+      "citations": 540,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Improving Graph Neural Networks with Simple Architecture Design",
+      "authors": [
+        "S. Maurya",
+        "Xin Liu",
+        "T. Murata"
+      ],
+      "year": 2021,
+      "date": "2021-05-17",
+      "venue": "arXiv.org",
+      "doi": null,
+      "arxiv_id": "2105.07634",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "8e6f0800badceddde92ca062a4f6b107ee6ab744",
+      "url": "https://www.semanticscholar.org/paper/8e6f0800badceddde92ca062a4f6b107ee6ab744",
+      "pdf_url": null,
+      "abstract": "Graph Neural Networks have emerged as a useful tool to learn on the data by applying additional constraints based on the graph structure. These graphs are often created with assumed intrinsic relations between the entities. In recent years, there have been tremendous improvements in the architecture design, pushing the performance up in various prediction tasks. In general, these neural architectures combine layer depth and node feature aggregation steps. This makes it challenging to analyze the importance of features at various hops and the expressiveness of the neural network layers. As different graph datasets show varying levels of homophily and heterophily in features and class label distribution, it becomes essential to understand which features are important for the prediction tasks without any prior information. In this work, we decouple the node feature aggregation step and depth of graph neural network and introduce several key design strategies for graph neural networks. More specifically, we propose to use softmax as a regularizer and\"Soft-Selector\"of features aggregated from neighbors at different hop distances; and\"Hop-Normalization\"over GNN layers. Combining these techniques, we present a simple and shallow model, Feature Selection Graph Neural Network (FSGNN), and show empirically that the proposed model outperforms other state of the art GNN models and achieves up to 64% improvements in accuracy on node classification tasks. Moreover, analyzing the learned soft-selection parameters of the model provides a simple way to study the importance of features in the prediction tasks. Finally, we demonstrate with experiments that the model is scalable for large graphs with millions of nodes and billions of edges.",
+      "citations": 64,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Extracting Training Data from Large Language Models",
+      "authors": [
+        "Nicholas Carlini",
+        "Florian Tramèr",
+        "Eric Wallace",
+        "Matthew Jagielski",
+        "A. Herbert-Voss",
+        "Katherine Lee",
+        "Adam Roberts",
+        "Tom B. Brown",
+        "D. Song",
+        "Ú. Erlingsson",
+        "Alina Oprea",
+        "Colin A. Raffel"
+      ],
+      "year": 2020,
+      "date": "2020-12-14",
+      "venue": "USENIX Security Symposium",
+      "doi": null,
+      "arxiv_id": "2012.07805",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "df7d26339adf4eb0c07160947b9d2973c24911ba",
+      "url": "https://www.semanticscholar.org/paper/df7d26339adf4eb0c07160947b9d2973c24911ba",
+      "pdf_url": null,
+      "abstract": "It has become common to publish large (billion parameter) language models that have been trained on private datasets. This paper demonstrates that in such settings, an adversary can perform a training data extraction attack to recover individual training examples by querying the language model. We demonstrate our attack on GPT-2, a language model trained on scrapes of the public Internet, and are able to extract hundreds of verbatim text sequences from the model's training data. These extracted examples include (public) personally identifiable information (names, phone numbers, and email addresses), IRC conversations, code, and 128-bit UUIDs. Our attack is possible even though each of the above sequences are included in just one document in the training data. We comprehensively evaluate our extraction attack to understand the factors that contribute to its success. For example, we find that larger models are more vulnerable than smaller models. We conclude by drawing lessons and discussing possible safeguards for training large language models.",
+      "citations": 3476,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Grale: Designing Networks for Graph Learning",
+      "authors": [
+        "Jonathan J. Halcrow",
+        "A. Mosoi",
+        "Sam Ruth",
+        "B. Perozzi"
+      ],
+      "year": 2020,
+      "date": "2020-07-06",
+      "venue": "Knowledge Discovery and Data Mining",
+      "doi": "10.1145/3394486.3403302",
+      "arxiv_id": "2007.12002",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "5ab7c068d36a031c9c5e2e1c88cfd8b3bbdcccb6",
+      "url": "https://www.semanticscholar.org/paper/5ab7c068d36a031c9c5e2e1c88cfd8b3bbdcccb6",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3394486.3403302",
+      "abstract": "How can we find the right graph for semi-supervised learning? In real world applications, the choice of which edges to use for computation is the first step in any graph learning process. Interestingly, there are often many types of similarity available to choose as the edges between nodes, and the choice of edges can drastically affect the performance of downstream semi-supervised learning systems. However, despite the importance of graph design, most of the literature assumes that the graph is static. In this work, we present Grale, a scalable method we have developed to address the problem of graph design for graphs with billions of nodes. Grale operates by fusing together different measures of (potentially weak) similarity to create a graph which exhibits high task-specific homophily between its nodes. Grale is designed for running on large datasets. We have deployed Grale in more than 20 different industrial settings at Google, including datasets which have tens of billions of nodes, and hundreds of trillions of potential edges to score. By employing locality sensitive hashing techniques, we greatly reduce the number of pairs that need to be scored, allowing us to learn a task specific model and build the associated nearest neighbor graph for such datasets in hours, rather than the days or even weeks that might be required otherwise. We illustrate this through a case study where we examine the application of Grale to an abuse classification problem on YouTube with hundreds of million of items. In this application, we find that Grale detects a large number of malicious actors on top of hard-coded rules and content classifiers, increasing the total recall by 89% over those approaches alone.",
+      "citations": 56,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Beyond Homophily in Graph Neural Networks: Current Limitations and Effective Designs",
+      "authors": [
+        "Jiong Zhu",
+        "Yujun Yan",
+        "Lingxiao Zhao",
+        "Mark Heimann",
+        "L. Akoglu",
+        "Danai Koutra"
+      ],
+      "year": 2020,
+      "date": "2020-06-20",
+      "venue": "Neural Information Processing Systems",
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "21e33bd0ad95ee1f79d8b778e693fd316cbb72d4",
+      "url": "https://www.semanticscholar.org/paper/21e33bd0ad95ee1f79d8b778e693fd316cbb72d4",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 1511,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Language Models are Few-Shot Learners",
+      "authors": [
+        "Tom B. Brown",
+        "Benjamin Mann",
+        "Nick Ryder",
+        "Melanie Subbiah",
+        "J. Kaplan",
+        "Prafulla Dhariwal",
+        "Arvind Neelakantan",
+        "Pranav Shyam",
+        "G. Sastry",
+        "Amanda Askell",
+        "S. Agarwal",
+        "A. Herbert-Voss",
+        "G. Krueger",
+        "T. Henighan",
+        "R. Child",
+        "A. Ramesh",
+        "Daniel M. Ziegler",
+        "Jeff Wu",
+        "Clemens Winter",
+        "Christopher Hesse",
+        "Mark Chen",
+        "Eric Sigler",
+        "Mateusz Litwin",
+        "Scott Gray",
+        "Benjamin Chess",
+        "Jack Clark",
+        "Christopher Berner",
+        "Sam McCandlish",
+        "A. Radford",
+        "I. Sutskever",
+        "D. Amodei"
+      ],
+      "year": 2020,
+      "date": "2020-05-28",
+      "venue": "Neural Information Processing Systems",
+      "doi": null,
+      "arxiv_id": "2005.14165",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+      "url": "https://www.semanticscholar.org/paper/90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+      "pdf_url": null,
+      "abstract": "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.",
+      "citations": 64859,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Open Graph Benchmark: Datasets for Machine Learning on Graphs",
+      "authors": [
+        "Weihua Hu",
+        "M. Fey",
+        "M. Zitnik",
+        "Yu-Xiao Dong",
+        "Hongyu Ren",
+        "Bowen Liu",
+        "Michele Catasta",
+        "J. Leskovec"
+      ],
+      "year": 2020,
+      "date": "2020-05-02",
+      "venue": "Neural Information Processing Systems",
+      "doi": null,
+      "arxiv_id": "2005.00687",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "597bd2e45427563cdf025e53a3239006aa364cfc",
+      "url": "https://www.semanticscholar.org/paper/597bd2e45427563cdf025e53a3239006aa364cfc",
+      "pdf_url": null,
+      "abstract": "We present the Open Graph Benchmark (OGB), a diverse set of challenging and realistic benchmark datasets to facilitate scalable, robust, and reproducible graph machine learning (ML) research. OGB datasets are large-scale (up to 100+ million nodes and 1+ billion edges), encompass multiple important graph ML tasks, and cover a diverse range of domains, ranging from social and information networks to biological networks, molecular graphs, source code ASTs, and knowledge graphs. For each dataset, we provide a unified evaluation protocol using meaningful application-specific data splits and evaluation metrics. In addition to building the datasets, we also perform extensive benchmark experiments for each dataset. Our experiments suggest that OGB datasets present significant challenges of scalability to large-scale graphs and out-of-distribution generalization under realistic data splits, indicating fruitful opportunities for future research. Finally, OGB provides an automated end-to-end graph ML pipeline that simplifies and standardizes the process of graph data loading, experimental setup, and model evaluation. OGB will be regularly updated and welcomes inputs from the community. OGB datasets as well as data loaders, evaluation scripts, baseline code, and leaderboards are publicly available at this https URL .",
+      "citations": 3986,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Microsoft Academic Graph: When experts are not enough",
+      "authors": [
+        "Kuansan Wang",
+        "Zhihong Shen",
+        "Chiyuan Huang",
+        "Chieh-Han Wu",
+        "Yu-Xiao Dong",
+        "Anshul Kanakia"
+      ],
+      "year": 2020,
+      "date": "2020-01-23",
+      "venue": "Quantitative Science Studies",
+      "doi": "10.1162/qss_a_00021",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "ea9a516d5cb0b298f0df50e82b3e0400b72fcdff",
+      "url": "https://www.semanticscholar.org/paper/ea9a516d5cb0b298f0df50e82b3e0400b72fcdff",
+      "pdf_url": "https://www.mitpressjournals.org/doi/pdf/10.1162/qss_a_00021",
+      "abstract": "Abstract An ongoing project explores the extent to which artificial intelligence (AI), specifically in the areas of natural language processing and semantic reasoning, can be exploited to facilitate the studies of science by deploying software agents equipped with natural language understanding capabilities to read scholarly publications on the web. The knowledge extracted by these AI agents is organized into a heterogeneous graph, called Microsoft Academic Graph (MAG), where the nodes and the edges represent the entities engaging in scholarly communications and the relationships among them, respectively. The frequently updated data set and a few software tools central to the underlying AI components are distributed under an open data license for research and commercial applications. This paper describes the design, schema, and technical and business motivations behind MAG and elaborates how MAG can be used in analytics, search, and recommendation scenarios. How AI plays an important role in avoiding various biases and human induced errors in other data sets and how the technologies can be further improved in the future are also discussed.",
+      "citations": 716,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "On the Use of ArXiv as a Dataset",
+      "authors": [
+        "Colin B. Clement",
+        "Matthew Bierbaum",
+        "K. O'Keeffe",
+        "Alexander A. Alemi"
+      ],
+      "year": 2019,
+      "date": "2019-04-30",
+      "venue": "arXiv.org",
+      "doi": null,
+      "arxiv_id": "1905.00075",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "39e01a6b3a1e8e2150f571bd3d5ed5c847eb7096",
+      "url": "https://www.semanticscholar.org/paper/39e01a6b3a1e8e2150f571bd3d5ed5c847eb7096",
+      "pdf_url": null,
+      "abstract": "The arXiv has collected 1.5 million pre-print articles over 28 years, hosting literature from scientific fields including Physics, Mathematics, and Computer Science. Each pre-print features text, figures, authors, citations, categories, and other metadata. These rich, multi-modal features, combined with the natural graph structure---created by citation, affiliation, and co-authorship---makes the arXiv an exciting candidate for benchmarking next-generation models. Here we take the first necessary steps toward this goal, by providing a pipeline which standardizes and simplifies access to the arXiv's publicly available data. We use this pipeline to extract and analyze a 6.7 million edge citation graph, with an 11 billion word corpus of full-text research articles. We present some baseline classification results, and motivate application of more exciting generative graph models.",
+      "citations": 196,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "references",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Agentic Graph Token Reasoning",
+      "authors": [
+        "Zhuo Peng",
+        "Yi Yang"
+      ],
+      "year": 2026,
+      "date": "2026-08-01",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2608.00542",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "7518c80f79c69095af98b7aec83df51ed8b46271",
+      "url": "https://www.semanticscholar.org/paper/7518c80f79c69095af98b7aec83df51ed8b46271",
+      "pdf_url": null,
+      "abstract": "Graphs model relational data throughout science and industry, from citation networks to product co-purchase graphs. Because the nodes of many such graphs carry rich text, a growing line of work applies large language models (LLMs) to graph analysis. The most graph-native of these methods use graph tokens: a graph encoder compresses a graph view, such as a node, its k-hop neighbourhood, or a cluster, into a short block of continuous tokens that jointly encodes node attributes and topology and is read directly by the model. Existing methods, however, use graph tokens in a static single-shot manner: they encode one predefined graph view before the model has even seen the target and never revise it, leaving the model's step-by-step reasoning ability unused. We introduce agentic graph token reasoning, which recasts graph tokenization as part of the reasoning process itself. At each step, the model chooses which graph view to encode and at what granularity; a graph encoder is invoked on demand to materialise the corresponding graph tokens; and the resulting block is spliced into the running context. The model thus reasons step by step in the graph token space, and the tokens it reads are trajectory-dependent. We realise this with a three-stage training pipeline: (i) self-supervised tasks that teach the model to read heterogeneous graph tokens, (ii) a token-robust trajectory stage with a graph-token consistency regulariser, and (iii) preference optimisation that rewards trajectories in which the graph-token evidence and the node-text evidence agree. Across evaluations spanning seven graph domains, our models outperform a broad set of baselines by a large margin and transfer zero-shot to unseen domains without any per-target fine-tuning. More broadly, this work pushes LLM-based graph analysis from static graph-token encoders towards a graph-native agent paradigm.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Road Network Vulnerability Analysis Based on Multi‐Agent Collaboration of LLM",
+      "authors": [
+        "Xuan Guo",
+        "Shutong Yu",
+        "Huanyu Bi",
+        "Jun-Nan Liu"
+      ],
+      "year": 2026,
+      "date": "2026-07-15",
+      "venue": "Transactions on GIS",
+      "doi": "10.1111/tgis.70350",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "594587d3dc5aec91bae536659c780160266d0d6a",
+      "url": "https://www.semanticscholar.org/paper/594587d3dc5aec91bae536659c780160266d0d6a",
+      "pdf_url": null,
+      "abstract": "Road network vulnerability analysis is crucial for improving the reliability and sustainability of urban transportation systems. However, conventional methods struggle to handle multi‐scenario complex reasoning. To address this issue, we propose an automated LLM‐based multi‐agent pipeline for road network vulnerability analysis. The collaboration pipeline includes three modules: a requirement thinker module for interpreting analysis requirements and formalizing scenario‐specific properties; a strategy maker module that leverages a knowledge base to generate scenario‐adaptive strategies; and a vulnerability analyst module that performs reasoning and refinement to complete the analysis. Furthermore, the verification and memory summarization mechanisms are integrated to improve the reasoning stability and computational efficiency. Experiments show that our approach outperforms manual and single‐LLM methods. Ablation studies indicate that removing verification and memory summarization mechanisms reduces precision by 10.01% and 3.33%. Overall, the proposed LLM‐based multi‐agent pipeline offers an adaptive and reliable end‐to‐end solution for road network vulnerability analysis.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "GLIP: Graph and LLM Joint Pretraining for Graph-Level Tasks",
+      "authors": [
+        "Hao-Xin Sun",
+        "Yiqing Lin",
+        "Ya-Jun Huang",
+        "Chenhui Dong",
+        "Ming-Jun Li",
+        "Zhong-Zhi Zhang"
+      ],
+      "year": 2026,
+      "date": "2026-06-29",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2606.29773",
+      "arxiv_id": "2606.29773",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "8e56fb6371acc6beed1814180c3769775dfedeb3",
+      "url": "https://www.semanticscholar.org/paper/8e56fb6371acc6beed1814180c3769775dfedeb3",
+      "pdf_url": null,
+      "abstract": "Graphs are widely used to model relational systems, with applications in domains such as social networks, finance, and biomedicine. Graph neural networks (GNNs) have become a mainstream approach for learning graph representations. With the rise of large language models (LLMs), recent studies have attempted to combine GNNs with LLMs. However, most existing works concentrate on node-level and edge-level tasks, while graph-level tasks, which require capturing more complex structural and feature information, remain relatively underexplored. Moreover, graph pretraining is a widely adopted strategy to alleviate the challenge of label scarcity. Most existing approaches are designed solely for GNNs such as GraphCL, leaving LLMs uninvolved in the process. To address these limitations, we propose GLIP, a Graph-LLM JoInt Pretraining framework for graph-level tasks. GLIP first performs graph augmentation to construct positive and negative pairs and introduces a multi-token selection strategy to identify patches informative in both structure and features. It further leverages a diffusion-based projector to enrich them with contextual information, enabling GLIP to capture signals from both global and local perspectives. Finally, GLIP employs a joint objective that integrates the LLM's semantic judgments with a contrastive alignment loss, ensuring consistent supervision at both the semantic and structural levels. After pretraining, GLIP is fine-tuned with limited labeled data for downstream tasks, and extensive experiments show that it outperforms state-of-the-art methods on graph-level classification and reasoning tasks. Our source code is publicly available at https://anonymous.4open.science/r/GLIP.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Beyond the Golden Teacher: Enhancing Graph Learning through LLM-GNN Co-teaching",
+      "authors": [
+        "Zhuo Peng",
+        "Han-Lin Gu",
+        "Li-Xin Fan",
+        "Yi Yang"
+      ],
+      "year": 2026,
+      "date": "2026-06-10",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2606.11583",
+      "arxiv_id": "2606.11583",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "dbad31f2749d9ca884bdfa64120652e31b136b62",
+      "url": "https://www.semanticscholar.org/paper/dbad31f2749d9ca884bdfa64120652e31b136b62",
+      "pdf_url": null,
+      "abstract": "Text-attributed graphs (TAGs) underlie real-world applications such as citation networks, social media, and e-commerce. Few-shot graph learning on TAGs is hard: with only a handful of labels per class and the rest of the graph unannotated, neither GNNs nor LLMs can learn well on their own. GNNs read topology and fail on cold nodes; LLMs read text and fail on text-ambiguous nodes. Existing LLM-GNN methods all follow the same recipe: designate one model as the golden teacher and use its outputs (e.g., features or pseudo-labels) to supervise the other. We argue this golden-teacher assumption breaks under sparse supervision: neither model is golden, and treating either as such transfers its blind spots into the student. We therefore ask: can we avoid designating either model as the golden teacher, and still perform effective graph learning? We answer with LLM-GNN Co-Teaching, a bidirectional co-teaching framework in which neither model is fixed as teacher. The GNN and LLM exchange their most confident pseudo-labels under an architecture-specific small-loss criterion, and both update every round. Supervision is then mined from the trajectory: whenever a node moves from cross-model contradiction at round t to cross-model agreement at round t+1, the LLM's two answers on the same input form a preference pair (old contradicting self<new peer-endorsed self) for DPO training. We call this Round-based Pseudo-Label Preference Optimization (RPL-PO). On six benchmarks, LLM-GNN Co-Teaching consistently outperforms GNN-as-Judge and all prior methods, with absolute 3-shot gains of 7.86% on Cora and 7.73% on ogbn-arxiv; improvements carry over to 5-shot and to zero-shot cross-dataset transfer. Error-structure analysis further shows that abandoning the golden-teacher assumption substantially improves the LLM's graph learning capability on challenging samples.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Formulating and Unveiling In-Context Learning over Graph Tasks",
+      "authors": [
+        "Chun-Hui Zhang",
+        "Li-Zhong Ding",
+        "Peng-Qi Li",
+        "Jiarun Fu",
+        "Peng Yang",
+        "Yanyu Ren",
+        "Tianlong Gu",
+        "Liang Chang",
+        "Ye Yuan",
+        "Guo-Ren Wang"
+      ],
+      "year": 2026,
+      "date": "2026-06-01",
+      "venue": "Information Fusion",
+      "doi": "10.1016/j.inffus.2026.104581",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "c0f884cf391bc12a0a21ab355d098e9fc6575b3c",
+      "url": "https://www.semanticscholar.org/paper/c0f884cf391bc12a0a21ab355d098e9fc6575b3c",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Knowledge Graph-Enhanced Zero-Shot Topic Classification: A Multi-Strategy Comparative Study",
+      "authors": [
+        "Shahanaj Akter",
+        "Y. Vohra",
+        "A. Shukla",
+        "Souvika Sarkar"
+      ],
+      "year": 2026,
+      "date": "2026-05-28",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2605.30465",
+      "arxiv_id": "2605.30465",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "768d8b4a2f3bdf1cf1791d8cbbc50f6e3ac83e3b",
+      "url": "https://www.semanticscholar.org/paper/768d8b4a2f3bdf1cf1791d8cbbc50f6e3ac83e3b",
+      "pdf_url": null,
+      "abstract": "Multi-label topic classification without labeled training data is a challenging task, specially when documents contain complex relational information. We present a zero-shot multi-label topic classification framework and systematically investigate how per-article knowledge graph augmentation affects its performance. The base framework classifies topics in documents without labeled training data and has four variants: article-only classification, keyword-enhanced classification, and self-consistency decoding variants of both. Then, we augment each base variant with per article knowledge graph. This graph is extracted from the input document through a pipeline similar to KGGen based on subject-predicate-object triples. We test all eight methods, four base and four graph augmented on fifteen LLMs and eight multi-label datasets across different domains. For the base framework, keyword-enhanced classification (AK) is the best performing method, and six out of fifteen LLMs surpass the sentence-encoder baseline. Graph augmentation has positive and negative impacts on small and large models, respectively. This shows that larger models already contain enough relational information from pretraining. Furthermore, the self-consistency decoding variant does not show performance improvements in any experiment while increasing computation costs about fivefold.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Clustering as Reasoning: A k-Means Interpretation of Chain-of-Thought Graph Learning",
+      "authors": [
+        "Xuanting Xie",
+        "Zhaochen Guo",
+        "Bingheng Li",
+        "Xing-Tong Yu",
+        "Zhi-Fei Liao",
+        "Zhao Kang",
+        "Yuan Fang"
+      ],
+      "year": 2026,
+      "date": "2026-05-24",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2605.24867",
+      "arxiv_id": "2605.24867",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "86740670f5cc96580124742ecd417820fd69b35f",
+      "url": "https://www.semanticscholar.org/paper/86740670f5cc96580124742ecd417820fd69b35f",
+      "pdf_url": null,
+      "abstract": "Chain-of-Thought (CoT) prompting has shown promise in enhancing the reasoning capabilities of large language models (LLMs) on text-attributed graphs (TAGs). This work reframes CoT-based graph learning through the principle of clustering as reasoning, offering a $k$-means interpretation of how iterative reasoning operates over graph-structured data. We observe that existing graph CoT methods rely on disjoint architectures and fixed graph representations, limiting step-by-step semantic-topological interaction and interpretability. To overcome this limitation, we propose a unified framework named KCoT that integrates CoT reasoning with graph representation learning. Our key theoretical result reveals a formal mathematical correspondence between a Transformer block and the $k$-means algorithm, allowing reasoning to be interpreted as iterative assignment and update steps. Based on this insight, we introduce a Semantic Discriminating Prompt that explicitly formulates these steps as structured CoT reasoning, together with a structure-grounded alignment strategy to fuse topological priors with evolving thought-conditioned representations. Experiments on standard benchmarks demonstrate consistent improvements over state-of-the-art methods, validating clustering as a principled mechanism for CoT-based graph learning.",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Breaking the limits: Synergizing LLM-generated feedback and neighborhood selection for misinformation detection",
+      "authors": [
+        "Yi-Xing Liu",
+        "Zhiqiang Ma",
+        "Xirui Liu",
+        "Hongbin Wang",
+        "Jundong Gao"
+      ],
+      "year": 2026,
+      "date": "2026-05-01",
+      "venue": "Pattern Recognition Letters",
+      "doi": "10.1016/j.patrec.2026.05.014",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "0d848b2dce8425e327fbb5d0d9182fec52abd5a8",
+      "url": "https://www.semanticscholar.org/paper/0d848b2dce8425e327fbb5d0d9182fec52abd5a8",
+      "pdf_url": "https://doi.org/10.1016/j.patrec.2026.05.014",
+      "abstract": null,
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "STK-Adapter: Incorporating Evolving Graph and Event Chain for Temporal Knowledge Graph Extrapolation",
+      "authors": [
+        "Shuyuan Zhao",
+        "Wei Chen",
+        "Wei-Jie Zhang",
+        "Xin-Rui Hou",
+        "Junfeng Shen",
+        "Boyan Shi",
+        "S. Guo",
+        "You-Fang Lin",
+        "Huaiyu Wan"
+      ],
+      "year": 2026,
+      "date": "2026-04-21",
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "doi": "10.48550/arxiv.2604.19042",
+      "arxiv_id": "2604.19042",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "b953ffbdc05e26220bf678e83bcd0f1fd5857382",
+      "url": "https://www.semanticscholar.org/paper/b953ffbdc05e26220bf678e83bcd0f1fd5857382",
+      "pdf_url": null,
+      "abstract": "Temporal Knowledge Graph (TKG) extrapolation aims to predict future events based on historical facts. Recent studies have attempted to enhance TKG extrapolation by integrating TKG's evolving structural representations and textual event chains into Large Language Models (LLMs). Yet, two main challenges limit these approaches: (1) The loss of essential spatial-temporal information due to shallow alignment between TKG's graph evolving structural representation and the LLM's semantic space, and (2) the progressive dilution of the TKG's evolving structural features during LLM fine-tuning. To address these challenges, we propose the Spatial-Temporal Knowledge Adapter (STK-Adapter), which flexibly integrates the evolving graph encoder and the LLM to facilitate TKG reasoning. In STK-Adapter, a Spatial-Temporal MoE is designed to capture spatial structures and temporal patterns inherent in TKGs. An Event-Aware MoE is employed to model intricate temporal semantics dependencies within event chains. In addition, a Cross-Modality Alignment MoE is proposed to facilitate deep cross-modality alignment by TKG-guided attention experts. Extensive experiments on benchmark datasets demonstrate that STK-Adapter significantly outperforms state-of-the-art methods and exhibits strong generalization capabilities in cross-dataset task. The code is available at https://github.com/Zhaoshuyuan0246/STK-Adapter.",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Unifying Multi-View Knowledge for Graph Learning via Model Collaboration",
+      "authors": [
+        "Zhihao Wu",
+        "Jie-Long Lu",
+        "Zi-Han Fang",
+        "Jin-Yu Cai",
+        "Guang Chen",
+        "Jia-Jun Bu",
+        "Hai-Shuai Wang"
+      ],
+      "year": 2026,
+      "date": "2026-03-14",
+      "venue": "AAAI Conference on Artificial Intelligence",
+      "doi": "10.1609/aaai.v40i32.39914",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "aa2149d0882b4894548e633c37713e39fb3d305e",
+      "url": "https://www.semanticscholar.org/paper/aa2149d0882b4894548e633c37713e39fb3d305e",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/39914/43875",
+      "abstract": "With the increasing scale and complexity of graph data, node attributes are also becoming richer and more complex, particularly in the form of informative text. Classic GNNs equipped with shallow attribute encoders are no longer sufficient to handle such data independently, making model collaboration across heterogeneous architectures an inevitable trend. Recently, the integration of Large Language Models (LLMs) and GNNs has attracted significant attention, yet the inherent disparity between these models remains a key challenge. Promising solutions have considered fine-tuning Small Language Models (SLMs) to bridge the gap between GNNs and frozen LLMs. However, this introduces another problem: these heterogeneous models bring complementary knowledge, but how to effectively integrate them and allow mutual refinement becomes a significant research gap. To address these challenges, we introduce COLA, a collaborative large–small model framework that enables seamless cooperation among semantic LLMs, task-specific fine-tuned SLMs, and structure-aware GNNs. COLA features a unique Consensus–Complement Coordination Mechanism (C3M), wherein its Mixture-of-Coordinators (MoC) architecturally aligns the LLM and SLM. Built upon this, a flexible graph-knowledge infusion strategy encourages the joint alignment and graph knowledge learning of textual representations. Extensive evaluations across nine diverse datasets show that COLA consistently achieves state-of-the-art performance, validating the effectiveness and generality of our collaborative paradigm.",
+      "citations": 2,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "ST-VLM: A Spatial-to-Image Multimodal Spatial-Temporal Prediction Framework with Vision-Language Model",
+      "authors": [
+        "Tong Zhao",
+        "Junping Du",
+        "Zhe Xue",
+        "Meiyu Liang",
+        "Aijing Li",
+        "Xiaolong Meng",
+        "Dan Liu"
+      ],
+      "year": 2026,
+      "date": "2026-03-14",
+      "venue": "AAAI Conference on Artificial Intelligence",
+      "doi": "10.1609/aaai.v40i19.38683",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "aa97ea9ff1319443f177b843c54f225b23aa4478",
+      "url": "https://www.semanticscholar.org/paper/aa97ea9ff1319443f177b843c54f225b23aa4478",
+      "pdf_url": "https://doi.org/10.1609/aaai.v40i19.38683",
+      "abstract": "Spatial-temporal prediction plays a crucial role in various domains, including intelligent transportation and environmental monitoring. Although large language model has shown advantages in long-range dependency modeling and excellent generalization ability for forecasting, it has limited understanding of spatial-temporal features. Especially for spatial features, most existing methods still simplify the spatial-temporal prediction task into multiple independent temporal prediction tasks, failing to effectively encode the dynamic evolution of spatial relations. To address these problems, we propose ST-VLM (Spatial-Temporal Forecasting with Vision-Language Model), a novel framework that leverages visual representations to encode the dynamic spatial dependencies within spatial-temporal data and integrates multi-modal information to enhance prediction. This framework transforms spatial-temporal features into three modalities: vision, text, and time series, enhances cross-modal fusion through an attention-aware fusion mechanism in the first-layer of Vision-Language Model (VLM), optimizes multi-modal feature interaction via adaptive fine-tuning strategies. After fusion, the multi-modal embeddings are subsequently used for the final spatial-temporal prediction task. Extensive experiments demonstrate that ST-VLM achieves state-of-the-art performance across various datasets. In particular, the framework exhibits promising results in few-shot scenarios, verifying its strong generalization ability.",
+      "citations": 2,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "GNN-as-Judge: Unleashing the Power of LLMs for Graph Learning with GNN Feedback",
+      "authors": [
+        "Rui-Yao Xu",
+        "Kaize Ding"
+      ],
+      "year": 2026,
+      "date": "2026-03-11",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2604.08553",
+      "arxiv_id": "2604.08553",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "4fcf3b5846d651935b81b8a22e88d7881d92992e",
+      "url": "https://www.semanticscholar.org/paper/4fcf3b5846d651935b81b8a22e88d7881d92992e",
+      "pdf_url": null,
+      "abstract": "Large Language Models (LLMs) have shown strong performance on text-attributed graphs (TAGs) due to their superior semantic understanding ability on textual node features. However, their effectiveness as predictors in the low-resource setting, where labeled nodes are severely limited and scarce, remains constrained since fine-tuning LLMs usually requires sufficient labeled data, especially when the TAG shows complex structural patterns. In essence, this paper targets two key challenges: (i) the difficulty of generating and selecting reliable pseudo labels on TAGs for LLMs, and (ii) the need to mitigate potential label noise when fine-tuning LLMs with pseudo labels. To counter the challenges, we propose a new framework, GNN-as-Judge, which can unleash the power of LLMs for few-shot semi-supervised learning on TAGs by incorporating the structural inductive bias of Graph Neural Networks (GNNs). Specifically, GNN-as-Judge introduces a collaborative pseudo-labeling strategy that first identifies the most influenced unlabeled nodes from labeled nodes, then exploits both the agreement and disagreement patterns between LLMs and GNNs to generate reliable labels. Furthermore, we develop a weakly-supervised LLM fine-tuning algorithm that can distill the knowledge from informative pseudo labels while mitigating the potential label noise. Experiments on multiple TAG datasets demonstrate that GNN-as-Judge significantly outperforms existing methods, particularly in low-resource regimes where labeled data are scarce.",
+      "citations": 5,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "GraphSearch: Agentic Search-Augmented Reasoning for Zero-Shot Graph Learning",
+      "authors": [
+        "Jia-Jin Liu",
+        "Yuan-Fu Sun",
+        "Dong-Zhe Fan",
+        "Qiao-Yu Tan"
+      ],
+      "year": 2026,
+      "date": "2026-01-13",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2601.08621",
+      "arxiv_id": "2601.08621",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "b0d3482df906c94ac6851932518546d788f949a7",
+      "url": "https://www.semanticscholar.org/paper/b0d3482df906c94ac6851932518546d788f949a7",
+      "pdf_url": null,
+      "abstract": "Recent advances in search-augmented large reasoning models (LRMs) enable the retrieval of external knowledge to reduce hallucinations in multistep reasoning. However, their ability to operate on graph-structured data, prevalent in domains such as e-commerce, social networks, and scientific citations, remains underexplored. Unlike plain text corpora, graphs encode rich topological signals that connect related entities and can serve as valuable priors for retrieval, enabling more targeted search and improved reasoning efficiency. Yet, effectively leveraging such structure poses unique challenges, including the difficulty of generating graph-expressive queries and ensuring reliable retrieval that balances structural and semantic relevance. To address this gap, we introduce GraphSearch, the first framework that extends search-augmented reasoning to graph learning, enabling zero-shot graph learning without task-specific fine-tuning. GraphSearch combines a Graph-aware Query Planner, which disentangles search space (e.g., 1-hop, multi-hop, or global neighbors) from semantic queries, with a Graph-aware Retriever, which constructs candidate sets based on topology and ranks them using a hybrid scoring function. We further instantiate two traversal modes: GraphSearch-R, which recursively expands neighborhoods hop by hop, and GraphSearch-F, which flexibly retrieves across local and global neighborhoods without hop constraints. Extensive experiments across diverse benchmarks show that GraphSearch achieves competitive or even superior performance compared to supervised graph learning methods, setting state-of-the-art results in zero-shot node classification and link prediction. These findings position GraphSearch as a flexible and generalizable paradigm for agentic reasoning over graphs.",
+      "citations": 7,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Detecting Hallucinations in Graph Retrieval-Augmented Generation via Attention Patterns and Semantic Alignment",
+      "authors": [
+        "Shanghao Li",
+        "Jinda Han",
+        "Yi-Bo Wang",
+        "Yuanjie Zhu",
+        "Zi-He Song",
+        "Lang-Zhou He",
+        "K. Alghythee",
+        "Philip S. Yu"
+      ],
+      "year": 2025,
+      "date": "2025-12-09",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2512.09148",
+      "arxiv_id": "2512.09148",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "b1268ad2af915c22be5febaf8a2cd9276c36e6e8",
+      "url": "https://www.semanticscholar.org/paper/b1268ad2af915c22be5febaf8a2cd9276c36e6e8",
+      "pdf_url": null,
+      "abstract": "Graph-based Retrieval-Augmented Generation (GraphRAG) enhances Large Language Models (LLMs) by incorporating external knowledge from linearized subgraphs retrieved from knowledge graphs. However, LLMs struggle to interpret the relational and topological information in these inputs, resulting in hallucinations that are inconsistent with the retrieved knowledge. To analyze how LLMs attend to and retain structured knowledge during generation, we propose two lightweight interpretability metrics: Path Reliance Degree (PRD), which measures over-reliance on shortest-path triples, and Semantic Alignment Score (SAS), which assesses how well the model's internal representations align with the retrieved knowledge. Through empirical analysis on a knowledge-based QA task, we identify failure patterns associated with over-reliance on salient paths and weak semantic grounding, as indicated by high PRD and low SAS scores. We further develop a lightweight post-hoc hallucination detector, Graph Grounding and Alignment (GGA), which outperforms strong semantic and confidence-based baselines across AUC and F1. By grounding hallucination analysis in mechanistic interpretability, our work offers insights into how structural limitations in LLMs contribute to hallucinations, informing the design of more reliable GraphRAG systems in the future.",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Dual Refinement Cycle Learning: Unsupervised Text Classification of Mamba and Community Detection on Text Attributed Graph",
+      "authors": [
+        "Hong Wang",
+        "Yinglong Zhang",
+        "Hanhan Guo",
+        "Xue-Wen Xia",
+        "Xing Xu"
+      ],
+      "year": 2025,
+      "date": "2025-12-08",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2512.07100",
+      "arxiv_id": "2512.07100",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "756c20050fa2addf1eea1cc91b949b0c0bc98a2d",
+      "url": "https://www.semanticscholar.org/paper/756c20050fa2addf1eea1cc91b949b0c0bc98a2d",
+      "pdf_url": null,
+      "abstract": "Pretrained language models offer strong text understanding capabilities but remain difficult to deploy in real-world text-attributed networks due to their heavy dependence on labeled data. Meanwhile, community detection methods typically ignore textual semantics, limiting their usefulness in downstream applications such as content organization, recommendation, and risk monitoring. To overcome these limitations, we present Dual Refinement Cycle Learning (DRCL), a fully unsupervised framework designed for practical scenarios where no labels or category definitions are available. DRCL integrates structural and semantic information through a warm-start initialization and a bidirectional refinement cycle between a GCN-based Community Detection Module (GCN-CDM) and a Text Semantic Modeling Module (TSMM). The two modules iteratively exchange pseudo-labels, allowing semantic cues to enhance structural clustering and structural patterns to guide text representation learning without manual supervision. Across several text-attributed graph datasets, DRCL consistently improves the structural and semantic quality of discovered communities. Moreover, a Mamba-based classifier trained solely from DRCL's community signals achieves accuracy comparable to supervised models, demonstrating its potential for deployment in large-scale systems where labeled data are scarce or costly. The code is available at https://github.com/wuanghoong/DRCL.git.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Rethinking Graph Reasoning: Equip Large Language Models with Topology-Enhanced Prompt",
+      "authors": [
+        "Yi-Zhuo Ma",
+        "Rong-Zheng Wang",
+        "Qi-Zhi Chen",
+        "Jia-Kai Li",
+        "Shuang Liang",
+        "Ke Qin"
+      ],
+      "year": 2025,
+      "date": "2025-12-08",
+      "venue": "BigData Congress [Services Society]",
+      "doi": "10.1109/bigdata66926.2025.11401726",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "b488fe30ccce8b92a04f62dc9b8dd9d0a5081fb8",
+      "url": "https://www.semanticscholar.org/paper/b488fe30ccce8b92a04f62dc9b8dd9d0a5081fb8",
+      "pdf_url": null,
+      "abstract": "Prompt learning has enabled Large Language Models (LLMs) to demonstrate impressive capabilities in text reasoning. However, their effectiveness diminishes when addressing graph reasoning tasks through prompting, due to their limited ability to inherently understand and manipulate complex topological information. Previous prompting attempts like InContext Learning and Chain-of-Thought method are restricted even they can guide LLMs apply related algorithms to proceed with graph information for reasoning. A significant limitation of these attempts is their reliance on the Macro-View Prompt, which only includes nodes and edges in the graph description. This often leads to unconstrained and meaningless random searches during reasoning, making LLMs unsustainable for supporting complex graph reasoning tasks. In this paper, we propose a Node-Attribute and Path-Connectivity Enhanced Prompt (NPEP) method to improve the graph reasoning capability of LLMs. Our approach involves enriching the Macro-View Prompt with additionally Intermediate-Topology and Elementary-Topology information, enabling perception of node properties and capture of pathconnectivity patterns in the graph. This strategy offers LLMs a more hierarchical representation of graph information, making it easier to explore task-related content and significantly improve the precision of graph reasoning. We conduct experiments across various scenarios and the results demonstrate superior graph reasoning accuracy of our NPEP method compared with MacroView Prompt method.",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "When Structure Doesn't Help: LLMs Do Not Read Text-Attributed Graphs as Effectively as We Expected",
+      "authors": [
+        "Haotian Xu",
+        "Yuning You",
+        "Teng-Fei Ma"
+      ],
+      "year": 2025,
+      "date": "2025-11-20",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2511.16767",
+      "arxiv_id": "2511.16767",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "1ff7fd101879925cdabc0678ec316e64d7f53c42",
+      "url": "https://www.semanticscholar.org/paper/1ff7fd101879925cdabc0678ec316e64d7f53c42",
+      "pdf_url": null,
+      "abstract": "Graphs provide a unified representation of semantic content and relational structure, making them a natural fit for domains such as molecular modeling, citation networks, and social graphs. Meanwhile, large language models (LLMs) have excelled at understanding natural language and integrating cross-modal signals, sparking interest in their potential for graph reasoning. Recent work has explored this by either designing template-based graph templates or using graph neural networks (GNNs) to encode structural information. In this study, we investigate how different strategies for encoding graph structure affect LLM performance on text-attributed graphs. Surprisingly, our systematic experiments reveal that: (i) LLMs leveraging only node textual descriptions already achieve strong performance across tasks; and (ii) most structural encoding strategies offer marginal or even negative gains. We show that explicit structural priors are often unnecessary and, in some cases, counterproductive when powerful language models are involved. This represents a significant departure from traditional graph learning paradigms and highlights the need to rethink how structure should be represented and utilized in the LLM era. Our study is to systematically challenge the foundational assumption that structure is inherently beneficial for LLM-based graph reasoning, opening the door to new, semantics-driven approaches for graph learning.",
+      "citations": 5,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Large Language Models Meet Text-Attributed Graphs: A Survey of Integration Frameworks and Applications",
+      "authors": [
+        "Guangxin Su",
+        "Han-Chen Wang",
+        "Jianwei Wang",
+        "Wenjie Zhang",
+        "Ying Zhang",
+        "Jian Pei"
+      ],
+      "year": 2025,
+      "date": "2025-10-24",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2510.21131",
+      "arxiv_id": "2510.21131",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "136ec4b210d37a011a4bf5a7d45bcb50e7cc5936",
+      "url": "https://www.semanticscholar.org/paper/136ec4b210d37a011a4bf5a7d45bcb50e7cc5936",
+      "pdf_url": null,
+      "abstract": "Large Language Models (LLMs) have achieved remarkable success in natural language processing through strong semantic understanding and generation. However, their black-box nature limits structured and multi-hop reasoning. In contrast, Text-Attributed Graphs (TAGs) provide explicit relational structures enriched with textual context, yet often lack semantic depth. Recent research shows that combining LLMs and TAGs yields complementary benefits: enhancing TAG representation learning and improving the reasoning and interpretability of LLMs. This survey provides the first systematic review of LLM--TAG integration from an orchestration perspective. We introduce a novel taxonomy covering two fundamental directions: LLM for TAG, where LLMs enrich graph-based tasks, and TAG for LLM, where structured graphs improve LLM reasoning. We categorize orchestration strategies into sequential, parallel, and multi-module frameworks, and discuss advances in TAG-specific pretraining, prompting, and parameter-efficient fine-tuning. Beyond methodology, we summarize empirical insights, curate available datasets, and highlight diverse applications across recommendation systems, biomedical analysis, and knowledge-intensive question answering. Finally, we outline open challenges and promising research directions, aiming to guide future work at the intersection of language and graph learning.",
+      "citations": 5,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "TinyGraphEstimator: Adapting Lightweight Language Models for Graph Structure Inference",
+      "authors": [
+        "Michal Podstawski"
+      ],
+      "year": 2025,
+      "date": "2025-10-09",
+      "venue": "International Conference on Agents and Artificial Intelligence",
+      "doi": "10.48550/arxiv.2510.08808",
+      "arxiv_id": "2510.08808",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "0c710082b91915213f152f770a530fb9fe5c56a5",
+      "url": "https://www.semanticscholar.org/paper/0c710082b91915213f152f770a530fb9fe5c56a5",
+      "pdf_url": null,
+      "abstract": "Graphs provide a universal framework for representing complex relational systems, and inferring their structural properties is a core challenge in graph analysis and reasoning. While large language models have recently demonstrated emerging abilities to perform symbolic and numerical reasoning, the potential of smaller, resource-efficient models in this context remains largely unexplored. This paper investigates whether compact transformer-based language models can infer graph-theoretic parameters directly from graph representations. To enable systematic evaluation, we introduce the TinyGraphEstimator dataset - a balanced collection of connected graphs generated from multiple random graph models and annotated with detailed structural metadata. We evaluate several small open models on their ability to predict key graph parameters such as density, clustering, and chromatic number. Furthermore, we apply lightweight fine-tuning using the Low-Rank Adaptation (LoRA) technique, achieving consistent improvements across all evaluated metrics. The results demonstrate that small language models possess non-trivial reasoning capacity over graph-structured data and can be effectively adapted for structural inference tasks through efficient parameter tuning.",
+      "citations": 4,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Actions Speak Louder than Prompts: A Large-Scale Study of LLMs for Graph Inference",
+      "authors": [
+        "Ben Finkelshtein",
+        "Silviu Cucerzan",
+        "S. Jauhar",
+        "Ryen W. White"
+      ],
+      "year": 2025,
+      "date": "2025-09-23",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2509.18487",
+      "arxiv_id": "2509.18487",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "7db7fc58c75e158d3aa231cec1eec1ba2ed74110",
+      "url": "https://www.semanticscholar.org/paper/7db7fc58c75e158d3aa231cec1eec1ba2ed74110",
+      "pdf_url": null,
+      "abstract": "Large language models (LLMs) are increasingly used for text-rich graph machine learning tasks such as node classification in high-impact domains like fraud detection and recommendation systems. Yet, despite a surge of interest, the field lacks a principled understanding of the capabilities of LLMs in their interaction with graph data. In this work, we conduct a large-scale, controlled evaluation across several key axes of variability to systematically assess the strengths and weaknesses of LLM-based graph reasoning methods in text-based applications. The axes include the LLM-graph interaction mode, comparing prompting, tool-use, and code generation; dataset domains, spanning citation, web-link, e-commerce, and social networks; structural regimes contrasting homophilic and heterophilic graphs; feature characteristics involving both short- and long-text node attributes; and model configurations with varying LLM sizes and reasoning capabilities. We further analyze dependencies by methodically truncating features, deleting edges, and removing labels to quantify reliance on input types. Our findings provide practical and actionable guidance. (1) LLMs as code generators achieve the strongest overall performance on graph data, with especially large gains on long-text or high-degree graphs where prompting quickly exceeds the token budget. (2) All interaction strategies remain effective on heterophilic graphs, challenging the assumption that LLM-based methods collapse under low homophily. (3) Code generation is able to flexibly adapt its reliance between structure, features, or labels to leverage the most informative input type. Together, these findings provide a comprehensive view of the strengths and limitations of current LLM-graph interaction modes and highlight key design principles for future approaches.",
+      "citations": 6,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "STLSP: Integrating Structure and Text with Large Language Models for Link Sign Prediction of Networks",
+      "authors": [
+        "Li-Jia Ma",
+        "Hao-Yang Fu",
+        "Zhijie Cao",
+        "Xiong-Nan Jin",
+        "Qiu-Zhen Lin",
+        "Jianqiang Li"
+      ],
+      "year": 2025,
+      "date": "2025-09-01",
+      "venue": "International Joint Conference on Artificial Intelligence",
+      "doi": "10.24963/ijcai.2025/354",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "5fdb0287d912b84ea6ed301431fd127bc706c1f4",
+      "url": "https://www.semanticscholar.org/paper/5fdb0287d912b84ea6ed301431fd127bc706c1f4",
+      "pdf_url": "https://www.ijcai.org/proceedings/2025/0354.pdf",
+      "abstract": "Link Sign Prediction (LSP) in signed networks is a critical task with applications in recommendation systems, community detection, and social network analysis. Existing methods primarily rely on graph neural networks to exploit structural information, often neglecting the valuable insights from edge-level textual data. Furthermore, utilizing large language models (LLMs) for LSP faces challenges in reliability and interpreting graph structures. To address these issues, we propose a novel STLSP framework that integrates signed networks' \\underline{S}tructural and \\underline{T}extual information with LLMs for the \\underline{LSP} task. STLSP leverages structural balance theory to generate node embeddings that capture positive and negative relationships. These embeddings are transformed into natural language representations through clustering techniques, allowing LLMs to utilize the structural context fully. By integrating these representations with edge text, STLSP improves the accuracy and reliability of the LSP task. Extensive experiments conducted on five real-world datasets demonstrate that STLSP outperformed state-of-the-art baselines, achieving an 8.7% improvement in terms of accuracy. Moreover, STLSP shows robust performance across various LLMs, making it adaptable to different computational environments. The code and data are publically available at https://github.com/sss483/STLSP.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Graph-R1: Incentivizing the Zero-Shot Graph Learning Capability in LLMs via Explicit Reasoning",
+      "authors": [
+        "Yicong Wu",
+        "Guangyue Lu",
+        "Yuan Zuo",
+        "Hua-Rong Zhang",
+        "Jun-Jie Wu"
+      ],
+      "year": 2025,
+      "date": "2025-08-24",
+      "venue": "Conference on Empirical Methods in Natural Language Processing",
+      "doi": "10.48550/arxiv.2508.17387",
+      "arxiv_id": "2508.17387",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "11fe96140d30557ab1908bb1ebeecfd78021891a",
+      "url": "https://www.semanticscholar.org/paper/11fe96140d30557ab1908bb1ebeecfd78021891a",
+      "pdf_url": null,
+      "abstract": "Generalizing to unseen graph tasks without task-pecific supervision remains challenging. Graph Neural Networks (GNNs) are limited by fixed label spaces, while Large Language Models (LLMs) lack structural inductive biases. Recent advances in Large Reasoning Models (LRMs) provide a zero-shot alternative via explicit, long chain-of-thought reasoning. Inspired by this, we propose a GNN-free approach that reformulates graph tasks--node classification, link prediction, and graph classification--as textual reasoning problems solved by LRMs. We introduce the first datasets with detailed reasoning traces for these tasks and develop Graph-R1, a reinforcement learning framework that leverages task-specific rethink templates to guide reasoning over linearized graphs. Experiments demonstrate that Graph-R1 outperforms state-of-the-art baselines in zero-shot settings, producing interpretable and effective predictions. Our work highlights the promise of explicit reasoning for graph learning and provides new resources for future research.",
+      "citations": 10,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Court of LLMs: Evidence-Augmented Generation via Multi-LLM Collaboration for Text-Attributed Graph Anomaly Detection",
+      "authors": [
+        "Yiming Xu",
+        "Jia-Run Chen",
+        "Zhen Peng",
+        "Zi-Han Chen",
+        "Qi-Ka Lin",
+        "Lan Ma",
+        "Bin Shi",
+        "Bo Dong"
+      ],
+      "year": 2025,
+      "date": "2025-08-01",
+      "venue": "ACM Multimedia",
+      "doi": "10.1145/3746027.3754821",
+      "arxiv_id": "2508.00507",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "9186a4a1c238be50d4f47ce7f30c5b63b6dfb177",
+      "url": "https://www.semanticscholar.org/paper/9186a4a1c238be50d4f47ce7f30c5b63b6dfb177",
+      "pdf_url": "https://arxiv.org/pdf/2508.00507",
+      "abstract": "The natural combination of intricate topological structures and rich textual information in text-attributed graphs (TAGs) opens up a novel perspective for graph anomaly detection (GAD). However, existing GAD methods primarily focus on designing complex optimization objectives within the graph domain, overlooking the complementary value of the textual modality, whose features are often encoded by shallow embedding techniques, such as bag-of-words or skip-gram, so that semantic context related to anomalies may be missed. To unleash the enormous potential of textual modality, large language models (LLMs) have emerged as promising alternatives due to their strong semantic understanding and reasoning capabilities. Nevertheless, their application to TAG anomaly detection remains nascent, and they struggle to encode high-order structural information inherent in graphs due to input length constraints. For high-quality anomaly detection in TAGs, we propose CoLL, a novel framework that combines LLMs and graph neural networks (GNNs) to leverage their complementary strengths. CoLL employs multi-LLM collaboration for evidence-augmented generation to capture anomaly-relevant contexts while delivering human-readable rationales for detected anomalies. Moreover, CoLL integrates a GNN equipped with a gating mechanism to adaptively fuse textual features with evidence while preserving high-order topological information. Extensive experiments demonstrate the superiority of CoLL, achieving an average improvement of 13.37% in AP. This study opens a new avenue for incorporating LLMs in advancing GAD.",
+      "citations": 5,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "A Survey on Unifying Large Language Models and Knowledge Graphs for Biomedicine and Healthcare",
+      "authors": [
+        "Ran Xu",
+        "Patrick Jiang",
+        "Linhao Luo",
+        "Cao Xiao",
+        "A. Cross",
+        "Shi-Rui Pan",
+        "Ji-Meng Sun",
+        "C. Yang"
+      ],
+      "year": 2025,
+      "date": "2025-08-01",
+      "venue": "Knowledge Discovery and Data Mining",
+      "doi": "10.1145/3711896.3736556",
+      "arxiv_id": null,
+      "pmid": "41858611",
+      "openalex_id": null,
+      "s2_id": "0fe825962a204178505e025f4034b0457cce807c",
+      "url": "https://www.semanticscholar.org/paper/0fe825962a204178505e025f4034b0457cce807c",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3711896.3736556",
+      "abstract": "In recent years, the landscape of digital biomedicine and healthcare has been reshaped due to the disruptive breakthroughs in AI-facilitated by tremendous data and high-performance computers, large language models (LLMs) have transformed information technology from accessing data to performing analytical tasks. While demonstrating unprecedented capabilities, LLMs have been found unreliable in tasks requiring factual knowledge and rigorous reasoning. Biomedicine and healthcare, as an important vertical domain rapidly benefitting from progress in AI, necessitates strict requirements on the accuracy, controllability, and interpretability of analytical models, posing critical challenges for LLMs. Despite recent studies addressing the hallucination problem of LLMs, research on empowering LLMs with the ability to plan, reason, and ground with explicit knowledge has also started to prosper, especially in the biomedicine and healthcare domain. On the other hand, biomedical data are enormous and notoriously complex, coming from various sources (e.g., biomedical knowledge bases, online literature, and hospitals) and bearing various modalities (e.g., tables, texts, images and time-series). Healthcare professionals have spent decades collecting, cleaning, and curating various types of data. The processes are extremely costly, producing various datasets with different data schemas, coding systems, and quality standards, many privately owned by the creators, making their integrative analysis and utilization through unified AI techniques still rather challenging. The generalizability of LLMs across different types of data endow them strong promises in automating the processing of large-scale complex healthcare data such as into unified knowledge graphs (KGs). Our goal in this survey is to systematically investigate and summarize recent studies on the unification of LLMs and KGs, towards fully utilizing the value of complex data, unleashing the power of generative AI, and expediting next-generation AI for biomedicine and healthcare applications.",
+      "citations": 26,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "SeqGrowGraph: Learning Lane Topology as a Chain of Graph Expansions",
+      "authors": [
+        "Mengwei Xie",
+        "Shuang Zeng",
+        "Xin-Yuan Chang",
+        "Xinran Liu",
+        "Zheng Pan",
+        "Mu Xu",
+        "Xing Wei"
+      ],
+      "year": 2025,
+      "date": "2025-07-07",
+      "venue": "IEEE International Conference on Computer Vision",
+      "doi": "10.1109/iccv51701.2025.02522",
+      "arxiv_id": "2507.04822",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "fda3ff7597d8e3efbd5186effb07a9c9bbbfa2be",
+      "url": "https://www.semanticscholar.org/paper/fda3ff7597d8e3efbd5186effb07a9c9bbbfa2be",
+      "pdf_url": "https://arxiv.org/pdf/2507.04822",
+      "abstract": "Accurate lane topology is essential for autonomous driving, yet traditional methods struggle to model the complex, non-linear structures—such as loops and bidirectional lanes—prevalent in real-world road structure. We present SeqGrowGraph, a novel framework that learns lane topology as a chain of graph expansions, inspired by human mapdrawing processes. Representing the lane graph as a directed graph $G=(V, E)$, with intersections ($V$) and centerlines (E), SeqGrowGraph incrementally constructs this graph by introducing one vertex at a time. At each step, an adjacency matrix ($A$) expands from $n \\times n$ to ($n+1) \\times(n+1)$ to encode connectivity, while a geometric matrix ($M$) captures centerline shapes as quadratic Bézier curves. The graph is serialized into sequences, enabling a transformer model to autoregressively predict the chain of expansions, guided by a depth-first search ordering. Evaluated on nuScenes and Argoverse 2 datasets, SeqGrowGraph achieves state-of-the-art performance.",
+      "citations": 13,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "GaCLLM: Large Language Model with Graph Convolution for Recommendation",
+      "authors": [
+        "Ying-Peng Du",
+        "Ziteng Wang",
+        "Zhu Sun",
+        "Haoyan Chua",
+        "Y. Ong",
+        "Jie Zhang"
+      ],
+      "year": 2026,
+      "date": "2026-10-11",
+      "venue": "ACM Transactions on Information Systems",
+      "doi": "10.1145/3857345",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "34f8d395c0cf53e7ec01d03e07780db7a24d1947",
+      "url": "https://www.semanticscholar.org/paper/34f8d395c0cf53e7ec01d03e07780db7a24d1947",
+      "pdf_url": null,
+      "abstract": "Leveraging auxiliary textual data can help with user profiling and item characterization in recommender systems (RSs). However, incomplete user and item descriptions limit the potential of textual information. To this end, we propose a graph-aware convolutional large language model (LLM) method, eliciting LLMs to summarize from a high-order interaction graph to generate fine-grained descriptions for users and items. We focus on two challenges in this paper: 1) the incompatibility between structural graph and text-aware LLMs. Although some work converts graph data into textual form using templates and sampling strategies, they limit the LLMs’ ability to maintain a global perspective on graphs for LLM reasoning. 2) the limitation of LLMs’ capability for long context. Simply describing a large-scale graph in a textual format makes LLM struggle to robustly comprehend information from lengthy contextual inputs. To bridge the gap between graph structures and LLMs, we employ the LLM as an aggregator for the graph convolution process, eliciting it to aggregate and refine the graph-based information iteratively. To mitigate the information overload associated with large-scale graphs, we segment the graph processing into manageable steps, progressively incorporating multi-hop information in a least-to-most manner. Experiments on three real-world datasets demonstrate that our method consistently outperforms state-of-the-art approaches.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "IMoKGNN: Dual-Stream Fusion of Generic and Task-Specific Language Model Features for Graph Neural Networks",
+      "authors": [
+        "Hao Yan",
+        "Chao-Zhuo Li",
+        "Jun Yin",
+        "Wei-Hao Han",
+        "Hao Sun",
+        "Sen-Zhang Wang",
+        "Jian Zhang",
+        "Jian-Xin Wang"
+      ],
+      "year": 2026,
+      "date": "2026-09-30",
+      "venue": "ACM Transactions on Intelligent Systems and Technology",
+      "doi": "10.1145/3848635",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "a06c4c392d87b8064372e7bed6622b6f80b6c09c",
+      "url": "https://www.semanticscholar.org/paper/a06c4c392d87b8064372e7bed6622b6f80b6c09c",
+      "pdf_url": null,
+      "abstract": "Text-Attributed Graphs (TAGs) are prevalent in various real-world scenarios, where each node is associated with a text attribute. Representation learning on TAGs relies on a comprehensive understanding of both the textual attributes and the topological connections. Recent works have enhanced graph neural networks (GNNs) with pre-trained language models (PLMs) for textual attribute modeling, achieving promising results compared with shallow text representations such as BoW. With the advent of more powerful LLMs, how to effectively and efficiently inject the generic knowledge in LLMs into representation learning on TAGs still calls for systematic investigation. To this end, we first examine whether mainstream generative LLMs can provide high-quality generic text embeddings that can be directly used by downstream GNNs, and further explore their complementarity with the task-specific knowledge from a tuned PLM (TLM). Based on these observations, we propose a dual-channel knowledge fusion framework, named MoKGNN, to simultaneously leverage the generic semantic knowledge from LLMs and the task adaptation capability of TLM. Specifically, we design a dual-channel feature extraction module to learn generic and task-specific text representations separately. Next, we introduce a Knowledge Alignment Network to align the LLM embeddings with the TLM representations. Finally, MoKGNN adopts a global mixing weight to fuse the two channels, obtaining a unified node embedding for downstream GNN training. Moreover, we further analyze a key limitation of such early feature fusion under message passing: once heterogeneous text features are merged before neighborhood aggregation, source-specific noise and non-aligned semantics may be diffused together and become harder to disentangle and correct. Motivated by this observation, we propose IMoKGNN, a decoupled dual-stream framework that propagates LLM and TLM features in parallel with a shared GNN backbone and performs late fusion in logit space. Extensive experiments on five TAG datasets demonstrate the effectiveness of our approaches for both node classification and link prediction, and show that IMoKGNN yields more reliable improvements than MoKGNN.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Can We Do Interpretable NLI with Graphs Based on Atomic Propositions?",
+      "authors": [
+        "Younes Boufouss",
+        "Luc Pommeret",
+        "Thomas Gerald",
+        "P. Paroubek",
+        "Sophie Rosset"
+      ],
+      "year": 2026,
+      "date": "2026-09-15",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.16814",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "99aac90fbd14142aebd5a537bd852c5913063b0c",
+      "url": "https://www.semanticscholar.org/paper/99aac90fbd14142aebd5a537bd852c5913063b0c",
+      "pdf_url": null,
+      "abstract": "While Large Language Model (LLM)-based Natural Language Inference (NLI) systems achieve high accuracy, their decision-making processes lack auditable structures. This paper explores whether NLI can be performed using only interpretable, graph-based representations of evidence. We introduce a fully graph-based pipeline where the classifier never directly processes the input text. Instead, sentences are decomposed into atomic propositions, converted into ConceptNet triples via constrained decoding, and represented as three graphs per pair: premise, hypothesis, and a retrieved ConceptNet subgraph. These graphs are then fed into a fine-tuned 0.8-billion-parameter language model. On the SNLI dataset, our pipeline achieves 89.7% accuracy, just 1.9 points below an identically trained text-based model. On ANLI, it matches the published performance of RoBERTa-large on rounds R2 and R3 (48.0% vs. 48.9% and 44.9% vs. 44.4%) but trails by 16 points on R1, resulting in an overall gap of 9 to 14 points compared to its text counterpart. We term this gap the price of interpretability and demonstrate that it stems from representational limitations rather than data constraints. Ablation studies further reveal that graphs and text are complementary: combining both modalities achieves 92.1% accuracy on SNLI.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Do LLMs Understand Context? A Knowledge Graph-Based Evaluation Framework",
+      "authors": [
+        "Subavarshana Arumugam",
+        "Mamta Nallaretnam",
+        "K. Wickramasinghe",
+        "Chamath Gunapala",
+        "Pragatheeswaran Vipulanandan",
+        "Kamal Premaratne",
+        "Uthayasanker Thayasivam"
+      ],
+      "year": 2026,
+      "date": "2026-09-24",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.30484",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "f90dc6e322bd0cdfdd1d82fded7ac4311b17ef21",
+      "url": "https://www.semanticscholar.org/paper/f90dc6e322bd0cdfdd1d82fded7ac4311b17ef21",
+      "pdf_url": null,
+      "abstract": "While large language models (LLMs) have achieved remarkable linguistic capabilities, a profound question lingers at their core: do these models truly comprehend context or simply excel at pattern matching on an unprecedented scale? Contextual understanding in LLMs refers to the ability to correctly extract relevant information from a given context, integrate it into a coherent internal representation, and reason over it to produce factually consistent and contextually grounded responses. However, traditional methods such as BiLingual Evaluation Understudy (BLEU) and perplexity simply measure surface-level performance. This reveals a critical gap in question answering (QA), where responses must be contextually grounded rather than simply being memorized associations. To fill this void, we propose a novel knowledge graph (KG) based evaluation framework for LLM contextual understanding in QA. Central to this is Semantic Structural Similarity for KGs (S3KG), a hybrid similarity measure combining structural and semantic signals into a single score. In addition, a diagnostic analysis framework is developed to identify and categorize reasoning errors at the triplet level, enabling fine-grained analysis of model failures. Together, across nine benchmarks, S3KG achieves F1 gains of up to $+7.6$ points over the strongest baseline and AUROC up to $0.973$.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Reasoning Graph-Structured Question Answering: Datasets and Insights from LLM Benchmarking",
+      "authors": [
+        "Khin S. Yone",
+        "Devasha Trivedi",
+        "Anish Pahilajani",
+        "Ji Shuai",
+        "S. Jain",
+        "Ryan A. Rossi",
+        "Nesreen K. Ahmed",
+        "Franck Dernoncourt",
+        "Yu Wang",
+        "Namyong Park"
+      ],
+      "year": 2026,
+      "date": null,
+      "venue": "International Conference on Language Resources and Evaluation",
+      "doi": "10.63317/4zjpmtqxxtx4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "d4256994bbaadf663936f7ab655b3df19ac2ed3b",
+      "url": "https://www.semanticscholar.org/paper/d4256994bbaadf663936f7ab655b3df19ac2ed3b",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "LLMs as Feature Engineers for Text-and-Tabular Prediction",
+      "authors": [
+        "Merwan Barlier",
+        "Blaž Škrlj"
+      ],
+      "year": 2026,
+      "date": "2026-09-18",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.21894",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "51a175b0efea2cc4c25223f5e01cd471026925d5",
+      "url": "https://www.semanticscholar.org/paper/51a175b0efea2cc4c25223f5e01cd471026925d5",
+      "pdf_url": null,
+      "abstract": "We introduce an iterative framework that automates the extraction of interpretable, schema-bound categorical features from unstructured text for tabular prediction models. To navigate the feature space, a generator LLM proposes semantic definitions, a separate extractor LLM materializes the features, and a downstream tabular model evaluates their predictive performance. We optimize this search by translating explicit model errors, such as AUC ranking inversions, into natural-language feedback, steering the LLM to resolve specific predictive failures. Evaluated across three public datasets, this error-driven loop accelerates feature discovery by up to $3\\times$ compared to unguided search. Empirically, the generated features demonstrate strong multi-view complementarity, strictly outperforming any subset when combined with TF-IDF and dense embeddings. Finally, the framework guarantees instance-level interpretability: the discovered features dominate SHAP importance rankings and provide a fully transparent, semantic audit trail for every prediction.",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents",
+      "authors": [
+        "Zhuoran Yu",
+        "Le Thien Phuc Nguyen",
+        "Jaden Park",
+        "Xinyi Gu",
+        "Ze-Xue He",
+        "Soochahn Lee",
+        "Rogério Feris",
+        "Y. Lee"
+      ],
+      "year": 2026,
+      "date": "2026-09-02",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.02059",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "69f3261d8478abe3656fd6b90a831708c3c54375",
+      "url": "https://www.semanticscholar.org/paper/69f3261d8478abe3656fd6b90a831708c3c54375",
+      "pdf_url": null,
+      "abstract": "Multimodal Large Language Models (MLLMs) have achieved strong performance on structured visual understanding tasks such as chart and document question answering. However, existing benchmarks typically evaluate these domains in isolation, leaving underexplored a key capability: whether models can use textual context to determine how chart evidence should be selected, interpreted, and aggregated. We introduce DocHop, a benchmark for integrated chart--context reasoning in document-style images. In DocHop, the document narrative specifies multi-step compositional constraints, while charts provide the corresponding data values. Questions are grounded on a semantic reference label defined in the narrative, requiring models to resolve target entities from context before aggregating evidence across multiple charts. To enable systematic evaluation, we construct DocHop via a stochastic logic-first generation pipeline with controllable reasoning depth and visual density, covering 2,074 examples across six task categories. Experiments on a wide range of proprietary and open-source MLLMs show a substantial gap to human performance: annotators achieve over 90% accuracy, while the best model reaches only 62.83%. Reasoning-enhanced models consistently show improved results, but performance degrades as reasoning complexity increases. Overall, DocHop provides a controlled testbed for challenging multi-hop document reasoning.",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "From Clicks to Intent: Distilling LLM Intent Understanding into Compact, Deployable Models in Financial Services",
+      "authors": [
+        "Di Fan",
+        "Yao Li",
+        "Kyaw Hpone",
+        "Myint",
+        "Dwipam Katariya",
+        "A. Day",
+        "Pranab Mohanty",
+        "Giri Iyengar"
+      ],
+      "year": null,
+      "date": null,
+      "venue": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "7bb15d53828dea3c31955f49a798baa2b9842af5",
+      "url": "https://www.semanticscholar.org/paper/7bb15d53828dea3c31955f49a798baa2b9842af5",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Why don't Graph Transformers attend to the same token?",
+      "authors": [
+        "Alexandre Bismuth"
+      ],
+      "year": 2026,
+      "date": "2026-10-14",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2610.19324",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "2ea8af0a7d3f4668432d5eb40bcf60a490093d7c",
+      "url": "https://www.semanticscholar.org/paper/2ea8af0a7d3f4668432d5eb40bcf60a490093d7c",
+      "pdf_url": null,
+      "abstract": "In large language models (LLMs), attention concentrates heavily on the first token. This'attention sink'is believed to protect deep models against over-mixing. Even though graph transformers face a related pressure, we find that a SoTA graph transformer, GRIT, rarely forms sinks on molecules, and that it sinks less when trained on larger graphs, the opposite of the trend in LLMs. In principle, a graph can prevent sinks: we prove and show empirically that its symmetry and locality limit the attention any node can receive. On molecules, however, with distinguishable atoms and global attention, neither limit prevents sinks; what stops them lies in the model. We find that the attention scoring function is the main cause. Replacing GRIT's gated logit with a dot product raises its sink rate from 0.09 to 0.68 on identical graphs. In Graph Transformers using dot-product attention, removing the sink gives about the same error as removing a random node, while GRIT's most-attended nodes matter to its predictions. Attention sinks are therefore a property of dot-product attention rather than of Transformers. In our experiments, they form when dot-product scoring has a distinguishable node to concentrate on.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Who Should Teach? Confidence-Aware Dual-Teacher Learning for Few-Shot Node Classification on Text-Attributed Graphs",
+      "authors": [
+        "Hojin Kim",
+        "Sujin Yoon",
+        "Sung-Su Lim",
+        "Dongwon Lee",
+        "D. Y. Kang"
+      ],
+      "year": 2026,
+      "date": "2026-08-22",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2608.22127",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "07e7d24dd77224d0e0de5a58fc52770382baa06b",
+      "url": "https://www.semanticscholar.org/paper/07e7d24dd77224d0e0de5a58fc52770382baa06b",
+      "pdf_url": null,
+      "abstract": "Text-Attributed Graphs (TAGs) integrate graph structures and node-associated textual attributes, and recent studies have increasingly leveraged Large Language Models (LLMs) to improve TAG learning in few-shot settings. However, existing approaches typically utilize LLM-derived information uniformly across all nodes, despite substantial variations in its reliability, while also incurring considerable monetary costs. We argue that the most appropriate source of supervision may differ across nodes, as Graph Neural Networks (GNNs) and LLMs exhibit complementary strengths in exploiting structural and semantic information, respectively. To this end, we propose CoTeach, a Confidence-aware dual-teacher learning framework that dynamically selects the more reliable teacher for each node. Experimental results demonstrate that CoTeach consistently improves few-shot node classification performance while reducing unnecessary LLM utilization and associated monetary costs.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Routing Without Embeddings: Fast And Interpretable Routing With Regular Expressions",
+      "authors": [
+        "Yi-Fan Lu",
+        "Qi-Yue Zhang",
+        "Haotian Shan",
+        "Han-Jie Chen",
+        "Jia-Rong Xing"
+      ],
+      "year": 2026,
+      "date": "2026-09-28",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.34326",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "26fc11d3c0368db5974e62dc8447334522f09984",
+      "url": "https://www.semanticscholar.org/paper/26fc11d3c0368db5974e62dc8447334522f09984",
+      "pdf_url": null,
+      "abstract": "Large Language Model (LLM) routers commonly rely on neural query embeddings, with larger encoders expected to better capture query intent and difficulty. Yet scaling Qwen2.5 encoders from 0.5B to 72B parameters brings little improvement in routing accuracy (Figure 1b), suggesting that small encoders may already capture the query properties needed for routing. We therefore investigate which properties matter and whether they can be extracted directly from text without a neural encoder. We introduce REGEXROUTE, a pipeline that uses sparse autoencoders (SAEs) to discover interpretable regular-expression (regex) features. Using unlabeled text, an LLM turns descriptions of grouped SAE latents into regex extractors and refines them to match latent activation patterns. These extractors supply numerical features to a lightweight routing head, eliminating neural encoding at inference (Figure 1a). Across four benchmarks, one fixed set of 128 features achieves 76.43% average routing accuracy, comparable to 76.41% for the strongest neural text encoder baseline, with much smaller latency and strong robustness. These findings establish explicit, interpretable text features as a practical basis for designing and understanding LLM routers.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
+      "authors": [
+        "Harshdeep Singh",
+        "Yu-Rui Zhu",
+        "Giovanni Colavizza",
+        "M. Romanello"
+      ],
+      "year": 2026,
+      "date": "2026-09-10",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.11569",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "9d20cb235f83d1d7f59864225835395b2f36663d",
+      "url": "https://www.semanticscholar.org/paper/9d20cb235f83d1d7f59864225835395b2f36663d",
+      "pdf_url": null,
+      "abstract": "We present EXYGEN (EXplore Your Graphs ENgine), a framework for knowledge graph (KG) understanding that enables conversational access to KGs at scale. We address two questions in sequence. First, how effectively can LLMs perform text-to-SPARQL generation given only automatically derived structured metadata and small graph samples, rather than task-specific fine-tuning? We integrate VoID descriptions and ShEx schemas into a retrieval-augmented generation (RAG) pipeline and ablate KG-derived context on the SciQA benchmark. Our best configuration -- combining ShEx schemas, retrieved triples, and example question-query pairs -- reaches an exact match of 0.419 on execution results without any LLM fine-tuning. We further find that lexical metrics such as F1 poorly predict query correctness, and that larger general-purpose LLMs can outperform smaller code-specialized ones once given sufficient context. Second, we ask how to generate the structured metadata that this method relies on from very large KGs, where KG metadata generation becomes computationally intractable. We introduce a predicate-coverage-aware parallel graph sampling strategy that preserves structural diversity while remaining computationally tractable. On OpenCitations Meta and GESIS, it retains high predicate coverage with minimal triple loss and reduces runtime by over 80x; on ORKG, sampling is not just faster but the only tractable path to obtain complete metadata. Together, these results show that structured schema context and lightweight prompting can substantially reduce reliance on fine-tuning for scalable conversational access to KGs, though closing the remaining gap to fully fine-tuned approaches will likely require reducing dependence on curated question-query exemplars -- whether through synthetic generation or an execution-feedback-driven approach -- and validating these findings beyond a single benchmark.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Layer-Informed Fine-Tuning via Three-Stage Functional Segmentation of LLMs",
+      "authors": [
+        "Jun-Ning Shao",
+        "Si-Wei Wang",
+        "Zhi-Xuan Fang"
+      ],
+      "year": 2026,
+      "date": "2026-09-28",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.38027",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "1d35cd3a27ac1f37def55025c7a98b55ec108ea0",
+      "url": "https://www.semanticscholar.org/paper/1d35cd3a27ac1f37def55025c7a98b55ec108ea0",
+      "pdf_url": null,
+      "abstract": "In recent years, the performance of large language models (LLMs) on reasoning tasks has been remarkable, even surpassing human capabilities on various benchmarks. However, there remains a lack of clear understanding in the academic community regarding how the structure and internal parameters of LLMs progressively solve complex reasoning problems. In this study, we investigate the inference process of LLMs on cross-linguistic materials and propose the hypothesis that LLM layers exhibit a structured division of labor across conceptualization, reasoning, and textualization. Based on this hypothesis, we introduce a bottleneck identification mechanism using sensitivity analysis to pinpoint the most critical functional stage for a specific task. Leveraging this insight, we propose a novel approach, Layer-Informed Fine-Tuning (LIFT), which achieves efficient and effective fine-tuning by selectively updating only these functionally critical layers. We then conduct extensive experiments to show that the LIFT method not only accelerates the training process but also significantly improves model performance.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "GraphLLM4CTR: Large Language Model-Enhanced Graph Neural Networks for Click-through Rate Prediction in Recommender Systems",
+      "authors": [
+        "Shan Gao",
+        "Yan-Wu Yang"
+      ],
+      "year": 2026,
+      "date": "2026-10-03",
+      "venue": "ACM Transactions on Knowledge Discovery from Data",
+      "doi": "10.1145/3848507",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "1b23bdd071f656f925eb36db12277216da61c874",
+      "url": "https://www.semanticscholar.org/paper/1b23bdd071f656f925eb36db12277216da61c874",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3848507?download=true",
+      "abstract": "Click-through rate (CTR) prediction is a crucial task to estimate the probability that users will click on items in online platforms. Recently, researchers have incorporated semantics derived from large language models (LLMs) into representations of users and items in graph neural networks (GNNs) framework to facilitate CTR prediction. However, existing hybrid GNNs-LLMs models predominantly treat GNNs and LLMs as two independent components, and suffer from the ineffective modality alignment between graph and textual representations. To address these issues, we propose LLMs-enhanced GNNs for CTR prediction (GraphLLM4CTR), where LLMs coordinate message passing in GNNs by infusing layer-wise semantics into message updates and graph representation learning. Specifically, we design a multi-view contrastive alignment (MVCA) method to transform graph and prompt-based embeddings into modality-aware representations and achieve modality alignment through intra-view and inter-view contrastive learning. Moreover, we propose a LLMs-based message coordinator (LBMC) that projects graph representations into an aligned latent space and incorporates LLMs with learnable adapters to regulate semantic-injected graph representation learning. Subsequently, we present a hybrid-expert mechanism with gating networks to adaptively aggregate representations for CTR prediction. Experiments conducted on three public datasets (i.e., MovieLens-1M, BookCrossing, and Amazon-Sports) demonstrate the superiority of GraphLLM4CTR over state-of-the-art baselines in terms of AUC and Logloss, and validate the adaptability of MVCA to topological properties and of LBMC to text qualities, and the dynamic balance of the hybrid-expert mechanism. Finally, we conduct analysis of space and time complexity, and computational efficiency of GraphLLM4CTR during training and inference stages, which indicates that GraphLLM4CTR can achieve the optimal AUC-latency trade-off and a linear scalability with the number of nodes and of edges in constructed graphs.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Knowledge-Graph Based Augmentation versus Retrieval Augmented Generation for Cultural-Related Question Answering",
+      "authors": [
+        "Pablo Poulenard",
+        "Yannis Karmim",
+        "Valentin Barrière"
+      ],
+      "year": 2026,
+      "date": "2026-09-16",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.18317",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "32613fc0ea5a3cabb567175d8b60f8486baf11c6",
+      "url": "https://www.semanticscholar.org/paper/32613fc0ea5a3cabb567175d8b60f8486baf11c6",
+      "pdf_url": null,
+      "abstract": "Large language models (LLMs) suffer from a long-tail deficit: culturally specific facts, particularly those concerning underrepresented regions such as Latin America, appear too rarely in pretraining corpora to be reliably memorized. Retrieval-Augmented Generation (RAG) addresses this by grounding generation in external text, but structured alternatives such as Knowledge Graphs (KGs) offer tighter control over what enters the context, along with potential gains in explainability and updatability. We benchmark Graph-RAG against standard RAG on LatamQA, a culturally grounded multiple-choice dataset spanning eight thematic categories. The graphs are built end-to-end from Wikipedia articles with KGGen, a recent open-domain extractor, without manual curation in our main setting. G-Retriever is competitive with RAG and reduces the error of the base LLM by 72\\% with a standard KG and 78\\% with a benchmark-aware variant, the gap to RAG narrowing further as the graph is oriented toward task-relevant content. The trained projection transfers zero-shot to Portuguese without target-language fine-tuning, indicating multilingual reach.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "A Graph-Enhanced Multimodal Transformer Model for Fine-Grained Document Parsing",
+      "authors": [
+        "G. Lilian",
+        "L. Ochei",
+        "Martha Musa"
+      ],
+      "year": 2026,
+      "date": "2026-09-09",
+      "venue": "International Journal of Intelligent Information Systems",
+      "doi": "10.11648/j.ijiis.20261501.11",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "4e68f782076127eda35d5a16a4ea47103118cf0a",
+      "url": "https://www.semanticscholar.org/paper/4e68f782076127eda35d5a16a4ea47103118cf0a",
+      "pdf_url": "http://article.sciencepg.com/pdf/j.ijiis.20261501.11",
+      "abstract": "The digitization of documents across industries has created an urgent need for intelligent systems capable of extracting structured information from unstructured layouts. While transformer-based models like LayoutLMv3 have advanced document understanding, they struggle to capture relational dependencies between spatially separated but semantically related elements—a fundamental challenge in form understanding and layout analysis. This paper introduces IntelliDocFormer, an enhanced multimodal transformer that explicitly models relationships between document elements through graph-based relational reasoning. Building on LayoutLMv3, our architecture incorporates a Graph Attention Network encoder that captures both sequential and spatial dependencies between text tokens, complemented by document-type classification for adaptive processing. We evaluate IntelliDocFormer on DocBank (4,000 samples) and FUNSD (119 samples), achieving Macro-F1 scores of 0.7435 (DocBank) and 0.7450 (FUNSD); performance improved substantially when scaling from 50 to 4,000 DocBank training samples (a 6,045% relative gain over a near-zero low-data baseline). Ablation studies confirm that graph-based reasoning contributes the most significant performance gain (+0.04 Macro-F1). Our results demonstrate that explicit relationship modeling is critical for fine-grained document parsing, particularly for structurally complex elements like tables (F1=0.94) and paragraphs (F1=0.75). On the validated element types (tables, paragraphs), inference runs at 1.67 sec/sample on a single Tesla T4 GPU. These findings establish graph-enhanced multimodal transformers as a promising direction for document intelligence, with implications for automated data extraction across finance, healthcare, and legal domains, particularly for well-represented structural elements such as tables and paragraphs; performance on low-frequency structural classes (e.g., footers, section headers) currently limits applicability to compliance-sensitive extraction tasks. To probe generalization beyond these two domains, we additionally repurposed IntelliDocFormer's document-type classification head for 16-way real-world document classification on RVL-CDIP using a stratified 3,200-image subsample. This yielded a Macro-F1 of 0.22 (Accuracy 0.29) — well below both our DocBank/FUNSD results and literature-reported RVL-CDIP figures for other architectures — revealing that the document-type module, as configured here, does not yet generalize to fine-grained, small-sample, multi-class real-world classification; we report this result in full, together with its diagnostic analysis, as an explicit boundary condition on our generalization claims.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation",
+      "authors": [
+        "Himil Vasava",
+        "Ming-Zhou Jiang"
+      ],
+      "year": 2026,
+      "date": "2026-09-01",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.01604",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "7a09f4f3ab3f645d808244f9d5eddc33c1be238f",
+      "url": "https://www.semanticscholar.org/paper/7a09f4f3ab3f645d808244f9d5eddc33c1be238f",
+      "pdf_url": null,
+      "abstract": "LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy across the Readability and Adequacy dimensions of NLG quality, a generation pipeline that produces paired clean and corrupt summaries with controlled error intensity and explicit token-level modification maps, and a four-experiment battery of causal tracing, logit-lens vocabulary projection, and attention-head knockout applied to Themis (Llama-3-8B) and Prometheus (Mistral-7B). Both evaluators implement a structured, coherent evaluation pipeline operating in two stages: below layer 15, attention performs local error comparison and routes the result to the final input position; above it, the MLP cascade integrates the signal and writes the rating, with the decision crystallizing in the residual stream at a sharp late layer (L = 26 on Themis, L = 25 on Prometheus). Furthermore, a base-model control at the same scale (Llama-3-8B) reproduces the routing architecture and crystallization but not the stage separation, isolating the two mechanisms that fine-tuning specifically installs, suppression of below-L15 MLP contribution at the last position and a two-layer advance of the crystallization depth, indicating that fine-tuning sculpts an existing substrate rather than building the pipeline from scratch. We release the source code and data at https://github.com/himil-v/judge-mech",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Integrating Knowledge Graph with Large Language Models for Multi-hop Question Generation",
+      "authors": [
+        "Yllias Chali",
+        "Al Hasib Mahamud"
+      ],
+      "year": 2026,
+      "date": null,
+      "venue": "International Conference on Language Resources and Evaluation",
+      "doi": "10.63317/4fz4our5amwv",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "6c1154393bcb91129402c8d1329fe81b2b31a94f",
+      "url": "https://www.semanticscholar.org/paper/6c1154393bcb91129402c8d1329fe81b2b31a94f",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "The Disconnect Between Better Descriptive Reasoning Trace Quality and Recommendation Effectiveness",
+      "authors": [
+        "G. Penha",
+        "Juan Elenter",
+        "Claudia Hauff",
+        "Hugues Bouchard",
+        "Paul N. Bennett",
+        "M. Lalmas"
+      ],
+      "year": 2026,
+      "date": "2026-08-24",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2608.23154",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "2105b4f03cef6df1f820c1ff7db42cd5989581b4",
+      "url": "https://www.semanticscholar.org/paper/2105b4f03cef6df1f820c1ff7db42cd5989581b4",
+      "pdf_url": null,
+      "abstract": "Recent work has focused on improving explicit natural-language descriptive reasoning traces for generative recommendation. This includes systems that augment semantic ID (SID) prediction with chain-of-thought reasoning. However, because SIDs are opaque learned identifiers rather than natural language, they require costly alignment before an LLM can reason over them. This provides a controlled experimental setting in which both item representation (Title vs. SID) and semantic grounding (minimal vs. extensive SID alignment) can be varied independently. We therefore present the first controlled comparison of descriptive reasoning trace quality across semantic IDs and natural-language titles in a 2 x 2 factorial study on three Amazon product domains using a shared Qwen3-1.7B backbone. We find that introducing explicit descriptive reasoning traces reduces traditional offline recommendation effectiveness under standard SFT and RL training, even though natural language titles produce substantially more grounded and interpretable traces. Extensive SID alignment improves descriptive trace quality but not traditional offline recommendation effectiveness, while a richer reward signal partially recovers performance. Overall, our results show that improving descriptive reasoning trace quality is not, by itself, sufficient to consistently improve traditional offline recommendation effectiveness under the training objectives and evaluation protocols studied here.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "No-Free-Graph: Learning When Multimodal Data Should Be Graphified",
+      "authors": [
+        "Ze-Kai Chen",
+        "Kai Hu",
+        "Yu-Xin Zeng",
+        "Xun-Kai Li",
+        "Xun Wu",
+        "Yin-Lin Zhu",
+        "Zheng-Yu Wu",
+        "Xu Wang",
+        "Rong-Hua Li"
+      ],
+      "year": 2026,
+      "date": "2026-10-02",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2610.02768",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "6dd1f6957e4ba228bee990c886128edd8c8cd130",
+      "url": "https://www.semanticscholar.org/paper/6dd1f6957e4ba228bee990c886128edd8c8cd130",
+      "pdf_url": null,
+      "abstract": "Multimodal graph learning has recently emerged as an effective paradigm for in corporating inter-entity relationships into multimodal representations. Existing studies have made substantial progress on how to construct and optimize graphs, but rarely consider a more fundamental question: whether additional relational structures should be introduced for a given dataset and task. Through empirical studies across diverse datasets, tasks, and graph constructors, we reveal that graphification is not consistently beneficial: introducing relational structures can provide substantial improvements in some cases, while offering limited or even negative gains. This observation motivates a new perspective that graph construction should be treated as a selective decision based on its expected utility rather than a default preprocessing step. To address this issue, we propose MAG-SCOUT, a pre-construction graph assessment framework that estimates whether introducing graph structures is beneficial before generating the complete topology. MAG-SCOUT collects limited relational evidence, analyzes its potential taskspecific contribution, and estimates the expected utility of graphification together with construction cost to make a build-or-skip decision. Extensive experiments across six multimodal datasets, three downstream tasks, and diverse graph constructors demonstrate that MAG-SCOUT effectively identifies when graph structures should be introduced, saving 33.1% of task-macro graph work while retaining 96.7% of held-out positive-gain mass under the pre-registered floor.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Evaluation of Contextual Understanding in Large Language Models",
+      "authors": [
+        "Subavarshana Arumugam",
+        "Mamta Nallaretnam",
+        "K. Wickramasinghe",
+        "Chamath Gunapala",
+        "Pragatheeswaran Vipulanandan",
+        "Uthayasanker Thayasivam",
+        "Kamal Premaratne"
+      ],
+      "year": 2026,
+      "date": "2026-09-08",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.09004",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "b5913f2ace9b655f7ec1711be485b2524ceacc01",
+      "url": "https://www.semanticscholar.org/paper/b5913f2ace9b655f7ec1711be485b2524ceacc01",
+      "pdf_url": null,
+      "abstract": "Large Language Models (LLMs) demonstrate impressive performance across diverse NLP tasks, yet their ability to exhibit genuine contextual understanding remains uncertain. Traditional evaluation metrics such as perplexity, BiLingual Evaluation Understudy (BLEU), or surface-level accuracy fail to reveal how well LLMs extract, integrate, and reason over contextual information--a gap particularly critical in question answering, where models must align responses with contextually grounded knowledge rather than memorized associations. We propose a novel knowledge graph-based evaluation framework introducing Semantic Structural Similarity for KGs (S3KG), a hybrid similarity measure integrating structural and semantic similarity into a continuous evaluation score, alongside a diagnostic framework for categorizing reasoning errors. To validate this pipeline, we evaluate S3KG against established metrics on a curated question-answer (QA) benchmark, demonstrating its effectiveness in measuring correctness, faithfulness, and interpretability in LLM-generated responses.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Graph Evidence Is Not Enough: Diagnosing Native Decoder Use in Graph-Augmented LLMs",
+      "authors": [
+        "Xiao-Yu Guo",
+        "Peng-Cheng Chen",
+        "Jiong Yu",
+        "Yi Lu",
+        "Yao-Hua Wang",
+        "Zi-Yang Li"
+      ],
+      "year": 2026,
+      "date": "2026-08-31",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2608.30437",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "4cfe16e4b75bcc0ea92b056dae206c52b143a6d0",
+      "url": "https://www.semanticscholar.org/paper/4cfe16e4b75bcc0ea92b056dae206c52b143a6d0",
+      "pdf_url": null,
+      "abstract": "Graph-augmented large language models often assume that graph evidence produced by external computation and placed in the input can be used by the native decoder. We test this assumption with HopQA, a deliberately bounded diagnostic that asks for the shortest-hop distance between two query nodes. Because the answer is a small integer and the target is purely topological, failure cannot be dismissed as open-ended generation or ambiguous evaluation. Yet existing graph-augmented baselines still fail on this setting, showing that providing graph evidence is not the same as making it usable. We introduce an intervention triangle with three matched conditions: readable graph evidence, shuffled graph evidence, and no-graph input. This separates evidence inclusion, structural readability, and decoder-usable topology. Guided by this diagnosis, we present S$^2$GE as an instance showing that diagnosis-driven interface design can improve native decoder usability. S$^2$GE uses query-aware sampling, endpoint and proximity-based ordering, and structure-preserving alignment. Across DBLP, Biomedical, GoodReads, and PubMed, S$^2$GE achieves strict exact-match scores of $36.5\\%$, $57.8\\%$, $76.6\\%$, and $52.0\\%$, improving over the strongest native-generation baseline by $53.5$ points on average. The interventions further reveal harmful-shuffle, shuffle-robust, and no-graph-saturated regimes.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "TemporalGraphLLM: Temporal Graph Neural Networks with Large Language Models for Dynamic Text-Attributed Graphs",
+      "authors": [
+        "Moran Beladev",
+        "Orly Eitan",
+        "Gilad Katz",
+        "L. Rokach"
+      ],
+      "year": 2026,
+      "date": "2026-09-25",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2609.31881",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "d49364f12827696d5972ba70adcd5744be8e1855",
+      "url": "https://www.semanticscholar.org/paper/d49364f12827696d5972ba70adcd5744be8e1855",
+      "pdf_url": null,
+      "abstract": "Dynamic text-attributed graphs (DTAGs), where nodes, edges, and textual attributes evolve over time, are crucial in applications such as social networks, citation graphs, and knowledge graphs. However, existing approaches struggle to jointly model the temporal evolution of graph structures and the semantic richness of textual attributes. While Temporal Graph Neural Networks (TGNNs) capture evolving node relationships, they often lack contextual text reasoning. Conversely, Large Language Models (LLMs) excel in textual understanding but struggle with structured graph reasoning in temporal settings. To bridge this gap, we propose TemporalGraphLLM, a novel framework that can integrate any temporal GNN with an LLM for enhanced reasoning in DTAGs. Our approach fine-tunes LLMs using graph-time-aware instruction tuning and novel temporal GNNs injection to replace dedicated added tokens with graph embeddings. TemporalGraphLLM effectively leverages pretrained TGNNs within an LLM framework to achieve state-of-the-art performance on edge classification, link prediction, and edge-based text generation tasks. Extensive evaluation on real-world dynamic graph datasets demonstrates state-of-the-art performance. Our findings highlight the synergistic potential of LLMs and TGNNs, opening new directions for learning on evolving graphs.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Tokenizing the Graph: Attentive Byte-pair Encoding for Knowledge Graph Embeddings",
+      "authors": [
+        "N'Dah",
+        "Jean Kouagou",
+        "Arnab Sharma",
+        "Harsh Purohit",
+        "Caglar Demir",
+        "Axel Ngonga"
+      ],
+      "year": null,
+      "date": null,
+      "venue": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "bc59f7dfb312928ab6f56163e3fc46868164e8ee",
+      "url": "https://www.semanticscholar.org/paper/bc59f7dfb312928ab6f56163e3fc46868164e8ee",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Why Does Graph Learning Fail to Fully Benefit from a Text Teacher?",
+      "authors": [
+        "Fumiaki Kimino",
+        "Ryoma Sato Sokendai",
+        "National Institute of Informatics"
+      ],
+      "year": 2026,
+      "date": "2026-08-26",
+      "venue": null,
+      "doi": null,
+      "arxiv_id": "2608.25741",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "bde114f89eb9a9cb2e90bb699f6891c62500da4e",
+      "url": "https://www.semanticscholar.org/paper/bde114f89eb9a9cb2e90bb699f6891c62500da4e",
+      "pdf_url": null,
+      "abstract": "Graph neural networks (GNNs) are widely used to represent complex interactions and relationships among entities. We investigate a multimodal model that combines two complementary ideas: a self-supervised method that enables a GNN encoder pretrained on one dataset to operate directly on another dataset with a different node-feature dimensionality, without rebuilding the model or realigning the data; and an alternating optimization method that updates a language-model module in an E-step and a GNN module in an M-step, rather than jointly training a large language model and a GNN end to end on a large graph. Despite expectations, the combined model did not sufficiently improve predictive performance. We identify six factors: (1) an external anchor in the E-step has a strength-safety trade-off: a weak anchor has little effect, whereas an overly strong anchor can damage the graph representation; (2) the knowledge of the E-step teacher is not injected directly into the GCN embedding Z; (3) the representation space constructed in the M-step is not optimized for the same objective as the E-step teacher space, resulting in a compromise representation for target classification; (4) GCN propagation averages a node's own textual information with information from its neighbors; (5) cosine alignment does not guarantee axes that are discriminative for classification, so stronger geometric alignment with the E-step text anchor need not sufficiently improve the target decision boundary or classification performance; and (6) the force that preserves the source-side self-supervised geometry in the M-step conflicts with the force that moves the representation toward the E-step teacher. We support these observations through a staged set of experiments that varies the influence of the E-step.",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "recommended",
+          "query": "2309.16595"
+        }
+      ],
+      "extra": {}
+    }
+  ],
+  "resolution_notes": [
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "quota exhausted (X-RateLimit-Reset=5441). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?",
+      "status": 429
+    }
+  ]
+}

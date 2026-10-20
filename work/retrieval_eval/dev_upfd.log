@@ -1,0 +1,281 @@
+== upfd-graph-vs-no-graph (dev)
+  [openalex/keyword] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [arxiv/keyword] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [crossref/keyword] 'UPFD fake news detection reproducibility text-only baseline': 10 results
+  [openalex/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [arxiv/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [crossref/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 10 results
+  [openalex/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [arxiv/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [crossref/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 10 results
+  [openalex/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [arxiv/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [crossref/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 10 results
+  [openalex/keyword] 'rethinking graph-based fake news detection benchmark': 0 results
+  [arxiv/keyword] 'rethinking graph-based fake news detection benchmark': 0 results
+  [crossref/keyword] 'rethinking graph-based fake news detection benchmark': 10 results
+  [openalex/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 0 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 10 results
+  [openalex/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 0 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 10 results
+  [openalex/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 0 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 10 results
+  [openalex/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 0 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 10 results
+  [openalex/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 0 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 10 results
+  [openalex/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 0 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 10 results
+  [openalex/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 0 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 10 results
+  [openalex/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 0 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 10 results
+  [openalex/surveys] 'rethinking graph-based fake news detection benchmark survey': 0 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark survey': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark survey': 10 results
+  [openalex/surveys] 'rethinking graph-based fake news detection benchmark review': 0 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark review': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark review': 10 results
+  [openalex/recent] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [arxiv/recent] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [crossref/recent] 'UPFD fake news detection reproducibility text-only baseline': 10 results
+  [openalex/recent] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [arxiv/recent] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [crossref/recent] 'propagation graph versus news content fake news detection ablation pretrained language model': 10 results
+  [openalex/recent] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [arxiv/recent] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [crossref/recent] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 10 results
+  [openalex/recent] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [arxiv/recent] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [crossref/recent] 'GNN fake news detection evaluation variance small datasets PolitiFact': 10 results
+  [openalex/recent] 'rethinking graph-based fake news detection benchmark': 0 results
+  [arxiv/recent] 'rethinking graph-based fake news detection benchmark': 0 results
+  [crossref/recent] 'rethinking graph-based fake news detection benchmark': 10 results
+  [openalex/keyword] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [arxiv/keyword] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [crossref/keyword] 'UPFD fake news detection reproducibility text-only baseline': 10 results
+  [openalex/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [arxiv/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [crossref/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 10 results
+  [openalex/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [arxiv/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [crossref/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 10 results
+  [openalex/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [arxiv/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [crossref/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 10 results
+  [openalex/keyword] 'rethinking graph-based fake news detection benchmark': 0 results
+  [arxiv/keyword] 'rethinking graph-based fake news detection benchmark': 0 results
+  [crossref/keyword] 'rethinking graph-based fake news detection benchmark': 10 results
+  [openalex/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 0 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 10 results
+  [openalex/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 0 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 10 results
+  [openalex/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 0 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 10 results
+  [openalex/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 0 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 10 results
+  [openalex/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 0 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 10 results
+  [openalex/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 0 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 10 results
+  [openalex/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 0 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 10 results
+  [openalex/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 0 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 10 results
+  [openalex/surveys] 'rethinking graph-based fake news detection benchmark survey': 0 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark survey': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark survey': 10 results
+  [openalex/surveys] 'rethinking graph-based fake news detection benchmark review': 0 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark review': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark review': 10 results
+  [openalex/recent] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [arxiv/recent] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [crossref/recent] 'UPFD fake news detection reproducibility text-only baseline': 10 results
+  [openalex/recent] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [arxiv/recent] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [crossref/recent] 'propagation graph versus news content fake news detection ablation pretrained language model': 10 results
+  [openalex/recent] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [arxiv/recent] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [crossref/recent] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 10 results
+  [openalex/recent] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [arxiv/recent] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [crossref/recent] 'GNN fake news detection evaluation variance small datasets PolitiFact': 10 results
+  [openalex/recent] 'rethinking graph-based fake news detection benchmark': 0 results
+  [arxiv/recent] 'rethinking graph-based fake news detection benchmark': 0 results
+  [crossref/recent] 'rethinking graph-based fake news detection benchmark': 10 results
+  [openalex/keyword] 'MLP baseline on the same node features fake news propagation graph': 0 results
+  [arxiv/keyword] 'MLP baseline on the same node features fake news propagation graph': 0 results
+  [crossref/keyword] 'MLP baseline on the same node features fake news propagation graph': 10 results
+  [openalex/keyword] 'randomly rewired edges fake news propagation graph': 0 results
+  [arxiv/keyword] 'randomly rewired edges fake news propagation graph': 0 results
+  [crossref/keyword] 'randomly rewired edges fake news propagation graph': 10 results
+  [openalex/keyword] 'shuffled node features fake news propagation graph': 1 results
+  [arxiv/keyword] 'shuffled node features fake news propagation graph': 1 results
+  [crossref/keyword] 'shuffled node features fake news propagation graph': 10 results
+  [openalex/keyword] 'users shared between training and test fake news propagation graph': 0 results
+  [arxiv/keyword] 'users shared between training and test fake news propagation graph': 0 results
+  [crossref/keyword] 'users shared between training and test fake news propagation graph': 10 results
+  [openalex/keyword] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [arxiv/keyword] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [crossref/keyword] 'UPFD fake news detection reproducibility text-only baseline': 10 results
+  [openalex/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [arxiv/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [crossref/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 10 results
+  [openalex/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [arxiv/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [crossref/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 10 results
+  [openalex/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [arxiv/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [crossref/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 10 results
+  [openalex/keyword] 'rethinking graph-based fake news detection benchmark': 0 results
+  [arxiv/keyword] 'rethinking graph-based fake news detection benchmark': 0 results
+  [crossref/keyword] 'rethinking graph-based fake news detection benchmark': 10 results
+  [openalex/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 0 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 10 results
+  [openalex/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 0 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 10 results
+  [openalex/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 0 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 10 results
+  [openalex/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 0 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 10 results
+  [openalex/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 0 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 10 results
+  [openalex/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 0 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 10 results
+  [openalex/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 0 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 10 results
+  [openalex/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 0 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 10 results
+  [openalex/surveys] 'rethinking graph-based fake news detection benchmark survey': 0 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark survey': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark survey': 10 results
+  [openalex/surveys] 'rethinking graph-based fake news detection benchmark review': 0 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark review': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark review': 10 results
+  [openalex/negative] 'UPFD fake news detection reproducibility text-only baseline revisiting': 0 results
+  [arxiv/negative] 'UPFD fake news detection reproducibility text-only baseline revisiting': 0 results
+  [crossref/negative] 'UPFD fake news detection reproducibility text-only baseline revisiting': 10 results
+  [openalex/negative] 'UPFD fake news detection reproducibility text-only baseline does not improve': 0 results
+  [arxiv/negative] 'UPFD fake news detection reproducibility text-only baseline does not improve': 0 results
+  [crossref/negative] 'UPFD fake news detection reproducibility text-only baseline does not improve': 10 results
+  [openalex/negative] 'propagation graph versus news content fake news detection ablation pretrained language model revisiting': 0 results
+  [arxiv/negative] 'propagation graph versus news content fake news detection ablation pretrained language model revisiting': 0 results
+  [crossref/negative] 'propagation graph versus news content fake news detection ablation pretrained language model revisiting': 10 results
+  [openalex/negative] 'propagation graph versus news content fake news detection ablation pretrained language model does not improve': 0 results
+  [arxiv/negative] 'propagation graph versus news content fake news detection ablation pretrained language model does not improve': error rate_limited
+  [crossref/negative] 'propagation graph versus news content fake news detection ablation pretrained language model does not improve': 10 results
+  [openalex/negative] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline revisiting': 0 results
+  [crossref/negative] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline revisiting': 10 results
+  [openalex/negative] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline does not improve': 0 results
+  [crossref/negative] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline does not improve': 10 results
+  [openalex/negative] 'GNN fake news detection evaluation variance small datasets PolitiFact revisiting': 0 results
+  [crossref/negative] 'GNN fake news detection evaluation variance small datasets PolitiFact revisiting': 10 results
+  [openalex/negative] 'GNN fake news detection evaluation variance small datasets PolitiFact does not improve': 0 results
+  [crossref/negative] 'GNN fake news detection evaluation variance small datasets PolitiFact does not improve': 10 results
+  [openalex/negative] 'rethinking graph-based fake news detection benchmark revisiting': 0 results
+  [crossref/negative] 'rethinking graph-based fake news detection benchmark revisiting': 10 results
+  [openalex/negative] 'rethinking graph-based fake news detection benchmark does not improve': 0 results
+  [crossref/negative] 'rethinking graph-based fake news detection benchmark does not improve': 10 results
+  [openalex/comparisons] 'UPFD fake news detection reproducibility text-only baseline empirical comparison': 0 results
+  [crossref/comparisons] 'UPFD fake news detection reproducibility text-only baseline empirical comparison': 10 results
+  [openalex/comparisons] 'propagation graph versus news content fake news detection ablation pretrained language model empirical comparison': 0 results
+  [crossref/comparisons] 'propagation graph versus news content fake news detection ablation pretrained language model empirical comparison': 10 results
+  [openalex/comparisons] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline empirical comparison': 0 results
+  [crossref/comparisons] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline empirical comparison': 10 results
+  [openalex/comparisons] 'GNN fake news detection evaluation variance small datasets PolitiFact empirical comparison': 0 results
+  [crossref/comparisons] 'GNN fake news detection evaluation variance small datasets PolitiFact empirical comparison': 10 results
+  [openalex/comparisons] 'rethinking graph-based fake news detection benchmark empirical comparison': 0 results
+  [crossref/comparisons] 'rethinking graph-based fake news detection benchmark empirical comparison': 10 results
+  [openalex/critique] 'UPFD fake news detection reproducibility text-only baseline evaluation pitfalls': 0 results
+  [crossref/critique] 'UPFD fake news detection reproducibility text-only baseline evaluation pitfalls': 10 results
+  [openalex/critique] 'UPFD fake news detection reproducibility text-only baseline simple baseline': 0 results
+  [crossref/critique] 'UPFD fake news detection reproducibility text-only baseline simple baseline': 10 results
+  [openalex/critique] 'propagation graph versus news content fake news detection ablation pretrained language model evaluation pitfalls': 0 results
+  [crossref/critique] 'propagation graph versus news content fake news detection ablation pretrained language model evaluation pitfalls': 10 results
+  [openalex/critique] 'propagation graph versus news content fake news detection ablation pretrained language model simple baseline': 0 results
+  [crossref/critique] 'propagation graph versus news content fake news detection ablation pretrained language model simple baseline': 10 results
+  [openalex/critique] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline evaluation pitfalls': 0 results
+  [crossref/critique] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline evaluation pitfalls': 10 results
+  [openalex/critique] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline simple baseline': 0 results
+  [crossref/critique] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline simple baseline': 10 results
+  [openalex/critique] 'GNN fake news detection evaluation variance small datasets PolitiFact evaluation pitfalls': 0 results
+  [crossref/critique] 'GNN fake news detection evaluation variance small datasets PolitiFact evaluation pitfalls': 10 results
+  [openalex/critique] 'GNN fake news detection evaluation variance small datasets PolitiFact simple baseline': 0 results
+  [crossref/critique] 'GNN fake news detection evaluation variance small datasets PolitiFact simple baseline': 10 results
+  [openalex/critique] 'rethinking graph-based fake news detection benchmark evaluation pitfalls': 0 results
+  [crossref/critique] 'rethinking graph-based fake news detection benchmark evaluation pitfalls': 10 results
+  [openalex/critique] 'rethinking graph-based fake news detection benchmark simple baseline': 0 results
+  [crossref/critique] 'rethinking graph-based fake news detection benchmark simple baseline': 10 results
+  [openalex/reproducibility] 'UPFD fake news detection reproducibility text-only baseline reproducibility': 0 results
+  [crossref/reproducibility] 'UPFD fake news detection reproducibility text-only baseline reproducibility': 10 results
+  [openalex/reproducibility] 'UPFD fake news detection reproducibility text-only baseline replication': 0 results
+  [crossref/reproducibility] 'UPFD fake news detection reproducibility text-only baseline replication': 10 results
+  [openalex/reproducibility] 'propagation graph versus news content fake news detection ablation pretrained language model reproducibility': 0 results
+  [crossref/reproducibility] 'propagation graph versus news content fake news detection ablation pretrained language model reproducibility': 10 results
+  [openalex/reproducibility] 'propagation graph versus news content fake news detection ablation pretrained language model replication': 0 results
+  [crossref/reproducibility] 'propagation graph versus news content fake news detection ablation pretrained language model replication': 10 results
+  [openalex/reproducibility] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline reproducibility': 0 results
+  [crossref/reproducibility] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline reproducibility': 10 results
+  [openalex/reproducibility] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline replication': 0 results
+  [crossref/reproducibility] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline replication': 10 results
+  [openalex/reproducibility] 'GNN fake news detection evaluation variance small datasets PolitiFact reproducibility': 0 results
+  [crossref/reproducibility] 'GNN fake news detection evaluation variance small datasets PolitiFact reproducibility': 10 results
+  [openalex/reproducibility] 'GNN fake news detection evaluation variance small datasets PolitiFact replication': 0 results
+  [crossref/reproducibility] 'GNN fake news detection evaluation variance small datasets PolitiFact replication': 10 results
+  [openalex/reproducibility] 'rethinking graph-based fake news detection benchmark reproducibility': 0 results
+  [crossref/reproducibility] 'rethinking graph-based fake news detection benchmark reproducibility': 10 results
+  [openalex/reproducibility] 'rethinking graph-based fake news detection benchmark replication': 0 results
+  [crossref/reproducibility] 'rethinking graph-based fake news detection benchmark replication': 10 results
+  [openalex/keyword] 'MLP baseline on the same node features fake news propagation graph': 0 results
+  [arxiv/keyword] 'MLP baseline on the same node features fake news propagation graph': 0 results
+  [crossref/keyword] 'MLP baseline on the same node features fake news propagation graph': 10 results
+  [openalex/keyword] 'randomly rewired edges fake news propagation graph': 0 results
+  [arxiv/keyword] 'randomly rewired edges fake news propagation graph': 0 results
+  [crossref/keyword] 'randomly rewired edges fake news propagation graph': 10 results
+  [openalex/keyword] 'shuffled node features fake news propagation graph': 1 results
+  [arxiv/keyword] 'shuffled node features fake news propagation graph': 1 results
+  [crossref/keyword] 'shuffled node features fake news propagation graph': 10 results
+  [openalex/keyword] 'users shared between training and test fake news propagation graph': 0 results
+  [arxiv/keyword] 'users shared between training and test fake news propagation graph': 0 results
+  [crossref/keyword] 'users shared between training and test fake news propagation graph': 10 results
+  [openalex/negative] 'MLP baseline on the same node features fake news propagation graph revisiting': 0 results
+  [arxiv/negative] 'MLP baseline on the same node features fake news propagation graph revisiting': error rate_limited
+  [crossref/negative] 'MLP baseline on the same node features fake news propagation graph revisiting': 10 results
+  [openalex/negative] 'MLP baseline on the same node features fake news propagation graph does not improve': 0 results
+  [crossref/negative] 'MLP baseline on the same node features fake news propagation graph does not improve': 10 results
+  [openalex/negative] 'randomly rewired edges fake news propagation graph revisiting': 0 results
+  [crossref/negative] 'randomly rewired edges fake news propagation graph revisiting': 10 results
+  [openalex/negative] 'randomly rewired edges fake news propagation graph does not improve': 0 results
+  [crossref/negative] 'randomly rewired edges fake news propagation graph does not improve': 10 results
+  [openalex/negative] 'shuffled node features fake news propagation graph revisiting': 0 results
+  [crossref/negative] 'shuffled node features fake news propagation graph revisiting': 10 results
+  [openalex/negative] 'shuffled node features fake news propagation graph does not improve': 0 results
+  [crossref/negative] 'shuffled node features fake news propagation graph does not improve': 10 results
+  [openalex/negative] 'users shared between training and test fake news propagation graph revisiting': 0 results
+  [crossref/negative] 'users shared between training and test fake news propagation graph revisiting': 10 results
+  [openalex/negative] 'users shared between training and test fake news propagation graph does not improve': 0 results
+  [crossref/negative] 'users shared between training and test fake news propagation graph does not improve': 10 results

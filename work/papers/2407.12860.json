@@ -1,0 +1,44 @@
+{
+  "paper": {
+    "title": "STAGE: Simplified Text-Attributed Graph Embeddings Using Pre-trained LLMs",
+    "authors": [
+      "Aaron Zolnai-Lucas",
+      "Jack Boylan",
+      "Chris Hokamp",
+      "Parsa Ghaffari"
+    ],
+    "year": 2024,
+    "date": "2024",
+    "venue": "Proceedings of the 1st Workshop on Knowledge Graphs and Large Language Models (KaLLM 2024)",
+    "doi": "10.18653/v1/2024.kallm-1.10",
+    "arxiv_id": "2407.12860",
+    "pmid": null,
+    "openalex_id": "W4402683078",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2407.12860",
+    "pdf_url": "https://arxiv.org/pdf/2407.12860v1",
+    "abstract": "We present Simplified Text-Attributed Graph Embeddings (STAGE), a straightforward yet effective method for enhancing node features in Graph Neural Network (GNN) models that encode Text-Attributed Graphs (TAGs). Our approach leverages Large-Language Models (LLMs) to generate embeddings for textual attributes. STAGE achieves competitive results on various node classification benchmarks while also maintaining a simplicity in implementation relative to current state-of-the-art (SoTA) techniques. We show that utilizing pre-trained LLMs as embedding generators provides robust features for ensemble GNN training, enabling pipelines that are simpler than current SoTA approaches which require multiple expensive training and prompting stages. We also implement diffusion-pattern GNNs in an effort to make this pipeline scalable to graphs beyond academic benchmarks.",
+    "citations": 4,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_category": "cs.CL",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

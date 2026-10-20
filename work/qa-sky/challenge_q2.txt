@@ -1,0 +1,141 @@
+  [arxiv/keyword] 'upvoting student questions lecture': 0 results
+  [crossref/keyword] 'upvoting student questions lecture': 10 results
+  [huggingface/keyword] 'upvoting student questions lecture': 10 results
+  [arxiv/keyword] 'question voting audience prioritization': 0 results
+  [crossref/keyword] 'question voting audience prioritization': 10 results
+  [huggingface/keyword] 'question voting audience prioritization': 10 results
+  [arxiv/keyword] 'popular questions upvotes versus frequency': 0 results
+  [crossref/keyword] 'popular questions upvotes versus frequency': 10 results
+  [huggingface/keyword] 'popular questions upvotes versus frequency': 10 results
+  [arxiv/keyword] 'crowd voting questions classroom': 0 results
+  [crossref/keyword] 'crowd voting questions classroom': 10 results
+  [huggingface/keyword] 'crowd voting questions classroom': 10 results
+  [arxiv/keyword] 'Q&A upvotes instructor answer priority': 0 results
+  [crossref/keyword] 'Q&A upvotes instructor answer priority': 10 results
+  [huggingface/keyword] 'Q&A upvotes instructor answer priority': 10 results
+  [arxiv/surveys] 'upvoting student questions lecture survey': 0 results
+  [crossref/surveys] 'upvoting student questions lecture survey': 9 results
+  [huggingface/surveys] 'upvoting student questions lecture survey': 10 results
+  [arxiv/surveys] 'upvoting student questions lecture review': 0 results
+  [crossref/surveys] 'upvoting student questions lecture review': 10 results
+  [huggingface/surveys] 'upvoting student questions lecture review': 10 results
+  [arxiv/surveys] 'question voting audience prioritization survey': 0 results
+  [crossref/surveys] 'question voting audience prioritization survey': 10 results
+  [huggingface/surveys] 'question voting audience prioritization survey': 10 results
+  [arxiv/surveys] 'question voting audience prioritization review': 0 results
+  [crossref/surveys] 'question voting audience prioritization review': 10 results
+  [huggingface/surveys] 'question voting audience prioritization review': 10 results
+  [arxiv/surveys] 'popular questions upvotes versus frequency survey': 0 results
+  [crossref/surveys] 'popular questions upvotes versus frequency survey': 9 results
+  [huggingface/surveys] 'popular questions upvotes versus frequency survey': 10 results
+  [arxiv/surveys] 'popular questions upvotes versus frequency review': 0 results
+  [crossref/surveys] 'popular questions upvotes versus frequency review': 10 results
+  [huggingface/surveys] 'popular questions upvotes versus frequency review': 10 results
+  [arxiv/surveys] 'crowd voting questions classroom survey': 0 results
+  [crossref/surveys] 'crowd voting questions classroom survey': 10 results
+  [huggingface/surveys] 'crowd voting questions classroom survey': 10 results
+  [arxiv/surveys] 'crowd voting questions classroom review': 0 results
+  [crossref/surveys] 'crowd voting questions classroom review': 10 results
+  [huggingface/surveys] 'crowd voting questions classroom review': 10 results
+  [arxiv/surveys] 'Q&A upvotes instructor answer priority survey': 0 results
+  [crossref/surveys] 'Q&A upvotes instructor answer priority survey': 10 results
+  [huggingface/surveys] 'Q&A upvotes instructor answer priority survey': 10 results
+  [arxiv/surveys] 'Q&A upvotes instructor answer priority review': 0 results
+  [crossref/surveys] 'Q&A upvotes instructor answer priority review': 10 results
+  [huggingface/surveys] 'Q&A upvotes instructor answer priority review': 10 results
+  [arxiv/recent] 'upvoting student questions lecture': 0 results
+  [crossref/recent] 'upvoting student questions lecture': 10 results
+  [huggingface/recent] 'upvoting student questions lecture': 10 results
+  [arxiv/recent] 'question voting audience prioritization': 0 results
+  [crossref/recent] 'question voting audience prioritization': 10 results
+  [huggingface/recent] 'question voting audience prioritization': 10 results
+  [arxiv/recent] 'popular questions upvotes versus frequency': 0 results
+  [crossref/recent] 'popular questions upvotes versus frequency': 10 results
+  [huggingface/recent] 'popular questions upvotes versus frequency': 10 results
+  [arxiv/recent] 'crowd voting questions classroom': 0 results
+  [crossref/recent] 'crowd voting questions classroom': 10 results
+  [huggingface/recent] 'crowd voting questions classroom': 10 results
+  [arxiv/recent] 'Q&A upvotes instructor answer priority': 0 results
+  [crossref/recent] 'Q&A upvotes instructor answer priority': 10 results
+  [huggingface/recent] 'Q&A upvotes instructor answer priority': 10 results
+  [arxiv/keyword] 'upvote ranking Comparing questions instructors': 0 results
+  [crossref/keyword] 'upvote ranking Comparing questions instructors': 10 results
+  [huggingface/keyword] 'upvote ranking Comparing questions instructors': 10 results
+  [arxiv/keyword] 'cluster size ranking Comparing questions instructors': 0 results
+  [crossref/keyword] 'cluster size ranking Comparing questions instructors': 10 results
+  [huggingface/keyword] 'cluster size ranking Comparing questions instructors': 10 results
+  [arxiv/keyword] 'instructor priority judgement Comparing questions instructors': 0 results
+  [crossref/keyword] 'instructor priority judgement Comparing questions instructors': 10 results
+  [huggingface/keyword] 'instructor priority judgement Comparing questions instructors': 10 results
+Claim: Comparing upvote counts with semantic cluster size as signals for which student questions instructors should answer first
+Queries tried: 5 | papers examined: 306 | high wording overlap: 0 {} | title-only records: 120
+Sources ok: arxiv, crossref, huggingface | failed: none
+Query diversity: 17 distinct terms, mean pairwise overlap 0.111
+Citation expansion: 48 paper(s) found only via citations | 2 expansion error(s)
+Design elements checked: 3 | papers matching 2+ elements: 0
+
+SIGNAL: no_close_match_in_this_search
+Highest novelty confidence this search can support: low
+  ceiling limited: citation expansion partly failed (2 call(s): not_found)
+No closely worded paper was retrieved, but only 2 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.
+CAVEAT: Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.
+
+Closest retrieved work (read these before keeping the idea):
+  1. Event-Aligned Learning Analytics for Instructor Priority Review: Preceding Performance Signals and Task-Progr…
+     Zuo 2026 | venue n/a | cited 0 | doi:10.21203/rs.3.rs-10823614/v1 | via crossref | overlap 0.385 tfidf 0.146 | survey-like | design: instructor priority judgement
+  2. Comparing completely and stratified randomized designs in cluster randomized trials when the stratifying fact…
+     Lewsey 2004 | Statistics in Medicine | cited 19 | doi:10.1002/sim.1665 | via crossref | overlap 0.24 tfidf 0.131 | design: cluster size ranking
+  3. Sample size considerations for stratified cluster randomization design with binary outcomes and varying clust…
+     Xu et al. 2019 | Statistics in Medicine | cited 9 | doi:10.1002/sim.8175 OA | via semantic_scholar | overlap 0.24 tfidf 0.12 | via citations only | design: cluster size ranking
+  4. Covariate balance in simple stratified and clustered comparative studies
+     Hansen et al. 2008 | venue n/a | cited 462 | arXiv:0808.3857 OA | via semantic_scholar | overlap 0.25 tfidf 0.096 | via citations only | design: cluster size ranking
+  5. Randomization methods and cluster size in cluster randomized trials conducted in elementary and high schools
+     ? 2021 | Vojnosanitetski pregled | cited ? | no-id | via semantic_scholar | overlap 0.145 tfidf 0.176 | NO ABSTRACT (title match only) | via citations only | design: cluster size ranking
+  6. Power analysis for stratified cluster randomisation trials with cluster size being the stratifying factor
+     Wang et al. 2017 | venue n/a | cited 8 | doi:10.1080/24754269.2017.1347309 OA | via semantic_scholar | overlap 0.145 tfidf 0.163 | NO ABSTRACT (title match only) | via citations only | design: cluster size ranking
+  7. Sample size calculations for cluster randomised trials, with a focus on ordinal outcomes.
+     Robinson 2016 | venue n/a | cited 1 | https://www.semanticscholar.org/paper/52ecac6de4c9052dea33b55efa9f6992aa2aaf6c | via semantic_scholar | overlap 0.145 tfidf 0.131 | NO ABSTRACT (title match only) | via citations only | design: cluster size ranking
+  8. Capturing LLM Capabilities via Evidence-Calibrated Query Clustering
+     Wu et al. 2026 | arXiv | cited ? | arXiv:2605.17110 OA | via huggingface | overlap 0.164 tfidf 0.076 | design: cluster size ranking
+  9. The Benefits of Probability-Proportional-to-Size Sampling in Cluster-Randomized Experiments
+     Xiong et al. 2020 | venue n/a | cited 2 | arXiv:2002.08009 | via semantic_scholar | overlap 0.145 tfidf 0.083 | via citations only | design: cluster size ranking
+ 10. Model‐Robust Standardization in Cluster‐Randomized Trials
+     Li et al. 2025 | Statistics in Medicine | cited 12 | arXiv:2505.19336 OA | via semantic_scholar | overlap 0.145 tfidf 0.075 | via citations only | design: cluster size ranking
+ 11. Enhancing student-instructor interaction in online learning environments through a doubt management system wi…
+     Moganapriya et al. 2026 | AIP Conference Proceedings PROCEEDINGS … | cited 0 | doi:10.1063/5.0298850 | via crossref | overlap 0.12 tfidf 0.086 | NO ABSTRACT (title match only) | design: instructor priority judgement
+ 12. Questioning the Survey Responses of Large Language Models
+     Dominguez-Olmedo et al. 2023 | arXiv | cited ? | arXiv:2306.07951 OA | via huggingface | overlap 0.316 tfidf 0.113 | survey-like
+ 13. Figure 6: Ranking of attributes in cluster label classification.
+     ? n.d. | venue n/a | cited 0 | doi:10.7717/peerj-cs.2019/fig-6 | via crossref | overlap 0.074 tfidf 0.08 | NO ABSTRACT (title match only) | design: cluster size ranking
+ 14. Large Language Models Struggle to Learn Long-Tail Knowledge
+     Kandpal et al. 2022 | arXiv | cited ? | arXiv:2211.08411 OA | via huggingface | overlap 0.264 tfidf 0.112
+ 15. Dialogue Response Ranking Training with Large-Scale Human Feedback Data
+     Gao et al. 2020 | arXiv | cited ? | arXiv:2009.06978 OA | via huggingface | overlap 0.092 tfidf 0.025 | design: upvote ranking
+ 16. Student Perceptions of Instructors Comparing a Low Mediated Immediacy Syllabus to a High Mediated Immediacy S…
+     Kamps n.d. | venue n/a | cited 0 | doi:10.30707/etd2022.20221020070312296104.999984 | via crossref | overlap 0.215 tfidf 0.14 | NO ABSTRACT (title match only)
+ 17. When Evidence Conflicts: Reliability-aware Meta-review Generation
+     Wang et al. 2026 | arXiv | cited ? | arXiv:2609.24028 OA | via huggingface | overlap 0.265 tfidf 0.076 | survey-like
+ 18. Is foreknowledge necessary for CPR-instructors? A randomised controlled trial comparing three different instr…
+     Cuijpers et al. 2010 | Resuscitation | cited 0 | doi:10.1016/j.resuscitation.2010.09.135 | via crossref | overlap 0.162 tfidf 0.171 | NO ABSTRACT (title match only)
+ 19. Student questions
+     Cody n.d. | venue n/a | cited 0 | doi:10.31979/etd.ue8v-5xme | via crossref | overlap 0.075 tfidf 0.236 | NO ABSTRACT (title match only)
+ 20. The social optics of monetized UGC contests: Reward size influences peer upvotes
+     Gupta et al. 2026 | Advancing Consumer Psychology | cited 0 | doi:10.4337/9781035359684.00016 | via crossref | overlap 0.164 tfidf 0.144 | NO ABSTRACT (title match only)
+
+Must read before deciding (full text where accessible):
+  1. Event-Aligned Learning Analytics for Instructor Priority Review: Preceding Performance Signals and … (2026) | term overlap 0.385, design elements: instructor priority judgement, survey-like
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  2. Comparing completely and stratified randomized designs in cluster randomized trials when the strati… (2004) | term overlap 0.24, design elements: cluster size ranking
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  3. Sample size considerations for stratified cluster randomization design with binary outcomes and var… (2019) | term overlap 0.24, design elements: cluster size ranking, found only through the citation graph
+     next: read the open-access PDF
+  4. Covariate balance in simple stratified and clustered comparative studies (2008) | term overlap 0.25, design elements: cluster size ranking, found only through the citation graph
+     next: fulltext --id 0808.3857
+  5. Randomization methods and cluster size in cluster randomized trials conducted in elementary and hig… (2021) | term overlap 0.145, design elements: cluster size ranking, found only through the citation graph, no abstract retrieved
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  6. Power analysis for stratified cluster randomisation trials with cluster size being the stratifying … (2017) | term overlap 0.145, design elements: cluster size ranking, found only through the citation graph, no abstract retrieved
+     next: read the open-access PDF
+  7. Sample size calculations for cluster randomised trials, with a focus on ordinal outcomes. (2016) | term overlap 0.145, design elements: cluster size ranking, found only through the citation graph, no abstract retrieved
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+
+Full JSON written to work\qa-sky\challenge_q2.json

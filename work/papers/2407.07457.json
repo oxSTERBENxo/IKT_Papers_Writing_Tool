@@ -1,0 +1,42 @@
+{
+  "paper": {
+    "title": "GLBench: A Comprehensive Benchmark for Graph with Large Language Models",
+    "authors": [
+      "Yuhan Li",
+      "Peisong Wang",
+      "Xiao Zhu",
+      "Aochuan Chen",
+      "Haiyun Jiang",
+      "Deng Cai",
+      "Victor Wai Kin Chan",
+      "Jia Li"
+    ],
+    "year": 2024,
+    "date": "2024",
+    "venue": "Advances in Neural Information Processing Systems 37",
+    "doi": "10.52202/079017-1340",
+    "arxiv_id": "2407.07457",
+    "pmid": null,
+    "openalex_id": "W4415798076",
+    "s2_id": "918a6de8979fe0550cb7e986410419030928efd7",
+    "url": "https://arxiv.org/abs/2407.07457",
+    "pdf_url": "https://arxiv.org/pdf/2407.07457v4",
+    "abstract": "The emergence of large language models (LLMs) has revolutionized the way we interact with graphs, leading to a new paradigm called GraphLLM. Despite the rapid development of GraphLLM methods in recent years, the progress and understanding of this field remain unclear due to the lack of a benchmark with consistent experimental protocols. To bridge this gap, we introduce GLBench, the first comprehensive benchmark for evaluating GraphLLM methods in both supervised and zero-shot scenarios. GLBench provides a fair and thorough evaluation of different categories of GraphLLM methods, along with traditional baselines such as graph neural networks. Through extensive experiments on a collection of real-world datasets with consistent data processing and splitting strategies, we have uncovered several key findings. Firstly, GraphLLM methods outperform traditional baselines in supervised settings, with LLM-as-enhancers showing the most robust performance. However, using LLMs as predictors is less effective and often leads to uncontrollable output issues. We also notice that no clear scaling laws exist for current GraphLLM methods. In addition, both structures and semantics are crucial for effective zero-shot transfer, and our proposed simple baseline can even outperform several models tailored for zero-shot scenarios. The data and code of the benchmark can be found at https://github.com/NineAbyss/GLBench.",
+    "citations": 54,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": []
+}

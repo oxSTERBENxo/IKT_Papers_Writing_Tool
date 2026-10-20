@@ -1,0 +1,30 @@
+{
+  "id": "textgcn-vs-mlp",
+  "split": "heldout",
+  "claim": "Testing whether graph neural networks over word-document graphs beat a strong bag-of-words MLP for document classification",
+  "queries": [
+    "text graph convolutional network document classification strong baseline",
+    "is a graph necessary for text classification",
+    "word document graph versus multilayer perceptron",
+    "inductive text classification graph neural network comparison"
+  ],
+  "anchor": "text classification",
+  "design": [
+    "bag-of-words MLP baseline",
+    "inductive versus transductive setting",
+    "same benchmark datasets"
+  ],
+  "seeds": [
+    "1809.05679"
+  ],
+  "known_relevant": [
+    {
+      "title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+      "arxiv_id": "2109.03777",
+      "doi": "10.18653/v1/2022.acl-long.279",
+      "year": 2022,
+      "why": "BoW MLP vs text graphs"
+    }
+  ],
+  "provenance": "No recorded challenge: claim and queries written for this evaluation by an author who knew the answer."
+}

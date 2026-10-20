@@ -1,0 +1,46 @@
+{
+  "paper": {
+    "title": "PREDICTING CVE EXPLOITATION BASED ON NVD AND KEV OPEN DATA FOR RISK-ORIENTED PRIORITIZATION",
+    "authors": [
+      "Vladyslav Denysiuk"
+    ],
+    "year": 2025,
+    "date": "2025-01-01",
+    "venue": "Cybersecurity Education Science Technique",
+    "doi": "10.28925/2663-4023.2025.30.906",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W4416688046",
+    "s2_id": "e6fdf8ec8822bb8aa0b1b8e554dbedaa071a4b4d",
+    "url": "https://doi.org/10.28925/2663-4023.2025.30.906",
+    "pdf_url": "https://csecurity.kubg.edu.ua/index.php/journal/article/download/906/817",
+    "abstract": "With the increasing number of publicly disclosed software vulnerabilities, security teams are increasingly challenged to identify key issues that require urgent remediation. While systems such as the Common Vulnerability Scoring System (CVSS) provide severity ratings, they do not indicate whether a vulnerability will be exploited in practice. The study proposes a machine learning-based approach to predict exploitable vulnerabilities using structured public data from the National Vulnerability Database (NVD) and the CISA-maintained Catalog of Known Functional Vulnerabilities (KEV). A labeled dataset of over 300,000 CVEs is generated, where randomly exploited ones are identified by KEV. The extracted features include CVSS vectors, CWE identifiers, vendor/product metadata, and time characteristics. Due to the extreme class imbalance (exploited CVEs are ~0.45%), an oversampling method and decision threshold tuning are used. Logistic regression trained in ML.NET is used to build interpretable models; it learns meaningful patterns that distinguish between exposed vulnerabilities. The threshold spectrum scoring demonstrates high completeness and increasing accuracy, offering a transparent and reproducible tool for prioritization. Additionally, the limitation associated with incomplete KEV as a “source of truth” is addressed and directions for improvement are directed: integration of NLP-embedding of CVE descriptions, probability calibration, and time-based validation to prevent data leakage. This approach increases the risk-based nature of cybersecurity decisions and can be otherwise integrated into vulnerability management processes in organizations of various scales.",
+    "citations": 0,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "article",
+    "sources": [
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W1966716734",
+        "W2098824882",
+        "W2108246235",
+        "W2118545728",
+        "W2148143831",
+        "W3091997330",
+        "W3203411727",
+        "W4232919069",
+        "W4353056549",
+        "W4403927146",
+        "W4407518214"
+      ],
+      "abstract_source": "crossref"
+    }
+  },
+  "notes": []
+}

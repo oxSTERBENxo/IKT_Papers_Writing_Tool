@@ -1,0 +1,51 @@
+[
+  {
+    "source": "huggingface",
+    "id": "tomaarsen/setfit-absa-semeval-laptops",
+    "url": "https://huggingface.co/datasets/tomaarsen/setfit-absa-semeval-laptops",
+    "name": "tomaarsen/setfit-absa-semeval-laptops",
+    "license": null,
+    "gated": false,
+    "private": false,
+    "disabled": false,
+    "downloads": 198,
+    "likes": 2,
+    "last_modified": "2023-11-16T10:38:19.000Z",
+    "tasks": [],
+    "languages": [],
+    "modalities": [
+      "text"
+    ],
+    "formats": [
+      "parquet"
+    ],
+    "size_category": "1K<n<10K",
+    "arxiv_ids": [],
+    "configs": [],
+    "ref": "tomaarsen/setfit-absa-semeval-laptops",
+    "exists": true,
+    "missing": [
+      "license"
+    ],
+    "blockers": [],
+    "notes": [
+      "Licence is missing or 'other': read the dataset card before using or redistributing."
+    ],
+    "num_rows": 3012,
+    "download_bytes": 146971,
+    "in_memory_bytes": 408100,
+    "splits": [
+      {
+        "config": "default",
+        "split": "train",
+        "num_rows": 2358
+      },
+      {
+        "config": "default",
+        "split": "test",
+        "num_rows": 654
+      }
+    ],
+    "storage_estimate": "about 143.5 KB to download, 398.5 KB in memory (dataset viewer figures)"
+  }
+]

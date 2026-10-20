@@ -1,0 +1,60 @@
+{
+  "id": "absa-syntax-gcn",
+  "split": "dev",
+  "claim": "A controlled multi-seed comparison showing whether dependency-tree graph convolutional networks still improve aspect-based sentiment classification over a plain fine-tuned modern pretrained encoder (RoBERTa/DeBERTa) when the encoder is held fixed",
+  "queries": [
+    "does syntax matter aspect-based sentiment analysis pretrained language model",
+    "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa",
+    "syntactic information unnecessary aspect sentiment classification strong baseline",
+    "reproducibility aspect-based sentiment graph neural network variance seeds",
+    "induced trees versus parser trees aspect sentiment DeBERTa"
+  ],
+  "anchor": "aspect sentiment",
+  "design": [
+    "same pretrained encoder with and without dependency tree",
+    "model selection on a validation set",
+    "multiple random seeds",
+    "parser trees versus induced trees"
+  ],
+  "seeds": [
+    "1909.03477"
+  ],
+  "known_relevant": [
+    {
+      "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+      "arxiv_id": "2104.04986",
+      "doi": "10.18653/v1/2021.naacl-main.146",
+      "year": 2021,
+      "why": "same experiment with RoBERTa"
+    },
+    {
+      "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+      "arxiv_id": "2008.09084",
+      "doi": null,
+      "year": 2020,
+      "why": "same with/without-syntax design on information extraction"
+    },
+    {
+      "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+      "arxiv_id": "2101.09449",
+      "doi": "10.1007/978-3-030-72240-1_7",
+      "year": 2021,
+      "why": "ABSA reproducibility and test-set selection"
+    },
+    {
+      "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-031-26390-3_31",
+      "year": 2023,
+      "why": "ABSA reproducibility with uncertainty"
+    },
+    {
+      "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+      "arxiv_id": "2110.00171",
+      "doi": "10.18653/v1/2021.emnlp-main.724",
+      "year": 2021,
+      "why": "dependency-graph ablation on BERT"
+    }
+  ],
+  "provenance": "Claim and queries copied from the challenge run of the first opportunity report (work/challenge_absa.json), written before the known papers were found. Design elements, anchor and seeds were added later by an author who knew the answers; they are generic but not blind."
+}

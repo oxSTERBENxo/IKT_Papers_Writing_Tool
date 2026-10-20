@@ -1,0 +1,30 @@
+{
+  "id": "gnn-rag-small-reader",
+  "split": "heldout",
+  "claim": "Quantifying how often GNN-based knowledge graph retrieval for question answering fails because the retrieved subgraph lacks the answer entity, and how a frozen small LLM reader degrades on those questions",
+  "queries": [
+    "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering",
+    "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP",
+    "error analysis entity linking subgraph retrieval KGQA large language model",
+    "graph neural network retriever small language model knowledge base question answering"
+  ],
+  "anchor": "knowledge graph question answering",
+  "design": [
+    "small language model reader",
+    "retrieved subgraph missing the answer",
+    "WebQSP and CWQ evaluation"
+  ],
+  "seeds": [
+    "2405.20139"
+  ],
+  "known_relevant": [
+    {
+      "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+      "arxiv_id": "2601.19225",
+      "doi": null,
+      "year": 2026,
+      "why": "KG-RAG aimed at LLMs under 7B"
+    }
+  ],
+  "provenance": "Claim and queries copied from the challenge run of the first opportunity report (work/challenge_gnnrag.json), written before the known papers were found. Design elements, anchor and seeds were added later by an author who knew the answers; they are generic but not blind."
+}

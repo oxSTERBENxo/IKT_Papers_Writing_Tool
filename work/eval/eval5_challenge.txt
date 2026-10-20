@@ -1,0 +1,96 @@
+Claim: Test whether user-engagement propagation graphs add predictive value over news features alone for GNN fake news detection on the UPFD benchmark
+Queries tried: 4 | papers examined: 384 | high wording overlap: 0 {} | title-only records: 109
+Sources ok: openalex, arxiv, crossref, huggingface | failed: semantic_scholar
+Query diversity: 23 distinct terms, mean pairwise overlap 0.147
+Citation expansion: 194 paper(s) found only via citations | seeds: User Preference-aware Fake News Detection
+Design elements checked: 4 | papers matching 2+ elements: 20
+
+SIGNAL: close_prior_work_found
+Highest novelty confidence this search can support: low
+  ceiling limited: sources failed: semantic_scholar
+Prior work close to the idea exists; 20 paper(s) mention 2+ of the stated design elements, so the same experiment may have been run under different words. Read them in full. Revise the idea to differ in a stated, checkable way, or reframe it as a replication or extension.
+CAVEAT: Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.
+
+Closest retrieved work (read these before keeping the idea):
+  1. The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News
+     Isha et al. 2025 | arXiv (Cornell University) | cited 0 | arXiv:2512.06638 OA | via arxiv,openalex | overlap 0.326 tfidf 0.129 | design: MLP baseline on the same node features; shuffled node features; removing all edges from the propagation graph
+  2. GNN-FiLM: Graph Neural Networks with Feature-wise Linear Modulation
+     Brockschmidt 2020 | arXiv | cited ? | arXiv:1906.12192 OA | via huggingface | overlap 0.091 tfidf 0.055 | design: MLP baseline on the same node features; shuffled node features; removing all edges from the propagation graph
+  3. Leveraging Graph Neural Networks for Social Media Fake News Detection
+     Durgadevi et al. 2025 | 2025 3rd International Conference on Cy… | cited 0 | doi:10.1109/iccr67387.2025.11292087 | via crossref,openalex | overlap 0.249 tfidf 0.105 | design: shuffled node features; removing all edges from the propagation graph
+  4. A Heterogeneous Graph Neural Networks for Social Network Analysis and Fake News Detection
+     Venkata et al. 2025 | 2025 3rd International Conference on Da… | cited 0 | doi:10.1109/icdsis65355.2025.11071234 | via crossref,openalex | overlap 0.206 tfidf 0.098 | design: shuffled node features; removing all edges from the propagation graph
+  5. Graph global attention network with memory: A deep learning approach for fake news detection
+     Chang et al. 2024 | Neural Networks | cited 46 | doi:10.1016/j.neunet.2024.106115 | via crossref,openalex,semantic_scholar | overlap 0.205 tfidf 0.094 | design: shuffled node features; removing all edges from the propagation graph
+  6. TRAVELFRAUDBENCH: A Configurable Evaluation Framework for GNN Fraud Ring Detection in Travel Networks
+     Sajja 2026 | arXiv | cited ? | arXiv:2604.21093 OA | via huggingface | overlap 0.233 tfidf 0.055 | design: MLP baseline on the same node features; removing all edges from the propagation graph
+  7. HG-SL: Jointly Learning of Global and Local User Spreading Behavior for Fake News Early Detection
+     Sun et al. 2023 | Proceedings of the AAAI Conference on A… | cited 30 | doi:10.1609/aaai.v37i4.25655 OA | via openalex | overlap 0.19 tfidf 0.096 | via citations only | design: MLP baseline on the same node features; shuffled node features
+  8. Graph Contrastive Learning With Feature Augmentation for Rumor Detection
+     Li et al. 2023 | IEEE Transactions on Computational Soci… | cited 40 | doi:10.1109/tcss.2023.3269303 | via openalex | overlap 0.18 tfidf 0.072 | via citations only | design: MLP baseline on the same node features; shuffled node features
+  9. Benchmark validity in graph neural network scoring of metabolic reaction activity on Recon3D: detecting label…
+     Phongwattana et al. 2026 | venue n/a | cited 0 | doi:10.64898/2026.09.02.748315 | via crossref | overlap 0.198 tfidf 0.039 | survey-like | design: MLP baseline on the same node features; removing all edges from the propagation graph
+ 10. Tracking evolving communities in fake news cascades using temporal graphs
+     Ma et al. 2026 | Scientific Reports | cited 4 | doi:10.1038/s41598-026-35175-4 OA | via openalex | overlap 0.141 tfidf 0.047 | design: MLP baseline on the same node features; shuffled node features
+ 11. Long Range Graph Benchmark
+     Dwivedi et al. 2022 | arXiv | cited ? | arXiv:2206.08164 OA | via huggingface | overlap 0.134 tfidf 0.054 | survey-like | design: MLP baseline on the same node features; shuffled node features
+ 12. InfGraND: An Influence-Guided GNN-to-MLP Knowledge Distillation
+     Eskandari et al. 2026 | arXiv | cited ? | arXiv:2601.08033 OA | via huggingface | overlap 0.134 tfidf 0.043 | design: MLP baseline on the same node features; shuffled node features
+ 13. Mixture of Weak & Strong Experts on Graphs
+     Zeng et al. 2023 | arXiv | cited ? | arXiv:2311.05185 OA | via huggingface | overlap 0.134 tfidf 0.043 | design: MLP baseline on the same node features; shuffled node features
+ 14. DECOR: Degree-Corrected Social Graph Refinement for Fake News Detection
+     Wu et al. 2023 | ACM SIGKDD Conference on Knowledge Disc… | cited 50 | arXiv:2307.00077 OA | via openalex,semantic_scholar | overlap 0.299 tfidf 0.116 | via citations only | design: shuffled node features
+ 15. Structure Learning Via Meta-Hyperedge for Dynamic Rumor Detection
+     Sun et al. 2022 | IEEE Transactions on Knowledge and Data… | cited 43 | doi:10.1109/tkde.2022.3221438 | via openalex | overlap 0.112 tfidf 0.042 | via citations only | design: MLP baseline on the same node features; shuffled node features
+ 16. EDoG: Adversarial Edge Detection For Graph Neural Networks
+     Xu et al. 2022 | arXiv | cited ? | arXiv:2212.13607 OA | via huggingface | overlap 0.111 tfidf 0.037 | design: MLP baseline on the same node features; shuffled node features
+ 17. Tackling Fake News Detection by Continually Improving Social Context Representations using Graph Neural Netwo…
+     Mehta et al. 2022 | Proceedings of the 60th Annual Meeting … | cited 52 | doi:10.18653/v1/2022.acl-long.97 OA | via crossref,openalex | overlap 0.268 tfidf 0.127 | design: removing all edges from the propagation graph
+ 18. Noise-Filtering Enhanced Graph Transformer for Robust Fake News Detection
+     Zhu et al. 2026 | IEEE Transactions on Knowledge and Data… | cited 4 | doi:10.1109/tkde.2026.3677544 | via openalex | overlap 0.259 tfidf 0.118 | via citations only | design: removing all edges from the propagation graph
+ 19. Inductive Representation Learning on Large Graphs
+     Hamilton et al. 2017 | arXiv (Cornell University) | cited 21608 | arXiv:1706.02216 OA | via openalex,semantic_scholar | overlap 0.09 tfidf 0.033 | via citations only | design: MLP baseline on the same node features; shuffled node features
+ 20. NetInfoF Framework: Measuring and Exploiting Network Usable Information
+     Lee et al. 2024 | arXiv | cited ? | arXiv:2402.07999 OA | via huggingface | overlap 0.091 tfidf 0.03 | design: MLP baseline on the same node features; shuffled node features
+
+Possibly the same experiment under other wording (read in full):
+  1. The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News
+     Isha et al. 2025 | arXiv (Cornell University) | cited 0 | arXiv:2512.06638 OA | via arxiv,openalex | design: MLP baseline on the same node features; shuffled node features; removing all edges from the propagation graph
+  2. GNN-FiLM: Graph Neural Networks with Feature-wise Linear Modulation
+     Brockschmidt 2020 | arXiv | cited ? | arXiv:1906.12192 OA | via huggingface | design: MLP baseline on the same node features; shuffled node features; removing all edges from the propagation graph
+  3. Leveraging Graph Neural Networks for Social Media Fake News Detection
+     Durgadevi et al. 2025 | 2025 3rd International Conference on Cy… | cited 0 | doi:10.1109/iccr67387.2025.11292087 | via crossref,openalex | design: shuffled node features; removing all edges from the propagation graph
+  4. A Heterogeneous Graph Neural Networks for Social Network Analysis and Fake News Detection
+     Venkata et al. 2025 | 2025 3rd International Conference on Da… | cited 0 | doi:10.1109/icdsis65355.2025.11071234 | via crossref,openalex | design: shuffled node features; removing all edges from the propagation graph
+  5. Graph global attention network with memory: A deep learning approach for fake news detection
+     Chang et al. 2024 | Neural Networks | cited 46 | doi:10.1016/j.neunet.2024.106115 | via crossref,openalex,semantic_scholar | design: shuffled node features; removing all edges from the propagation graph
+  6. TRAVELFRAUDBENCH: A Configurable Evaluation Framework for GNN Fraud Ring Detection in Travel Networks
+     Sajja 2026 | arXiv | cited ? | arXiv:2604.21093 OA | via huggingface | design: MLP baseline on the same node features; removing all edges from the propagation graph
+  7. HG-SL: Jointly Learning of Global and Local User Spreading Behavior for Fake News Early Detection
+     Sun et al. 2023 | Proceedings of the AAAI Conference on A… | cited 30 | doi:10.1609/aaai.v37i4.25655 OA | via openalex | design: MLP baseline on the same node features; shuffled node features
+  8. Graph Contrastive Learning With Feature Augmentation for Rumor Detection
+     Li et al. 2023 | IEEE Transactions on Computational Soci… | cited 40 | doi:10.1109/tcss.2023.3269303 | via openalex | design: MLP baseline on the same node features; shuffled node features
+
+Must read before deciding (full text where accessible):
+  1. The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News (2025) | term overlap 0.326, design elements: MLP baseline on the same node features; shuffled node features; removing all edges from the propagation graph
+     next: fulltext --id 2512.06638
+  2. GNN-FiLM: Graph Neural Networks with Feature-wise Linear Modulation (2020) | term overlap 0.091, design elements: MLP baseline on the same node features; shuffled node features; removing all edges from the propagation graph
+     next: fulltext --id 1906.12192
+  3. Leveraging Graph Neural Networks for Social Media Fake News Detection (2025) | term overlap 0.249, design elements: shuffled node features; removing all edges from the propagation graph
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  4. A Heterogeneous Graph Neural Networks for Social Network Analysis and Fake News Detection (2025) | term overlap 0.206, design elements: shuffled node features; removing all edges from the propagation graph
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  5. Graph global attention network with memory: A deep learning approach for fake news detection (2024) | term overlap 0.205, design elements: shuffled node features; removing all edges from the propagation graph
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  6. HG-SL: Jointly Learning of Global and Local User Spreading Behavior for Fake News Early Detection (2023) | term overlap 0.19, design elements: MLP baseline on the same node features; shuffled node features, found only through the citation graph
+     next: read the open-access PDF
+  7. Graph Contrastive Learning With Feature Augmentation for Rumor Detection (2023) | term overlap 0.18, design elements: MLP baseline on the same node features; shuffled node features, found only through the citation graph
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  8. DECOR: Degree-Corrected Social Graph Refinement for Fake News Detection (2023) | term overlap 0.299, design elements: shuffled node features, found only through the citation graph
+     next: fulltext --id 2307.00077
+  9. Structure Learning Via Meta-Hyperedge for Dynamic Rumor Detection (2022) | term overlap 0.112, design elements: MLP baseline on the same node features; shuffled node features, found only through the citation graph
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  10. Noise-Filtering Enhanced Graph Transformer for Robust Fake News Detection (2026) | term overlap 0.259, design elements: removing all edges from the propagation graph, found only through the citation graph
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+
+Full JSON written to work\eval\eval5_challenge.json

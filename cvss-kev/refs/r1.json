@@ -1,0 +1,82 @@
+{
+  "paper": {
+    "title": "Comparing Vulnerability Severity and Exploits Using Case-Control Studies",
+    "authors": [
+      "Luca Allodi",
+      "Fabio Massacci"
+    ],
+    "year": 2014,
+    "date": "2014-08-01",
+    "venue": "ACM Transactions on Information and System Security",
+    "doi": "10.1145/2630069",
+    "arxiv_id": "1301.1275",
+    "pmid": null,
+    "openalex_id": "W150078352",
+    "s2_id": "7b70adb0bb71e04e5fc64f5989359fd7ad4baeb5",
+    "url": "https://doi.org/10.1145/2630069",
+    "pdf_url": "https://arxiv.org/pdf/1301.1275",
+    "abstract": "(U.S.) Rule-based policies for mitigating software risk suggest using the CVSS score to measure the risk of an individual vulnerability and act accordingly. A key issue is whether the ‘danger’ score does actually match the risk of exploitation in the wild, and if and how such a score could be improved. To address this question, we propose using a case-control study methodology similar to the procedure used to link lung cancer and smoking in the 1950s. A case-control study allows the researcher to draw conclusions on the relation between some risk factor (e.g., smoking) and an effect (e.g., cancer) by looking backward at the cases (e.g., patients) and comparing them with controls (e.g., randomly selected patients with similar characteristics). The methodology allows us to quantify the risk reduction achievable by acting on the risk factor. We illustrate the methodology by using publicly available data on vulnerabilities, exploits, and exploits in the wild to (1) evaluate the performances of the current risk factor in the industry, the CVSS base score; (2) determine whether it can be improved by considering additional factors such the existence of a proof-of-concept exploit, or of an exploit in the black markets. Our analysis reveals that (a) fixing a vulnerability just because it was assigned a high CVSS score is equivalent to randomly picking vulnerabilities to fix; (b) the existence of proof-of-concept exploits is a significantly better risk factor; (c) fixing in response to exploit presence in black markets yields the largest risk reduction.",
+    "citations": 218,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "article",
+    "sources": [
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W61482965",
+        "W619991674",
+        "W1508191694",
+        "W1564172793",
+        "W1788061570",
+        "W1869362176",
+        "W1967824749",
+        "W1971733255",
+        "W1973375765",
+        "W1982950099",
+        "W1985324839",
+        "W1997236144",
+        "W1998637589",
+        "W2004584049",
+        "W2011514693",
+        "W2082180526",
+        "W2094321195",
+        "W2108246235",
+        "W2112770261",
+        "W2129586531",
+        "W2135599336",
+        "W2136151078",
+        "W2137549954",
+        "W2148156428",
+        "W2149764216",
+        "W2166336492",
+        "W2166884436",
+        "W2168234580",
+        "W2212262519",
+        "W2296488620",
+        "W2582743722",
+        "W2620244897",
+        "W2735150897",
+        "W4285719527"
+      ],
+      "related_works": [
+        "W17155033",
+        "W3207760230",
+        "W1496222301",
+        "W4312814274",
+        "W1590307681",
+        "W2536018345",
+        "W2906845177",
+        "W4200107511",
+        "W2891427086",
+        "W1968625315"
+      ],
+      "abstract_source": "crossref"
+    }
+  },
+  "notes": []
+}

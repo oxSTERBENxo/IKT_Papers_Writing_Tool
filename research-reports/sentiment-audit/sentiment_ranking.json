@@ -1,0 +1,629 @@
+{
+  "constraints": {
+    "time_budget_weeks": 8,
+    "gpu_vram_gb": 8,
+    "gpu_hours_budget": 60,
+    "storage_gb": 50
+  },
+  "weights": {
+    "scientific_relevance": 12,
+    "novelty_or_replication_value": 12,
+    "paper_and_code_availability": 10,
+    "dataset_accessibility": 12,
+    "compute_fit": 12,
+    "implementation_simplicity": 10,
+    "time_fit": 10,
+    "reproducibility": 8,
+    "evaluation_clarity": 7,
+    "low_failure_risk": 7
+  },
+  "method": "Each criterion is scored 0-5 with evidence. score_percent is the weighted share earned on scored criteria only; score_range shows the total if unscored criteria were 0 or 5. Any blocker removes a candidate from the ranking no matter how high its other scores are. Novelty is capped at 2 unless the closest prior work was read in full, and at 1 when that work already ran the experiment.",
+  "ranking": [
+    {
+      "id": "D1",
+      "title": "D1 replication: protocol-corrected re-test",
+      "mode": "replication",
+      "status": "viable",
+      "blockers": [],
+      "score_percent": 71.8,
+      "score_range": [
+        71.8,
+        71.8
+      ],
+      "scored_weight_percent": 100.0,
+      "verified_weight_percent": 61.0,
+      "unscored_criteria": [],
+      "missing_information": [
+        "dataset_accessibility: No licence"
+      ],
+      "caps_applied": [],
+      "estimates": {
+        "weeks": 4,
+        "min_vram_gb": 8,
+        "gpu_hours": 25,
+        "storage_gb": 10
+      },
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 9.6,
+          "evidence": [
+            "Null result is cited as settled; claims of gains continue [@li2024sebert]"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": 9.6,
+          "evidence": [
+            "Single-table, test-selected result that many papers rely on [@dai2021syntax]"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 6.0,
+          "evidence": [
+            "Papers open; tree-head code GloVe-only, pinned to 2020 libraries"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": 7.2,
+          "evidence": [
+            "Shipped splits with parses; counts match the paper"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "No licence"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": 9.6,
+          "evidence": [
+            "Base encoders, ~3.6k training aspects"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": 6.0,
+          "evidence": [
+            "Reimplement heads on current transformers"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": 8.0,
+          "evidence": [
+            "About 4 weeks"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": 2,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": 3.2,
+          "evidence": [
+            "Test-set selection, few runs, missing RoBERTa+tree code"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": 4,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": 5.6,
+          "evidence": [
+            "Standard metrics, published numbers to compare"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": 5,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": 7.0,
+          "evidence": [
+            "Either outcome reportable"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "id": "D3",
+      "title": "D3 novel: frozen vs fine-tuned encoder",
+      "mode": "original",
+      "status": "viable",
+      "blockers": [],
+      "score_percent": 68.2,
+      "score_range": [
+        68.2,
+        68.2
+      ],
+      "scored_weight_percent": 100.0,
+      "verified_weight_percent": 30.0,
+      "unscored_criteria": [],
+      "missing_information": [
+        "novelty_or_replication_value: Probing literature unsearched",
+        "dataset_accessibility: No licence"
+      ],
+      "caps_applied": [],
+      "estimates": {
+        "weeks": 4,
+        "min_vram_gb": 4,
+        "gpu_hours": 8,
+        "storage_gb": 5
+      },
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 7.2,
+          "evidence": [
+            "Relevant to compute-limited practice"
+          ],
+          "evidence_level": "speculative",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": 7.2,
+          "evidence": [
+            "Not found in the closest full texts"
+          ],
+          "evidence_level": "estimate",
+          "missing": [
+            "Probing literature unsearched"
+          ]
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 6.0,
+          "evidence": [
+            "Papers open; tree-head code GloVe-only, pinned to 2020 libraries"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": 7.2,
+          "evidence": [
+            "Shipped splits with parses; counts match the paper"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "No licence"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": 9.6,
+          "evidence": [
+            "Base encoders, ~3.6k training aspects"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": 8.0,
+          "evidence": [
+            "Cached features, small heads"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": 5,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": 10.0,
+          "evidence": [
+            "About 4 weeks"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": 2,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": 3.2,
+          "evidence": [
+            "Test-set selection, few runs, missing RoBERTa+tree code"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": 3,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": 4.2,
+          "evidence": [
+            "No published numbers"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": 4,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": 5.6,
+          "evidence": [
+            "Either outcome reportable"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "id": "D2",
+      "title": "D2 extension: structure controls",
+      "mode": "extension",
+      "status": "viable",
+      "blockers": [],
+      "score_percent": 64.6,
+      "score_range": [
+        64.6,
+        64.6
+      ],
+      "scored_weight_percent": 100.0,
+      "verified_weight_percent": 37.0,
+      "unscored_criteria": [],
+      "missing_information": [
+        "novelty_or_replication_value: Recent ablation tables unread",
+        "dataset_accessibility: No licence"
+      ],
+      "caps_applied": [],
+      "estimates": {
+        "weeks": 6,
+        "min_vram_gb": 8,
+        "gpu_hours": 35,
+        "storage_gb": 10
+      },
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 9.6,
+          "evidence": [
+            "Tests the mechanism behind a large literature"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": 7.2,
+          "evidence": [
+            "No PLM structure controls found in the full texts read"
+          ],
+          "evidence_level": "estimate",
+          "missing": [
+            "Recent ablation tables unread"
+          ]
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 6.0,
+          "evidence": [
+            "Papers open; tree-head code GloVe-only, pinned to 2020 libraries"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": 7.2,
+          "evidence": [
+            "Shipped splits with parses; counts match the paper"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "No licence"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": 9.6,
+          "evidence": [
+            "Base encoders, ~3.6k training aspects"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": 6.0,
+          "evidence": [
+            "Graph generators on D1 pipeline"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": 6.0,
+          "evidence": [
+            "6 weeks including D1"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": 2,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": 3.2,
+          "evidence": [
+            "Test-set selection, few runs, missing RoBERTa+tree code"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": 3,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": 4.2,
+          "evidence": [
+            "No published numbers for the controls"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": 4,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": 5.6,
+          "evidence": [
+            "Null or positive both informative"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "id": "D4",
+      "title": "D4 parser-quality moderator",
+      "mode": "extension",
+      "status": "viable",
+      "blockers": [],
+      "score_percent": 53.8,
+      "score_range": [
+        53.8,
+        53.8
+      ],
+      "scored_weight_percent": 100.0,
+      "verified_weight_percent": 49.0,
+      "unscored_criteria": [],
+      "missing_information": [
+        "dataset_accessibility: No licence"
+      ],
+      "caps_applied": [],
+      "estimates": {
+        "weeks": 5,
+        "min_vram_gb": 8,
+        "gpu_hours": 30,
+        "storage_gb": 10
+      },
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 2,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 4.8,
+          "evidence": [
+            "Shown for IE [@sachan2021syntax]"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": 2,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": 4.8,
+          "evidence": [
+            "Moderator not isolable without gold parses"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 6.0,
+          "evidence": [
+            "Papers open; tree-head code GloVe-only, pinned to 2020 libraries"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": 7.2,
+          "evidence": [
+            "Shipped splits with parses; counts match the paper"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "No licence"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": 9.6,
+          "evidence": [
+            "Base encoders, ~3.6k training aspects"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": 6.0,
+          "evidence": [
+            "Multiple parsers"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": 8.0,
+          "evidence": [
+            "5 weeks"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": 2,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": 3.2,
+          "evidence": [
+            "Test-set selection, few runs, missing RoBERTa+tree code"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": 1,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": 1.4,
+          "evidence": [
+            "No gold trees for review data"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": 2,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": 2.8,
+          "evidence": [
+            "Likely inconclusive"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      ],
+      "rank": 4
+    }
+  ]
+}

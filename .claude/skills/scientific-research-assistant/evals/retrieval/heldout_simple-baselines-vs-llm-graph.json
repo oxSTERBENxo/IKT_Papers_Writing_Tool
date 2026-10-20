@@ -1,0 +1,44 @@
+{
+  "id": "simple-baselines-vs-llm-graph",
+  "split": "heldout",
+  "claim": "Showing that well-tuned classic GNNs or MLPs on language-model embeddings match LLM-enhanced methods for node classification on text-attributed graphs",
+  "queries": [
+    "simple baselines text-attributed graphs LLM node classification benchmark",
+    "fair comparison GraphLLM methods classic GNN baselines",
+    "do we need large language models for node classification",
+    "LLM-enhanced GNN marginal gains supervised node classification"
+  ],
+  "anchor": "text-attributed graphs",
+  "design": [
+    "tuned classic GNN baseline",
+    "consistent splits across methods",
+    "supervised and semi-supervised settings"
+  ],
+  "seeds": [
+    "2305.19523"
+  ],
+  "known_relevant": [
+    {
+      "title": "GLBench: A Comprehensive Benchmark for Graph with Large Language Models",
+      "arxiv_id": "2407.07457",
+      "doi": "10.52202/079017-1340",
+      "year": 2024,
+      "why": "benchmark of GraphLLM methods vs GNN baselines"
+    },
+    {
+      "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+      "arxiv_id": "2502.00829",
+      "doi": null,
+      "year": 2025,
+      "why": "testbed of LLM methods vs classic baselines"
+    },
+    {
+      "title": "Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification",
+      "arxiv_id": "2406.08993",
+      "doi": "10.52202/079017-3098",
+      "year": 2024,
+      "why": "tuned classic GNNs as strong baselines"
+    }
+  ],
+  "provenance": "Claim and queries copied from the challenge run of the first opportunity report (work/challenge_baselines.json), written before the known papers were found. Design elements, anchor and seeds were added later by an author who knew the answers; they are generic but not blind."
+}

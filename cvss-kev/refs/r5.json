@@ -1,0 +1,70 @@
+{
+  "paper": {
+    "title": "Conflicting Scores, Confusing Signals: An Empirical Study of Vulnerability Scoring Systems",
+    "authors": [
+      "Viktoria Koscinski",
+      "Mark Nelson",
+      "Ahmet Okutan",
+      "Robert Falso",
+      "Mehdi Tarrit Mirakhorli"
+    ],
+    "year": 2025,
+    "date": "2025-11-19",
+    "venue": "ACM SIGSAC Conference on Computer and Communications Security (CCS)",
+    "doi": "10.1145/3719027.3765210",
+    "arxiv_id": "2508.13644",
+    "pmid": null,
+    "openalex_id": "W4416549283",
+    "s2_id": "ccdf94ed5d218d134a1bc791f80ebbb8f71715b0",
+    "url": "https://doi.org/10.1145/3719027.3765210",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3719027.3765210",
+    "abstract": "Accurately assessing software vulnerabilities is essential for effective prioritization and remediation. While various scoring systems exist to support this task, their differing goals, methodologies and outputs often lead to inconsistent prioritization decisions. This work provides the first large-scale, outcome-linked empirical comparison of four publicly available vulnerability scoring systems: the Common Vulnerability Scoring System (CVSS), the Stakeholder-Specific Vulnerability Categorization (SSVC), the Exploit Prediction Scoring System (EPSS), and the Exploitability Index. We use a dataset of 600 real-world vulnerabilities derived from four months of Microsoft's Patch Tuesday disclosures to investigate the relationships between these scores, evaluate how they support vulnerability management task, how these scores categorize vulnerabilities across triage tiers, and assess their ability to capture the real-world exploitation risk. Our findings reveal significant disparities in how scoring systems rank the same vulnerabilities, with implications for organizations relying on these metrics to make data-driven, risk-based decisions. We provide insights into the alignment and divergence of these systems, highlighting the need for more transparent and consistent exploitability, risk, and severity assessments.",
+    "citations": 21,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "conference-paper",
+    "sources": [
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W150078352",
+        "W384698140",
+        "W1981796233",
+        "W1990091526",
+        "W2044625105",
+        "W2108629901",
+        "W2131353092",
+        "W2135198734",
+        "W2162142914",
+        "W2162739315",
+        "W2565077509",
+        "W2771090858",
+        "W2808052182",
+        "W2967263059",
+        "W2974695716",
+        "W3023951208",
+        "W3084558590",
+        "W3136969503",
+        "W3184339106",
+        "W3194789266",
+        "W3199469813",
+        "W3210360585",
+        "W4210262502",
+        "W4210318281",
+        "W4293193423",
+        "W4293235203",
+        "W4309089965",
+        "W4312798241",
+        "W4322627146",
+        "W4400976724",
+        "W4408343551"
+      ],
+      "abstract_source": "semantic_scholar"
+    }
+  },
+  "notes": []
+}

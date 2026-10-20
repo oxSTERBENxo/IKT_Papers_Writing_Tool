@@ -1,0 +1,68 @@
+{
+  "paper": {
+    "title": "Exploring the Efficacy of Attention Mechanisms in GNN-Based Fake News Detection on UPFD Dataset",
+    "authors": [
+      "Vandana Rai",
+      "Sakshi Rai"
+    ],
+    "year": 2025,
+    "date": "2025-01-01",
+    "venue": "Learning and analytics in intelligent systems",
+    "doi": "10.1007/978-981-97-9855-1_7",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W4410416256",
+    "s2_id": null,
+    "url": "https://doi.org/10.1007/978-981-97-9855-1_7",
+    "pdf_url": null,
+    "abstract": null,
+    "citations": 1,
+    "is_oa": false,
+    "is_retracted": false,
+    "type": "conference-paper",
+    "sources": [
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W2997128522",
+        "W3133496726",
+        "W3137797402",
+        "W3153567752",
+        "W3153854677",
+        "W3180140554",
+        "W4220862791",
+        "W4221148143",
+        "W4226281770",
+        "W4285331514",
+        "W4312891395",
+        "W4386094242",
+        "W4388899945",
+        "W4391816773",
+        "W4391821979"
+      ],
+      "related_works": [
+        "W4391375266",
+        "W2899084033",
+        "W2748952813",
+        "W2390279801",
+        "W4391913857",
+        "W2890339288",
+        "W2358668433",
+        "W4396701345",
+        "W2966672946",
+        "W2376932109"
+      ]
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    }
+  ]
+}

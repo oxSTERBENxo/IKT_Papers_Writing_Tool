@@ -1,0 +1,52 @@
+{
+  "paper": {
+    "title": "Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs",
+    "authors": [
+      "Zhikai Chen",
+      "Haitao Mao",
+      "Hang Li",
+      "Wei Jin",
+      "Hongzhi Wen",
+      "Xiaochi Wei",
+      "Shuaiqiang Wang",
+      "Dawei Yin",
+      "Wenqi Fan",
+      "Hui Liu",
+      "Jiliang Tang"
+    ],
+    "year": 2024,
+    "date": "2024-03-26",
+    "venue": "ACM SIGKDD Explorations Newsletter",
+    "doi": "10.1145/3655103.3655110",
+    "arxiv_id": "2307.03393",
+    "pmid": null,
+    "openalex_id": "W4393277515",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2307.03393",
+    "pdf_url": "https://arxiv.org/pdf/2307.03393v4",
+    "abstract": "Learning on Graphs has attracted immense attention due to its wide real-world applications. The most popular pipeline for learning on graphs with textual node attributes primarily relies on Graph Neural Networks (GNNs), and utilizes shallow text embedding as initial node representations, which has limitations in general knowledge and profound semantic understanding. In recent years, Large Language Models (LLMs) have been proven to possess extensive common knowledge and powerful semantic comprehension abilities that have revolutionized existing workflows to handle text data. In this paper, we aim to explore the potential of LLMs in graph machine learning, especially the node classification task, and investigate two possible pipelines: LLMs-as-Enhancers and LLMs-as-Predictors. The former leverages LLMs to enhance nodes' text attributes with their massive knowledge and then generate predictions through GNNs. The latter attempts to directly employ LLMs as standalone predictors. We conduct comprehensive and systematical studies on these two pipelines under various settings. From comprehensive empirical results, we make original observations and find new insights that open new possibilities and suggest promising directions to leverage LLMs for learning on graphs. Our codes and datasets are available at https://github.com/CurryTang/Graph-LLM.",
+    "citations": 207,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "To be appear on SIGKDD Explorations",
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

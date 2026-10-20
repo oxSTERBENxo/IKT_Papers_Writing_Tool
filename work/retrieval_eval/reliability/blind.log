@@ -1,0 +1,1655 @@
+hybrid configuration: embedding backend model2vec:minishlab/potion-retrieval-32M
+== adam-vs-sgd-generalization (blind)
+  [arxiv/keyword] 'adaptive gradient methods deep learning generalization': 10 results
+  [crossref/keyword] 'adaptive gradient methods deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 0 results
+  [crossref/keyword] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [arxiv/keyword] 'SGD with momentum strong baseline deep learning generalization': 1 results
+  [crossref/keyword] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 5 results
+  [crossref/keyword] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [arxiv/keyword] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [crossref/keyword] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization survey': 7 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization review': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization review': 10 results
+  [arxiv/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization survey': 0 results
+  [crossref/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization review': 0 results
+  [crossref/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization review': 10 results
+  [arxiv/surveys] 'SGD with momentum strong baseline deep learning generalization survey': 0 results
+  [crossref/surveys] 'SGD with momentum strong baseline deep learning generalization survey': 10 results
+  [arxiv/surveys] 'SGD with momentum strong baseline deep learning generalization review': 0 results
+  [crossref/surveys] 'SGD with momentum strong baseline deep learning generalization review': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet survey': 0 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet review': 0 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet review': 10 results
+  [arxiv/surveys] 'does adaptive gradient methods improve over SGD with momentum survey': 1 results
+  [crossref/surveys] 'does adaptive gradient methods improve over SGD with momentum survey': 10 results
+  [arxiv/surveys] 'does adaptive gradient methods improve over SGD with momentum review': 1 results
+  [crossref/surveys] 'does adaptive gradient methods improve over SGD with momentum review': 10 results
+  [arxiv/recent] 'adaptive gradient methods deep learning generalization': 10 results
+  [crossref/recent] 'adaptive gradient methods deep learning generalization': 10 results
+  [arxiv/recent] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 0 results
+  [crossref/recent] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [arxiv/recent] 'SGD with momentum strong baseline deep learning generalization': 0 results
+  [crossref/recent] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [arxiv/recent] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 3 results
+  [crossref/recent] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [arxiv/recent] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [crossref/recent] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [arxiv/keyword] 'SGD with momentum baseline deep learning generalization': 6 results
+  [crossref/keyword] 'SGD with momentum baseline deep learning generalization': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget deep learning generalization': 3 results
+  [crossref/keyword] 'same hyperparameter tuning budget deep learning generalization': 10 results
+  [arxiv/keyword] 'multiple random seeds deep learning generalization': 10 results
+  [crossref/keyword] 'multiple random seeds deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods deep learning generalization': 10 results
+  [crossref/keyword] 'adaptive gradient methods deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [crossref/keyword] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [arxiv/keyword] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [crossref/keyword] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [crossref/keyword] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [arxiv/keyword] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [crossref/keyword] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization survey': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization review': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization review': 10 results
+  [arxiv/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization survey': 10 results
+  [crossref/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization review': 10 results
+  [crossref/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization review': 10 results
+  [arxiv/surveys] 'SGD with momentum strong baseline deep learning generalization survey': 10 results
+  [crossref/surveys] 'SGD with momentum strong baseline deep learning generalization survey': 10 results
+  [arxiv/surveys] 'SGD with momentum strong baseline deep learning generalization review': 10 results
+  [crossref/surveys] 'SGD with momentum strong baseline deep learning generalization review': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet survey': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet review': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet review': 10 results
+  [arxiv/surveys] 'does adaptive gradient methods improve over SGD with momentum survey': 10 results
+  [crossref/surveys] 'does adaptive gradient methods improve over SGD with momentum survey': 10 results
+  [arxiv/surveys] 'does adaptive gradient methods improve over SGD with momentum review': 10 results
+  [crossref/surveys] 'does adaptive gradient methods improve over SGD with momentum review': 10 results
+  [arxiv/recent] 'adaptive gradient methods deep learning generalization': 10 results
+  [crossref/recent] 'adaptive gradient methods deep learning generalization': 10 results
+  [arxiv/recent] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [crossref/recent] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [arxiv/recent] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [crossref/recent] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [arxiv/recent] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [crossref/recent] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [arxiv/recent] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [crossref/recent] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [arxiv/keyword] 'SGD with momentum baseline deep learning generalization': error rate_limited
+  [crossref/keyword] 'SGD with momentum baseline deep learning generalization': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget deep learning generalization': 10 results
+  [crossref/keyword] 'multiple random seeds deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods deep learning generalization': 10 results
+  [crossref/keyword] 'adaptive gradient methods deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [crossref/keyword] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [arxiv/keyword] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [crossref/keyword] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [crossref/keyword] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [arxiv/keyword] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [crossref/keyword] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization survey': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization review': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization review': 10 results
+  [arxiv/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization survey': 10 results
+  [crossref/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization review': 10 results
+  [crossref/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization review': 10 results
+  [arxiv/surveys] 'SGD with momentum strong baseline deep learning generalization survey': 10 results
+  [crossref/surveys] 'SGD with momentum strong baseline deep learning generalization survey': 10 results
+  [arxiv/surveys] 'SGD with momentum strong baseline deep learning generalization review': 10 results
+  [crossref/surveys] 'SGD with momentum strong baseline deep learning generalization review': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet survey': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet review': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet review': 10 results
+  [arxiv/surveys] 'does adaptive gradient methods improve over SGD with momentum survey': 10 results
+  [crossref/surveys] 'does adaptive gradient methods improve over SGD with momentum survey': 10 results
+  [arxiv/surveys] 'does adaptive gradient methods improve over SGD with momentum review': 10 results
+  [crossref/surveys] 'does adaptive gradient methods improve over SGD with momentum review': 10 results
+  [arxiv/recent] 'adaptive gradient methods deep learning generalization': 10 results
+  [crossref/recent] 'adaptive gradient methods deep learning generalization': 10 results
+  [arxiv/recent] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [crossref/recent] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [arxiv/recent] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [crossref/recent] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [arxiv/recent] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [crossref/recent] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [arxiv/recent] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [crossref/recent] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [arxiv/keyword] 'SGD with momentum baseline deep learning generalization': error rate_limited
+  [crossref/keyword] 'SGD with momentum baseline deep learning generalization': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget deep learning generalization': 10 results
+  [crossref/keyword] 'multiple random seeds deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods deep learning generalization': 10 results
+  [crossref/keyword] 'adaptive gradient methods deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [crossref/keyword] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [arxiv/keyword] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [crossref/keyword] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [arxiv/keyword] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [crossref/keyword] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [arxiv/keyword] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [crossref/keyword] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization survey': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization review': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization review': 10 results
+  [arxiv/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization survey': 10 results
+  [crossref/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization review': 10 results
+  [crossref/surveys] 'adaptive gradient methods versus SGD with momentum deep learning generalization review': 10 results
+  [arxiv/surveys] 'SGD with momentum strong baseline deep learning generalization survey': 10 results
+  [crossref/surveys] 'SGD with momentum strong baseline deep learning generalization survey': 10 results
+  [arxiv/surveys] 'SGD with momentum strong baseline deep learning generalization review': 10 results
+  [crossref/surveys] 'SGD with momentum strong baseline deep learning generalization review': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet survey': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet survey': 10 results
+  [arxiv/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet review': 10 results
+  [crossref/surveys] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet review': 10 results
+  [arxiv/surveys] 'does adaptive gradient methods improve over SGD with momentum survey': 10 results
+  [crossref/surveys] 'does adaptive gradient methods improve over SGD with momentum survey': 10 results
+  [arxiv/surveys] 'does adaptive gradient methods improve over SGD with momentum review': 10 results
+  [crossref/surveys] 'does adaptive gradient methods improve over SGD with momentum review': 10 results
+  [arxiv/recent] 'adaptive gradient methods deep learning generalization': 10 results
+  [crossref/recent] 'adaptive gradient methods deep learning generalization': 10 results
+  [arxiv/recent] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [crossref/recent] 'adaptive gradient methods versus SGD with momentum deep learning generalization': 10 results
+  [arxiv/recent] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [crossref/recent] 'SGD with momentum strong baseline deep learning generalization': 10 results
+  [arxiv/recent] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [crossref/recent] 'adaptive gradient methods deep learning generalization evaluation CIFAR and ImageNet': 10 results
+  [arxiv/recent] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [crossref/recent] 'does adaptive gradient methods improve over SGD with momentum': 10 results
+  [arxiv/keyword] 'SGD with momentum baseline deep learning generalization': error rate_limited
+  [crossref/keyword] 'SGD with momentum baseline deep learning generalization': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget deep learning generalization': 10 results
+  [crossref/keyword] 'multiple random seeds deep learning generalization': 10 results
+== continual-learning-vs-replay (blind)
+  [arxiv/keyword] 'continual learning methods class-incremental learning': error rate_limited
+  [crossref/keyword] 'continual learning methods class-incremental learning': 10 results
+  [crossref/keyword] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [crossref/keyword] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [crossref/keyword] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [crossref/keyword] 'does continual learning methods improve over simple experience replay': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning survey': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning review': 10 results
+  [crossref/surveys] 'continual learning methods versus simple experience replay class-incremental learning survey': 10 results
+  [crossref/surveys] 'continual learning methods versus simple experience replay class-incremental learning review': 10 results
+  [crossref/surveys] 'simple experience replay strong baseline class-incremental learning survey': 10 results
+  [crossref/surveys] 'simple experience replay strong baseline class-incremental learning review': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 survey': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 review': 10 results
+  [crossref/surveys] 'does continual learning methods improve over simple experience replay survey': 10 results
+  [crossref/surveys] 'does continual learning methods improve over simple experience replay review': 10 results
+  [crossref/recent] 'continual learning methods class-incremental learning': 10 results
+  [crossref/recent] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [crossref/recent] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [crossref/recent] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [crossref/recent] 'does continual learning methods improve over simple experience replay': 10 results
+  [arxiv/keyword] 'simple experience replay baseline class-incremental learning': error rate_limited
+  [crossref/keyword] 'simple experience replay baseline class-incremental learning': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget class-incremental learning': 10 results
+  [crossref/keyword] 'multiple random seeds class-incremental learning': 10 results
+  [arxiv/keyword] 'continual learning methods class-incremental learning': 10 results
+  [crossref/keyword] 'continual learning methods class-incremental learning': 10 results
+  [arxiv/keyword] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [crossref/keyword] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [arxiv/keyword] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [crossref/keyword] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [arxiv/keyword] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [crossref/keyword] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [arxiv/keyword] 'does continual learning methods improve over simple experience replay': 10 results
+  [crossref/keyword] 'does continual learning methods improve over simple experience replay': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning survey': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning survey': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning review': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning review': 10 results
+  [arxiv/surveys] 'continual learning methods versus simple experience replay class-incremental learning survey': 10 results
+  [crossref/surveys] 'continual learning methods versus simple experience replay class-incremental learning survey': 10 results
+  [arxiv/surveys] 'continual learning methods versus simple experience replay class-incremental learning review': 10 results
+  [crossref/surveys] 'continual learning methods versus simple experience replay class-incremental learning review': 10 results
+  [arxiv/surveys] 'simple experience replay strong baseline class-incremental learning survey': 10 results
+  [crossref/surveys] 'simple experience replay strong baseline class-incremental learning survey': 10 results
+  [arxiv/surveys] 'simple experience replay strong baseline class-incremental learning review': 10 results
+  [crossref/surveys] 'simple experience replay strong baseline class-incremental learning review': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 survey': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 survey': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 review': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 review': 10 results
+  [arxiv/surveys] 'does continual learning methods improve over simple experience replay survey': 10 results
+  [crossref/surveys] 'does continual learning methods improve over simple experience replay survey': 10 results
+  [arxiv/surveys] 'does continual learning methods improve over simple experience replay review': 10 results
+  [crossref/surveys] 'does continual learning methods improve over simple experience replay review': 10 results
+  [arxiv/recent] 'continual learning methods class-incremental learning': 10 results
+  [crossref/recent] 'continual learning methods class-incremental learning': 10 results
+  [arxiv/recent] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [crossref/recent] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [arxiv/recent] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [crossref/recent] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [arxiv/recent] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [crossref/recent] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [arxiv/recent] 'does continual learning methods improve over simple experience replay': 10 results
+  [crossref/recent] 'does continual learning methods improve over simple experience replay': 10 results
+  [arxiv/keyword] 'simple experience replay baseline class-incremental learning': 10 results
+  [crossref/keyword] 'simple experience replay baseline class-incremental learning': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget class-incremental learning': error rate_limited
+  [crossref/keyword] 'same hyperparameter tuning budget class-incremental learning': 10 results
+  [crossref/keyword] 'multiple random seeds class-incremental learning': 10 results
+  [arxiv/keyword] 'continual learning methods class-incremental learning': 10 results
+  [crossref/keyword] 'continual learning methods class-incremental learning': 10 results
+  [arxiv/keyword] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [crossref/keyword] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [arxiv/keyword] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [crossref/keyword] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [arxiv/keyword] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [crossref/keyword] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [arxiv/keyword] 'does continual learning methods improve over simple experience replay': 10 results
+  [crossref/keyword] 'does continual learning methods improve over simple experience replay': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning survey': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning survey': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning review': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning review': 10 results
+  [arxiv/surveys] 'continual learning methods versus simple experience replay class-incremental learning survey': 10 results
+  [crossref/surveys] 'continual learning methods versus simple experience replay class-incremental learning survey': 10 results
+  [arxiv/surveys] 'continual learning methods versus simple experience replay class-incremental learning review': 10 results
+  [crossref/surveys] 'continual learning methods versus simple experience replay class-incremental learning review': 10 results
+  [arxiv/surveys] 'simple experience replay strong baseline class-incremental learning survey': 10 results
+  [crossref/surveys] 'simple experience replay strong baseline class-incremental learning survey': 10 results
+  [arxiv/surveys] 'simple experience replay strong baseline class-incremental learning review': 10 results
+  [crossref/surveys] 'simple experience replay strong baseline class-incremental learning review': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 survey': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 survey': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 review': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 review': 10 results
+  [arxiv/surveys] 'does continual learning methods improve over simple experience replay survey': 10 results
+  [crossref/surveys] 'does continual learning methods improve over simple experience replay survey': 10 results
+  [arxiv/surveys] 'does continual learning methods improve over simple experience replay review': 10 results
+  [crossref/surveys] 'does continual learning methods improve over simple experience replay review': 10 results
+  [arxiv/recent] 'continual learning methods class-incremental learning': 10 results
+  [crossref/recent] 'continual learning methods class-incremental learning': 10 results
+  [arxiv/recent] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [crossref/recent] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [arxiv/recent] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [crossref/recent] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [arxiv/recent] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [crossref/recent] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [arxiv/recent] 'does continual learning methods improve over simple experience replay': 10 results
+  [crossref/recent] 'does continual learning methods improve over simple experience replay': 10 results
+  [arxiv/keyword] 'simple experience replay baseline class-incremental learning': 10 results
+  [crossref/keyword] 'simple experience replay baseline class-incremental learning': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget class-incremental learning': error rate_limited
+  [crossref/keyword] 'same hyperparameter tuning budget class-incremental learning': 10 results
+  [crossref/keyword] 'multiple random seeds class-incremental learning': 10 results
+  [arxiv/keyword] 'continual learning methods class-incremental learning': 10 results
+  [crossref/keyword] 'continual learning methods class-incremental learning': 10 results
+  [arxiv/keyword] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [crossref/keyword] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [arxiv/keyword] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [crossref/keyword] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [arxiv/keyword] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [crossref/keyword] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [arxiv/keyword] 'does continual learning methods improve over simple experience replay': 10 results
+  [crossref/keyword] 'does continual learning methods improve over simple experience replay': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning survey': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning survey': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning review': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning review': 10 results
+  [arxiv/surveys] 'continual learning methods versus simple experience replay class-incremental learning survey': 10 results
+  [crossref/surveys] 'continual learning methods versus simple experience replay class-incremental learning survey': 10 results
+  [arxiv/surveys] 'continual learning methods versus simple experience replay class-incremental learning review': 10 results
+  [crossref/surveys] 'continual learning methods versus simple experience replay class-incremental learning review': 10 results
+  [arxiv/surveys] 'simple experience replay strong baseline class-incremental learning survey': 10 results
+  [crossref/surveys] 'simple experience replay strong baseline class-incremental learning survey': 10 results
+  [arxiv/surveys] 'simple experience replay strong baseline class-incremental learning review': 10 results
+  [crossref/surveys] 'simple experience replay strong baseline class-incremental learning review': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 survey': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 survey': 10 results
+  [arxiv/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 review': 10 results
+  [crossref/surveys] 'continual learning methods class-incremental learning evaluation Split CIFAR-100 review': 10 results
+  [arxiv/surveys] 'does continual learning methods improve over simple experience replay survey': 10 results
+  [crossref/surveys] 'does continual learning methods improve over simple experience replay survey': 10 results
+  [arxiv/surveys] 'does continual learning methods improve over simple experience replay review': 10 results
+  [crossref/surveys] 'does continual learning methods improve over simple experience replay review': 10 results
+  [arxiv/recent] 'continual learning methods class-incremental learning': 10 results
+  [crossref/recent] 'continual learning methods class-incremental learning': 10 results
+  [arxiv/recent] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [crossref/recent] 'continual learning methods versus simple experience replay class-incremental learning': 10 results
+  [arxiv/recent] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [crossref/recent] 'simple experience replay strong baseline class-incremental learning': 10 results
+  [arxiv/recent] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [crossref/recent] 'continual learning methods class-incremental learning evaluation Split CIFAR-100': 10 results
+  [arxiv/recent] 'does continual learning methods improve over simple experience replay': 10 results
+  [crossref/recent] 'does continual learning methods improve over simple experience replay': 10 results
+  [arxiv/keyword] 'simple experience replay baseline class-incremental learning': 10 results
+  [crossref/keyword] 'simple experience replay baseline class-incremental learning': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget class-incremental learning': error rate_limited
+  [crossref/keyword] 'same hyperparameter tuning budget class-incremental learning': 10 results
+  [crossref/keyword] 'multiple random seeds class-incremental learning': 10 results
+== cot-beyond-math (blind)
+  [arxiv/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks': error rate_limited
+  [crossref/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [crossref/keyword] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'direct answering strong baseline non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'direct answering strong baseline non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench review': 10 results
+  [crossref/surveys] 'does chain-of-thought prompting improve over direct answering survey': 10 results
+  [crossref/surveys] 'does chain-of-thought prompting improve over direct answering review': 10 results
+  [crossref/recent] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [crossref/recent] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [arxiv/keyword] 'direct answering baseline non-mathematical reasoning tasks': error rate_limited
+  [crossref/keyword] 'direct answering baseline non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'multiple random seeds non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [crossref/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [arxiv/keyword] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [crossref/keyword] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks survey': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks review': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks survey': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks review': 10 results
+  [arxiv/surveys] 'direct answering strong baseline non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'direct answering strong baseline non-mathematical reasoning tasks survey': 10 results
+  [arxiv/surveys] 'direct answering strong baseline non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'direct answering strong baseline non-mathematical reasoning tasks review': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench survey': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench review': 10 results
+  [arxiv/surveys] 'does chain-of-thought prompting improve over direct answering survey': 10 results
+  [crossref/surveys] 'does chain-of-thought prompting improve over direct answering survey': 10 results
+  [arxiv/surveys] 'does chain-of-thought prompting improve over direct answering review': 10 results
+  [crossref/surveys] 'does chain-of-thought prompting improve over direct answering review': 10 results
+  [arxiv/recent] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [arxiv/recent] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [arxiv/recent] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [arxiv/recent] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [crossref/recent] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [arxiv/recent] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [crossref/recent] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [arxiv/keyword] 'direct answering baseline non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'direct answering baseline non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'multiple random seeds non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'multiple random seeds non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [crossref/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [arxiv/keyword] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [crossref/keyword] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks survey': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks review': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks survey': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks review': 10 results
+  [arxiv/surveys] 'direct answering strong baseline non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'direct answering strong baseline non-mathematical reasoning tasks survey': 10 results
+  [arxiv/surveys] 'direct answering strong baseline non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'direct answering strong baseline non-mathematical reasoning tasks review': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench survey': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench review': 10 results
+  [arxiv/surveys] 'does chain-of-thought prompting improve over direct answering survey': 10 results
+  [crossref/surveys] 'does chain-of-thought prompting improve over direct answering survey': 10 results
+  [arxiv/surveys] 'does chain-of-thought prompting improve over direct answering review': 10 results
+  [crossref/surveys] 'does chain-of-thought prompting improve over direct answering review': 10 results
+  [arxiv/recent] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [arxiv/recent] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [arxiv/recent] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [arxiv/recent] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [crossref/recent] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [arxiv/recent] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [crossref/recent] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [arxiv/keyword] 'direct answering baseline non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'direct answering baseline non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'multiple random seeds non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'multiple random seeds non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [crossref/keyword] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [arxiv/keyword] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [crossref/keyword] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks survey': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks review': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks survey': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks review': 10 results
+  [arxiv/surveys] 'direct answering strong baseline non-mathematical reasoning tasks survey': 10 results
+  [crossref/surveys] 'direct answering strong baseline non-mathematical reasoning tasks survey': 10 results
+  [arxiv/surveys] 'direct answering strong baseline non-mathematical reasoning tasks review': 10 results
+  [crossref/surveys] 'direct answering strong baseline non-mathematical reasoning tasks review': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench survey': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench survey': 10 results
+  [arxiv/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench review': 10 results
+  [crossref/surveys] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench review': 10 results
+  [arxiv/surveys] 'does chain-of-thought prompting improve over direct answering survey': 10 results
+  [crossref/surveys] 'does chain-of-thought prompting improve over direct answering survey': 10 results
+  [arxiv/surveys] 'does chain-of-thought prompting improve over direct answering review': 10 results
+  [crossref/surveys] 'does chain-of-thought prompting improve over direct answering review': 10 results
+  [arxiv/recent] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'chain-of-thought prompting non-mathematical reasoning tasks': 10 results
+  [arxiv/recent] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'chain-of-thought prompting versus direct answering non-mathematical reasoning tasks': 10 results
+  [arxiv/recent] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [crossref/recent] 'direct answering strong baseline non-mathematical reasoning tasks': 10 results
+  [arxiv/recent] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [crossref/recent] 'chain-of-thought prompting non-mathematical reasoning tasks evaluation MMLU and BIG-Bench': 10 results
+  [arxiv/recent] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [crossref/recent] 'does chain-of-thought prompting improve over direct answering': 10 results
+  [arxiv/keyword] 'direct answering baseline non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'direct answering baseline non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget non-mathematical reasoning tasks': 10 results
+  [arxiv/keyword] 'multiple random seeds non-mathematical reasoning tasks': 10 results
+  [crossref/keyword] 'multiple random seeds non-mathematical reasoning tasks': 10 results
+== domain-generalization-vs-erm (blind)
+  [arxiv/keyword] 'domain generalization algorithms out-of-distribution image classification': 9 results
+  [crossref/keyword] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 0 results
+  [crossref/keyword] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'empirical risk minimization strong baseline out-of-distribution image classification': 1 results
+  [crossref/keyword] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 0 results
+  [crossref/keyword] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [arxiv/keyword] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [crossref/keyword] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification survey': 0 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification review': 0 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification survey': 0 results
+  [crossref/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification review': 0 results
+  [crossref/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification survey': 0 results
+  [crossref/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification review': 0 results
+  [crossref/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS survey': 0 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS review': 0 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS review': 10 results
+  [arxiv/surveys] 'does domain generalization algorithms improve over empirical risk minimization survey': 0 results
+  [crossref/surveys] 'does domain generalization algorithms improve over empirical risk minimization survey': 10 results
+  [arxiv/surveys] 'does domain generalization algorithms improve over empirical risk minimization review': 0 results
+  [crossref/surveys] 'does domain generalization algorithms improve over empirical risk minimization review': 10 results
+  [arxiv/recent] 'domain generalization algorithms out-of-distribution image classification': 5 results
+  [crossref/recent] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [arxiv/recent] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 0 results
+  [crossref/recent] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [arxiv/recent] 'empirical risk minimization strong baseline out-of-distribution image classification': 1 results
+  [crossref/recent] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [arxiv/recent] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 0 results
+  [crossref/recent] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [arxiv/recent] 'does domain generalization algorithms improve over empirical risk minimization': 6 results
+  [crossref/recent] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [arxiv/keyword] 'empirical risk minimization baseline out-of-distribution image classification': 5 results
+  [crossref/keyword] 'empirical risk minimization baseline out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget out-of-distribution image classification': 0 results
+  [crossref/keyword] 'same hyperparameter tuning budget out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'multiple random seeds out-of-distribution image classification': 0 results
+  [crossref/keyword] 'multiple random seeds out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [crossref/keyword] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [crossref/keyword] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [crossref/keyword] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [crossref/keyword] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [arxiv/keyword] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [crossref/keyword] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification survey': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification review': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification survey': 10 results
+  [crossref/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification review': 10 results
+  [crossref/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification survey': 10 results
+  [crossref/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification review': 10 results
+  [crossref/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS survey': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS review': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS review': 10 results
+  [arxiv/surveys] 'does domain generalization algorithms improve over empirical risk minimization survey': 10 results
+  [crossref/surveys] 'does domain generalization algorithms improve over empirical risk minimization survey': 10 results
+  [arxiv/surveys] 'does domain generalization algorithms improve over empirical risk minimization review': 10 results
+  [crossref/surveys] 'does domain generalization algorithms improve over empirical risk minimization review': 10 results
+  [arxiv/recent] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [crossref/recent] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [arxiv/recent] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [crossref/recent] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [arxiv/recent] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [crossref/recent] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [arxiv/recent] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [crossref/recent] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [arxiv/recent] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [crossref/recent] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [arxiv/keyword] 'empirical risk minimization baseline out-of-distribution image classification': 10 results
+  [crossref/keyword] 'empirical risk minimization baseline out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget out-of-distribution image classification': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'multiple random seeds out-of-distribution image classification': 10 results
+  [crossref/keyword] 'multiple random seeds out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [crossref/keyword] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [crossref/keyword] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [crossref/keyword] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [crossref/keyword] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [arxiv/keyword] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [crossref/keyword] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification survey': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification review': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification survey': 10 results
+  [crossref/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification review': 10 results
+  [crossref/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification survey': 10 results
+  [crossref/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification review': 10 results
+  [crossref/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS survey': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS review': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS review': 10 results
+  [arxiv/surveys] 'does domain generalization algorithms improve over empirical risk minimization survey': 10 results
+  [crossref/surveys] 'does domain generalization algorithms improve over empirical risk minimization survey': 10 results
+  [arxiv/surveys] 'does domain generalization algorithms improve over empirical risk minimization review': 10 results
+  [crossref/surveys] 'does domain generalization algorithms improve over empirical risk minimization review': 10 results
+  [arxiv/recent] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [crossref/recent] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [arxiv/recent] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [crossref/recent] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [arxiv/recent] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [crossref/recent] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [arxiv/recent] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [crossref/recent] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [arxiv/recent] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [crossref/recent] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [arxiv/keyword] 'empirical risk minimization baseline out-of-distribution image classification': 10 results
+  [crossref/keyword] 'empirical risk minimization baseline out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget out-of-distribution image classification': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'multiple random seeds out-of-distribution image classification': 10 results
+  [crossref/keyword] 'multiple random seeds out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [crossref/keyword] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [crossref/keyword] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [crossref/keyword] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [crossref/keyword] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [arxiv/keyword] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [crossref/keyword] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification survey': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification review': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification survey': 10 results
+  [crossref/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification review': 10 results
+  [crossref/surveys] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification survey': 10 results
+  [crossref/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification survey': 10 results
+  [arxiv/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification review': 10 results
+  [crossref/surveys] 'empirical risk minimization strong baseline out-of-distribution image classification review': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS survey': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS survey': 10 results
+  [arxiv/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS review': 10 results
+  [crossref/surveys] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS review': 10 results
+  [arxiv/surveys] 'does domain generalization algorithms improve over empirical risk minimization survey': 10 results
+  [crossref/surveys] 'does domain generalization algorithms improve over empirical risk minimization survey': 10 results
+  [arxiv/surveys] 'does domain generalization algorithms improve over empirical risk minimization review': 10 results
+  [crossref/surveys] 'does domain generalization algorithms improve over empirical risk minimization review': 10 results
+  [arxiv/recent] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [crossref/recent] 'domain generalization algorithms out-of-distribution image classification': 10 results
+  [arxiv/recent] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [crossref/recent] 'domain generalization algorithms versus empirical risk minimization out-of-distribution image classification': 10 results
+  [arxiv/recent] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [crossref/recent] 'empirical risk minimization strong baseline out-of-distribution image classification': 10 results
+  [arxiv/recent] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [crossref/recent] 'domain generalization algorithms out-of-distribution image classification evaluation PACS and VLCS': 10 results
+  [arxiv/recent] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [crossref/recent] 'does domain generalization algorithms improve over empirical risk minimization': 10 results
+  [arxiv/keyword] 'empirical risk minimization baseline out-of-distribution image classification': 10 results
+  [crossref/keyword] 'empirical risk minimization baseline out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget out-of-distribution image classification': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget out-of-distribution image classification': 10 results
+  [arxiv/keyword] 'multiple random seeds out-of-distribution image classification': 10 results
+  [crossref/keyword] 'multiple random seeds out-of-distribution image classification': 10 results
+== kge-old-models-retuned (blind)
+  [arxiv/keyword] 'recent knowledge graph embedding models link prediction': 10 results
+  [crossref/keyword] 'recent knowledge graph embedding models link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 0 results
+  [crossref/keyword] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [arxiv/keyword] 'retuned older embedding models strong baseline link prediction': 0 results
+  [crossref/keyword] 'retuned older embedding models strong baseline link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 4 results
+  [crossref/keyword] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [arxiv/keyword] 'does recent knowledge graph embedding models improve over retuned older embedding models': 0 results
+  [crossref/keyword] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction survey': 2 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction review': 3 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction review': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction survey': 0 results
+  [crossref/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction review': 0 results
+  [crossref/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction review': 10 results
+  [arxiv/surveys] 'retuned older embedding models strong baseline link prediction survey': 0 results
+  [crossref/surveys] 'retuned older embedding models strong baseline link prediction survey': 10 results
+  [arxiv/surveys] 'retuned older embedding models strong baseline link prediction review': 0 results
+  [crossref/surveys] 'retuned older embedding models strong baseline link prediction review': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR survey': 0 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR review': 0 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR review': 10 results
+  [arxiv/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models survey': 0 results
+  [crossref/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models survey': 10 results
+  [arxiv/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models review': 0 results
+  [crossref/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models review': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models link prediction': 10 results
+  [crossref/recent] 'recent knowledge graph embedding models link prediction': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 0 results
+  [crossref/recent] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [arxiv/recent] 'retuned older embedding models strong baseline link prediction': 0 results
+  [crossref/recent] 'retuned older embedding models strong baseline link prediction': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 0 results
+  [crossref/recent] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [arxiv/recent] 'does recent knowledge graph embedding models improve over retuned older embedding models': 0 results
+  [crossref/recent] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [arxiv/keyword] 'retuned older embedding models baseline link prediction': 0 results
+  [crossref/keyword] 'retuned older embedding models baseline link prediction': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget link prediction': 0 results
+  [crossref/keyword] 'same hyperparameter tuning budget link prediction': 10 results
+  [arxiv/keyword] 'multiple random seeds link prediction': 2 results
+  [crossref/keyword] 'multiple random seeds link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models link prediction': 10 results
+  [crossref/keyword] 'recent knowledge graph embedding models link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [crossref/keyword] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [arxiv/keyword] 'retuned older embedding models strong baseline link prediction': 10 results
+  [crossref/keyword] 'retuned older embedding models strong baseline link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [crossref/keyword] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [arxiv/keyword] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [crossref/keyword] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction survey': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction review': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction review': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction survey': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction review': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction review': 10 results
+  [arxiv/surveys] 'retuned older embedding models strong baseline link prediction survey': 10 results
+  [crossref/surveys] 'retuned older embedding models strong baseline link prediction survey': 10 results
+  [arxiv/surveys] 'retuned older embedding models strong baseline link prediction review': 10 results
+  [crossref/surveys] 'retuned older embedding models strong baseline link prediction review': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR survey': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR review': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR review': 10 results
+  [arxiv/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models survey': 10 results
+  [crossref/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models survey': 10 results
+  [arxiv/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models review': 10 results
+  [crossref/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models review': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models link prediction': 10 results
+  [crossref/recent] 'recent knowledge graph embedding models link prediction': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [crossref/recent] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [arxiv/recent] 'retuned older embedding models strong baseline link prediction': 10 results
+  [crossref/recent] 'retuned older embedding models strong baseline link prediction': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [crossref/recent] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [arxiv/recent] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [crossref/recent] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [arxiv/keyword] 'retuned older embedding models baseline link prediction': 10 results
+  [crossref/keyword] 'retuned older embedding models baseline link prediction': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget link prediction': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget link prediction': 10 results
+  [arxiv/keyword] 'multiple random seeds link prediction': 10 results
+  [crossref/keyword] 'multiple random seeds link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models link prediction': 10 results
+  [crossref/keyword] 'recent knowledge graph embedding models link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [crossref/keyword] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [arxiv/keyword] 'retuned older embedding models strong baseline link prediction': 10 results
+  [crossref/keyword] 'retuned older embedding models strong baseline link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [crossref/keyword] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [arxiv/keyword] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [crossref/keyword] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction survey': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction review': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction review': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction survey': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction review': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction review': 10 results
+  [arxiv/surveys] 'retuned older embedding models strong baseline link prediction survey': 10 results
+  [crossref/surveys] 'retuned older embedding models strong baseline link prediction survey': 10 results
+  [arxiv/surveys] 'retuned older embedding models strong baseline link prediction review': 10 results
+  [crossref/surveys] 'retuned older embedding models strong baseline link prediction review': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR survey': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR review': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR review': 10 results
+  [arxiv/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models survey': 10 results
+  [crossref/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models survey': 10 results
+  [arxiv/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models review': 10 results
+  [crossref/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models review': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models link prediction': 10 results
+  [crossref/recent] 'recent knowledge graph embedding models link prediction': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [crossref/recent] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [arxiv/recent] 'retuned older embedding models strong baseline link prediction': 10 results
+  [crossref/recent] 'retuned older embedding models strong baseline link prediction': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [crossref/recent] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [arxiv/recent] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [crossref/recent] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [arxiv/keyword] 'retuned older embedding models baseline link prediction': 10 results
+  [crossref/keyword] 'retuned older embedding models baseline link prediction': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget link prediction': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget link prediction': 10 results
+  [arxiv/keyword] 'multiple random seeds link prediction': 10 results
+  [crossref/keyword] 'multiple random seeds link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models link prediction': 10 results
+  [crossref/keyword] 'recent knowledge graph embedding models link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [crossref/keyword] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [arxiv/keyword] 'retuned older embedding models strong baseline link prediction': 10 results
+  [crossref/keyword] 'retuned older embedding models strong baseline link prediction': 10 results
+  [arxiv/keyword] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [crossref/keyword] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [arxiv/keyword] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [crossref/keyword] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction survey': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction review': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction review': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction survey': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction review': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models versus retuned older embedding models link prediction review': 10 results
+  [arxiv/surveys] 'retuned older embedding models strong baseline link prediction survey': 10 results
+  [crossref/surveys] 'retuned older embedding models strong baseline link prediction survey': 10 results
+  [arxiv/surveys] 'retuned older embedding models strong baseline link prediction review': 10 results
+  [crossref/surveys] 'retuned older embedding models strong baseline link prediction review': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR survey': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR survey': 10 results
+  [arxiv/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR review': 10 results
+  [crossref/surveys] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR review': 10 results
+  [arxiv/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models survey': 10 results
+  [crossref/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models survey': 10 results
+  [arxiv/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models review': 10 results
+  [crossref/surveys] 'does recent knowledge graph embedding models improve over retuned older embedding models review': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models link prediction': 10 results
+  [crossref/recent] 'recent knowledge graph embedding models link prediction': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [crossref/recent] 'recent knowledge graph embedding models versus retuned older embedding models link prediction': 10 results
+  [arxiv/recent] 'retuned older embedding models strong baseline link prediction': 10 results
+  [crossref/recent] 'retuned older embedding models strong baseline link prediction': 10 results
+  [arxiv/recent] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [crossref/recent] 'recent knowledge graph embedding models link prediction evaluation FB15k-237 and WN18RR': 10 results
+  [arxiv/recent] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [crossref/recent] 'does recent knowledge graph embedding models improve over retuned older embedding models': 10 results
+  [arxiv/keyword] 'retuned older embedding models baseline link prediction': 10 results
+  [crossref/keyword] 'retuned older embedding models baseline link prediction': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget link prediction': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget link prediction': 10 results
+  [arxiv/keyword] 'multiple random seeds link prediction': 10 results
+  [crossref/keyword] 'multiple random seeds link prediction': 10 results
+== long-context-vs-rag (blind)
+  [arxiv/keyword] 'long-context language models long document question answering': 10 results
+  [crossref/keyword] 'long-context language models long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models versus retrieval-augmented generation long document question answering': 1 results
+  [crossref/keyword] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [arxiv/keyword] 'retrieval-augmented generation strong baseline long document question answering': 6 results
+  [crossref/keyword] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [crossref/keyword] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [arxiv/keyword] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [crossref/keyword] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering survey': 1 results
+  [crossref/surveys] 'long-context language models long document question answering survey': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering review': 7 results
+  [crossref/surveys] 'long-context language models long document question answering review': 10 results
+  [arxiv/surveys] 'long-context language models versus retrieval-augmented generation long document question answering survey': 0 results
+  [crossref/surveys] 'long-context language models versus retrieval-augmented generation long document question answering survey': 10 results
+  [arxiv/surveys] 'long-context language models versus retrieval-augmented generation long document question answering review': 0 results
+  [crossref/surveys] 'long-context language models versus retrieval-augmented generation long document question answering review': 10 results
+  [arxiv/surveys] 'retrieval-augmented generation strong baseline long document question answering survey': 0 results
+  [crossref/surveys] 'retrieval-augmented generation strong baseline long document question answering survey': 10 results
+  [arxiv/surveys] 'retrieval-augmented generation strong baseline long document question answering review': 0 results
+  [crossref/surveys] 'retrieval-augmented generation strong baseline long document question answering review': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering evaluation long-context benchmarks survey': 1 results
+  [crossref/surveys] 'long-context language models long document question answering evaluation long-context benchmarks survey': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering evaluation long-context benchmarks review': 5 results
+  [crossref/surveys] 'long-context language models long document question answering evaluation long-context benchmarks review': 10 results
+  [arxiv/surveys] 'does long-context language models improve over retrieval-augmented generation survey': 2 results
+  [crossref/surveys] 'does long-context language models improve over retrieval-augmented generation survey': 10 results
+  [arxiv/surveys] 'does long-context language models improve over retrieval-augmented generation review': 8 results
+  [crossref/surveys] 'does long-context language models improve over retrieval-augmented generation review': 10 results
+  [arxiv/recent] 'long-context language models long document question answering': 10 results
+  [crossref/recent] 'long-context language models long document question answering': 10 results
+  [arxiv/recent] 'long-context language models versus retrieval-augmented generation long document question answering': 1 results
+  [crossref/recent] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [arxiv/recent] 'retrieval-augmented generation strong baseline long document question answering': 6 results
+  [crossref/recent] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [arxiv/recent] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [crossref/recent] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [arxiv/recent] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [crossref/recent] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [arxiv/keyword] 'retrieval-augmented generation baseline long document question answering': 10 results
+  [crossref/keyword] 'retrieval-augmented generation baseline long document question answering': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget long document question answering': 0 results
+  [crossref/keyword] 'same hyperparameter tuning budget long document question answering': 10 results
+  [arxiv/keyword] 'multiple random seeds long document question answering': 0 results
+  [crossref/keyword] 'multiple random seeds long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models long document question answering': 10 results
+  [crossref/keyword] 'long-context language models long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [crossref/keyword] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [arxiv/keyword] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [crossref/keyword] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [crossref/keyword] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [arxiv/keyword] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [crossref/keyword] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering survey': 10 results
+  [crossref/surveys] 'long-context language models long document question answering survey': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering review': 10 results
+  [crossref/surveys] 'long-context language models long document question answering review': 10 results
+  [arxiv/surveys] 'long-context language models versus retrieval-augmented generation long document question answering survey': 10 results
+  [crossref/surveys] 'long-context language models versus retrieval-augmented generation long document question answering survey': 10 results
+  [arxiv/surveys] 'long-context language models versus retrieval-augmented generation long document question answering review': 10 results
+  [crossref/surveys] 'long-context language models versus retrieval-augmented generation long document question answering review': 10 results
+  [arxiv/surveys] 'retrieval-augmented generation strong baseline long document question answering survey': 10 results
+  [crossref/surveys] 'retrieval-augmented generation strong baseline long document question answering survey': 10 results
+  [arxiv/surveys] 'retrieval-augmented generation strong baseline long document question answering review': 10 results
+  [crossref/surveys] 'retrieval-augmented generation strong baseline long document question answering review': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering evaluation long-context benchmarks survey': 10 results
+  [crossref/surveys] 'long-context language models long document question answering evaluation long-context benchmarks survey': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering evaluation long-context benchmarks review': 10 results
+  [crossref/surveys] 'long-context language models long document question answering evaluation long-context benchmarks review': 10 results
+  [arxiv/surveys] 'does long-context language models improve over retrieval-augmented generation survey': 10 results
+  [crossref/surveys] 'does long-context language models improve over retrieval-augmented generation survey': 10 results
+  [arxiv/surveys] 'does long-context language models improve over retrieval-augmented generation review': 10 results
+  [crossref/surveys] 'does long-context language models improve over retrieval-augmented generation review': 10 results
+  [arxiv/recent] 'long-context language models long document question answering': 10 results
+  [crossref/recent] 'long-context language models long document question answering': 10 results
+  [arxiv/recent] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [crossref/recent] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [arxiv/recent] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [crossref/recent] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [arxiv/recent] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [crossref/recent] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [arxiv/recent] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [crossref/recent] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [arxiv/keyword] 'retrieval-augmented generation baseline long document question answering': 10 results
+  [crossref/keyword] 'retrieval-augmented generation baseline long document question answering': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget long document question answering': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget long document question answering': 10 results
+  [arxiv/keyword] 'multiple random seeds long document question answering': 10 results
+  [crossref/keyword] 'multiple random seeds long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models long document question answering': 10 results
+  [crossref/keyword] 'long-context language models long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [crossref/keyword] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [arxiv/keyword] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [crossref/keyword] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [crossref/keyword] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [arxiv/keyword] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [crossref/keyword] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering survey': 10 results
+  [crossref/surveys] 'long-context language models long document question answering survey': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering review': 10 results
+  [crossref/surveys] 'long-context language models long document question answering review': 10 results
+  [arxiv/surveys] 'long-context language models versus retrieval-augmented generation long document question answering survey': 10 results
+  [crossref/surveys] 'long-context language models versus retrieval-augmented generation long document question answering survey': 10 results
+  [arxiv/surveys] 'long-context language models versus retrieval-augmented generation long document question answering review': 10 results
+  [crossref/surveys] 'long-context language models versus retrieval-augmented generation long document question answering review': 10 results
+  [arxiv/surveys] 'retrieval-augmented generation strong baseline long document question answering survey': 10 results
+  [crossref/surveys] 'retrieval-augmented generation strong baseline long document question answering survey': 10 results
+  [arxiv/surveys] 'retrieval-augmented generation strong baseline long document question answering review': 10 results
+  [crossref/surveys] 'retrieval-augmented generation strong baseline long document question answering review': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering evaluation long-context benchmarks survey': 10 results
+  [crossref/surveys] 'long-context language models long document question answering evaluation long-context benchmarks survey': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering evaluation long-context benchmarks review': 10 results
+  [crossref/surveys] 'long-context language models long document question answering evaluation long-context benchmarks review': 10 results
+  [arxiv/surveys] 'does long-context language models improve over retrieval-augmented generation survey': 10 results
+  [crossref/surveys] 'does long-context language models improve over retrieval-augmented generation survey': 10 results
+  [arxiv/surveys] 'does long-context language models improve over retrieval-augmented generation review': 10 results
+  [crossref/surveys] 'does long-context language models improve over retrieval-augmented generation review': 10 results
+  [arxiv/recent] 'long-context language models long document question answering': 10 results
+  [crossref/recent] 'long-context language models long document question answering': 10 results
+  [arxiv/recent] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [crossref/recent] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [arxiv/recent] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [crossref/recent] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [arxiv/recent] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [crossref/recent] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [arxiv/recent] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [crossref/recent] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [arxiv/keyword] 'retrieval-augmented generation baseline long document question answering': 10 results
+  [crossref/keyword] 'retrieval-augmented generation baseline long document question answering': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget long document question answering': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget long document question answering': 10 results
+  [arxiv/keyword] 'multiple random seeds long document question answering': 10 results
+  [crossref/keyword] 'multiple random seeds long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models long document question answering': 10 results
+  [crossref/keyword] 'long-context language models long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [crossref/keyword] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [arxiv/keyword] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [crossref/keyword] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [arxiv/keyword] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [crossref/keyword] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [arxiv/keyword] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [crossref/keyword] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering survey': 10 results
+  [crossref/surveys] 'long-context language models long document question answering survey': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering review': 10 results
+  [crossref/surveys] 'long-context language models long document question answering review': 10 results
+  [arxiv/surveys] 'long-context language models versus retrieval-augmented generation long document question answering survey': 10 results
+  [crossref/surveys] 'long-context language models versus retrieval-augmented generation long document question answering survey': 10 results
+  [arxiv/surveys] 'long-context language models versus retrieval-augmented generation long document question answering review': 10 results
+  [crossref/surveys] 'long-context language models versus retrieval-augmented generation long document question answering review': 10 results
+  [arxiv/surveys] 'retrieval-augmented generation strong baseline long document question answering survey': 10 results
+  [crossref/surveys] 'retrieval-augmented generation strong baseline long document question answering survey': 10 results
+  [arxiv/surveys] 'retrieval-augmented generation strong baseline long document question answering review': 10 results
+  [crossref/surveys] 'retrieval-augmented generation strong baseline long document question answering review': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering evaluation long-context benchmarks survey': 10 results
+  [crossref/surveys] 'long-context language models long document question answering evaluation long-context benchmarks survey': 10 results
+  [arxiv/surveys] 'long-context language models long document question answering evaluation long-context benchmarks review': 10 results
+  [crossref/surveys] 'long-context language models long document question answering evaluation long-context benchmarks review': 10 results
+  [arxiv/surveys] 'does long-context language models improve over retrieval-augmented generation survey': 10 results
+  [crossref/surveys] 'does long-context language models improve over retrieval-augmented generation survey': 10 results
+  [arxiv/surveys] 'does long-context language models improve over retrieval-augmented generation review': 10 results
+  [crossref/surveys] 'does long-context language models improve over retrieval-augmented generation review': 10 results
+  [arxiv/recent] 'long-context language models long document question answering': 10 results
+  [crossref/recent] 'long-context language models long document question answering': 10 results
+  [arxiv/recent] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [crossref/recent] 'long-context language models versus retrieval-augmented generation long document question answering': 10 results
+  [arxiv/recent] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [crossref/recent] 'retrieval-augmented generation strong baseline long document question answering': 10 results
+  [arxiv/recent] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [crossref/recent] 'long-context language models long document question answering evaluation long-context benchmarks': 10 results
+  [arxiv/recent] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [crossref/recent] 'does long-context language models improve over retrieval-augmented generation': 10 results
+  [arxiv/keyword] 'retrieval-augmented generation baseline long document question answering': 10 results
+  [crossref/keyword] 'retrieval-augmented generation baseline long document question answering': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget long document question answering': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget long document question answering': 10 results
+  [arxiv/keyword] 'multiple random seeds long document question answering': 10 results
+  [crossref/keyword] 'multiple random seeds long document question answering': 10 results
+== lora-vs-full-finetuning (blind)
+  [arxiv/keyword] 'LoRA large language model fine-tuning': 10 results
+  [crossref/keyword] 'LoRA large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA versus full fine-tuning large language model fine-tuning': 8 results
+  [crossref/keyword] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [arxiv/keyword] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [crossref/keyword] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 3 results
+  [crossref/keyword] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [arxiv/keyword] 'does LoRA improve over full fine-tuning': 10 results
+  [crossref/keyword] 'does LoRA improve over full fine-tuning': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning survey': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning review': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'LoRA versus full fine-tuning large language model fine-tuning survey': 0 results
+  [crossref/surveys] 'LoRA versus full fine-tuning large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'LoRA versus full fine-tuning large language model fine-tuning review': 0 results
+  [crossref/surveys] 'LoRA versus full fine-tuning large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'full fine-tuning strong baseline large language model fine-tuning survey': 0 results
+  [crossref/surveys] 'full fine-tuning strong baseline large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'full fine-tuning strong baseline large language model fine-tuning review': 6 results
+  [crossref/surveys] 'full fine-tuning strong baseline large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks survey': 0 results
+  [crossref/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks survey': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks review': 0 results
+  [crossref/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks review': 10 results
+  [arxiv/surveys] 'does LoRA improve over full fine-tuning survey': 7 results
+  [crossref/surveys] 'does LoRA improve over full fine-tuning survey': 10 results
+  [arxiv/surveys] 'does LoRA improve over full fine-tuning review': 9 results
+  [crossref/surveys] 'does LoRA improve over full fine-tuning review': 10 results
+  [arxiv/recent] 'LoRA large language model fine-tuning': 10 results
+  [crossref/recent] 'LoRA large language model fine-tuning': 10 results
+  [arxiv/recent] 'LoRA versus full fine-tuning large language model fine-tuning': 8 results
+  [crossref/recent] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [arxiv/recent] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [crossref/recent] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [arxiv/recent] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 3 results
+  [crossref/recent] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [arxiv/recent] 'does LoRA improve over full fine-tuning': 10 results
+  [crossref/recent] 'does LoRA improve over full fine-tuning': 10 results
+  [arxiv/keyword] 'full fine-tuning baseline large language model fine-tuning': 10 results
+  [crossref/keyword] 'full fine-tuning baseline large language model fine-tuning': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget large language model fine-tuning': 2 results
+  [crossref/keyword] 'same hyperparameter tuning budget large language model fine-tuning': 10 results
+  [arxiv/keyword] 'multiple random seeds large language model fine-tuning': 8 results
+  [crossref/keyword] 'multiple random seeds large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA large language model fine-tuning': 10 results
+  [crossref/keyword] 'LoRA large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [crossref/keyword] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [arxiv/keyword] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [crossref/keyword] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [crossref/keyword] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [arxiv/keyword] 'does LoRA improve over full fine-tuning': 10 results
+  [crossref/keyword] 'does LoRA improve over full fine-tuning': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning survey': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning review': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'LoRA versus full fine-tuning large language model fine-tuning survey': 10 results
+  [crossref/surveys] 'LoRA versus full fine-tuning large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'LoRA versus full fine-tuning large language model fine-tuning review': 10 results
+  [crossref/surveys] 'LoRA versus full fine-tuning large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'full fine-tuning strong baseline large language model fine-tuning survey': 10 results
+  [crossref/surveys] 'full fine-tuning strong baseline large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'full fine-tuning strong baseline large language model fine-tuning review': 10 results
+  [crossref/surveys] 'full fine-tuning strong baseline large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks survey': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks survey': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks review': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks review': 10 results
+  [arxiv/surveys] 'does LoRA improve over full fine-tuning survey': 10 results
+  [crossref/surveys] 'does LoRA improve over full fine-tuning survey': 10 results
+  [arxiv/surveys] 'does LoRA improve over full fine-tuning review': 10 results
+  [crossref/surveys] 'does LoRA improve over full fine-tuning review': 10 results
+  [arxiv/recent] 'LoRA large language model fine-tuning': 10 results
+  [crossref/recent] 'LoRA large language model fine-tuning': 10 results
+  [arxiv/recent] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [crossref/recent] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [arxiv/recent] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [crossref/recent] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [arxiv/recent] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [crossref/recent] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [arxiv/recent] 'does LoRA improve over full fine-tuning': 10 results
+  [crossref/recent] 'does LoRA improve over full fine-tuning': 10 results
+  [arxiv/keyword] 'full fine-tuning baseline large language model fine-tuning': 10 results
+  [crossref/keyword] 'full fine-tuning baseline large language model fine-tuning': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget large language model fine-tuning': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget large language model fine-tuning': 10 results
+  [arxiv/keyword] 'multiple random seeds large language model fine-tuning': 10 results
+  [crossref/keyword] 'multiple random seeds large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA large language model fine-tuning': 10 results
+  [crossref/keyword] 'LoRA large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [crossref/keyword] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [arxiv/keyword] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [crossref/keyword] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [crossref/keyword] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [arxiv/keyword] 'does LoRA improve over full fine-tuning': 10 results
+  [crossref/keyword] 'does LoRA improve over full fine-tuning': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning survey': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning review': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'LoRA versus full fine-tuning large language model fine-tuning survey': 10 results
+  [crossref/surveys] 'LoRA versus full fine-tuning large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'LoRA versus full fine-tuning large language model fine-tuning review': 10 results
+  [crossref/surveys] 'LoRA versus full fine-tuning large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'full fine-tuning strong baseline large language model fine-tuning survey': 10 results
+  [crossref/surveys] 'full fine-tuning strong baseline large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'full fine-tuning strong baseline large language model fine-tuning review': 10 results
+  [crossref/surveys] 'full fine-tuning strong baseline large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks survey': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks survey': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks review': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks review': 10 results
+  [arxiv/surveys] 'does LoRA improve over full fine-tuning survey': 10 results
+  [crossref/surveys] 'does LoRA improve over full fine-tuning survey': 10 results
+  [arxiv/surveys] 'does LoRA improve over full fine-tuning review': 10 results
+  [crossref/surveys] 'does LoRA improve over full fine-tuning review': 10 results
+  [arxiv/recent] 'LoRA large language model fine-tuning': 10 results
+  [crossref/recent] 'LoRA large language model fine-tuning': 10 results
+  [arxiv/recent] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [crossref/recent] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [arxiv/recent] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [crossref/recent] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [arxiv/recent] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [crossref/recent] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [arxiv/recent] 'does LoRA improve over full fine-tuning': 10 results
+  [crossref/recent] 'does LoRA improve over full fine-tuning': 10 results
+  [arxiv/keyword] 'full fine-tuning baseline large language model fine-tuning': 10 results
+  [crossref/keyword] 'full fine-tuning baseline large language model fine-tuning': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget large language model fine-tuning': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget large language model fine-tuning': 10 results
+  [arxiv/keyword] 'multiple random seeds large language model fine-tuning': 10 results
+  [crossref/keyword] 'multiple random seeds large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA large language model fine-tuning': 10 results
+  [crossref/keyword] 'LoRA large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [crossref/keyword] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [arxiv/keyword] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [crossref/keyword] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [arxiv/keyword] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [crossref/keyword] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [arxiv/keyword] 'does LoRA improve over full fine-tuning': 10 results
+  [crossref/keyword] 'does LoRA improve over full fine-tuning': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning survey': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning review': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'LoRA versus full fine-tuning large language model fine-tuning survey': 10 results
+  [crossref/surveys] 'LoRA versus full fine-tuning large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'LoRA versus full fine-tuning large language model fine-tuning review': 10 results
+  [crossref/surveys] 'LoRA versus full fine-tuning large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'full fine-tuning strong baseline large language model fine-tuning survey': 10 results
+  [crossref/surveys] 'full fine-tuning strong baseline large language model fine-tuning survey': 10 results
+  [arxiv/surveys] 'full fine-tuning strong baseline large language model fine-tuning review': 10 results
+  [crossref/surveys] 'full fine-tuning strong baseline large language model fine-tuning review': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks survey': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks survey': 10 results
+  [arxiv/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks review': 10 results
+  [crossref/surveys] 'LoRA large language model fine-tuning evaluation code and math benchmarks review': 10 results
+  [arxiv/surveys] 'does LoRA improve over full fine-tuning survey': 10 results
+  [crossref/surveys] 'does LoRA improve over full fine-tuning survey': 10 results
+  [arxiv/surveys] 'does LoRA improve over full fine-tuning review': 10 results
+  [crossref/surveys] 'does LoRA improve over full fine-tuning review': 10 results
+  [arxiv/recent] 'LoRA large language model fine-tuning': 10 results
+  [crossref/recent] 'LoRA large language model fine-tuning': 10 results
+  [arxiv/recent] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [crossref/recent] 'LoRA versus full fine-tuning large language model fine-tuning': 10 results
+  [arxiv/recent] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [crossref/recent] 'full fine-tuning strong baseline large language model fine-tuning': 10 results
+  [arxiv/recent] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [crossref/recent] 'LoRA large language model fine-tuning evaluation code and math benchmarks': 10 results
+  [arxiv/recent] 'does LoRA improve over full fine-tuning': 10 results
+  [crossref/recent] 'does LoRA improve over full fine-tuning': 10 results
+  [arxiv/keyword] 'full fine-tuning baseline large language model fine-tuning': 10 results
+  [crossref/keyword] 'full fine-tuning baseline large language model fine-tuning': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget large language model fine-tuning': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget large language model fine-tuning': 10 results
+  [arxiv/keyword] 'multiple random seeds large language model fine-tuning': 10 results
+  [crossref/keyword] 'multiple random seeds large language model fine-tuning': 10 results
+== meta-learning-vs-pretrained-features (blind)
+  [arxiv/keyword] 'meta-learning few-shot image classification': 10 results
+  [crossref/keyword] 'meta-learning few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 0 results
+  [crossref/keyword] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [arxiv/keyword] 'pretrained features with a linear classifier strong baseline few-shot image classification': 0 results
+  [crossref/keyword] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning few-shot image classification evaluation miniImageNet': 7 results
+  [crossref/keyword] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [arxiv/keyword] 'does meta-learning improve over pretrained features with a linear classifier': 0 results
+  [crossref/keyword] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification survey': 4 results
+  [crossref/surveys] 'meta-learning few-shot image classification survey': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification review': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification review': 10 results
+  [arxiv/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification survey': 0 results
+  [crossref/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification survey': 10 results
+  [arxiv/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification review': 0 results
+  [crossref/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification review': 10 results
+  [arxiv/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification survey': 0 results
+  [crossref/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification survey': 10 results
+  [arxiv/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification review': 0 results
+  [crossref/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification review': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification evaluation miniImageNet survey': 1 results
+  [crossref/surveys] 'meta-learning few-shot image classification evaluation miniImageNet survey': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification evaluation miniImageNet review': 0 results
+  [crossref/surveys] 'meta-learning few-shot image classification evaluation miniImageNet review': 10 results
+  [arxiv/surveys] 'does meta-learning improve over pretrained features with a linear classifier survey': 0 results
+  [crossref/surveys] 'does meta-learning improve over pretrained features with a linear classifier survey': 10 results
+  [arxiv/surveys] 'does meta-learning improve over pretrained features with a linear classifier review': 0 results
+  [crossref/surveys] 'does meta-learning improve over pretrained features with a linear classifier review': 10 results
+  [arxiv/recent] 'meta-learning few-shot image classification': 10 results
+  [crossref/recent] 'meta-learning few-shot image classification': 10 results
+  [arxiv/recent] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 0 results
+  [crossref/recent] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [arxiv/recent] 'pretrained features with a linear classifier strong baseline few-shot image classification': 0 results
+  [crossref/recent] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [arxiv/recent] 'meta-learning few-shot image classification evaluation miniImageNet': 2 results
+  [crossref/recent] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [arxiv/recent] 'does meta-learning improve over pretrained features with a linear classifier': 0 results
+  [crossref/recent] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [arxiv/keyword] 'pretrained features with a linear classifier baseline few-shot image classification': 0 results
+  [crossref/keyword] 'pretrained features with a linear classifier baseline few-shot image classification': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget few-shot image classification': 0 results
+  [crossref/keyword] 'same hyperparameter tuning budget few-shot image classification': 10 results
+  [arxiv/keyword] 'multiple random seeds few-shot image classification': 0 results
+  [crossref/keyword] 'multiple random seeds few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning few-shot image classification': 10 results
+  [crossref/keyword] 'meta-learning few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [crossref/keyword] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [arxiv/keyword] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [crossref/keyword] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [crossref/keyword] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [arxiv/keyword] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [crossref/keyword] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification survey': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification survey': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification review': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification review': 10 results
+  [arxiv/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification survey': 10 results
+  [crossref/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification survey': 10 results
+  [arxiv/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification review': 10 results
+  [crossref/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification review': 10 results
+  [arxiv/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification survey': 10 results
+  [crossref/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification survey': 10 results
+  [arxiv/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification review': 10 results
+  [crossref/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification review': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification evaluation miniImageNet survey': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification evaluation miniImageNet survey': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification evaluation miniImageNet review': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification evaluation miniImageNet review': 10 results
+  [arxiv/surveys] 'does meta-learning improve over pretrained features with a linear classifier survey': 10 results
+  [crossref/surveys] 'does meta-learning improve over pretrained features with a linear classifier survey': 10 results
+  [arxiv/surveys] 'does meta-learning improve over pretrained features with a linear classifier review': 10 results
+  [crossref/surveys] 'does meta-learning improve over pretrained features with a linear classifier review': 10 results
+  [arxiv/recent] 'meta-learning few-shot image classification': 10 results
+  [crossref/recent] 'meta-learning few-shot image classification': 10 results
+  [arxiv/recent] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [crossref/recent] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [arxiv/recent] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [crossref/recent] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [arxiv/recent] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [crossref/recent] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [arxiv/recent] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [crossref/recent] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [arxiv/keyword] 'pretrained features with a linear classifier baseline few-shot image classification': 10 results
+  [crossref/keyword] 'pretrained features with a linear classifier baseline few-shot image classification': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget few-shot image classification': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget few-shot image classification': 10 results
+  [arxiv/keyword] 'multiple random seeds few-shot image classification': 10 results
+  [crossref/keyword] 'multiple random seeds few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning few-shot image classification': 10 results
+  [crossref/keyword] 'meta-learning few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [crossref/keyword] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [arxiv/keyword] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [crossref/keyword] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [crossref/keyword] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [arxiv/keyword] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [crossref/keyword] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification survey': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification survey': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification review': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification review': 10 results
+  [arxiv/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification survey': 10 results
+  [crossref/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification survey': 10 results
+  [arxiv/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification review': 10 results
+  [crossref/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification review': 10 results
+  [arxiv/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification survey': 10 results
+  [crossref/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification survey': 10 results
+  [arxiv/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification review': 10 results
+  [crossref/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification review': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification evaluation miniImageNet survey': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification evaluation miniImageNet survey': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification evaluation miniImageNet review': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification evaluation miniImageNet review': 10 results
+  [arxiv/surveys] 'does meta-learning improve over pretrained features with a linear classifier survey': 10 results
+  [crossref/surveys] 'does meta-learning improve over pretrained features with a linear classifier survey': 10 results
+  [arxiv/surveys] 'does meta-learning improve over pretrained features with a linear classifier review': 10 results
+  [crossref/surveys] 'does meta-learning improve over pretrained features with a linear classifier review': 10 results
+  [arxiv/recent] 'meta-learning few-shot image classification': 10 results
+  [crossref/recent] 'meta-learning few-shot image classification': 10 results
+  [arxiv/recent] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [crossref/recent] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [arxiv/recent] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [crossref/recent] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [arxiv/recent] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [crossref/recent] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [arxiv/recent] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [crossref/recent] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [arxiv/keyword] 'pretrained features with a linear classifier baseline few-shot image classification': 10 results
+  [crossref/keyword] 'pretrained features with a linear classifier baseline few-shot image classification': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget few-shot image classification': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget few-shot image classification': 10 results
+  [arxiv/keyword] 'multiple random seeds few-shot image classification': 10 results
+  [crossref/keyword] 'multiple random seeds few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning few-shot image classification': 10 results
+  [crossref/keyword] 'meta-learning few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [crossref/keyword] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [arxiv/keyword] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [crossref/keyword] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [arxiv/keyword] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [crossref/keyword] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [arxiv/keyword] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [crossref/keyword] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification survey': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification survey': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification review': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification review': 10 results
+  [arxiv/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification survey': 10 results
+  [crossref/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification survey': 10 results
+  [arxiv/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification review': 10 results
+  [crossref/surveys] 'meta-learning versus pretrained features with a linear classifier few-shot image classification review': 10 results
+  [arxiv/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification survey': 10 results
+  [crossref/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification survey': 10 results
+  [arxiv/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification review': 10 results
+  [crossref/surveys] 'pretrained features with a linear classifier strong baseline few-shot image classification review': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification evaluation miniImageNet survey': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification evaluation miniImageNet survey': 10 results
+  [arxiv/surveys] 'meta-learning few-shot image classification evaluation miniImageNet review': 10 results
+  [crossref/surveys] 'meta-learning few-shot image classification evaluation miniImageNet review': 10 results
+  [arxiv/surveys] 'does meta-learning improve over pretrained features with a linear classifier survey': 10 results
+  [crossref/surveys] 'does meta-learning improve over pretrained features with a linear classifier survey': 10 results
+  [arxiv/surveys] 'does meta-learning improve over pretrained features with a linear classifier review': 10 results
+  [crossref/surveys] 'does meta-learning improve over pretrained features with a linear classifier review': 10 results
+  [arxiv/recent] 'meta-learning few-shot image classification': 10 results
+  [crossref/recent] 'meta-learning few-shot image classification': 10 results
+  [arxiv/recent] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [crossref/recent] 'meta-learning versus pretrained features with a linear classifier few-shot image classification': 10 results
+  [arxiv/recent] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [crossref/recent] 'pretrained features with a linear classifier strong baseline few-shot image classification': 10 results
+  [arxiv/recent] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [crossref/recent] 'meta-learning few-shot image classification evaluation miniImageNet': 10 results
+  [arxiv/recent] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [crossref/recent] 'does meta-learning improve over pretrained features with a linear classifier': 10 results
+  [arxiv/keyword] 'pretrained features with a linear classifier baseline few-shot image classification': 10 results
+  [crossref/keyword] 'pretrained features with a linear classifier baseline few-shot image classification': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget few-shot image classification': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget few-shot image classification': 10 results
+  [arxiv/keyword] 'multiple random seeds few-shot image classification': 10 results
+  [crossref/keyword] 'multiple random seeds few-shot image classification': 10 results
+== metric-learning-losses (blind)
+  [arxiv/keyword] 'deep metric learning losses image retrieval': 10 results
+  [crossref/keyword] 'deep metric learning losses image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 0 results
+  [crossref/keyword] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [arxiv/keyword] 'contrastive and triplet loss strong baseline image retrieval': 1 results
+  [crossref/keyword] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 0 results
+  [crossref/keyword] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [arxiv/keyword] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [crossref/keyword] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval survey': 0 results
+  [crossref/surveys] 'deep metric learning losses image retrieval survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval review': 1 results
+  [crossref/surveys] 'deep metric learning losses image retrieval review': 10 results
+  [arxiv/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval survey': 0 results
+  [crossref/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval review': 0 results
+  [crossref/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval review': 10 results
+  [arxiv/surveys] 'contrastive and triplet loss strong baseline image retrieval survey': 0 results
+  [crossref/surveys] 'contrastive and triplet loss strong baseline image retrieval survey': 10 results
+  [arxiv/surveys] 'contrastive and triplet loss strong baseline image retrieval review': 0 results
+  [crossref/surveys] 'contrastive and triplet loss strong baseline image retrieval review': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 survey': 0 results
+  [crossref/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 review': 0 results
+  [crossref/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 review': 10 results
+  [arxiv/surveys] 'does deep metric learning losses improve over contrastive and triplet loss survey': 0 results
+  [crossref/surveys] 'does deep metric learning losses improve over contrastive and triplet loss survey': 10 results
+  [arxiv/surveys] 'does deep metric learning losses improve over contrastive and triplet loss review': 0 results
+  [crossref/surveys] 'does deep metric learning losses improve over contrastive and triplet loss review': 10 results
+  [arxiv/recent] 'deep metric learning losses image retrieval': 7 results
+  [crossref/recent] 'deep metric learning losses image retrieval': 10 results
+  [arxiv/recent] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 0 results
+  [crossref/recent] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [arxiv/recent] 'contrastive and triplet loss strong baseline image retrieval': 0 results
+  [crossref/recent] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [arxiv/recent] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 0 results
+  [crossref/recent] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [arxiv/recent] 'does deep metric learning losses improve over contrastive and triplet loss': 1 results
+  [crossref/recent] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [arxiv/keyword] 'contrastive and triplet loss baseline image retrieval': 3 results
+  [crossref/keyword] 'contrastive and triplet loss baseline image retrieval': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget image retrieval': 0 results
+  [crossref/keyword] 'same hyperparameter tuning budget image retrieval': 10 results
+  [arxiv/keyword] 'multiple random seeds image retrieval': 0 results
+  [crossref/keyword] 'multiple random seeds image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses image retrieval': 10 results
+  [crossref/keyword] 'deep metric learning losses image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [crossref/keyword] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [arxiv/keyword] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [crossref/keyword] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [crossref/keyword] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [arxiv/keyword] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [crossref/keyword] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval survey': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval review': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval review': 10 results
+  [arxiv/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval survey': 10 results
+  [crossref/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval review': 10 results
+  [crossref/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval review': 10 results
+  [arxiv/surveys] 'contrastive and triplet loss strong baseline image retrieval survey': 10 results
+  [crossref/surveys] 'contrastive and triplet loss strong baseline image retrieval survey': 10 results
+  [arxiv/surveys] 'contrastive and triplet loss strong baseline image retrieval review': 10 results
+  [crossref/surveys] 'contrastive and triplet loss strong baseline image retrieval review': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 survey': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 review': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 review': 10 results
+  [arxiv/surveys] 'does deep metric learning losses improve over contrastive and triplet loss survey': 10 results
+  [crossref/surveys] 'does deep metric learning losses improve over contrastive and triplet loss survey': 10 results
+  [arxiv/surveys] 'does deep metric learning losses improve over contrastive and triplet loss review': 10 results
+  [crossref/surveys] 'does deep metric learning losses improve over contrastive and triplet loss review': 10 results
+  [arxiv/recent] 'deep metric learning losses image retrieval': 10 results
+  [crossref/recent] 'deep metric learning losses image retrieval': 10 results
+  [arxiv/recent] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [crossref/recent] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [arxiv/recent] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [crossref/recent] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [arxiv/recent] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [crossref/recent] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [arxiv/recent] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [crossref/recent] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [arxiv/keyword] 'contrastive and triplet loss baseline image retrieval': 10 results
+  [crossref/keyword] 'contrastive and triplet loss baseline image retrieval': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget image retrieval': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget image retrieval': 10 results
+  [arxiv/keyword] 'multiple random seeds image retrieval': 10 results
+  [crossref/keyword] 'multiple random seeds image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses image retrieval': 10 results
+  [crossref/keyword] 'deep metric learning losses image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [crossref/keyword] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [arxiv/keyword] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [crossref/keyword] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [crossref/keyword] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [arxiv/keyword] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [crossref/keyword] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval survey': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval review': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval review': 10 results
+  [arxiv/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval survey': 10 results
+  [crossref/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval review': 10 results
+  [crossref/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval review': 10 results
+  [arxiv/surveys] 'contrastive and triplet loss strong baseline image retrieval survey': 10 results
+  [crossref/surveys] 'contrastive and triplet loss strong baseline image retrieval survey': 10 results
+  [arxiv/surveys] 'contrastive and triplet loss strong baseline image retrieval review': 10 results
+  [crossref/surveys] 'contrastive and triplet loss strong baseline image retrieval review': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 survey': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 review': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 review': 10 results
+  [arxiv/surveys] 'does deep metric learning losses improve over contrastive and triplet loss survey': 10 results
+  [crossref/surveys] 'does deep metric learning losses improve over contrastive and triplet loss survey': 10 results
+  [arxiv/surveys] 'does deep metric learning losses improve over contrastive and triplet loss review': 10 results
+  [crossref/surveys] 'does deep metric learning losses improve over contrastive and triplet loss review': 10 results
+  [arxiv/recent] 'deep metric learning losses image retrieval': 10 results
+  [crossref/recent] 'deep metric learning losses image retrieval': 10 results
+  [arxiv/recent] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [crossref/recent] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [arxiv/recent] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [crossref/recent] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [arxiv/recent] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [crossref/recent] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [arxiv/recent] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [crossref/recent] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [arxiv/keyword] 'contrastive and triplet loss baseline image retrieval': 10 results
+  [crossref/keyword] 'contrastive and triplet loss baseline image retrieval': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget image retrieval': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget image retrieval': 10 results
+  [arxiv/keyword] 'multiple random seeds image retrieval': 10 results
+  [crossref/keyword] 'multiple random seeds image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses image retrieval': 10 results
+  [crossref/keyword] 'deep metric learning losses image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [crossref/keyword] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [arxiv/keyword] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [crossref/keyword] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [arxiv/keyword] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [crossref/keyword] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [arxiv/keyword] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [crossref/keyword] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval survey': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval review': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval review': 10 results
+  [arxiv/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval survey': 10 results
+  [crossref/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval review': 10 results
+  [crossref/surveys] 'deep metric learning losses versus contrastive and triplet loss image retrieval review': 10 results
+  [arxiv/surveys] 'contrastive and triplet loss strong baseline image retrieval survey': 10 results
+  [crossref/surveys] 'contrastive and triplet loss strong baseline image retrieval survey': 10 results
+  [arxiv/surveys] 'contrastive and triplet loss strong baseline image retrieval review': 10 results
+  [crossref/surveys] 'contrastive and triplet loss strong baseline image retrieval review': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 survey': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 survey': 10 results
+  [arxiv/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 review': 10 results
+  [crossref/surveys] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196 review': 10 results
+  [arxiv/surveys] 'does deep metric learning losses improve over contrastive and triplet loss survey': 10 results
+  [crossref/surveys] 'does deep metric learning losses improve over contrastive and triplet loss survey': 10 results
+  [arxiv/surveys] 'does deep metric learning losses improve over contrastive and triplet loss review': 10 results
+  [crossref/surveys] 'does deep metric learning losses improve over contrastive and triplet loss review': 10 results
+  [arxiv/recent] 'deep metric learning losses image retrieval': 10 results
+  [crossref/recent] 'deep metric learning losses image retrieval': 10 results
+  [arxiv/recent] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [crossref/recent] 'deep metric learning losses versus contrastive and triplet loss image retrieval': 10 results
+  [arxiv/recent] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [crossref/recent] 'contrastive and triplet loss strong baseline image retrieval': 10 results
+  [arxiv/recent] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [crossref/recent] 'deep metric learning losses image retrieval evaluation CUB-200 and Cars196': 10 results
+  [arxiv/recent] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [crossref/recent] 'does deep metric learning losses improve over contrastive and triplet loss': 10 results
+  [arxiv/keyword] 'contrastive and triplet loss baseline image retrieval': 10 results
+  [crossref/keyword] 'contrastive and triplet loss baseline image retrieval': 10 results
+  [arxiv/keyword] 'same hyperparameter tuning budget image retrieval': 10 results
+  [crossref/keyword] 'same hyperparameter tuning budget image retrieval': 10 results
+  [arxiv/keyword] 'multiple random seeds image retrieval': 10 results
+  [crossref/keyword] 'multiple random seeds image retrieval': 10 results
+== nas-vs-random-search (blind)
+  [arxiv/keyword] 'neural architecture search image classification architectures': 10 results
+  [crossref/keyword] 'neural architecture search image classification architectures': 10 results
+  [arxiv/keyword] 'neural architecture search versus random search image classification architectures': 0 results
+  [crossref/keyword] 'neural architecture search versus random search image classification architectures': 10 results
+  [arxiv/keyword] 'random search strong baseline image classification architectures': 5 results
+  [crossref/keyword] 'random search strong baseline image classification architectures': 10 results
+  [arxiv/keyword] 'neural architecture search image classification architectures evaluation CIFAR-10': 10 results
+  [crossref/keyword] 'neural architecture search image classification architectures evaluation CIFAR-10': 10 results
+  [arxiv/keyword] 'does neural architecture search improve over random search': 10 results
+  [crossref/keyword] 'does neural architecture search improve over random search': 10 results
+  [arxiv/surveys] 'neural architecture search image classification architectures survey': 10 results
+  [crossref/surveys] 'neural architecture search image classification architectures survey': 10 results
+  [arxiv/surveys] 'neural architecture search image classification architectures review': 8 results
+  [crossref/surveys] 'neural architecture search image classification architectures review': 10 results
+  [arxiv/surveys] 'neural architecture search versus random search image classification architectures survey': 0 results
+  [crossref/surveys] 'neural architecture search versus random search image classification architectures survey': 10 results
+  [arxiv/surveys] 'neural architecture search versus random search image classification architectures review': 0 results
+  [crossref/surveys] 'neural architecture search versus random search image classification architectures review': 10 results
+  [arxiv/surveys] 'random search strong baseline image classification architectures survey': 1 results
+  [crossref/surveys] 'random search strong baseline image classification architectures survey': 10 results
+  [arxiv/surveys] 'random search strong baseline image classification architectures review': 0 results
+  [crossref/surveys] 'random search strong baseline image classification architectures review': 10 results
+  [arxiv/surveys] 'neural architecture search image classification architectures evaluation CIFAR-10 survey': 1 results
+  [crossref/surveys] 'neural architecture search image classification architectures evaluation CIFAR-10 survey': 10 results
+  [arxiv/surveys] 'neural architecture search image classification architectures evaluation CIFAR-10 review': 0 results
+  [crossref/surveys] 'neural architecture search image classification architectures evaluation CIFAR-10 review': 10 results
+  [arxiv/surveys] 'does neural architecture search improve over random search survey': 1 results
+  [crossref/surveys] 'does neural architecture search improve over random search survey': 10 results
+  [arxiv/surveys] 'does neural architecture search improve over random search review': 4 results
+  [crossref/surveys] 'does neural architecture search improve over random search review': 10 results
+  [arxiv/recent] 'neural architecture search image classification architectures': 10 results
+  [crossref/recent] 'neural architecture search image classification architectures': 10 results
+  [arxiv/recent] 'neural architecture search versus random search image classification architectures': 0 results
+  [crossref/recent] 'neural architecture search versus random search image classification architectures': 10 results
+  [arxiv/recent] 'random search strong baseline image classification architectures': 2 results
+  [crossref/recent] 'random search strong baseline image classification architectures': 10 results
+  [arxiv/recent] 'neural architecture search image classification architectures evaluation CIFAR-10': 4 results
+  [crossref/recent] 'neural architecture search image classification architectures evaluation CIFAR-10': 10 results
+  [arxiv/recent] 'does neural architecture search improve over random search': 10 results

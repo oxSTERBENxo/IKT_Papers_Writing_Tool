@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask a question</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1 id="title">Lecture</h1>
+  <p><span class="pill" id="phase">…</span> <span class="muted">Anonymous: your name is never recorded.</span></p>
+
+  <section id="ask-view" hidden>
+    <div class="card">
+      <label for="q" class="muted">Your question (others cannot see it yet)</label>
+      <textarea id="q" maxlength="500" placeholder="What is unclear?"></textarea>
+      <div class="row" style="justify-content: space-between">
+        <span class="muted" id="count">0/500</span>
+        <button id="send">Send question</button>
+      </div>
+      <p id="ask-msg" class="muted"></p>
+    </div>
+  </section>
+
+  <section id="vote-view" hidden>
+    <p class="notice">Upvote the questions you also want answered. You can change your votes until voting closes.</p>
+    <ul class="plain ballot" id="ballot"></ul>
+  </section>
+
+  <section id="closed-view" hidden>
+    <p class="notice">This lecture is closed. Thank you for your questions!</p>
+  </section>
+
+  <section id="mine-view" hidden>
+    <h2>Your questions</h2>
+    <ul class="plain" id="mine"></ul>
+  </section>
+  <p id="error" class="error"></p>
+</div>
+<script>
+const $ = (id) => document.getElementById(id);
+const code = location.pathname.split("/").pop().toUpperCase();
+const key = "starry-anon-" + code;
+function newId() {
+  if (crypto.randomUUID) return crypto.randomUUID().replace(/-/g, "");
+  const a = new Uint8Array(16); crypto.getRandomValues(a);
+  return Array.from(a, b => b.toString(16).padStart(2, "0")).join("");
+}
+let anon = null;
+try { anon = localStorage.getItem(key); } catch (e) {}
+if (!anon) { anon = newId(); try { localStorage.setItem(key, anon); } catch (e) {} }
+
+const PHASE_LABEL = {ask: "Asking open", vote: "Voting open", closed: "Closed"};
+let lastBallot = "";
+
+async function api(path, body) {
+  const res = await fetch(path, body ? {method: "POST", headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(body)} : {});
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.detail || "Something went wrong.");
+  return data;
+}
+
+function renderList(el, items, makeItem) {
+  el.replaceChildren(...items.map(makeItem));
+}
+
+async function refresh() {
+  try {
+    const s = await api(`/api/s/${code}/state?anon_id=${anon}`);
+    $("error").textContent = "";
+    $("title").textContent = s.title;
+    document.title = s.title;
+    $("phase").textContent = PHASE_LABEL[s.phase];
+    $("phase").className = "pill " + s.phase;
+    $("ask-view").hidden = s.phase !== "ask";
+    $("vote-view").hidden = s.phase !== "vote";
+    $("closed-view").hidden = s.phase !== "closed";
+    $("mine-view").hidden = !s.mine.length;
+    renderList($("mine"), s.mine, q => { const li = document.createElement("li"); li.textContent = q.text; return li; });
+    if (s.phase === "vote") {
+      const sig = JSON.stringify(s.ballot);
+      if (sig !== lastBallot) {
+        lastBallot = sig;
+        renderList($("ballot"), s.ballot, q => {
+          const li = document.createElement("li");
+          const span = document.createElement("span");
+          span.textContent = q.text;
+          li.append(span);
+          if (q.mine) {
+            const tag = document.createElement("span");
+            tag.className = "muted"; tag.textContent = "yours";
+            li.append(tag);
+          } else {
+            const b = document.createElement("button");
+            b.className = q.voted ? "on" : "secondary";
+            b.textContent = q.voted ? "▲ Upvoted" : "▲ Me too";
+            b.onclick = async () => {
+              b.disabled = true;
+              try { await api(`/api/s/${code}/vote`, {anon_id: anon, question_id: q.id}); lastBallot = ""; await refresh(); }
+              catch (e) { $("error").textContent = e.message; }
+              b.disabled = false;
+            };
+            li.append(b);
+          }
+          return li;
+        });
+      }
+    }
+  } catch (e) { $("error").textContent = e.message; }
+}
+
+$("q").oninput = () => { $("count").textContent = `${$("q").value.length}/500`; };
+$("send").onclick = async () => {
+  const text = $("q").value.trim();
+  if (!text) return;
+  $("send").disabled = true;
+  try {
+    await api(`/api/s/${code}/questions`, {anon_id: anon, text});
+    $("q").value = ""; $("count").textContent = "0/500";
+    $("ask-msg").textContent = "Sent. You can ask another one.";
+    await refresh();
+  } catch (e) { $("ask-msg").textContent = e.message; }
+  $("send").disabled = false;
+};
+refresh();
+setInterval(refresh, 3000);
+</script>
+</body>
+</html>

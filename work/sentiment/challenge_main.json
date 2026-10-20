@@ -1,0 +1,2420 @@
+{
+  "claim": "Test whether dependency-tree graph convolutional networks improve aspect-based sentiment classification when the pretrained encoder is held fixed",
+  "queries": [
+    "does syntax help pretrained transformers aspect-based sentiment",
+    "dependency tree graph neural network on top of BERT ablation sentiment",
+    "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+    "syntax-agnostic versus syntax-aware models frozen encoder probing",
+    "random trees versus dependency trees graph convolution evaluation"
+  ],
+  "design_elements": [
+    "remove the graph convolution layers and keep the encoder",
+    "replace dependency trees with random or fully connected graphs",
+    "frozen pretrained encoder",
+    "multiple random seeds and significance testing",
+    "parser trees versus induced trees"
+  ],
+  "seeds": [
+    {
+      "seed": "2104.04986",
+      "resolved": true,
+      "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+      "openalex_id": null
+    }
+  ],
+  "sources_ok": [
+    "openalex",
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [
+    "semantic_scholar"
+  ],
+  "sources_status": {
+    "openalex": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 6,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "arxiv": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "crossref": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 296,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "query_diversity": {
+    "n_queries": 5,
+    "distinct_terms": 30,
+    "mean_pairwise_term_overlap": 0.068,
+    "near_paraphrases": false
+  },
+  "n_papers_examined": 372,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 14,
+  "n_without_abstract": 91,
+  "n_from_citation_expansion": 97,
+  "n_possible_same_design": 0,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "ceiling_lowered_because": [
+    "sources failed: semantic_scholar",
+    "citation expansion partly failed (2 call(s): not_found, rate_limited)"
+  ],
+  "interpretation": "No closely worded paper was retrieved among related work. This supports only an 'unverified novelty hypothesis'; coverage was degraded (semantic_scholar failed).",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "The Potential Application of Large Language Models in Pharmaceutical Supply Chain Management",
+        "authors": [
+          "David Aguero",
+          "Scott D. Nelson"
+        ],
+        "year": 2024,
+        "date": "2024-04-01",
+        "venue": "The Journal of Pediatric Pharmacology and Therapeutics",
+        "doi": "10.5863/1551-6776-29.2.200",
+        "arxiv_id": null,
+        "pmid": "38596417",
+        "openalex_id": "W4394581225",
+        "s2_id": null,
+        "url": "https://doi.org/10.5863/1551-6776-29.2.200",
+        "pdf_url": "https://meridian.allenpress.com/jppt/article-pdf/29/2/200/3354474/i2331-348x-29-2-200.pdf",
+        "abstract": "The pharmaceutical supply chain is growing increasingly intricate, with various challenges arising in drug inventory management, procurement, distribution, and dispensing processes. Issues such as shortage mitigation, inconsistency in regulatory compliance, cost control, cold-chain storage, adaptation to technologic advances, and secure information sharing all pose significant difficulties to pharmaceutical supply chain management.1 Consequently, this adds immense pressure on health system pharmacies to enhance their arsenal of available tools.2Pediatric hospitals in particular encounter unique challenges relating to pharmaceutical and supply shortages, which can cause delays in vital patient procedures, alterations in care protocols, and even unexpected changes in care locations.Historically, supply chain operations have been improved by using physical automation technologies and methodologies such as robotic process automation. Efficient operations use business intelligence to drive informed decisions regarding sourcing, pricing, and patient care, which can be facilitated either by internal teams or through vendor-provided solutions.3 While this approach does mitigate several problems, it rarely results in holistic problem resolution—like a chronic illness, these issues wax and wane.Addressing these supply chain challenges is crucial to ensure that patients receive the most optimal care available.3 Emerging technologies like large language models (LLMs) and generative artificial intelligence (AI) present new opportunities to address these supply chain challenges. LLMs can be used for knowledge management, data analysis, and process automation, contributing to the ongoing digitalization of supply chains, in ways that are difficult to predict, but worthwhile considering.4LLMs are a type of deep-learning artificial neural network that can perform various natural language processing (NLP) tasks, such as recognizing, translating, predicting, and generating text. However, unlike traditional NLP models, LLMs can capture long-range dependencies and contextual information within the entire prompt by using what are called self-attention mechanisms, instead of word by word. Self-attention allows the model to focus on the most relevant parts of the input and output, and how they relate to each other.5 This self-attention is based on a mathematical model called a transformer, which uses many layers of neural networks to process the input and output text sequences. The transformer consists of an encoder that converts the input text into numerical representations called tokens, and a decoder to convert the results back into text. These LLM transformers are trained to predict the next best word, or missing words, based on many examples of natural language from massive amounts of data, often from diverse sources and domains, to learn the patterns and structures of natural language. LLM transformers have billions of parameters, which are the mathematical weights the model learns during training and uses to make predictions during inference. Hence, an already trained transformer model that is used to generate text is called a generative pretrained transformer. LLMs have achieved remarkable results in various NLP benchmarks and applications, such as question answering, text summarization, text generation, and sentiment analysis. Training a transformer requires massive amounts of compute power,6 so these pretrained transformers can also be adapted to specific tasks or domains by fine-tuning, which is the process of updating the parameters of a pretrained model by using a smaller and more relevant dataset or even using reinforcement learning from human feedback of results.7LLMs have proven to be a disruptive technology, and there is a lot of interest in leveraging LLMs across many domains to perform different tasks, and as such, they have the potential to affect health care in many ways. For example, LLMs can help pharmacists and clinicians with drug information retrieval, drug interaction checking, adverse drug event detection, medication adherence monitoring, patient education, and clinical decision support.8 However, LLMs also pose some challenges and limitations, such as data quality, data privacy, model reliability, AI hallucinations, model explainability, and ethical implications. Therefore, it is important to evaluate the performance and validity of LLMs in health care settings and to ensure their safe and responsible use.In this commentary, we will explore several ways LLMs could be applied to pharmaceutical supply chain management, and some areas where there are potentially major limitations to their use.Systems Integration. LLMs can likely help integrate various inventory optimization tools and disparate databases by using natural language to generate queries and responses, which could reduce the need for manual data entry and extraction across different systems. For example, an LLM could help extract relevant information from unstructured or semi-structured data sources, such as free-text or voice recordings, and then structure the relevant information in a way that can be used by other systems (e.g., inventory management systems based on upstream prescriber orders). Additionally, LLMs perform well at code generation, which could reduce the effort needed to convert data from multiple systems into a standard data model, or help with translating the data from one system to another so it can then be used in the other system, thereby providing an end-to-end integration and data flow by translating between systems. The limitation here is that the model will not be able to extract data that do not exist or are not available to the LLM from the external systems.Human-Data Interface and Data Analysis. Similar to the systems integration, LLMs could help with the human-computer interface and facilitate data analysis.9 For example, using their ability to translate natural language to code could be useful for extracting and analyzing data from a database. A person could ask a question of the data, such as “Which medications do we use the most each week, and what is their total cost?” The LLM would then convert the question into a structured query, extract the data, then write python code to analyze those data to determine which medications are used the most and how much they have cost. Given the chatbot nature of the LLMs, the LLM could even ask clarifying questions to better formulate the question, such as asking how far back the user would like to look for summing the total cost of each medication. This natural conversational format could facilitate easier use of the computer systems. However, anyone who has worked in reporting know the challenges to shaping questions and understanding the true intent behind a question to provide valuable information. The LLMs could provide the user with the information based on what they asked, but that may not be what they really wanted, or could even be wrong. It is important to test and verify ­results to make sure the statistical analysis chosen is the appropriate approach, and that the databases used have reliable data to answer the questions.Process Automation. LLMs could help facilitate the automation of complex hierarchical and planning tasks, such as automatically performing a task when certain conditions are met or helping to triage messages to the correct recipients. LLMs have the capability to report even when there is missing or incoherent data present, they are less affected by spelling mistakes or grammatical errors, and could even make mass changes to data. However, having LLMs make mass changes to data to automatically carry out tasks could cause problems, and there should always be a human in the loop to review and approve the action to be taken.Simulation and Training. LLMs can theoretically be used to help improve supply chain resilience by simulating disruption scenarios to help generate and improve risk-management plans. This is achieved through the analysis of archival data and external influencers to highlight weak points. The ability of these AI models to digest vast amounts of data makes it possible to detect risk-associated patterns and forecast possible disturbances.10 A trained LLM can evaluate factors such as historical supplier disruptions, meteorologic patterns, and market seasonality, and early results suggest this has been successful in other industries.11 Upon identifying an elevated risk by the generative AI model involved in the supply chain planning, it could simulate the effect on supply routes. This prognostic capacity could enable pharmacy operations to establish stronger emergency plans. Additionally, LLMs can quickly generate synthetic datasets for training and onboarding new staff by walking through various scenarios, asking questions, and responding to questions.9 However, LLMs are not able to predict unusual or rare events, such as war, natural disasters, cyberattacks, or pandemics (i.e., black swan events) that could very well affect the supply chain.Knowledge Management. Knowledge management is a challenge in any industry or company. LLMs could be trained on internal, unstructured data, such as emails, meeting minutes, training materials, transaction histories, notes, best-practice documents, policy and standard operating procedure documents, and notifications received from outside systems. This could help facilitate search of this valuable source of institution-specific recommendations, answer questions, and identify how similar issues were handled in the past.9 However, policies and practices tend to change over time, and the LLM could return outdated materials, or require retraining. The performance of the model is only going to be as good as the information it trains on.Text Summarization. One key feature of LLMs is their ability to summarize large volumes of text, which could be used to help chronical or document decisions made as well as the rationale. LLMs could be used to summarize notifications of potential shortages, then combined with internal data, put those notifications in institution-specific context for human review. While text summarization is helpful, there is always the risk of missing or leaving out key information.Optimizing Travel Routes and Recommending Methods to Reduce Environmental Impact. One potential area could be to use LLMs to optimize travel or delivery routes. One could imagine putting the delivery data and concepts into textual sentences and then do analysis to optimize the routes. However, there are already sophisticated algorithms and software used to optimize travel routes.While LLMs hold potential in many prediction-based applications, they also face significant hurdles in other aspects of pharmaceutical supply chain. The authors believe LLMs would struggle to produce value in the following scenarios.Predicting Medication Shortages. Medication shortages are generally triggered by acute events such as increases in demand, raw and/or active product ingredient shortages, or complications in manufacturing processes. Because LLMs are trained on historical data and may not have real-time access to such rapidly changing information, they are challenged to predict theoretical shortages. In fact, relying on these models to predict a shortage could cause a triggering event that leads to a medication shortage. Further, much of the data needed to predict medication shortages is private, meaning only specific entities (Group Purchasing Organization, wholesalers, or specific organizations like the United States Pharmacopeia) have access to the right set of information to predict a theoretical shortage with any accuracy. Black swan events, such as the COVID-19 pandemic, cause additional complications for LLMs, which may lack a full contextual understanding necessary to interpret the nuanced effects of geopolitical events, economic trends, natural disasters, and other factors affecting supply chain operations.Enhanced Data Quality. The importance of standardization and structured syntax and semantics in enhancing supply chain operations cannot be overstated. Despite the existence of common data standards such as the Global Trade Item Number and the Global Location Number from GS1, their adoption is not universal. It is possible for 2 facilities within the same health system to use different systems, or different versions of the same system. Furthermore, different major wholesalers provide varying information for identical products. This means Wholesaler A and Wholesaler B may categorize the therapeutic class of a new drug differently, leading to inconsistencies and posing substantial challenges for LLM.Even as GS1 US and other organizations promote data standardization, limited standardization persists in the development, configuration, and data storage methods of supply chain systems. This can impede LLMs’ ability to derive meaningful insights from unstructured data, exemplifying the “Garbage In, Garbage Out” concept. Particularly for pediatric hospitals, the lack of standardization may lead to medication administration errors and other crucial downstream processes. For instance, if an LLM approves distribution of a product containing preservatives, it may negatively affect a sensitive pediatric patient population. Furthermore, the lack of comprehensive integration and interoperability among various health systems today can hinder data and insights sharing across different sections of the supply chain.Nonetheless, LLMs can assist in detecting anomalies and effecting repairs in mismatched databases. Clinical content vendors can use trained models to scrutinize the content (typically sent monthly as part of a subscription) for missing or miscoded fields, based on preexisting data. Such data eventually finds its way into both electronic health record and third-party–supported inventory systems that affect patient care. Leveraging historical data, LLMs could also assess trends and detect anomalies within the system, such as miscoded revenue fields or quantity conversion factors between units of issue (like vials) and units of sale (like cartons containing 5 sleeves of 6 vials).Inventory Management. While powerful in making real-time decisions based on historical information, placing high-acuity orders based on present day workflows (consignment, 340B accumulation) suggest LLMs are a stronger copilot than a replacement for humans in current state. These tasks require a human touch, or a “thoughtful, warm body,” to make decisions based on nuanced factors that a language model may not fully comprehend (such as substitution of a compounded preparation in place of a commercially used preparation, or considering loan/borrow activity for patient-specific doses within a geographic area, and factoring these scenarios in appropriately for inventory use and forecasting).While LLMs can augment intelligence with predictive analytics and give personalized product alternative recommendations, they may not always provide accurate local forecasting based on historical usage. This could lead to incorrect predictions and potential inventory imbalances. Furthermore, while they can automate tasks like document processing through intelligent automation or digital workers that combine conversational AI with robotic process automation, there are already more specialized tools available for such tasks. These tools are designed specifically for inventory management and can provide more accurate and efficient results, making them a better choice for managing multiple ordering systems and adjusting inventory levels regularly.Keeping LLMs Up-to-Date Can Be Difficult. Training LLMs requires massive amounts of compute power and data to train on, which could pose a significant limitation to their application in supply chain. Pharmaceutical supply chain management is a very dynamic and complex domain that involves multiple stakeholders, regulations, and uncertainties. The LLMs could be making recommendations based on historical or out-of-date information. Keeping LLMs up-to-date with the latest information and trends could prove to be very difficult and costly. Moreover, retraining LLMs can break the reinforcement learning from human feedback process,12 which is a technique that uses the feedback from human users and their preferences to optimize the LLM’s output performance. Therefore, retraining the model can degrade its performance and alignment with human values and preferences. One possible way to overcome these challenges is by using an application programing interface (API) to improve the prompt. In this method, the LLM uses the prompt given by the user, then calls an API to pull the most up-to-date information, then adds that information back into the prompt to improve the results. An API could provide relevant and updated information from various sources, such as databases, web search results, or news articles, and incorporate that information into the new prompt fed back to the LLM. Using an API can also enable more fine-grained control over the LLM’s behavior, such as specifying the tone, style, or length of the output. Given the LLM’s ability to write code, it could even help write its own API interfaces.It Is All About the Prompt. The usefulness of LLMs and their results depend on the and of the which the LLM’s and output. However, there are some limitations to such as context and are when the may not provide context or information for the model to generate relevant and accurate For example, if the prompt were a report on the inventory of the the LLM may not know which what or what of is of this is also by most LLMs have a of or that they can as input or output. For example, if the prompt is a of the latest on COVID-19 in one the input prompt would not be large for the LLM to process all the latest and the model may not be able to all the necessary information in such a the importance of good cannot be overstated. are and provide context and information for the model to generate and relevant also use appropriate and to the output. For example, a good prompt for an inventory report could a report on the inventory of for the of the following total of in by (e.g., and of each current and for each to optimize the management and reduce report to and use and where produce the most some organizations have even prompt to the most out of the is the process of for It is a that requires to and is an and by learning and prompt users could the power of LLMs to automate tasks and improve and with any technology, LLMs also pose certain for For example, LLMs may sensitive data such as patient inventory or supplier and use that data for training or inference. This could lead to data or if the LLMs are not or Moreover, LLMs may generate or content based on the patterns they during which could the quality, or of the pharmaceutical supply of the common that affect LLM are as or the LLM by using that make the model or perform the LLM sensitive or information through the LLM’s responses, either or This results from to the LLM from the system or thereby the LLM to access or that it should code the LLM prompt to have it code or on the system or potentially its or on the LLM’s output or which could in errors, or This is also to as automation AI the to the LLM’s or with the intent or which could lead to or data the of the training data, either by data or by data, which could affect the LLM’s performance or that are designed to or the either by it to produce incorrect or or by its or or the LLM’s parameters, or either by the LLM or by analyzing its responses, which could enable or sensitive This when or the training data or the LLM’s internal either by the LLM’s or by its which could data or LLMs are trained to predict the next best word, based on statistical patterns from large amounts of data, and as such, this can in errors or An when LLMs generate output that is not with the training data, but this is in such a way as to in the incorrect which may to the can cause or if the user is not of the limitations and of Therefore, it is important to LLMs as than human intelligence means that LLMs are designed to assist and human not to or Additionally, even LLMs can answer questions, they are only statistical models and not of understanding the or domain of the training data or LLMs a that could enhance some within pharmaceutical supply chain their application with certain and and will likely encounter hurdles when to LLMs to supply chain The authors using LLMs for tasks that depend on historical and data, and it is crucial to verify the output LLMs to The use of LLMs should be with and and should always be by human and",
+        "citations": 17,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "keyword",
+            "query": "does syntax help pretrained transformers aspect-based sentiment"
+          },
+          {
+            "source": "openalex",
+            "strategy": "surveys",
+            "query": "does syntax help pretrained transformers aspect-based sentiment review"
+          },
+          {
+            "source": "openalex",
+            "strategy": "recent",
+            "query": "does syntax help pretrained transformers aspect-based sentiment"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex",
+          "rank": {
+            "query_match": 1.0,
+            "title_match": 0.125,
+            "retrieval_hits": 2,
+            "score": 2.469
+          }
+        }
+      },
+      "term_overlap": 0.483,
+      "tfidf_similarity": 0.039,
+      "design_elements_matched": [
+        "frozen pretrained encoder"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification",
+        "authors": [
+          "Li Yuan",
+          "Jin Wang",
+          "Lung-Hao Lee",
+          "Xuejie Zhang"
+        ],
+        "year": 2025,
+        "date": "2025-10",
+        "venue": "IEEE Transactions on Computational Social Systems",
+        "doi": "10.1109/tcss.2024.3514901",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4405754178",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tcss.2024.3514901",
+        "pdf_url": null,
+        "abstract": "The main challenge of aspect-level sentiment classification (ASC) is associating target aspect terms with relevant contextual words. Existing methods improve ASC performance by incorporating syntactic dependencies through a graph convolution layer on top of BERT. However, these approaches often assign a fixed weight to edges with the same dependency type, overlooking the contextual nuances these dependencies can convey. To address this, we propose syntax-enhanced BERT (SE-BERT), which integrates syntactic distance embeddings, a syntax-enhanced transformer, aspect-specific masking, and a sentiment classification layer. SE-BERT advances previous methods in two main ways. First, SE-BERT enables dynamic weighting for edges with the same dependency type based on the source node's part-of-speech (POS) tags, which enhances graph propagation accuracy and enables more precise edge associations. Second, rather than adding additional graph convolutional layers on top of BERT, SE-BERT replaces BERT's final Transformer layers with the proposed SE-Transformer. This approach directly encodes syntactic information into the attention distribution and word representation within scaled dot-product attention. The model can be initialized from a pretrained checkpoint and fine-tuned for downstream tasks without requiring additional training parameters. Experimental results on five benchmark datasets demonstrate that SE-BERT outperforms existing ASC methods.",
+        "citations": 3,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "does syntax help pretrained transformers aspect-based sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does syntax help pretrained transformers aspect-based sentiment survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does syntax help pretrained transformers aspect-based sentiment review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "does syntax help pretrained transformers aspect-based sentiment"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 3,
+            "score": 2.42
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W2075228819",
+            "W2116341502",
+            "W2250539671",
+            "W2251124635",
+            "W2251294039",
+            "W2251648804",
+            "W2252057809",
+            "W2253519362",
+            "W2465978385",
+            "W2562607067",
+            "W2751820697",
+            "W2757541972",
+            "W2891778157",
+            "W2895547478",
+            "W2963168371",
+            "W2964098749",
+            "W2964164368",
+            "W2969743835",
+            "W2970583420",
+            "W2970748008",
+            "W2971220558",
+            "W2991433488",
+            "W3035529900",
+            "W3035740499",
+            "W3081228062",
+            "W3100451998",
+            "W3105174597",
+            "W3116313195",
+            "W3156892644",
+            "W3167287584",
+            "W3176265482",
+            "W3176765152",
+            "W3210396606",
+            "W4225526013",
+            "W4324125441",
+            "W4360999323",
+            "W4388412708",
+            "W4390605218",
+            "W4390820841",
+            "W4396817358"
+          ],
+          "related_works": [
+            "W2077104824",
+            "W4294658953",
+            "W2536864162",
+            "W2390421503",
+            "W2364428493",
+            "W4400066978",
+            "W44541701",
+            "W2387926336",
+            "W2385522099",
+            "W2354135050"
+          ]
+        }
+      },
+      "term_overlap": 0.568,
+      "tfidf_similarity": 0.198,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Evaluating fine-tuned, embedding-based, and zero-shot models for aspect-based sentiment analysis in South Slavic news",
+        "authors": [
+          "Nishan Chatterjee",
+          "B. Koloski",
+          "Antoine Doucet",
+          "S. Pollak",
+          "Matthew Purver"
+        ],
+        "year": 2026,
+        "date": "2026-09-18",
+        "venue": "Frontiers in Artificial Intelligence",
+        "doi": "10.3389/frai.2026.1844418",
+        "arxiv_id": null,
+        "pmid": "42827776",
+        "openalex_id": null,
+        "s2_id": "44aef99b8fbc9200610cec1de76c8ffa82403bd3",
+        "url": "https://www.semanticscholar.org/paper/44aef99b8fbc9200610cec1de76c8ffa82403bd3",
+        "pdf_url": "https://doi.org/10.3389/frai.2026.1844418",
+        "abstract": "In the contemporary digital media landscape, the ability to automatically distill public opinion from a vast and continuous stream of information is highly important. Aspect-Based Sentiment Analysis (ABSA) offers this granular capability. In this work, we address a specific, industrially relevant formulation of this task, more formally known as document-level entity-targeted sentiment analysis (TSA) or entity-level sentiment analysis (ELSA), where the “aspects” are named entities such as companies and brands. However, its application to morphologically complex, less-resourced languages like those in the South Slavic family, particularly within the long-form news domain, remains a significant challenge. In this work, we introduce AspectBench, a new benchmark dataset for document-level ABSA, comprising real-world online news articles in Slovenian and Serbo-Croatian, designed to test generalization to unseen aspects, with the Serbo-Croatian portion being made publicly available. Using this benchmark, we conduct a comprehensive empirical study evaluating five distinct modeling paradigms, including lightweight document-embedding-based classifiers, fine-tuned multilingual and language-specific pretrained language models (PLMs), hierarchical attention networks (HANs), local large language models (LLMs) in zero and few-shot settings, and learning-to-defer (L2D) policies with multi-expert PLMs, complete LLM deferral, and confidence-gated selective LLM deferral using DSPy-calibrated prompts. Our experiments show that supervised expert models remain the most reliable foundation for this task, with Longformer, mDeBERTa-v3, mT5, language-specific encoders, and hierarchical models providing strong performance depending on language and class balance. Aspect masking is generally useful for supervised expert models, especially the PLM and HAN variants, but is not uniformly beneficial across all model families and evaluation views. Standalone local LLMs are not competitive, and complete LLM deferral is unstable when applied to every instance. However, selective LLM deferral is more promising because routing low-confidence expert predictions to the LLM can improve or stabilize performance while limiting unnecessary LLM calls. We additionally use minimum viable set analysis to show how performance, calibration, and uncertainty scale with annotation volume, providing practical guidance for future media-monitoring annotation campaigns on real-world datasets. Our work therefore fills a crucial gap for less-resourced ABSA and offers practical insights into the trade-offs between model complexity, data characteristics, and the development of robust, learning-to-defer systems for real-world media monitoring.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "recommended",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.04986"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.431,
+      "tfidf_similarity": 0.072,
+      "design_elements_matched": [
+        "frozen pretrained encoder"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Dependency Graph Enhanced Dual-transformer Structure for Aspect-based Sentiment Classification",
+        "authors": [
+          "Hao Tang",
+          "Dong-Hong Ji",
+          "Chenliang Li",
+          "Qi-Ji Zhou"
+        ],
+        "year": 2020,
+        "date": "2020-07-01",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "doi": "10.18653/v1/2020.acl-main.588",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W3035740499",
+        "s2_id": "57fff1bd2265848f126f7f62b10d1c67cb6be0da",
+        "url": "https://www.semanticscholar.org/paper/57fff1bd2265848f126f7f62b10d1c67cb6be0da",
+        "pdf_url": "https://www.aclweb.org/anthology/2020.acl-main.588.pdf",
+        "abstract": "Aspect-based sentiment classification is a popular task aimed at identifying the corresponding emotion of a specific aspect. One sentence may contain various sentiments for different aspects. Many sophisticated methods such as attention mechanism and Convolutional Neural Networks (CNN) have been widely employed for handling this challenge. Recently, semantic dependency tree implemented by Graph Convolutional Networks (GCN) is introduced to describe the inner connection between aspects and the associated emotion words. But the improvement is limited due to the noise and instability of dependency trees. To this end, we propose a dependency graph enhanced dual-transformer network (named DGEDT) by jointly considering the flat representations learnt from Transformer and graph-based representations learnt from the corresponding dependency graph in an iterative interaction manner. Specifically, a dual-transformer structure is devised in DGEDT to support mutual reinforcement between the flat representation learning and graph-based representation learning. The idea is to allow the dependency graph to guide the representation learning of the transformer encoder and vice versa. The results on five datasets demonstrate that the proposed DGEDT outperforms all state-of-the-art alternatives with a large margin.",
+        "citations": 397,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W4405754178"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.438,
+      "tfidf_similarity": 0.178,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Syntactic and Semantic Dependency Graph Convolutional Network for Aspect-Based Sentiment Analysis",
+        "authors": [
+          "Shiyong Xiong",
+          "Hongtao Wang",
+          "Jun Shen",
+          "Yanghui Xiang"
+        ],
+        "year": 2024,
+        "date": "2024-12-13",
+        "venue": "2024 6th International Conference on Frontier Technologies of Information and Computer (ICFTIC)",
+        "doi": "10.1109/icftic64248.2024.10913075",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/icftic64248.2024.10913075",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.444,
+            "title_match": 0.444,
+            "retrieval_hits": 1,
+            "score": 1.458
+          }
+        }
+      },
+      "term_overlap": 0.251,
+      "tfidf_similarity": 0.348,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Peer Review #3 of \"Attention enhanced capsule network for text classification by encoding syntactic dependency trees with graph convolutional neural network (v0.2)\"",
+        "authors": [],
+        "year": 2022,
+        "date": "2022-01-05",
+        "venue": null,
+        "doi": "10.7287/peerj-cs.831v0.2/reviews/3",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4206200108",
+        "s2_id": null,
+        "url": "https://doi.org/10.7287/peerj-cs.831v0.2/reviews/3",
+        "pdf_url": "https://doi.org/10.7287/peerj-cs.831v0.2/reviews/3",
+        "abstract": "Text classification is a fundamental task in many applications such as topic labeling, sentiment analysis, and spam detection.The text syntactic relationship and word sequence are important and useful for text classification.How to model and incorporate them to improve performance is one key challenge.Inspired by human behavior in understanding text.In this paper, we combine the syntactic relationship, sequence structure, and semantics for text representation, and propose an attention-enhanced capsule network-based text classification model.Specifically, we use graph convolutional neural networks to encode syntactic dependency trees, build multi-head attention to encode dependencies relationship in text sequence, merge with semantic information by capsule network at last.Extensive experiments on five datasets demonstrate that our approach can effectively improve the performance of text classification compared with state-of-the-art methods.The result also shows capsule network, graph convolutional neural network, and multiheaded attention has integration effects on text classification tasks.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "peer-review",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "random trees versus dependency trees graph convolution evaluation"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "random trees versus dependency trees graph convolution evaluation survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "random trees versus dependency trees graph convolution evaluation review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.556,
+            "retrieval_hits": 4,
+            "score": 2.167
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W1550206324",
+            "W1586532344",
+            "W1832693441",
+            "W2124335086",
+            "W2126502509",
+            "W2149684865",
+            "W2150824314",
+            "W2153579005",
+            "W2160660844",
+            "W2166183437",
+            "W2170240176",
+            "W2173027866",
+            "W2250539671",
+            "W2251628756",
+            "W2585540825",
+            "W2594047108",
+            "W2597655663",
+            "W2600702321",
+            "W2740586471",
+            "W2751777443",
+            "W2951278869",
+            "W2962853356",
+            "W2963653811",
+            "W2964167098",
+            "W2964225211",
+            "W3039201763",
+            "W4385245566"
+          ],
+          "related_works": [
+            "W63071447",
+            "W3181746755",
+            "W2389073067",
+            "W3016958897",
+            "W4283379348",
+            "W4312417841",
+            "W2735477435",
+            "W1529400504",
+            "W3045739591",
+            "W2807436399"
+          ]
+        }
+      },
+      "term_overlap": 0.385,
+      "tfidf_similarity": 0.203,
+      "design_elements_matched": [],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Peer Review #3 of \"Attention enhanced capsule network for text classification by encoding syntactic dependency trees with graph convolutional neural network (v0.1)\"",
+        "authors": [],
+        "year": 2022,
+        "date": "2022-01-05",
+        "venue": null,
+        "doi": "10.7287/peerj-cs.831v0.1/reviews/3",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4205550719",
+        "s2_id": null,
+        "url": "https://doi.org/10.7287/peerj-cs.831v0.1/reviews/3",
+        "pdf_url": "https://doi.org/10.7287/peerj-cs.831v0.1/reviews/3",
+        "abstract": "Text classification is a fundamental task in many applications such as topic labeling, sentiment analysis, and spam detection.The text syntactic relationship and word sequence are important and useful for text classification.How to model and incorporate them to improve performance is one key challenge.Inspired by human behavior in understanding text.In this paper, we combine the syntactic relationship, sequence structure, and semantics for text representation, and propose an attention-enhanced capsule network-based text classification model.Specifically, we use graph convolutional neural networks to encode syntactic dependency trees, build multi-head attention to encode dependencies relationship in text sequence, merge with semantic information by capsule network at last.Extensive experiments on five datasets demonstrate that our approach can effectively improve the performance of text classification compared with state-of-the-art methods.The result also shows capsule network, graph convolutional neural network, and multiheaded attention has integration effects on text classification tasks.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "peer-review",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "random trees versus dependency trees graph convolution evaluation"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "random trees versus dependency trees graph convolution evaluation survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "random trees versus dependency trees graph convolution evaluation review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.556,
+            "retrieval_hits": 4,
+            "score": 2.167
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W1550206324",
+            "W1586532344",
+            "W1832693441",
+            "W2124335086",
+            "W2126502509",
+            "W2149684865",
+            "W2150824314",
+            "W2153579005",
+            "W2160660844",
+            "W2166183437",
+            "W2170240176",
+            "W2173027866",
+            "W2250539671",
+            "W2251628756",
+            "W2585540825",
+            "W2594047108",
+            "W2597655663",
+            "W2600702321",
+            "W2740586471",
+            "W2751777443",
+            "W2951278869",
+            "W2962853356",
+            "W2963653811",
+            "W2964167098",
+            "W2964225211",
+            "W3039201763",
+            "W4385245566"
+          ],
+          "related_works": [
+            "W63071447",
+            "W3181746755",
+            "W2389073067",
+            "W2521062615",
+            "W3016958897",
+            "W4283379348",
+            "W4312417841",
+            "W2735477435",
+            "W1529400504",
+            "W3045739591"
+          ]
+        }
+      },
+      "term_overlap": 0.385,
+      "tfidf_similarity": 0.203,
+      "design_elements_matched": [],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Peer Review #1 of \"Attention enhanced capsule network for text classification by encoding syntactic dependency trees with graph convolutional neural network (v0.1)\"",
+        "authors": [],
+        "year": 2022,
+        "date": "2022-01-05",
+        "venue": null,
+        "doi": "10.7287/peerj-cs.831v0.1/reviews/1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4205095989",
+        "s2_id": null,
+        "url": "https://doi.org/10.7287/peerj-cs.831v0.1/reviews/1",
+        "pdf_url": "https://peerj.com/articles/cs-831v0.2/submission",
+        "abstract": "Text classification is a fundamental task in many applications such as topic labeling, sentiment analysis, and spam detection.The text syntactic relationship and word sequence are important and useful for text classification.How to model and incorporate them to improve performance is one key challenge.Inspired by human behavior in understanding text.In this paper, we combine the syntactic relationship, sequence structure, and semantics for text representation, and propose an attention-enhanced capsule network-based text classification model.Specifically, we use graph convolutional neural networks to encode syntactic dependency trees, build multi-head attention to encode dependencies relationship in text sequence, merge with semantic information by capsule network at last.Extensive experiments on five datasets demonstrate that our approach can effectively improve the performance of text classification compared with state-of-the-art methods.The result also shows capsule network, graph convolutional neural network, and multiheaded attention has integration effects on text classification tasks.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "peer-review",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "random trees versus dependency trees graph convolution evaluation"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "random trees versus dependency trees graph convolution evaluation survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "random trees versus dependency trees graph convolution evaluation review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.556,
+            "retrieval_hits": 4,
+            "score": 2.167
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W1550206324",
+            "W1586532344",
+            "W1832693441",
+            "W2124335086",
+            "W2126502509",
+            "W2149684865",
+            "W2150824314",
+            "W2153579005",
+            "W2160660844",
+            "W2166183437",
+            "W2170240176",
+            "W2173027866",
+            "W2250539671",
+            "W2251628756",
+            "W2585540825",
+            "W2594047108",
+            "W2597655663",
+            "W2600702321",
+            "W2740586471",
+            "W2751777443",
+            "W2951278869",
+            "W2962853356",
+            "W2963653811",
+            "W2964167098",
+            "W2964225211",
+            "W3039201763",
+            "W4385245566"
+          ],
+          "related_works": [
+            "W63071447",
+            "W3181746755",
+            "W2389073067",
+            "W2521062615",
+            "W3016958897",
+            "W4283379348",
+            "W4312417841",
+            "W2735477435",
+            "W1529400504",
+            "W3045739591"
+          ]
+        }
+      },
+      "term_overlap": 0.385,
+      "tfidf_similarity": 0.203,
+      "design_elements_matched": [],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Dependency relationship-enhanced graph convolutional network for aspect-based sentiment analysis",
+        "authors": [
+          "Xiaohui Tian",
+          "Fang’ai Liu",
+          "Xuqiang Zhuang",
+          "Yuling Zhang",
+          "Xuejian Gao"
+        ],
+        "year": 2025,
+        "date": "2025-08-08",
+        "venue": "Neural Computing and Applications",
+        "doi": "10.1007/s00521-025-11508-8",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/s00521-025-11508-8",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 5,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.444,
+            "title_match": 0.444,
+            "retrieval_hits": 2,
+            "score": 1.642
+          }
+        }
+      },
+      "term_overlap": 0.251,
+      "tfidf_similarity": 0.32,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks",
+        "authors": [
+          "Chen Zhang",
+          "Qiuchi Li",
+          "Da-Wei Song"
+        ],
+        "year": 2019,
+        "date": "2019-09-08",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "doi": "10.18653/v1/d19-1464",
+        "arxiv_id": "1909.03477",
+        "pmid": null,
+        "openalex_id": "W2971220558",
+        "s2_id": "beccf5bc709167e483e8ea0f58829c34a2bde2e7",
+        "url": "https://www.semanticscholar.org/paper/beccf5bc709167e483e8ea0f58829c34a2bde2e7",
+        "pdf_url": "https://www.aclweb.org/anthology/D19-1464.pdf",
+        "abstract": "Due to their inherent capability in semantic alignment of aspects and their context words, attention mechanism and Convolutional Neural Networks (CNNs) are widely applied for aspect-based sentiment classification. However, these models lack a mechanism to account for relevant syntactical constraints and long-range word dependencies, and hence may mistakenly recognize syntactically irrelevant contextual words as clues for judging aspect sentiment. To tackle this problem, we propose to build a Graph Convolutional Network (GCN) over the dependency tree of a sentence to exploit syntactical information and word dependencies. Based on it, a novel aspect-specific sentiment classification framework is raised. Experiments on three benchmarking collections illustrate that our proposed model has comparable effectiveness to a range of state-of-the-art models, and further demonstrate that both syntactical information and long-range word dependencies are properly captured by the graph convolution structure.",
+        "citations": 777,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W4405754178"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.352,
+      "tfidf_similarity": 0.183,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Improving Aspect-based Sentiment Analysis with Gated Graph Convolutional Networks and Syntax-based Regulation",
+        "authors": [
+          "Amir Pouran Ben Veyseh",
+          "Nasim Nour",
+          "Franck Dernoncourt",
+          "Quan Hung Tran",
+          "Dejing Dou",
+          "Thien Huu Nguyen"
+        ],
+        "year": 2020,
+        "date": "2020-10-26",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2010.13389",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2010.13389",
+        "pdf_url": null,
+        "abstract": "Aspect-based Sentiment Analysis (ABSA) seeks to predict the sentiment polarity of a sentence toward a specific aspect. Recently, it has been shown that dependency trees can be integrated into deep learning models to produce the state-of-the-art performance for ABSA. However, these models tend to compute the hidden/representation vectors without considering the aspect terms and fail to benefit from the overall contextual importance scores of the words that can be obtained from the dependency tree for ABSA. In this work, we propose a novel graph-based deep learning model to overcome these two issues of the prior work on ABSA. In our model, gate vectors are generated from the representation vectors of the aspect terms to customize the hidden vectors of the graph-based models toward the aspect terms. In addition, we propose a mechanism to obtain the importance scores for each word in the sentences based on the dependency trees that are then injected into the model to improve the representation vectors for ABSA. The proposed model achieves the state-of-the-art performance on three benchmark datasets.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 1.986
+          }
+        }
+      },
+      "term_overlap": 0.369,
+      "tfidf_similarity": 0.158,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Aspect-Level Sentiment Analysis Via Convolution over Dependency Tree",
+        "authors": [
+          "Kai Sun",
+          "Richong Zhang",
+          "Samuel Mensah",
+          "Yongyi Mao",
+          "Xu-Dong Liu"
+        ],
+        "year": 2019,
+        "date": "2019-11-01",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "doi": "10.18653/v1/d19-1569",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W2970748008",
+        "s2_id": "ca352ea6ac66c03a0cc22759098713e4202c71c6",
+        "url": "https://www.semanticscholar.org/paper/ca352ea6ac66c03a0cc22759098713e4202c71c6",
+        "pdf_url": "https://www.aclweb.org/anthology/D19-1569.pdf",
+        "abstract": "We propose a method based on neural networks to identify the sentiment polarity of opinion words expressed on a specific aspect of a sentence. Although a large majority of works typically focus on leveraging the expressive power of neural networks in handling this task, we explore the possibility of integrating dependency trees with neural networks for representation learning. To this end, we present a convolution over a dependency tree (CDT) model which exploits a Bi-directional Long Short Term Memory (Bi-LSTM) to learn representations for features of a sentence, and further enhance the embeddings with a graph convolutional network (GCN) which operates directly on the dependency tree of the sentence. Our approach propagates both contextual and dependency information from opinion words to aspect words, offering discriminative properties for supervision. Experimental results ranks our approach as the new state-of-the-art in aspect-based sentiment classification.",
+        "citations": 472,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W4405754178"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.352,
+      "tfidf_similarity": 0.171,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Peer Review #2 of \"Attention enhanced capsule network for text classification by encoding syntactic dependency trees with graph convolutional neural network (v0.1)\"",
+        "authors": [],
+        "year": 2022,
+        "date": "2022-01-05",
+        "venue": null,
+        "doi": "10.7287/peerj-cs.831v0.1/reviews/2",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.7287/peerj-cs.831v0.1/reviews/2",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "peer-review",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "random trees versus dependency trees graph convolution evaluation"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "random trees versus dependency trees graph convolution evaluation survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "random trees versus dependency trees graph convolution evaluation review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.556,
+            "retrieval_hits": 4,
+            "score": 2.167
+          }
+        }
+      },
+      "term_overlap": 0.298,
+      "tfidf_similarity": 0.219,
+      "design_elements_matched": [],
+      "is_survey_like": true,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Span-based dependency-enhanced graph convolutional network for aspect sentiment triplet extraction",
+        "authors": [
+          "Zhigang Jin",
+          "Manyue Tao",
+          "Xiaodong Wu",
+          "Hao Zhang"
+        ],
+        "year": 2024,
+        "date": "2024-01",
+        "venue": "Neurocomputing",
+        "doi": "10.1016/j.neucom.2023.126966",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.neucom.2023.126966",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 27,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.444,
+            "title_match": 0.444,
+            "retrieval_hits": 1,
+            "score": 1.567
+          }
+        }
+      },
+      "term_overlap": 0.251,
+      "tfidf_similarity": 0.262,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Syntactic Edge-Enhanced Graph Convolutional Networks for Aspect-Level Sentiment Classification With Interactive Attention",
+        "authors": [
+          "Yao Xiao",
+          "Guangyou Zhou"
+        ],
+        "year": 2020,
+        "date": "2020-01-01",
+        "venue": "IEEE Access",
+        "doi": "10.1109/access.2020.3019277",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W3081228062",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/access.2020.3019277",
+        "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09177070.pdf",
+        "abstract": "Aspect-level sentiment classification is a hot research topic in natural language processing (NLP). One of the key challenges is that how to develop effective algorithms to model the relationships between aspects and opinion words appeared in a sentence. Among the various methods proposed in the literature, the graph convolutional networks (GCNs) achieve the promising results due to their good ability to capture the long distance between the aspects and the opinion words. However, the existing methods cannot effectively leverage the edge information of dependency parsing tree, resulting in the sub-optimal results. In this article, we propose a syntactic edge-enhanced graph convolutional network (ASEGCN) for aspect-level sentiment classification with interactive attention. Our proposed method can effectively learn better representations of aspects and the opinion words by considering the different types of neighborhoods with the edge constraint. To evaluate the effectiveness of our proposed method, we conduct the experiments on five standard sentiment classification results. Our results demonstrate that our proposed method obtains the better performance than the state-of-the-art models on four datasets, and achieves a comparative performance on Rest16.",
+        "citations": 30,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W4405754178"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.352,
+      "tfidf_similarity": 0.158,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Dual-Channel Semantic and Syntactic Dependency Graph Convolutional Network for Aspect-based Sentiment Analysis",
+        "authors": [
+          "Kaixuan Sheng",
+          "Chengguo Lv",
+          "Jinfeng Guo"
+        ],
+        "year": 2025,
+        "date": "2025-06-30",
+        "venue": "2025 International Joint Conference on Neural Networks (IJCNN)",
+        "doi": "10.1109/ijcnn64981.2025.11228405",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/ijcnn64981.2025.11228405",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.444,
+            "title_match": 0.444,
+            "retrieval_hits": 3,
+            "score": 1.708
+          }
+        }
+      },
+      "term_overlap": 0.251,
+      "tfidf_similarity": 0.248,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Long-distance sentiment dependency strengthened graph convolutional network for aspect-based sentiment analysis",
+        "authors": [
+          "Hui Ding",
+          "Erdeng Gao"
+        ],
+        "year": 2025,
+        "date": "2025-07-24",
+        "venue": "Fourth International Conference on Electronics Technology and Artificial Intelligence (ETAI 2025)",
+        "doi": "10.1117/12.3068930",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1117/12.3068930",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.444,
+            "title_match": 0.444,
+            "retrieval_hits": 1,
+            "score": 1.458
+          }
+        }
+      },
+      "term_overlap": 0.251,
+      "tfidf_similarity": 0.247,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Modeling Structured Dependency Tree with Graph Convolutional Networks for Aspect-Level Sentiment Classification",
+        "authors": [
+          "Qin Zhao",
+          "Fuli Yang",
+          "Dongdong An",
+          "Jie Lian"
+        ],
+        "year": 2024,
+        "date": "2024-01-10",
+        "venue": "Sensors",
+        "doi": "10.3390/s24020418",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/s24020418",
+        "pdf_url": null,
+        "abstract": "Aspect-based sentiment analysis is a fine-grained task where the key goal is to predict sentiment polarities of one or more aspects in a given sentence. Currently, graph neural network models built upon dependency trees are widely employed for aspect-based sentiment analysis tasks. However, most existing models still contain a large amount of noisy nodes that cannot precisely capture the contextual relationships between specific aspects. Meanwhile, most studies do not consider the connections between nodes without direct dependency edges but play critical roles in determining the sentiment polarity of an aspect. To address the aforementioned limitations, we propose a Structured Dependency Tree-based Graph Convolutional Network (SDTGCN) model. Specifically, we explore construction of a structured syntactic dependency graph by incorporating positional information, sentiment commonsense knowledge, part-of-speech tags, syntactic dependency distances, etc., to assign arbitrary edge weights between nodes. This enhances the connections between aspect nodes and pivotal words while weakening irrelevant node links, enabling the model to sufficiently express sentiment dependencies between specific aspects and contextual information. We utilize part-of-speech tags and dependency distances to discover relationships between pivotal nodes without direct dependencies. Finally, we aggregate node information by fully considering their importance to obtain precise aspect representations. Experimental results on five publicly available datasets demonstrate the superiority of our proposed model over state-of-the-art approaches; furthermore, the accuracy and F1-score show a significant improvement on the majority of datasets, with increases of 0.74, 0.37, 0.65, and 0.79, 0.75, 1.17, respectively. This series of enhancements highlights the effective progress made by the STDGCN model in enhancing sentiment classification performance.",
+        "citations": 27,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.556,
+            "retrieval_hits": 2,
+            "score": 2.247
+          }
+        }
+      },
+      "term_overlap": 0.352,
+      "tfidf_similarity": 0.141,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "ROAEN: Reversed dependency graph and Orthogonal-gating strategy Attention-Enhanced Network for Aspect-Level Sentiment Classification",
+        "authors": [
+          "Jiang Chen",
+          "Weijie Ye"
+        ],
+        "year": 2024,
+        "date": "2024-09-06",
+        "venue": null,
+        "doi": "10.21203/rs.3.rs-4879513/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21203/rs.3.rs-4879513/v1",
+        "pdf_url": null,
+        "abstract": "Abstract Aspect-Level sentiment classification aims to determine the sentiment polarity of different aspects within a sentence. Many existing approaches employ Graph Convolutional Networks (GCN) in conjunction with dependency trees to model syntactic structures in sentences but often ignore its limitations in modeling long-distance words. This paper proposes a Reversed dependency graph and Orthogonal-gating strategy Attention-Enhanced Network (ROAEN), which introduces a novel Reversed dependency Graph Convolutional Network combined with Orthogonal projection (RGCN-O) to model long-distance words and syntactic structures simultaneously. Specifically, RGCN-O discards a few words with dependencies, generates vector representations for long-distance words, and models syntactic structures from its orthogonal space. The output of RGCN-O is then used to design a gating strategy that dynamically filters attention noise in a weighted manner. Additionally, we offer a novel total inter-intra loss function to enhance the compactness and distinctiveness of the intra-class and inter-class sample features. Extensive experiments on five benchmark datasets demonstrate the effectiveness of RGCN-O and the new loss function, with ROAEN achieving state-of-the-art performance.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "dependency tree graph neural network on top of BERT ablation sentiment"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.444,
+            "retrieval_hits": 3,
+            "score": 1.931
+          }
+        }
+      },
+      "term_overlap": 0.352,
+      "tfidf_similarity": 0.122,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Why do Random Forests Work? Understanding Tree Ensembles as Self-Regularizing Adaptive Smoothers",
+        "authors": [
+          "Alicia Curth",
+          "Alan Jeffares",
+          "Mihaela van der Schaar"
+        ],
+        "year": 2024,
+        "date": "2024-02-02",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2402.01502",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2402.01502",
+        "pdf_url": null,
+        "abstract": "Despite their remarkable effectiveness and broad application, the drivers of success underlying ensembles of trees are still not fully understood. In this paper, we highlight how interpreting tree ensembles as adaptive and self-regularizing smoothers can provide new intuition and deeper insight to this topic. We use this perspective to show that, when studied as smoothers, randomized tree ensembles not only make predictions that are quantifiably more smooth than the predictions of the individual trees they consist of, but also further regulate their smoothness at test-time based on the dissimilarity between testing and training inputs. First, we use this insight to revisit, refine and reconcile two recent explanations of forest success by providing a new way of quantifying the conjectured behaviors of tree ensembles objectively by measuring the effective degree of smoothing they imply. Then, we move beyond existing explanations for the mechanisms by which tree ensembles improve upon individual trees and challenge the popular wisdom that the superior performance of forests should be understood as a consequence of variance reduction alone. We argue that the current high-level dichotomy into bias- and variance-reduction prevalent in statistics is insufficient to understand tree ensembles -- because the prevailing definition of bias does not capture differences in the expressivity of the hypothesis classes formed by trees and forests. Instead, we show that forests can improve upon trees by three distinct mechanisms that are usually implicitly entangled. In particular, we demonstrate that the smoothing effect of ensembling can reduce variance in predictions due to noise in outcome generation, reduce variability in the quality of the learned function given fixed input data and reduce potential bias in learnable functions by enriching the available hypothesis space.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "random trees versus dependency trees graph convolution evaluation"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.286,
+            "title_match": 0.286,
+            "retrieval_hits": 1,
+            "score": 0.982
+          }
+        }
+      },
+      "term_overlap": 0.351,
+      "tfidf_similarity": 0.099,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    }
+  ],
+  "possible_same_design": [],
+  "found_via_citations": [
+    {
+      "paper": {
+        "title": "Dependency Graph Enhanced Dual-transformer Structure for Aspect-based Sentiment Classification",
+        "authors": [
+          "Hao Tang",
+          "Dong-Hong Ji",
+          "Chenliang Li",
+          "Qi-Ji Zhou"
+        ],
+        "year": 2020,
+        "date": "2020-07-01",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "doi": "10.18653/v1/2020.acl-main.588",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W3035740499",
+        "s2_id": "57fff1bd2265848f126f7f62b10d1c67cb6be0da",
+        "url": "https://www.semanticscholar.org/paper/57fff1bd2265848f126f7f62b10d1c67cb6be0da",
+        "pdf_url": "https://www.aclweb.org/anthology/2020.acl-main.588.pdf",
+        "abstract": "Aspect-based sentiment classification is a popular task aimed at identifying the corresponding emotion of a specific aspect. One sentence may contain various sentiments for different aspects. Many sophisticated methods such as attention mechanism and Convolutional Neural Networks (CNN) have been widely employed for handling this challenge. Recently, semantic dependency tree implemented by Graph Convolutional Networks (GCN) is introduced to describe the inner connection between aspects and the associated emotion words. But the improvement is limited due to the noise and instability of dependency trees. To this end, we propose a dependency graph enhanced dual-transformer network (named DGEDT) by jointly considering the flat representations learnt from Transformer and graph-based representations learnt from the corresponding dependency graph in an iterative interaction manner. Specifically, a dual-transformer structure is devised in DGEDT to support mutual reinforcement between the flat representation learning and graph-based representation learning. The idea is to allow the dependency graph to guide the representation learning of the transformer encoder and vice versa. The results on five datasets demonstrate that the proposed DGEDT outperforms all state-of-the-art alternatives with a large margin.",
+        "citations": 397,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W4405754178"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.438,
+      "tfidf_similarity": 0.178,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks",
+        "authors": [
+          "Chen Zhang",
+          "Qiuchi Li",
+          "Da-Wei Song"
+        ],
+        "year": 2019,
+        "date": "2019-09-08",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "doi": "10.18653/v1/d19-1464",
+        "arxiv_id": "1909.03477",
+        "pmid": null,
+        "openalex_id": "W2971220558",
+        "s2_id": "beccf5bc709167e483e8ea0f58829c34a2bde2e7",
+        "url": "https://www.semanticscholar.org/paper/beccf5bc709167e483e8ea0f58829c34a2bde2e7",
+        "pdf_url": "https://www.aclweb.org/anthology/D19-1464.pdf",
+        "abstract": "Due to their inherent capability in semantic alignment of aspects and their context words, attention mechanism and Convolutional Neural Networks (CNNs) are widely applied for aspect-based sentiment classification. However, these models lack a mechanism to account for relevant syntactical constraints and long-range word dependencies, and hence may mistakenly recognize syntactically irrelevant contextual words as clues for judging aspect sentiment. To tackle this problem, we propose to build a Graph Convolutional Network (GCN) over the dependency tree of a sentence to exploit syntactical information and word dependencies. Based on it, a novel aspect-specific sentiment classification framework is raised. Experiments on three benchmarking collections illustrate that our proposed model has comparable effectiveness to a range of state-of-the-art models, and further demonstrate that both syntactical information and long-range word dependencies are properly captured by the graph convolution structure.",
+        "citations": 777,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W4405754178"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.352,
+      "tfidf_similarity": 0.183,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Aspect-Level Sentiment Analysis Via Convolution over Dependency Tree",
+        "authors": [
+          "Kai Sun",
+          "Richong Zhang",
+          "Samuel Mensah",
+          "Yongyi Mao",
+          "Xu-Dong Liu"
+        ],
+        "year": 2019,
+        "date": "2019-11-01",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "doi": "10.18653/v1/d19-1569",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W2970748008",
+        "s2_id": "ca352ea6ac66c03a0cc22759098713e4202c71c6",
+        "url": "https://www.semanticscholar.org/paper/ca352ea6ac66c03a0cc22759098713e4202c71c6",
+        "pdf_url": "https://www.aclweb.org/anthology/D19-1569.pdf",
+        "abstract": "We propose a method based on neural networks to identify the sentiment polarity of opinion words expressed on a specific aspect of a sentence. Although a large majority of works typically focus on leveraging the expressive power of neural networks in handling this task, we explore the possibility of integrating dependency trees with neural networks for representation learning. To this end, we present a convolution over a dependency tree (CDT) model which exploits a Bi-directional Long Short Term Memory (Bi-LSTM) to learn representations for features of a sentence, and further enhance the embeddings with a graph convolutional network (GCN) which operates directly on the dependency tree of the sentence. Our approach propagates both contextual and dependency information from opinion words to aspect words, offering discriminative properties for supervision. Experimental results ranks our approach as the new state-of-the-art in aspect-based sentiment classification.",
+        "citations": 472,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W4405754178"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.352,
+      "tfidf_similarity": 0.171,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Syntactic Edge-Enhanced Graph Convolutional Networks for Aspect-Level Sentiment Classification With Interactive Attention",
+        "authors": [
+          "Yao Xiao",
+          "Guangyou Zhou"
+        ],
+        "year": 2020,
+        "date": "2020-01-01",
+        "venue": "IEEE Access",
+        "doi": "10.1109/access.2020.3019277",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W3081228062",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/access.2020.3019277",
+        "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09177070.pdf",
+        "abstract": "Aspect-level sentiment classification is a hot research topic in natural language processing (NLP). One of the key challenges is that how to develop effective algorithms to model the relationships between aspects and opinion words appeared in a sentence. Among the various methods proposed in the literature, the graph convolutional networks (GCNs) achieve the promising results due to their good ability to capture the long distance between the aspects and the opinion words. However, the existing methods cannot effectively leverage the edge information of dependency parsing tree, resulting in the sub-optimal results. In this article, we propose a syntactic edge-enhanced graph convolutional network (ASEGCN) for aspect-level sentiment classification with interactive attention. Our proposed method can effectively learn better representations of aspects and the opinion words by considering the different types of neighborhoods with the edge constraint. To evaluate the effectiveness of our proposed method, we conduct the experiments on five standard sentiment classification results. Our results demonstrate that our proposed method obtains the better performance than the state-of-the-art models on four datasets, and achieves a comparative performance on Rest16.",
+        "citations": 30,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W4405754178"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.352,
+      "tfidf_similarity": 0.158,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Aspect Sentiment Triplet Extraction with Syntax-Semantics Graph Convolutional Network",
+        "authors": [
+          "Jingyun Zhang",
+          "Shu-Wei Xu",
+          "Xin Gao",
+          "Zhiwei Tang"
+        ],
+        "year": 2025,
+        "date": "2025-07-01",
+        "venue": "International Journal of Computational Intelligence Systems",
+        "doi": "10.1007/s44196-025-00900-w",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "e87c688b74173493d37ee7f578afd72107c55057",
+        "url": "https://www.semanticscholar.org/paper/e87c688b74173493d37ee7f578afd72107c55057",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s44196-025-00900-w.pdf",
+        "abstract": "In the traditional task of aspect sentiment triplet extraction, existing approaches typically focus on either syntactic or semantic features independently, failing to leverage the complementary integration of these two types of information. Although graph convolutional network-based approaches have demonstrated impressive performance in triplet extraction tasks, they often ignore distance features and semantic information when capturing sentence information. As a result, the integration of syntactic and semantic information remains suboptimal, negatively impacting sentiment analysis performance. To address this limitation, we propose a novel Syntax-Semantics Graph Convolutional Network for aspect sentiment triplet extraction. Our method first extracts syntactic structural information using the probability matrix of dependency trees, from which a mask matrix is constructed based on the varying distances between words. Next, semantic information is captured via a self-attention mechanism and an aspect-attention mechanism, utilizing an attention score matrix. Finally, an interaction module is introduced to effectively integrate syntactic and semantic features. Extensive experiments on several benchmark datasets demonstrate that our approach significantly outperforms existing baselines, achieving an average F1-score improvement of at least 1.083%.",
+        "citations": 5,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2104.04986"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.04986"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.306,
+      "tfidf_similarity": 0.123,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Enhancing Aspect‐Based Sentiment Analysis via Augmented Semantic and Syntactic Graph Fusion",
+        "authors": [
+          "Yongjie Wang",
+          "Zhiyuan Ma",
+          "Yuze Wang",
+          "Jialin Cao",
+          "Nan Wang"
+        ],
+        "year": 2026,
+        "date": "2026-07-07",
+        "venue": "Expert Systems",
+        "doi": "10.1111/exsy.70363",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W7167699159",
+        "s2_id": null,
+        "url": "https://doi.org/10.1111/exsy.70363",
+        "pdf_url": null,
+        "abstract": "ABSTRACT Recommendation systems are rapidly evolving from static interaction‐driven models to dynamic, knowledge‐augmented architectures. A key challenge in this evolution is accurately capturing users' fine‐grained preferences from unstructured review text, which directly impacts the explainability and personalization of recommendations. As an essential enabling technology, Aspect‐Based Sentiment Analysis (ABSA) extracts aspect‐level sentiment elements that can be explicitly mapped to user preference vectors or product attribute ratings. With the integration of semantic and syntactic information, current works have significantly enhanced the performance of ABSA. However, existing graph‐based approaches that rely on dependency‐tree structures often converge to suboptimal solutions when handling implicit sentiment in natural language. To address this gap, we propose a graph fusion network that leverages augmented semantic and syntactic graphs. Specifically, we explicitly model word‐dependency correlations via contextual augmentation, and incorporate selected part‐of‐speech (POS) features to refine semantic graph construction. Concurrently, a syntactic graph is constructed by pruning the nodes based on the distance to the aspect term. The resulting semantic and syntactic representations are then fused through a dual graph convolutional network block, whereas the gating mechanism is used to regulate information flow during graph construction. Experiments on seven benchmarks demonstrate that our approach outperforms baselines by up to and in Macro‐F1 scores, establishing new state‐of‐the‐art results and providing a more reliable sentiment extraction module for downstream recommendation tasks.",
+        "citations": 0,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "citations_most_cited",
+            "query": "W4405754178"
+          },
+          {
+            "source": "openalex",
+            "strategy": "citations_most_recent",
+            "query": "W4405754178"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.306,
+      "tfidf_similarity": 0.099,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    }
+  ],
+  "must_read": [
+    {
+      "title": "The Potential Application of Large Language Models in Pharmaceutical Supply Chain Management",
+      "year": 2024,
+      "arxiv_id": null,
+      "doi": "10.5863/1551-6776-29.2.200",
+      "pdf_url": "https://meridian.allenpress.com/jppt/article-pdf/29/2/200/3354474/i2331-348x-29-2-200.pdf",
+      "why": "term overlap 0.483, design elements: frozen pretrained encoder",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification",
+      "year": 2025,
+      "arxiv_id": null,
+      "doi": "10.1109/tcss.2024.3514901",
+      "pdf_url": null,
+      "why": "term overlap 0.568",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Evaluating fine-tuned, embedding-based, and zero-shot models for aspect-based sentiment analysis in South Slavic news",
+      "year": 2026,
+      "arxiv_id": null,
+      "doi": "10.3389/frai.2026.1844418",
+      "pdf_url": "https://doi.org/10.3389/frai.2026.1844418",
+      "why": "term overlap 0.431, design elements: frozen pretrained encoder",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "Dependency Graph Enhanced Dual-transformer Structure for Aspect-based Sentiment Classification",
+      "year": 2020,
+      "arxiv_id": null,
+      "doi": "10.18653/v1/2020.acl-main.588",
+      "pdf_url": "https://www.aclweb.org/anthology/2020.acl-main.588.pdf",
+      "why": "term overlap 0.438, found only through the citation graph",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "Syntactic and Semantic Dependency Graph Convolutional Network for Aspect-Based Sentiment Analysis",
+      "year": 2024,
+      "arxiv_id": null,
+      "doi": "10.1109/icftic64248.2024.10913075",
+      "pdf_url": null,
+      "why": "term overlap 0.251, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks",
+      "year": 2019,
+      "arxiv_id": "1909.03477",
+      "doi": "10.18653/v1/d19-1464",
+      "pdf_url": "https://www.aclweb.org/anthology/D19-1464.pdf",
+      "why": "term overlap 0.352, found only through the citation graph",
+      "next": "fulltext --id 1909.03477"
+    },
+    {
+      "title": "Aspect-Level Sentiment Analysis Via Convolution over Dependency Tree",
+      "year": 2019,
+      "arxiv_id": null,
+      "doi": "10.18653/v1/d19-1569",
+      "pdf_url": "https://www.aclweb.org/anthology/D19-1569.pdf",
+      "why": "term overlap 0.352, found only through the citation graph",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "Syntactic Edge-Enhanced Graph Convolutional Networks for Aspect-Level Sentiment Classification With Interactive Attention",
+      "year": 2020,
+      "arxiv_id": null,
+      "doi": "10.1109/access.2020.3019277",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09177070.pdf",
+      "why": "term overlap 0.352, found only through the citation graph",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "Aspect Sentiment Triplet Extraction with Syntax-Semantics Graph Convolutional Network",
+      "year": 2025,
+      "arxiv_id": null,
+      "doi": "10.1007/s44196-025-00900-w",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s44196-025-00900-w.pdf",
+      "why": "term overlap 0.306, found only through the citation graph",
+      "next": "read the open-access PDF"
+    }
+  ],
+  "expansion_log": [
+    {
+      "expanded": "The Potential Application of Large Language Models in Pharmaceutical Supply Chain Management",
+      "citing_and_references": 26
+    },
+    {
+      "expanded": "Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification",
+      "citing_and_references": 28
+    },
+    {
+      "expanded": "Syntactic and Semantic Dependency Graph Convolutional Network for Aspect-Based Sentiment Analysis",
+      "citing_and_references": 0
+    }
+  ],
+  "expansion_errors": [
+    {
+      "step": "seed_citations",
+      "source": "openalex",
+      "kind": "not_found",
+      "message": "no OpenAlex record for seed 2104.04986; citing works not searched"
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429,
+      "step": "references"
+    }
+  ],
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "does syntax help pretrained transformers aspect-based sentiment",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "does syntax help pretrained transformers aspect-based sentiment",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "does syntax help pretrained transformers aspect-based sentiment",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "does syntax help pretrained transformers aspect-based sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "does syntax help pretrained transformers aspect-based sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "random trees versus dependency trees graph convolution evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "random trees versus dependency trees graph convolution evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "random trees versus dependency trees graph convolution evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "random trees versus dependency trees graph convolution evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "does syntax help pretrained transformers aspect-based sentiment survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does syntax help pretrained transformers aspect-based sentiment survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does syntax help pretrained transformers aspect-based sentiment survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does syntax help pretrained transformers aspect-based sentiment survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "does syntax help pretrained transformers aspect-based sentiment review",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does syntax help pretrained transformers aspect-based sentiment review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does syntax help pretrained transformers aspect-based sentiment review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does syntax help pretrained transformers aspect-based sentiment review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment review",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "random trees versus dependency trees graph convolution evaluation survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "random trees versus dependency trees graph convolution evaluation survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "random trees versus dependency trees graph convolution evaluation survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "random trees versus dependency trees graph convolution evaluation survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "random trees versus dependency trees graph convolution evaluation review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "random trees versus dependency trees graph convolution evaluation review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "random trees versus dependency trees graph convolution evaluation review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "random trees versus dependency trees graph convolution evaluation review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "does syntax help pretrained transformers aspect-based sentiment",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "does syntax help pretrained transformers aspect-based sentiment",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "does syntax help pretrained transformers aspect-based sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "does syntax help pretrained transformers aspect-based sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "dependency tree graph neural network on top of BERT ablation sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "syntactic information unnecessary strong RoBERTa baseline aspect sentiment",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing",
+      "results": 11,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "syntax-agnostic versus syntax-aware models frozen encoder probing",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "random trees versus dependency trees graph convolution evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "random trees versus dependency trees graph convolution evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "random trees versus dependency trees graph convolution evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "random trees versus dependency trees graph convolution evaluation",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-18"
+}

@@ -1,0 +1,48 @@
+{
+  "paper": {
+    "title": "\"How Good Is EPSS, Really? A Five-Year Empirical Evaluation Correcting for Look-Ahead Bias\"",
+    "authors": [
+      "Stephin Paul"
+    ],
+    "year": 2026,
+    "date": "2026-06-09",
+    "venue": "IEEE DataPort",
+    "doi": "10.21227/bhhs-0994",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W7163989984",
+    "s2_id": null,
+    "url": "https://doi.org/10.21227/bhhs-0994",
+    "pdf_url": "https://doi.org/10.21227/bhhs-0994",
+    "abstract": "\"Retrospective evaluations of the Exploit Prediction Scoring System (EPSS) routinely apply current-day scores to historical Common Vulnerabilities and Exposures (CVE) records, creating a temporal information leak that inflates apparent performance. This paper presents the first multi-year empirical evaluation correcting for this look-ahead bias by using time-matched historical EPSS scores retrieved 30 days after each CVE publication date. Covering 134,821 fully-observed CVEs from 2021 to 2025 across five annual cohorts, with exploitation status determined from the CISA Known Exploited Vulnerabilities (KEV) catalog under a fixed 12-month observation window, the study finds that: (1) using current-day scores inflates the prioritisation queue by 2.3x to 53.2x and collapses efficiency from 60.9% to 11.1% for the 2023 cohort; (2) EPSS Matthews Correlation Coefficient (MCC) improves from 0.49 in 2021 to 0.92 in 2024 when evaluated with time-matched scores, while a CVSS-only baseline remains flat between 0.04 and 0.07; and (3) EPSS-elevated CVEs appear in Nuclei, proof-of-concept, and Metasploit exploit databases at 15x to 108x the cohort base rate. A fixed observation window methodology is introduced that makes cross-cohort exploitation rate comparisons valid. These results establish look-ahead bias as a first-order methodological error in EPSS evaluation and document EPSS as a substantially improving production ML system when assessed correctly.\"",
+    "citations": 0,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "dataset",
+    "sources": [
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {}
+  },
+  "notes": [
+    {
+      "source": "crossref",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    },
+    {
+      "source": "crossref",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "absa-beekeeping-hive-graphs",
+  "split": "control",
+  "claim": "Aspect-based sentiment of beekeeping forum posts with dependency-tree GCNs fused with hive-sensor graphs",
+  "queries": [
+    "beekeeping forum aspect sentiment dependency graph",
+    "hive sensor graph fused with text sentiment",
+    "apiculture forum opinion mining graph convolution",
+    "beekeeper posts aspect-level sentiment hive data"
+  ],
+  "anchor": "beekeeping forum",
+  "seeds": [],
+  "design": [
+    "same pretrained encoder with and without dependency tree",
+    "model selection on a validation set",
+    "multiple random seeds"
+  ],
+  "known_relevant": [],
+  "provenance": "Negative control: implausible combination with the sentiment audit's design elements."
+}

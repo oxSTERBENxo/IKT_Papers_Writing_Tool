@@ -1,0 +1,155 @@
+{
+ "dataset": "politifact",
+ "checks": {
+  "n_graphs": 314,
+  "n_nodes": 41054,
+  "mapping_covers_all_nodes": true,
+  "graph_ids_contiguous_blocks": true,
+  "root_maps_to_news_id": true,
+  "split_sizes": {
+   "train": 62,
+   "val": 31,
+   "test": 221
+  },
+  "split_fractions": {
+   "train": 0.197,
+   "val": 0.099,
+   "test": 0.704
+  },
+  "splits_disjoint_and_complete": true,
+  "label_counts": {
+   "0.0": 157,
+   "1.0": 157
+  },
+  "label_counts_by_split": {
+   "train": {
+    "0.0": 36,
+    "1.0": 26
+   },
+   "val": {
+    "1.0": 18,
+    "0.0": 13
+   },
+   "test": {
+    "1.0": 113,
+    "0.0": 108
+   }
+  }
+ },
+ "official_split_user_vote": {
+  "train_to_test": {
+   "test_graphs": 221,
+   "share_test_graphs_with_seen_identity": 0.7964,
+   "mean_share_of_test_identities_seen": 0.0652,
+   "vote_accuracy": 0.8597,
+   "majority_class_accuracy": 0.4887
+  },
+  "train_plus_val_to_test": {
+   "test_graphs": 221,
+   "share_test_graphs_with_seen_identity": 0.819,
+   "mean_share_of_test_identities_seen": 0.1027,
+   "vote_accuracy": 0.8824,
+   "majority_class_accuracy": 0.4887
+  }
+ },
+ "feature_identity": {
+  "profile": {
+   "shape": [
+    41054,
+    10
+   ],
+   "repeat_users": 5159,
+   "repeat_users_with_identical_vector_everywhere": 4886,
+   "share_identical": 0.9471,
+   "distinct_vectors_among_user_nodes": 27476,
+   "user_nodes": 40740,
+   "all_zero_user_vectors": 0,
+   "vectors_shared_by_more_than_one_user": 247,
+   "largest_group_of_users_sharing_one_vector": 73,
+   "vote_using_feature_vector_as_identity_official_split": {
+    "test_graphs": 221,
+    "share_test_graphs_with_seen_identity": 0.7919,
+    "mean_share_of_test_identities_seen": 0.0667,
+    "vote_accuracy": 0.8597,
+    "majority_class_accuracy": 0.4887
+   }
+  },
+  "spacy": {
+   "shape": [
+    41054,
+    300
+   ],
+   "repeat_users": 5159,
+   "repeat_users_with_identical_vector_everywhere": 4867,
+   "share_identical": 0.9434,
+   "distinct_vectors_among_user_nodes": 27216,
+   "user_nodes": 40740,
+   "all_zero_user_vectors": 0,
+   "vectors_shared_by_more_than_one_user": 284,
+   "largest_group_of_users_sharing_one_vector": 74,
+   "vote_using_feature_vector_as_identity_official_split": {
+    "test_graphs": 221,
+    "share_test_graphs_with_seen_identity": 0.7919,
+    "mean_share_of_test_identities_seen": 0.0669,
+    "vote_accuracy": 0.8597,
+    "majority_class_accuracy": 0.4887
+   }
+  }
+ },
+ "user_disjoint_feasibility": {
+  "components": [
+   {
+    "drop_users_in_at_least_n_graphs": null,
+    "n_components": 21,
+    "largest_component_share": 0.9299,
+    "singleton_graphs": 18
+   },
+   {
+    "drop_users_in_at_least_n_graphs": 200,
+    "n_components": 21,
+    "largest_component_share": 0.9299,
+    "singleton_graphs": 18
+   },
+   {
+    "drop_users_in_at_least_n_graphs": 50,
+    "n_components": 21,
+    "largest_component_share": 0.9299,
+    "singleton_graphs": 18
+   },
+   {
+    "drop_users_in_at_least_n_graphs": 10,
+    "n_components": 24,
+    "largest_component_share": 0.9204,
+    "singleton_graphs": 21
+   },
+   {
+    "drop_users_in_at_least_n_graphs": 3,
+    "n_components": 42,
+    "largest_component_share": 0.8535,
+    "singleton_graphs": 36
+   }
+  ],
+  "mask_seen_users_in_test": {
+   "median_users_per_test_graph_before": 91,
+   "median_users_per_test_graph_after": 78,
+   "test_graphs_left_with_no_users": 2,
+   "share_of_test_user_nodes_removed": 0.0891,
+   "by_label_median_before_after": {
+    "1.0": [
+     113,
+     102
+    ],
+    "0.0": [
+     57.0,
+     54.0
+    ]
+   }
+  }
+ },
+ "graph_size_rule": {
+  "threshold_nodes": 4,
+  "fake_if": "smaller",
+  "train_accuracy": 0.5806,
+  "test_accuracy": 0.4842
+ }
+}

@@ -1,0 +1,946 @@
+{
+  "seed": {
+    "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+    "authors": [
+      "Junqi Dai",
+      "Hang Yan",
+      "Tianxiang Sun",
+      "Peng-Fei Liu",
+      "Xipeng Qiu"
+    ],
+    "year": 2021,
+    "date": "2021",
+    "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    "doi": "10.18653/v1/2021.naacl-main.146",
+    "arxiv_id": "2104.04986",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": "0b7b605a2d6e0cb1e53d1fa03311278e95f99260",
+    "url": "https://www.semanticscholar.org/paper/0b7b605a2d6e0cb1e53d1fa03311278e95f99260",
+    "pdf_url": "https://aclanthology.org/2021.naacl-main.146.pdf",
+    "abstract": "Aspect-based Sentiment Analysis (ABSA), aiming at predicting the polarities for aspects, is a fine-grained task in the field of sentiment analysis. Previous work showed syntactic information, e.g. dependency trees, can effectively improve the ABSA performance. Recently, pre-trained models (PTMs) also have shown their effectiveness on ABSA. Therefore, the question naturally arises whether PTMs contain sufficient syntactic information for ABSA so that we can obtain a good ABSA model only based on PTMs. In this paper, we firstly compare the induced trees from PTMs and the dependency parsing trees on several popular models for the ABSA task, showing that the induced tree from fine-tuned RoBERTa (FT-RoBERTa) outperforms the parser-provided tree. The further analysis experiments reveal that the FT-RoBERTa Induced Tree is more sentiment-word-oriented and could benefit the ABSA task. The experiments also show that the pure RoBERTa-based model can outperform or approximate to the previous SOTA performances on six datasets across four languages since it implicitly incorporates the task-oriented syntactic information.",
+    "citations": 197,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "abstract_source": "arxiv",
+      "arxiv_comment": "Accepted by NAACL 2021",
+      "arxiv_category": "cs.CL"
+    }
+  },
+  "counts": {
+    "citations": 25
+  },
+  "errors": [],
+  "papers": [
+    {
+      "title": "Exploring aspect-based sentiment analysis: state-of-the-art methods, datasets, challenges, tasks, and future scopes",
+      "authors": [
+        "Bhawna Singh",
+        "Nonita Sharma",
+        "D. Sharma"
+      ],
+      "year": 2026,
+      "date": "2026-09-02",
+      "venue": "Knowledge and Information Systems",
+      "doi": "10.1007/s10115-026-02870-7",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "3d16ebe97e3b21c01235b236c994d12cbd1d4165",
+      "url": "https://www.semanticscholar.org/paper/3d16ebe97e3b21c01235b236c994d12cbd1d4165",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "MD-GCN: Attention-fused multi-view dependency graph convolutional network for aspect-based sentiment analysis",
+      "authors": [
+        "Chuan Bai",
+        "Yan-Li Chen",
+        "Jin-Rong Mo",
+        "Xiao-Guang Liu",
+        "Lun-Zhi Deng",
+        "Hanzhou Wu",
+        "Ling Xiong"
+      ],
+      "year": 2026,
+      "date": "2026-09-01",
+      "venue": "Information Sciences",
+      "doi": "10.1016/j.ins.2026.124159",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "f5c5f8c2cb8b1e08b998ad8f578db1f08f8f81fe",
+      "url": "https://www.semanticscholar.org/paper/f5c5f8c2cb8b1e08b998ad8f578db1f08f8f81fe",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Changes in perceptions of cultural ecosystem services in urban coastal park during different phases of COVID-19: Integrating the prompt engineering and aspect-based sentiment analysis with a large language model",
+      "authors": [
+        "Zirui Zhao",
+        "Ping Li",
+        "Bin Chen",
+        "Weiwei Yu",
+        "Wen-Jia Hu",
+        "Zhiyuan Ma",
+        "Jian-Ji Liao"
+      ],
+      "year": 2026,
+      "date": "2026-08-01",
+      "venue": "Journal of Cleaner Production",
+      "doi": "10.1016/j.jclepro.2026.149092",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "f1f78448979bc786ce379e1832a868f545ba8cd3",
+      "url": "https://www.semanticscholar.org/paper/f1f78448979bc786ce379e1832a868f545ba8cd3",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Target-Specific Attention and Sentiment-Guided Graph Neural Network for Target-Oriented Multimodal Sentiment Classification",
+      "authors": [
+        "Shu Liu",
+        "Ting-Ting Lu",
+        "Cheng-Zhang Zhu",
+        "Yu-Shan Pan"
+      ],
+      "year": 2026,
+      "date": "2026-07-01",
+      "venue": "IEEE Transactions on Affective Computing",
+      "doi": "10.1109/taffc.2026.3704563",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "ed3e6ae71415ba43be1da08a1504cc068f470d32",
+      "url": "https://www.semanticscholar.org/paper/ed3e6ae71415ba43be1da08a1504cc068f470d32",
+      "pdf_url": null,
+      "abstract": "Target-oriented multimodal sentiment classification is an important subtask of aspect-based sentiment analysis, which analyzes the sentiment polarity oriented to the target in a sentence-image pair. Previous research primarily relies on generic object detection, neglecting visual sentiment cues and suffering from semantic noise introduced by image-to-text conversions. Moreover, although existing approaches explore intra-modal and inter-modal feature interaction and enhancement for target-oriented representations, they leave potential for improvement in capturing complex relationships for target-level sentiment analysis. To address these limitations, we propose a target-oriented multimodal sentiment classification framework with Target-specific Attention and Sentiment-guided Graph neural network (TASG). For visual inputs, we decompose them into content-descriptive captions and sentiment-aware adjective-noun pairs. We design a target-specific attention module to enhance target-oriented features while mitigating noise from complex cross-modal conversions. Furthermore, we introduce a sentiment-guided graph neural network that constructs a semantic graph based on syntactic sentiment cues and multimodal information, allowing the model to explicitly model and refine target-sentiment relationships. Experimental results on standard Twitter benchmarks and the large-scale MASAD dataset demonstrate the effectiveness of TASG.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "A generative framework for aspect sentiment triplet extraction via implicit reasoning and boundary-aware regularization",
+      "authors": [
+        "Ting Jiang",
+        "Qing He",
+        "Mengrong Lv",
+        "Qing He"
+      ],
+      "year": 2026,
+      "date": "2026-06-01",
+      "venue": "Journal of King Saud University: Computer and Information Sciences",
+      "doi": "10.1007/s44443-026-00888-z",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "436d6bf42bcb5caea40d26aa75171ecbc88c74fc",
+      "url": "https://www.semanticscholar.org/paper/436d6bf42bcb5caea40d26aa75171ecbc88c74fc",
+      "pdf_url": "https://doi.org/10.1007/s44443-026-00888-z",
+      "abstract": "Aspect Sentiment Triplet Extraction (ASTE) aims to jointly identify aspect terms, opinion expressions, and sentiment polarities from user reviews. Most existing ASTE models are developed on benchmark datasets containing short sentences and explicit aspect–opinion pairs, and thus generalize poorly to realistic reviews that contain implicit aspects and long, compositional opinion spans. This paper investigates ASTE under these challenging conditions on the diversified multi-domain DMASTE benchmark. We propose IBR, a generative framework with implicit reasoning and boundary-aware regularization for ASTE. IBR integrates two complementary modules: the Implicit Triplet Constructor with Explicit Structure (ITC-ES), which treats explicit sentences as structural templates and performs minimal edits on both inputs and outputs to construct pseudo-implicit training samples with explicit structure, while an explicit–implicit classifier guides the model to infer missing aspect terms; and the Syntax-Guided Opinion Boundary (SG-OB) module, which introduces syntax-guided opinion-boundary supervision during training to improve the localization of long and syntactically complex opinion expressions. Experiments on DMASTE show that IBR achieves consistent gains over reported baselines across in-domain and transfer settings. Further analyses suggest that ITC-ES mainly benefits implicit triplet extraction, while SG-OB improves opinion boundary localization in long and compositional expressions.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "GHI: Graphormer over Conditioned Hypergraph Incidence for Aspect-Based Sentiment Analysis",
+      "authors": [
+        "Yupei Du",
+        "Wenlong Zhu",
+        "Xing-Ze Li",
+        "Chenglong Cao",
+        "Jing Wang",
+        "Yu-Kun Ma"
+      ],
+      "year": 2026,
+      "date": "2026-05-21",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2605.22228",
+      "arxiv_id": "2605.22228",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "3f4596ca30f91913affabcd641ea2ffa05b21ffa",
+      "url": "https://www.semanticscholar.org/paper/3f4596ca30f91913affabcd641ea2ffa05b21ffa",
+      "pdf_url": null,
+      "abstract": "Aspect-based sentiment analysis (ABSA) requires models to bind sentiment evidence to the correct aspect, making it a natural testbed for fine-grained structural reasoning. We introduce GHI, a Graphormer-over-Conditioned-Hypergraph-Incidence framework that is designed as an incidence-based structural reasoning layer built on a bipartite topology. GHI represents diverse linguistic and semantic evidence as token--hyperedge incidence relations, allowing different structural signals to be incorporated through a unified interface. Extensive experiments on six standard ABSA benchmarks show that GHI outperforms all baselines on the SemEval domains, and multi-seed evaluations show stable improvements over strong DeBERTa. Further experiments show that with only 247M parameters, GHI approaches the performance of 11B Flan-T5 based methods on the ISE benchmark. Moreover, it demonstrates strong robustness on the challenging ARTS datasets, maintaining highly competitive performance where traditional models degrade. These results demonstrate that compact structural reasoning remains a valuable alternative to scale-driven approaches for fine-grained tasks.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Analyzing gendered patterns in sentiments in comments under STEM YouTube channels",
+      "authors": [
+        "Hiram Calvo",
+        "Yongchao Martin",
+        "Isha Karn",
+        "N. Ilakiyaselvan",
+        "V. Kalyanasundaram",
+        "A. J. Keerthi"
+      ],
+      "year": 2026,
+      "date": "2026-05-07",
+      "venue": "Frontiers in Artificial Intelligence",
+      "doi": "10.3389/frai.2026.1790240",
+      "arxiv_id": null,
+      "pmid": "42180315",
+      "openalex_id": null,
+      "s2_id": "b22a9def38cba7194c422720830f3c9afc52f926",
+      "url": "https://www.semanticscholar.org/paper/b22a9def38cba7194c422720830f3c9afc52f926",
+      "pdf_url": "https://doi.org/10.3389/frai.2026.1790240",
+      "abstract": "This study explores gender-based disparities in sentiments and discourse in comments on YouTube channels focused on science, technology, engineering, and mathematics (STEM). Although there have been considerable efforts toward achieving gender equality, biases and inequalities still persist in the representation of women in STEM, including in online communication spaces. A mixed-methods approach was used, based on a dataset of comments collected from over 100 curated STEM YouTube channels using the YouTube Data API. The comments were cleaned and preprocessed, and information regarding the gender of content creators was identified. The RoBERTa model was used for sentiment annotation, while Latent Dirichlet Allocation (LDA) was applied for topic modelling. The results show a clear difference in sentiment distribution between genders. Negative comments were more frequent in female-hosted channels and were often related to personal criticism, objectification, and appearance-based remarks, whereas comments on male-hosted channels were more neutral and focused on content. The findings indicate the presence of gender bias in online discussions related to STEM.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Generative Aspect-Based Sentiment Quadruple Prediction Based on Multi-Order Prompting",
+      "authors": [
+        "Rui Wang",
+        "Muyao He",
+        "Wenjie Liu",
+        "Yi-Xue Hao",
+        "Long Hu",
+        "Min Chen",
+        "Bao Huang"
+      ],
+      "year": 2026,
+      "date": "2026-04-27",
+      "venue": "ACM Trans. Inf. Syst.",
+      "doi": "10.1145/3811909",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "7fbc6a1716f8fbaa33c27a81e006e56fdc78e3e7",
+      "url": "https://www.semanticscholar.org/paper/7fbc6a1716f8fbaa33c27a81e006e56fdc78e3e7",
+      "pdf_url": "https://doi.org/10.1145/3811909",
+      "abstract": "Recently, generative aspect-level sentiment quadruple prediction (ASQP) methods based on pre-trained language models have made significant progress. However, some challenges remain in extracting and recognizing complex sentiment elements from semantically rich sentences, limiting the generalization and adaptability of unidirectional generative models in aspect-level sentiment analysis. To overcome this limitation, this article proposes a Generative Aspect-Based Sentiment Quadruple Prediction Model based on Multi-Order Prompting (GenMOP). The model draws on the concept of prompt learning and introduces a multi-order prompting strategy, which breaks the traditional framework of a single generative order and enhances the flexibility and adaptability of the model. Furthermore, we integrate a quadruple quantity-aware module and a multi-view uncertainty-aware module based on a basic generative architecture, not only providing the model with more fine-grained information about the quadruple quantity but also improving the prediction accuracy through uncertainty estimation. The extensive experiments show that the GenMOP method achieves excellent performance in the ASQP task. On the four benchmark datasets including Rest15, Rest16, Rest and Lap, our model achieves F1 score improvements of 1.26%, 0.23%, 0.28%, and 2.07%, respectively, compared to existing state-of-the-arts, demonstrating its effectiveness and superiority in dealing with the joint extraction of multiple sentiment elements of the ASQP model.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Transfer learning for aspect based sentiment analysis",
+      "authors": [
+        "SeyedHossein Fatemian",
+        "Amirfarhad Farhadi",
+        "Azadeh Zamanifar"
+      ],
+      "year": 2026,
+      "date": "2026-03-30",
+      "venue": "Discover Artificial Intelligence",
+      "doi": "10.1007/s44163-026-01153-y",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "370988495c60ede5f0079f0152fb8288485f0e87",
+      "url": "https://www.semanticscholar.org/paper/370988495c60ede5f0079f0152fb8288485f0e87",
+      "pdf_url": "https://doi.org/10.1007/s44163-026-01153-y",
+      "abstract": "Transfer learning has become a key approach for addressing the challenges of aspect-based sentiment analysis (ABSA). By leveraging pre-trained language models, it enables models to generalize more effectively across domains and languages in a wide range of ABSA tasks. While prior surveys in sentiment analysis and ABSA have offered valuable insights, many are now outdated, focus broadly on general sentiment analysis, or lack a systematic categorization of transfer learning techniques. This survey addresses these gaps through an updated, structured review of recent studies, organized around four research questions examining: the types of transfer learning techniques applied in ABSA, the datasets most frequently used, their impact on model performance and generalizability, and which methods prove most effective. The paper also discusses key challenges associated with transfer learning models and outlines future research directions integrating transfer learning with complementary paradigms such as reinforcement, multitask, and federated learning.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "ISFOA-Optimized RoBERTa–Transformer–CapsNet Framework for Aspect-Based Sentiment Classification",
+      "authors": [
+        "Archana Nagelli",
+        "B. Saleena"
+      ],
+      "year": 2026,
+      "date": "2026-03-28",
+      "venue": "International Journal of Computational Intelligence and Applications",
+      "doi": "10.1142/s1469026826500161",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "3d4293057ad580f08af569914ab1fe60801d2534",
+      "url": "https://www.semanticscholar.org/paper/3d4293057ad580f08af569914ab1fe60801d2534",
+      "pdf_url": null,
+      "abstract": "Aspect-based Sentiment Classification (ABSC) has become a vital task in natural language processing that enables fine-grained sentiment detection at the aspect level rather than general polarity analysis. Still, existing methods have issues in capturing deep semantic context for preserving hierarchical dependencies and efficiently tuning hyperparameters, which leads to suboptimal performance in noisy and real-world textual data. To address the limitations, this research proposes a hybrid deep learning model that integrates RoBERTa-based contextual embeddings with the Transformer encoder and Capsule Networks (CapsNets) for enriched semantic and structural feature extraction. Here, aspect-relevant words are highlighted by the self-attention mechanism to refine the features, and the Improved Starfish Optimization Algorithm (ISFOA) is presented for hyperparameter optimization using chaotic sinusoidal mapping. Experiments on the publicly accessible dataset show that the proposed approach outperforms current approaches in terms of accuracy, F1-score, MCC, and other important metrics.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "A guard against ambiguous sentiment for multimodal aspect-level sentiment classification",
+      "authors": [
+        "Yanjing Wang",
+        "Kai Sun",
+        "Bin Shi",
+        "Hao Wu",
+        "Kai-Hao Zhang",
+        "Bo Dong"
+      ],
+      "year": 2026,
+      "date": "2026-03-01",
+      "venue": "Information Processing & Management",
+      "doi": "10.1016/j.ipm.2025.104375",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "7cd07dead727c29b6480fea593aa0ed27212056f",
+      "url": "https://www.semanticscholar.org/paper/7cd07dead727c29b6480fea593aa0ed27212056f",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 5,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Fine-grained Classification of A Million Life Trajectories from Wikipedia",
+      "authors": [
+        "Zhaoyang Liu",
+        "Xiaocong Du",
+        "Yi-Xi Zhou",
+        "Ye Shi",
+        "Hai-Peng Zhang"
+      ],
+      "year": 2026,
+      "date": "2026-02-04",
+      "venue": "arXiv.org",
+      "doi": "10.48550/arxiv.2602.04503",
+      "arxiv_id": "2602.04503",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "2292fa45e06325a83de4d164da1ed536c9bf08b8",
+      "url": "https://www.semanticscholar.org/paper/2292fa45e06325a83de4d164da1ed536c9bf08b8",
+      "pdf_url": null,
+      "abstract": "Life trajectories of notable people convey essential messages for human dynamics research. These trajectories consist of (\\textit{person, time, location, activity type}) tuples recording when and where a person was born, went to school, started a job, or fought in a war. However, current studies only cover limited activity types such as births and deaths, lacking large-scale fine-grained trajectories. Using a tool that extracts (\\textit{person, time, location}) triples from Wikipedia, we formulate the problem of classifying these triples into 24 carefully-defined types using textual context as complementary information. The challenge is that triple entities are often scattered in noisy contexts. We use syntactic graphs to bring triple entities and relevant information closer, fusing them with text embeddings to classify life trajectory activities. Since Wikipedia text quality varies, we use LLMs to refine the text for more standardized syntactic graphs. Our framework achieves 84.5\\% accuracy, surpassing baselines. We construct the largest fine-grained life trajectory dataset with 3.8 million labeled activities for 589,193 individuals spanning 3 centuries. In the end, we showcase how these trajectories can support grand narratives of human dynamics across time and space. Code/data are publicly available.",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "CAACT-GCN: Commonsense-assisted and aspect-centric tree graph convolutional networks for aspect-based sentiment analysis",
+      "authors": [
+        "Hong-Da Yang",
+        "Fang’ai Liu",
+        "Xuejian Gao",
+        "Yuechao Yu",
+        "Zi-Chao Gao"
+      ],
+      "year": 2026,
+      "date": "2026-02-01",
+      "venue": "Expert systems with applications",
+      "doi": "10.1016/j.eswa.2026.131512",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "73b375b6063ebaae6d026e73a6d3aa720ba95f11",
+      "url": "https://www.semanticscholar.org/paper/73b375b6063ebaae6d026e73a6d3aa720ba95f11",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "DAGG-Net: Dual adaptive graph and gating network for multimodal aspect-based sentiment analysis",
+      "authors": [
+        "Hong-Yu Han",
+        "Haoran Ding",
+        "Baojun Qiao",
+        "Ya-Di Wang",
+        "Lanxue Dang",
+        "Yi Xie",
+        "Ying-Qi Wang",
+        "Xiaomei Zou"
+      ],
+      "year": 2026,
+      "date": "2026-02-01",
+      "venue": "Expert systems with applications",
+      "doi": "10.1016/j.eswa.2026.131591",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "211842de2a3bb87ae762e5730ac775870032cd62",
+      "url": "https://www.semanticscholar.org/paper/211842de2a3bb87ae762e5730ac775870032cd62",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 5,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Sentiment Analysis Review Threads Google Play Store with RoBERTa Model",
+      "authors": [
+        "Natan Kharisma A",
+        "Dewi Lestari",
+        "G. T. Pranoto"
+      ],
+      "year": 2025,
+      "date": "2025-11-28",
+      "venue": "Jurnal Nasional Teknik Elektro dan Teknologi Informasi (JNTETI)",
+      "doi": "10.22146/jnteti.v14i4.22038",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "5b78f9103a46d05c6cded9765554a496b4e311cb",
+      "url": "https://www.semanticscholar.org/paper/5b78f9103a46d05c6cded9765554a496b4e311cb",
+      "pdf_url": "https://jurnal.ugm.ac.id/v3/JNTETI/article/download/22038/6465",
+      "abstract": "The rapid development of internet technology globally, including in Indonesia, has drastically changed communication and interaction patterns between individuals. One impact is seen in the increasing use of text-based social media applications, such as Threads, developed by Meta. Within a short time, Threads managed to attract millions of users. However, the large number of user reviews on the Google Play Store presents its own challenges, particularly in manual sentiment analysis, which is very time-consuming and prone to bias. This research aims to overcome these challenges by implementing a variant of bidirectional encoder representations from transformers (BERT), the robustly optimized BERT pretraining approach (RoBERTa) model, which has been optimized for natural language processing. The research process followed the cross-industry standard process for data mining (CRISP-DM) framework, including several main stages: understanding the business context, data exploration and model building preparation, performance evaluation, and model deployment. Data were obtained directly from the Google Play Store and then cleaned through deduplication, normalization, and tokenization stages. The RoBERTa model demonstrated strong performance, with an accuracy of 88%. Precision was recorded at 92% for positive sentiment and 81% for negative sentiment, while recall was at 88% and 87%, respectively. The F1 score was also high, at 90% for positive and 84% for negative sentiment. When compared to algorithms like naïve Bayes and support vector machine (SVM), RoBERTa proved superior. This research opens opportunities for exploring other transformer models or using ensembles to improve performance in the future.",
+      "citations": 2,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Time Is Effort: Estimating Human Post-Editing Time for Grammar Error Correction Tool Evaluation",
+      "authors": [
+        "Ankit Vadehra",
+        "Bill Johnson",
+        "G. Saunders",
+        "Pascal Poupart"
+      ],
+      "year": 2025,
+      "date": "2025-10-05",
+      "venue": "Proceedings of the Fourth Workshop on Bridging Human-Computer Interaction and Natural Language Processing (HCI+NLP)",
+      "doi": "10.48550/arxiv.2510.04394",
+      "arxiv_id": "2510.04394",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "0582793514f1ba26207d7f554bd4a7599c3bf230",
+      "url": "https://www.semanticscholar.org/paper/0582793514f1ba26207d7f554bd4a7599c3bf230",
+      "pdf_url": null,
+      "abstract": "Text editing can involve several iterations of revision. Incorporating an efficient Grammar Error Correction (GEC) tool in the initial correction round can significantly impact further human editing effort and final text quality. This raises an interesting question to quantify GEC Tool usability: How much effort can the GEC Tool save users? We present the first large-scale dataset of post-editing (PE) time annotations and corrections for two English GEC test datasets (BEA19 and CoNLL14). We introduce Post-Editing Effort in Time (PEET) for GEC Tools as a human-focused evaluation scorer to rank any GEC Tool by estimating PE time-to-correct. Using our dataset, we quantify the amount of time saved by GEC Tools in text editing. Analyzing the edit type indicated that determining whether a sentence needs correction and edits like paraphrasing and punctuation changes had the greatest impact on PE time. Finally, comparison with human rankings shows that PEET correlates well with technical effort judgment, providing a new human-centric direction for evaluating GEC tool usability. We release our dataset and code at: https://github.com/ankitvad/PEET_Scorer.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Topical Negative Campaigning Under Spatial Pressure: Party-Level Strategies for Attacks Across Multiple Issues",
+      "authors": [
+        "Wiebke Drews",
+        "Jasmin Riedl",
+        "Johannes Steup"
+      ],
+      "year": 2025,
+      "date": "2025-10-02",
+      "venue": "German Politics",
+      "doi": "10.1080/09644008.2025.2561584",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "cb6482ba546bfad7607b43c2d7dfc027e7563075",
+      "url": "https://www.semanticscholar.org/paper/cb6482ba546bfad7607b43c2d7dfc027e7563075",
+      "pdf_url": "https://doi.org/10.1080/09644008.2025.2561584",
+      "abstract": null,
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "A Multimodal AI Pipeline for Automated UX Optimization",
+      "authors": [
+        "Arwa Ahmed",
+        "Ghada Khoriba",
+        "Tamer Arafa"
+      ],
+      "year": 2025,
+      "date": "2025-09-17",
+      "venue": "2025 International Mobile, Intelligent, and Ubiquitous Computing Conference (MIUCC)",
+      "doi": "10.1109/miucc66482.2025.11196748",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "6446522c8155b6115afd9844c8f2767e151d3c3d",
+      "url": "https://www.semanticscholar.org/paper/6446522c8155b6115afd9844c8f2767e151d3c3d",
+      "pdf_url": null,
+      "abstract": "Mobile applications are key gateways for digital interaction, making user experience (UX) optimization critical to product success. Google Play Store reviews offer valuable insights but are challenging to analyze due to their volume, informality, and mixed sentiment. This paper presents a multimodal AI pipeline that combines GPT-4 for sentiment analysis and issue categorization with CLIP for linking feedback to relevant UI screens. The system transforms unstructured reviews into actionable, feature-level design recommendations. Evaluated on over 70,000 reviews, it achieved 93% accuracy and a 0.91 macro-averaged F1 score. Functionality issues were the most common concern, followed by performance and UI. This approach offers a scalable feedback-to-action framework for rapid, user-centered design improvement. This dataset is publicly available.11https://github.com/ArwaaAhmed/Andriod-mobile-app-reviews-withsentiment",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "TDGAT: Triple-Dimensional Graph Attention Networks for Exploring the Optimal Perspective for Aspect-Based Sentiment Analysis",
+      "authors": [
+        "Xuefeng Shi",
+        "Weiping Ding",
+        "Min Hu",
+        "Xin Kang",
+        "Fuji Ren"
+      ],
+      "year": 2025,
+      "date": "2025-09-05",
+      "venue": "Cognitive Computation",
+      "doi": "10.1007/s12559-025-10497-z",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "55ee473288e6d00df909c825a36d11cefe75c9d2",
+      "url": "https://www.semanticscholar.org/paper/55ee473288e6d00df909c825a36d11cefe75c9d2",
+      "pdf_url": "https://tokushima-u.repo.nii.ac.jp/records/2013532",
+      "abstract": null,
+      "citations": 1,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Fuzzy Humanized Sentiment Knowledge Enhanced Dependence Graphs Implementing With Aspect-Based Sentiment Analysis",
+      "authors": [
+        "Xuefeng Shi",
+        "Wei-Ping Ding",
+        "Min Hu",
+        "Xin Kang",
+        "Fuji Ren"
+      ],
+      "year": 2025,
+      "date": "2025-09-01",
+      "venue": "IEEE transactions on fuzzy systems",
+      "doi": "10.1109/tfuzz.2025.3583050",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "862c0f473fb822ab17d03f98cb63519026be68c2",
+      "url": "https://www.semanticscholar.org/paper/862c0f473fb822ab17d03f98cb63519026be68c2",
+      "pdf_url": "https://tokushima-u.repo.nii.ac.jp/record/2013368/files/tfuzz.pdf",
+      "abstract": "Aspect-based sentiment analysis (ABSA) is a challenging and attractive fine-grained subtask in the natural language processing community, which aims to predict the sentiment polarity of each involved aspect term in the given sentence. With the numerous efforts contributed by related researchers, impressive success has been achieved in employing the external knowledge to enhance the sentiment representation. However, in previous works, the utilization of external knowledge is quite straightforward, which does not match the sentiment characteristics of human beings. Thus, this work proposes a novel humanized ABSA method, namely, fuzzy humanized sentiment-assisted graph attention networks (FHSGAT). Preliminary, to acquire the essential semantic features, the sentence is reconstructed by the manually designed prompt template, which would assist the pretrained language model in generating the target-guided semantic representation. In addition, based on the normal dependence graph, triple-dimensional external knowledge is injected into the corresponding nodes. Specifically, this article leverages the Gaussian membership function to fuzzify the sentiment knowledge-enhanced nodes, enabling the networks to obtain the humanized sentiment relationship between graph nodes, namely, fuzzy humanized syntactic features. Besides, due to its exquisite performance in information fusion, graph attention networks are utilized to accomplish the integration of target-guided semantic representation and fuzzy humanized syntactic features synchronously. Eventually, to validate the effectiveness of the proposed method FHSGAT, extensive experiments are conducted on five publicly and widely used benchmarks, and the corresponding results show the performance of the proposed approach outperforms the state of the art obviously.",
+      "citations": 1,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "A novel span and syntax enhanced large language model based framework for fine-grained sentiment analysis",
+      "authors": [
+        "Haochen Zou",
+        "Yongli Wang",
+        "An-Qi Huang"
+      ],
+      "year": 2025,
+      "date": "2025-08-01",
+      "venue": "Neural Networks",
+      "doi": "10.1016/j.neunet.2025.108012",
+      "arxiv_id": null,
+      "pmid": "40876298",
+      "openalex_id": null,
+      "s2_id": "225d101f8bec88a9fe1524a17f3ab83ecb01384f",
+      "url": "https://www.semanticscholar.org/paper/225d101f8bec88a9fe1524a17f3ab83ecb01384f",
+      "pdf_url": null,
+      "abstract": "Fine-grained aspect-based sentiment analysis requires language models to identify aspect entities and the corresponding sentiment information in the input text content. Transformer-based pre-trained large language models have demonstrated remarkable performance on various challenging natural language processing tasks. However, large language models face limitations in explicitly modelling syntactic relationships and effectively capturing local nuances between terms in the text content, which constrains their capability in fine-grained aspect-based sentiment analysis. We propose a novel span and syntax enhanced joint learning framework based on the latest large language model. The framework incorporates three key components, including the span-aware attention mechanism, the contextual Transformer, and the syntax-aware Transformer, which examine in parallel to generate span-aware features, contextual features, and syntax-aware features, respectively. The three dimensions of analyzed features are dynamically fused in the feature aggregation module, resulting in a combined feature for aspect entity recognition and sentiment classification. To the best of our knowledge, this study represents the pioneering effort to comprehensively leverage span-aware, contextual, and syntax-aware characteristics to augment large language models in addressing the fine-grained aspect-based sentiment analysis task. Experimental results on publicly available benchmark datasets validate the effectiveness of the architecture compared to state-of-the-art baseline competitors.",
+      "citations": 7,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Triple dimensional psychology knowledge encouraging graph attention networks to exploit aspect-based sentiment analysis",
+      "authors": [
+        "Xuefeng Shi",
+        "Weiping Ding",
+        "Min Hu",
+        "Xin Kang",
+        "Fuji Ren"
+      ],
+      "year": 2025,
+      "date": "2025-07-25",
+      "venue": "Scientific Reports",
+      "doi": "10.1038/s41598-025-08914-2",
+      "arxiv_id": null,
+      "pmid": "40715179",
+      "openalex_id": null,
+      "s2_id": "523e8409414323cb1a91e5aff4ed9d11533a11a5",
+      "url": "https://www.semanticscholar.org/paper/523e8409414323cb1a91e5aff4ed9d11533a11a5",
+      "pdf_url": "https://www.nature.com/articles/s41598-025-08914-2.pdf",
+      "abstract": "As a fine-grained sentiment analysis subtask in the natural language processing (NLP) community, aspect-based sentiment analysis (ABSA) aims to predict the sentiment polarity of the aspect terms according to the given sentence. In previous research, external affective knowledge has been utilized to enhance the representation of the sentiment information contained in the text, which has achieved impressive progress in ABSA task. However, it is worth noting that the external knowledge employed is usually leveraged from the single-dimensional perspective, which lacks diversified and multiple-dimensional exploration and leads to insufficient comprehension of the complex sentiment information. Thus, this paper proposes a novel ABSA network to fully exploit the sentiment features from triple dimensions, namely the psychology knowledge assisted graph attention networks (VADGAT). Preliminarily, to obtain the task-relevant semantic representation, an aspect-oriented template is devised firstly to guide the fine-tuning of the pre-trained language model. Besides, to fully leverage the triple-dimensional sentiment, they are injected into the normal dependency graph to construct three mutually independent adjacent matrices, which are implemented by graph attention networks (GAT) to extract the relations among graph nodes, progressively. Meanwhile, to be treated as the fourth dimension of human beings’ sentiment, SenticNet is also leveraged to enhance the sentiment intensity of the words in the text, which are expected to highlight implicit information and support the final sentiment inference. Moreover, an intentional shadow network is devised and leveraged to reinforce the screening ability of sentiment information, which is integrated with the mainstream representation proportionally. Furthermore, to improve the effectiveness of this innovative strategy, this paper utilizes the Jensen–Shannon divergence to evaluate the similarity between the mainstream and the shadow modules and optimizes the designed VADGAT eventually. To validate the effectiveness of the proposed approach, this paper conducted extensive experiments on five publicly available datasets, and the results show that the approach outperforms the state-of-the-art methods.",
+      "citations": 7,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Aspect Sentiment Triplet Extraction with Syntax-Semantics Graph Convolutional Network",
+      "authors": [
+        "Jingyun Zhang",
+        "Shu-Wei Xu",
+        "Xin Gao",
+        "Zhiwei Tang"
+      ],
+      "year": 2025,
+      "date": "2025-07-01",
+      "venue": "International Journal of Computational Intelligence Systems",
+      "doi": "10.1007/s44196-025-00900-w",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "e87c688b74173493d37ee7f578afd72107c55057",
+      "url": "https://www.semanticscholar.org/paper/e87c688b74173493d37ee7f578afd72107c55057",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s44196-025-00900-w.pdf",
+      "abstract": "In the traditional task of aspect sentiment triplet extraction, existing approaches typically focus on either syntactic or semantic features independently, failing to leverage the complementary integration of these two types of information. Although graph convolutional network-based approaches have demonstrated impressive performance in triplet extraction tasks, they often ignore distance features and semantic information when capturing sentence information. As a result, the integration of syntactic and semantic information remains suboptimal, negatively impacting sentiment analysis performance. To address this limitation, we propose a novel Syntax-Semantics Graph Convolutional Network for aspect sentiment triplet extraction. Our method first extracts syntactic structural information using the probability matrix of dependency trees, from which a mask matrix is constructed based on the varying distances between words. Next, semantic information is captured via a self-attention mechanism and an aspect-attention mechanism, utilizing an attention score matrix. Finally, an interaction module is introduced to effectively integrate syntactic and semantic features. Extensive experiments on several benchmark datasets demonstrate that our approach significantly outperforms existing baselines, achieving an average F1-score improvement of at least 1.083%.",
+      "citations": 5,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Aspect sentiment learning for Aspect-Level Sentiment Classification",
+      "authors": [
+        "Zhong-Quan Jian",
+        "Jiajian Li",
+        "Meihong Wang",
+        "Jun-Feng Yao",
+        "Qing-Qiang Wu"
+      ],
+      "year": 2025,
+      "date": "2025-07-01",
+      "venue": "Neural Networks",
+      "doi": "10.1016/j.neunet.2025.107758",
+      "arxiv_id": null,
+      "pmid": "40651253",
+      "openalex_id": null,
+      "s2_id": "3dc05e2ef5315c715bdcac1d0fe2f2abc5fe0680",
+      "url": "https://www.semanticscholar.org/paper/3dc05e2ef5315c715bdcac1d0fe2f2abc5fe0680",
+      "pdf_url": "https://doi.org/10.2139/ssrn.4606050",
+      "abstract": "Aspect-Level Sentiment Classification (ALSC) is a fine-grained Sentiment Analysis (SA) task that aims to determine the sentiments of a sentence toward different aspects. Despite their significant success, most existing methods derive aspect sentiment semantics from individual sentences, overlooking the interrelationships among relevant sentences that could provide a more comprehensive understanding of aspect sentiment semantics. To this end, we propose AspLearn, an aspect-learning method to optimize aspect sentiment semantics and generate more robust aspect-specific sentence features for the ALSC task. In a nutshell, AspLearn employs the Aspect-aware Contrastive Learning (AspCL) to mine valuable aspect-related knowledge from aspect-relevant samples, thereby optimizing aspect sentiment semantics and enhancing the model's performance. AspLearn is a simple yet effective method, with its superior aspect learning capabilities confirmed through extensive experiments on three benchmarks. Notably, AspLearn, using DeBERTa as the backbone, achieves Macro F1 score improvements of 3.13%, 0.76%, and 1.07% over the second-best results on the Laptops, Restaurants, and Twitter datasets, respectively. Furthermore, AspLearn's mechanism can retrieve the most relevant demonstrations for Large Language Models (LLMs), enhancing their sentiment recognition capabilities.",
+      "citations": 1,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "FADD-Net:Multimodal Sentiment Analysis Based on Feature Alignment and Differential Decoupling",
+      "authors": [
+        "Ji-Xu Zhang",
+        "Shun-Xiang Zhang",
+        "Jia-Jia Liu",
+        "Hua Wen",
+        "Yulei Zhang",
+        "Meng Chen"
+      ],
+      "year": 2025,
+      "date": "2025-06-30",
+      "venue": "IEEE International Joint Conference on Neural Network",
+      "doi": "10.1109/ijcnn64981.2025.11228674",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": "dafca14504fcb5ffd90e869482e05b5800404cfe",
+      "url": "https://www.semanticscholar.org/paper/dafca14504fcb5ffd90e869482e05b5800404cfe",
+      "pdf_url": null,
+      "abstract": "The core challenge in multimodal sentiment analysis is how to efficiently fuse features from text and images while ensuring inter-modal feature alignment and disparity preservation. However, existing approaches usually have limitations in (1) not being able to make full use of inter-modal semantic relationships for feature alignment and fusion, and (2) lacking effective mechanisms to decouple inter-modal shared and private information for good disparity preservation. To solve these problems, we propose a multimodal sentiment analysis based on feature alignment and differential decoupling model. Firstly, BERT and ViT are used for unimodal feature extraction for text and images respectively, and contrast learning mechanism is used to introduce contrast loss in the shared semantic space to optimise the directional consistency of modally aligned features. Secondly, we propose a bidirectional cross-modal attention mechanism to capture inter-modal affective associations and complementary information through figure-text and text-image interactive alignment features. Then, we propose a dynamic gated fusion mechanism to suppress the noise that may be introduced during the alignment process, and to assign weights and perform fusion between the original features and the aligned features, ensuring a balanced representation of modality-shared and modality-specific information. In addition, to alleviate the problem of modal features being diluted during the alignment and fusion process, we decompose modal features into shared and private features, which preserve modal-specific information while performing further alignment in the shared space. Finally, the contrast learning loss is utilized as a supervised signal to optimize the feature representation. Experimental results on public datasets show that the method proposed in this paper outperforms superior previous methods and improves the accuracy of emotion recognition.",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": null,
+      "sources": [
+        "semantic_scholar"
+      ],
+      "found_by": [
+        {
+          "source": "semantic_scholar",
+          "strategy": "citations",
+          "query": "2104.04986"
+        }
+      ],
+      "extra": {}
+    }
+  ],
+  "resolution_notes": [
+    {
+      "source": "openalex",
+      "kind": "http",
+      "message": "HTTP 400",
+      "status": 400
+    }
+  ]
+}

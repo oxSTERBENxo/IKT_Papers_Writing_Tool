@@ -1,0 +1,1596 @@
+{
+  "claim": "A controlled multi-seed comparison showing whether dependency-tree graph convolutional networks still improve aspect-based sentiment classification over a plain fine-tuned modern pretrained encoder (RoBERTa/DeBERTa) when the encoder is held fixed",
+  "queries": [
+    "does syntax matter aspect-based sentiment analysis pretrained language model",
+    "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa",
+    "syntactic information unnecessary aspect sentiment classification strong baseline",
+    "reproducibility aspect-based sentiment graph neural network variance seeds",
+    "induced trees versus parser trees aspect sentiment DeBERTa"
+  ],
+  "sources_ok": [
+    "openalex",
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [
+    "semantic_scholar"
+  ],
+  "sources_status": {
+    "openalex": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 2,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "arxiv": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "crossref": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "n_papers_examined": 183,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 8,
+  "n_without_abstract": 75,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "interpretation": "No closely worded paper was retrieved, but only 1 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification",
+        "authors": [
+          "Li Yuan",
+          "Jin Wang",
+          "Lung-Hao Lee",
+          "Xuejie Zhang"
+        ],
+        "year": 2025,
+        "date": "2025-10",
+        "venue": "IEEE Transactions on Computational Social Systems",
+        "doi": "10.1109/tcss.2024.3514901",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4405754178",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tcss.2024.3514901",
+        "pdf_url": null,
+        "abstract": "The main challenge of aspect-level sentiment classification (ASC) is associating target aspect terms with relevant contextual words. Existing methods improve ASC performance by incorporating syntactic dependencies through a graph convolution layer on top of BERT. However, these approaches often assign a fixed weight to edges with the same dependency type, overlooking the contextual nuances these dependencies can convey. To address this, we propose syntax-enhanced BERT (SE-BERT), which integrates syntactic distance embeddings, a syntax-enhanced transformer, aspect-specific masking, and a sentiment classification layer. SE-BERT advances previous methods in two main ways. First, SE-BERT enables dynamic weighting for edges with the same dependency type based on the source node's part-of-speech (POS) tags, which enhances graph propagation accuracy and enables more precise edge associations. Second, rather than adding additional graph convolutional layers on top of BERT, SE-BERT replaces BERT's final Transformer layers with the proposed SE-Transformer. This approach directly encodes syntactic information into the attention distribution and word representation within scaled dot-product attention. The model can be initialized from a pretrained checkpoint and fine-tuned for downstream tasks without requiring additional training parameters. Experimental results on five benchmark datasets demonstrate that SE-BERT outperforms existing ASC methods.",
+        "citations": 3,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "does syntax matter aspect-based sentiment analysis pretrained language model"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does syntax matter aspect-based sentiment analysis pretrained language model survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does syntax matter aspect-based sentiment analysis pretrained language model review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "does syntax matter aspect-based sentiment analysis pretrained language model"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.75,
+            "retrieval_hits": 3,
+            "score": 2.67
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W2075228819",
+            "W2116341502",
+            "W2250539671",
+            "W2251124635",
+            "W2251294039",
+            "W2251648804",
+            "W2252057809",
+            "W2253519362",
+            "W2465978385",
+            "W2562607067",
+            "W2751820697",
+            "W2757541972",
+            "W2891778157",
+            "W2895547478",
+            "W2963168371",
+            "W2964098749",
+            "W2964164368",
+            "W2969743835",
+            "W2970583420",
+            "W2970748008",
+            "W2971220558",
+            "W2991433488",
+            "W3035529900",
+            "W3035740499",
+            "W3081228062",
+            "W3100451998",
+            "W3105174597",
+            "W3116313195",
+            "W3156892644",
+            "W3167287584",
+            "W3176265482",
+            "W3176765152",
+            "W3210396606",
+            "W4225526013",
+            "W4324125441",
+            "W4360999323",
+            "W4388412708",
+            "W4390605218",
+            "W4390820841",
+            "W4396817358"
+          ],
+          "related_works": [
+            "W2077104824",
+            "W4294658953",
+            "W2536864162",
+            "W2390421503",
+            "W2364428493",
+            "W4400066978",
+            "W44541701",
+            "W2387926336",
+            "W2385522099",
+            "W2354135050"
+          ]
+        }
+      },
+      "term_overlap": 0.304,
+      "tfidf_similarity": 0.128,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Multi-aspect sentiment classification on USA-based Amazon customer reviews with DeBERTa-v3 encoders and aspect attention",
+        "authors": [
+          "Sabrina Shamim Moushi",
+          "Md Shohan Bhuiyan",
+          "Nasrin Akter",
+          "Urmi Chakraborty",
+          "Shahanaj Akther",
+          "Rakibul Islam",
+          "Md Shahiduzzaman",
+          "Maria Kabtia",
+          "Roba Keneni"
+        ],
+        "year": 2026,
+        "date": "2026-07-13",
+        "venue": "Discover Analytics",
+        "doi": "10.1007/s44257-026-00077-2",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/s44257-026-00077-2",
+        "pdf_url": null,
+        "abstract": "Abstract Aspect-level sentiment analysis of e-commerce reviews is important for identifying fine-grained customer experience signals that are often hidden by overall star ratings. This study proposes a dual-track framework for USA-based Amazon customer reviews, combining text-driven multi-aspect sentiment classification with structured-feature satisfaction prediction. For the text-based task, reviews are modeled across three operational aspects: Product &amp; Value, Delivery &amp; Fulfillment, and Service &amp; Usability, each using a three-class sentiment scheme of Negative, Neutral, and Positive. The proposed deep learning model integrates DeBERTa-v3 contextual embeddings, bidirectional recurrent refinement, and aspect-specific additive attention to separate overlapping sentiment cues within the same review. Three recurrent variants, Bi-GRU, Bi-RNN, and Bi-LSTM, are evaluated under the same modeling framework. On the held-out Amazon Customer Reviews test set, the DeBERTa-v3 + Bi-GRU + aspect-attention model achieves the best overall performance, with 0.737 accuracy, 0.757 macro-F1, and 0.760 weighted-F1, outperforming the Bi-LSTM and Bi-RNN variants. Ablation analysis further shows that sequential refinement and aspect-specific attention improve performance over encoder-only and shared-attention configurations. In the structured-feature satisfaction task, LightGBM achieves the strongest result among the evaluated machine learning models, with 82.37% accuracy and an F1-score of 0.82, outperforming XGBoost and CatBoost. The results show that the proposed framework provides complementary insights: structured models support overall satisfaction prediction, while the DeBERTa-v3-based aspect model provides more detailed attribution of customer experience across product, delivery, and usability dimensions. Overall, the study offers a reproducible and interpretable approach for fine-grained review analytics in e-commerce settings.",
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "induced trees versus parser trees aspect sentiment DeBERTa"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "induced trees versus parser trees aspect sentiment DeBERTa survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "induced trees versus parser trees aspect sentiment DeBERTa review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "induced trees versus parser trees aspect sentiment DeBERTa"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.429,
+            "retrieval_hits": 3,
+            "score": 1.826
+          }
+        }
+      },
+      "term_overlap": 0.275,
+      "tfidf_similarity": 0.124,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Aspect-level Multimodal Sentiment Analysis Model Based on Multi-scale Feature Extraction",
+        "authors": [
+          "Bocheng Miao",
+          "Changbo Xu"
+        ],
+        "year": 2025,
+        "date": "2025-06-06",
+        "venue": null,
+        "doi": "10.21203/rs.3.rs-6622730/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21203/rs.3.rs-6622730/v1",
+        "pdf_url": null,
+        "abstract": "Abstract In existing multimodal sentiment analysis methods, only the last layer output of BERT is typically used for feature extraction, neglecting abundant information from intermediate layers. This paper proposes an Aspect-level Multimodal Sentiment Analysis Model with Multi-scale Feature Extraction (AMSAM-MFE). The model conducts sentiment analysis on both text and images. For text feature extraction, it incorporates a Multi-scale Layer module based on BERT and utilizes aspect terms to supervise text feature extraction, enhancing text processing performance. For image feature extraction, the model employs a pre-trained Resnest269 model with a specially designed Supervision Layer to improve effectiveness. For feature fusion, the Tensor Fusion Network method is adopted to achieve comprehensive interaction between visual and textual features. Experimental comparisons with other multimodal sentiment analysis models on Twitter2015 and Twitter2017 datasets demonstrate that the proposed multi-scale feature extraction model achieves improved accuracy and F1 scores in aspect-level multimodal sentiment analysis tasks, showing superior classification effectiveness compared to traditional multimodal sentiment analysis models.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "does syntax matter aspect-based sentiment analysis pretrained language model review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.625
+          }
+        }
+      },
+      "term_overlap": 0.215,
+      "tfidf_similarity": 0.104,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Syntactic Structure-Enhanced Dual Graph Convolutional Network for Aspect-Level Sentiment Classification",
+        "authors": [
+          "Jiehai Chen",
+          "Zhixun Qiu",
+          "Junxi Liu",
+          "Yun Xue",
+          "Qianhua Cai"
+        ],
+        "year": 2023,
+        "date": "2023-09-11",
+        "venue": "Mathematics",
+        "doi": "10.3390/math11183877",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/math11183877",
+        "pdf_url": null,
+        "abstract": "Aspect-level sentiment classification (ALSC) is a fine-grained sentiment analysis task that aims to predict the sentiment of the given aspect in a sentence. Recent studies mainly focus on using the Graph Convolutional Networks (GCN) to deal with both the semantics and the syntax of a sentence. However, the improvement is limited since the syntax dependency trees are not aspect-oriented and the exploitation of syntax structure information is inadequate. In this paper, we propose a Syntactic Structure-Enhanced Dual Graph Convolutional Network (SSEDGCN) model for an ALSC task. Firstly, to enhance the relation between aspect and its opinion words, we propose an aspect-wise dependency tree by reconstructing the basic syntax dependency tree. Then, we propose a syntax-aware GCN to encode the new tree. For semantics information learning, a semantic-aware GCN is established. In order to exploit syntactic structure information, we design a syntax-guided contrastive learning objective that makes the model aware of syntactic structure and improves the quality of the feature representation of the aspect. The experimental results on three benchmark datasets show that our model significantly outperforms the baseline models and verifies the effectiveness of our model.",
+        "citations": 2,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "syntactic information unnecessary aspect sentiment classification strong baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "syntactic information unnecessary aspect sentiment classification strong baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "syntactic information unnecessary aspect sentiment classification strong baseline review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 2.411
+          }
+        }
+      },
+      "term_overlap": 0.196,
+      "tfidf_similarity": 0.122,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Syntactically Enhanced Dependency-POS Weighted Graph Convolutional Network for Aspect-Based Sentiment Analysis",
+        "authors": [
+          "Jinjie Yang",
+          "Anan Dai",
+          "Yun Xue",
+          "Biqing Zeng",
+          "Xuejie Liu"
+        ],
+        "year": 2022,
+        "date": "2022-09-15",
+        "venue": "Mathematics",
+        "doi": "10.3390/math10183353",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/math10183353",
+        "pdf_url": null,
+        "abstract": "Aspect-based sentiment analysis (ABSA) is a fine-grained task of sentiment analysis that presents great benefits to real-word applications. Recently, the methods utilizing graph neural networks over dependency trees are popular, but most of them merely considered if there exist dependencies between words, ignoring the types of these dependencies, which carry important information, as dependencies with different types have different effects. In addition, they neglected the correlations between dependency types and part-of-speech (POS) labels, which are helpful for utilizing dependency imformation. To address such limitations and the deficiency of insufficient syntactic and semantic feature mining, we propose a novel model containing three modules, which aims to leverage dependency trees more reasonably by distinguishing different dependencies and extracting beneficial syntactic and semantic features to further enhance model performance. To enrich word embeddings, we design a syntactic feature encoder (SynFE). In particular, we design Dependency-POS Weighted Graph Convolutional Network (DPGCN) to weight different dependencies by a graph attention mechanism we proposed. Additionally, to capture aspect-oriented semantic information, we design a semantic feature extractor (SemFE). Extensive experiments on five popular benchmark databases validate that our model can better employ dependency information and effectively extract favorable syntactic and semantic features to achieve new state-of-the-art performance.",
+        "citations": 6,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.6,
+            "retrieval_hits": 3,
+            "score": 2.288
+          }
+        }
+      },
+      "term_overlap": 0.191,
+      "tfidf_similarity": 0.109,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "FITE-GAT: Enhancing aspect-level sentiment classification with FT-RoBERTa induced trees and graph attention network",
+        "authors": [
+          "Mengmeng Fan",
+          "Mingming Kong",
+          "Xi Wang",
+          "Fei Hao",
+          "Chao Zhang"
+        ],
+        "year": 2025,
+        "date": "2025-03",
+        "venue": "Expert Systems with Applications",
+        "doi": "10.1016/j.eswa.2024.125890",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.eswa.2024.125890",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 10,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "induced trees versus parser trees aspect sentiment DeBERTa"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "induced trees versus parser trees aspect sentiment DeBERTa survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "induced trees versus parser trees aspect sentiment DeBERTa review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "induced trees versus parser trees aspect sentiment DeBERTa"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 3,
+            "score": 2.167
+          }
+        }
+      },
+      "term_overlap": 0.144,
+      "tfidf_similarity": 0.155,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "A dual contrastive learning-based graph convolutional network with syntax label enhancement for aspect-based sentiment classification",
+        "authors": [
+          "Yuyan Huang",
+          "Anan Dai",
+          "Sha Cao",
+          "Qiuhua Kuang",
+          "Hongya Zhao",
+          "Qianhua Cai"
+        ],
+        "year": 2024,
+        "date": "2024-04-05",
+        "venue": "Frontiers in Physics",
+        "doi": "10.3389/fphy.2024.1336795",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3389/fphy.2024.1336795",
+        "pdf_url": null,
+        "abstract": "Introduction: Aspect-based sentiment classification is a fine-grained sentiment classification task. State-of-the-art approaches in this field leverage graph neural networks to integrate sentence syntax dependency. However, current methods fail to exploit the data augmentation in encoding and ignore the syntactic relation in sentiment delivery. Methods: In this work, we propose a novel graph neural network-based architecture with dual contrastive learning and syntax label enhancement. Specifically, a contrastive learning-based contextual encoder is designed, integrating sentiment information for semantics learning. Moreover, a weighted label-enhanced syntactic graph neural network is established to use both the syntactic relation and syntax dependency, which optimizes the syntactic weight between words. A syntactic triplet between words is generated. A syntax label-based contrastive learning scheme is developed to map the triplets into a unified feature space for syntactic information learning. Results: Experiments on five publicly available datasets show that our model substantially outperforms the baseline methods. Discussion: As such, the proposed method shows its effectiveness in aspect-based sentiment classification tasks.",
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.6,
+            "retrieval_hits": 1,
+            "score": 2.248
+          }
+        }
+      },
+      "term_overlap": 0.182,
+      "tfidf_similarity": 0.116,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Deliberate Multi Parallel Graph Convolution Network for Aspect-Based Sentiment Analysis",
+        "authors": [
+          "Zelong Su",
+          "Bin Gao",
+          "Xiaobai Li",
+          "Yutong Li",
+          "Shutian Liu",
+          "Zhengjun Liu"
+        ],
+        "year": 2026,
+        "date": "2026-02-18",
+        "venue": null,
+        "doi": "10.21203/rs.3.rs-8503855/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21203/rs.3.rs-8503855/v1",
+        "pdf_url": null,
+        "abstract": "Abstract Aspect-based sentiment analysis (ABSA) is a fine-grained sentiment classification task, which needs to detect the sentiment polarity towards a given aspect. Recently, graph neural networks over the dependency tree have been widely applied for aspect-based sentiment analysis. Most existing works generally focus on the extraction of syntactic information, which ignores the impact of different dependencies. In this work, we propose a novel structure named deliberate multi-parallel graph convolutional network (DMP-GCN) that not only extracts the semantic information of the sentence itself but also captures the syntactic information according to different dependencies. To be specific, the proposed DMP-GCN aggregates two blocks, a multi-head attention semantic extraction block (MAS-Block) and a multi-parallel syntactic extraction block (MPS-Block). We construct a set of dependency graphs in MPS-Block to enhance the representations of different dependencies and generate an attention matrix to capture semantic information in MAS-Block. Experimental results on multiple public benchmark datasets illustrate that our proposed model achieves better results compared to other models.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.875
+          }
+        }
+      },
+      "term_overlap": 0.194,
+      "tfidf_similarity": 0.1,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Syntactic and Semantic Dependency Graph Convolutional Network for Aspect-Based Sentiment Analysis",
+        "authors": [
+          "Shiyong Xiong",
+          "Hongtao Wang",
+          "Jun Shen",
+          "Yanghui Xiang"
+        ],
+        "year": 2024,
+        "date": "2024-12-13",
+        "venue": "2024 6th International Conference on Frontier Technologies of Information and Computer (ICFTIC)",
+        "doi": "10.1109/icftic64248.2024.10913075",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/icftic64248.2024.10913075",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.6,
+            "retrieval_hits": 3,
+            "score": 2.175
+          }
+        }
+      },
+      "term_overlap": 0.089,
+      "tfidf_similarity": 0.186,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Aspect-based sentiment analysis based on multi-granularity graph convolutional network",
+        "authors": [
+          "Yanfen Cheng",
+          "Minghui Yuan",
+          "Fan He",
+          "Xun Shao",
+          "Jiajun Wu"
+        ],
+        "year": 2025,
+        "date": "2025-12",
+        "venue": "Neural Networks",
+        "doi": "10.1016/j.neunet.2025.107864",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.neunet.2025.107864",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 6,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 1.938
+          }
+        }
+      },
+      "term_overlap": 0.097,
+      "tfidf_similarity": 0.176,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Aspect-based Sentiment Analysis with Dependency Relation Graph Convolutional Network",
+        "authors": [
+          "Yadong Wang",
+          "Chen Liu",
+          "Jinge Xie",
+          "Songhua Yang",
+          "Yuxiang Jia",
+          "Hongying Zan"
+        ],
+        "year": 2022,
+        "date": "2022-10-27",
+        "venue": "2022 International Conference on Asian Language Processing (IALP)",
+        "doi": "10.1109/ialp57159.2022.9961321",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/ialp57159.2022.9961321",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 4,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.6,
+            "retrieval_hits": 3,
+            "score": 2.227
+          }
+        }
+      },
+      "term_overlap": 0.089,
+      "tfidf_similarity": 0.183,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Fusion Network for Aspect-Level Sentiment Classification Based on Graph Neural Networks—Enhanced Syntactics and Semantics",
+        "authors": [
+          "Miaomiao Li",
+          "Yuxia Lei",
+          "Weiqiang Zhou"
+        ],
+        "year": 2024,
+        "date": "2024-08-26",
+        "venue": "Applied Sciences",
+        "doi": "10.3390/app14177524",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/app14177524",
+        "pdf_url": null,
+        "abstract": "Aspect-level sentiment classification (ALSC) struggles with correctly trapping the aspects and corresponding sentiment polarity of a statement. Recently, several works have combined the syntactic structure and semantic information of sentences for more efficient analysis. The combination of sentence knowledge with graph neural networks has also proven effective at ALSC. However, there are still limitations on how to effectively fuse syntactic structure and semantic information when dealing with complex sentence structures and informal expressions. To deal with these problems, we propose an ALSC fusion network that combines graph neural networks with a simultaneous consideration of syntactic structure and semantic information. Specifically, our model is composed of a syntactic attention module and a semantic enhancement module. First, the syntactic attention module builds a dependency parse tree with the aspect term being the root, so that the model focuses better on the words closely related to the aspect terms, and captures the syntactic structure through a graph attention network. In addition, the semantic enhancement module generates the adjacency matrix through self-attention, which is processed by the graph convolutional network to obtain the semantic details. Lastly, the extracted features are merged to achieve sentiment classification. As verified by experiments, the model we propose can effectively enhance ALSC’s behavior.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.625,
+            "retrieval_hits": 3,
+            "score": 2.25
+          }
+        }
+      },
+      "term_overlap": 0.184,
+      "tfidf_similarity": 0.083,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Knowledge Graph Augmented Network Towards Multiview Representation Learning for Aspect-based Sentiment Analysis",
+        "authors": [
+          "Qihuang Zhong",
+          "Liang Ding",
+          "Juhua Liu",
+          "Bo Du",
+          "Hua Jin",
+          "Dacheng Tao"
+        ],
+        "year": 2022,
+        "date": "2022-01-13",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2201.04831",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2201.04831",
+        "pdf_url": null,
+        "abstract": "Aspect-based sentiment analysis (ABSA) is a fine-grained task of sentiment analysis. To better comprehend long complicated sentences and obtain accurate aspect-specific information, linguistic and commonsense knowledge are generally required in this task. However, most current methods employ complicated and inefficient approaches to incorporate external knowledge, e.g., directly searching the graph nodes. Additionally, the complementarity between external knowledge and linguistic information has not been thoroughly studied. To this end, we propose a knowledge graph augmented network KGAN, which aims to effectively incorporate external knowledge with explicitly syntactic and contextual information. In particular, KGAN captures the sentiment feature representations from multiple different perspectives, i.e., context-, syntax- and knowledge-based. First, KGAN learns the contextual and syntactic representations in parallel to fully extract the semantic features. Then, KGAN integrates the knowledge graphs into the embedding space, based on which the aspect-specific knowledge representations are further obtained via an attention mechanism. Last, we propose a hierarchical fusion module to complement these multi-view representations in a local-to-global manner. Extensive experiments on five popular ABSA benchmarks demonstrate the effectiveness and robustness of our KGAN. Notably, with the help of the pretrained model of RoBERTa, KGAN achieves a new record of state-of-the-art performance among all datasets.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 2.375
+          }
+        }
+      },
+      "term_overlap": 0.186,
+      "tfidf_similarity": 0.073,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "A Sentiment and Syntactic-Aware Graph Convolutional Network for Aspect-Level Sentiment Classification",
+        "authors": [
+          "Yuxin Yang",
+          "Xia Sun",
+          "Qiang Lu",
+          "Richard Sutcliffe",
+          "Jun Feng"
+        ],
+        "year": 2023,
+        "date": "2023-06-04",
+        "venue": "ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+        "doi": "10.1109/icassp49357.2023.10096326",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/icassp49357.2023.10096326",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 4,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "syntactic information unnecessary aspect sentiment classification strong baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "syntactic information unnecessary aspect sentiment classification strong baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "syntactic information unnecessary aspect sentiment classification strong baseline review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 1.927
+          }
+        }
+      },
+      "term_overlap": 0.089,
+      "tfidf_similarity": 0.169,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Dependency relationship-enhanced graph convolutional network for aspect-based sentiment analysis",
+        "authors": [
+          "Xiaohui Tian",
+          "Fang’ai Liu",
+          "Xuqiang Zhuang",
+          "Yuling Zhang",
+          "Xuejian Gao"
+        ],
+        "year": 2025,
+        "date": "2025-08-08",
+        "venue": "Neural Computing and Applications",
+        "doi": "10.1007/s00521-025-11508-8",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/s00521-025-11508-8",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 5,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "reproducibility aspect-based sentiment graph neural network variance seeds"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.6,
+            "retrieval_hits": 2,
+            "score": 2.108
+          }
+        }
+      },
+      "term_overlap": 0.089,
+      "tfidf_similarity": 0.167,
+      "is_survey_like": false,
+      "has_abstract": false
+    }
+  ],
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "does syntax matter aspect-based sentiment analysis pretrained language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "syntactic information unnecessary aspect sentiment classification strong baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "reproducibility aspect-based sentiment graph neural network variance seeds",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "induced trees versus parser trees aspect sentiment DeBERTa",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-17"
+}

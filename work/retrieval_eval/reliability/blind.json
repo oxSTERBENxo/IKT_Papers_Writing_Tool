@@ -1,0 +1,1468 @@
+{
+  "partial": true,
+  "results": [
+    {
+      "id": "adam-vs-sgd-generalization",
+      "split": "blind",
+      "n_targets": 1,
+      "configs": {
+        "challenge": {
+          "recall_any": 1.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.014,
+          "median_rank_of_found": 74,
+          "n_retrieved": 234,
+          "hits": [
+            {
+              "title": "The Marginal Value of Adaptive Gradient Methods in Machine Learning",
+              "rank": 74,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "degraded": [],
+          "n": 234,
+          "expansion_errors": 3,
+          "seconds": 104.8,
+          "http_calls": 88,
+          "network_requests": 86,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "all"
+        },
+        "challenge_arxiv_any": {
+          "recall_any": 1.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 1.0,
+          "mrr": 0.024,
+          "median_rank_of_found": 42,
+          "n_retrieved": 241,
+          "hits": [
+            {
+              "title": "The Marginal Value of Adaptive Gradient Methods in Machine Learning",
+              "rank": 42,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [
+            "arxiv"
+          ],
+          "n": 241,
+          "expansion_errors": 4,
+          "seconds": 134.1,
+          "http_calls": 90,
+          "network_requests": 41,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_lexical": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "recall_at_50": 1.0,
+          "mrr": 0.143,
+          "median_rank_of_found": 7,
+          "n_retrieved": 262,
+          "hits": [
+            {
+              "title": "The Marginal Value of Adaptive Gradient Methods in Machine Learning",
+              "rank": 7,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [
+            "arxiv"
+          ],
+          "n": 262,
+          "expansion_errors": 4,
+          "seconds": 72.2,
+          "http_calls": 90,
+          "network_requests": 17,
+          "ranking": "fusion",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_hybrid": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "recall_at_50": 1.0,
+          "mrr": 0.333,
+          "median_rank_of_found": 3,
+          "n_retrieved": 218,
+          "hits": [
+            {
+              "title": "The Marginal Value of Adaptive Gradient Methods in Machine Learning",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [
+            "arxiv"
+          ],
+          "n": 218,
+          "expansion_errors": 1,
+          "seconds": 75.6,
+          "http_calls": 87,
+          "network_requests": 17,
+          "ranking": "fusion",
+          "semantic_model": "model2vec:minishlab/potion-retrieval-32M",
+          "arxiv_match": "any"
+        }
+      },
+      "missed_by_all": []
+    },
+    {
+      "id": "continual-learning-vs-replay",
+      "split": "blind",
+      "n_targets": 4,
+      "configs": {
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 111,
+          "hits": [
+            {
+              "title": "Three scenarios for continual learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "source_unavailable"
+            },
+            {
+              "title": "Class-Incremental Learning: A Survey",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "source_unavailable"
+            },
+            {
+              "title": "An analysis of best-practice strategies for replay and rehearsal in continual learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "A Comprehensive Empirical Evaluation on Online Continual Learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "source_unavailable"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [
+            "arxiv"
+          ],
+          "degraded": [
+            "arxiv"
+          ],
+          "n": 111,
+          "expansion_errors": 10,
+          "seconds": 89.5,
+          "http_calls": 74,
+          "network_requests": 76,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "all"
+        },
+        "challenge_arxiv_any": {
+          "recall_any": 0.25,
+          "recall_at_20": 0.25,
+          "recall_at_50": 0.25,
+          "mrr": 0.062,
+          "median_rank_of_found": 4,
+          "n_retrieved": 255,
+          "hits": [
+            {
+              "title": "Three scenarios for continual learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Class-Incremental Learning: A Survey",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "An analysis of best-practice strategies for replay and rehearsal in continual learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "A Comprehensive Empirical Evaluation on Online Continual Learning",
+              "rank": 4,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 255,
+          "expansion_errors": 4,
+          "seconds": 185.1,
+          "http_calls": 93,
+          "network_requests": 44,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_lexical": {
+          "recall_any": 0.25,
+          "recall_at_20": 0.25,
+          "recall_at_50": 0.25,
+          "mrr": 0.083,
+          "median_rank_of_found": 3,
+          "n_retrieved": 279,
+          "hits": [
+            {
+              "title": "Three scenarios for continual learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Class-Incremental Learning: A Survey",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "An analysis of best-practice strategies for replay and rehearsal in continual learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "A Comprehensive Empirical Evaluation on Online Continual Learning",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 279,
+          "expansion_errors": 4,
+          "seconds": 69.0,
+          "http_calls": 92,
+          "network_requests": 15,
+          "ranking": "fusion",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_hybrid": {
+          "recall_any": 0.25,
+          "recall_at_20": 0.25,
+          "recall_at_50": 0.25,
+          "mrr": 0.036,
+          "median_rank_of_found": 7,
+          "n_retrieved": 194,
+          "hits": [
+            {
+              "title": "Three scenarios for continual learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Class-Incremental Learning: A Survey",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "An analysis of best-practice strategies for replay and rehearsal in continual learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "A Comprehensive Empirical Evaluation on Online Continual Learning",
+              "rank": 7,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 194,
+          "expansion_errors": 2,
+          "seconds": 84.8,
+          "http_calls": 89,
+          "network_requests": 20,
+          "ranking": "fusion",
+          "semantic_model": "model2vec:minishlab/potion-retrieval-32M",
+          "arxiv_match": "any"
+        }
+      },
+      "missed_by_all": [
+        "Three scenarios for continual learning",
+        "Class-Incremental Learning: A Survey",
+        "An analysis of best-practice strategies for replay and rehearsal in continual learning"
+      ]
+    },
+    {
+      "id": "cot-beyond-math",
+      "split": "blind",
+      "n_targets": 2,
+      "configs": {
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 151,
+          "hits": [
+            {
+              "title": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "source_unavailable"
+            },
+            {
+              "title": "The Curse of CoT: On the Limitations of Chain-of-Thought in In-Context Learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "source_unavailable"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [
+            "arxiv"
+          ],
+          "degraded": [
+            "arxiv"
+          ],
+          "n": 151,
+          "expansion_errors": 6,
+          "seconds": 100.0,
+          "http_calls": 70,
+          "network_requests": 78,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "all"
+        },
+        "challenge_arxiv_any": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 259,
+          "hits": [
+            {
+              "title": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "The Curse of CoT: On the Limitations of Chain-of-Thought in In-Context Learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 259,
+          "expansion_errors": 4,
+          "seconds": 127.2,
+          "http_calls": 92,
+          "network_requests": 43,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_lexical": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 281,
+          "hits": [
+            {
+              "title": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "The Curse of CoT: On the Limitations of Chain-of-Thought in In-Context Learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 281,
+          "expansion_errors": 2,
+          "seconds": 11.4,
+          "http_calls": 89,
+          "network_requests": 11,
+          "ranking": "fusion",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_hybrid": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 260,
+          "hits": [
+            {
+              "title": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "The Curse of CoT: On the Limitations of Chain-of-Thought in In-Context Learning",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 260,
+          "expansion_errors": 1,
+          "seconds": 7.8,
+          "http_calls": 89,
+          "network_requests": 8,
+          "ranking": "fusion",
+          "semantic_model": "model2vec:minishlab/potion-retrieval-32M",
+          "arxiv_match": "any"
+        }
+      },
+      "missed_by_all": [
+        "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+        "The Curse of CoT: On the Limitations of Chain-of-Thought in In-Context Learning"
+      ]
+    },
+    {
+      "id": "domain-generalization-vs-erm",
+      "split": "blind",
+      "n_targets": 3,
+      "configs": {
+        "challenge": {
+          "recall_any": 0.333,
+          "recall_at_20": 0.333,
+          "recall_at_50": 0.333,
+          "mrr": 0.067,
+          "median_rank_of_found": 5,
+          "n_retrieved": 198,
+          "hits": [
+            {
+              "title": "In Search of Lost Domain Generalization",
+              "rank": 5,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "OoD-Bench: Quantifying and Understanding Two Dimensions of Out-of-Distribution Generalization",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Rethinking the Evaluation Protocol of Domain Generalization",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 198,
+          "expansion_errors": 5,
+          "seconds": 123.0,
+          "http_calls": 91,
+          "network_requests": 90,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "all"
+        },
+        "challenge_arxiv_any": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 161,
+          "hits": [
+            {
+              "title": "In Search of Lost Domain Generalization",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "OoD-Bench: Quantifying and Understanding Two Dimensions of Out-of-Distribution Generalization",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Rethinking the Evaluation Protocol of Domain Generalization",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 161,
+          "expansion_errors": 9,
+          "seconds": 86.9,
+          "http_calls": 94,
+          "network_requests": 40,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_lexical": {
+          "recall_any": 0.333,
+          "recall_at_20": 0.333,
+          "recall_at_50": 0.333,
+          "mrr": 0.083,
+          "median_rank_of_found": 4,
+          "n_retrieved": 237,
+          "hits": [
+            {
+              "title": "In Search of Lost Domain Generalization",
+              "rank": 4,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "OoD-Bench: Quantifying and Understanding Two Dimensions of Out-of-Distribution Generalization",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Rethinking the Evaluation Protocol of Domain Generalization",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 237,
+          "expansion_errors": 4,
+          "seconds": 19.3,
+          "http_calls": 91,
+          "network_requests": 14,
+          "ranking": "fusion",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_hybrid": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 161,
+          "hits": [
+            {
+              "title": "In Search of Lost Domain Generalization",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "OoD-Bench: Quantifying and Understanding Two Dimensions of Out-of-Distribution Generalization",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Rethinking the Evaluation Protocol of Domain Generalization",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 161,
+          "expansion_errors": 6,
+          "seconds": 16.0,
+          "http_calls": 91,
+          "network_requests": 13,
+          "ranking": "fusion",
+          "semantic_model": "model2vec:minishlab/potion-retrieval-32M",
+          "arxiv_match": "any"
+        }
+      },
+      "missed_by_all": [
+        "OoD-Bench: Quantifying and Understanding Two Dimensions of Out-of-Distribution Generalization",
+        "Rethinking the Evaluation Protocol of Domain Generalization"
+      ]
+    },
+    {
+      "id": "kge-old-models-retuned",
+      "split": "blind",
+      "n_targets": 4,
+      "configs": {
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 249,
+          "hits": [
+            {
+              "title": "You CAN Teach an Old Dog New Tricks! On Training Knowledge Graph Embeddings",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "not_in_searched_indexes"
+            },
+            {
+              "title": "Bringing Light Into the Dark: A Large-scale Evaluation of Knowledge Graph Embedding Models Under a Unified Framework",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Realistic Re-evaluation of Knowledge Graph Completion Methods: An Experimental Study",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Knowledge Graph Embedding for Link Prediction: A Comparative Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 249,
+          "expansion_errors": 1,
+          "seconds": 122.5,
+          "http_calls": 88,
+          "network_requests": 82,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "all"
+        },
+        "challenge_arxiv_any": {
+          "recall_any": 0.25,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.25,
+          "mrr": 0.007,
+          "median_rank_of_found": 34,
+          "n_retrieved": 251,
+          "hits": [
+            {
+              "title": "You CAN Teach an Old Dog New Tricks! On Training Knowledge Graph Embeddings",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "not_in_searched_indexes"
+            },
+            {
+              "title": "Bringing Light Into the Dark: A Large-scale Evaluation of Knowledge Graph Embedding Models Under a Unified Framework",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Realistic Re-evaluation of Knowledge Graph Completion Methods: An Experimental Study",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Knowledge Graph Embedding for Link Prediction: A Comparative Analysis",
+              "rank": 34,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 251,
+          "expansion_errors": 3,
+          "seconds": 79.5,
+          "http_calls": 88,
+          "network_requests": 38,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_lexical": {
+          "recall_any": 0.25,
+          "recall_at_20": 0.25,
+          "recall_at_50": 0.25,
+          "mrr": 0.036,
+          "median_rank_of_found": 7,
+          "n_retrieved": 297,
+          "hits": [
+            {
+              "title": "You CAN Teach an Old Dog New Tricks! On Training Knowledge Graph Embeddings",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "not_in_searched_indexes"
+            },
+            {
+              "title": "Bringing Light Into the Dark: A Large-scale Evaluation of Knowledge Graph Embedding Models Under a Unified Framework",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Realistic Re-evaluation of Knowledge Graph Completion Methods: An Experimental Study",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Knowledge Graph Embedding for Link Prediction: A Comparative Analysis",
+              "rank": 7,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 297,
+          "expansion_errors": 2,
+          "seconds": 17.9,
+          "http_calls": 88,
+          "network_requests": 15,
+          "ranking": "fusion",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_hybrid": {
+          "recall_any": 0.25,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.25,
+          "mrr": 0.007,
+          "median_rank_of_found": 34,
+          "n_retrieved": 254,
+          "hits": [
+            {
+              "title": "You CAN Teach an Old Dog New Tricks! On Training Knowledge Graph Embeddings",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "not_in_searched_indexes"
+            },
+            {
+              "title": "Bringing Light Into the Dark: A Large-scale Evaluation of Knowledge Graph Embedding Models Under a Unified Framework",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Realistic Re-evaluation of Knowledge Graph Completion Methods: An Experimental Study",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Knowledge Graph Embedding for Link Prediction: A Comparative Analysis",
+              "rank": 34,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 254,
+          "expansion_errors": 1,
+          "seconds": 13.5,
+          "http_calls": 88,
+          "network_requests": 13,
+          "ranking": "fusion",
+          "semantic_model": "model2vec:minishlab/potion-retrieval-32M",
+          "arxiv_match": "any"
+        }
+      },
+      "missed_by_all": [
+        "You CAN Teach an Old Dog New Tricks! On Training Knowledge Graph Embeddings",
+        "Bringing Light Into the Dark: A Large-scale Evaluation of Knowledge Graph Embedding Models Under a Unified Framework",
+        "Realistic Re-evaluation of Knowledge Graph Completion Methods: An Experimental Study"
+      ]
+    },
+    {
+      "id": "long-context-vs-rag",
+      "split": "blind",
+      "n_targets": 4,
+      "configs": {
+        "challenge": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "recall_at_50": 0.5,
+          "mrr": 0.024,
+          "median_rank_of_found": 27.0,
+          "n_retrieved": 206,
+          "hits": [
+            {
+              "title": "Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach",
+              "rank": 14,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs -- No Silver Bullet for LC or RAG Routing",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Long Context vs. RAG for LLMs: An Evaluation and Revisits",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Retrieval meets Long Context Large Language Models",
+              "rank": 40,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "degraded": [],
+          "n": 206,
+          "expansion_errors": 6,
+          "seconds": 8215.6,
+          "http_calls": 88,
+          "network_requests": 89,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "all"
+        },
+        "challenge_arxiv_any": {
+          "recall_any": 0.25,
+          "recall_at_20": 0.25,
+          "recall_at_50": 0.25,
+          "mrr": 0.042,
+          "median_rank_of_found": 6,
+          "n_retrieved": 215,
+          "hits": [
+            {
+              "title": "Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach",
+              "rank": 6,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs -- No Silver Bullet for LC or RAG Routing",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Long Context vs. RAG for LLMs: An Evaluation and Revisits",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Retrieval meets Long Context Large Language Models",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "degraded": [],
+          "n": 215,
+          "expansion_errors": 6,
+          "seconds": 87.4,
+          "http_calls": 91,
+          "network_requests": 37,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_lexical": {
+          "recall_any": 0.25,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.25,
+          "mrr": 0.008,
+          "median_rank_of_found": 31,
+          "n_retrieved": 264,
+          "hits": [
+            {
+              "title": "Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach",
+              "rank": 31,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs -- No Silver Bullet for LC or RAG Routing",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Long Context vs. RAG for LLMs: An Evaluation and Revisits",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Retrieval meets Long Context Large Language Models",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "degraded": [],
+          "n": 264,
+          "expansion_errors": 4,
+          "seconds": 13.1,
+          "http_calls": 91,
+          "network_requests": 7,
+          "ranking": "fusion",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_hybrid": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 265,
+          "hits": [
+            {
+              "title": "Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs -- No Silver Bullet for LC or RAG Routing",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Long Context vs. RAG for LLMs: An Evaluation and Revisits",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "Retrieval meets Long Context Large Language Models",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "degraded": [],
+          "n": 265,
+          "expansion_errors": 3,
+          "seconds": 16.6,
+          "http_calls": 88,
+          "network_requests": 7,
+          "ranking": "fusion",
+          "semantic_model": "model2vec:minishlab/potion-retrieval-32M",
+          "arxiv_match": "any"
+        }
+      },
+      "missed_by_all": [
+        "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs -- No Silver Bullet for LC or RAG Routing",
+        "Long Context vs. RAG for LLMs: An Evaluation and Revisits"
+      ]
+    },
+    {
+      "id": "lora-vs-full-finetuning",
+      "split": "blind",
+      "n_targets": 2,
+      "configs": {
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 277,
+          "hits": [
+            {
+              "title": "LoRA Learns Less and Forgets Less",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "On Fairness of Low-Rank Adaptation of Large Models",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 277,
+          "expansion_errors": 1,
+          "seconds": 116.7,
+          "http_calls": 88,
+          "network_requests": 88,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "all"
+        },
+        "challenge_arxiv_any": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 199,
+          "hits": [
+            {
+              "title": "LoRA Learns Less and Forgets Less",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "On Fairness of Low-Rank Adaptation of Large Models",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 199,
+          "expansion_errors": 3,
+          "seconds": 84.3,
+          "http_calls": 88,
+          "network_requests": 39,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_lexical": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 219,
+          "hits": [
+            {
+              "title": "LoRA Learns Less and Forgets Less",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "On Fairness of Low-Rank Adaptation of Large Models",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 219,
+          "expansion_errors": 1,
+          "seconds": 21.9,
+          "http_calls": 88,
+          "network_requests": 16,
+          "ranking": "fusion",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_hybrid": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 170,
+          "hits": [
+            {
+              "title": "LoRA Learns Less and Forgets Less",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            },
+            {
+              "title": "On Fairness of Low-Rank Adaptation of Large Models",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 170,
+          "expansion_errors": 3,
+          "seconds": 13.7,
+          "http_calls": 88,
+          "network_requests": 11,
+          "ranking": "fusion",
+          "semantic_model": "model2vec:minishlab/potion-retrieval-32M",
+          "arxiv_match": "any"
+        }
+      },
+      "missed_by_all": [
+        "LoRA Learns Less and Forgets Less",
+        "On Fairness of Low-Rank Adaptation of Large Models"
+      ]
+    },
+    {
+      "id": "meta-learning-vs-pretrained-features",
+      "split": "blind",
+      "n_targets": 1,
+      "configs": {
+        "challenge": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "recall_at_50": 1.0,
+          "mrr": 0.143,
+          "median_rank_of_found": 7,
+          "n_retrieved": 180,
+          "hits": [
+            {
+              "title": "Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?",
+              "rank": 7,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 180,
+          "expansion_errors": 5,
+          "seconds": 136.5,
+          "http_calls": 91,
+          "network_requests": 86,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "all"
+        },
+        "challenge_arxiv_any": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 254,
+          "hits": [
+            {
+              "title": "Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 254,
+          "expansion_errors": 4,
+          "seconds": 79.7,
+          "http_calls": 91,
+          "network_requests": 38,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_lexical": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 254,
+          "hits": [
+            {
+              "title": "Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 254,
+          "expansion_errors": 4,
+          "seconds": 16.9,
+          "http_calls": 91,
+          "network_requests": 10,
+          "ranking": "fusion",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_hybrid": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 199,
+          "hits": [
+            {
+              "title": "Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 199,
+          "expansion_errors": 4,
+          "seconds": 22.9,
+          "http_calls": 91,
+          "network_requests": 16,
+          "ranking": "fusion",
+          "semantic_model": "model2vec:minishlab/potion-retrieval-32M",
+          "arxiv_match": "any"
+        }
+      },
+      "missed_by_all": []
+    },
+    {
+      "id": "metric-learning-losses",
+      "split": "blind",
+      "n_targets": 1,
+      "configs": {
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 252,
+          "hits": [
+            {
+              "title": "Variance & Greediness: A comparative study of metric-learning losses",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 252,
+          "expansion_errors": 1,
+          "seconds": 107.5,
+          "http_calls": 89,
+          "network_requests": 82,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "all"
+        },
+        "challenge_arxiv_any": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 195,
+          "hits": [
+            {
+              "title": "Variance & Greediness: A comparative study of metric-learning losses",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 195,
+          "expansion_errors": 4,
+          "seconds": 83.0,
+          "http_calls": 92,
+          "network_requests": 37,
+          "ranking": "claim",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_lexical": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 197,
+          "hits": [
+            {
+              "title": "Variance & Greediness: A comparative study of metric-learning losses",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 197,
+          "expansion_errors": 4,
+          "seconds": 7.7,
+          "http_calls": 92,
+          "network_requests": 8,
+          "ranking": "fusion",
+          "semantic_model": null,
+          "arxiv_match": "any"
+        },
+        "challenge_hybrid": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "recall_at_50": 0.0,
+          "mrr": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 214,
+          "hits": [
+            {
+              "title": "Variance & Greediness: A comparative study of metric-learning losses",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "cause": "algorithm"
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "degraded": [],
+          "n": 214,
+          "expansion_errors": 1,
+          "seconds": 10.1,
+          "http_calls": 89,
+          "network_requests": 7,
+          "ranking": "fusion",
+          "semantic_model": "model2vec:minishlab/potion-retrieval-32M",
+          "arxiv_match": "any"
+        }
+      },
+      "missed_by_all": [
+        "Variance & Greediness: A comparative study of metric-learning losses"
+      ]
+    }
+  ]
+}

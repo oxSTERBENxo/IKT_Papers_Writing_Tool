@@ -1,0 +1,368 @@
+{
+  "type": "research_proposal",
+  "title": "Is a Bag-of-Words MLP Still Competitive with Recent Text-Graph Classifiers? A Multi-Seed Replication and Extension",
+  "date": "2026-10-13",
+  "constraints": {
+    "field": "NLP and graph theory (graph neural networks for text classification)",
+    "experience": "undergraduate, comfortable with Python",
+    "hardware": "one consumer GPU, 8 GB VRAM",
+    "gpu_vram_gb": 8,
+    "time_budget_weeks": 8,
+    "language": "Python",
+    "difficulty": "moderate",
+    "mode": "any",
+    "defaults_used": [
+      "experience",
+      "hardware",
+      "gpu_vram_gb",
+      "time_budget_weeks",
+      "language",
+      "difficulty",
+      "mode"
+    ]
+  },
+  "search_log": {
+    "sources_ok": [
+      "openalex",
+      "arxiv",
+      "crossref",
+      "huggingface"
+    ],
+    "sources_failed": [
+      {
+        "source": "semantic_scholar",
+        "reason": "rate_limited: HTTP 429 after retries"
+      }
+    ],
+    "strategies": [
+      "keyword",
+      "recent",
+      "foundational",
+      "limitations",
+      "surveys",
+      "citation exploration",
+      "novelty challenge (keyword, surveys, recent)"
+    ],
+    "date_range": "2018 onwards",
+    "n_retrieved": 1113,
+    "n_after_dedup": 397,
+    "date": "2026-10-13",
+    "queries": [
+      "graph neural network text classification",
+      "graph neural network document classification",
+      "graph convolutional network text classification",
+      "graph convolutional network document classification"
+    ],
+    "notes": [
+      "Semantic Scholar answered single-paper lookups but rejected search requests (HTTP 429, no API key).",
+      "OpenAlex's keyless daily budget ran out late in the session; the reproduction check for [@abdalla2023] could not query citing works.",
+      "Summaries in the table come from abstracts only. No full text was read."
+    ]
+  },
+  "papers": [
+    {
+      "key": "yao2019",
+      "title": "Graph Convolutional Networks for Text Classification",
+      "authors": [
+        "Liang Yao",
+        "Chengsheng Mao",
+        "Yuan Luo"
+      ],
+      "year": 2019,
+      "date": "2019-07-17",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "doi": "10.1609/aaai.v33i01.33017370",
+      "arxiv_id": "1809.05679",
+      "url": "https://www.semanticscholar.org/paper/6017e81c5ede6c38b306a3df9738aeb04baa7619",
+      "role": "foundational",
+      "method": "One corpus-level graph of words and documents (word co-occurrence and document-word edges); GCN on one-hot inputs (TextGCN)",
+      "datasets": "Multiple benchmark datasets (not named in the abstract)",
+      "findings": "Reports outperforming the then state of the art without external embeddings; the margin grows as training data shrinks",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Graph Convolutional Networks for Text Classification",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "galke2022",
+      "title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+      "authors": [
+        "Lukas Galke",
+        "Ansgar Scherp"
+      ],
+      "year": 2022,
+      "date": "2022",
+      "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "doi": "10.18653/v1/2022.acl-long.279",
+      "arxiv_id": "2109.03777",
+      "url": "https://arxiv.org/abs/2109.03777",
+      "role": "closest",
+      "method": "Wide MLP on bag-of-words; fine-tuned BERT and DistilBERT; compared with TextGCN, HeteGCN, HyperGAT",
+      "datasets": "Not named in the abstract",
+      "findings": "BoW wide MLP outperforms TextGCN and HeteGCN in the inductive setting and is comparable with HyperGAT; fine-tuned BERT and DistilBERT outperform all",
+      "limitations": "Abstract notes TextGCN needs an O(N^2) graph and Transformers O(L^2) attention; own limitations not stated in the abstract",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "shchur2019",
+      "title": "Pitfalls of Graph Neural Network Evaluation",
+      "authors": [
+        "Oleksandr Shchur",
+        "Maximilian Mumme",
+        "Aleksandar Bojchevski",
+        "Stephan Günnemann"
+      ],
+      "year": 2018,
+      "date": "2018-11-14",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "1811.05868",
+      "url": "https://arxiv.org/abs/1811.05868",
+      "role": "supporting",
+      "method": "Re-evaluation of four GNN models for node classification under varied data splits",
+      "datasets": "Node-classification graphs (not text)",
+      "findings": "Different splits give dramatically different model rankings; simpler GNNs can beat complex ones under fair tuning",
+      "limitations": "Concerns node classification, not text graphs",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Pitfalls of Graph Neural Network Evaluation",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "donabauer2025",
+      "title": "Token-Level Graphs for Short Text Classification",
+      "authors": [
+        "Gregor Donabauer",
+        "Udo Kruschwitz"
+      ],
+      "year": 2025,
+      "date": "2025",
+      "venue": "Lecture Notes in Computer Science Advances in Information Retrieval",
+      "doi": "10.1007/978-3-031-88714-7_42",
+      "arxiv_id": "2412.12754",
+      "url": "https://arxiv.org/abs/2412.12754",
+      "role": "recent",
+      "method": "Text graphs built from pre-trained language model tokens and embeddings (TokenGraph)",
+      "datasets": "Short-text datasets (not named in the abstract)",
+      "findings": "Reports higher or on-par scores versus existing methods with few training samples; code stated to be public",
+      "limitations": "Abstract lists limits of earlier graph methods (word sense, transductive setting), not its own",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Token-Level Graphs for Short Text Classification",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "wang2024",
+      "title": "Graph Neural Networks for Text Classification: A Survey",
+      "authors": [
+        "Kunze Wang",
+        "Yihao Ding",
+        "Soyeon Caren Han"
+      ],
+      "year": 2024,
+      "date": "2024-07-01",
+      "venue": "Artificial Intelligence Review",
+      "doi": "10.1007/s10462-024-10808-0",
+      "arxiv_id": "2304.11534",
+      "url": "https://arxiv.org/abs/2304.11534",
+      "role": "survey",
+      "method": "Survey of corpus-level and document-level GNNs for text classification up to 2023",
+      "datasets": "Summarises public benchmarks",
+      "findings": "Compares published performance, graph construction and evaluation practice; lists open issues",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Graph Neural Networks for Text Classification: A Survey",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "abdalla2023",
+      "title": "BoW-based neural networks vs. cutting-edge models for single-label text classification",
+      "authors": [
+        "Hassan I. Abdalla",
+        "Ali A. Amer",
+        "Sri Devi Ravana"
+      ],
+      "year": 2023,
+      "date": "2023-07-18",
+      "venue": "Neural Computing and Applications",
+      "doi": "10.1007/s00521-023-08754-z",
+      "arxiv_id": null,
+      "url": "https://doi.org/10.1007/s00521-023-08754-z",
+      "role": "closest",
+      "method": "Bag-of-words neural networks compared with recent models (from the title; abstract unavailable to the sources queried)",
+      "datasets": null,
+      "findings": null,
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "BoW-based neural networks vs. cutting-edge models for single-label text classification",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    },
+    {
+      "key": "rizvi2025",
+      "title": "Text Classification Using Graph Convolutional Networks: A Comprehensive Survey",
+      "authors": [
+        "Syed Tarif Abbas Rizvi",
+        "Ramsha Imran",
+        "Arif Mahmood"
+      ],
+      "year": 2025,
+      "date": "2025-01-21",
+      "venue": "ACM Computing Surveys",
+      "doi": "10.1145/3714456",
+      "arxiv_id": "2410.09399",
+      "url": "https://doi.org/10.1145/3714456",
+      "role": "survey",
+      "method": "Survey of GCN-based text classification by architecture and supervision mode",
+      "datasets": "Compares methods on benchmark datasets",
+      "findings": "Identifies strengths and limitations and future directions",
+      "limitations": null,
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Text Classification using Graph Convolutional Networks: A Comprehensive Survey",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-13"
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "name": "TextGCN benchmark data folder",
+      "url": "https://github.com/yao8839836/text_gcn/tree/master/data",
+      "purpose": "Benchmark files used by TextGCN and reused by later work",
+      "size": null,
+      "format": null,
+      "license": null,
+      "access": "reachable (HTTP 200)",
+      "preprocessing": "Repository scripts (remove_words.py, build_graph.py)",
+      "suitability": "Needed for O1, O2 and all reproductions; only reachability was checked",
+      "verified": true
+    },
+    {
+      "name": "RottenTomatoes - MR Movie Review Data",
+      "url": "https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes",
+      "purpose": "Sentence-level sentiment (MR)",
+      "size": "10662 rows",
+      "format": "parquet",
+      "license": "unknown",
+      "access": "open",
+      "preprocessing": "Tokenisation",
+      "suitability": "Short texts; splits may differ from the benchmark version",
+      "verified": true
+    }
+  ],
+  "proposal": {
+    "problem_statement": "Graph neural networks are widely used for text classification [@wang2024; @rizvi2025]. A 2022 study reported that a wide MLP on bag-of-words outperforms TextGCN and HeteGCN and is comparable with HyperGAT [@galke2022]. Graph-based methods published since then report gains over existing methods [@donabauer2025]. Whether the simple baseline still holds against them, and how stable the comparison is across random seeds, was not established by the literature retrieved for this proposal.",
+    "background": "TextGCN builds one graph over words and documents and classifies documents with a GCN [@yao2019]. Later work moved to other graph constructions, including graphs over language-model tokens [@donabauer2025]. Evaluation practice matters: for node classification, different data splits changed which GNN ranked best [@shchur2019]. A closely related comparison exists whose abstract and full text could not be obtained [@abdalla2023]; it must be read before work starts.",
+    "research_question": "Under one evaluation protocol with five random seeds, does a wide MLP on bag-of-words reach the test accuracy of a text-graph classifier published after 2022 on short- and long-text benchmarks?",
+    "hypothesis": [
+      {
+        "text": "On each benchmark, the mean test accuracy of the bag-of-words MLP is within one percentage point of the graph model, or higher.",
+        "level": "speculative"
+      }
+    ],
+    "falsification": "Supported on a dataset if the 95% bootstrap confidence interval of the accuracy difference (graph minus MLP) lies below +1 point. Rejected if the interval lies entirely above +1 point. Inconclusive otherwise; the report then states the interval and stops there.",
+    "project_type": "Replication of [@galke2022] (independent rerun with more seeds) followed by an extension (one newer graph model). No new model is proposed.",
+    "dataset": "The benchmark files distributed with the TextGCN repository, which the baseline study's README also points to. Only the folder's reachability was checked; file contents, sizes and licence must be confirmed on download. One verified short-text mirror is listed for a sanity check, but its splits may differ from the benchmark version, so it cannot be compared with published numbers.",
+    "methodology": [
+      "Stage 1 (replication): run the public bag-of-words MLP code on the benchmark datasets with five seeds and compare with the numbers published in [@galke2022].",
+      "Stage 2 (extension): run one graph model published after 2022 with public code under the same splits, tuning budget and seeds.",
+      {
+        "text": "TokenGraph is the planned graph model because its repository URL responds; whether the code runs was not checked.",
+        "level": "verified",
+        "sources": [
+          "donabauer2025"
+        ]
+      },
+      "A logistic regression on TF-IDF features is added as the simplest reference point."
+    ],
+    "variables": "Independent: model family (logistic regression, bag-of-words MLP, graph model) and random seed. Dependent: test accuracy and macro-F1, training time, peak memory. Controlled: data splits, preprocessing, vocabulary, hyperparameter search budget per model, hardware.",
+    "confounds": [
+      "Unequal tuning: give every model the same number of validation-set trials.",
+      "Transductive graph models see test documents (without labels) during training; state for each model whether it is transductive or inductive and compare within the same setting where possible.",
+      "Fit vocabulary and TF-IDF statistics on training data only; never tune on the test split.",
+      "Pretrained language-model embeddings give the graph model external knowledge the bag-of-words model lacks; report this as a difference in resources, not only in architecture."
+    ],
+    "baselines": [
+      "Logistic regression on TF-IDF",
+      "Wide MLP on bag-of-words (code of [@galke2022])",
+      "Published numbers from [@galke2022] and [@donabauer2025] for reference"
+    ],
+    "metrics": [
+      "Test accuracy (confirm in the full texts that this is the measure the compared papers report)",
+      "Macro-F1, in case classes are imbalanced",
+      "Wall-clock training time and peak memory"
+    ],
+    "procedure": [
+      "Week 1: obtain and read [@abdalla2023] and the full text of [@galke2022] and [@donabauer2025]; stop and reframe if the comparison already exists.",
+      "Week 2: set up both codebases with pinned environments; confirm the data files and their licence.",
+      "Week 3: Stage 1 runs with five seeds; compare with published numbers.",
+      "Weeks 4-5: Stage 2 runs under the shared protocol.",
+      "Week 6: statistical analysis and write-up."
+    ],
+    "statistics": "Report mean and standard deviation over five seeds for every model and dataset. Compare models with a paired bootstrap on test predictions (10,000 resamples) giving a 95% confidence interval for the accuracy difference. With several datasets, report every interval rather than selecting the favourable ones.",
+    "feasibility": [
+      {
+        "text": "About six weeks of an eight-week budget",
+        "level": "estimate"
+      },
+      {
+        "text": "The MLP runs on CPU; the graph model needs a GPU for language-model embeddings and should fit in 8 GB for short texts",
+        "level": "estimate"
+      },
+      {
+        "text": "No hardware requirement is stated by either repository",
+        "level": "verified"
+      }
+    ],
+    "contribution": [
+      {
+        "text": "An independent, multi-seed check of a published result that questions a line of work, plus one updated comparison. Either outcome is informative.",
+        "level": "estimate"
+      }
+    ],
+    "risks": [
+      {
+        "text": "The comparison may already be published in [@abdalla2023] or elsewhere; novelty confidence is low. Fallback: report Stage 1 alone as a reproduction.",
+        "level": "verified"
+      },
+      {
+        "text": "The graph model's code may not run or may exceed 8 GB. Fallback: a different post-2022 graph model with public code, or short-text datasets only.",
+        "level": "estimate"
+      },
+      {
+        "text": "Benchmark data licence is not stated by any API.",
+        "level": "verified"
+      }
+    ]
+  },
+  "limitations": [
+    "Background summaries rest on abstracts; full texts were not read when this proposal was drafted.",
+    "No code was run. Time and hardware figures are estimates.",
+    "Semantic Scholar search was unavailable, so prior work may have been missed."
+  ]
+}

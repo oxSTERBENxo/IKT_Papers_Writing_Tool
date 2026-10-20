@@ -1,0 +1,182 @@
+{
+ "dataset": "gossipcop",
+ "dropped_users_in_at_least_n_graphs": 50,
+ "checks": {
+  "n_graphs": 5464,
+  "n_nodes": 314262,
+  "roots_match_news_list_order": true,
+  "roots_match_news_list_set": true,
+  "labelled": 5464,
+  "n_fake": 2732
+ },
+ "user_stats": {
+  "unique_users": 75525,
+  "user_nodes": 149092,
+  "duplicate_user_nodes_within_a_graph": 17476,
+  "users_in_more_than_one_graph": 15257,
+  "share_of_user_nodes_whose_user_appears_in_another_graph": 0.5562,
+  "repeat_users_whose_graphs_all_share_one_label": 0.6167
+ },
+ "diagnostic_20_random_20_10_70_splits": {
+  "test_graphs_with_any_user_seen_in_train": {
+   "mean": 0.9197,
+   "sd": 0.0034,
+   "min": 0.913,
+   "max": 0.9245
+  },
+  "mean_share_of_test_graph_users_seen_in_train": {
+   "mean": 0.4371,
+   "sd": 0.0049,
+   "min": 0.4277,
+   "max": 0.4474
+  },
+  "user_vote_accuracy": {
+   "mean": 0.8388,
+   "sd": 0.0087,
+   "min": 0.8197,
+   "max": 0.8531
+  }
+ },
+ "per_seed": [
+  {
+   "seed": 0,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9205,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4474,
+   "user_vote_accuracy": 0.8442
+  },
+  {
+   "seed": 1,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9192,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4359,
+   "user_vote_accuracy": 0.8385
+  },
+  {
+   "seed": 2,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9213,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4448,
+   "user_vote_accuracy": 0.8374
+  },
+  {
+   "seed": 3,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.913,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4383,
+   "user_vote_accuracy": 0.8251
+  },
+  {
+   "seed": 4,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9185,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4378,
+   "user_vote_accuracy": 0.8413
+  },
+  {
+   "seed": 5,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9211,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4368,
+   "user_vote_accuracy": 0.8197
+  },
+  {
+   "seed": 6,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9143,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4364,
+   "user_vote_accuracy": 0.8353
+  },
+  {
+   "seed": 7,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.92,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4277,
+   "user_vote_accuracy": 0.8377
+  },
+  {
+   "seed": 8,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9245,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4329,
+   "user_vote_accuracy": 0.8521
+  },
+  {
+   "seed": 9,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9208,
+   "mean_share_of_test_graph_users_seen_in_train": 0.442,
+   "user_vote_accuracy": 0.8489
+  },
+  {
+   "seed": 10,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9161,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4326,
+   "user_vote_accuracy": 0.8366
+  },
+  {
+   "seed": 11,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9245,
+   "mean_share_of_test_graph_users_seen_in_train": 0.446,
+   "user_vote_accuracy": 0.8278
+  },
+  {
+   "seed": 12,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9239,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4373,
+   "user_vote_accuracy": 0.8479
+  },
+  {
+   "seed": 13,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9192,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4366,
+   "user_vote_accuracy": 0.839
+  },
+  {
+   "seed": 14,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9192,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4357,
+   "user_vote_accuracy": 0.8531
+  },
+  {
+   "seed": 15,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9219,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4368,
+   "user_vote_accuracy": 0.8434
+  },
+  {
+   "seed": 16,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9242,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4353,
+   "user_vote_accuracy": 0.8364
+  },
+  {
+   "seed": 17,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.92,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4357,
+   "user_vote_accuracy": 0.8398
+  },
+  {
+   "seed": 18,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9156,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4306,
+   "user_vote_accuracy": 0.8293
+  },
+  {
+   "seed": 19,
+   "test_graphs": 3826,
+   "test_graphs_with_any_user_seen_in_train": 0.9158,
+   "mean_share_of_test_graph_users_seen_in_train": 0.4354,
+   "user_vote_accuracy": 0.8427
+  }
+ ]
+}

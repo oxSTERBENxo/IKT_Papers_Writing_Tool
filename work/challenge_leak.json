@@ -1,0 +1,1574 @@
+{
+  "claim": "Measuring whether zero-shot LLM node classification accuracy on text-attributed graph benchmarks (Cora, PubMed, ogbn-arxiv) is inflated by pretraining data contamination, using a temporal split of papers published after the LLM training cutoff",
+  "queries": [
+    "data leakage large language models node classification Cora arxiv memorization",
+    "test set contamination LLM graph benchmark text-attributed",
+    "temporal split papers after training cutoff LLM zero-shot classification citation graph",
+    "LLM memorization benchmark inflation graph learning evaluation",
+    "LLM-as-predictor node classification label leakage"
+  ],
+  "sources_ok": [
+    "openalex",
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [
+    "semantic_scholar"
+  ],
+  "sources_status": {
+    "openalex": {
+      "calls": 17,
+      "ok_calls": 16,
+      "results": 1,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "partial"
+    },
+    "arxiv": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 2,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "crossref": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "n_papers_examined": 189,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 8,
+  "n_without_abstract": 42,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "interpretation": "No closely worded paper was retrieved, but only 2 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+        "authors": [
+          "Xiaoxin He",
+          "Xavier Bresson",
+          "Thomas Laurent",
+          "Adam Perold",
+          "Yann LeCun",
+          "Bryan Hooi"
+        ],
+        "year": 2023,
+        "date": "2023-05-31",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2305.19523",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2305.19523",
+        "pdf_url": null,
+        "abstract": "Representation learning on text-attributed graphs (TAGs) has become a critical research problem in recent years. A typical example of a TAG is a paper citation graph, where the text of each paper serves as node attributes. Initial graph neural network (GNN) pipelines handled these text attributes by transforming them into shallow or hand-crafted features, such as skip-gram or bag-of-words features. Recent efforts have focused on enhancing these pipelines with language models (LMs), which typically demand intricate designs and substantial computational resources. With the advent of powerful large language models (LLMs) such as GPT or Llama2, which demonstrate an ability to reason and to utilize general knowledge, there is a growing need for techniques which combine the textual modelling abilities of LLMs with the structural learning capabilities of GNNs. Hence, in this work, we focus on leveraging LLMs to capture textual information as features, which can be used to boost GNN performance on downstream tasks. A key innovation is our use of explanations as features: we prompt an LLM to perform zero-shot classification, request textual explanations for its decision-making process, and design an LLM-to-LM interpreter to translate these explanations into informative features for downstream GNNs. Our experiments demonstrate that our method achieves state-of-the-art results on well-established TAG datasets, including Cora, PubMed, ogbn-arxiv, as well as our newly introduced dataset, tape-arxiv23. Furthermore, our method significantly speeds up training, achieving a 2.88 times improvement over the closest baseline on ogbn-arxiv. Lastly, we believe the versatility of the proposed method extends beyond TAGs and holds the potential to enhance other tasks involving graph-text data. Our codes and datasets are available at: https://github.com/XiaoxinHe/TAPE.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "data leakage large language models node classification Cora arxiv memorization"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "data leakage large language models node classification Cora arxiv memorization survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.8,
+            "title_match": 0.5,
+            "retrieval_hits": 5,
+            "score": 2.6
+          }
+        }
+      },
+      "term_overlap": 0.473,
+      "tfidf_similarity": 0.216,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Leveraging Large Language Models for Node Generation in Few-Shot Learning on Text-Attributed Graphs",
+        "authors": [
+          "Jianxiang Yu",
+          "Yuxiang Ren",
+          "Chenghua Gong",
+          "Jiaqi Tan",
+          "Xiang Li",
+          "Xuecang Zhang"
+        ],
+        "year": 2023,
+        "date": "2023-10-15",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2310.09872",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2310.09872",
+        "pdf_url": null,
+        "abstract": "Text-attributed graphs have recently garnered significant attention due to their wide range of applications in web domains. Existing methodologies employ word embedding models for acquiring text representations as node features, which are subsequently fed into Graph Neural Networks (GNNs) for training. Recently, the advent of Large Language Models (LLMs) has introduced their powerful capabilities in information retrieval and text generation, which can greatly enhance the text attributes of graph data. Furthermore, the acquisition and labeling of extensive datasets are both costly and time-consuming endeavors. Consequently, few-shot learning has emerged as a crucial problem in the context of graph learning tasks. In order to tackle this challenge, we propose a lightweight paradigm called LLM4NG, which adopts a plug-and-play approach to empower text-attributed graphs through node generation using LLMs. Specifically, we utilize LLMs to extract semantic information from the labels and generate samples that belong to these categories as exemplars. Subsequently, we employ an edge predictor to capture the structural information inherent in the raw dataset and integrate the newly generated samples into the original graph. This approach harnesses LLMs for enhancing class-level information and seamlessly introduces labeled nodes and edges without modifying the raw dataset, thereby facilitating the node classification task in few-shot scenarios. Extensive experiments demonstrate the outstanding performance of our proposed paradigm, particularly in low-shot scenarios. For instance, in the 1-shot setting of the ogbn-arxiv dataset, LLM4NG achieves a 76% improvement over the baseline model.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.833,
+            "title_match": 0.4,
+            "retrieval_hits": 3,
+            "score": 2.442
+          }
+        }
+      },
+      "term_overlap": 0.305,
+      "tfidf_similarity": 0.166,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Can Prompts Rewind Time for LLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+        "authors": [
+          "Xin Gao",
+          "Ruiyi Zhang",
+          "Daniel Du",
+          "Saurabh Mahindre",
+          "Sai Ashish Somayajula",
+          "Pengtao Xie"
+        ],
+        "year": 2025,
+        "date": "2025-09-26",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2510.02340",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2510.02340",
+        "pdf_url": null,
+        "abstract": "Large Language Models (LLMs) are widely used for temporal prediction, but their reliance on pretraining data raises contamination concerns, as accurate predictions on pre-cutoff test data may reflect memorization rather than reasoning, leading to an overestimation of their generalization capability. With the recent emergence of prompting-based unlearning techniques, a natural question arises: Can LLMs be prompted to simulate an earlier knowledge cutoff? In this work, we investigate the capability of prompting to simulate earlier knowledge cutoff in LLMs. We construct three evaluation datasets to assess the extent to which LLMs can forget (1) direct factual knowledge, (2) semantic shifts, and (3) causally related knowledge. Results demonstrate that while prompt-based simulated knowledge cutoffs show effectiveness when directly queried with the information after that date, they struggle to induce forgetting when the forgotten content is not directly asked but causally related to the query. These findings highlight the need for more rigorous evaluation settings when applying LLMs for temporal prediction tasks. The full dataset and evaluation code are available at https://github.com/gxx27/time_unlearn.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.167,
+            "retrieval_hits": 1,
+            "score": 1.292
+          }
+        }
+      },
+      "term_overlap": 0.241,
+      "tfidf_similarity": 0.158,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Leveraging Large Language Models for Effective Label-free Node Classification in Text-Attributed Graphs",
+        "authors": [
+          "Taiyan Zhang",
+          "Renchi Yang",
+          "Yurui Lai",
+          "Mingyu Yan",
+          "Xiaochun Ye",
+          "Dongrui Fan"
+        ],
+        "year": 2024,
+        "date": "2024-12-16",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2412.11983",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2412.11983",
+        "pdf_url": null,
+        "abstract": "Graph neural networks (GNNs) have become the preferred models for node classification in graph data due to their robust capabilities in integrating graph structures and attributes. However, these models heavily depend on a substantial amount of high-quality labeled data for training, which is often costly to obtain. With the rise of large language models (LLMs), a promising approach is to utilize their exceptional zero-shot capabilities and extensive knowledge for node labeling. Despite encouraging results, this approach either requires numerous queries to LLMs or suffers from reduced performance due to noisy labels generated by LLMs. To address these challenges, we introduce Locle, an active self-training framework that does Label-free node Classification with LLMs cost-Effectively. Locle iteratively identifies small sets of \"critical\" samples using GNNs and extracts informative pseudo-labels for them with both LLMs and GNNs, serving as additional supervision signals to enhance model training. Specifically, Locle comprises three key components: (i) an effective active node selection strategy for initial annotations; (ii) a careful sample selection scheme to identify \"critical\" nodes based on label disharmonicity and entropy; and (iii) a label refinement module that combines LLMs and GNNs with a rewired topology. Extensive experiments on five benchmark text-attributed graph datasets demonstrate that Locle significantly outperforms state-of-the-art methods under the same query budget to LLMs in terms of label-free node classification. Notably, on the DBLP dataset with 14.3k nodes, Locle achieves an 8.08% improvement in accuracy over the state-of-the-art at a cost of less than one cent. Our code is available at https://github.com/HKBU-LAGAS/Locle.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "LLM-as-predictor node classification label leakage"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "LLM-as-predictor node classification label leakage survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "LLM-as-predictor node classification label leakage review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "LLM-as-predictor node classification label leakage"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 2.375
+          }
+        }
+      },
+      "term_overlap": 0.26,
+      "tfidf_similarity": 0.126,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Label-free Node Classification on Graphs with Large Language Models (LLMS)",
+        "authors": [
+          "Zhikai Chen",
+          "Haitao Mao",
+          "Hongzhi Wen",
+          "Haoyu Han",
+          "Wei Jin",
+          "Haiyang Zhang",
+          "Hui Liu",
+          "Jiliang Tang"
+        ],
+        "year": 2023,
+        "date": "2023-10-07",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2310.04668",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2310.04668",
+        "pdf_url": null,
+        "abstract": "In recent years, there have been remarkable advancements in node classification achieved by Graph Neural Networks (GNNs). However, they necessitate abundant high-quality labels to ensure promising performance. In contrast, Large Language Models (LLMs) exhibit impressive zero-shot proficiency on text-attributed graphs. Yet, they face challenges in efficiently processing structural data and suffer from high inference costs. In light of these observations, this work introduces a label-free node classification on graphs with LLMs pipeline, LLM-GNN. It amalgamates the strengths of both GNNs and LLMs while mitigating their limitations. Specifically, LLMs are leveraged to annotate a small portion of nodes and then GNNs are trained on LLMs' annotations to make predictions for the remaining large portion of nodes. The implementation of LLM-GNN faces a unique challenge: how can we actively select nodes for LLMs to annotate and consequently enhance the GNN training? How can we leverage LLMs to obtain annotations of high quality, representativeness, and diversity, thereby enhancing GNN performance with less cost? To tackle this challenge, we develop an annotation quality heuristic and leverage the confidence scores derived from LLMs to advanced node selection. Comprehensive experimental results validate the effectiveness of LLM-GNN. In particular, LLM-GNN can achieve an accuracy of 74.9% on a vast-scale dataset \\products with a cost less than 1 dollar.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "LLM-as-predictor node classification label leakage"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "LLM-as-predictor node classification label leakage survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "LLM-as-predictor node classification label leakage review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 3,
+            "score": 2.375
+          }
+        }
+      },
+      "term_overlap": 0.245,
+      "tfidf_similarity": 0.117,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "LLM4Impact: Integrating Heterogeneous Information for Scientific Impact Prediction",
+        "authors": [
+          "Yong Cao",
+          "Markus Flicke",
+          "Haoyu He",
+          "Katrin Renz",
+          "Andreas Geiger"
+        ],
+        "year": 2026,
+        "date": "2026-10-07",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2610.10138",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2610.10138",
+        "pdf_url": null,
+        "abstract": "Predicting the future impact of a newly published paper is challenging because it must be inferred from heterogeneous evidence available at publication time. Existing approaches often rely on a single source of information or combine multiple sources without accounting for their different predictive roles. In this paper, we present LLM4Impact, an evidence-aware method for scientific impact prediction that learns to represent, integrate, and calibrate heterogeneous information. LLM4Impact combines semantic, graph, LLM, and temporal representations, and injects graph information into a frozen LLM through continuous prefix tokens. A context aware gating mechanism adaptively weights different evidence, while a separate calibration module accounts for domain and temporal variation in citation scales. We further construct a large-scale benchmark dataset with 2 million papers, leakage-safe point-in-time heterogeneous ego graphs, temporal splits, and both year-level and month-level citation targets. Experiments show that LLM4Impact consistently outperforms strong semantic, graph, and LLM based baselines, with a 10.13% reduction in year RMSE on the in distribution test set and a 6.87% reduction under out-of-domain distribution. Our results reveal that the value of such evidence is context dependent: different papers benefit from different sources, while domain and publication time affect how evidence translates into citations. This finding motivates adaptive evidence selection and context-conditioned calibration rather than simply richer representations. We will release our code, benchmark, and an interactive web demonstration upon publication.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.0,
+            "retrieval_hits": 3,
+            "score": 1.625
+          }
+        }
+      },
+      "term_overlap": 0.234,
+      "tfidf_similarity": 0.114,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Learning to Predict Future-Aligned Research Proposals with Language Models",
+        "authors": [
+          "Heng Wang",
+          "Pengcheng Jiang",
+          "Jiashuo Sun",
+          "Zhiyi Shi",
+          "Haofei Yu",
+          "Jiawei Han",
+          "Heng Ji"
+        ],
+        "year": 2026,
+        "date": "2026-04-06",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2603.27146",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2603.27146",
+        "pdf_url": null,
+        "abstract": "Large language models (LLMs) are increasingly used to assist ideation in research, but evaluating the quality of LLM-generated research proposals remains difficult: novelty and soundness are hard to measure automatically, and large-scale human evaluation is costly. We propose a verifiable alternative by reframing proposal generation as a time-sliced scientific forecasting problem. Given a research question and inspiring papers available before a cutoff time, the model generates a structured proposal and is evaluated by whether it anticipates research directions that appear in papers published after the time. We operationalize this objective with the Future Alignment Score (FAS), computed via retrieval and LLM-based semantic scoring against a held-out future corpus. To train models, we build a time-consistent dataset of 17,771 papers from targets and their pre-cutoff citations, and synthesize reasoning traces that teach gap identification and inspiration borrowing. Across Llama-3.1 and Qwen2.5 models, future-aligned tuning improves future alignment over unaligned baselines (up to +10.6% overall FAS), and domain-expert human evaluation corroborates improved proposal quality. Finally, we demonstrate practical impact by implementing two model-generated proposals with a code agent, obtaining 4.17% accuracy gain on MATH from a new prompting strategy and consistent improvements for a novel model-merging method.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.429,
+            "title_match": 0.2,
+            "retrieval_hits": 3,
+            "score": 1.432
+          }
+        }
+      },
+      "term_overlap": 0.228,
+      "tfidf_similarity": 0.117,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Zero-shot temporal knowledge graph completion: An LLM-guided approach",
+        "authors": [
+          "Weinan Niu",
+          "Ruizhe Ma",
+          "Wei Jia",
+          "Li Yan",
+          "Zongmin Ma"
+        ],
+        "year": 2027,
+        "date": "2027-01",
+        "venue": "Applied Soft Computing",
+        "doi": "10.1016/j.asoc.2026.116469",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.asoc.2026.116469",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.417,
+            "title_match": 0.417,
+            "retrieval_hits": 3,
+            "score": 1.625
+          }
+        }
+      },
+      "term_overlap": 0.122,
+      "tfidf_similarity": 0.215,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "A Survey of Unifying Large Language Models with Graph Learning: Concepts, Methods, and Recent Advancements for Text-attributed Graph",
+        "authors": [
+          "Lihui Liu"
+        ],
+        "year": 2026,
+        "date": "2026-03-05",
+        "venue": null,
+        "doi": "10.36227/techrxiv.177272839.92930143/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.36227/techrxiv.177272839.92930143/v1",
+        "pdf_url": null,
+        "abstract": "Graphs are ubiquitous and have been used in a wide range of applications. Before the rise of large language models (LLMs), graph neural networks (GNNs) were among the most popular methods for graph learning. Techniques such as node embedding, graph convolution, graph attention, and random walkbased methods have been widely adopted. When handling graphs with textual node attributes, shallow text embeddings are typically used as initial node representations. However, these embeddings often capture only limited general knowledge. In recent years, LLMs have demonstrated remarkable capabilities in natural language processing, opening new opportunities for handling text data. In this survey, we explore how to leverage LLMs for graph machine learning. We focus on different types of tasks, including node classification, link prediction, and graph-based question answering. Specifically, we investigate two main approaches: LLMs as Enhancers and LLMs as Predictors. In the first approach, LLMs enrich node textual attributes with their vast knowledge, after which graph learning methods are used to make predictions. In the second approach, graph data is treated as input for LLMs, which directly solve various graph-related tasks. Through a thorough investigation of these two directions, we share observations and new insights on integrating LLMs with graph learning.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "test set contamination LLM graph benchmark text-attributed"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "test set contamination LLM graph benchmark text-attributed survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "test set contamination LLM graph benchmark text-attributed review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "test set contamination LLM graph benchmark text-attributed"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.375,
+            "retrieval_hits": 3,
+            "score": 2.083
+          }
+        }
+      },
+      "term_overlap": 0.197,
+      "tfidf_similarity": 0.123,
+      "is_survey_like": true,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Uncertainty-based Debiasing and Unlearning for Decontamination",
+        "authors": [
+          "Guangzhi Sun",
+          "Xiao Zhan",
+          "Mark Gales"
+        ],
+        "year": 2026,
+        "date": "2026-06-22",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2606.23313",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2606.23313",
+        "pdf_url": null,
+        "abstract": "Benchmark-based evaluation is the dominant paradigm for assessing large language model (LLM) capabilities, yet data contamination inflates reported performance and undermines fair comparison. Existing decontamination methods are evaluated solely through aggregate accuracy, which can obscure substantial differences in per-sample model behaviour, and many require access to an uncontaminated model. In this paper, we propose a sample-level evaluation framework for decontamination that complements accuracy-based assessment with distributional distance metrics, measuring how closely a decontaminated model recovers the output distribution of an uncontaminated model on each sample. Building on this framework, we introduce Uncertainty-Based Decontamination (UBD), a family of methods that leverage deep ensembles of the contaminated model to estimate per-sample memorization without requiring a uncontaminated model or knowledge of which samples are contaminated. UBD estimates a per-sample correction scalar from ensemble uncertainty, which is used to construct a debiased target distribution that suppresses the inflated probability mass on correct answers induced by contamination. This target is then used either as a post-hoc output correction (debiasing) or as a soft training signal for parameter update (unlearning). Experiments on MMLU-Pro and MATH-MCQA across multiple LLM backbones demonstrate that UBD produces per-sample output distributions substantially closer to those of an uncontaminated model than paraphrasing or choice-permutation baselines, while preserving model performance on uncontaminated data.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "test set contamination LLM graph benchmark text-attributed survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "test set contamination LLM graph benchmark text-attributed review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "test set contamination LLM graph benchmark text-attributed"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.0,
+            "retrieval_hits": 3,
+            "score": 1.518
+          }
+        }
+      },
+      "term_overlap": 0.219,
+      "tfidf_similarity": 0.088,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "FUSE: Hierarchical fusion of dual-view semantics with LLM guidance for node classification on text-attributed graphs",
+        "authors": [
+          "Xuan Zeng",
+          "Cui Zhu",
+          "Wenjun Zhu"
+        ],
+        "year": 2026,
+        "date": "2026-10",
+        "venue": "Neurocomputing",
+        "doi": "10.1016/j.neucom.2026.135399",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.neucom.2026.135399",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "test set contamination LLM graph benchmark text-attributed"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "test set contamination LLM graph benchmark text-attributed survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "test set contamination LLM graph benchmark text-attributed"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "LLM-as-predictor node classification label leakage"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 1.875
+          }
+        }
+      },
+      "term_overlap": 0.138,
+      "tfidf_similarity": 0.157,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Investigating Data Contamination in Modern Benchmarks for Large Language Models",
+        "authors": [
+          "Chunyuan Deng",
+          "Yilun Zhao",
+          "Xiangru Tang",
+          "Mark Gerstein",
+          "Arman Cohan"
+        ],
+        "year": 2023,
+        "date": "2023-11-16",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2311.09783",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2311.09783",
+        "pdf_url": null,
+        "abstract": "Recent observations have underscored a disparity between the inflated benchmark scores and the actual performance of LLMs, raising concerns about potential contamination of evaluation benchmarks. This issue is especially critical for closed-source models and certain open-source models where training data transparency is lacking. In this paper we study data contamination by proposing two methods tailored for both open-source and proprietary LLMs. We first introduce a retrieval-based system to explore potential overlaps between evaluation benchmarks and pretraining corpora. We further present a novel investigation protocol named Testset Slot Guessing (TS-Guessing), applicable to both open and proprietary models. This approach entails masking a wrong answer in a multiple-choice question and prompting the model to fill in the gap. Additionally, it involves obscuring an unlikely word in an evaluation example and asking the model to produce it. We find that certain commercial LLMs could surprisingly guess the missing option in various test sets. Specifically, in the TruthfulQA benchmark, we find that LLMs exhibit notable performance improvement when provided with additional metadata in the benchmark. Further, in the MMLU benchmark, ChatGPT and GPT-4 demonstrated an exact match rate of 52\\% and 57\\%, respectively, in guessing the missing options in benchmark test data. We hope these results underscore the need for more robust evaluation methodologies and benchmarks in the field.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "test set contamination LLM graph benchmark text-attributed"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "test set contamination LLM graph benchmark text-attributed survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "test set contamination LLM graph benchmark text-attributed review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.4,
+            "retrieval_hits": 3,
+            "score": 2.025
+          }
+        }
+      },
+      "term_overlap": 0.191,
+      "tfidf_similarity": 0.099,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "LiveBench: A Challenging, Contamination-Free LLM Benchmark",
+        "authors": [
+          "Colin White",
+          "Samuel Dooley",
+          "Manley Roberts",
+          "Arka Pal",
+          "Ben Feuer",
+          "Siddhartha Jain",
+          "Ravid Shwartz-Ziv",
+          "Neel Jain",
+          "Khalid Saifullah",
+          "Siddartha Naidu",
+          "Chinmay Hegde",
+          "Yann LeCun",
+          "Tom Goldstein",
+          "Willie Neiswanger",
+          "Micah Goldblum"
+        ],
+        "year": 2024,
+        "date": "2024-06-27",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2406.19314",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2406.19314",
+        "pdf_url": null,
+        "abstract": "Test set contamination, wherein test data from a benchmark ends up in a newer model's training set, is a well-documented obstacle for fair LLM evaluation and can quickly render benchmarks obsolete. To mitigate this, many recent benchmarks crowdsource new prompts and evaluations from human or LLM judges; however, these can introduce significant biases, and break down when scoring hard questions. In this work, we introduce a new benchmark for LLMs designed to be immune to both test set contamination and the pitfalls of LLM judging and human crowdsourcing. We release LiveBench, the first benchmark that (1) contains frequently-updated questions from recent information sources, (2) scores answers automatically according to objective ground-truth values, and (3) contains a wide variety of challenging tasks, spanning math, coding, reasoning, language, instruction following, and data analysis. To achieve this, LiveBench contains questions that are based on recently-released math competitions, arXiv papers, news articles, and datasets, and it contains harder, contamination-free versions of tasks from previous benchmarks such as Big-Bench Hard, AMPS, and IFEval. We evaluate many prominent closed-source models, as well as dozens of open-source models ranging from 0.5B to 110B in size. LiveBench is difficult, with top models achieving below 65% accuracy. We release all questions, code, and model answers. Questions will be added and updated on a monthly basis, and we will release new tasks and harder versions of tasks over time so that LiveBench can distinguish between the capabilities of LLMs as they improve in the future. We welcome community engagement and collaboration for expanding the benchmark tasks and models.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "test set contamination LLM graph benchmark text-attributed"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "test set contamination LLM graph benchmark text-attributed survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "test set contamination LLM graph benchmark text-attributed review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "test set contamination LLM graph benchmark text-attributed"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.375,
+            "retrieval_hits": 3,
+            "score": 2.0
+          }
+        }
+      },
+      "term_overlap": 0.199,
+      "tfidf_similarity": 0.082,
+      "is_survey_like": true,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "LLM-Augmented Stiefel Graph Neural Networks for Zero-Shot Spatio-Temporal Forecasting",
+        "authors": [
+          "Jiankai Zheng",
+          "Liang Xie",
+          "Lei Zhu",
+          "Guoli Yang"
+        ],
+        "year": 2026,
+        "date": "2026-07",
+        "venue": "IEEE Transactions on Knowledge and Data Engineering",
+        "doi": "10.1109/tkde.2026.3689935",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tkde.2026.3689935",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.417,
+            "title_match": 0.417,
+            "retrieval_hits": 3,
+            "score": 1.625
+          }
+        }
+      },
+      "term_overlap": 0.122,
+      "tfidf_similarity": 0.155,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Are LLM-Enhanced Graph Neural Networks Robust against Poisoning Attacks?",
+        "authors": [
+          "Yuhang Ma",
+          "Jie Wang",
+          "Zheng Yan"
+        ],
+        "year": 2026,
+        "date": "2026-03-27",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2603.26105",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2603.26105",
+        "pdf_url": null,
+        "abstract": "Large Language Models (LLMs) have advanced Graph Neural Networks (GNNs) by enriching node representations with semantic features, giving rise to LLM-enhanced GNNs that achieve notable performance gains. However, the robustness of these models against poisoning attacks, which manipulate both graph structures and textual attributes during training, remains unexplored. To bridge this gap, we propose a robustness assessment framework that systematically evaluates LLM-enhanced GNNs under poisoning attacks. Our framework enables comprehensive evaluation across multiple dimensions. Specifically, we assess 24 victim models by combining eight LLM- or Language Model (LM)-based feature enhancers with three representative GNN backbones. To ensure diversity in attack coverage, we incorporate six structural poisoning attacks (both targeted and non-targeted) and three textual poisoning attacks operating at the character, word, and sentence levels. Furthermore, we employ four real-world datasets, including one released after the emergence of LLMs, to avoid potential ground truth leakage during LLM pretraining, thereby ensuring fair evaluation. Extensive experiments show that LLM-enhanced GNNs exhibit significantly higher accuracy and lower Relative Drop in Accuracy (RDA) than a shallow embedding-based baseline across various attack settings. Our in-depth analysis identifies key factors that contribute to this robustness, such as the effective encoding of structural and label information in node representations. Based on these insights, we outline future research directions from both offensive and defensive perspectives, and propose a new combined attack along with a graph purification defense. To support future research, we release the source code of our framework at~https://github.com/CyberAlSec/LLMEGNNRP.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "LLM-as-predictor node classification label leakage"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "LLM-as-predictor node classification label leakage"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.286,
+            "retrieval_hits": 1,
+            "score": 1.744
+          }
+        }
+      },
+      "term_overlap": 0.195,
+      "tfidf_similarity": 0.081,
+      "is_survey_like": false,
+      "has_abstract": true
+    }
+  ],
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "data leakage large language models node classification Cora arxiv memorization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "data leakage large language models node classification Cora arxiv memorization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "data leakage large language models node classification Cora arxiv memorization",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "data leakage large language models node classification Cora arxiv memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "data leakage large language models node classification Cora arxiv memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "test set contamination LLM graph benchmark text-attributed",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "test set contamination LLM graph benchmark text-attributed",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "test set contamination LLM graph benchmark text-attributed",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "test set contamination LLM graph benchmark text-attributed",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "LLM memorization benchmark inflation graph learning evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "LLM memorization benchmark inflation graph learning evaluation",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "LLM memorization benchmark inflation graph learning evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "LLM memorization benchmark inflation graph learning evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "LLM-as-predictor node classification label leakage",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "LLM-as-predictor node classification label leakage",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "LLM-as-predictor node classification label leakage",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "LLM-as-predictor node classification label leakage",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "data leakage large language models node classification Cora arxiv memorization survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "data leakage large language models node classification Cora arxiv memorization survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "data leakage large language models node classification Cora arxiv memorization survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "data leakage large language models node classification Cora arxiv memorization survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "data leakage large language models node classification Cora arxiv memorization review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "data leakage large language models node classification Cora arxiv memorization review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "data leakage large language models node classification Cora arxiv memorization review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "data leakage large language models node classification Cora arxiv memorization review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "test set contamination LLM graph benchmark text-attributed survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "test set contamination LLM graph benchmark text-attributed survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "test set contamination LLM graph benchmark text-attributed survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "test set contamination LLM graph benchmark text-attributed survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "test set contamination LLM graph benchmark text-attributed review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "test set contamination LLM graph benchmark text-attributed review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "test set contamination LLM graph benchmark text-attributed review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "test set contamination LLM graph benchmark text-attributed review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "LLM memorization benchmark inflation graph learning evaluation survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM memorization benchmark inflation graph learning evaluation survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM memorization benchmark inflation graph learning evaluation survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM memorization benchmark inflation graph learning evaluation survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "LLM memorization benchmark inflation graph learning evaluation review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM memorization benchmark inflation graph learning evaluation review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM memorization benchmark inflation graph learning evaluation review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM memorization benchmark inflation graph learning evaluation review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "LLM-as-predictor node classification label leakage survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM-as-predictor node classification label leakage survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM-as-predictor node classification label leakage survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM-as-predictor node classification label leakage survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "LLM-as-predictor node classification label leakage review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM-as-predictor node classification label leakage review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM-as-predictor node classification label leakage review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM-as-predictor node classification label leakage review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "data leakage large language models node classification Cora arxiv memorization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "data leakage large language models node classification Cora arxiv memorization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "data leakage large language models node classification Cora arxiv memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "data leakage large language models node classification Cora arxiv memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "test set contamination LLM graph benchmark text-attributed",
+      "results": 0,
+      "error": {
+        "source": "openalex",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "test set contamination LLM graph benchmark text-attributed",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "test set contamination LLM graph benchmark text-attributed",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "test set contamination LLM graph benchmark text-attributed",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "temporal split papers after training cutoff LLM zero-shot classification citation graph",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "LLM memorization benchmark inflation graph learning evaluation",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "LLM memorization benchmark inflation graph learning evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "LLM memorization benchmark inflation graph learning evaluation",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "LLM-as-predictor node classification label leakage",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "LLM-as-predictor node classification label leakage",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "LLM-as-predictor node classification label leakage",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-17"
+}

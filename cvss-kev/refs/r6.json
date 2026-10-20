@@ -1,0 +1,39 @@
+{
+  "paper": {
+    "title": "Prediction Meets Patch Queues: Empirical Limits of EPSS-Only Prioritization Using CISA KEV Additions in 2025",
+    "authors": [
+      "Sergey Gordeychik"
+    ],
+    "year": 2026,
+    "date": "2026-01-16",
+    "venue": null,
+    "doi": "10.36227/techrxiv.176857939.95987957/v1",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W7124494263",
+    "s2_id": null,
+    "url": "https://doi.org/10.36227/techrxiv.176857939.95987957/v1",
+    "pdf_url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.176857939.95987957/v1",
+    "abstract": "The Exploit Prediction Scoring System (EPSS) is often operationalized as a \"patch gate\": remediate vulnerabilities whose predicted exploitation probability exceeds a chosen threshold. The CISA Known Exploited Vulnerabilities (KEV) catalog represents a stricter notion of ground truth: exploitation has been observed and confirmed. Using all KEV entries added in 2025, endof-year EPSS scores for the 2025 CVE population, and weekly EPSS snapshots throughout 2025, we quantify: (i) the coverage gap where EPSS scores are unavailable at the KEV decision time; (ii) the recall of exploited vulnerabilities under common EPSS thresholds; (iii) score drift and \"catch-up\" latency as EPSS evolves over time; and (iv) the operational consequences of EPSSonly intake under finite patch capacity. We further decompose the delay at the KEV inclusion moment into signal lag (EPSS not yet actionable) and ops lag (actionable but queued), showing that increasing patch capacity cannot compensate for a missing or late signal. Code, datasets: https://github.com/scadastrangelove/kev_vs_epss.",
+    "citations": 3,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "abstract_source": "crossref"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    }
+  ]
+}

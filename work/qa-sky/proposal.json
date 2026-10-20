@@ -1,0 +1,523 @@
+{
+  "type": "research_proposal",
+  "title": "Brightest stars: do question clusters or upvotes better show what a lecture class needs answered?",
+  "date": "2026-10-19",
+  "constraints": {
+    "field": "educational technology, HCI and NLP",
+    "project": "starry-sky live question app",
+    "hardware": "CPU or one consumer GPU with 8 GB VRAM",
+    "time_budget_weeks": 8,
+    "experience": "undergraduate, comfortable with Python",
+    "class_access": "unknown at time of writing; fallback included",
+    "defaults_used": [
+      "hardware",
+      "time_budget_weeks",
+      "experience"
+    ]
+  },
+  "search_log": {
+    "sources_ok": [
+      "crossref",
+      "huggingface"
+    ],
+    "sources_failed": [
+      {
+        "source": "openalex",
+        "reason": "keyless daily quota exhausted"
+      },
+      {
+        "source": "semantic_scholar",
+        "reason": "rate_limited (HTTP 429)"
+      },
+      {
+        "source": "arxiv",
+        "reason": "partly rate-limited (map and targeted search)"
+      }
+    ],
+    "strategies": [
+      "keyword",
+      "surveys",
+      "negative",
+      "comparisons",
+      "critique",
+      "reproducibility",
+      "recent",
+      "design-based queries",
+      "citation expansion",
+      "ordinary web search"
+    ],
+    "queries": [
+      "student questions lecture clustering",
+      "audience response system questions",
+      "classroom question aggregation",
+      "similar student questions grouping",
+      "LLM clustering student questions",
+      "classroom backchannel questions",
+      "live lecture question upvoting",
+      "clustering student questions",
+      "student question deduplication",
+      "large lecture anonymous questions",
+      "summarizing student questions LLM",
+      "student questions MOOC forum clustering",
+      "instructor question prioritization"
+    ],
+    "n_retrieved": 544,
+    "date": "2026-10-19",
+    "notes": [
+      "The closest paper (AskNow) was found only by ordinary web search; no API search or challenge retrieved it.",
+      "A web result gave AskNow's arXiv ID as 2511.01248, but the arXiv API returns a different paper (FocusView) for that ID, so AskNow is cited by its ACM DOI.",
+      "Eleven ordinary web searches supplemented the API searches."
+    ]
+  },
+  "papers": [
+    {
+      "key": "liu2026asknow",
+      "title": "AskNow: An LLM-powered Interactive System for Real-Time Question Answering in Large-Scale Classrooms",
+      "authors": [
+        "Ziqi Liu",
+        "Yuankun Wang",
+        "Hui-Ru Ho",
+        "Yuheng Wu",
+        "Yuhang Zhao",
+        "Bilge Mutlu"
+      ],
+      "year": 2026,
+      "date": null,
+      "venue": null,
+      "doi": "10.1145/3772318.3790328",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://arxiv.org/html/2511.01248v1",
+      "method": "An LLM answers live student questions using a streaming lecture transcript; the instructor view groups questions by embedding (text-embedding-3-small) with threshold-based K-means and lists the five most frequent clusters",
+      "datasets": "One-week deployment in three university CS courses (117 students completed all parts; 24 students and 3 instructors interviewed)",
+      "findings": "Students' perceived time to resolve confusion fell significantly; instructors rated answers accurate. Clustering quality, the threshold value and instructor use of the topic views were not reported.",
+      "limitations": "Two lectures per course; one university; self-selection; transcript-only context",
+      "role": "closest",
+      "read_level": "full_text",
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "AskNow: An LLM-powered Interactive System for Real-Time Question Answering in Large-Scale Classrooms",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-19"
+      }
+    },
+    {
+      "key": "mangado2025grouping",
+      "title": "Automatic grouping of question-answer pairs expressed in natural language for teaching environments",
+      "authors": [
+        "Nura Mangado Gómez"
+      ],
+      "year": 2025,
+      "date": "2025-07-03",
+      "venue": "Master's final project, Master in Artificial Intelligence (UPC, URV, UB)",
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://hdl.handle.net/2117/449495",
+      "method": "Six multilingual sentence encoders, optional UMAP, HDBSCAN; agreement with human groupings by AMI, ARI and V-measure",
+      "datasets": "93 unique student questions on one topic (low-emission zones) from inquiry-based teaching; grouped by 6 instructors and 8 students",
+      "findings": "Dimensionality reduction essential; contrastive universal encoders (BGE-M3, mE5) beat masked LMs; tuned clustering approaches the lower bound of human agreement (numbers not on the landing page)",
+      "limitations": "Topic-specific data; code-switching not analysed; only semantic grouping evaluated",
+      "role": "closest",
+      "read_level": "abstract",
+      "verification": {
+        "status": "url_reachable",
+        "via": "url",
+        "http_status": 200,
+        "note": "Only the URL was checked; add a DOI or arXiv ID for a real verification.",
+        "checked_on": "2026-10-19"
+      }
+    },
+    {
+      "key": "srivastava2025learnlens",
+      "title": "LearnLens: An AI-Enhanced Dashboard to Support Teachers in Open-Ended Classrooms",
+      "authors": [
+        "Namrata Srivastava",
+        "Shruti Jain",
+        "Clayton Cohn",
+        "Naveeduddin Mohammed",
+        "Umesh Timalsina",
+        "Gautam Biswas"
+      ],
+      "year": 2025,
+      "date": "2025-09-11",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2509.10582",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2509.10582",
+      "method": null,
+      "datasets": null,
+      "findings": "Teacher-facing dashboard summarising open-ended student responses (word clouds, bar charts, AI summaries); evaluated with teacher interviews",
+      "limitations": null,
+      "role": "closest",
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "LearnLens: An AI-Enhanced Dashboard to Support Teachers in Open-Ended Classrooms",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-19"
+      }
+    },
+    {
+      "key": "wei2025kcluster",
+      "title": "KCluster: An LLM-based Clustering Approach to Knowledge Component Discovery",
+      "authors": [
+        "Yumou Wei",
+        "Paulo Carvalho",
+        "John Stamper"
+      ],
+      "year": 2025,
+      "date": "2025-05-09",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2505.06469",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2505.06469",
+      "method": null,
+      "datasets": null,
+      "findings": "An LLM-induced question-similarity metric plus clustering yields knowledge-component models that predict performance better than expert models (assessment items, not student-asked questions)",
+      "limitations": null,
+      "role": "supporting",
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "KCluster: An LLM-based Clustering Approach to Knowledge Component Discovery",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-19"
+      }
+    },
+    {
+      "key": "onan2020moocclustering",
+      "title": "Weighted word embeddings and clustering‐based identification of question topics in MOOC discussion forum posts",
+      "authors": [
+        "Aytuğ Onan",
+        "Mansur Alp Toçoğlu"
+      ],
+      "year": 2020,
+      "date": "2020-05-04",
+      "venue": "Computer Applications in Engineering Education",
+      "doi": "10.1002/cae.22252",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.1002/cae.22252",
+      "method": null,
+      "datasets": null,
+      "findings": "Compares word-embedding weightings and clustering algorithms for question topics in MOOC forum posts",
+      "limitations": null,
+      "role": "supporting",
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "Weighted word embeddings and clustering‐based identification of question topics in MOOC discussion forum posts",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-19"
+      }
+    },
+    {
+      "key": "chowdhary2022qdup",
+      "title": "Unsupervised Question Duplicate and Related Questions Detection in e-learning platforms",
+      "authors": [
+        "Maksimjeet Chowdhary",
+        "Sanyam Goyal",
+        "Venktesh V",
+        "Mukesh Mohania",
+        "Vikram Goyal"
+      ],
+      "year": 2022,
+      "date": "2022-12-20",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2301.05150",
+      "pmid": null,
+      "url": "https://arxiv.org/abs/2301.05150",
+      "method": null,
+      "datasets": null,
+      "findings": "Unsupervised hybrid pipeline for near-duplicate and related question detection in e-learning question repositories",
+      "limitations": null,
+      "role": "supporting",
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "arxiv",
+        "resolved_title": "Unsupervised Question Duplicate and Related Questions Detection in e-learning platforms",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-19"
+      }
+    },
+    {
+      "key": "du2012classcommons",
+      "title": "Communication patterns for a classroom public digital backchannel",
+      "authors": [
+        "Honglu Du",
+        "Mary Beth Rosson",
+        "John M. Carroll"
+      ],
+      "year": 2012,
+      "date": "2012-10-03",
+      "venue": "ACM International Conference on Design of Communication (SIGDOC)",
+      "doi": "10.1145/2379057.2379081",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.1145/2379057.2379081",
+      "method": null,
+      "datasets": null,
+      "findings": "15-week field study of a public classroom digital backchannel; analyses communication patterns and which messages draw responses",
+      "limitations": null,
+      "role": "supporting",
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "Communication patterns for a classroom public digital backchannel",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-19"
+      }
+    },
+    {
+      "key": "iosub2025askaway",
+      "title": "Ask Away! Empowering Students to Ask Anonymous In-Class Questions",
+      "authors": [
+        "Violeta Iosub",
+        "Emily Lovell",
+        "Shaun W. C. MacLean",
+        "J. Scott McIndoe"
+      ],
+      "year": 2025,
+      "date": "2025-06-13",
+      "venue": "Journal of Chemical Education",
+      "doi": "10.1021/acs.jchemed.4c01089",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.1021/acs.jchemed.4c01089",
+      "method": null,
+      "datasets": null,
+      "findings": "Describes an anonymous in-class question form; the abstract reports no measured outcome",
+      "limitations": null,
+      "role": "supporting",
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "Ask Away! Empowering Students to Ask Anonymous In-Class Questions",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-19"
+      }
+    },
+    {
+      "key": "ray2025eduvidqa",
+      "title": "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+      "authors": [
+        "Sourjyadip Ray",
+        "Shubham Sharma",
+        "Somak Aditya",
+        "Pawan Goyal"
+      ],
+      "year": 2025,
+      "date": "2025-01-01",
+      "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "doi": "10.18653/v1/2025.emnlp-main.1760",
+      "arxiv_id": null,
+      "pmid": null,
+      "url": "https://doi.org/10.18653/v1/2025.emnlp-main.1760",
+      "method": null,
+      "datasets": null,
+      "findings": "EduVidQA: 5,252 question-answer pairs (synthetic and real-world) from 296 CS lecture videos",
+      "limitations": null,
+      "role": "background",
+      "read_level": "abstract",
+      "verification": {
+        "status": "verified",
+        "via": "crossref",
+        "resolved_title": "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+        "title_similarity": 1.0,
+        "checked_on": "2026-10-19"
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "name": "EduVidQA",
+      "url": "https://huggingface.co/datasets/vqamaster/EduVidQA",
+      "purpose": "possible public source of student questions on lecture videos",
+      "size": "2.15 GB including transcripts (rows not reported)",
+      "format": "json",
+      "license": "mit",
+      "access": "open",
+      "preprocessing": "keep real-world questions only; drop transcripts",
+      "suitability": "no vote counts; mixes synthetic and real questions",
+      "verified": true
+    }
+  ],
+  "proposal": {
+    "problem_statement": [
+      {
+        "text": "In large lectures, many students have the same confusion but few ask. Live question tools let students ask anonymously, and the instructor then has to decide which questions to answer first.",
+        "level": "estimate"
+      },
+      {
+        "text": "AskNow groups live student questions by embedding similarity and shows instructors the five most frequent groups, but its paper does not evaluate whether the groups are correct, whether the most frequent groups are the ones instructors most need, or how frequency compares with upvoting [@liu2026asknow].",
+        "level": "verified",
+        "sources": [
+          "liu2026asknow"
+        ]
+      },
+      {
+        "text": "Widely used tools rank questions by upvotes instead. Upvotes measure visible agreement with a question someone else wrote; the number of students who independently ask the same thing measures how widely the confusion is shared. Which signal better tells an instructor what to answer has not been tested in any paper this search found.",
+        "level": "estimate"
+      }
+    ],
+    "background": [
+      {
+        "text": "AskNow: embedding-based grouping of live lecture questions (threshold K-means on text-embedding-3-small) with a top-5 topic view; one-week deployment in three CS courses with 117 students; clustering quality and threshold not reported [@liu2026asknow].",
+        "level": "verified",
+        "sources": [
+          "liu2026asknow"
+        ]
+      },
+      {
+        "text": "Grouping of 93 student questions on one topic with six multilingual encoders, UMAP and HDBSCAN, scored against six instructors and eight students with AMI, ARI and V-measure; tuned clustering approached the lower bound of human agreement [@mangado2025grouping].",
+        "level": "verified",
+        "sources": [
+          "mangado2025grouping"
+        ]
+      },
+      {
+        "text": "LLM-induced question similarity clusters assessment items into knowledge components [@wei2025kcluster]; embedding clustering finds question topics in MOOC forums [@onan2020moocclustering]; unsupervised pipelines detect duplicate questions in question repositories [@chowdhary2022qdup]. None of these used short questions typed during a live lecture.",
+        "level": "verified",
+        "sources": [
+          "wei2025kcluster",
+          "onan2020moocclustering",
+          "chowdhary2022qdup"
+        ]
+      },
+      {
+        "text": "Teacher dashboards that summarise or cluster student input were evaluated with interviews, not with measured task accuracy [@srivastava2025learnlens]. Classroom backchannels and anonymous question forms are established practice [@du2012classcommons; @iosub2025askaway].",
+        "level": "verified",
+        "sources": [
+          "srivastava2025learnlens",
+          "du2012classcommons",
+          "iosub2025askaway"
+        ]
+      }
+    ],
+    "research_question": [
+      "RQ1 (Study 1). How well do lexical, sentence-embedding and LLM-based clusterings of live lecture questions agree with human groupings, and how often do they identify the same largest group (the brightest star) as humans?",
+      "RQ2 (Study 2). When the same questions are both grouped and upvoted, does ranking groups by the number of distinct students who asked them match the instructor's priorities better than ranking by upvotes?"
+    ],
+    "hypothesis": [
+      {
+        "text": "H1 (Study 1): sentence-embedding clustering reaches an AMI with the consensus human grouping that lies within the range of agreement between individual annotators, and exceeds TF-IDF clustering by at least 0.05 AMI on average across sessions.",
+        "level": "speculative"
+      },
+      {
+        "text": "H2 (Study 2): ranking question groups by the number of distinct askers gives a higher NDCG@5 against the instructor's blind priority ranking than ranking by total upvotes.",
+        "level": "speculative"
+      }
+    ],
+    "falsification": [
+      "Fixed before any data is analysed.",
+      "H1 is supported if mean AMI (embedding vs consensus) is at least the lowest pairwise human AMI and the paired difference to TF-IDF has a 95% bootstrap confidence interval above 0.05; rejected if embedding AMI is below the lowest human-human AMI in most sessions or the interval for the difference includes or lies below 0; otherwise inconclusive.",
+      "H2 is supported if the 95% bootstrap confidence interval (resampling sessions, then groups) of NDCG@5(size) minus NDCG@5(upvotes) lies above 0; rejected if it lies below 0; inconclusive if it contains 0. With few sessions an inconclusive result is likely and will be reported as such."
+    ],
+    "project_type": "Original study (Study 2) built on an extension (Study 1) of published question-grouping evaluations to live lecture questions. The app is the data-collection instrument, not the contribution.",
+    "dataset": [
+      {
+        "text": "Primary data: questions collected with the app in real lectures. Target: at least 4 sessions and 300 questions in total; 8 sessions if available. Stored per question: text, session, anonymous student ID (random per session), submission time, phase, and upvotes with voter IDs.",
+        "level": "estimate"
+      },
+      {
+        "text": "Each session has two phases: an ask phase in which students submit questions privately (no feed visible), and a short voting phase in which all questions are shown in random order and students upvote. Both signals are then measured on the same questions, and the feed cannot suppress repeat asking.",
+        "level": "estimate"
+      },
+      {
+        "text": "Fallback for Study 1 if no class is available: real-world (not synthetic) questions from EduVidQA, grouped by lecture video; it has no upvotes, so Study 2 cannot use it.",
+        "level": "estimate"
+      },
+      {
+        "text": "Ethics: university ethics approval and informed consent before any collection; participation never affects grades; no names stored; questions released only after review for identifying content.",
+        "level": "estimate"
+      }
+    ],
+    "methodology": [
+      "Study 1 (RQ1). Three annotators (the instructor or TA, and two others; at least one not the project author) group each session's questions independently with a written guideline: two questions belong together if one answer from the instructor would resolve both. A consensus grouping is formed by majority co-assignment.",
+      "Clustering methods, all with the same distance-threshold agglomerative clustering so only the representation differs: (a) TF-IDF cosine; (b) sentence embeddings from two small open models (e.g. all-MiniLM-L6-v2 and BGE-small); (c) an LLM pair judge ('would one answer resolve both questions?') turned into a similarity graph; (d) UMAP plus HDBSCAN on embeddings, as in the closest prior work.",
+      "Thresholds are tuned by leave-one-session-out: tuned on all other sessions, evaluated on the held-out one.",
+      "Study 2 (RQ2). After each lecture the instructor ranks the consensus question groups by how important they are to answer for the whole class, without seeing group sizes or votes (groups shown in random order). Rankings by each signal are then compared with this ranking."
+    ],
+    "variables": [
+      "Independent (Study 1): question representation and clustering method; distance threshold (swept).",
+      "Independent (Study 2): prioritisation signal: distinct askers per group; total upvotes; upvotes from distinct students; distinct askers plus distinct upvoters; most recent first; random.",
+      "Dependent: AMI, ARI and V-measure against each annotator and the consensus; largest-group match; NDCG@5 and precision@3 against the instructor ranking.",
+      "Controlled: same questions, same preprocessing (lower-casing, no stemming), same clustering algorithm across representations, same tuning protocol."
+    ],
+    "confounds": [
+      "Upvote position and time bias: questions shown first or longer collect more votes. Controlled by the random order in the voting phase and a fixed voting window.",
+      "A visible feed suppresses repeat asking (students upvote instead of re-asking), which would bias group sizes. Controlled by the private ask phase.",
+      "Instructor knowledge of counts: the ranking is made blind to sizes and votes.",
+      "Annotator influence: annotators group independently before any consensus; agreement is reported.",
+      "Threshold tuned on the test session: avoided by leave-one-session-out tuning.",
+      "Duplicate submissions by the same student count once toward distinct askers."
+    ],
+    "baselines": [
+      "Study 1: TF-IDF clustering (lexical baseline); a trivial baseline that puts every question in its own group; the human-human agreement range as the ceiling.",
+      "Study 2: recency ordering and random ordering, besides the two signals being compared."
+    ],
+    "metrics": [
+      "AMI as the primary clustering metric (corrected for chance, comparable across sessions with different numbers of groups); ARI and V-measure as secondary, as in the closest prior work.",
+      "Largest-group match: the largest machine group and the largest consensus group overlap with Jaccard at least 0.5.",
+      "Threshold stability: how many of the top-3 groups stay the same across neighbouring thresholds.",
+      "NDCG@5 (primary) and precision@3 against the instructor ranking."
+    ],
+    "procedure": [
+      "1. Week 1: ethics application; build the app's minimum version (two phases, anonymous IDs, logging, export).",
+      "2. Week 2: pilot in one session or with volunteers; write and test the annotation guideline.",
+      "3. Weeks 3-5: collect sessions; annotators group questions within a week of each session; instructor rankings right after each lecture.",
+      "4. Week 6: Study 1 analysis (all methods, thresholds, agreement).",
+      "5. Week 7: Study 2 analysis on the consensus groups.",
+      "6. Week 8: write the paper; release code and the anonymised data if consent allows.",
+      "Minimum version if sessions fall through: Study 1 on EduVidQA real-world questions plus any collected sessions; Study 2 reported as a protocol with pilot data."
+    ],
+    "statistics": [
+      "Sessions are the unit of replication. Report per-session values and the mean with a 95% bootstrap confidence interval (10,000 resamples of sessions). Compare methods and signals with paired differences on the same sessions.",
+      "Clustering methods with a random element (UMAP, HDBSCAN) are run with 5 seeds; report the spread.",
+      "Two pre-specified primary comparisons (H1, H2); everything else is labelled exploratory. No significance claims beyond the confidence intervals; with 4-8 sessions the study is exploratory.",
+      "Inter-annotator agreement (pairwise AMI) is reported before any method results."
+    ],
+    "feasibility": [
+      {
+        "text": "Compute: clustering a few hundred short questions with small embedding models runs on a laptop CPU in minutes; an LLM pair judge with a small local model fits an 8 GB GPU, or can be skipped.",
+        "level": "estimate"
+      },
+      {
+        "text": "Main cost is people: about 4-8 lecture sessions, 3 annotators at roughly 30-60 minutes per session, and an instructor's 10-minute ranking after each lecture.",
+        "level": "estimate"
+      },
+      {
+        "text": "Main schedule risk: ethics approval time. Apply in week 1; the fallback keeps Study 1 possible.",
+        "level": "estimate"
+      }
+    ],
+    "contribution": [
+      "The first measured comparison, to our knowledge, of upvotes and question-group size as signals of what instructors should answer, with an interface design (private ask phase) that measures both on the same questions. Novelty confidence is very low: ACM venues still need a direct search.",
+      "An evaluation of question grouping on live lecture questions, including how stable the top group is, which the closest deployed system did not report.",
+      "An anonymised dataset of live lecture questions with groupings, upvotes and instructor priorities, if consent allows release."
+    ],
+    "risks": [
+      "Too few sessions: results stay exploratory; report per session and widen the confidence intervals honestly.",
+      "Low annotator agreement: then the 'correct grouping' is ill-defined; report agreement as a finding and evaluate against each annotator separately.",
+      "Few questions per session (common in small classes): pool sessions for Study 1 and treat Study 2 as a pilot.",
+      "A paper found later that already compares upvotes and group size: reframe Study 2 as a replication in a new setting.",
+      "Privacy: questions can reveal identity or health information; review before any release."
+    ]
+  },
+  "limitations": [
+    "The literature search had OpenAlex and Semantic Scholar unavailable and did not search the ACM Digital Library directly; the gap behind Study 2 rests on absence of evidence.",
+    "Most cited papers were read at abstract level; only AskNow was read in full. Read the master's project (mangado2025grouping) in full before finalising Study 1.",
+    "Effect sizes and session counts are estimates; nothing has been run."
+  ]
+}

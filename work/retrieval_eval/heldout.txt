@@ -1,0 +1,62 @@
+
+gnn-rag-small-reader [heldout] - 1 known relevant paper(s)
+  baseline   recall 0.00 | in top 20: 0.00 | median rank None | retrieved 53 | failed: arxiv
+  challenge  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 140 | failed: arxiv
+  landscape  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 156
+  full       recall 0.00 | in top 20: 0.00 | median rank None | retrieved 166
+  missed by every configuration (check with web search):
+    - RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answeri…
+
+heterophily-llm-tag [heldout] - 3 known relevant paper(s)
+  baseline   recall 0.67 | in top 20: 0.67 | median rank 1.5 | retrieved 72 | failed: openalex
+  challenge  recall 1.00 | in top 20: 0.67 | median rank 16 | retrieved 146 | failed: openalex
+  landscape  recall 0.67 | in top 20: 0.67 | median rank 8.0 | retrieved 125
+  full       recall 1.00 | in top 20: 0.33 | median rank 23 | retrieved 187
+
+llm-graph-leakage [heldout] - 2 known relevant paper(s)
+  baseline   recall 0.00 | in top 20: 0.00 | median rank None | retrieved 62 | failed: openalex
+  challenge  recall 0.50 | in top 20: 0.00 | median rank 88 | retrieved 207 | failed: openalex
+  landscape  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 211
+  full       recall 0.50 | in top 20: 0.00 | median rank 124 | retrieved 262
+  missed by every configuration (check with web search):
+    - Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?
+
+simple-baselines-vs-llm-graph [heldout] - 3 known relevant paper(s)
+  baseline   recall 0.33 | in top 20: 0.33 | median rank 3 | retrieved 63 | failed: openalex
+  challenge  recall 0.33 | in top 20: 0.33 | median rank 1 | retrieved 188 | failed: openalex
+  landscape  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 245
+  full       recall 0.33 | in top 20: 0.33 | median rank 1 | retrieved 282
+  missed by every configuration (check with web search):
+    - GLBench: A Comprehensive Benchmark for Graph with Large Language Models
+    - When Do LLMs Help With Node Classification? A Comprehensive Analysis
+
+tag-robustness [heldout] - 4 known relevant paper(s)
+  baseline   recall 1.00 | in top 20: 1.00 | median rank 4.5 | retrieved 63 | failed: openalex
+  challenge  recall 1.00 | in top 20: 1.00 | median rank 5.5 | retrieved 157 | failed: openalex
+  landscape  recall 1.00 | in top 20: 1.00 | median rank 3.5 | retrieved 152
+  full       recall 1.00 | in top 20: 1.00 | median rank 5.0 | retrieved 206
+
+tape-small-llms [heldout] - 1 known relevant paper(s)
+  baseline   recall 0.00 | in top 20: 0.00 | median rank None | retrieved 54 | failed: openalex
+  challenge  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 154 | failed: openalex
+  landscape  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 155
+  full       recall 0.00 | in top 20: 0.00 | median rank None | retrieved 184
+  missed by every configuration (check with web search):
+    - When Do LLMs Help With Node Classification? A Comprehensive Analysis
+
+textgcn-vs-mlp [heldout] - 1 known relevant paper(s)
+  baseline   recall 0.00 | in top 20: 0.00 | median rank None | retrieved 80 | failed: openalex
+  challenge  recall 1.00 | in top 20: 1.00 | median rank 1 | retrieved 214 | failed: openalex
+  landscape  recall 1.00 | in top 20: 1.00 | median rank 6 | retrieved 229
+  full       recall 1.00 | in top 20: 1.00 | median rank 1 | retrieved 323
+
+Pooled recall (known relevant papers found / targets):
+  heldout:
+    baseline   7/15 any rank, 7/15 in top 20
+    challenge  10/15 any rank, 8/15 in top 20
+    landscape  7/15 any rank, 7/15 in top 20
+    full       10/15 any rank, 7/15 in top 20
+
+CAVEAT: Pooled over few topics and few known papers per topic; treat differences of one or two papers as noise. Live results depend on rate limits and index coverage on the day of the run.
+
+Full JSON written to work\retrieval_eval\heldout.json

@@ -1,0 +1,49 @@
+{
+  "id": "tag-robustness",
+  "split": "heldout",
+  "claim": "Evaluating robustness of LLM-enhanced graph neural networks on text-attributed graphs to text-level perturbations of node attributes (typos, paraphrases, adversarial word substitutions)",
+  "queries": [
+    "adversarial text attack text-attributed graph node classification",
+    "robustness LLM-enhanced GNN textual perturbation",
+    "text-level graph adversarial attack language model node features",
+    "poisoning attack text attributes graph neural network LLM"
+  ],
+  "anchor": "text-attributed graph",
+  "design": [
+    "text-level perturbations of node attributes",
+    "poisoning attack",
+    "robustness evaluation of LLM-enhanced GNNs"
+  ],
+  "seeds": [],
+  "known_relevant": [
+    {
+      "title": "Intruding with Words: Towards Understanding Graph Injection Attacks at the Text Level",
+      "arxiv_id": "2405.16405",
+      "doi": null,
+      "year": 2024,
+      "why": "text-level graph injection attacks"
+    },
+    {
+      "title": "Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses",
+      "arxiv_id": "2510.17185",
+      "doi": null,
+      "year": 2025,
+      "why": "unified robustness evaluation on TAGs"
+    },
+    {
+      "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+      "arxiv_id": "2510.12233",
+      "doi": null,
+      "year": 2025,
+      "why": "adversarial attack on Graph-LLMs"
+    },
+    {
+      "title": "Are LLM-Enhanced Graph Neural Networks Robust against Poisoning Attacks?",
+      "arxiv_id": "2603.26105",
+      "doi": null,
+      "year": 2026,
+      "why": "poisoning attacks on LLM-enhanced GNNs"
+    }
+  ],
+  "provenance": "Claim and queries copied from the challenge run of the first opportunity report (work/challenge_robust.json), written before the known papers were found. Design elements, anchor and seeds were added later by an author who knew the answers; they are generic but not blind."
+}

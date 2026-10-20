@@ -1,0 +1,16 @@
+S2019 nodes 169343 feat 128 classes 40 train/val/test 90941 29799 600
+    epoch 50/300  best val 0.691
+    epoch 100/300  best val 0.707
+    epoch 150/300  best val 0.707
+    epoch 200/300  best val 0.707
+    epoch 250/300  best val 0.707
+    epoch 300/300  best val 0.707
+  seed 0: val 0.707 test 0.687
+    epoch 50/300  best val 0.693
+    epoch 100/300  best val 0.704
+    epoch 150/300  best val 0.704
+    epoch 200/300  best val 0.704
+    epoch 250/300  best val 0.704
+    epoch 300/300  best val 0.704
+  seed 1: val 0.704 test 0.668
+    epoch 50/300  best val 0.694

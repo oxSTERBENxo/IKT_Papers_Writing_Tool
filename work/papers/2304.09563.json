@@ -1,0 +1,47 @@
+{
+  "paper": {
+    "title": "On the Robustness of Aspect-based Sentiment Analysis: Rethinking Model, Data, and Training",
+    "authors": [
+      "Hao Fei",
+      "Tat-Seng Chua",
+      "Chenliang Li",
+      "Donghong Ji",
+      "Meishan Zhang",
+      "Yafeng Ren"
+    ],
+    "year": 2022,
+    "date": "2022-12-21",
+    "venue": "ACM Transactions on Information Systems",
+    "doi": "10.1145/3564281",
+    "arxiv_id": "2304.09563",
+    "pmid": null,
+    "openalex_id": "W4296366985",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2304.09563",
+    "pdf_url": "https://arxiv.org/pdf/2304.09563v1",
+    "abstract": "Aspect-based sentiment analysis (ABSA) aims at automatically inferring the specific sentiment polarities toward certain aspects of products or services behind the social media texts or reviews, which has been a fundamental application to the real-world society. Since the early 2010s, ABSA has achieved extraordinarily high accuracy with various deep neural models. However, existing ABSA models with strong in-house performances may fail to generalize to some challenging cases where the contexts are variable, i.e., low robustness to real-world environments. In this study, we propose to enhance the ABSA robustness by systematically rethinking the bottlenecks from all possible angles, including model, data, and training. First, we strengthen the current best-robust syntax-aware models by further incorporating the rich external syntactic dependencies and the labels with aspect simultaneously with a universal-syntax graph convolutional network. In the corpus perspective, we propose to automatically induce high-quality synthetic training data with various types, allowing models to learn sufficient inductive bias for better robustness. Last, we based on the rich pseudo data perform adversarial training to enhance the resistance to the context perturbation and meanwhile employ contrastive learning to reinforce the representations of instances with contrastive sentiments. Extensive robustness evaluations are conducted. The results demonstrate that our enhanced syntax-aware model achieves better robustness performances than all the state-of-the-art baselines. By additionally incorporating our synthetic corpus, the robust testing results are pushed with around 10% accuracy, which are then further improved by installing the advanced training strategies. In-depth analyses are presented for revealing the factors influencing the ABSA robustness.",
+    "citations": 84,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "Accepted in ACM Transactions on Information Systems",
+      "arxiv_category": "cs.CL",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

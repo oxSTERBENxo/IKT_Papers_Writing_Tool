@@ -1,0 +1,142 @@
+  [arxiv/keyword] 'visualization student questions instructor': 10 results
+  [crossref/keyword] 'visualization student questions instructor': 10 results
+  [huggingface/keyword] 'visualization student questions instructor': 10 results
+  [arxiv/keyword] 'real-time classroom dashboard visualization questions': 0 results
+  [crossref/keyword] 'real-time classroom dashboard visualization questions': 10 results
+  [huggingface/keyword] 'real-time classroom dashboard visualization questions': 10 results
+  [arxiv/keyword] 'instructor dashboard student confusion visualization': 1 results
+  [crossref/keyword] 'instructor dashboard student confusion visualization': 10 results
+  [huggingface/keyword] 'instructor dashboard student confusion visualization': 10 results
+  [arxiv/keyword] 'question cluster visualization user study': 10 results
+  [crossref/keyword] 'question cluster visualization user study': 10 results
+  [huggingface/keyword] 'question cluster visualization user study': 10 results
+  [arxiv/keyword] 'teacher orchestration dashboard evaluation': 0 results
+  [crossref/keyword] 'teacher orchestration dashboard evaluation': 10 results
+  [huggingface/keyword] 'teacher orchestration dashboard evaluation': 10 results
+  [arxiv/surveys] 'visualization student questions instructor survey': 2 results
+  [crossref/surveys] 'visualization student questions instructor survey': 10 results
+  [huggingface/surveys] 'visualization student questions instructor survey': 10 results
+  [arxiv/surveys] 'visualization student questions instructor review': 3 results
+  [crossref/surveys] 'visualization student questions instructor review': 10 results
+  [huggingface/surveys] 'visualization student questions instructor review': 10 results
+  [arxiv/surveys] 'real-time classroom dashboard visualization questions survey': 0 results
+  [crossref/surveys] 'real-time classroom dashboard visualization questions survey': 10 results
+  [huggingface/surveys] 'real-time classroom dashboard visualization questions survey': 10 results
+  [arxiv/surveys] 'real-time classroom dashboard visualization questions review': 0 results
+  [crossref/surveys] 'real-time classroom dashboard visualization questions review': 10 results
+  [huggingface/surveys] 'real-time classroom dashboard visualization questions review': 10 results
+  [arxiv/surveys] 'instructor dashboard student confusion visualization survey': 0 results
+  [crossref/surveys] 'instructor dashboard student confusion visualization survey': 10 results
+  [huggingface/surveys] 'instructor dashboard student confusion visualization survey': 10 results
+  [arxiv/surveys] 'instructor dashboard student confusion visualization review': 0 results
+  [crossref/surveys] 'instructor dashboard student confusion visualization review': 10 results
+  [huggingface/surveys] 'instructor dashboard student confusion visualization review': 10 results
+  [arxiv/surveys] 'question cluster visualization user study survey': 1 results
+  [crossref/surveys] 'question cluster visualization user study survey': 10 results
+  [huggingface/surveys] 'question cluster visualization user study survey': 10 results
+  [arxiv/surveys] 'question cluster visualization user study review': 0 results
+  [crossref/surveys] 'question cluster visualization user study review': 10 results
+  [huggingface/surveys] 'question cluster visualization user study review': 10 results
+  [arxiv/surveys] 'teacher orchestration dashboard evaluation survey': 0 results
+  [crossref/surveys] 'teacher orchestration dashboard evaluation survey': 10 results
+  [huggingface/surveys] 'teacher orchestration dashboard evaluation survey': 10 results
+  [arxiv/surveys] 'teacher orchestration dashboard evaluation review': 0 results
+  [crossref/surveys] 'teacher orchestration dashboard evaluation review': 10 results
+  [huggingface/surveys] 'teacher orchestration dashboard evaluation review': 10 results
+  [arxiv/recent] 'visualization student questions instructor': 9 results
+  [crossref/recent] 'visualization student questions instructor': 10 results
+  [huggingface/recent] 'visualization student questions instructor': 10 results
+  [arxiv/recent] 'real-time classroom dashboard visualization questions': 0 results
+  [crossref/recent] 'real-time classroom dashboard visualization questions': 10 results
+  [huggingface/recent] 'real-time classroom dashboard visualization questions': 10 results
+  [arxiv/recent] 'instructor dashboard student confusion visualization': 1 results
+  [crossref/recent] 'instructor dashboard student confusion visualization': 10 results
+  [huggingface/recent] 'instructor dashboard student confusion visualization': 10 results
+  [arxiv/recent] 'question cluster visualization user study': 9 results
+  [crossref/recent] 'question cluster visualization user study': 10 results
+  [huggingface/recent] 'question cluster visualization user study': 10 results
+  [arxiv/recent] 'teacher orchestration dashboard evaluation': 0 results
+  [crossref/recent] 'teacher orchestration dashboard evaluation': 10 results
+  [huggingface/recent] 'teacher orchestration dashboard evaluation': 10 results
+  [arxiv/keyword] 'ranked list baseline frequency-encoded constellation visualization': 0 results
+  [crossref/keyword] 'ranked list baseline frequency-encoded constellation visualization': 10 results
+  [huggingface/keyword] 'ranked list baseline frequency-encoded constellation visualization': 10 results
+  [arxiv/keyword] 'task completion time and accuracy frequency-encoded constellation visualization': 0 results
+  [crossref/keyword] 'task completion time and accuracy frequency-encoded constellation visualization': 10 results
+  [huggingface/keyword] 'task completion time and accuracy frequency-encoded constellation visualization': 10 results
+  [arxiv/keyword] 'within-subjects user study frequency-encoded constellation visualization': 0 results
+  [crossref/keyword] 'within-subjects user study frequency-encoded constellation visualization': 10 results
+  [huggingface/keyword] 'within-subjects user study frequency-encoded constellation visualization': 10 results
+Claim: Whether a frequency-encoded constellation visualization of clustered student questions helps instructors identify the most widely shared questions faster and more accurately than a ranked list
+Queries tried: 5 | papers examined: 269 | high wording overlap: 0 {} | title-only records: 88
+Sources ok: arxiv, crossref, huggingface | failed: none
+Query diversity: 14 distinct terms, mean pairwise overlap 0.192
+Citation expansion: 25 paper(s) found only via citations | 4 expansion error(s)
+Design elements checked: 3 | papers matching 2+ elements: 0
+
+SIGNAL: no_close_match_in_this_search
+Highest novelty confidence this search can support: low
+  ceiling limited: citation expansion partly failed (4 call(s): not_found)
+  ceiling limited: 40% of the ten closest records have no abstract
+No closely worded paper was retrieved, but only 1 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.
+CAVEAT: Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.
+
+Closest retrieved work (read these before keeping the idea):
+  1. Ranked-List Visualization
+     Mylavarapu et al. 2019 | Proceedings of the 2019 CHI Conference … | cited 26 | doi:10.1145/3290605.3300422 | via crossref | overlap 0.145 tfidf 0.362 | NO ABSTRACT (title match only) | design: ranked list baseline
+  2. Ranked-List Proportional Representation
+     Stephanopoulos 2025 | venue n/a | cited 0 | doi:10.2139/ssrn.5099845 | via crossref | overlap 0.124 tfidf 0.233 | NO ABSTRACT (title match only) | design: ranked list baseline
+  3. Comparing Explanatory and Exploratory Explainable User Interfaces for AI-Supported Clinical Decision-Making: …
+     Fredriksdotter et al. 2026 | venue n/a | cited 0 | doi:10.2196/preprints.104490 | via crossref | overlap 0.042 tfidf 0.005 | design: task completion time and accuracy; within-subjects user study
+  4. Supplemental Information 5: Ranked gene list for BSG-based GSEA
+     ? n.d. | venue n/a | cited 0 | doi:10.7717/peerj.20467/supp-5 | via crossref | overlap 0.124 tfidf 0.167 | NO ABSTRACT (title match only) | design: ranked list baseline
+  5. Table S3: GSEA ranked gene list for FDMI
+     ? n.d. | venue n/a | cited 0 | doi:10.7717/peerj.5048/supp-4 | via crossref | overlap 0.124 tfidf 0.163 | NO ABSTRACT (title match only) | design: ranked list baseline
+  6. Characterization and Effects of CS2 Learning with GenAI, Visualization, and Human Support
+     Yong et al. 2026 | arXiv | cited ? | arXiv:2606.02933 OA | via arxiv | overlap 0.303 tfidf 0.094
+  7. A Review and Collation of Graphical Perception Knowledge for Visualization Recommendation
+     Zeng et al. 2021 | International Conference on Human Facto… | cited 38 | arXiv:2109.01271 OA | via semantic_scholar | overlap 0.086 tfidf 0.043 | survey-like | via citations only | design: within-subjects user study
+  8. MemoVis: A GenAI-Powered Tool for Creating Companion Reference Images for 3D Design Feedback
+     Chen et al. 2024 | arXiv | cited ? | arXiv:2409.06082 OA | via huggingface | overlap 0.05 tfidf 0.024 | design: within-subjects user study
+  9. Voltix: A Web-Based Real-Time IoT Sensor Monitoring and Visualization Dashboard
+     Ganesh et al. 2026 | venue n/a | cited 0 | doi:10.22541/essoar.15009301/v1 | via crossref | overlap 0.051 tfidf 0.013 | design: within-subjects user study
+ 10. Task Mode: Dynamic Filtering for Task-Specific Web Navigation using LLMs
+     Mohanbabu et al. 2025 | arXiv | cited ? | arXiv:2507.14769 OA | via huggingface | overlap 0.047 tfidf 0.013 | design: task completion time and accuracy
+ 11. YTCommentQA: Video Question Answerability in Instructional Videos
+     Yang et al. 2024 | arXiv | cited ? | arXiv:2401.17343 OA | via huggingface | overlap 0.026 tfidf 0.031 | design: within-subjects user study
+ 12. Using Choice to Increase Time On-Task, Task-Completion, and Accuracy for Students with Emotional/Behavior Dis…
+     Ramsey et al. 2009 | Education and Treatment of Children | cited 41 | doi:10.1353/etc.0.0085 | via crossref | overlap 0.03 tfidf 0.025 | NO ABSTRACT (title match only) | design: task completion time and accuracy
+ 13. Trade-Off between Task Accuracy, Task Completion Time and Naturalness for Direct Object Manipulation in Virtu…
+     Kangas et al. 2022 | Multimodal Technologies and Interaction | cited 42 | doi:10.3390/mti6010006 | via crossref | overlap 0.042 tfidf 0.011 | design: task completion time and accuracy
+ 14. Tracking User Interactions Within Visualizations
+     Groth et al. n.d. | IEEE Symposium on Information Visualiza… | cited 0 | doi:10.1109/infvis.2004.67 | via crossref | overlap 0.021 tfidf 0.032 | NO ABSTRACT (title match only) | design: within-subjects user study
+ 15. Are Agents Ready to Teach? A Multi-Stage Benchmark for Real-World Teaching Workflows
+     Chen et al. 2026 | arXiv | cited ? | arXiv:2605.14322 OA | via huggingface | overlap 0.03 tfidf 0.007 | survey-like | design: task completion time and accuracy
+ 16. Usability evaluation of IOT based HVAC dashboard
+     Shrestha n.d. | venue n/a | cited 0 | doi:10.58837/chula.the.2023.88 | via crossref | overlap 0.03 tfidf 0.006 | design: task completion time and accuracy
+ 17. Efficient Onboard Vision-Language Inference in UAV-Enabled Low-Altitude Economy Networks via LLM-Enhanced Opt…
+     Li et al. 2025 | arXiv | cited ? | arXiv:2510.10028 OA | via arxiv | overlap 0.026 tfidf 0.008 | design: task completion time and accuracy
+ 18. Daisen: A Framework for Visualizing Detailed GPU Execution
+     Sun et al. 2021 | arXiv | cited ? | arXiv:2104.00828 OA | via arxiv | overlap 0.211 tfidf 0.071
+ 19. BASELINE AND CONSTELLATION
+     ? 2024 | The Philosophy of Translation | cited 0 | doi:10.2307/jj.20261332.7 | via crossref | overlap 0.068 tfidf 0.21 | NO ABSTRACT (title match only)
+ 20. VizQStudio: Iterative Visualization Literacy MCQs Design with Simulated Students
+     Chen et al. 2026 | arXiv | cited ? | arXiv:2603.00994 OA | via arxiv | overlap 0.181 tfidf 0.092
+
+Must read before deciding (full text where accessible):
+  1. Ranked-List Visualization (2019) | term overlap 0.145, design elements: ranked list baseline, no abstract retrieved
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  2. Ranked-List Proportional Representation (2025) | term overlap 0.124, design elements: ranked list baseline, no abstract retrieved
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  3. Comparing Explanatory and Exploratory Explainable User Interfaces for AI-Supported Clinical Decisio… (2026) | term overlap 0.042, design elements: task completion time and accuracy; within-subjects user study
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  4. Supplemental Information 5: Ranked gene list for BSG-based GSEA (None) | term overlap 0.124, design elements: ranked list baseline, no abstract retrieved
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  5. Table S3: GSEA ranked gene list for FDMI (None) | term overlap 0.124, design elements: ranked list baseline, no abstract retrieved
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  6. A Review and Collation of Graphical Perception Knowledge for Visualization Recommendation (2021) | term overlap 0.086, design elements: within-subjects user study, found only through the citation graph, survey-like
+     next: fulltext --id 2109.01271
+  7. Standardizing Reporting of Participant Compensation in HCI: A Systematic Literature Review and Reco… (2021) | term overlap 0.0, design elements: within-subjects user study, found only through the citation graph, survey-like
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+
+Full JSON written to work\qa-sky\challenge_q3.json

@@ -1,0 +1,285 @@
+{
+  "resolved": true,
+  "paper": {
+    "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+    "authors": [
+      "Xiaoxin He",
+      "Xavier Bresson",
+      "Thomas Laurent",
+      "Adam Perold",
+      "Yann LeCun",
+      "Bryan Hooi"
+    ],
+    "year": 2023,
+    "date": "2023-05-31",
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2305.19523",
+    "arxiv_id": "2305.19523",
+    "pmid": null,
+    "openalex_id": "W4379087246",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2305.19523",
+    "pdf_url": "https://arxiv.org/pdf/2305.19523v5",
+    "abstract": "Representation learning on text-attributed graphs (TAGs) has become a critical research problem in recent years. A typical example of a TAG is a paper citation graph, where the text of each paper serves as node attributes. Initial graph neural network (GNN) pipelines handled these text attributes by transforming them into shallow or hand-crafted features, such as skip-gram or bag-of-words features. Recent efforts have focused on enhancing these pipelines with language models (LMs), which typically demand intricate designs and substantial computational resources. With the advent of powerful large language models (LLMs) such as GPT or Llama2, which demonstrate an ability to reason and to utilize general knowledge, there is a growing need for techniques which combine the textual modelling abilities of LLMs with the structural learning capabilities of GNNs. Hence, in this work, we focus on leveraging LLMs to capture textual information as features, which can be used to boost GNN performance on downstream tasks. A key innovation is our use of explanations as features: we prompt an LLM to perform zero-shot classification, request textual explanations for its decision-making process, and design an LLM-to-LM interpreter to translate these explanations into informative features for downstream GNNs. Our experiments demonstrate that our method achieves state-of-the-art results on well-established TAG datasets, including Cora, PubMed, ogbn-arxiv, as well as our newly introduced dataset, tape-arxiv23. Furthermore, our method significantly speeds up training, achieving a 2.88 times improvement over the closest baseline on ogbn-arxiv. Lastly, we believe the versatility of the proposed method extends beyond TAGs and holds the potential to enhance other tasks involving graph-text data. Our codes and datasets are available at: https://github.com/XiaoxinHe/TAPE.",
+    "citations": 22,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "In Proceedings of ICLR 2024",
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "resolution_notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ],
+  "executed": false,
+  "disclaimer": "Automated pre-assessment only. No code was executed and no result was reproduced. 'found' means a file or phrase is present, not that it is complete or correct; 'not_found' means the automated check did not find it, not that it does not exist.",
+  "checklist": {
+    "full_text": {
+      "label": "Full paper publicly available",
+      "status": "verified",
+      "evidence": [
+        "https://arxiv.org/abs/2305.19523"
+      ],
+      "note": null
+    },
+    "code": {
+      "label": "Implementation available",
+      "status": "found",
+      "evidence": [
+        "https://github.com/XiaoxinHe/TAPE"
+      ],
+      "note": "linked from the paper's own metadata (likely official)"
+    },
+    "license": {
+      "label": "Code licence",
+      "status": "verified",
+      "evidence": [
+        "SPDX: MIT"
+      ],
+      "note": null
+    },
+    "dependencies": {
+      "label": "Dependencies / environment specified",
+      "status": "found",
+      "evidence": [
+        "README: \"...m?id=RXFVcynVe1} } ``` ## 0. Python environment setup with Conda ``` conda create --name TAPE python=3.8 conda activate TAPE conda install pytorch==1....\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "data_instructions": {
+      "label": "Dataset access and preprocessing instructions",
+      "status": "found",
+      "evidence": [
+        "README: \"...g from MAG paper IDs into the raw texts of titles and abstracts. <br/>Download the dataset [here](https://snap.stanford.edu/ogb/data/misc/ogbn_arxiv/titleabs...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "configs": {
+      "label": "Training configuration and hyperparameters",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "training": {
+      "label": "Training entry point",
+      "status": "found",
+      "evidence": [
+        "file: core/trainEnsemble.py",
+        "file: core/trainGNN.py",
+        "file: core/trainLM.py",
+        "file: run.sh"
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "seeds": {
+      "label": "Random seeds / determinism controls",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "hardware": {
+      "label": "Hardware requirements stated",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "evaluation": {
+      "label": "Evaluation script or protocol",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "pretrained": {
+      "label": "Pretrained weights or checkpoints",
+      "status": "found",
+      "evidence": [
+        "README: \"...d reproduce the published results. This repository also provides the checkpoints for all trained models `(*.ckpt)` and the TAPE features `(*.emb)` use...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "reported_results": {
+      "label": "Published results to compare against",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "architecture": {
+      "label": "Model architecture fully specified",
+      "status": "manual_review",
+      "evidence": [],
+      "note": "Not determinable from metadata; read the paper's method and experiment sections."
+    },
+    "maintenance": {
+      "label": "Repository maintenance",
+      "status": "verified",
+      "evidence": [
+        "last push 2025-04-14",
+        "archived: False",
+        "open issues: 4",
+        "issues mentioning reproduction: 2"
+      ],
+      "note": null
+    },
+    "prior_reproductions": {
+      "label": "Existing reproduction attempts",
+      "status": "unavailable",
+      "evidence": [],
+      "note": "OpenAlex lookup failed; see errors."
+    }
+  },
+  "code_candidates": [
+    {
+      "repo": "XiaoxinHe/TAPE",
+      "url": "https://github.com/XiaoxinHe/TAPE",
+      "relationship": "linked_by_paper",
+      "checks": {
+        "license": {
+          "status": "verified",
+          "evidence": [
+            "SPDX: MIT"
+          ],
+          "note": null
+        },
+        "dependencies": {
+          "status": "found",
+          "evidence": [
+            "README: \"...m?id=RXFVcynVe1} } ``` ## 0. Python environment setup with Conda ``` conda create --name TAPE python=3.8 conda activate TAPE conda install pytorch==1....\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "data_instructions": {
+          "status": "found",
+          "evidence": [
+            "README: \"...g from MAG paper IDs into the raw texts of titles and abstracts. <br/>Download the dataset [here](https://snap.stanford.edu/ogb/data/misc/ogbn_arxiv/titleabs...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "configs": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "training": {
+          "status": "found",
+          "evidence": [
+            "file: core/trainEnsemble.py",
+            "file: core/trainGNN.py",
+            "file: core/trainLM.py",
+            "file: run.sh"
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "seeds": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "hardware": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "evaluation": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "pretrained": {
+          "status": "found",
+          "evidence": [
+            "README: \"...d reproduce the published results. This repository also provides the checkpoints for all trained models `(*.ckpt)` and the TAPE features `(*.emb)` use...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "reported_results": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "maintenance": {
+          "status": "verified",
+          "evidence": [
+            "last push 2025-04-14",
+            "archived: False",
+            "open issues: 4",
+            "issues mentioning reproduction: 2"
+          ],
+          "note": null
+        }
+      },
+      "errors": [],
+      "exists": true,
+      "stars": 272,
+      "forks": 43,
+      "open_issues": 4,
+      "archived": false,
+      "pushed_at": "2025-04-14T02:10:44Z",
+      "created_at": "2022-12-13T01:57:05Z",
+      "license": "MIT",
+      "language": "Python",
+      "description": "Official Implementation of ICLR 2024 paper \"Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning\"",
+      "is_fork": false,
+      "n_files": 41,
+      "tree_truncated": false,
+      "readme_chars": 4944,
+      "reproduction_issue_count": 2
+    }
+  ],
+  "huggingface_linked": {
+    "datasets": [],
+    "models": [],
+    "note": "Repos tagged with this arXiv ID. They cite the paper; they are not necessarily the data or weights it used."
+  },
+  "prior_reproduction_candidates": [],
+  "potential_blockers": [],
+  "missing": [
+    "Training configuration and hyperparameters",
+    "Random seeds / determinism controls",
+    "Hardware requirements stated",
+    "Evaluation script or protocol",
+    "Published results to compare against",
+    "Model architecture fully specified"
+  ],
+  "errors": [
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429,
+      "step": "prior_reproductions"
+    }
+  ]
+}

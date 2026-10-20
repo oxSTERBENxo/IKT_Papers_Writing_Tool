@@ -1,0 +1,30 @@
+
+absa-syntax-gcn [dev] - 5 known relevant paper(s)
+  baseline   recall 0.20 | in top 20: 0.00 | median rank 58 | retrieved 81
+  challenge  recall 0.40 | in top 20: 0.00 | median rank 138.0 | retrieved 347
+  landscape  recall 0.40 | in top 20: 0.40 | median rank 6.5 | retrieved 330
+  full       recall 0.40 | in top 20: 0.40 | median rank 11.5 | retrieved 403
+  missed by every configuration (check with web search):
+    - Do Syntax Trees Help Pre-trained Transformers Extract Information?
+    - Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis …
+    - On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis
+
+upfd-graph-vs-no-graph [dev] - 4 known relevant paper(s)
+  baseline   recall 0.00 | in top 20: 0.00 | median rank None | retrieved 51 | failed: openalex,arxiv
+  challenge  recall 0.50 | in top 20: 0.25 | median rank 55.5 | retrieved 246
+  landscape  recall 0.50 | in top 20: 0.25 | median rank 18.5 | retrieved 224
+  full       recall 0.50 | in top 20: 0.25 | median rank 30.0 | retrieved 276
+  missed by every configuration (check with web search):
+    - Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness
+    - Enhancing Fake-News Detection with Node-Level Topological Features
+
+Pooled recall (known relevant papers found / targets):
+  dev:
+    baseline   1/9 any rank, 0/9 in top 20
+    challenge  4/9 any rank, 1/9 in top 20
+    landscape  4/9 any rank, 3/9 in top 20
+    full       4/9 any rank, 3/9 in top 20
+
+CAVEAT: Pooled over few topics and few known papers per topic; treat differences of one or two papers as noise. Live results depend on rate limits and index coverage on the day of the run.
+
+Full JSON written to work\retrieval_eval\dev.json

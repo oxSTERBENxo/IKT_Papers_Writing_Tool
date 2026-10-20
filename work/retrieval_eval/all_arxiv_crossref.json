@@ -1,0 +1,2024 @@
+{
+  "summary": {
+    "dev": {
+      "baseline": {
+        "targets": 9,
+        "found": 1,
+        "in_top_20": 0,
+        "recall_any": 0.111,
+        "recall_at_20": 0.0
+      },
+      "challenge": {
+        "targets": 9,
+        "found": 4,
+        "in_top_20": 1,
+        "recall_any": 0.444,
+        "recall_at_20": 0.111
+      },
+      "landscape": {
+        "targets": 9,
+        "found": 4,
+        "in_top_20": 3,
+        "recall_any": 0.444,
+        "recall_at_20": 0.333
+      },
+      "full": {
+        "targets": 9,
+        "found": 4,
+        "in_top_20": 3,
+        "recall_any": 0.444,
+        "recall_at_20": 0.333
+      }
+    },
+    "heldout": {
+      "baseline": {
+        "targets": 15,
+        "found": 7,
+        "in_top_20": 7,
+        "recall_any": 0.467,
+        "recall_at_20": 0.467
+      },
+      "challenge": {
+        "targets": 15,
+        "found": 11,
+        "in_top_20": 9,
+        "recall_any": 0.733,
+        "recall_at_20": 0.6
+      },
+      "landscape": {
+        "targets": 15,
+        "found": 7,
+        "in_top_20": 7,
+        "recall_any": 0.467,
+        "recall_at_20": 0.467
+      },
+      "full": {
+        "targets": 15,
+        "found": 11,
+        "in_top_20": 7,
+        "recall_any": 0.733,
+        "recall_at_20": 0.467
+      }
+    },
+    "caveat": "Pooled over few topics and few known papers per topic; treat differences of one or two papers as noise. Live results depend on rate limits and index coverage on the day of the run."
+  },
+  "results": [
+    {
+      "id": "absa-syntax-gcn",
+      "split": "dev",
+      "n_targets": 5,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.2,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 58,
+          "n_retrieved": 80,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 58,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 80
+        },
+        "challenge": {
+          "recall_any": 0.4,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 124.0,
+          "n_retrieved": 304,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 150,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": 98,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 304,
+          "expansion_errors": 0
+        },
+        "landscape": {
+          "recall_any": 0.4,
+          "recall_at_20": 0.4,
+          "median_rank_of_found": 7.0,
+          "n_retrieved": 329,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": true
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": 11,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": false
+            }
+          ],
+          "n": 329,
+          "must_read": [
+            {
+              "title": "Large language model augmented syntax-aware domain adaptation method for aspect-based sentiment analysis",
+              "arxiv_id": null,
+              "doi": "10.1016/j.neucom.2025.129472"
+            },
+            {
+              "title": "Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification",
+              "arxiv_id": null,
+              "doi": "10.1109/tcss.2024.3514901"
+            },
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/2021.naacl-main.146"
+            },
+            {
+              "title": "Aspect-based Sentiment Analysis with Type-aware Graph Convolutional Networks and Layer Ensemble",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/2021.naacl-main.231"
+            },
+            {
+              "title": "Aspect-Based Sentiment Classification with Background Information and Syntactic Auxiliary Tasks",
+              "arxiv_id": null,
+              "doi": "10.1109/ijcnn52387.2021.9533506"
+            },
+            {
+              "title": "On the Robustness of Aspect-based Sentiment Analysis: Rethinking Model, Data, and Training",
+              "arxiv_id": "2304.09563",
+              "doi": "10.1145/3564281"
+            },
+            {
+              "title": "Recurrent Attention Network on Memory for Aspect Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/d17-1047"
+            },
+            {
+              "title": "PyABSA: A Modularized Framework for Reproducible Aspect-based Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.1145/3583780.3614752"
+            },
+            {
+              "title": "The Reproducibility Gap in Graph Neural Network Workflows for Cell Dynamics: A Checklist-Driven Evaluation",
+              "arxiv_id": null,
+              "doi": "10.22541/au.176463842.29639629/v1"
+            },
+            {
+              "title": "Review for \"A reproducibility study of atomistic line graph neural networks for materials property prediction\"",
+              "arxiv_id": null,
+              "doi": "10.1039/d4dd00064a/v1/review1"
+            },
+            {
+              "title": "Revisiting Homology: Orthologous Versus Paralogous Genes",
+              "arxiv_id": null,
+              "doi": "10.1007/978-981-95-9147-3_7"
+            },
+            {
+              "title": "Bayesian Biaffine Variational Graph Convolutional Network for Aspect-Based Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.3390/app16189065"
+            },
+            {
+              "title": "An entropy-regularized counterfactual framework for robust and generalizable ABSA",
+              "arxiv_id": null,
+              "doi": "10.1007/s40747-025-02170-7"
+            },
+            {
+              "title": "Fine-tuning Pretrained Multilingual BERT Model for Indonesian Aspect-based Sentiment Analysis",
+              "arxiv_id": "2103.03732",
+              "doi": "10.1109/icaicta49861.2020.9428882"
+            },
+            {
+              "title": "DualGCN: Exploring Syntactic and Semantic Information for Aspect-Based Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.1109/tnnls.2022.3219615"
+            },
+            {
+              "title": "Aspect sentiment classification using syntactic neighbour based attention network",
+              "arxiv_id": null,
+              "doi": "10.1016/j.jksuci.2023.01.005"
+            },
+            {
+              "title": "Syntactic Information and Multiple Semantic Segments for Aspect-Based Sentiment Classification",
+              "arxiv_id": null,
+              "doi": "10.1142/s2717554522500060"
+            },
+            {
+              "title": "A survey of aspect-based sentiment analysis classification with a focus on graph neural network methods",
+              "arxiv_id": null,
+              "doi": "10.1007/s11042-023-17701-y"
+            },
+            {
+              "title": "Aspect Sentiment Triplet Extraction with Syntax-Semantics Graph Convolutional Network",
+              "arxiv_id": null,
+              "doi": "10.1007/s44196-025-00900-w"
+            },
+            {
+              "title": "Modeling Structured Dependency Tree with Graph Convolutional Networks for Aspect-Level Sentiment Classification",
+              "arxiv_id": null,
+              "doi": "10.3390/s24020418"
+            }
+          ],
+          "coverage_notes": [
+            "166 of 329 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "failed": [],
+          "bucket_sizes": {
+            "negative_result": 12,
+            "comparison": 79,
+            "reproducibility": 5,
+            "benchmark_critique": 3,
+            "stated_limitation": 22,
+            "survey": 19,
+            "method_proposal": 85
+          }
+        },
+        "full": {
+          "recall_any": 0.4,
+          "recall_at_20": 0.4,
+          "median_rank_of_found": 12.5,
+          "n_retrieved": 374,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 5,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": 20,
+              "found": true,
+              "in_top_k": true
+            }
+          ]
+        }
+      },
+      "missed_by_all": [
+        "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+        "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+        "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis"
+      ]
+    },
+    {
+      "id": "upfd-graph-vs-no-graph",
+      "split": "dev",
+      "n_targets": 4,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 71,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 71
+        },
+        "challenge": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "median_rank_of_found": 61.5,
+          "n_retrieved": 263,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": 122,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 263,
+          "expansion_errors": 2
+        },
+        "landscape": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "median_rank_of_found": 18.0,
+          "n_retrieved": 247,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": 2,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": true
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": 34,
+              "found": true,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            }
+          ],
+          "n": 247,
+          "must_read": [
+            {
+              "title": "The Mismatch between Graph Neural Networks’ Expressivity and Propagation Graphs in Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.1109/bcd54882.2022.9900611"
+            },
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "arxiv_id": "2512.06638",
+              "doi": "10.48550/arxiv.2512.06638"
+            },
+            {
+              "title": "Propagation-Based Fake News Detection Using Graph Neural Networks with Transformer",
+              "arxiv_id": null,
+              "doi": "10.1109/gcce53005.2021.9621803"
+            },
+            {
+              "title": "Noise-Filtering Enhanced Graph Transformer for Robust Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.1109/tkde.2026.3677544"
+            },
+            {
+              "title": "Why Text Alone Is Not Enough: An Empirical Analysis of Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.36227/techrxiv.176827249.96394831/v1"
+            },
+            {
+              "title": "The Effects of Text Preprocessing Methods on Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.6798853"
+            },
+            {
+              "title": "DEVELOPMENT OF METHODS FOR DETECTION OF FAKE NEWS BASED ON GRAPH THEORY ANALYSIS",
+              "arxiv_id": null,
+              "doi": "10.28925/2663-4023.2026.32.1110"
+            },
+            {
+              "title": "The PolitiFact-Oslo Corpus: A New Dataset for Fake News Analysis and Detection",
+              "arxiv_id": null,
+              "doi": "10.3390/info14120627"
+            },
+            {
+              "title": "Assessing Reproducibility and Accessibility in Hate Speech and Fake News Detection Datasets: A Literature Review (2023-2024)",
+              "arxiv_id": null,
+              "doi": "10.1109/infoteh64129.2025.10959261"
+            },
+            {
+              "title": "Subject-Independent Sleep Apnea Detection from Single-Lead ECG: A Cross-Attention Network and a Measured Reproducibility Baseline",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.7602311"
+            },
+            {
+              "title": "Beyond Reported Accuracy: A Verifiability-Focused, Multi-Axis Review of Content and Context Based Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.62411/jcta.17476"
+            },
+            {
+              "title": "Causal Intervention via Visual–Linguistic Filtering for Multimodal Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.1109/bigdia68682.2025.11383406"
+            },
+            {
+              "title": "Rethinking sketch-based 3D shape retrieval: A simple baseline and benchmark reconstruction",
+              "arxiv_id": null,
+              "doi": "10.1016/j.neucom.2024.128990"
+            },
+            {
+              "title": "Innovative fake health news detection: Integrating emotional features into graph neural networks",
+              "arxiv_id": null,
+              "doi": "10.59720/25-130"
+            },
+            {
+              "title": "DECOR: Degree-Corrected Social Graph Refinement for Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.1145/3580305.3599298"
+            },
+            {
+              "title": "Fake News Detection through Graph-based Neural Networks: A Survey",
+              "arxiv_id": null,
+              "doi": "10.21203/rs.3.rs-3252100/v1"
+            },
+            {
+              "title": "Fake news detection: A survey of graph neural network methods",
+              "arxiv_id": null,
+              "doi": "10.1016/j.asoc.2023.110235"
+            }
+          ],
+          "coverage_notes": [
+            "104 of 247 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "failed": [],
+          "bucket_sizes": {
+            "negative_result": 15,
+            "comparison": 53,
+            "reproducibility": 9,
+            "benchmark_critique": 4,
+            "stated_limitation": 24,
+            "survey": 26,
+            "method_proposal": 63
+          }
+        },
+        "full": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "median_rank_of_found": 29.5,
+          "n_retrieved": 314,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": 58,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ]
+        }
+      },
+      "missed_by_all": [
+        "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+        "Enhancing Fake-News Detection with Node-Level Topological Features"
+      ]
+    },
+    {
+      "id": "gnn-rag-small-reader",
+      "split": "heldout",
+      "n_targets": 1,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 53,
+          "hits": [
+            {
+              "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [
+            "arxiv"
+          ],
+          "n": 53
+        },
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 168,
+          "hits": [
+            {
+              "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [
+            "arxiv"
+          ],
+          "n": 168,
+          "expansion_errors": 5
+        },
+        "landscape": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 156,
+          "hits": [
+            {
+              "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            }
+          ],
+          "n": 156,
+          "must_read": [
+            {
+              "title": "Hybrid Graph Neural Network and Large Language Model Framework for Robust Knowledge Graph Question Answering via Retrieval-Augmented Generation",
+              "arxiv_id": null,
+              "doi": "10.22214/ijraset.2026.82233"
+            },
+            {
+              "title": "SG-RAG MOT: SubGraph Retrieval Augmented Generation with Merging and Ordering Triplets for Knowledge Graph Multi-hop Question Answering",
+              "arxiv_id": null,
+              "doi": "10.20944/preprints202505.1992.v1"
+            },
+            {
+              "title": "Co-MedGraphRAG: A Collaborative Large–Small Model Medical Question-Answering Framework Enhanced by Knowledge Graph Reasoning",
+              "arxiv_id": null,
+              "doi": "10.3390/info17030247"
+            },
+            {
+              "title": "Enhancing the performance of neurosurgery medical question-answering systems using a multi-task knowledge graph-augmented answer generation model",
+              "arxiv_id": null,
+              "doi": "10.3389/fnins.2025.1606038"
+            },
+            {
+              "title": "FashionKG-RAG: Knowledge Graph-Enhanced Retrieval-Augmented Generation for Fashion Question Answering",
+              "arxiv_id": "2608.22688",
+              "doi": null
+            },
+            {
+              "title": "DuoFlow-KG: a dual-modal evidence retrieval framework for high-density LLM-augmented KGQA",
+              "arxiv_id": null,
+              "doi": "10.1038/s41598-026-59526-3"
+            },
+            {
+              "title": "AstroRAG -- A Pagerank-Based Retrieval-Augmented Generation Pipeline for Question Answering in Astronomy",
+              "arxiv_id": "2605.25039",
+              "doi": null
+            },
+            {
+              "title": "MindMap: Knowledge Graph Prompting Sparks Graph of Thoughts in Large Language Models",
+              "arxiv_id": "2308.09729",
+              "doi": "10.48550/arxiv.2308.09729"
+            },
+            {
+              "title": "TRIAGE: Trustworthy Retrieval Instrumentation And Graph Evaluation",
+              "arxiv_id": "2607.03447",
+              "doi": "10.48550/arxiv.2607.03447"
+            },
+            {
+              "title": "Distinguishing Retrieval Augmented Generation From Prompt Engineering: Implications for Reproducibility in Large Language Model Research and Applications",
+              "arxiv_id": null,
+              "doi": "10.14309/ajg.0000000000003439"
+            },
+            {
+              "title": "The Answer Path and the Grounding Instruction in LLM Question Answering over Knowledge Graphs",
+              "arxiv_id": "2609.10237",
+              "doi": null
+            },
+            {
+              "title": "SSR: Structured Subgraph Retrieval for Temporal Knowledge Graph Question Answering with LLMs",
+              "arxiv_id": null,
+              "doi": "10.1145/3805712.3809612"
+            },
+            {
+              "title": "EntropyRAG: Entropy-Aware Retrieval-Augmented Generation for Knowledge Graph Question Answering",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.6794971"
+            },
+            {
+              "title": "A Review on Question Answering System over Knowledge Graph",
+              "arxiv_id": null,
+              "doi": "10.22541/au.171618466.63003321/v1"
+            },
+            {
+              "title": "A Knowledge Graph-Driven Question Answering System for Mineral Resource Survey&amp;#160;",
+              "arxiv_id": null,
+              "doi": "10.5194/egusphere-egu24-20307"
+            },
+            {
+              "title": "Enriching Subgraph Retrieval with Attribute Values for Complex Question Answering Over Knowledge Graph",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.5146217"
+            }
+          ],
+          "coverage_notes": [
+            "sources failed: arxiv",
+            "citation expansion had 3 error(s)",
+            "51 of 156 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "failed": [
+            "arxiv"
+          ],
+          "bucket_sizes": {
+            "negative_result": 10,
+            "comparison": 63,
+            "reproducibility": 6,
+            "benchmark_critique": 1,
+            "stated_limitation": 21,
+            "survey": 8,
+            "method_proposal": 50
+          }
+        },
+        "full": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 187,
+          "hits": [
+            {
+              "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ]
+        }
+      },
+      "missed_by_all": [
+        "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering"
+      ]
+    },
+    {
+      "id": "heterophily-llm-tag",
+      "split": "heldout",
+      "n_targets": 3,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.667,
+          "recall_at_20": 0.667,
+          "median_rank_of_found": 1.5,
+          "n_retrieved": 72,
+          "hits": [
+            {
+              "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+              "rank": 2,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 72
+        },
+        "challenge": {
+          "recall_any": 1.0,
+          "recall_at_20": 0.667,
+          "median_rank_of_found": 16,
+          "n_retrieved": 146,
+          "hits": [
+            {
+              "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+              "rank": 16,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+              "rank": 53,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 146,
+          "expansion_errors": 4
+        },
+        "landscape": {
+          "recall_any": 0.667,
+          "recall_at_20": 0.667,
+          "median_rank_of_found": 8.0,
+          "n_retrieved": 125,
+          "hits": [
+            {
+              "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+              "rank": 2,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": true
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+              "rank": 14,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": false
+            },
+            {
+              "title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            }
+          ],
+          "n": 125,
+          "must_read": [
+            {
+              "title": "GMLM: Bridging Graph Neural Networks and Language Models for Heterophilic Node Classification",
+              "arxiv_id": "2503.05763",
+              "doi": null
+            },
+            {
+              "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+              "arxiv_id": "2503.04822",
+              "doi": null
+            },
+            {
+              "title": "GCL-OT: Graph Contrastive Learning with Optimal Transport for Heterophilic Text-Attributed Graphs",
+              "arxiv_id": "2511.16778",
+              "doi": "10.1609/aaai.v40i30.39704"
+            },
+            {
+              "title": "GAugLLM: Improving Graph Contrastive Learning for Text-Attributed Graphs with Large Language Models",
+              "arxiv_id": null,
+              "doi": "10.1145/3637528.3672035"
+            },
+            {
+              "title": "An Integration of Fuzzy-Enhanced Heterophilic Graph Representation Learning for Improving Performance of Link Prediction",
+              "arxiv_id": null,
+              "doi": "10.1080/01969722.2025.2533164"
+            },
+            {
+              "title": "GRENADE: Graph-Centric Language Model for Self-Supervised Representation Learning on Text-Attributed Graphs",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/2023.findings-emnlp.181"
+            },
+            {
+              "title": "Beyond Fixed Features: Architecture-Dependent Sensitivity to Node Representations under Heterophily",
+              "arxiv_id": "2609.33764",
+              "doi": null
+            },
+            {
+              "title": "Heterophilic Graph Learning",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.5347632"
+            },
+            {
+              "title": "Beyond node-centric graph learning: advancing edge-aware GNNs for enhanced representation learning",
+              "arxiv_id": null,
+              "doi": "10.47328/ufvbbt.2026.209"
+            },
+            {
+              "title": "Oncogene and Tumor Suppressor Gene Classification Using Protein Language Model Embeddings and a Novel Optimization Strategy",
+              "arxiv_id": null,
+              "doi": "10.21203/rs.3.rs-9066725/v1"
+            },
+            {
+              "title": "EnzyKAN: Protein Language Model Embeddings and Kolmogorov–Arnold Network Variants for Enzyme Commission Classification with a Proposed Electron-Transfer Physics Feature Framework",
+              "arxiv_id": null,
+              "doi": "10.64898/2026.06.23.734004"
+            },
+            {
+              "title": "Topology-Invariant Message Routing via Forman Curvature for OOD Generalization on Heterophilic Graphs",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.7346909"
+            },
+            {
+              "title": "SAHG: Sector-Anisotropic Hyperbolic Graph Model for Social Bot Detection",
+              "arxiv_id": "2605.30166",
+              "doi": null
+            },
+            {
+              "title": "Bootstrapping Heterophily Graph Representation Learning via a Large Language Model-Based Approach",
+              "arxiv_id": null,
+              "doi": "10.1109/ictai66417.2025.00024"
+            },
+            {
+              "title": "A Survey of Unifying Large Language Models with Graph Learning: Concepts, Methods, and Recent Advancements for Text-attributed Graph",
+              "arxiv_id": null,
+              "doi": "10.36227/techrxiv.177272839.92930143/v1"
+            },
+            {
+              "title": "Language Models as Messengers: Enhancing Message Passing in Heterophilic Graph Learning",
+              "arxiv_id": "2505.19762",
+              "doi": null
+            }
+          ],
+          "coverage_notes": [
+            "no seed papers: citing works of the benchmark/method paper not searched",
+            "citation expansion had 8 error(s)",
+            "66 of 125 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "failed": [],
+          "bucket_sizes": {
+            "negative_result": 9,
+            "comparison": 60,
+            "reproducibility": 11,
+            "benchmark_critique": 2,
+            "stated_limitation": 10,
+            "survey": 5,
+            "method_proposal": 25
+          }
+        },
+        "full": {
+          "recall_any": 1.0,
+          "recall_at_20": 0.333,
+          "median_rank_of_found": 23,
+          "n_retrieved": 187,
+          "hits": [
+            {
+              "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+              "rank": 23,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+              "rank": 77,
+              "found": true,
+              "in_top_k": false
+            }
+          ]
+        }
+      },
+      "missed_by_all": []
+    },
+    {
+      "id": "llm-graph-leakage",
+      "split": "heldout",
+      "n_targets": 2,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 62,
+          "hits": [
+            {
+              "title": "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 62
+        },
+        "challenge": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 88,
+          "n_retrieved": 207,
+          "hits": [
+            {
+              "title": "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs",
+              "rank": 88,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 207,
+          "expansion_errors": 1
+        },
+        "landscape": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 211,
+          "hits": [
+            {
+              "title": "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            }
+          ],
+          "n": 211,
+          "must_read": [
+            {
+              "title": "GaLoRA: Parameter-Efficient Graph-Aware LLMs for Node Classification",
+              "arxiv_id": "2603.10298",
+              "doi": null
+            },
+            {
+              "title": "Graph Convolutional Networks for Few-Shot Node Classification Using LLM-Derived Entity and Explanation Features",
+              "arxiv_id": null,
+              "doi": "10.1109/cisat71030.2026.11682228"
+            },
+            {
+              "title": "FinSCRA: An LLM-Powered Multi-Chain Reasoning Framework for Interpretable Node Classification on Text-Attributed Graphs",
+              "arxiv_id": null,
+              "doi": "10.22541/au.177204304.42015977/v1"
+            },
+            {
+              "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+              "arxiv_id": "2305.19523",
+              "doi": null
+            },
+            {
+              "title": "CITE: A Comprehensive Benchmark for Heterogeneous Text-Attributed Graphs on Catalytic Materials",
+              "arxiv_id": "2508.15392",
+              "doi": null
+            },
+            {
+              "title": "Open-source large language models in astronomical data classification: applications and benchmarking",
+              "arxiv_id": null,
+              "doi": "10.5194/epsc-dps2025-226"
+            },
+            {
+              "title": "Mix-And-Match: Targeted Data Reconstruction Attacks Against LLM-Based Text Classification Models",
+              "arxiv_id": null,
+              "doi": "10.36227/techrxiv.176784366.69252813/v1"
+            },
+            {
+              "title": "Divide and Denoise: Empowering Simple Models for Robust Semi-Supervised Node Classification against Label Noise",
+              "arxiv_id": null,
+              "doi": "10.1145/3637528.3671798"
+            },
+            {
+              "title": "Model Diversity Over Model Size: Unanimous LLM Ensembles Correct Over-Classification in Survey Coding",
+              "arxiv_id": null,
+              "doi": "10.31235/osf.io/er6mz_v1"
+            },
+            {
+              "title": "An AI4Research Scoring Benchmark: Characterizing and Calibrating LLM Evaluation of Automated Research Protocols",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.7422696"
+            },
+            {
+              "title": "Generalization or Memorization: Data Contamination and Trustworthy Evaluation for Large Language Models",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/2024.findings-acl.716"
+            },
+            {
+              "title": "Can Language Models Solve Graph Problems in Natural Language?",
+              "arxiv_id": "2305.10037",
+              "doi": "10.48550/arxiv.2305.10037"
+            },
+            {
+              "title": "LLM-driven Knowledge Distillation for Dynamic Text-Attributed Graphs",
+              "arxiv_id": "2502.10914",
+              "doi": null
+            },
+            {
+              "title": "LLM-Enhanced Energy Contrastive Learning for Out-of-Distribution Detection in Text-Attributed Graphs",
+              "arxiv_id": "2603.20293",
+              "doi": null
+            },
+            {
+              "title": "A Survey of Unifying Large Language Models with Graph Learning: Concepts, Methods, and Recent Advancements for Text-attributed Graph",
+              "arxiv_id": null,
+              "doi": "10.36227/techrxiv.177272839.92930143/v1"
+            },
+            {
+              "title": "Hierarchical Compression of Text-Rich Graphs via Large Language Models",
+              "arxiv_id": "2406.11884",
+              "doi": null
+            }
+          ],
+          "coverage_notes": [
+            "citation expansion had 5 error(s)",
+            "81 of 211 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "failed": [],
+          "bucket_sizes": {
+            "negative_result": 29,
+            "comparison": 92,
+            "reproducibility": 17,
+            "benchmark_critique": 12,
+            "stated_limitation": 27,
+            "survey": 8,
+            "method_proposal": 49
+          }
+        },
+        "full": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 124,
+          "n_retrieved": 262,
+          "hits": [
+            {
+              "title": "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs",
+              "rank": 124,
+              "found": true,
+              "in_top_k": false
+            }
+          ]
+        }
+      },
+      "missed_by_all": [
+        "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?"
+      ]
+    },
+    {
+      "id": "simple-baselines-vs-llm-graph",
+      "split": "heldout",
+      "n_targets": 3,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.333,
+          "recall_at_20": 0.333,
+          "median_rank_of_found": 3,
+          "n_retrieved": 63,
+          "hits": [
+            {
+              "title": "GLBench: A Comprehensive Benchmark for Graph with Large Language Models",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 63
+        },
+        "challenge": {
+          "recall_any": 0.667,
+          "recall_at_20": 0.667,
+          "median_rank_of_found": 7.5,
+          "n_retrieved": 207,
+          "hits": [
+            {
+              "title": "GLBench: A Comprehensive Benchmark for Graph with Large Language Models",
+              "rank": 14,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 207,
+          "expansion_errors": 3
+        },
+        "landscape": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 245,
+          "hits": [
+            {
+              "title": "GLBench: A Comprehensive Benchmark for Graph with Large Language Models",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            }
+          ],
+          "n": 245,
+          "must_read": [
+            {
+              "title": "Semi-supervised Instruction Tuning for Large Language Models on Text-Attributed Graphs",
+              "arxiv_id": "2601.12807",
+              "doi": "10.1145/3774905.3795466"
+            },
+            {
+              "title": "Refining High-Quality Labels Using Large Language Models to Enhance Node Classification in Graph Echo State Network",
+              "arxiv_id": null,
+              "doi": "10.5220/0013220600003890"
+            },
+            {
+              "title": "Semi-Supervised Text-Attributed Graph Distillation",
+              "arxiv_id": "2607.20477",
+              "doi": null
+            },
+            {
+              "title": "Large Language Models Meet Graph Neural Networks: A Perspective of Graph Mining",
+              "arxiv_id": "2412.19211",
+              "doi": null
+            },
+            {
+              "title": "Why Does Graph Learning Fail to Fully Benefit from a Text Teacher?",
+              "arxiv_id": "2608.25741",
+              "doi": null
+            },
+            {
+              "title": "Do We Need Large Models for Argument Classification? Revisiting the Role of Model Compression",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/2026.argmining-1.8"
+            },
+            {
+              "title": "Do We Need Distinct Representations for Every Speech Token? Unveiling and Exploiting Redundancy in Large Speech Language Models",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/2026.findings-acl.742"
+            },
+            {
+              "title": "Do Generative Large Language Models Close the Language Gap in Multilingual Discourse Classification? An Evaluation Across Three European Languages",
+              "arxiv_id": null,
+              "doi": "10.5117/ccr2026.1.11.henr"
+            },
+            {
+              "title": "LLMRec: Large Language Models with Graph Augmentation for Recommendation",
+              "arxiv_id": "2311.00423",
+              "doi": "10.1145/3616855.3635853"
+            },
+            {
+              "title": "Rethinking Message Passing as Retrieval for Text-Attributed Graph Learning",
+              "arxiv_id": "2608.26732",
+              "doi": null
+            },
+            {
+              "title": "Making Large Vision–Language Models Better Few-Shot Learners",
+              "arxiv_id": null,
+              "doi": "10.1109/tip.2026.3732763"
+            },
+            {
+              "title": "Can Language Models Solve Graph Problems in Natural Language?",
+              "arxiv_id": "2305.10037",
+              "doi": "10.48550/arxiv.2305.10037"
+            },
+            {
+              "title": "Rethinking Efficient Graph Coarsening via a Non-Selfishness Principle",
+              "arxiv_id": "2605.13021",
+              "doi": "10.48550/arxiv.2605.13021"
+            },
+            {
+              "title": "In-context learning enables multimodal large language models to classify cancer pathology images",
+              "arxiv_id": "2403.07407",
+              "doi": null
+            },
+            {
+              "title": "“It’s Not Only Attention We Need”: Systematic Review of Large Language Models in Mental Health Care (Preprint)",
+              "arxiv_id": null,
+              "doi": "10.2196/preprints.78410"
+            },
+            {
+              "title": "Exploring Large Language Models Survey papers using Random Forest Classification with Over Sampling the Minority classes",
+              "arxiv_id": null,
+              "doi": "10.31224/4061"
+            },
+            {
+              "title": "Label-free Node Classification on Graphs with Large Language Models (LLMS)",
+              "arxiv_id": "2310.04668",
+              "doi": "10.48550/arxiv.2310.04668"
+            }
+          ],
+          "coverage_notes": [
+            "citation expansion had 3 error(s)",
+            "79 of 245 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "failed": [],
+          "bucket_sizes": {
+            "negative_result": 29,
+            "comparison": 86,
+            "reproducibility": 11,
+            "benchmark_critique": 6,
+            "stated_limitation": 37,
+            "survey": 12,
+            "method_proposal": 71
+          }
+        },
+        "full": {
+          "recall_any": 0.667,
+          "recall_at_20": 0.333,
+          "median_rank_of_found": 12.5,
+          "n_retrieved": 300,
+          "hits": [
+            {
+              "title": "GLBench: A Comprehensive Benchmark for Graph with Large Language Models",
+              "rank": 24,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            }
+          ]
+        }
+      },
+      "missed_by_all": [
+        "When Do LLMs Help With Node Classification? A Comprehensive Analysis"
+      ]
+    },
+    {
+      "id": "tag-robustness",
+      "split": "heldout",
+      "n_targets": 4,
+      "configs": {
+        "baseline": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "median_rank_of_found": 4.5,
+          "n_retrieved": 63,
+          "hits": [
+            {
+              "title": "Intruding with Words: Towards Understanding Graph Injection Attacks at the Text Level",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses",
+              "rank": 6,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Are LLM-Enhanced Graph Neural Networks Robust against Poisoning Attacks?",
+              "rank": 12,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 63
+        },
+        "challenge": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "median_rank_of_found": 5.5,
+          "n_retrieved": 157,
+          "hits": [
+            {
+              "title": "Intruding with Words: Towards Understanding Graph Injection Attacks at the Text Level",
+              "rank": 7,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses",
+              "rank": 4,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+              "rank": 2,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Are LLM-Enhanced Graph Neural Networks Robust against Poisoning Attacks?",
+              "rank": 17,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 157,
+          "expansion_errors": 0
+        },
+        "landscape": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "median_rank_of_found": 3.5,
+          "n_retrieved": 152,
+          "hits": [
+            {
+              "title": "Intruding with Words: Towards Understanding Graph Injection Attacks at the Text Level",
+              "rank": 2,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": true
+            },
+            {
+              "title": "Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses",
+              "rank": 4,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": true
+            },
+            {
+              "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": true
+            },
+            {
+              "title": "Are LLM-Enhanced Graph Neural Networks Robust against Poisoning Attacks?",
+              "rank": 6,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": false
+            }
+          ],
+          "n": 152,
+          "must_read": [
+            {
+              "title": "SASA: Bridging the semantic gap for node classification in text-attributed graphs using self-adversarial alignment",
+              "arxiv_id": null,
+              "doi": "10.1016/j.patcog.2026.113942"
+            },
+            {
+              "title": "Intruding with Words: Towards Understanding Graph Injection Attacks at the Text Level",
+              "arxiv_id": "2405.16405",
+              "doi": "10.48550/arxiv.2405.16405"
+            },
+            {
+              "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+              "arxiv_id": "2510.12233",
+              "doi": null
+            },
+            {
+              "title": "SAINT: Structure-Aware Interpolated Text Augmentation for Imbalanced Node Classification on Text-Attributed Graphs",
+              "arxiv_id": null,
+              "doi": "10.1109/icaace69793.2026.11509214"
+            },
+            {
+              "title": "FinSCRA: An LLM-Powered Multi-Chain Reasoning Framework for Interpretable Node Classification on Text-Attributed Graphs",
+              "arxiv_id": null,
+              "doi": "10.22541/au.177204304.42015977/v1"
+            },
+            {
+              "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+              "arxiv_id": "2305.19523",
+              "doi": null
+            },
+            {
+              "title": "Disentangled Representation Learning with Large Language Models for Text-Attributed Graphs",
+              "arxiv_id": "2310.18152",
+              "doi": "10.48550/arxiv.2310.18152"
+            },
+            {
+              "title": "Both Topology and Text Matter: Revisiting LLM-guided Out-of-Distribution Detection on Text-attributed Graphs",
+              "arxiv_id": null,
+              "doi": "10.1145/3770855.3817900"
+            },
+            {
+              "title": "Revisiting Edge Perturbation for Graph Neural Network in Graph Data Augmentation and Attack_supp1-3565306.pdf",
+              "arxiv_id": null,
+              "doi": "10.1109/tkde.2025.3565306/mm1"
+            },
+            {
+              "title": "Beyond node-centric graph learning: advancing edge-aware GNNs for enhanced representation learning",
+              "arxiv_id": null,
+              "doi": "10.47328/ufvbbt.2026.209"
+            },
+            {
+              "title": "A Troublemaker with Contagious Jailbreak Makes Chaos in Honest Towns",
+              "arxiv_id": "2410.16155",
+              "doi": null
+            },
+            {
+              "title": "Resilience of Pruned Neural Network Against Poisoning Attack",
+              "arxiv_id": null,
+              "doi": "10.1109/malware.2018.8659362"
+            },
+            {
+              "title": "GRAPHTEXTACK: A Realistic Black-Box Node Injection Attack on LLM-Enhanced GNNs",
+              "arxiv_id": "2511.12423",
+              "doi": null
+            },
+            {
+              "title": "Exploiting Text Semantics for Few and Zero Shot Node Classification on Text-attributed Graph",
+              "arxiv_id": null,
+              "doi": "10.24963/ijcai.2025/385"
+            },
+            {
+              "title": "A Survey of Unifying Large Language Models with Graph Learning: Concepts, Methods, and Recent Advancements for Text-attributed Graph",
+              "arxiv_id": null,
+              "doi": "10.36227/techrxiv.177272839.92930143/v1"
+            },
+            {
+              "title": "Graph Neural Networks for Text Classification: A Survey",
+              "arxiv_id": null,
+              "doi": "10.21203/rs.3.rs-3733479/v1"
+            },
+            {
+              "title": "Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses",
+              "arxiv_id": "2510.17185",
+              "doi": null
+            }
+          ],
+          "coverage_notes": [
+            "no seed papers: citing works of the benchmark/method paper not searched",
+            "59 of 152 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "failed": [],
+          "bucket_sizes": {
+            "negative_result": 16,
+            "comparison": 52,
+            "reproducibility": 12,
+            "benchmark_critique": 1,
+            "stated_limitation": 15,
+            "survey": 7,
+            "method_proposal": 40
+          }
+        },
+        "full": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "median_rank_of_found": 5.0,
+          "n_retrieved": 206,
+          "hits": [
+            {
+              "title": "Intruding with Words: Towards Understanding Graph Injection Attacks at the Text Level",
+              "rank": 4,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses",
+              "rank": 6,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Are LLM-Enhanced Graph Neural Networks Robust against Poisoning Attacks?",
+              "rank": 10,
+              "found": true,
+              "in_top_k": true
+            }
+          ]
+        }
+      },
+      "missed_by_all": []
+    },
+    {
+      "id": "tape-small-llms",
+      "split": "heldout",
+      "n_targets": 1,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 54,
+          "hits": [
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 54
+        },
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 154,
+          "hits": [
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 154,
+          "expansion_errors": 3
+        },
+        "landscape": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 155,
+          "hits": [
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            }
+          ],
+          "n": 155,
+          "must_read": [
+            {
+              "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+              "arxiv_id": "2305.19523",
+              "doi": null
+            },
+            {
+              "title": "Graph Convolutional Networks for Few-Shot Node Classification Using LLM-Derived Entity and Explanation Features",
+              "arxiv_id": null,
+              "doi": "10.1109/cisat71030.2026.11682228"
+            },
+            {
+              "title": "FinSCRA: An LLM-Powered Multi-Chain Reasoning Framework for Interpretable Node Classification on Text-Attributed Graphs",
+              "arxiv_id": null,
+              "doi": "10.22541/au.177204304.42015977/v1"
+            },
+            {
+              "title": "Who Should Teach? Confidence-Aware Dual-Teacher Learning for Few-Shot Node Classification on Text-Attributed Graphs",
+              "arxiv_id": "2608.22127",
+              "doi": null
+            },
+            {
+              "title": "Attributed Source in LLM Advice Taking: A Preregistered Judge–Advisor Study Across Five Models",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.7424179"
+            },
+            {
+              "title": "Both Topology and Text Matter: Revisiting LLM-guided Out-of-Distribution Detection on Text-attributed Graphs",
+              "arxiv_id": null,
+              "doi": "10.1145/3770855.3817900"
+            },
+            {
+              "title": "Pareto-optimal formulations for cost versus colorimetric accuracy trade-offs in printer color management",
+              "arxiv_id": null,
+              "doi": "10.1145/508357.508361"
+            },
+            {
+              "title": "Mystical and affective features of naturalistic psychedelic experiences: A comparison of dictionary-based and LLM-based text analysis methods",
+              "arxiv_id": null,
+              "doi": "10.21203/rs.3.rs-10705756/v1"
+            },
+            {
+              "title": "Model Diversity Over Model Size: Unanimous LLM Ensembles Correct Over-Classification in Survey Coding",
+              "arxiv_id": null,
+              "doi": "10.31235/osf.io/er6mz_v1"
+            },
+            {
+              "title": "Rethinking Message Passing as Retrieval for Text-Attributed Graph Learning",
+              "arxiv_id": "2608.26732",
+              "doi": null
+            },
+            {
+              "title": "Can Language Models Solve Graph Problems in Natural Language?",
+              "arxiv_id": "2305.10037",
+              "doi": "10.48550/arxiv.2305.10037"
+            },
+            {
+              "title": "Rethinking Efficient Graph Coarsening via a Non-Selfishness Principle",
+              "arxiv_id": "2605.13021",
+              "doi": "10.48550/arxiv.2605.13021"
+            },
+            {
+              "title": "Making Large Vision–Language Models Better Few-Shot Learners",
+              "arxiv_id": null,
+              "doi": "10.1109/tip.2026.3732763"
+            },
+            {
+              "title": "STAGE: LLM-Driven Semantic and Topological Augmented Graph Embedding for Text-Attributed Graphs",
+              "arxiv_id": null,
+              "doi": "10.3390/math14091568"
+            },
+            {
+              "title": "Compressing LLM Knowledge into Graph Representations for Text-attributed Graphs Learning",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/2026.acl-long.1398"
+            },
+            {
+              "title": "IMoKGNN: Dual-Stream Fusion of Generic and Task-Specific Language Model Features for Graph Neural Networks",
+              "arxiv_id": null,
+              "doi": "10.1145/3848635"
+            },
+            {
+              "title": "A Survey of Unifying Large Language Models with Graph Learning: Concepts, Methods, and Recent Advancements for Text-attributed Graph",
+              "arxiv_id": null,
+              "doi": "10.36227/techrxiv.177272839.92930143/v1"
+            }
+          ],
+          "coverage_notes": [
+            "citation expansion had 7 error(s)",
+            "57 of 155 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "failed": [],
+          "bucket_sizes": {
+            "negative_result": 15,
+            "comparison": 49,
+            "reproducibility": 7,
+            "benchmark_critique": 4,
+            "stated_limitation": 17,
+            "survey": 7,
+            "method_proposal": 39
+          }
+        },
+        "full": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 184,
+          "hits": [
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ]
+        }
+      },
+      "missed_by_all": [
+        "When Do LLMs Help With Node Classification? A Comprehensive Analysis"
+      ]
+    },
+    {
+      "id": "textgcn-vs-mlp",
+      "split": "heldout",
+      "n_targets": 1,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 80,
+          "hits": [
+            {
+              "title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 80
+        },
+        "challenge": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "median_rank_of_found": 2,
+          "n_retrieved": 263,
+          "hits": [
+            {
+              "title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+              "rank": 2,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 263,
+          "expansion_errors": 1
+        },
+        "landscape": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "median_rank_of_found": 6,
+          "n_retrieved": 229,
+          "hits": [
+            {
+              "title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+              "rank": 6,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": false
+            }
+          ],
+          "n": 229,
+          "must_read": [
+            {
+              "title": "Privacy-Preserving Graph Convolutional Networks for Text Classification",
+              "arxiv_id": "2102.09604",
+              "doi": "10.63317/2yjj5b8j5mzn"
+            },
+            {
+              "title": "Hierarchical Heterogeneous Graph Representation Learning for Short Text Classification",
+              "arxiv_id": "2111.00180",
+              "doi": "10.18653/v1/2021.emnlp-main.247"
+            },
+            {
+              "title": "Graph Neural Networks for Text Classification: A Survey",
+              "arxiv_id": null,
+              "doi": "10.21203/rs.3.rs-3733479/v1"
+            },
+            {
+              "title": "Exploiting Graph Convolutional Networks for Multi-Label Text Classification: A Novel Link Prediction Framework with Heterogeneous Label-Document Graphs",
+              "arxiv_id": null,
+              "doi": "10.21203/rs.3.rs-4586194/v1"
+            },
+            {
+              "title": "Connecting the Dots: What Graph-Based Text Representations Work Best for Text Classification using Graph Neural Networks?",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/2023.findings-emnlp.600"
+            },
+            {
+              "title": "Reassessing Evaluation Practices in Visual Question Answering: A Case Study on Out-of-Distribution Generalization",
+              "arxiv_id": "2205.12191",
+              "doi": null
+            },
+            {
+              "title": "DP-BART for Privatized Text Rewriting under Local Differential Privacy",
+              "arxiv_id": "2302.07636",
+              "doi": "10.18653/v1/2023.findings-acl.874"
+            },
+            {
+              "title": "Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning",
+              "arxiv_id": "1801.07606",
+              "doi": "10.1609/aaai.v32i1.11604"
+            },
+            {
+              "title": "Revisiting Graph Learning Benchmarks: When is the Graph Actually Necessary?",
+              "arxiv_id": null,
+              "doi": "10.1007/s11063-026-11833-6"
+            },
+            {
+              "title": "RAFE-XAI: A Retrieval-Augmented Feature Engineering and Explainable NLP Framework for Urban Infrastructure Risk Classification",
+              "arxiv_id": null,
+              "doi": "10.3390/math14142655"
+            },
+            {
+              "title": "Comparative Study of Inductive Graph Neural Network Models for Text Classification",
+              "arxiv_id": null,
+              "doi": "10.1109/assic55218.2022.10088315"
+            },
+            {
+              "title": "Introducing Three New Benchmark Datasets for Hierarchical Text Classification",
+              "arxiv_id": "2411.19119",
+              "doi": null
+            },
+            {
+              "title": "Text Classification Using Graph Convolutional Networks: A Comprehensive Survey",
+              "arxiv_id": "2410.09399",
+              "doi": "10.1145/3714456"
+            },
+            {
+              "title": "Word Order is Considerable: Contextual Position-aware Graph Neural Network for Text Classification",
+              "arxiv_id": null,
+              "doi": "10.1109/ijcnn55064.2022.9891895"
+            }
+          ],
+          "coverage_notes": [
+            "citation expansion had 6 error(s)",
+            "87 of 229 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "failed": [],
+          "bucket_sizes": {
+            "negative_result": 27,
+            "comparison": 87,
+            "reproducibility": 9,
+            "benchmark_critique": 1,
+            "stated_limitation": 18,
+            "survey": 13,
+            "method_proposal": 63
+          }
+        },
+        "full": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "median_rank_of_found": 3,
+          "n_retrieved": 347,
+          "hits": [
+            {
+              "title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true
+            }
+          ]
+        }
+      },
+      "missed_by_all": []
+    }
+  ],
+  "sources": [
+    "arxiv",
+    "crossref"
+  ],
+  "configs": [
+    "baseline",
+    "challenge",
+    "landscape",
+    "full"
+  ]
+}

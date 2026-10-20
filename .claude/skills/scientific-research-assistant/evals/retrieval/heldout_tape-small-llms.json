@@ -1,0 +1,31 @@
+{
+  "id": "tape-small-llms",
+  "split": "heldout",
+  "claim": "Replacing GPT-3.5 with small open-weight LLMs (1-8B, quantized) in the TAPE explanations-as-features pipeline for text-attributed graph node classification, measuring how much of the accuracy gain survives per unit of compute",
+  "queries": [
+    "TAPE explanations features open-source LLM Llama text-attributed graph",
+    "small language model LLM enhancer node classification cost accuracy trade-off",
+    "LLM-generated explanations node features smaller models text-attributed graphs",
+    "efficient LLM augmentation text-attributed graph without GPT",
+    "does LLM size matter enhancing node features graph neural network"
+  ],
+  "anchor": "text-attributed graph",
+  "design": [
+    "open-weight LLM instead of GPT",
+    "LLM explanations as node features",
+    "compute cost versus accuracy"
+  ],
+  "seeds": [
+    "2305.19523"
+  ],
+  "known_relevant": [
+    {
+      "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+      "arxiv_id": "2502.00829",
+      "doi": null,
+      "year": 2025,
+      "why": "runs TAPE with Mistral-7B and GPT-4o"
+    }
+  ],
+  "provenance": "Claim and queries copied from the challenge run of the first opportunity report (work/challenge_tape.json), written before the known papers were found. Design elements, anchor and seeds were added later by an author who knew the answers; they are generic but not blind."
+}

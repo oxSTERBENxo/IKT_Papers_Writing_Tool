@@ -1,0 +1,44 @@
+{
+  "paper": {
+    "title": "Are LLM-Enhanced Graph Neural Networks Robust Against Poisoning Attacks?",
+    "authors": [
+      "Yuhan Ma",
+      "Jie Wang",
+      "Zheng Yan"
+    ],
+    "year": 2026,
+    "date": "2026-05-18",
+    "venue": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "doi": "10.1109/sp63933.2026.00212",
+    "arxiv_id": "2603.26105",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": "fc2965473f540d145e6ed1e74ef88f40202d8567",
+    "url": "https://www.semanticscholar.org/paper/fc2965473f540d145e6ed1e74ef88f40202d8567",
+    "pdf_url": "https://arxiv.org/pdf/2603.26105v1",
+    "abstract": "Large Language Models (LLMs) have advanced Graph Neural Networks (GNNs) by enriching node representations with semantic features, giving rise to LLM-enhanced GNNs that achieve notable performance gains. However, the robustness of these models against poisoning attacks, which manipulate both graph structures and textual attributes during training, remains unexplored. To bridge this gap, we propose a robustness assessment framework that systematically evaluates LLM-enhanced GNNs under poisoning attacks. Our framework enables comprehensive evaluation across multiple dimensions. Specifically, we assess 24 victim models by combining eight LLM- or Language Model (LM)-based feature enhancers with three representative GNN backbones. To ensure diversity in attack coverage, we incorporate six structural poisoning attacks (both targeted and non-targeted) and three textual poisoning attacks operating at the character, word, and sentence levels. Furthermore, we employ four real-world datasets, including one released after the emergence of LLMs, to avoid potential ground truth leakage during LLM pretraining, thereby ensuring fair evaluation. Extensive experiments show that LLM-enhanced GNNs exhibit significantly higher accuracy and lower Relative Drop in Accuracy (RDA) than a shallow embedding-based baseline across various attack settings. Our in-depth analysis identifies key factors that contribute to this robustness, such as the effective encoding of structural and label information in node representations. Based on these insights, we outline future research directions from both offensive and defensive perspectives, and propose a new combined attack along with a graph purification defense. To support future research, we release the source code of our framework at~\\url{https://github.com/CyberAlSec/LLMEGNNRP}.",
+    "citations": 4,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "abstract_source": "arxiv",
+      "arxiv_comment": "To appear at 2026 IEEE Symposium on Security and Privacy (SP)",
+      "arxiv_category": "cs.LG"
+    }
+  },
+  "notes": [
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

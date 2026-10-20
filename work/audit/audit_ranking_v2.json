@@ -1,0 +1,476 @@
+{
+  "constraints": {
+    "time_budget_weeks": 8,
+    "gpu_vram_gb": 8,
+    "gpu_hours_budget": 60,
+    "storage_gb": 50
+  },
+  "weights": {
+    "scientific_relevance": 12,
+    "novelty_or_replication_value": 12,
+    "paper_and_code_availability": 10,
+    "dataset_accessibility": 12,
+    "compute_fit": 12,
+    "implementation_simplicity": 10,
+    "time_fit": 10,
+    "reproducibility": 8,
+    "evaluation_clarity": 7,
+    "low_failure_risk": 7
+  },
+  "method": "Each criterion is scored 0-5 with evidence. score_percent is the weighted share earned on scored criteria only; score_range shows the total if unscored criteria were 0 or 5. Any blocker removes a candidate from the ranking no matter how high its other scores are. Novelty is capped at 2 unless the closest prior work was read in full, and at 1 when that work already ran the experiment.",
+  "ranking": [
+    {
+      "id": "B",
+      "title": "Revised: recurring users as a confound of per-graph UPFD results",
+      "mode": "extension",
+      "status": "viable",
+      "blockers": [],
+      "score_percent": 70.6,
+      "score_range": [
+        70.6,
+        70.6
+      ],
+      "scored_weight_percent": 100.0,
+      "verified_weight_percent": 54.0,
+      "unscored_criteria": [],
+      "missing_information": [
+        "novelty_or_replication_value: Three UPFD chapters unread",
+        "dataset_accessibility: Feature files not yet checked; data licence not stated"
+      ],
+      "caps_applied": [],
+      "estimates": {
+        "weeks": 5,
+        "min_vram_gb": 2,
+        "gpu_hours": 10,
+        "storage_gb": 3
+      },
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 9.6,
+          "evidence": [
+            "UPFD is the standard PyG fake-news benchmark; the diagnostic suggests published comparisons may misattribute performance [@karn2025structure; @tuan2026review]"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": 2,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": 4.8,
+          "evidence": [
+            "Shared-user signal already published [@jeong2022hgfnd]; its role as an evaluation confound not found in six full texts; three chapters unread"
+          ],
+          "evidence_level": "estimate",
+          "missing": [
+            "Three UPFD chapters unread"
+          ]
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 8.0,
+          "evidence": [
+            "Same code and loader as A; overlap script written in this audit"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": 7.2,
+          "evidence": [
+            "Mappings and labels downloaded and parsed (under 60 MB)"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "Feature files not yet checked; data licence not stated"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": 5,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": 12.0,
+          "evidence": [
+            "Same CPU-scale models as A"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": 8.0,
+          "evidence": [
+            "Overlap measurement already scripted; masking is a data transform on PyG graphs"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": 8.0,
+          "evidence": [
+            "About 6 weeks including the one-week go/no-go checks"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": 2,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": 3.2,
+          "evidence": [
+            "Diagnostic is scripted and deterministic; upstream training code has the issues listed for A"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": 3,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": 4.2,
+          "evidence": [
+            "Official split files read; but only 221 PolitiFact test graphs"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": 4,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": 5.6,
+          "evidence": [
+            "Descriptive results already in hand; model runs add to them"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "id": "C",
+      "title": "Fallback: replication of Karn and Jensen with held-out test",
+      "mode": "replication",
+      "status": "viable",
+      "blockers": [],
+      "score_percent": 62.6,
+      "score_range": [
+        62.6,
+        62.6
+      ],
+      "scored_weight_percent": 100.0,
+      "verified_weight_percent": 61.0,
+      "unscored_criteria": [],
+      "missing_information": [
+        "dataset_accessibility: Data licence not stated"
+      ],
+      "caps_applied": [],
+      "estimates": {
+        "weeks": 5,
+        "min_vram_gb": 2,
+        "gpu_hours": 5,
+        "storage_gb": 3
+      },
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 7.2,
+          "evidence": [
+            "Most recent direct evidence on the question [@karn2025structure]"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": 2,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": 4.8,
+          "evidence": [
+            "Unreviewed preprint with inconsistent numbers; replication value moderate, novelty low"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 2,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 4.0,
+          "evidence": [
+            "Paper open on arXiv; no code released"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": 7.2,
+          "evidence": [
+            "PyG loader"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "Data licence not stated"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": 5,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": 12.0,
+          "evidence": [
+            "CPU-scale"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": 6.0,
+          "evidence": [
+            "Reimplement five GNNs and perturbations from the description"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": 5,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": 10.0,
+          "evidence": [
+            "About 5 weeks"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": 1,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": 1.6,
+          "evidence": [
+            "No code, seeds or hyperparameters beyond batch size and weight decay"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": 3,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": 4.2,
+          "evidence": [
+            "Published table with CIs to compare against, but it conflicts with the text"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": 4,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": 5.6,
+          "evidence": [
+            "Confirming or failing to confirm is reportable"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "id": "A",
+      "title": "As proposed: graph vs no-graph re-evaluation (original O1)",
+      "mode": "replication",
+      "status": "viable",
+      "blockers": [],
+      "score_percent": 62.0,
+      "score_range": [
+        62.0,
+        62.0
+      ],
+      "scored_weight_percent": 100.0,
+      "verified_weight_percent": 71.0,
+      "unscored_criteria": [],
+      "missing_information": [
+        "dataset_accessibility: Data licence not stated"
+      ],
+      "caps_applied": [],
+      "estimates": {
+        "weeks": 4,
+        "min_vram_gb": 2,
+        "gpu_hours": 5,
+        "storage_gb": 3
+      },
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 7.2,
+          "evidence": [
+            "Benchmark validity question raised by [@karn2025structure; @tuan2026review]"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": 1,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": 2.4,
+          "evidence": [
+            "Answered by [@dou2021upfd] (-EXO ablation, news-only baselines), [@karn2025structure] (MLP vs 5 GNNs with CIs) and [@kim2025dawn]"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 8.0,
+          "evidence": [
+            "github.com/safe-graph/GNN-FakeNews Apache-2.0; PyG loader and example"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": 7.2,
+          "evidence": [
+            "PyG loader, docs HTTP 200"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "Data licence not stated"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": 5,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": 12.0,
+          "evidence": [
+            "Graphs of 58-131 nodes on average; one-layer GNNs"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": 8.0,
+          "evidence": [
+            "PyG example script exists"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": 5,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": 10.0,
+          "evidence": [
+            "About 4 weeks"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": 1,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": 1.6,
+          "evidence": [
+            "Official script ignores fixed split files, has no validation-based selection, and differs from the paper on pooling and weight decay"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": 2,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": 2.8,
+          "evidence": [
+            "Metrics standard, but published numbers come from differing protocols and a batch-averaged F1"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": 2,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": 2.8,
+          "evidence": [
+            "The likely outcome, structure adds little, is already published"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      ],
+      "rank": 3
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+hybrid configuration: embedding backend model2vec:minishlab/potion-retrieval-32M
+== absa-beekeeping-hive-graphs (control)
+  [arxiv/keyword] 'beekeeping forum aspect sentiment dependency graph': 0 results
+  [crossref/keyword] 'beekeeping forum aspect sentiment dependency graph': 10 results
+  [arxiv/keyword] 'hive sensor graph fused with text sentiment': 0 results
+  [crossref/keyword] 'hive sensor graph fused with text sentiment': 10 results
+  [arxiv/keyword] 'apiculture forum opinion mining graph convolution': 0 results
+  [crossref/keyword] 'apiculture forum opinion mining graph convolution': 10 results

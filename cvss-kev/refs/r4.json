@@ -1,0 +1,60 @@
+{
+  "paper": {
+    "title": "Analysis of Vulnerability Severity and Exploit Probability Scoring Frameworks: CVSS and EPSS",
+    "authors": [
+      "Ertugrul Hakan Tan",
+      "Ihsan Emre Unal",
+      "Sharie Rhea",
+      "Unal Tatar"
+    ],
+    "year": 2025,
+    "date": "2025-05-02",
+    "venue": "Systems and Information Engineering Design Symposium",
+    "doi": "10.1109/sieds65500.2025.11021216",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W4411086844",
+    "s2_id": "5acab09bbbaed661bbb5a31d4b15ae2255f5eeac",
+    "url": "https://doi.org/10.1109/sieds65500.2025.11021216",
+    "pdf_url": null,
+    "abstract": "Effective cybersecurity risk management requires the systematic identification, quantification, and prioritization of vulnerabilities. Two widely used frameworks for assessing vulnerabilities are the Common Vulnerability Scoring System (CVSS) and the Exploit Prediction Scoring System (EPSS). CVSS quantifies the severity of vulnerabilities, while EPSS estimates the likelihood of their exploitation. This study analyzes the relationship between CVSS and EPSS scores, using datasets from both systems to investigate how these metrics correlate and evolve over time. Our findings reveal that there is no clear correlation between CVSS and EPSS scores, suggesting that severity does not predict exploitability. Additionally, EPSS scores are more likely to increase than decrease, with ‘medium’ CVSS scores showing the highest likelihood of EPSS score increases. The results provide valuable insights for cybersecurity professionals seeking to better prioritize mitigation efforts. Future work will explore the factors influencing EPSS score changes and involve the development of a dynamic tool for comparing CVSS, EPSS, and related vulnerability data.",
+    "citations": 7,
+    "is_oa": false,
+    "is_retracted": false,
+    "type": "conference-paper",
+    "sources": [
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W1983758807",
+        "W1985324839",
+        "W2891355906",
+        "W2906845177",
+        "W3136969503",
+        "W3185838923",
+        "W3185992310",
+        "W3210360585",
+        "W4285325992",
+        "W4402264535"
+      ],
+      "related_works": [
+        "W2906845177",
+        "W4200107511",
+        "W1883246888",
+        "W2891427086",
+        "W1968625315",
+        "W2370114625",
+        "W1756374135",
+        "W2062873522",
+        "W2947584067",
+        "W2280562859"
+      ],
+      "abstract_source": "semantic_scholar"
+    }
+  },
+  "notes": []
+}

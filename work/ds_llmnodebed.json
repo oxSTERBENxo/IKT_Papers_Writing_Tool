@@ -1,0 +1,48 @@
+[
+  {
+    "source": "huggingface",
+    "id": "xxwu/LLMNodeBed",
+    "url": "https://huggingface.co/datasets/xxwu/LLMNodeBed",
+    "name": "xxwu/LLMNodeBed",
+    "license": "mit",
+    "gated": false,
+    "private": false,
+    "disabled": false,
+    "downloads": 397,
+    "likes": 2,
+    "last_modified": "2025-07-01T15:28:12.000Z",
+    "tasks": [
+      "text-classification"
+    ],
+    "languages": [
+      "en"
+    ],
+    "modalities": [
+      "text"
+    ],
+    "formats": [
+      "json"
+    ],
+    "size_category": "100K<n<1M",
+    "arxiv_ids": [],
+    "configs": [],
+    "ref": "xxwu/LLMNodeBed",
+    "exists": true,
+    "missing": [
+      "download size"
+    ],
+    "blockers": [],
+    "notes": [],
+    "num_rows": 857129,
+    "download_bytes": null,
+    "in_memory_bytes": 643457108,
+    "splits": [
+      {
+        "config": "default",
+        "split": "train",
+        "num_rows": 857129
+      }
+    ],
+    "storage_estimate": null
+  }
+]

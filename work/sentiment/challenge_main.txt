@@ -1,0 +1,77 @@
+Claim: Test whether dependency-tree graph convolutional networks improve aspect-based sentiment classification when the pretrained encoder is held fixed
+Queries tried: 5 | papers examined: 372 | high wording overlap: 0 {} | title-only records: 91
+Sources ok: openalex, arxiv, crossref, huggingface | failed: semantic_scholar
+Query diversity: 30 distinct terms, mean pairwise overlap 0.068
+Citation expansion: 97 paper(s) found only via citations | seeds: Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa | 2 expansion error(s)
+Design elements checked: 5 | papers matching 2+ elements: 0
+
+SIGNAL: no_close_match_in_this_search
+Highest novelty confidence this search can support: low
+  ceiling limited: sources failed: semantic_scholar
+  ceiling limited: citation expansion partly failed (2 call(s): not_found, rate_limited)
+No closely worded paper was retrieved among related work. This supports only an 'unverified novelty hypothesis'; coverage was degraded (semantic_scholar failed).
+CAVEAT: Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.
+
+Closest retrieved work (read these before keeping the idea):
+  1. The Potential Application of Large Language Models in Pharmaceutical Supply Chain Management
+     Aguero et al. 2024 | The Journal of Pediatric Pharmacology a… | cited 17 | doi:10.5863/1551-6776-29.2.200 OA | via openalex | overlap 0.483 tfidf 0.039 | design: frozen pretrained encoder
+  2. Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification
+     Yuan et al. 2025 | IEEE Transactions on Computational Soci… | cited 3 | doi:10.1109/tcss.2024.3514901 | via crossref,openalex | overlap 0.568 tfidf 0.198
+  3. Evaluating fine-tuned, embedding-based, and zero-shot models for aspect-based sentiment analysis in South Sla…
+     Chatterjee et al. 2026 | Frontiers in Artificial Intelligence | cited 0 | doi:10.3389/frai.2026.1844418 OA | via semantic_scholar | overlap 0.431 tfidf 0.072 | design: frozen pretrained encoder
+  4. Dependency Graph Enhanced Dual-transformer Structure for Aspect-based Sentiment Classification
+     Tang et al. 2020 | Annual Meeting of the Association for C… | cited 397 | doi:10.18653/v1/2020.acl-main.588 OA | via openalex,semantic_scholar | overlap 0.438 tfidf 0.178 | via citations only
+  5. Syntactic and Semantic Dependency Graph Convolutional Network for Aspect-Based Sentiment Analysis
+     Xiong et al. 2024 | 2024 6th International Conference on Fr… | cited 0 | doi:10.1109/icftic64248.2024.10913075 | via crossref | overlap 0.251 tfidf 0.348 | NO ABSTRACT (title match only)
+  6. Peer Review #3 of "Attention enhanced capsule network for text classification by encoding syntactic dependenc…
+     ? 2022 | venue n/a | cited 0 | doi:10.7287/peerj-cs.831v0.2/reviews/3 OA | via crossref,openalex | overlap 0.385 tfidf 0.203 | survey-like
+  7. Peer Review #3 of "Attention enhanced capsule network for text classification by encoding syntactic dependenc…
+     ? 2022 | venue n/a | cited 0 | doi:10.7287/peerj-cs.831v0.1/reviews/3 OA | via crossref,openalex | overlap 0.385 tfidf 0.203 | survey-like
+  8. Peer Review #1 of "Attention enhanced capsule network for text classification by encoding syntactic dependenc…
+     ? 2022 | venue n/a | cited 0 | doi:10.7287/peerj-cs.831v0.1/reviews/1 OA | via crossref,openalex | overlap 0.385 tfidf 0.203 | survey-like
+  9. Dependency relationship-enhanced graph convolutional network for aspect-based sentiment analysis
+     Tian et al. 2025 | Neural Computing and Applications | cited 5 | doi:10.1007/s00521-025-11508-8 | via crossref | overlap 0.251 tfidf 0.32 | NO ABSTRACT (title match only)
+ 10. Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks
+     Zhang et al. 2019 | Conference on Empirical Methods in Natu… | cited 777 | arXiv:1909.03477 OA | via openalex,semantic_scholar | overlap 0.352 tfidf 0.183 | via citations only
+ 11. Improving Aspect-based Sentiment Analysis with Gated Graph Convolutional Networks and Syntax-based Regulation
+     Veyseh et al. 2020 | arXiv | cited ? | arXiv:2010.13389 OA | via huggingface | overlap 0.369 tfidf 0.158
+ 12. Aspect-Level Sentiment Analysis Via Convolution over Dependency Tree
+     Sun et al. 2019 | Conference on Empirical Methods in Natu… | cited 472 | doi:10.18653/v1/d19-1569 OA | via openalex,semantic_scholar | overlap 0.352 tfidf 0.171 | via citations only
+ 13. Peer Review #2 of "Attention enhanced capsule network for text classification by encoding syntactic dependenc…
+     ? 2022 | venue n/a | cited 0 | doi:10.7287/peerj-cs.831v0.1/reviews/2 | via crossref | overlap 0.298 tfidf 0.219 | survey-like | NO ABSTRACT (title match only)
+ 14. Span-based dependency-enhanced graph convolutional network for aspect sentiment triplet extraction
+     Jin et al. 2024 | Neurocomputing | cited 27 | doi:10.1016/j.neucom.2023.126966 | via crossref | overlap 0.251 tfidf 0.262 | NO ABSTRACT (title match only)
+ 15. Syntactic Edge-Enhanced Graph Convolutional Networks for Aspect-Level Sentiment Classification With Interacti…
+     Xiao et al. 2020 | IEEE Access | cited 30 | doi:10.1109/access.2020.3019277 OA | via openalex | overlap 0.352 tfidf 0.158 | via citations only
+ 16. Dual-Channel Semantic and Syntactic Dependency Graph Convolutional Network for Aspect-based Sentiment Analysis
+     Sheng et al. 2025 | 2025 International Joint Conference on … | cited 0 | doi:10.1109/ijcnn64981.2025.11228405 | via crossref | overlap 0.251 tfidf 0.248 | NO ABSTRACT (title match only)
+ 17. Long-distance sentiment dependency strengthened graph convolutional network for aspect-based sentiment analys…
+     Ding et al. 2025 | Fourth International Conference on Elec… | cited 0 | doi:10.1117/12.3068930 | via crossref | overlap 0.251 tfidf 0.247 | NO ABSTRACT (title match only)
+ 18. Modeling Structured Dependency Tree with Graph Convolutional Networks for Aspect-Level Sentiment Classificati…
+     Zhao et al. 2024 | Sensors | cited 27 | doi:10.3390/s24020418 | via crossref | overlap 0.352 tfidf 0.141
+ 19. ROAEN: Reversed dependency graph and Orthogonal-gating strategy Attention-Enhanced Network for Aspect-Level S…
+     Chen et al. 2024 | venue n/a | cited 0 | doi:10.21203/rs.3.rs-4879513/v1 | via crossref | overlap 0.352 tfidf 0.122
+ 20. Why do Random Forests Work? Understanding Tree Ensembles as Self-Regularizing Adaptive Smoothers
+     Curth et al. 2024 | arXiv | cited ? | arXiv:2402.01502 OA | via huggingface | overlap 0.351 tfidf 0.099
+
+Must read before deciding (full text where accessible):
+  1. The Potential Application of Large Language Models in Pharmaceutical Supply Chain Management (2024) | term overlap 0.483, design elements: frozen pretrained encoder
+     next: read the open-access PDF
+  2. Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification (2025) | term overlap 0.568
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  3. Evaluating fine-tuned, embedding-based, and zero-shot models for aspect-based sentiment analysis in… (2026) | term overlap 0.431, design elements: frozen pretrained encoder
+     next: read the open-access PDF
+  4. Dependency Graph Enhanced Dual-transformer Structure for Aspect-based Sentiment Classification (2020) | term overlap 0.438, found only through the citation graph
+     next: read the open-access PDF
+  5. Syntactic and Semantic Dependency Graph Convolutional Network for Aspect-Based Sentiment Analysis (2024) | term overlap 0.251, no abstract retrieved
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  6. Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks (2019) | term overlap 0.352, found only through the citation graph
+     next: fulltext --id 1909.03477
+  7. Aspect-Level Sentiment Analysis Via Convolution over Dependency Tree (2019) | term overlap 0.352, found only through the citation graph
+     next: read the open-access PDF
+  8. Syntactic Edge-Enhanced Graph Convolutional Networks for Aspect-Level Sentiment Classification With… (2020) | term overlap 0.352, found only through the citation graph
+     next: read the open-access PDF
+  9. Aspect Sentiment Triplet Extraction with Syntax-Semantics Graph Convolutional Network (2025) | term overlap 0.306, found only through the citation graph
+     next: read the open-access PDF
+
+Full JSON written to work\sentiment\challenge_main.json

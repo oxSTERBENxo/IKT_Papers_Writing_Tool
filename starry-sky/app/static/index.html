@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starry Sky</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Starry Sky</h1>
+  <p class="muted">Students ask questions anonymously during the lecture. Similar questions become one star; the more
+    students ask it, the brighter it shines.</p>
+
+  <div class="card">
+    <h2>Start a lecture</h2>
+    <label for="title" class="muted">Lecture title</label>
+    <input type="text" id="title" placeholder="e.g. Algorithms, week 5: dynamic programming">
+    <p><button id="create">Create lecture</button></p>
+    <div id="result" hidden>
+      <p>Students join at <strong id="student-url"></strong> (code <span class="code" id="code"></span>)</p>
+      <p><strong>Your instructor link</strong> (keep it private, it controls the lecture):<br>
+        <a id="instructor-url" href="#"></a></p>
+    </div>
+    <p id="error" class="error"></p>
+  </div>
+
+  <div class="card">
+    <h2>Join as a student</h2>
+    <div class="row">
+      <input type="text" id="join-code" placeholder="Lecture code" style="max-width: 200px; text-transform: uppercase">
+      <button class="secondary" id="join">Join</button>
+    </div>
+  </div>
+</div>
+<script>
+const $ = (id) => document.getElementById(id);
+$("create").onclick = async () => {
+  $("error").textContent = "";
+  const res = await fetch("/api/sessions", {method: "POST", headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({title: $("title").value || "Lecture"})});
+  if (!res.ok) { $("error").textContent = "Could not create the lecture."; return; }
+  const d = await res.json();
+  $("student-url").textContent = d.student_url;
+  $("code").textContent = d.code;
+  $("instructor-url").textContent = d.instructor_url;
+  $("instructor-url").href = d.instructor_url;
+  $("result").hidden = false;
+};
+$("join").onclick = () => {
+  const code = $("join-code").value.trim().toUpperCase();
+  if (code) location.href = "/s/" + encodeURIComponent(code);
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,2161 @@
+{
+  "claim": "Build a leakage-free citation graph benchmark to test whether LLM node classification on ogbn-arxiv is inflated by memorisation of papers in LLM training data",
+  "queries": [
+    "LLM node classification ogbn-arxiv data leakage",
+    "large language models graph benchmark contamination test set memorization",
+    "do LLMs really understand graph structure or memorize benchmark papers",
+    "text-attributed graph evaluation papers published after training cutoff"
+  ],
+  "design_elements": [
+    "test nodes from papers published after the LLM training cutoff",
+    "new arXiv citation dataset",
+    "compare LLM accuracy with and without neighbour information"
+  ],
+  "seeds": [
+    {
+      "seed": "2307.03393",
+      "resolved": true,
+      "title": "Exploring the Potential of Large Language Models (LLMs)in Learning on Graphs",
+      "openalex_id": null
+    }
+  ],
+  "sources_ok": [
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [
+    "openalex",
+    "semantic_scholar"
+  ],
+  "sources_status": {
+    "openalex": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "arxiv": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 2,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "crossref": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 240,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 240,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "query_diversity": {
+    "n_queries": 4,
+    "distinct_terms": 28,
+    "mean_pairwise_term_overlap": 0.066,
+    "near_paraphrases": false
+  },
+  "n_papers_examined": 349,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 13,
+  "n_without_abstract": 62,
+  "n_from_citation_expansion": 155,
+  "n_possible_same_design": 0,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "ceiling_lowered_because": [
+    "sources failed: openalex, semantic_scholar",
+    "citation expansion partly failed (1 call(s): not_found)"
+  ],
+  "interpretation": "No closely worded paper was retrieved among related work. This supports only an 'unverified novelty hypothesis'; coverage was reasonable.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "E2EG: End-to-End Node Classification Using Graph Topology and Text-based Node Attributes",
+        "authors": [
+          "Tu Anh Dinh",
+          "Jeroen den Boef",
+          "J. Cornelisse",
+          "Paul Groth"
+        ],
+        "year": 2022,
+        "date": "2022-08-09",
+        "venue": "2023 IEEE International Conference on Data Mining Workshops (ICDMW)",
+        "doi": "10.1109/icdmw60847.2023.00142",
+        "arxiv_id": "2208.04609",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "15b32a6661f4c92340ee3e78e20ae631a0e6d0c5",
+        "url": "https://www.semanticscholar.org/paper/15b32a6661f4c92340ee3e78e20ae631a0e6d0c5",
+        "pdf_url": "https://arxiv.org/pdf/2208.04609",
+        "abstract": "Node classification utilizing text-based node attributes has many real-world applications, ranging from prediction of paper topics in academic citation graphs to classification of user characteristics in social media networks. State-of-the-art node classification frameworks, such as GIANT, use a two-stage pipeline: first embedding the text attributes of graph nodes then feeding the resulting embeddings into a node classification model. In this paper, we eliminate these two stages and develop an end-to-end node classification model that builds upon GIANT, called End-to-End-GIANT (E2EG). The tandem utilization of a main and an auxiliary classification objectives in our approach results in a more robust model, enabling the BERT backbone to be switched out for a distilled encoder with a 25% - 40% reduction in the number of parameters. Moreover, the model’s end-to-end nature increases ease of use, as it avoids the need of chaining multiple models for node classification. Compared to a GIANT+MLP baseline on the ogbn-arxiv and ogbn-products datasets, E2EG obtains slightly better accuracy in the transductive setting (+0.5%), while reducing model training time by up to 40%. Our model is also applicable in the inductive setting, outperforming GIANT+MLP by up to +2.23%.",
+        "citations": 16,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2305.19523"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.437,
+      "tfidf_similarity": 0.181,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+        "authors": [
+          "Xiaoxin He",
+          "Xavier Bresson",
+          "Thomas Laurent",
+          "Adam Perold",
+          "Yann LeCun",
+          "Bryan Hooi"
+        ],
+        "year": 2023,
+        "date": "2023-05-31",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2305.19523",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2305.19523",
+        "pdf_url": null,
+        "abstract": "Representation learning on text-attributed graphs (TAGs) has become a critical research problem in recent years. A typical example of a TAG is a paper citation graph, where the text of each paper serves as node attributes. Initial graph neural network (GNN) pipelines handled these text attributes by transforming them into shallow or hand-crafted features, such as skip-gram or bag-of-words features. Recent efforts have focused on enhancing these pipelines with language models (LMs), which typically demand intricate designs and substantial computational resources. With the advent of powerful large language models (LLMs) such as GPT or Llama2, which demonstrate an ability to reason and to utilize general knowledge, there is a growing need for techniques which combine the textual modelling abilities of LLMs with the structural learning capabilities of GNNs. Hence, in this work, we focus on leveraging LLMs to capture textual information as features, which can be used to boost GNN performance on downstream tasks. A key innovation is our use of explanations as features: we prompt an LLM to perform zero-shot classification, request textual explanations for its decision-making process, and design an LLM-to-LM interpreter to translate these explanations into informative features for downstream GNNs. Our experiments demonstrate that our method achieves state-of-the-art results on well-established TAG datasets, including Cora, PubMed, ogbn-arxiv, as well as our newly introduced dataset, tape-arxiv23. Furthermore, our method significantly speeds up training, achieving a 2.88 times improvement over the closest baseline on ogbn-arxiv. Lastly, we believe the versatility of the proposed method extends beyond TAGs and holds the potential to enhance other tasks involving graph-text data. Our codes and datasets are available at: https://github.com/XiaoxinHe/TAPE.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "text-attributed graph evaluation papers published after training cutoff"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "LLM node classification ogbn-arxiv data leakage review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-attributed graph evaluation papers published after training cutoff survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-attributed graph evaluation papers published after training cutoff review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.333,
+            "retrieval_hits": 4,
+            "score": 2.548
+          }
+        }
+      },
+      "term_overlap": 0.391,
+      "tfidf_similarity": 0.141,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "LLM Profiling and Fine-Tuning with Limited Neighbor Information for Node Classification on Text-Attributed Graphs",
+        "authors": [
+          "Xinyi Fang",
+          "Kyumin Lee",
+          "Yichuan Li"
+        ],
+        "year": 2025,
+        "date": "2025-12-08",
+        "venue": "2025 IEEE International Conference on Big Data (BigData)",
+        "doi": "10.1109/bigdata66926.2025.11401710",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "6239a1f9e05d75ac96bb5869049b0ab8f925f3b4",
+        "url": "https://doi.org/10.1109/bigdata66926.2025.11401710",
+        "pdf_url": null,
+        "abstract": "Graph representation learning has become a critical task across various domains such as social networks and recommender systems. Recently, the rise of large language models (LLMs) has opened up new possibilities for processing text-attributed graphs (TAGs), where nodes are associated with textual information. Despite promising progress, applying LLMs to TAGs faces significant challenges, including input window size limitations and the computational overhead of handling large-scale graphs. To address these challenges, we propose a novel approach that leverages a multi-profiling framework as a data augmentation method, thereby increasing the diversity and quantity of the training samples. The profiles/summaries generated by each of the five profiling/summarizing models are then combined with the graph structure, prompts and ground-truth labels to create a comprehensive and varied fine-tuning data. By strategically selecting profiling models with an appropriate number of neighboring nodes and constructing concise yet informative fine-tuning prompts, our proposed approach enables LLMs to process more complex graphs while operating within limited computational resources. Notably, our experiments demonstrate that it is unnecessary to construct intricate graph structures for fine-tuning to achieve strong performance. Our approach outperforms 11 state-of-the-art baselines, achieving 74.31% accuracy and 85.15% accuracy in two large real-world benchmark datasets, ogbn-arxiv and ogbn-products, respectively. Our code is available at https://github.com/shineef/LLMProfiling.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "LLM node classification ogbn-arxiv data leakage"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "LLM node classification ogbn-arxiv data leakage survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "LLM node classification ogbn-arxiv data leakage review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "LLM node classification ogbn-arxiv data leakage"
+          },
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2310.09872"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.429,
+            "title_match": 0.429,
+            "retrieval_hits": 3,
+            "score": 1.661
+          },
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.345,
+      "tfidf_similarity": 0.133,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Graph-KV: Breaking Sequence via Injecting Structural Biases into Large Language Models",
+        "authors": [
+          "Haoyu Wang",
+          "Peihao Wang",
+          "Mufei Li",
+          "Shikun Liu",
+          "Siqi Miao",
+          "Zhangyang Wang",
+          "Pan Li"
+        ],
+        "year": 2025,
+        "date": "2025-06-09",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2506.07334",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2506.07334",
+        "pdf_url": null,
+        "abstract": "Modern large language models (LLMs) are inherently auto-regressive, requiring input to be serialized into flat sequences regardless of their structural dependencies. This serialization hinders the model's ability to leverage structural inductive biases, especially in tasks such as retrieval-augmented generation (RAG) and reasoning on data with native graph structures, where inter-segment dependencies are crucial. We introduce Graph-KV with the potential to overcome this limitation. Graph-KV leverages the KV-cache of text segments as condensed representations and governs their interaction through structural inductive biases. In this framework, 'target' segments selectively attend only to the KV-caches of their designated 'source' segments, rather than all preceding segments in a serialized sequence. This approach induces a graph-structured block mask, sparsifying attention and enabling a message-passing-like step within the LLM. Furthermore, strategically allocated positional encodings for source and target segments reduce positional bias and context window consumption. We evaluate Graph-KV across three scenarios: (1) seven RAG benchmarks spanning direct inference, multi-hop reasoning, and long-document understanding; (2) Arxiv-QA, a novel academic paper QA task with full-text scientific papers structured as citation ego-graphs; and (3) paper topic classification within a citation network. By effectively reducing positional bias and harnessing structural inductive biases, Graph-KV substantially outperforms baselines, including standard costly sequential encoding, across various settings. Code and the Graph-KV data are publicly available.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-attributed graph evaluation papers published after training cutoff survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-attributed graph evaluation papers published after training cutoff review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "text-attributed graph evaluation papers published after training cutoff"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.444,
+            "retrieval_hits": 3,
+            "score": 2.069
+          }
+        }
+      },
+      "term_overlap": 0.358,
+      "tfidf_similarity": 0.112,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Beyond the Golden Teacher: Enhancing Graph Learning through LLM-GNN Co-teaching",
+        "authors": [
+          "Zhuo Peng",
+          "Han-Lin Gu",
+          "Li-Xin Fan",
+          "Yi Yang"
+        ],
+        "year": 2026,
+        "date": "2026-06-10",
+        "venue": "arXiv.org",
+        "doi": "10.48550/arxiv.2606.11583",
+        "arxiv_id": "2606.11583",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "dbad31f2749d9ca884bdfa64120652e31b136b62",
+        "url": "https://www.semanticscholar.org/paper/dbad31f2749d9ca884bdfa64120652e31b136b62",
+        "pdf_url": null,
+        "abstract": "Text-attributed graphs (TAGs) underlie real-world applications such as citation networks, social media, and e-commerce. Few-shot graph learning on TAGs is hard: with only a handful of labels per class and the rest of the graph unannotated, neither GNNs nor LLMs can learn well on their own. GNNs read topology and fail on cold nodes; LLMs read text and fail on text-ambiguous nodes. Existing LLM-GNN methods all follow the same recipe: designate one model as the golden teacher and use its outputs (e.g., features or pseudo-labels) to supervise the other. We argue this golden-teacher assumption breaks under sparse supervision: neither model is golden, and treating either as such transfers its blind spots into the student. We therefore ask: can we avoid designating either model as the golden teacher, and still perform effective graph learning? We answer with LLM-GNN Co-Teaching, a bidirectional co-teaching framework in which neither model is fixed as teacher. The GNN and LLM exchange their most confident pseudo-labels under an architecture-specific small-loss criterion, and both update every round. Supervision is then mined from the trajectory: whenever a node moves from cross-model contradiction at round t to cross-model agreement at round t+1, the LLM's two answers on the same input form a preference pair (old contradicting self<new peer-endorsed self) for DPO training. We call this Round-based Pseudo-Label Preference Optimization (RPL-PO). On six benchmarks, LLM-GNN Co-Teaching consistently outperforms GNN-as-Judge and all prior methods, with absolute 3-shot gains of 7.86% on Cora and 7.73% on ogbn-arxiv; improvements carry over to 5-shot and to zero-shot cross-dataset transfer. Error-structure analysis further shows that abandoning the golden-teacher assumption substantially improves the LLM's graph learning capability on challenging samples.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2305.19523"
+          },
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2310.09872"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.354,
+      "tfidf_similarity": 0.089,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Leveraging Large Language Models for Node Generation in Few-Shot Learning on Text-Attributed Graphs",
+        "authors": [
+          "Jianxiang Yu",
+          "Yuxiang Ren",
+          "Chenghua Gong",
+          "Jiaqi Tan",
+          "Xiang Li",
+          "Xuecang Zhang"
+        ],
+        "year": 2023,
+        "date": "2023-10-15",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2310.09872",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2310.09872",
+        "pdf_url": null,
+        "abstract": "Text-attributed graphs have recently garnered significant attention due to their wide range of applications in web domains. Existing methodologies employ word embedding models for acquiring text representations as node features, which are subsequently fed into Graph Neural Networks (GNNs) for training. Recently, the advent of Large Language Models (LLMs) has introduced their powerful capabilities in information retrieval and text generation, which can greatly enhance the text attributes of graph data. Furthermore, the acquisition and labeling of extensive datasets are both costly and time-consuming endeavors. Consequently, few-shot learning has emerged as a crucial problem in the context of graph learning tasks. In order to tackle this challenge, we propose a lightweight paradigm called LLM4NG, which adopts a plug-and-play approach to empower text-attributed graphs through node generation using LLMs. Specifically, we utilize LLMs to extract semantic information from the labels and generate samples that belong to these categories as exemplars. Subsequently, we employ an edge predictor to capture the structural information inherent in the raw dataset and integrate the newly generated samples into the original graph. This approach harnesses LLMs for enhancing class-level information and seamlessly introduces labeled nodes and edges without modifying the raw dataset, thereby facilitating the node classification task in few-shot scenarios. Extensive experiments demonstrate the outstanding performance of our proposed paradigm, particularly in low-shot scenarios. For instance, in the 1-shot setting of the ogbn-arxiv dataset, LLM4NG achieves a 76% improvement over the baseline model.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "LLM node classification ogbn-arxiv data leakage"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "text-attributed graph evaluation papers published after training cutoff"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-attributed graph evaluation papers published after training cutoff survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-attributed graph evaluation papers published after training cutoff review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.444,
+            "retrieval_hits": 4,
+            "score": 2.659
+          }
+        }
+      },
+      "term_overlap": 0.319,
+      "tfidf_similarity": 0.111,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "LLM Features Can Hurt GNNs: Concatenation Interference on Homophilous Graph Benchmarks",
+        "authors": [
+          "Zhong-Yuan Wang",
+          "Pratyusha Vemuri"
+        ],
+        "year": 2026,
+        "date": "2026-06-16",
+        "venue": "arXiv.org",
+        "doi": "10.48550/arxiv.2606.17579",
+        "arxiv_id": "2606.17579",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "578e427be61c807346e975e4aeb5275762293181",
+        "url": "https://www.semanticscholar.org/paper/578e427be61c807346e975e4aeb5275762293181",
+        "pdf_url": null,
+        "abstract": "Adding LLM-generated node features to graph neural networks (GNNs) is widely reported to improve accuracy on standard benchmarks. We document a contrasting observation: when LLM features are introduced through pure input concatenation (rather than joint training, distillation, or prompt-conditioning), they can systematically degrade accuracy on the same homophilous benchmarks where end-to-end LLM pipelines succeed. With an MLP backbone on the Planetoid public split and bag-of-words original features, concatenating SBERT-encoded GPT-4o-mini TAPE features reduces PubMed test accuracy by -17.0 +/- 0.3 pp and Cora by -4.3 +/- 0.6 pp (CiteSeer -0.6 +/- 0.8 pp, within seed noise). The drop attenuates as we relax each condition (GCN / GCNII / GAT backbones, random splits, smaller encoders) and reverses on medium-homophily WikiCS (+4.4 pp) and ogbn-arxiv (+11.7 pp). To predict when concatenation helps versus hurts, we report a simple measure of LLM-alone discriminability, Delta_sig. Across 9 datasets Delta_sig correlates with the concatenation cost more strongly than homophily at point estimate (r^2 = 0.38 vs. 0.06; N=9, bootstrap CIs overlap). The bootstrap-best change-point is tau = 13.8 pp, and the rule\"Delta_sig<= tau predicts non-positive concat cost\"classifies 7/9 datasets correctly; since 60% of bootstrap samples place tau in [5, 30] pp, we treat Delta_sig as an interpretive lens rather than a precision filter. A dimension-controlled ablation on PubMed places the LLM-feature drop between same-source PCA (-2.3 pp) and same-dim Gaussian noise (-37.3 pp), ruling out dimensionality and weight-decay artifacts. Nine PubMed configurations fit a power law |Delta_concat| proportional to (sqrt(d_l/n))^1.31 with r^2 = 0.97; the low-Delta_sig, small-n corner is exactly where the headline -17 pp PubMed deficit appears.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2305.19523"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.332,
+      "tfidf_similarity": 0.065,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Beyond Memorization: Reasoning-Driven Synthesis as a Mitigation Strategy Against Benchmark Contamination",
+        "authors": [
+          "Terry Jingchen Zhang",
+          "Gopal Dev",
+          "Ning Wang",
+          "Nicole Ni",
+          "Wenyuan Jiang",
+          "Yinya Huang",
+          "Bernhard Schölkopf",
+          "Mrinmaya Sachan",
+          "Zhijing Jin"
+        ],
+        "year": 2025,
+        "date": "2025-08-26",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2509.00072",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2509.00072",
+        "pdf_url": null,
+        "abstract": "Capability evaluation of large language models (LLMs) is increasingly shadowed by rising concerns of data contamination that cast doubts on whether static benchmarks measure genuine reasoning or mere memorization. We present an empirical study using an infinitely scalable framework to synthesize research-level QA directly from arXiv papers, harnessing the natural temporal structure of research publications where performance decay after knowledge cutoffs may indicate potential contamination. We evaluated 4 frontier model represented by 2 models of different knowledge cutoff dates per family on 1,643 multi-step reasoning questions synthesized from 20,277 arXiv papers stratified over 26 months, covering at least 6 months before and after all cutoff dates. Our results consistently showed a lack of significant performance decay near knowledge cutoff dates for models of various sizes, developers, and release dates. We further performed a comparative analysis with previous longitudinal studies that reported significant post-cutoff performance decay using directly retrieved questions based on public data. we hypothesize that the multi-step reasoning required by our synthesis pipeline offered additional complexity that goes deeper than shallow memorization, which effectively serves a mitigation strategy against benchmark contamination. We fully open source our code and dataset to aid reproducibility and advocate for a paradigm shift that prioritize reasoning-driven synthesis to construct benchmarks over simply collecting newly released questions periodically.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "large language models graph benchmark contamination test set memorization survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "large language models graph benchmark contamination test set memorization review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "large language models graph benchmark contamination test set memorization"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.333,
+            "retrieval_hits": 3,
+            "score": 2.042
+          }
+        }
+      },
+      "term_overlap": 0.23,
+      "tfidf_similarity": 0.098,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "LLM-Empowered Few-Shot Node Classification on Incomplete Graphs with Real Node Degrees",
+        "authors": [
+          "Yun Li",
+          "Yi Yang",
+          "Jiaqi Zhu",
+          "Hui Chen",
+          "Hongan Wang"
+        ],
+        "year": 2024,
+        "date": "2024-10-21",
+        "venue": "Proceedings of the 33rd ACM International Conference on Information and Knowledge Management",
+        "doi": "10.1145/3627673.3679861",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4403582526",
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/3627673.3679861",
+        "pdf_url": "https://doi.org/10.1145/3627673.3679861",
+        "abstract": "Graphs constructed from real-world scenarios are often incomplete due to privacy restrictions or resource limitations, posing significant challenges for node classification, especially when labeled data are scarce. In many scenarios of incomplete graphs, the real node degrees, such as the number of followers in social networks or publications' references in citation networks, are easily accessible and informative, which could indicate the degree of incompleteness. However, most of existing researches of incomplete graphs focus on edge completion, but ignore the node completion with known node degrees. In this paper, we propose a new few-shot node classification problem on incomplete graphs with real node degrees. To deal with node completion, edge completion and label completion of this problem, we develop an effective Large Language Models (LLMs) empowered Graph Convolutional Network (GCN) model utilizing the real node Degrees, namely LLMDGCN. First, we leverage LLMs to initially fill in the missing nodes and labels. Next, we design an edge prediction module that employs the real node degrees and inter-category probability matrix to recover the missing edges for each node. We then iteratively train the GCN and the edge prediction module. The GCN generates pseudo labels, which the edge prediction module uses to restore edges, and these edges are fed back into the GCN to improve accuracy. Extensive experiments on four benchmark datasets demonstrate the effectiveness and robustness of our proposed method for the few-shot node classification on incomplete graphs with real node degrees.",
+        "citations": 7,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "LLM node classification ogbn-arxiv data leakage"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "LLM node classification ogbn-arxiv data leakage"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.429,
+            "title_match": 0.429,
+            "retrieval_hits": 1,
+            "score": 1.478
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W2064186732",
+            "W2146332392",
+            "W2562847678",
+            "W2883653044",
+            "W2911286998",
+            "W2964051675",
+            "W2979683452",
+            "W2998269939",
+            "W3012871709",
+            "W3040731923",
+            "W3092835783",
+            "W3153206160",
+            "W3200318610",
+            "W4200632081",
+            "W4290927778",
+            "W4378942422",
+            "W4382239927"
+          ],
+          "related_works": [
+            "W3142396426",
+            "W2471333042",
+            "W2497720472",
+            "W4292659306",
+            "W2955491601",
+            "W4396643691",
+            "W146529714",
+            "W4402383816",
+            "W2316500695",
+            "W1999226266"
+          ]
+        }
+      },
+      "term_overlap": 0.223,
+      "tfidf_similarity": 0.088,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Graph Convolutional Networks for Few-Shot Node Classification Using LLM-Derived Entity and Explanation Features",
+        "authors": [
+          "Yi-Xiao Zhang"
+        ],
+        "year": 2026,
+        "date": "2026-07-01",
+        "venue": "2026 9th International Conference on Computer Information Science and Application Technology (CISAT)",
+        "doi": "10.1109/cisat71030.2026.11682228",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "8cd9bbe70756bc3736ee40d70539797c3b88a8ec",
+        "url": "https://www.semanticscholar.org/paper/8cd9bbe70756bc3736ee40d70539797c3b88a8ec",
+        "pdf_url": null,
+        "abstract": "Node classification on text-attributed graphs, such as citation networks, typically relies on shallow bag-of-words or TF-IDF features. These representations struggle to capture deep linguistic semantics under limited supervision, such as few-shot learning settings where acquiring labels is expensive. While Large Language Models (LLMs) provide advanced semantic reasoning, their integration typically requires heavy online inference and introduces computational overhead. To address this limitation, we investigate transductive few-shot node classification using purely offline LLM-derived artifacts, presenting the GCN-LLM-Aug architecture. This approach bypasses the structural bottlenecks of standard Graph Convolutional Networks (GCNs) by injecting semantic knowledge directly into the initial feature matrix. Specifically, we concatenate precomputed dense embeddings of semantic entities and generative explanations to enhance a lightweight two-layer GCN. We evaluate this approach against structure-free Multi-Layer Perceptrons (MLPs) and standard shallow-feature GCNs (GCN-Raw) under restricted transductive settings of k-shot per class, where k in {1, 3, 5}. Experimental evaluations on the Cora and PubMed datasets indicate that the fully augmented GCN-LLM-Aug architecture outperforms traditional baselines, with feature fusion matching or exceeding the performance of individual inputs. The largest performance margins occur in extreme low-label conditions. For instance, at the 1-shot level, GCN-LLM-Aug achieves 60.8% accuracy on Cora and 67.3% on PubMed, compared to 55.3% and 61.2% for GCN-Raw, respectively. Finally, fusing offline entity embeddings and explicit textual explanations provides a zero-inference-cost implementation strategy that improves few-shot graph learning while maintaining computational efficiency.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2305.19523"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.235,
+      "tfidf_similarity": 0.075,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Language is All a Graph Needs",
+        "authors": [
+          "Ruo-Song Ye",
+          "Caiqi Zhang",
+          "Run-Hui Wang",
+          "Shuyuan Xu",
+          "Yongfeng Zhang"
+        ],
+        "year": 2023,
+        "date": "2023-08-14",
+        "venue": "Findings",
+        "doi": "10.18653/v1/2024.findings-eacl.132",
+        "arxiv_id": "2308.07134",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "8d65b5940a4dbed8c18e02ca35e3a9d7a14ea76b",
+        "url": "https://www.semanticscholar.org/paper/8d65b5940a4dbed8c18e02ca35e3a9d7a14ea76b",
+        "pdf_url": "https://aclanthology.org/2024.findings-eacl.132.pdf",
+        "abstract": "The emergence of large-scale pre-trained language models has revolutionized various AI research domains. Transformers-based Large Language Models (LLMs) have gradually replaced CNNs and RNNs to unify fields of computer vision and natural language processing. Compared with independent data like images, videos or texts, graphs usually contain rich structural and relational information. Meanwhile, languages, especially natural language, being one of the most expressive mediums, excels in describing complex structures. However, existing work on incorporating graph problems into the generative language modeling framework remains very limited. Considering the rising prominence of LLMs, it becomes essential to explore whether LLMs can also replace GNNs as the foundation model for graphs. In this paper, we propose InstructGLM (Instruction-finetuned Graph Language Model) with highly scalable prompts based on natural language instructions. We use natural language to describe multi-scale geometric structure of the graph and then instruction finetune an LLM to perform graph tasks, which enables Generative Graph Learning. Our method surpasses all GNN baselines on ogbn-arxiv, Cora and PubMed datasets, underscoring its effectiveness and sheds light on generative LLMs as new foundation model for graph machine learning. Our code is available at https://github.com/agiresearch/InstructGLM.",
+        "citations": 328,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2307.03393"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2307.03393"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.216,
+      "tfidf_similarity": 0.087,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "TAGLAS: An atlas of text-attributed graph datasets in the era of large graph and language models",
+        "authors": [
+          "Jiarui Feng",
+          "Hao Liu",
+          "Lecheng Kong",
+          "Mingfang Zhu",
+          "Yixin Chen",
+          "Muhan Zhang"
+        ],
+        "year": 2024,
+        "date": "2024-10-19",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2406.14683",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2406.14683",
+        "pdf_url": null,
+        "abstract": "In this report, we present TAGLAS, an atlas of text-attributed graph (TAG) datasets and benchmarks. TAGs are graphs with node and edge features represented in text, which have recently gained wide applicability in training graph-language or graph foundation models. In TAGLAS, we collect and integrate more than 23 TAG datasets with domains ranging from citation graphs to molecule graphs and tasks from node classification to graph question-answering. Unlike previous graph datasets and benchmarks, all datasets in TAGLAS have a unified node and edge text feature format, which allows a graph model to be simultaneously trained and evaluated on multiple datasets from various domains. Further, we provide a standardized, efficient, and simplified way to load all datasets and tasks. We also provide useful utils like text-to-embedding conversion, and graph-to-text conversion, which can facilitate different evaluation scenarios. Finally, we also provide standard and easy-to-use evaluation utils. The project is open-sourced at https://github.com/JiaruiFeng/TAGLAS and is still under construction. Please expect more datasets/features in the future.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "text-attributed graph evaluation papers published after training cutoff"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-attributed graph evaluation papers published after training cutoff survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-attributed graph evaluation papers published after training cutoff review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "text-attributed graph evaluation papers published after training cutoff"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.444,
+            "retrieval_hits": 3,
+            "score": 1.931
+          }
+        }
+      },
+      "term_overlap": 0.218,
+      "tfidf_similarity": 0.079,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "GraspLLM: Towards Zero-Shot Generalization on Text-Attributed Graphs with LLMs",
+        "authors": [
+          "Hengyi Feng",
+          "Zeang Sheng",
+          "Mei-Yi Qiang",
+          "Yang Li",
+          "Wentao Zhang"
+        ],
+        "year": 2026,
+        "date": "2026-06-10",
+        "venue": "arXiv.org",
+        "doi": "10.48550/arxiv.2606.11898",
+        "arxiv_id": "2606.11898",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "b76e7a4392a1c2881ad8e08c008aa6ab599e46af",
+        "url": "https://www.semanticscholar.org/paper/b76e7a4392a1c2881ad8e08c008aa6ab599e46af",
+        "pdf_url": null,
+        "abstract": "Research on Text-Attributed Graphs (TAGs) has gained significant attention recently due to its broad applications across various real-world data scenarios, such as citation networks, e-commerce platforms, social media, and web pages. Inspired by the remarkable semantic understanding ability of Large Language Models (LLMs), there have been numerous attempts to integrate LLMs into TAGs. However, existing methods still struggle to generalize across diverse graphs and tasks, and their ability to capture transferable graph structural patterns remains limited. To address this, we introduce the GraspLLM, a framework that combines Graph structural comprehension with semantic understanding prowess of LLMs to enhance the cross-dataset and cross-task generalizability. Specifically, we represent node texts from different graphs in a unified semantic space with a frozen general embedding model, on top of which we perform motif-aware contrastive learning across multiple motif-induced adjacency matrices to extract dataset-agnostic structural information. Then, with our proposed optimal contextual subgraph, we extract the most contextually relevant subgraph for each target node and align these subgraphs to the token space of LLM via an alignment projector. Extensive experiments on TAG benchmark datasets spanning diverse domains reveal that GraspLLM consistently outperforms previous LLM-based methods for TAGs, especially in zero-shot scenarios, highlighting its strong generalizability across different datasets and tasks. Our code is available at https://github.com/Heinz217/GraspLLM.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2305.19523"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.183,
+      "tfidf_similarity": 0.065,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "TemporalGraphLLM: Temporal Graph Neural Networks with Large Language Models for Dynamic Text-Attributed Graphs",
+        "authors": [
+          "Moran Beladev",
+          "Orly Eitan",
+          "Gilad Katz",
+          "L. Rokach"
+        ],
+        "year": 2026,
+        "date": "2026-09-25",
+        "venue": null,
+        "doi": null,
+        "arxiv_id": "2609.31881",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "d49364f12827696d5972ba70adcd5744be8e1855",
+        "url": "https://www.semanticscholar.org/paper/d49364f12827696d5972ba70adcd5744be8e1855",
+        "pdf_url": null,
+        "abstract": "Dynamic text-attributed graphs (DTAGs), where nodes, edges, and textual attributes evolve over time, are crucial in applications such as social networks, citation graphs, and knowledge graphs. However, existing approaches struggle to jointly model the temporal evolution of graph structures and the semantic richness of textual attributes. While Temporal Graph Neural Networks (TGNNs) capture evolving node relationships, they often lack contextual text reasoning. Conversely, Large Language Models (LLMs) excel in textual understanding but struggle with structured graph reasoning in temporal settings. To bridge this gap, we propose TemporalGraphLLM, a novel framework that can integrate any temporal GNN with an LLM for enhanced reasoning in DTAGs. Our approach fine-tunes LLMs using graph-time-aware instruction tuning and novel temporal GNNs injection to replace dedicated added tokens with graph embeddings. TemporalGraphLLM effectively leverages pretrained TGNNs within an LLM framework to achieve state-of-the-art performance on edge classification, link prediction, and edge-based text generation tasks. Extensive evaluation on real-world dynamic graph datasets demonstrates state-of-the-art performance. Our findings highlight the synergistic potential of LLMs and TGNNs, opening new directions for learning on evolving graphs.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "recommended",
+            "query": "2307.03393"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2307.03393"
+          },
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2305.19523"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.174,
+      "tfidf_similarity": 0.071,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "TEG-DB: A Comprehensive Dataset and Benchmark of Textual-Edge Graphs",
+        "authors": [
+          "Zhuofeng Li",
+          "Zixing Gou",
+          "Xiangnan Zhang",
+          "Zhongyuan Liu",
+          "Sirui Li",
+          "Yuntong Hu",
+          "Chen Ling",
+          "Zheng Zhang",
+          "Liang Zhao"
+        ],
+        "year": 2024,
+        "date": "2024-06-14",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2406.10310",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2406.10310",
+        "pdf_url": null,
+        "abstract": "Text-Attributed Graphs (TAGs) augment graph structures with natural language descriptions, facilitating detailed depictions of data and their interconnections across various real-world settings. However, existing TAG datasets predominantly feature textual information only at the nodes, with edges typically represented by mere binary or categorical attributes. This lack of rich textual edge annotations significantly limits the exploration of contextual relationships between entities, hindering deeper insights into graph-structured data. To address this gap, we introduce Textual-Edge Graphs Datasets and Benchmark (TEG-DB), a comprehensive and diverse collection of benchmark textual-edge datasets featuring rich textual descriptions on nodes and edges. The TEG-DB datasets are large-scale and encompass a wide range of domains, from citation networks to social networks. In addition, we conduct extensive benchmark experiments on TEG-DB to assess the extent to which current techniques, including pre-trained language models, graph neural networks, and their combinations, can utilize textual node and edge information. Our goal is to elicit advancements in textual-edge graph research, specifically in developing methodologies that exploit rich textual node and edge descriptions to enhance graph analysis and provide deeper insights into complex real-world networks. The entire TEG-DB project is publicly accessible as an open-source repository on Github, accessible at https://github.com/Zhuofeng-Li/TEG-Benchmark.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "text-attributed graph evaluation papers published after training cutoff"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-attributed graph evaluation papers published after training cutoff survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-attributed graph evaluation papers published after training cutoff review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "text-attributed graph evaluation papers published after training cutoff"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.25,
+            "retrieval_hits": 3,
+            "score": 1.736
+          }
+        }
+      },
+      "term_overlap": 0.168,
+      "tfidf_similarity": 0.065,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "GraphTeam: Facilitating Large Language Model-based Graph Analysis via Multi-Agent Collaboration",
+        "authors": [
+          "Xin Li",
+          "Qizhi Chu",
+          "Yubin Chen",
+          "Yang Liu",
+          "Yaoqi Liu",
+          "Zekai Yu",
+          "Weize Chen",
+          "Chen Qian",
+          "Chuan Shi",
+          "Cheng Yang"
+        ],
+        "year": 2024,
+        "date": "2024-10-23",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2410.18032",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2410.18032",
+        "pdf_url": null,
+        "abstract": "Graphs are widely used for modeling relational data in real-world scenarios, such as social networks and urban computing. Existing LLM-based graph analysis approaches either integrate graph neural networks (GNNs) for specific machine learning tasks, limiting their transferability, or rely solely on LLMs' internal reasoning ability, resulting in suboptimal performance. To address these limitations, we take advantage of recent advances in LLM-based agents, which have shown capabilities of utilizing external knowledge or tools for problem solving. By simulating human problem-solving strategies such as analogy and collaboration, we propose a multi-agent system based on LLMs named GraphTeam, for graph analysis. GraphTeam consists of five LLM-based agents from three modules, and the agents with different specialities can collaborate with each other to address complex problems. Specifically, (1) input-output normalization module: the question agent extracts and refines four key arguments from the original question, facilitating the problem understanding, and the answer agent organizes the results to meet the output requirement; (2) external knowledge retrieval module: we first build a knowledge base consisting of relevant documentation and experience information, and then the search agent retrieves the most relevant entries for each question. (3) problem-solving module: given the retrieved information from search agent, the coding agent uses established algorithms via programming to generate solutions, and in case the coding agent does not work, the reasoning agent will directly compute the results without programming. Extensive experiments on six graph analysis benchmarks demonstrate that GraphTeam achieves state-of-the-art performance with an average 25.85% improvement over the best baseline in terms of accuracy. The code and data are available at https://github.com/BUPT-GAMMA/GraphTeam.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "do LLMs really understand graph structure or memorize benchmark papers"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.444,
+            "retrieval_hits": 1,
+            "score": 1.681
+          }
+        }
+      },
+      "term_overlap": 0.163,
+      "tfidf_similarity": 0.053,
+      "design_elements_matched": [
+        "compare LLM accuracy with and without neighbour information"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Struc-EMB: The Potential of Structure-Aware Encoding in Language Embeddings",
+        "authors": [
+          "Shikun Liu",
+          "H. Wang",
+          "Mufei Li",
+          "Pan Li"
+        ],
+        "year": 2025,
+        "date": "2025-10-09",
+        "venue": "arXiv.org",
+        "doi": "10.48550/arxiv.2510.08774",
+        "arxiv_id": "2510.08774",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "a0ff3ff5c1be8413b9b8fef04cf258dbc17c04c1",
+        "url": "https://www.semanticscholar.org/paper/a0ff3ff5c1be8413b9b8fef04cf258dbc17c04c1",
+        "pdf_url": null,
+        "abstract": "Text embeddings from Large Language Models (LLMs) have become foundational for numerous applications. However, these models typically operate on raw text, overlooking the rich structural information, such as hyperlinks or citations, that provides crucial context in many real-world datasets. This paper introduces and systematically evaluates a new paradigm for generating structure-aware text embeddings by integrating these structural relations directly into the LLM's internal encoding process, rather than relying on traditional post-hoc aggregation. We investigate two primary in-process methods: sequential concatenation and parallel caching. Through extensive zero-shot experiments across retrieval, clustering, classification, and recommendation tasks, we demonstrate that our structure-aware approaches consistently outperform both text-only and post-hoc baselines. Our analysis reveals critical trade-offs: sequential concatenation excels with noisy, moderate-length contexts, while parallel caching scales more effectively to long, high-signal contexts but is more susceptible to distractors. To address the challenge of noisy structural data, we also introduce and validate two effective techniques: Context Distillation and Semantic Balancing. This work provides the first comprehensive analysis of in-process structure-aware encoding, offering a blueprint for building more powerful and contextually aware embedding models.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2506.07334"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.148,
+      "tfidf_similarity": 0.044,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Identification of Influential Node Group in Attributed Graph through Explaining Graph Neural Network",
+        "authors": [
+          "Xiao Tan",
+          "Tong Su",
+          "Jiayi Wu",
+          "Yan Zhang",
+          "Bin Xu",
+          "Dian Shen",
+          "Meng Wang",
+          "Beilun Wang"
+        ],
+        "year": 2026,
+        "date": "2026-04-12",
+        "venue": "The Web Conference",
+        "doi": "10.1145/3774904.3792471",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "f97384555975f5afb3fae1a7462ae80c2b8d345b",
+        "url": "https://www.semanticscholar.org/paper/f97384555975f5afb3fae1a7462ae80c2b8d345b",
+        "pdf_url": "https://doi.org/10.1145/3774904.3792471",
+        "abstract": "Identification of influential groups of nodes in attributed graphs has applications in a wide range of real-world problems, for instance, collecting important proceedings in citation networks, or identifying essential genes for diagnosing disease in Protein-Protein Interaction networks. Previous approaches for influence maximization manipulated on the graph structure, despite their proliferation, neglect the node attribute information containing additional knowledge. In this work, we introduce Global Graph UNderstanding (GGUN), a perturbation-based framework leveraging the explanatory power of Graph Neural Networks. It takes into account the entire graph structure and node attributes simultaneously and fuses knowledge through GNN layers. Following the perturbation-based explanation, GGUN fills the gap between Deep Neural Network gradient-based feature importance analysis and discrete structure in the graph, which is formulated as a combinatorial optimization problem. Moreover, GGUN obtains an efficient solution by relaxing the infeasible combinatorial optimization problem with performance guaranteed. Evaluations of synthetic and real-world datasets show that GGUN outperforms baselines on both quantitative metrics and human-intelligible analysis.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2310.09872"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.12,
+      "tfidf_similarity": 0.047,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Verifying LLM-Generated Data-Pipeline Transformations: A Hybrid Static–Semantic Approach for Leakage and Data-Quality Faults",
+        "authors": [
+          "Veena G"
+        ],
+        "year": 2026,
+        "date": "2026-06-13",
+        "venue": "International Journal For Multidisciplinary Research",
+        "doi": "10.36948/ijfmr.2026.v08i03.81173",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.36948/ijfmr.2026.v08i03.81173",
+        "pdf_url": null,
+        "abstract": "Large language models (LLMs) are increasingly used to generate data-pipeline and feature engineering transformations from natural-language specifications. This introduces a new and under-examined risk surface: transformations that are syntactically valid and schema-correct yet semantically wrong, silently injecting temporal leakage, granularity errors, join fan-out, silent row loss, and data-quality defects. Existing text-to-SQL verifiers target the correctness of a single natural-language-to-SQL query and do not address transformation- and pipeline-level data-flow faults, which today are caught only reactively—after a model trained on a leaking feature posts implausible offline accuracy. We make three contributions. First, we define a six-category fault taxonomy for generated transformations grounded in real feature-engineering failure modes. Second, we propose a lightweight hybrid verifier that combines static dataflow analysis with semantic execution checks, including a gold-free metamorphic leakage test: removing future rows must not change any historical feature value. Third, we build a fault-injection benchmark on synthetic and real (Rossmann Store Sales) data and evaluate against a static validation baseline and a strong LLM-as-judge baseline. The hybrid verifier attains perfect precision (no false alarms), is deterministic and inexpensive, and detects structural, temporal, and granularity faults; a strong LLM-as-judge attains higher overall recall on semantically subtle faults but over-flags correct transformations and is blind to granularity errors. The two approaches are complementary, motivating combined verification for trustworthy LLM-generated data pipelines.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "LLM node classification ogbn-arxiv data leakage"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "LLM node classification ogbn-arxiv data leakage survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "LLM node classification ogbn-arxiv data leakage review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "LLM node classification ogbn-arxiv data leakage"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.429,
+            "retrieval_hits": 3,
+            "score": 1.915
+          }
+        }
+      },
+      "term_overlap": 0.315,
+      "tfidf_similarity": 0.09,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "GL-Fusion: Rethinking the Combination of Graph Neural Network and Large Language model",
+        "authors": [
+          "Haotong Yang",
+          "Xiyuan Wang",
+          "Qian Tao",
+          "Shuxian Hu",
+          "Zhou-Chen Lin",
+          "Muhan Zhang"
+        ],
+        "year": 2024,
+        "date": "2024-12-08",
+        "venue": "arXiv.org",
+        "doi": "10.48550/arxiv.2412.06849",
+        "arxiv_id": "2412.06849",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "c8e43844a585ab178d2dde1bb3e84f0bb540fec0",
+        "url": "https://www.semanticscholar.org/paper/c8e43844a585ab178d2dde1bb3e84f0bb540fec0",
+        "pdf_url": null,
+        "abstract": "Recent research on integrating Large Language Models (LLMs) with Graph Neural Networks (GNNs) typically follows two approaches: LLM-centered models, which convert graph data into tokens for LLM processing, and GNN-centered models, which use LLMs to encode text features into node and edge representations for GNN input. LLM-centered models often struggle to capture graph structures effectively, while GNN-centered models compress variable-length textual data into fixed-size vectors, limiting their ability to understand complex semantics. Additionally, GNN-centered approaches require converting tasks into a uniform, manually-designed format, restricting them to classification tasks and preventing language output. To address these limitations, we introduce a new architecture that deeply integrates GNN with LLM, featuring three key innovations: (1) Structure-Aware Transformers, which incorporate GNN's message-passing capabilities directly into LLM's transformer layers, allowing simultaneous processing of textual and structural information and generating outputs from both GNN and LLM; (2) Graph-Text Cross-Attention, which processes full, uncompressed text from graph nodes and edges, ensuring complete semantic integration; and (3) GNN-LLM Twin Predictor, enabling LLM's flexible autoregressive generation alongside GNN's scalable one-pass prediction. GL-Fusion achieves outstand performance on various tasks. Notably, it achieves state-of-the-art performance on OGBN-Arxiv and OGBG-Code2.",
+        "citations": 8,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2506.07334"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.288,
+      "tfidf_similarity": 0.104,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    }
+  ],
+  "possible_same_design": [],
+  "found_via_citations": [
+    {
+      "paper": {
+        "title": "E2EG: End-to-End Node Classification Using Graph Topology and Text-based Node Attributes",
+        "authors": [
+          "Tu Anh Dinh",
+          "Jeroen den Boef",
+          "J. Cornelisse",
+          "Paul Groth"
+        ],
+        "year": 2022,
+        "date": "2022-08-09",
+        "venue": "2023 IEEE International Conference on Data Mining Workshops (ICDMW)",
+        "doi": "10.1109/icdmw60847.2023.00142",
+        "arxiv_id": "2208.04609",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "15b32a6661f4c92340ee3e78e20ae631a0e6d0c5",
+        "url": "https://www.semanticscholar.org/paper/15b32a6661f4c92340ee3e78e20ae631a0e6d0c5",
+        "pdf_url": "https://arxiv.org/pdf/2208.04609",
+        "abstract": "Node classification utilizing text-based node attributes has many real-world applications, ranging from prediction of paper topics in academic citation graphs to classification of user characteristics in social media networks. State-of-the-art node classification frameworks, such as GIANT, use a two-stage pipeline: first embedding the text attributes of graph nodes then feeding the resulting embeddings into a node classification model. In this paper, we eliminate these two stages and develop an end-to-end node classification model that builds upon GIANT, called End-to-End-GIANT (E2EG). The tandem utilization of a main and an auxiliary classification objectives in our approach results in a more robust model, enabling the BERT backbone to be switched out for a distilled encoder with a 25% - 40% reduction in the number of parameters. Moreover, the model’s end-to-end nature increases ease of use, as it avoids the need of chaining multiple models for node classification. Compared to a GIANT+MLP baseline on the ogbn-arxiv and ogbn-products datasets, E2EG obtains slightly better accuracy in the transductive setting (+0.5%), while reducing model training time by up to 40%. Our model is also applicable in the inductive setting, outperforming GIANT+MLP by up to +2.23%.",
+        "citations": 16,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2305.19523"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.437,
+      "tfidf_similarity": 0.181,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Beyond the Golden Teacher: Enhancing Graph Learning through LLM-GNN Co-teaching",
+        "authors": [
+          "Zhuo Peng",
+          "Han-Lin Gu",
+          "Li-Xin Fan",
+          "Yi Yang"
+        ],
+        "year": 2026,
+        "date": "2026-06-10",
+        "venue": "arXiv.org",
+        "doi": "10.48550/arxiv.2606.11583",
+        "arxiv_id": "2606.11583",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "dbad31f2749d9ca884bdfa64120652e31b136b62",
+        "url": "https://www.semanticscholar.org/paper/dbad31f2749d9ca884bdfa64120652e31b136b62",
+        "pdf_url": null,
+        "abstract": "Text-attributed graphs (TAGs) underlie real-world applications such as citation networks, social media, and e-commerce. Few-shot graph learning on TAGs is hard: with only a handful of labels per class and the rest of the graph unannotated, neither GNNs nor LLMs can learn well on their own. GNNs read topology and fail on cold nodes; LLMs read text and fail on text-ambiguous nodes. Existing LLM-GNN methods all follow the same recipe: designate one model as the golden teacher and use its outputs (e.g., features or pseudo-labels) to supervise the other. We argue this golden-teacher assumption breaks under sparse supervision: neither model is golden, and treating either as such transfers its blind spots into the student. We therefore ask: can we avoid designating either model as the golden teacher, and still perform effective graph learning? We answer with LLM-GNN Co-Teaching, a bidirectional co-teaching framework in which neither model is fixed as teacher. The GNN and LLM exchange their most confident pseudo-labels under an architecture-specific small-loss criterion, and both update every round. Supervision is then mined from the trajectory: whenever a node moves from cross-model contradiction at round t to cross-model agreement at round t+1, the LLM's two answers on the same input form a preference pair (old contradicting self<new peer-endorsed self) for DPO training. We call this Round-based Pseudo-Label Preference Optimization (RPL-PO). On six benchmarks, LLM-GNN Co-Teaching consistently outperforms GNN-as-Judge and all prior methods, with absolute 3-shot gains of 7.86% on Cora and 7.73% on ogbn-arxiv; improvements carry over to 5-shot and to zero-shot cross-dataset transfer. Error-structure analysis further shows that abandoning the golden-teacher assumption substantially improves the LLM's graph learning capability on challenging samples.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2305.19523"
+          },
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2310.09872"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.354,
+      "tfidf_similarity": 0.089,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "LLM Features Can Hurt GNNs: Concatenation Interference on Homophilous Graph Benchmarks",
+        "authors": [
+          "Zhong-Yuan Wang",
+          "Pratyusha Vemuri"
+        ],
+        "year": 2026,
+        "date": "2026-06-16",
+        "venue": "arXiv.org",
+        "doi": "10.48550/arxiv.2606.17579",
+        "arxiv_id": "2606.17579",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "578e427be61c807346e975e4aeb5275762293181",
+        "url": "https://www.semanticscholar.org/paper/578e427be61c807346e975e4aeb5275762293181",
+        "pdf_url": null,
+        "abstract": "Adding LLM-generated node features to graph neural networks (GNNs) is widely reported to improve accuracy on standard benchmarks. We document a contrasting observation: when LLM features are introduced through pure input concatenation (rather than joint training, distillation, or prompt-conditioning), they can systematically degrade accuracy on the same homophilous benchmarks where end-to-end LLM pipelines succeed. With an MLP backbone on the Planetoid public split and bag-of-words original features, concatenating SBERT-encoded GPT-4o-mini TAPE features reduces PubMed test accuracy by -17.0 +/- 0.3 pp and Cora by -4.3 +/- 0.6 pp (CiteSeer -0.6 +/- 0.8 pp, within seed noise). The drop attenuates as we relax each condition (GCN / GCNII / GAT backbones, random splits, smaller encoders) and reverses on medium-homophily WikiCS (+4.4 pp) and ogbn-arxiv (+11.7 pp). To predict when concatenation helps versus hurts, we report a simple measure of LLM-alone discriminability, Delta_sig. Across 9 datasets Delta_sig correlates with the concatenation cost more strongly than homophily at point estimate (r^2 = 0.38 vs. 0.06; N=9, bootstrap CIs overlap). The bootstrap-best change-point is tau = 13.8 pp, and the rule\"Delta_sig<= tau predicts non-positive concat cost\"classifies 7/9 datasets correctly; since 60% of bootstrap samples place tau in [5, 30] pp, we treat Delta_sig as an interpretive lens rather than a precision filter. A dimension-controlled ablation on PubMed places the LLM-feature drop between same-source PCA (-2.3 pp) and same-dim Gaussian noise (-37.3 pp), ruling out dimensionality and weight-decay artifacts. Nine PubMed configurations fit a power law |Delta_concat| proportional to (sqrt(d_l/n))^1.31 with r^2 = 0.97; the low-Delta_sig, small-n corner is exactly where the headline -17 pp PubMed deficit appears.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2305.19523"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.332,
+      "tfidf_similarity": 0.065,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Graph Convolutional Networks for Few-Shot Node Classification Using LLM-Derived Entity and Explanation Features",
+        "authors": [
+          "Yi-Xiao Zhang"
+        ],
+        "year": 2026,
+        "date": "2026-07-01",
+        "venue": "2026 9th International Conference on Computer Information Science and Application Technology (CISAT)",
+        "doi": "10.1109/cisat71030.2026.11682228",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "8cd9bbe70756bc3736ee40d70539797c3b88a8ec",
+        "url": "https://www.semanticscholar.org/paper/8cd9bbe70756bc3736ee40d70539797c3b88a8ec",
+        "pdf_url": null,
+        "abstract": "Node classification on text-attributed graphs, such as citation networks, typically relies on shallow bag-of-words or TF-IDF features. These representations struggle to capture deep linguistic semantics under limited supervision, such as few-shot learning settings where acquiring labels is expensive. While Large Language Models (LLMs) provide advanced semantic reasoning, their integration typically requires heavy online inference and introduces computational overhead. To address this limitation, we investigate transductive few-shot node classification using purely offline LLM-derived artifacts, presenting the GCN-LLM-Aug architecture. This approach bypasses the structural bottlenecks of standard Graph Convolutional Networks (GCNs) by injecting semantic knowledge directly into the initial feature matrix. Specifically, we concatenate precomputed dense embeddings of semantic entities and generative explanations to enhance a lightweight two-layer GCN. We evaluate this approach against structure-free Multi-Layer Perceptrons (MLPs) and standard shallow-feature GCNs (GCN-Raw) under restricted transductive settings of k-shot per class, where k in {1, 3, 5}. Experimental evaluations on the Cora and PubMed datasets indicate that the fully augmented GCN-LLM-Aug architecture outperforms traditional baselines, with feature fusion matching or exceeding the performance of individual inputs. The largest performance margins occur in extreme low-label conditions. For instance, at the 1-shot level, GCN-LLM-Aug achieves 60.8% accuracy on Cora and 67.3% on PubMed, compared to 55.3% and 61.2% for GCN-Raw, respectively. Finally, fusing offline entity embeddings and explicit textual explanations provides a zero-inference-cost implementation strategy that improves few-shot graph learning while maintaining computational efficiency.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2305.19523"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.235,
+      "tfidf_similarity": 0.075,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Language is All a Graph Needs",
+        "authors": [
+          "Ruo-Song Ye",
+          "Caiqi Zhang",
+          "Run-Hui Wang",
+          "Shuyuan Xu",
+          "Yongfeng Zhang"
+        ],
+        "year": 2023,
+        "date": "2023-08-14",
+        "venue": "Findings",
+        "doi": "10.18653/v1/2024.findings-eacl.132",
+        "arxiv_id": "2308.07134",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "8d65b5940a4dbed8c18e02ca35e3a9d7a14ea76b",
+        "url": "https://www.semanticscholar.org/paper/8d65b5940a4dbed8c18e02ca35e3a9d7a14ea76b",
+        "pdf_url": "https://aclanthology.org/2024.findings-eacl.132.pdf",
+        "abstract": "The emergence of large-scale pre-trained language models has revolutionized various AI research domains. Transformers-based Large Language Models (LLMs) have gradually replaced CNNs and RNNs to unify fields of computer vision and natural language processing. Compared with independent data like images, videos or texts, graphs usually contain rich structural and relational information. Meanwhile, languages, especially natural language, being one of the most expressive mediums, excels in describing complex structures. However, existing work on incorporating graph problems into the generative language modeling framework remains very limited. Considering the rising prominence of LLMs, it becomes essential to explore whether LLMs can also replace GNNs as the foundation model for graphs. In this paper, we propose InstructGLM (Instruction-finetuned Graph Language Model) with highly scalable prompts based on natural language instructions. We use natural language to describe multi-scale geometric structure of the graph and then instruction finetune an LLM to perform graph tasks, which enables Generative Graph Learning. Our method surpasses all GNN baselines on ogbn-arxiv, Cora and PubMed datasets, underscoring its effectiveness and sheds light on generative LLMs as new foundation model for graph machine learning. Our code is available at https://github.com/agiresearch/InstructGLM.",
+        "citations": 328,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2307.03393"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2307.03393"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.216,
+      "tfidf_similarity": 0.087,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "GraspLLM: Towards Zero-Shot Generalization on Text-Attributed Graphs with LLMs",
+        "authors": [
+          "Hengyi Feng",
+          "Zeang Sheng",
+          "Mei-Yi Qiang",
+          "Yang Li",
+          "Wentao Zhang"
+        ],
+        "year": 2026,
+        "date": "2026-06-10",
+        "venue": "arXiv.org",
+        "doi": "10.48550/arxiv.2606.11898",
+        "arxiv_id": "2606.11898",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "b76e7a4392a1c2881ad8e08c008aa6ab599e46af",
+        "url": "https://www.semanticscholar.org/paper/b76e7a4392a1c2881ad8e08c008aa6ab599e46af",
+        "pdf_url": null,
+        "abstract": "Research on Text-Attributed Graphs (TAGs) has gained significant attention recently due to its broad applications across various real-world data scenarios, such as citation networks, e-commerce platforms, social media, and web pages. Inspired by the remarkable semantic understanding ability of Large Language Models (LLMs), there have been numerous attempts to integrate LLMs into TAGs. However, existing methods still struggle to generalize across diverse graphs and tasks, and their ability to capture transferable graph structural patterns remains limited. To address this, we introduce the GraspLLM, a framework that combines Graph structural comprehension with semantic understanding prowess of LLMs to enhance the cross-dataset and cross-task generalizability. Specifically, we represent node texts from different graphs in a unified semantic space with a frozen general embedding model, on top of which we perform motif-aware contrastive learning across multiple motif-induced adjacency matrices to extract dataset-agnostic structural information. Then, with our proposed optimal contextual subgraph, we extract the most contextually relevant subgraph for each target node and align these subgraphs to the token space of LLM via an alignment projector. Extensive experiments on TAG benchmark datasets spanning diverse domains reveal that GraspLLM consistently outperforms previous LLM-based methods for TAGs, especially in zero-shot scenarios, highlighting its strong generalizability across different datasets and tasks. Our code is available at https://github.com/Heinz217/GraspLLM.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2305.19523"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.183,
+      "tfidf_similarity": 0.065,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Struc-EMB: The Potential of Structure-Aware Encoding in Language Embeddings",
+        "authors": [
+          "Shikun Liu",
+          "H. Wang",
+          "Mufei Li",
+          "Pan Li"
+        ],
+        "year": 2025,
+        "date": "2025-10-09",
+        "venue": "arXiv.org",
+        "doi": "10.48550/arxiv.2510.08774",
+        "arxiv_id": "2510.08774",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "a0ff3ff5c1be8413b9b8fef04cf258dbc17c04c1",
+        "url": "https://www.semanticscholar.org/paper/a0ff3ff5c1be8413b9b8fef04cf258dbc17c04c1",
+        "pdf_url": null,
+        "abstract": "Text embeddings from Large Language Models (LLMs) have become foundational for numerous applications. However, these models typically operate on raw text, overlooking the rich structural information, such as hyperlinks or citations, that provides crucial context in many real-world datasets. This paper introduces and systematically evaluates a new paradigm for generating structure-aware text embeddings by integrating these structural relations directly into the LLM's internal encoding process, rather than relying on traditional post-hoc aggregation. We investigate two primary in-process methods: sequential concatenation and parallel caching. Through extensive zero-shot experiments across retrieval, clustering, classification, and recommendation tasks, we demonstrate that our structure-aware approaches consistently outperform both text-only and post-hoc baselines. Our analysis reveals critical trade-offs: sequential concatenation excels with noisy, moderate-length contexts, while parallel caching scales more effectively to long, high-signal contexts but is more susceptible to distractors. To address the challenge of noisy structural data, we also introduce and validate two effective techniques: Context Distillation and Semantic Balancing. This work provides the first comprehensive analysis of in-process structure-aware encoding, offering a blueprint for building more powerful and contextually aware embedding models.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2506.07334"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.148,
+      "tfidf_similarity": 0.044,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Identification of Influential Node Group in Attributed Graph through Explaining Graph Neural Network",
+        "authors": [
+          "Xiao Tan",
+          "Tong Su",
+          "Jiayi Wu",
+          "Yan Zhang",
+          "Bin Xu",
+          "Dian Shen",
+          "Meng Wang",
+          "Beilun Wang"
+        ],
+        "year": 2026,
+        "date": "2026-04-12",
+        "venue": "The Web Conference",
+        "doi": "10.1145/3774904.3792471",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "f97384555975f5afb3fae1a7462ae80c2b8d345b",
+        "url": "https://www.semanticscholar.org/paper/f97384555975f5afb3fae1a7462ae80c2b8d345b",
+        "pdf_url": "https://doi.org/10.1145/3774904.3792471",
+        "abstract": "Identification of influential groups of nodes in attributed graphs has applications in a wide range of real-world problems, for instance, collecting important proceedings in citation networks, or identifying essential genes for diagnosing disease in Protein-Protein Interaction networks. Previous approaches for influence maximization manipulated on the graph structure, despite their proliferation, neglect the node attribute information containing additional knowledge. In this work, we introduce Global Graph UNderstanding (GGUN), a perturbation-based framework leveraging the explanatory power of Graph Neural Networks. It takes into account the entire graph structure and node attributes simultaneously and fuses knowledge through GNN layers. Following the perturbation-based explanation, GGUN fills the gap between Deep Neural Network gradient-based feature importance analysis and discrete structure in the graph, which is formulated as a combinatorial optimization problem. Moreover, GGUN obtains an efficient solution by relaxing the infeasible combinatorial optimization problem with performance guaranteed. Evaluations of synthetic and real-world datasets show that GGUN outperforms baselines on both quantitative metrics and human-intelligible analysis.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2310.09872"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.12,
+      "tfidf_similarity": 0.047,
+      "design_elements_matched": [
+        "new arXiv citation dataset"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+        "authors": [
+          "Zhenyu (Allen) Zhang",
+          "Runjin Chen",
+          "Shi-Wei Liu",
+          "Zhewei Yao",
+          "Olatunji Ruwase",
+          "Beidi Chen",
+          "Xiaoxia Wu",
+          "Zhang-Yang Wang"
+        ],
+        "year": 2024,
+        "date": "2024-03-05",
+        "venue": "Neural Information Processing Systems",
+        "doi": "10.48550/arxiv.2403.04797",
+        "arxiv_id": "2403.04797",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "275b005c33a315ad603f236cd5766efe07ef6a54",
+        "url": "https://www.semanticscholar.org/paper/275b005c33a315ad603f236cd5766efe07ef6a54",
+        "pdf_url": null,
+        "abstract": "This paper aims to overcome the\"lost-in-the-middle\"challenge of large language models (LLMs). While recent advancements have successfully enabled LLMs to perform stable language modeling with up to 4 million tokens, the persistent difficulty faced by most LLMs in identifying relevant information situated in the middle of the context has not been adequately tackled. To address this problem, this paper introduces Multi-scale Positional Encoding (Ms-PoE) which is a simple yet effective plug-and-play approach to enhance the capacity of LLMs to handle the relevant information located in the middle of the context, without fine-tuning or introducing any additional overhead. Ms-PoE leverages the position indice rescaling to relieve the long-term decay effect introduced by RoPE, while meticulously assigning distinct scaling ratios to different attention heads to preserve essential knowledge learned during the pre-training step, forming a multi-scale context fusion from short to long distance. Extensive experiments with a wide range of LLMs demonstrate the efficacy of our approach. Notably, Ms-PoE achieves an average accuracy gain of up to 3.8 on the Zero-SCROLLS benchmark over the original LLMs. Code are available at https://github.com/VITA-Group/Ms-PoE.",
+        "citations": 101,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2506.07334"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.072,
+      "tfidf_similarity": 0.024,
+      "design_elements_matched": [
+        "compare LLM accuracy with and without neighbour information"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    }
+  ],
+  "must_read": [
+    {
+      "title": "E2EG: End-to-End Node Classification Using Graph Topology and Text-based Node Attributes",
+      "year": 2022,
+      "arxiv_id": "2208.04609",
+      "doi": "10.1109/icdmw60847.2023.00142",
+      "pdf_url": "https://arxiv.org/pdf/2208.04609",
+      "why": "term overlap 0.437, design elements: new arXiv citation dataset, found only through the citation graph",
+      "next": "fulltext --id 2208.04609"
+    },
+    {
+      "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+      "year": 2023,
+      "arxiv_id": "2305.19523",
+      "doi": null,
+      "pdf_url": null,
+      "why": "term overlap 0.391, design elements: new arXiv citation dataset",
+      "next": "fulltext --id 2305.19523"
+    },
+    {
+      "title": "LLM Profiling and Fine-Tuning with Limited Neighbor Information for Node Classification on Text-Attributed Graphs",
+      "year": 2025,
+      "arxiv_id": null,
+      "doi": "10.1109/bigdata66926.2025.11401710",
+      "pdf_url": null,
+      "why": "term overlap 0.345, design elements: new arXiv citation dataset",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Graph-KV: Breaking Sequence via Injecting Structural Biases into Large Language Models",
+      "year": 2025,
+      "arxiv_id": "2506.07334",
+      "doi": null,
+      "pdf_url": null,
+      "why": "term overlap 0.358, design elements: new arXiv citation dataset",
+      "next": "fulltext --id 2506.07334"
+    },
+    {
+      "title": "Beyond the Golden Teacher: Enhancing Graph Learning through LLM-GNN Co-teaching",
+      "year": 2026,
+      "arxiv_id": "2606.11583",
+      "doi": "10.48550/arxiv.2606.11583",
+      "pdf_url": null,
+      "why": "term overlap 0.354, design elements: new arXiv citation dataset, found only through the citation graph",
+      "next": "fulltext --id 2606.11583"
+    },
+    {
+      "title": "LLM Features Can Hurt GNNs: Concatenation Interference on Homophilous Graph Benchmarks",
+      "year": 2026,
+      "arxiv_id": "2606.17579",
+      "doi": "10.48550/arxiv.2606.17579",
+      "pdf_url": null,
+      "why": "term overlap 0.332, design elements: new arXiv citation dataset, found only through the citation graph",
+      "next": "fulltext --id 2606.17579"
+    },
+    {
+      "title": "Graph Convolutional Networks for Few-Shot Node Classification Using LLM-Derived Entity and Explanation Features",
+      "year": 2026,
+      "arxiv_id": null,
+      "doi": "10.1109/cisat71030.2026.11682228",
+      "pdf_url": null,
+      "why": "term overlap 0.235, design elements: new arXiv citation dataset, found only through the citation graph",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Language is All a Graph Needs",
+      "year": 2023,
+      "arxiv_id": "2308.07134",
+      "doi": "10.18653/v1/2024.findings-eacl.132",
+      "pdf_url": "https://aclanthology.org/2024.findings-eacl.132.pdf",
+      "why": "term overlap 0.216, design elements: new arXiv citation dataset, found only through the citation graph",
+      "next": "fulltext --id 2308.07134"
+    }
+  ],
+  "expansion_log": [
+    {
+      "expanded": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+      "citing_and_references": 50
+    },
+    {
+      "expanded": "Leveraging Large Language Models for Node Generation in Few-Shot Learning on Text-Attributed Graphs",
+      "citing_and_references": 50
+    },
+    {
+      "expanded": "Graph-KV: Breaking Sequence via Injecting Structural Biases into Large Language Models",
+      "citing_and_references": 31
+    }
+  ],
+  "expansion_errors": [
+    {
+      "step": "seed_citations",
+      "source": "openalex",
+      "kind": "not_found",
+      "message": "no OpenAlex record for seed 2307.03393; citing works not searched"
+    }
+  ],
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "LLM node classification ogbn-arxiv data leakage",
+      "results": 0,
+      "error": {
+        "source": "openalex",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "LLM node classification ogbn-arxiv data leakage",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "LLM node classification ogbn-arxiv data leakage",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "LLM node classification ogbn-arxiv data leakage",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "LLM node classification ogbn-arxiv data leakage",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "large language models graph benchmark contamination test set memorization",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "large language models graph benchmark contamination test set memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "large language models graph benchmark contamination test set memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "text-attributed graph evaluation papers published after training cutoff",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "text-attributed graph evaluation papers published after training cutoff",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "text-attributed graph evaluation papers published after training cutoff",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM node classification ogbn-arxiv data leakage survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM node classification ogbn-arxiv data leakage survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM node classification ogbn-arxiv data leakage survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM node classification ogbn-arxiv data leakage review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM node classification ogbn-arxiv data leakage review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM node classification ogbn-arxiv data leakage review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "large language models graph benchmark contamination test set memorization survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "large language models graph benchmark contamination test set memorization survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "large language models graph benchmark contamination test set memorization survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "large language models graph benchmark contamination test set memorization review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "large language models graph benchmark contamination test set memorization review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "large language models graph benchmark contamination test set memorization review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "text-attributed graph evaluation papers published after training cutoff survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "text-attributed graph evaluation papers published after training cutoff survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "text-attributed graph evaluation papers published after training cutoff survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "text-attributed graph evaluation papers published after training cutoff review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "text-attributed graph evaluation papers published after training cutoff review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "text-attributed graph evaluation papers published after training cutoff review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "LLM node classification ogbn-arxiv data leakage",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "LLM node classification ogbn-arxiv data leakage",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "LLM node classification ogbn-arxiv data leakage",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "large language models graph benchmark contamination test set memorization",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "large language models graph benchmark contamination test set memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "large language models graph benchmark contamination test set memorization",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "do LLMs really understand graph structure or memorize benchmark papers",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "text-attributed graph evaluation papers published after training cutoff",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "text-attributed graph evaluation papers published after training cutoff",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "text-attributed graph evaluation papers published after training cutoff",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-18"
+}

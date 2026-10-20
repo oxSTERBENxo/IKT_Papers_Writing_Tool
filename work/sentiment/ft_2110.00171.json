@@ -1,0 +1,273 @@
+{
+  "ident": "2110.00171",
+  "arxiv_id": "2110.00171",
+  "status": "full_text",
+  "source": "arxiv_tex",
+  "sections": [
+    {
+      "heading": "Front matter",
+      "level": "section",
+      "text": "\n\\pdfoutput=1\n\n\n\\documentclass[11pt]{article}\n\n\n\n\\usepackage{emnlp2021}\n\n\n\\usepackage{times}\n\\usepackage{latexsym}\n\n\n\\usepackage[T1]{fontenc}\n\n\n\n\n\n\\usepackage[utf8]{inputenc}\n\n\n\n\n\\usepackage{microtype}\n\n\\usepackage{multirow}\n\\usepackage{graphicx}\n\\usepackage{subcaption}\n\\usepackage{adjustbox}\n\\usepackage{amsmath}\n\\usepackage{amsfonts}\n\\usepackage{threeparttable}\n\\usepackage{booktabs}\n\n\n\\usepackage{enumitem}\n\\usepackage{stfloats}\n\n\\newcommand{\\xhdr}[1]{{\\noindent\\bfseries #1}.}\n\\newcommand{\\squishlist}{\n \\begin{list}{$\\bullet$}\n  { \\setlength{\\itemsep}{0pt}\n     \\setlength{\\parsep}{1pt}\n     \\setlength{\\topsep}{1pt}\n     \\setlength{\\partopsep}{0pt}\n     \\setlength{\\leftmargin}{1em}\n     \\setlength{\\labelwidth}{1em}\n     \\setlength{\\labelsep}{0.5em} } }\n\\newcommand{\\squishend}{\\end{list}}\n\n\n\n\n\n\n\n\\title{BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification}\n\\author{Zeguan Xiao\\textsuperscript{1}, \nJiarun Wu\\textsuperscript{1}, \nQingliang Chen\\textsuperscript{1,2}\\thanks{\\quad Corresponding author (Qingliang Chen).},\nCongjian Deng\\textsuperscript{3} \\\\\n\\textsuperscript{1}Department of Computer Science, Jinan University, Guangzhou 510632, China \\\\\n\\textsuperscript{2}Guangzhou Xuanyuan Research Institute Company, Ltd., Guangzhou 510006, China\\\\\n\\textsuperscript{3}Guangzhou Yunqu Information Technology Company, Ltd., Guangzhou 510665, China \\\\\n\nxiaozg@stu2018.jnu.edu.cn, \nbenwu@stu2019.edu.cn \\\\\ntpchen@jnu.edu.cn, \ndcj@yunqu-info.com \\\\\n}\n\n\\begin{document}\n\\maketitle\n\n\\begin{abstract}\nGraph-based Aspect-based Sentiment Classification (ABSC) approaches have yielded state-of-the-art results, expecially when equipped with contextual word embedding from pre-training language models (PLMs). However, they ignore sequential features of the context and have not yet made the best of PLMs. In this paper, we propose a novel model, BERT4GCN, which integrates the grammatical sequential features from the PLM of BERT, and the syntactic knowledge from dependency graphs. BERT4GCN utilizes outputs from intermediate layers of BERT and positional information between words to augment GCN (Graph Convolutional Network) to better encode the dependency graphs for the downstream classification. Experimental results demonstrate that the proposed BERT4GCN outperforms all state-of-the-art baselines, justifying that augmenting GCN with the grammatical features from intermediate layers of BERT can significantly empower ABSC models.\n\\end{abstract}\n",
+      "roles": [],
+      "chars": 2497
+    },
+    {
+      "heading": "Introduction",
+      "level": "section",
+      "text": "\nAspect-based sentiment classification (ABSC), a fine-grained sentiment classification task in the field of sentiment analysis, aims at identifying the sentiment polarities of aspects explicitly given in sentences. For example, given the sentence ``The price is reasonable although the service is poor.'', ABSC needs to correctly assign a positive polarity to price and a negative one to service.\n\nIntuitively, matching aspects with their corresponding opinion expressions is the core of ABSC task. Some of previous deep learning approaches  use various types of attention mechanisms to model the relationship between aspects and opinion expressions in an implicit way. However, these attention-based models do not take good advantage of the syntactic information of sentences, such as the dependency graph, to better associate the aspects with their sentimental polarities, thus leading to poor performance.\n\nIn order to better pair aspects and their corresponding opinion expressions, the syntactic features must be taken into account. Recent work such as  employs either Graph Convolutional Networks (GCNs)  or Graph Attention Networks (GATs)  on the dependency graph, in which words in the sentence are nodes in the graph and grammatical relations are edge labels. The dependency graph they use can be obtained from either ordinary dependency tree parser or reshaping it using heuristic rules. These models can achieve promisingly better performance with this additional grammatical features, especially when they incorporate the contextual word embedding, such as BERT .\n\nMeanwhile, BERTology researchers have investigated what linguistic knowledge can be learned from unlabeled data by language models  . And it has been shown that BERT captures a rich hierarchy of linguistic information, with surface features in lower layers, syntactic features in middle layers and semantic features in higher layers  .\n\nInspired by , we propose a novel framework of BERT4GCN to make the best of the rich hierarchy of linguistic information from BERT in this paper.\nSpecifically, we firstly encode the context with a BiLSTM (Bidirectional Long Short-Term Memory) to capture the contextual information regarding word orders. Then, we use the hidden states of BiLSTM to initiate node representations and employ multi-layer GCN on the dependency graph.\nNext, we combine the node representations of each layer of GCN with the hidden states of some intermediate layer of BERT, i.e., for the neighborhood aggregation of GCN. In this way, BERT4GCN can fuse grammatical sequential features with graph-based representations. Besides, we further prune and add the edge of the dependency graph based on self-attention weights in the Transformer encoder  of BERT to deal with parsing errors and make dependency graph better suit ABSC task. In addition, we develop a method which incorporates relative positional embedding in node representations to make GCN position-aware.\n\nOur contributions in this paper are summarized as follows:\n{\n\\squishlist\n\\item  We propose a BERT4GCN model, which naturally incorporates grammatical sequential features and syntactic knowledge from intermediate layers in BERT to augment GCN and thus can produce better encodings for the downstream ABSC task. BERT4GCN can make the best of the hidden linguistic knowledge in BERT without learning from scratch on other sources. \n\\item The experiments have been conducted on SemEval 2014 Task 4  and Twitter  datasets, with promising results showing that BERT4GCN achieves new state-of-the-art performance across these prestigious benchmarks.\n\\squishend\n}\n",
+      "roles": [],
+      "chars": 3611
+    },
+    {
+      "heading": "Related Work",
+      "level": "section",
+      "text": "\nModeling the connection between aspect terms and opinion expressions is the core of the ABSC task. State-of-the-art models combine GNNs (Graph Neural Networks) with dependency graphs whose syntactic information is very helpful. Some have stacked several GNN layers to propagate sentiment from opinion expressions to aspect terms . Some have tried to convert the original dependency graph to the aspect-oriented one and encode dependency relations . More recently, a dual structure model has been proposed in , jointly taking the sequential features and dependency graph knowledge together. Our BERT4GCN model has a similar structure to that in , but ours utilizes the grammatical sequential features directly from intermediate layers in BERT, instead of learning from scratch on other sources.\n\n\n\n",
+      "roles": [
+        "related_work"
+      ],
+      "chars": 798
+    },
+    {
+      "heading": "Word Embedding and BiLSTM",
+      "level": "subsection",
+      "text": "\nGiven $s = [w_{1},w_{2},...,w_{i},...,w_{i+m-1},...,w_{n}]$ as a sentence of $n$ words and a substring $a = [w_{i},...,w_{i+m-1}]$ representing aspect terms, we first map each word to a low-dimensional word vector. For each word $w_{i}$, we get a vector $ x_{i} \\in \\mathbb{R}^{d_{e}} $ where $d_{e}$ is the dimensionality of the word embedding. After that, we employ a BiLSTM to word embeddings to produce hidden state vectors $H = [h_{1},h_{2},...,h_{n} ]$, where each $ h_{t} \\in \\mathbb{R}^{2d_{h}}$ represents the hidden state at time step $t$ from bidirectional LSTM, and $d_{h}$ is the dimensionality of a hidden state output by an unidirectional LSTM.\n$H$ will fuse with BERT hidden states to produce the input of the first GCN layer.\n\n",
+      "roles": [],
+      "chars": 745
+    },
+    {
+      "heading": "The Usage of BERT",
+      "level": "subsection",
+      "text": "\nWe consider BERT as a grammatical knowledge encoder that encodes input text features in hidden states and self-attention weights. The input of BERT model is formulated as [CLS]$s$[SEP]$a$[SEP], where $s$ is the sentence and $a$ is the aspect term.\n\n",
+      "roles": [],
+      "chars": 250
+    },
+    {
+      "heading": "Hidden States as Augmented Features",
+      "level": "subsubsection",
+      "text": "\nBERT captures a rich hierarchy of linguistic information, spreading over the Transformer encoder blocks .\n also show that neighbouring layers of BERT learn similar linguistic knowledge. Therefore we select layers uniformly from BERT as the source of augmented features.\nBERT4GCN utilizes the hidden states of the 1st, 5th, 9th and 12th layers of BERT-Base model as augmented features\\footnote{We also try other layers to build $\\rm BERT4GCN_{2,7,12}$ and $\\rm BERT4GCN_{1,4,7,10,12}$ (the numbers in subscript mean layers used), but the model in the paper is the best in experimental results on average.}. We define the hidden states of all BERT layers as $ B = [H^B_{1}, H^B_{2},...,H^B_{12}] $, where each $ H^B_{i} \\in \\mathbb{R}^{n \\times d_{BERT}}$, and $d_{BERT}$ is the dimensionality of the hidden state. When a word is split into multiple sub-words, we just use the hidden state corresponding to its first sub-word. Then we can get the augmented features $G$ for GCN as:\n\\begin{align}\nG &= \\left [ H^B_{1},H^B_{5}, H^B_{9},H^B_{12} \\right ]\n\\end{align}\n\n",
+      "roles": [],
+      "chars": 1064
+    },
+    {
+      "heading": "Supplementing Dependency Graph",
+      "level": "subsubsection",
+      "text": "\nSelf-attention mechanism captures long-distance dependencies between words.\nTherefore, we apply self-attention weights of BERT to supplement dependency graphs to deal with parsing errors and make dependency graphs better suit the ABSC task. After getting dependency graphs from an ordinary parser, we substitute the unidirectional edges to bidirectional ones.\n\nNext, we obtain attention weight tensors $A^{att} = \\left [ W_{1}^{att},W_{5}^{att},W_{9}^{att},W_{12}^{att} \\right ]$, where  each $W_{i}^{att} \\in \\mathbb{R}^{h \\times n \\times n}$ is the self-attention weight tensor of $i$-th layer Transformer encoder of BERT, and $h$ is the number of attention heads.\nThen, we average them over the head dimension $\\bar{A}_{l}^{att} = \\frac{1}{h} \\sum_{i=1}^{h} A_{l,i}^{att}$, where $A_{l}^{att}$ is the $l$-th element in $A^{att}$, and $l \\in \\left \\{ 1,2,3,4 \\right \\}$.\nFinally, we prune or add directed edges between words if the attention weight is larger or smaller than some thresholds. So the supplemented dependency graph for the $l$-th layer of GCN is formulated as follows:\n\\begin{align}\nA_{l,i,j}^{sup} &= \\left\\{\n\\begin{array}{rcl}\n1 & & {\\alpha \\leq \\bar{A}_{l,i,j}^{att}} \\\\\nA_{i,j} & & {\\beta < \\bar{A}_{l,i,j}^{att} < \\alpha} \\\\\n0 & & {\\bar{A}_{l,i,j}^{att} \\leq \\beta}\n\\end{array} \\right.\n\\end{align}\nwhere $A$ is the adjacency matrix of the original dependency graph, $A_{l}^{sup}$ is the  adjacency matrix of the supplemented dependency graph and $A_{l,i,j}^{sup}$ is the element on the $i$-th row and $j$-th column of $A_{l}^{sup}$, $\\alpha$ and $\\beta$ are hyperparameters.\n\n",
+      "roles": [],
+      "chars": 1598
+    },
+    {
+      "heading": "GCN over Supplemented Dependency Graph",
+      "level": "subsection",
+      "text": "\nWe then apply GCN over the supplemented dependency graph in every layer, whose input is a fusion of BERT hidden states and output of the previous layer as follows:\n\\begin{align}\nR_{1} &= {\\rm ReLU} \\left ( G_{1} W_{1} \\right ) + H \\\\\nR_{k} &= {\\rm ReLU}\\left ( G_{k} W_{k} \\right ) + O_{k-1} \\\\\nO_{l,i} &= {\\rm ReLU} \\left ( \\frac{1}{d_{i}} \\sum_{j=1}^{n}\nA_{l,i,j}^{sup} W^{l} R_{l,j} + b^{l} \\right )\n\\end{align}\nwhere $ k \\in \\left \\{ 2,3,4 \\right \\}, l \\in \\left \\{ 1,2,3, 4 \\right \\} $, $G_{1}$ and $ G_{k} \\in \\mathbb{R}^{n \\times d_{BERT}} $ is the first and $k$-th element in $G$, respectively. $R_{1}$ and $R_{k}$ are the node representations which fuse the hidden states of BERT with the hidden states of BiLSTM or the output of the preceding GCN layer, before feeding to the first and $k$-th GCN layer. $O_{l,i}$ is output of $l$-th layer in GCN. $d_{i}$ is the outdegree of node $i$. The weight $W_{1}$,$W_{k},W^{l}$ and bias $b^{l}$ are trainable parameters.\n\n",
+      "roles": [],
+      "chars": 974
+    },
+    {
+      "heading": "Taking Relative Positions",
+      "level": "subsection",
+      "text": "\nThe GCN aggregates neighbouring nodes representations in an averaging way and ignores the relative linear positions in the original context. To address this issue, we learn a set of relative position embeddings $P \\in \\mathbb{R}^{(2w+1) \\times d_{p}}$ to encode positional information, where $w$ is the positional window hyperparameter. Before aggregating neighbouring node representation, we add the relative position embedding to the node representation, formalizing  the relative linear position to the current word as follows:\n\\begin{gather}\nO_{l,i} = {\\rm ReLU} \\left ( \\frac{1}{d_{i}} \\sum_{j=1}^{n} A_{l,i,j}^{sup} W^{l} R_{l,j}^{p} + b^{l} \\right ) \\\\\nR_{l,j}^{p} = R_{l,j} + P_{clip\\left ( j-i,w \\right )} \\\\\nclip\\left ( x,w \\right ) = max \\left ( -w, min(w,x) \\right )\n\\end{gather}\nwhere $R_{l,j}^{p}$ is the positional node representation, and $clip$ function returns the embedding index.\n\n",
+      "roles": [],
+      "chars": 902
+    },
+    {
+      "heading": "The Training",
+      "level": "subsection",
+      "text": "\nHaving obtained the representation of words after the last GCN layer, we average the representation of the current aspect terms as the final feature for classification:\n\\begin{align}\nh_{a} &= \\frac{1}{m} \\sum_{p=i}^{i+m-1} O_{4,p}\n\\end{align}\nIt is then fed into a fully-connected layer, followed by a softmax layer to yield a probability distribution $ p$ over polarity space:\n\\begin{align}\np &= softmax\\left ( h_{a} W_{c} + b_{c} \\right )\n\\end{align}\nwhere $W_{c}$ and $b_{c}$ are trainable weights and biases, respectively.\n\nThe proposed BERT4GCN is optimized by the gradient descent algorithm with the cross entropy loss and $L_2$-regularization:\n\\begin{align}\n\\rm Loss &= - \\sum_{\\left ( x,y \\right ) \\in \\mathbb{D}} ln p_{y} + \\lambda {\\left \\| \\Theta  \\right \\|}_{2}\n\\end{align}\nwhere $\\mathbb{D}$ denotes the training dataset, $y$ is the ground-truth label, $p_{y}$ is the $y$-th element of $p$, $\\Theta$ represents all trainable parameters, and $\\lambda$  is the coefficient of the regularization term.\n",
+      "roles": [
+        "experiments"
+      ],
+      "chars": 1013
+    },
+    {
+      "heading": "Datasets and Experimental Setup",
+      "level": "subsection",
+      "text": "\nWe have evaluated our model on three widely used datasets, including Laptop and Restaurant datasets from SemEval 2014 Task 4  and Twitter datasets from .  And we compare the proposed BERT4GCN with a series of baselines and state-of-the-art models, including LSTM, BERT-SPC , RoBERTa-MLP , MemNet , IAN , AOA , AEN-BERT , CDT , BERT+GCN, ASGCN and  ASGCN-BERT , RGAT and RGAT-BERT , and DGEDT-BERT . We divide them into three categories. The category Others includes models that are general and task agnostic ones. The LSTM acts as a baseline for models without using PLM, while BERT-SPC and RoBERTa-MLP are baselines for models with the corresponding PLMs. The categories Attention and Graph are models mainly based on attention mechanism and graph neural networks, respectively. The details of datasets and experimental setup can be found in Appendix .\n\n",
+      "roles": [
+        "data",
+        "experiments"
+      ],
+      "chars": 856
+    },
+    {
+      "heading": "Experimental Results",
+      "level": "subsection",
+      "text": "\n\n\n[FLOAT] Comparisons of BERT4GCN with various baselines. The w/o pos. indicates the one without using relative position module and w/o att. is without using supplemented dependency graph. Accuracy (Acc.) and Marco-F1 are used for metrics. And we report the average of 10-fold experimental results (%).\n  table* [htp]\n  \n  adjustbox  max width=2.0  \n  tabular  clcccccc \n \n  Category  |\n  Model   |\n  Twitter  |\n  Laptop  | \n  Restaurant   \n \n  3-8 \n| | Acc. | Macro-F1\n| Acc. | Macro-F1\n| Acc. | Macro-F1 \n\n \n  Others |LSTM | 67.69 | 65.61 | 67.04 | 58.26 | 75.63 | 61.33 \n\n| BERT-SPC | 72.88 | 71.78 | 76.19 | 70.84 | 83.74 | 74.77 \n\n| RoBERTa-MLP | 72.76 | 71.73 | 81.11 | 77.11 |   86.79  |   79.76  \n\n \n  Attention  | MemNet | 68.41 | 65.63 | 68.35 | 61.61 | 77.68 | 64.99 \n\n| IAN | 70.33 | 68.12 | 68.24 | 59.49 | 75.78 | 61.12 \n\n| AOA | 69.61 | 67.07 | 69.61 | 62.84 | 77.12 | 63.73 \n\n| AEN-BERT | 71.13 | 70.00 | 75.64 | 69.04 | 80.77 | 68.87 \n\n \n  Graph  | CDT | 71.93 | 69.96 | 72.38 | 67.16 | 79.90 | 68.83 \n\n| BERT+GCN | 72.46 | 71.68 | 73.89 | 67.62 | 82.44 | 72.33 \n\n| ASGCN | 69.28 | 66.63 | 70.55 | 64.26 | 78.65 | 67.03 \n\n| ASGCN-BERT | 72.20 | 70.82 | 76.71 | 71.61 | 81.74 | 71.00 \n\n| RGAT | 68.24 | 66.29 | 71.47 | 65.29 | 79.77 | 69.43 \n\n| RGAT-BERT | 72.62 | 71.34 | 75.67 | 70.53 | 83.23 | 74.26  \n\n| DGEDT-BERT | 72.79 | 71.35 | 76.03 | 70.70 | 83.85 | 75.18 \n\n \n  Ours  | BERT4GCN |   74.73  |   73.76  |   77.49  |   73.01  |   84.75  |   77.11  \n\n| w/o pos.  | 74.48 | 73.22 | 77.24 | 72.82 | 84.41 | 76.29 \n\n| w/o att.  | 74.15 | 72.90 | 77.12 | 72.46 | 83.91 | 75.28 \n\n| w/o pos. \\| w/o att. | 74.36 | 73.31 | 77.23 | 72.58 |  84.09 | 75.93 \n\n| RoBERTa4GCN |   74.75  |   74.00  |   81.80  |   78.16  | 86.23 | 78.61 \n\n \n  tabular \n  adjustbox \n  Comparisons of BERT4GCN with various baselines. The w/o pos. indicates the one without using relative position module and w/o att. is without using supplemented dependency graph. Accuracy (Acc.) and Marco-F1 are used for metrics. And we report the average of 10-fold experimental results (%). \n  tab:results \n  table* \n[/FLOAT]\n\n\n\n\n",
+      "roles": [
+        "experiments",
+        "results"
+      ],
+      "chars": 2109
+    },
+    {
+      "heading": "Overall Results",
+      "level": "subsubsection",
+      "text": "\nWe now present the comparisons of performance of BERT4GCN with other models in terms of classification accuracy and Macro-F1 on Table . \nFrom the table, we can observe that our BERT4GCN outperforms all other BERT-based models across all three datasets, justifying that augmenting GCN with the grammatical features from intermediate layers of BERT can empower ABSC models.\n\n",
+      "roles": [
+        "results"
+      ],
+      "chars": 374
+    },
+    {
+      "heading": "Results Analysis",
+      "level": "subsubsection",
+      "text": "\n\\xhdr{BERT-SPC vs. RoBERTa-MLP} \nRoBERTa-MLP significantly outperforms BERT-SPC on Laptop and Restaurant datasets, while has similar results to BERT-SPC on Twitter dataset. The same pattern is also observed in the comparison of BERT4GCN and RoBERTa4GCN. One possible reason for this phenomenon is that the corpora which the two PLMs were pre-trained on are far different from Twitter dataset. Therefore, RoBERTa's superiority is not shown on the Twitter dataset, which we call the out-domain dataset.\n\n\\xhdr{BERT-SPC vs. BERT-based models}\nFrom the table, we also see that BERT-SPC can parallel BERT-based models, indicating that model architecture engineering only has a marginal effect when using BERT.\n\n\\xhdr{BERT-SPC vs. BERT4GCN}\nObserved from the experimental results, the improved performance of BERT4GCN  over BERT-SPC on Twitter dataset is higher than the other datasets. A similar pattern also appears in the comparison of RoBERTa4GCN and RoBERTa-MLP, where RoBERTa4GCN is just comparable to RoBERTa-MLP on Laptop and Restaurant datasets. For this phenomenon, we have two conjectures: (1) BERT4GCN framework is more flexible to handle the out-domain dataset; (2) When PLM is strong enough, with the current model framework, heavy model architecture engineering is unnecessary on the in-domain dataset. These two conjectures need to be further explored in future work.\n\n",
+      "roles": [
+        "results",
+        "ablation"
+      ],
+      "chars": 1380
+    },
+    {
+      "heading": "Ablation Study",
+      "level": "subsubsection",
+      "text": "\nTo examine the effectiveness of different modules in BERT4GCN, we have carried out ablation studies as shown in Table . \nAs presented in Table , the full model of BERT4GCN has the best performance. And \nwe observe that only fusing grammatical sequential features with GCN (i.e., w/o pos. & w/o att.) can still achieve state-of-the-art results. With the supplemented the dependency graphs (i.e., w/o pos.), the performance increases just slightly.  \n\nIt is notable that adding the relative position module alone (w/o att) produces a negative effect, and the power of the relative position module can only be revealed when combined together with the supplemented dependency graphs. We conjecture that the supplemented dependency graphs prune some edges which connect nearby aspect terms to words that are irrelevant to sentiment classification, thus reducing the noise.\n\n\n[FLOAT] Effect of the size of relative position window $w$ on Twitter (bottom), Laptop (mid) and Restaurant (top) datasets.\n  figure [t]\n \n  window_effect.pdf \n  Effect of the size of relative position window $w$ on Twitter (bottom), Laptop (mid) and Restaurant (top) datasets. \n  fig:win \n  figure \n[/FLOAT]\n\n\n\n[FLOAT] Distributions of the distances between aspect and opinion terms on Laptop and Restaurant datasets.\n  figure [t]\n \n  aspect_opinion_dis.pdf \n  Distributions of the distances between aspect and opinion terms on Laptop and Restaurant datasets. \n  fig:asp_op \n  figure \n[/FLOAT]\n\n\n",
+      "roles": [
+        "ablation"
+      ],
+      "chars": 1468
+    },
+    {
+      "heading": "Effect of Relative Position Window",
+      "level": "subsubsection",
+      "text": "\nWe have also investigated the effect of the relative position window $w$ on BERT4GCN across three datasets. As shown in Figure , Twitter and Laptop datasets prefer a smaller window, while Restaurant dataset prefers a bigger one.\n\nWe calculate the relative distances between aspect and opinion terms of Laptop and Restaurant datasets with annotated aspect-opinion pairs by , and visualize the distributions with kernel density estimation in Figure . Although the two distributions are very similar, the optimal window size for the two datasets is not the same. Therefore we hypothesize that the preference of window size is also influenced by the dataset domain.\nThe long-tailed distributions imply that we need to carefully set the window size for the trade-off between the benefits and losses of position biases.\n\n\n\n",
+      "roles": [],
+      "chars": 818
+    },
+    {
+      "heading": "Conclusion",
+      "level": "section",
+      "text": "\nIn this paper, we propose a BERT4GCN model which integrates the grammatical sequential features from BERT along with the syntactic knowledge from dependency graphs. The proposed model utilizes intermediate layers of BERT, which contain rich and helpful linguistic knowledge, to augment GCN, and furthermore,   incorporates relative positional information of words to be position-aware. Finally, experimental results show that our model achieves new state-of-the-art performance on prestigious benchmarks.\n\n\n",
+      "roles": [
+        "limitations"
+      ],
+      "chars": 508
+    },
+    {
+      "heading": "Acknowledgements",
+      "level": "section",
+      "text": "\nThis research is supported by Qinghai Provincial Science and Technology Research Program (grant No.2021-QY-206), Guangdong Provincial Science and Technology Research Program (grant No.2020A050515014), and National Natural Science Foundation of China (grant No. 62071201).\n\n\n\n\n\\bibliographystyle{acl_natbib}\n\n\\clearpage\n\\appendix\n",
+      "roles": [],
+      "chars": 330
+    },
+    {
+      "heading": "Datasets and Experimental Setup",
+      "level": "subsection",
+      "text": "\n\nWe have evaluated our BERT4GCN model on three widely used datasets, including Laptop and Restaurant datasets from SemEval 2014 Task 4 and Twitter datasets. The statistics of these three datasets are listed in Table . Just like other research work, we remove samples with conflicting polarities.\n\n\n[FLOAT] Statistics of datasets\n  table [h]\n \n  adjustbox  max width=0.48  \n  tabular   c c c c c c c  \n \n  Dataset  |   Positive  |   Neutral  |   Negative  \n\n \n| Train | Test | Train | Test | Train | Test \n\n \nTwitter | 1561 | 173 | 3127 | 346 | 1560 | 173  \n\nLaptop | 994 | 341 | 464 | 169 | 870 | 128 \n\nRestaurant | 2164 | 728 | 637 | 196 | 807 | 196 \n\n \n  tabular \n  adjustbox \n  Statistics of datasets \n  tab:datasets \n  table \n[/FLOAT]\n\n\n\nWe use $10$-fold cross validation to evaluate the model performance. Specifically, we evaluate models at the end of epochs and save the checkpoint that achieves highest accuracy in the validation set. Finally, we test the models on the test set and report the average of 10-fold experimental results.\n\n",
+      "roles": [
+        "data",
+        "experiments"
+      ],
+      "chars": 1045
+    },
+    {
+      "heading": "Implementation Details",
+      "level": "subsection",
+      "text": "\n\nWe choose 300-dimensional Glove vectors for the word embeddings.\nDuring training, the learning rate of BERT and other modules linearly warms up from $0$ to $0.00002$ and $0.001$, respectively, then linearly decreases to 0.  \n\nIn this paper, we name our model as BERT4GCN and use the bert-base-uncased model as the source of grammatical sequential features, but it is easy to extend it to other transformer-based pre-training language models\\footnote{For RoBERTa4GCN, we use roberta-base model.}. \n\nThe training of BERT4GCN model has been run on a Nvidia RTX 3090 that requires about 14GB of GPU memory. The PyTorch implementation of BERT\\footnote{https://github.com/huggingface/transformers} is used in the experiments. \nThe dimensionality of unidirectional LSTM hidden state and positional embedding is set to 300.\nWe set $\\alpha$ to 0.01 and $\\beta $ to 0.25, respectively.\nThe position window $w$ is set to 2, 3, 5 on Twitter, Laptop and Restaurant datasets, respectively.\nAnd the batch size is set to $32$, with Adam as the optimizer.\nAs for the regularization, dropout is applied to BERT and GCN output with the rate of $0.8$.\nAnd we use Spacy\\footnote{https://spacy.io/} toolkit to generate dependency trees.\n\nFor comparisons of baseline models, we use their official implementations or the implementation in ABSA-PyTorch \\footnote{https://github.com/songyouwei/ABSA-PyTorch}, configured with recommended hyperparameters. For BERT+GCN model, we build the graph in the same way as .\n\n\n\\end{document}\n",
+      "roles": [
+        "experiments"
+      ],
+      "chars": 1507
+    }
+  ],
+  "flags": {
+    "runs_and_seeds": [],
+    "split_protocol": [
+      {
+        "section": "Experimental Results",
+        "sentence": "And we report the average of 10-fold experimental results (%). table* [htp] adjustbox max width=2.0 tabular clcccccc Category | Model | Twitter | Laptop | Restaurant 3-8 | | Acc. | Macro-F1 | Acc. | Macro-F1 | Acc. | Macro-F1 Others |LSTM | 67.69 | 65.61 | 67.04 | 58.26 | 75.63 | 61.33 | BERT-SPC | 72.88 | 71.78 | 76.19 | 70.84 | 83.74 | 74.77 | RoBERTa-MLP | 72.76 | 71.73 | 81.11 | 77.11 | 86.79 "
+      },
+      {
+        "section": "Experimental Results",
+        "sentence": "And we report the average of 10-fold experimental results (%). tab:results table* [/FLOAT]"
+      },
+      {
+        "section": "Datasets and Experimental Setup",
+        "sentence": "[FLOAT] Statistics of datasets table [h] adjustbox max width=0.48 tabular c c c c c c c Dataset | Positive | Neutral | Negative | Train | Test | Train | Test | Train | Test Twitter | 1561 | 173 | 3127 | 346 | 1560 | 173 Laptop | 994 | 341 | 464 | 169 | 870 | 128 Restaurant | 2164 | 728 | 637 | 196 | 807 | 196 tabular adjustbox Statistics of datasets tab:datasets table [/FLOAT] We use $10$-fold cro"
+      },
+      {
+        "section": "Datasets and Experimental Setup",
+        "sentence": "Finally, we test the models on the test set and report the average of 10-fold experimental results."
+      }
+    ],
+    "validation_only_reporting": [],
+    "variance_reported": [
+      {
+        "section": "Front matter",
+        "sentence": "Experimental results demonstrate that the proposed BERT4GCN outperforms all state-of-the-art baselines, justifying that augmenting GCN with the grammatical features from intermediate layers of BERT can significantly empower ABSC models."
+      },
+      {
+        "section": "Results Analysis",
+        "sentence": "RoBERTa-MLP} RoBERTa-MLP significantly outperforms BERT-SPC on Laptop and Restaurant datasets, while has similar results to BERT-SPC on Twitter dataset."
+      }
+    ],
+    "structure_free_baseline": [
+      {
+        "section": "Datasets and Experimental Setup",
+        "sentence": "And we compare the proposed BERT4GCN with a series of baselines and state-of-the-art models, including LSTM, BERT-SPC , RoBERTa-MLP , MemNet , IAN , AOA , AEN-BERT , CDT , BERT+GCN, ASGCN and ASGCN-BERT , RGAT and RGAT-BERT , and DGEDT-BERT ."
+      },
+      {
+        "section": "Datasets and Experimental Setup",
+        "sentence": "The LSTM acts as a baseline for models without using PLM, while BERT-SPC and RoBERTa-MLP are baselines for models with the corresponding PLMs."
+      },
+      {
+        "section": "Experimental Results",
+        "sentence": "And we report the average of 10-fold experimental results (%). table* [htp] adjustbox max width=2.0 tabular clcccccc Category | Model | Twitter | Laptop | Restaurant 3-8 | | Acc. | Macro-F1 | Acc. | Macro-F1 | Acc. | Macro-F1 Others |LSTM | 67.69 | 65.61 | 67.04 | 58.26 | 75.63 | 61.33 | BERT-SPC | 72.88 | 71.78 | 76.19 | 70.84 | 83.74 | 74.77 | RoBERTa-MLP | 72.76 | 71.73 | 81.11 | 77.11 | 86.79 "
+      },
+      {
+        "section": "Results Analysis",
+        "sentence": "RoBERTa-MLP} RoBERTa-MLP significantly outperforms BERT-SPC on Laptop and Restaurant datasets, while has similar results to BERT-SPC on Twitter dataset."
+      },
+      {
+        "section": "Results Analysis",
+        "sentence": "A similar pattern also appears in the comparison of RoBERTa4GCN and RoBERTa-MLP, where RoBERTa4GCN is just comparable to RoBERTa-MLP on Laptop and Restaurant datasets."
+      }
+    ],
+    "ablation_or_control": [
+      {
+        "section": "Experimental Results",
+        "sentence": "The w/o pos. indicates the one without using relative position module and w/o att. is without using supplemented dependency graph."
+      },
+      {
+        "section": "Experimental Results",
+        "sentence": "And we report the average of 10-fold experimental results (%). table* [htp] adjustbox max width=2.0 tabular clcccccc Category | Model | Twitter | Laptop | Restaurant 3-8 | | Acc. | Macro-F1 | Acc. | Macro-F1 | Acc. | Macro-F1 Others |LSTM | 67.69 | 65.61 | 67.04 | 58.26 | 75.63 | 61.33 | BERT-SPC | 72.88 | 71.78 | 76.19 | 70.84 | 83.74 | 74.77 | RoBERTa-MLP | 72.76 | 71.73 | 81.11 | 77.11 | 86.79 "
+      },
+      {
+        "section": "Experimental Results",
+        "sentence": "\\| w/o att. | 74.36 | 73.31 | 77.23 | 72.58 | 84.09 | 75.93 | RoBERTa4GCN | 74.75 | 74.00 | 81.80 | 78.16 | 86.23 | 78.61 tabular adjustbox Comparisons of BERT4GCN with various baselines."
+      },
+      {
+        "section": "Experimental Results",
+        "sentence": "The w/o pos. indicates the one without using relative position module and w/o att. is without using supplemented dependency graph."
+      },
+      {
+        "section": "Ablation Study",
+        "sentence": "To examine the effectiveness of different modules in BERT4GCN, we have carried out ablation studies as shown in Table ."
+      },
+      {
+        "section": "Ablation Study",
+        "sentence": "And we observe that only fusing grammatical sequential features with GCN (i.e., w/o pos. & w/o att.) can still achieve state-of-the-art results."
+      }
+    ],
+    "leakage_or_overlap": [],
+    "code_or_data_link": [
+      {
+        "section": "Implementation Details",
+        "sentence": "The PyTorch implementation of BERT\\footnote{https://github.com/huggingface/transformers} is used in the experiments."
+      },
+      {
+        "section": "Implementation Details",
+        "sentence": "For comparisons of baseline models, we use their official implementations or the implementation in ABSA-PyTorch \\footnote{https://github.com/songyouwei/ABSA-PyTorch}, configured with recommended hyperparameters."
+      }
+    ],
+    "hardware_and_cost": [
+      {
+        "section": "Implementation Details",
+        "sentence": "The training of BERT4GCN model has been run on a Nvidia RTX 3090 that requires about 14GB of GPU memory."
+      }
+    ],
+    "stated_limitation": []
+  },
+  "notes": [],
+  "oa_pdf": null,
+  "missing_roles": []
+}

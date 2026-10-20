@@ -1,0 +1,45 @@
+{
+  "paper": {
+    "title": "Selective Attention Based Graph Convolutional Networks for Aspect-Level Sentiment Classification",
+    "authors": [
+      "Xiaochen Hou",
+      "Jing Huang",
+      "Guangtao Wang",
+      "Xiaodong He",
+      "Bowen Zhou"
+    ],
+    "year": 2021,
+    "date": "2021",
+    "venue": "Proceedings of the Fifteenth Workshop on Graph-Based Methods for Natural Language Processing (TextGraphs-15)",
+    "doi": "10.18653/v1/2021.textgraphs-1.8",
+    "arxiv_id": "1910.10857",
+    "pmid": null,
+    "openalex_id": "W3167830325",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/1910.10857",
+    "pdf_url": "https://arxiv.org/pdf/1910.10857v4",
+    "abstract": "Aspect-level sentiment classification aims to identify the sentiment polarity towards a specific aspect term in a sentence. Most current approaches mainly consider the semantic information by utilizing attention mechanisms to capture the interactions between the context and the aspect term. In this paper, we propose to employ graph convolutional networks (GCNs) on the dependency tree to learn syntax-aware representations of aspect terms. GCNs often show the best performance with two layers, and deeper GCNs do not bring additional gain due to over-smoothing problem. However, in some cases, important context words cannot be reached within two hops on the dependency tree. Therefore we design a selective attention based GCN block (SA-GCN) to find the most important context words, and directly aggregate these information into the aspect-term representation. We conduct experiments on the SemEval 2014 Task 4 datasets. Our experimental results show that our model outperforms the current state-of-the-art.",
+    "citations": 26,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_category": "cs.CL",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

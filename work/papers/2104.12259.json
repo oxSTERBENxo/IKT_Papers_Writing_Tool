@@ -1,0 +1,40 @@
+{
+  "paper": {
+    "title": "User Preference-aware Fake News Detection",
+    "authors": [
+      "Yingtong Dou",
+      "Kai Shu",
+      "Congyin Xia",
+      "Philip S. Yu",
+      "Li-Chao Sun"
+    ],
+    "year": 2021,
+    "date": "2021-07-11",
+    "venue": "Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "doi": "10.1145/3404835.3462990",
+    "arxiv_id": "2104.12259",
+    "pmid": null,
+    "openalex_id": "W3153567752",
+    "s2_id": "081a386a2a314b5bc2da6fd20ed3e7cafbcad76e",
+    "url": "https://www.semanticscholar.org/paper/081a386a2a314b5bc2da6fd20ed3e7cafbcad76e",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3404835.3462990",
+    "abstract": "Disinformation and fake news have posed detrimental effects on individuals and society in recent years, attracting broad attention to fake news detection. The majority of existing fake news detection algorithms focus on mining news content and/or the surrounding exogenous context for discovering deceptive signals; while the endogenous preference of a user when he/she decides to spread a piece of fake news or not is ignored. The confirmation bias theory has indicated that a user is more likely to spread a piece of fake news when it confirms his/her existing beliefs/preferences. Users' historical, social engagements such as posts provide rich information about users' preferences toward news and have great potential to advance fake news detection. However, the work on exploring user preference for fake news detection is somewhat limited. Therefore, in this paper, we study the novel problem of exploiting user preference for fake news detection. We propose a new framework, UPFD, which simultaneously captures various signals from user preferences by joint content and graph modeling. Experimental results on real-world datasets demonstrate the effectiveness of the proposed framework. We release our code and data as a benchmark for GNN-based fake news detection: https://github.com/safe-graph/GNN-FakeNews.",
+    "citations": 360,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "abstract_source": "arxiv",
+      "arxiv_comment": "Accepted by SIGIR'21. Code is available at https://github.com/safe-graph/GNN-FakeNews",
+      "arxiv_category": "cs.SI"
+    }
+  },
+  "notes": []
+}

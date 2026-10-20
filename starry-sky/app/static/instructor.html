@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starry Sky: instructor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="layout">
+  <div class="sky-wrap" id="sky-wrap">
+    <canvas id="sky"></canvas>
+    <div class="tooltip" id="tip"></div>
+  </div>
+
+  <div class="side">
+    <h1 id="title">Lecture</h1>
+    <p class="muted">Join at <strong id="join-url"></strong></p>
+    <div class="code" id="code"></div>
+    <p><span class="pill" id="phase">…</span>
+      <span class="muted" id="stats"></span></p>
+
+    <div class="card">
+      <div class="row">
+        <button class="secondary" data-phase="ask">Asking</button>
+        <button class="secondary" data-phase="vote">Voting</button>
+        <button class="secondary" data-phase="closed">Close</button>
+      </div>
+      <p class="muted" style="margin: 8px 0 0">Asking: questions are private. Voting: everyone sees all questions in
+        a random order and upvotes. Close: then rank the groups below.</p>
+    </div>
+
+    <div class="card" id="detail-card" hidden>
+      <h2 style="margin-top: 0">Selected star</h2>
+      <p id="detail-head" class="muted"></p>
+      <ul class="plain" id="detail"></ul>
+    </div>
+
+    <h2>Brightest stars</h2>
+    <p class="muted">Brightness = number of students who asked; ▲ = upvotes.</p>
+    <ul class="plain" id="top"></ul>
+
+    <details class="card">
+      <summary>Settings and data</summary>
+      <p><label class="muted" for="thr">Grouping strictness (similarity needed to join a star): <span id="thr-val"></span></label>
+        <input type="range" id="thr" min="0.3" max="0.9" step="0.05" style="width: 100%"></p>
+      <p class="muted" id="method"></p>
+      <p><a id="export" href="#">Download all data (JSON)</a></p>
+    </details>
+
+    <div class="card" id="rank-card">
+      <h2 style="margin-top: 0">After the lecture: rank the groups</h2>
+      <p class="muted">Groups are shown in random order without counts. Put the ones most important to answer for the
+        whole class at the top. This is the reference for comparing upvotes with star brightness.</p>
+      <button class="secondary" id="rank-start">Start blind ranking</button>
+      <ul class="plain rank-list" id="rank-list"></ul>
+      <button id="rank-save" hidden>Save ranking</button>
+      <p id="rank-msg" class="muted"></p>
+    </div>
+    <p id="error" class="error"></p>
+  </div>
+</div>
+<script>
+const $ = (id) => document.getElementById(id);
+const code = location.pathname.split("/").pop().toUpperCase();
+const token = new URLSearchParams(location.search).get("t") || "";
+const PHASE_LABEL = {ask: "Asking open", vote: "Voting open", closed: "Closed"};
+let stars = [], selected = null, hover = null, thrDragging = false;
+
+async function api(path, body) {
+  const sep = path.includes("?") ? "&" : "?";
+  const res = await fetch(`${path}${sep}t=${encodeURIComponent(token)}`, body ? {method: "POST",
+    headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)} : {});
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.detail || "Request failed.");
+  return data;
+}
+function li(text, cls) { const e = document.createElement("li"); e.textContent = text; if (cls) e.className = cls; return e; }
+
+/* ---- sky drawing ---- */
+const canvas = $("sky"), ctx = canvas.getContext("2d");
+const bg = Array.from({length: 160}, () => ({x: Math.random(), y: Math.random(), r: Math.random() * 1.2 + .2,
+  p: Math.random() * 6.28}));
+function resize() {
+  const r = canvas.parentElement.getBoundingClientRect(), d = devicePixelRatio || 1;
+  canvas.width = r.width * d; canvas.height = r.height * d; ctx.setTransform(d, 0, 0, d, 0, 0);
+}
+addEventListener("resize", resize);
+function starRadius(s) { return 5 + 7 * Math.sqrt(s.askers); }
+function draw(t) {
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  ctx.clearRect(0, 0, w, h);
+  for (const b of bg) {
+    ctx.globalAlpha = .35 + .25 * Math.sin(t / 900 + b.p);
+    ctx.fillStyle = "#ffffff"; ctx.beginPath(); ctx.arc(b.x * w, b.y * h, b.r, 0, 6.28); ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+  const maxAskers = Math.max(1, ...stars.map(s => s.askers));
+  for (const s of stars) {
+    const x = s.x * w, y = s.y * h, r = starRadius(s);
+    const glow = .25 + .75 * s.askers / maxAskers;
+    const tw = 1 + .06 * Math.sin(t / 500 + s.id);
+    const g = ctx.createRadialGradient(x, y, 0, x, y, r * 3.2 * tw);
+    g.addColorStop(0, `rgba(255, 236, 170, ${glow})`);
+    g.addColorStop(.25, `rgba(255, 211, 107, ${glow * .55})`);
+    g.addColorStop(1, "rgba(255, 211, 107, 0)");
+    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, r * 3.2 * tw, 0, 6.28); ctx.fill();
+    ctx.fillStyle = `rgba(255, 250, 230, ${.6 + .4 * glow})`;
+    ctx.beginPath(); ctx.arc(x, y, r * .45, 0, 6.28); ctx.fill();
+    if (selected === s.id || hover === s.id) {
+      ctx.strokeStyle = "#7cc4ff"; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x, y, r * 1.2, 0, 6.28); ctx.stroke();
+    }
+    if (s.askers >= Math.max(2, maxAskers * .5)) {
+      ctx.fillStyle = "rgba(232, 236, 255, .85)"; ctx.font = "13px system-ui"; ctx.textAlign = "center";
+      const label = s.representative.length > 48 ? s.representative.slice(0, 46) + "…" : s.representative;
+      ctx.fillText(label, x, y + r * 1.6 + 12);
+    }
+  }
+  requestAnimationFrame(draw);
+}
+function starAt(ev) {
+  const r = canvas.getBoundingClientRect(), mx = ev.clientX - r.left, my = ev.clientY - r.top;
+  let best = null, bestD = 1e9;
+  for (const s of stars) {
+    const d = Math.hypot(s.x * r.width - mx, s.y * r.height - my);
+    if (d < starRadius(s) * 1.5 && d < bestD) { best = s; bestD = d; }
+  }
+  return best;
+}
+canvas.onmousemove = (ev) => {
+  const s = starAt(ev), tip = $("tip");
+  hover = s ? s.id : null;
+  if (!s) { tip.style.display = "none"; return; }
+  tip.replaceChildren();
+  const head = document.createElement("div"); head.textContent = s.representative;
+  const meta = document.createElement("div"); meta.className = "muted";
+  meta.textContent = `${s.askers} student${s.askers === 1 ? "" : "s"} asked · ▲ ${s.upvotes}`;
+  tip.append(head, meta);
+  const r = canvas.getBoundingClientRect();
+  tip.style.left = Math.min(ev.clientX - r.left + 14, r.width - 330) + "px";
+  tip.style.top = (ev.clientY - r.top + 14) + "px";
+  tip.style.display = "block";
+};
+canvas.onmouseleave = () => { hover = null; $("tip").style.display = "none"; };
+canvas.onclick = (ev) => { const s = starAt(ev); selected = s ? s.id : null; renderDetail(); };
+
+/* ---- side panel ---- */
+function renderDetail() {
+  const s = stars.find(x => x.id === selected);
+  $("detail-card").hidden = !s;
+  if (!s) return;
+  $("detail-head").textContent = `${s.askers} student(s) asked ${s.n_questions} question(s) · ▲ ${s.upvotes} upvotes`;
+  $("detail").replaceChildren(...s.questions.map(q => {
+    const e = li(`${q.text}  (▲ ${q.upvotes})`);
+    const b = document.createElement("button"); b.className = "secondary"; b.textContent = "Hide";
+    b.title = "Remove off-topic or inappropriate questions (kept in the data, marked hidden)";
+    b.style.marginLeft = "8px"; b.style.padding = "2px 8px";
+    b.onclick = async () => { await api(`/api/i/${code}/hide`, {question_id: q.id, hidden: true}); refresh(); };
+    e.append(b); return e;
+  }));
+}
+async function refresh() {
+  try {
+    const d = await api(`/api/i/${code}/sky`);
+    $("error").textContent = "";
+    $("title").textContent = d.title; document.title = d.title + " · Starry Sky";
+    $("code").textContent = d.code;
+    $("join-url").textContent = `${location.origin}/s/${d.code}`;
+    $("phase").textContent = PHASE_LABEL[d.phase]; $("phase").className = "pill " + d.phase;
+    $("stats").textContent = `${d.n_questions} questions from ${d.n_askers} students · ${d.stars.length} stars`;
+    $("method").textContent = "Grouping: " + d.method;
+    if (!thrDragging) { $("thr").value = d.threshold; $("thr-val").textContent = d.threshold.toFixed(2); }
+    $("export").href = `/api/i/${code}/export?t=${encodeURIComponent(token)}`;
+    for (const b of document.querySelectorAll("[data-phase]")) b.disabled = b.dataset.phase === d.phase;
+    stars = d.stars;
+    $("top").replaceChildren(...stars.slice(0, 8).map(s => {
+      const e = li(`★ ${s.askers} · ▲ ${s.upvotes} · ${s.representative}`);
+      e.style.cursor = "pointer"; e.onclick = () => { selected = s.id; renderDetail(); };
+      return e;
+    }));
+    renderDetail();
+  } catch (e) { $("error").textContent = e.message; }
+}
+for (const b of document.querySelectorAll("[data-phase]")) {
+  b.onclick = async () => {
+    if (b.dataset.phase === "closed" && !confirm("Close the lecture? Students can no longer ask or vote.")) return;
+    await api(`/api/i/${code}/phase`, {phase: b.dataset.phase}); refresh();
+  };
+}
+$("thr").oninput = () => { thrDragging = true; $("thr-val").textContent = Number($("thr").value).toFixed(2); };
+$("thr").onchange = async () => {
+  await api(`/api/i/${code}/threshold`, {threshold: Number($("thr").value)}); thrDragging = false; refresh();
+};
+
+/* ---- blind ranking ---- */
+let rankRun = null, shownOrder = [], order = [];
+function renderRank() {
+  $("rank-list").replaceChildren(...order.map((item, i) => {
+    const e = document.createElement("li");
+    const n = document.createElement("span"); n.className = "num"; n.textContent = i + 1;
+    const body = document.createElement("div"); body.style.flex = "1";
+    const t = document.createElement("div"); t.textContent = item.representative;
+    body.append(t);
+    if (item.questions.length > 1) {
+      const more = document.createElement("details");
+      const sum = document.createElement("summary"); sum.textContent = `${item.questions.length} similar questions`;
+      more.append(sum, ...item.questions.map(q => { const p = document.createElement("div"); p.className = "muted";
+        p.textContent = "– " + q; return p; }));
+      body.append(more);
+    }
+    const up = document.createElement("button"); up.className = "secondary"; up.textContent = "↑"; up.disabled = i === 0;
+    const down = document.createElement("button"); down.className = "secondary"; down.textContent = "↓";
+    down.disabled = i === order.length - 1;
+    up.onclick = () => { [order[i - 1], order[i]] = [order[i], order[i - 1]]; renderRank(); };
+    down.onclick = () => { [order[i + 1], order[i]] = [order[i], order[i + 1]]; renderRank(); };
+    e.append(n, body, up, down); return e;
+  }));
+  $("rank-save").hidden = !order.length;
+}
+$("rank-start").onclick = async () => {
+  if (!confirm("Start the blind ranking now? It freezes the current grouping. Best done after closing the lecture.")) return;
+  const d = await api(`/api/i/${code}/ranking/start`, {});
+  rankRun = d.run_id; order = d.items; shownOrder = d.items.map(x => x.id);
+  $("rank-msg").textContent = order.length ? "" : "No questions to rank.";
+  renderRank();
+};
+$("rank-save").onclick = async () => {
+  try {
+    await api(`/api/i/${code}/ranking`, {run_id: rankRun, shown_order: shownOrder, ranking: order.map(x => x.id)});
+    $("rank-msg").textContent = "Ranking saved. Thank you!";
+  } catch (e) { $("rank-msg").textContent = e.message; }
+};
+
+resize(); requestAnimationFrame(draw); refresh(); setInterval(refresh, 3000);
+</script>
+</body>
+</html>

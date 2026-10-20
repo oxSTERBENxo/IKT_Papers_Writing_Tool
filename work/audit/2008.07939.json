@@ -1,0 +1,39 @@
+{
+  "paper": {
+    "title": "FANG: Leveraging Social Context for Fake News Detection Using Graph Representation",
+    "authors": [
+      "Van-Hoang Nguyen",
+      "Kazunari Sugiyama",
+      "Preslav Nakov",
+      "Min-Yen Kan"
+    ],
+    "year": 2020,
+    "date": "2020-10-19",
+    "venue": "Proceedings of the 29th ACM International Conference on Information &amp; Knowledge Management",
+    "doi": "10.1145/3340531.3412046",
+    "arxiv_id": "2008.07939",
+    "pmid": null,
+    "openalex_id": "W3191441002",
+    "s2_id": "197c628a1fed591469e7ee6ff1c2d33074979c82",
+    "url": "https://arxiv.org/abs/2008.07939",
+    "pdf_url": "https://arxiv.org/pdf/2008.07939v2",
+    "abstract": "We propose Factual News Graph (FANG), a novel graphical social context representation and learning framework for fake news detection. Unlike previous contextual models that have targeted performance, our focus is on representation learning. Compared to transductive models, FANG is scalable in training as it does not have to maintain all nodes, and it is efficient at inference time, without the need to re-process the entire graph. Our experimental results show that FANG is better at capturing the social context into a high fidelity representation, compared to recent graphical and non-graphical models. In particular, FANG yields significant improvements for the task of fake news detection, and it is robust in the case of limited training data. We further demonstrate that the representations learned by FANG generalize to related tasks, such as predicting the factuality of reporting of a news medium.",
+    "citations": 348,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "To appear in CIKM 2020",
+      "arxiv_category": "cs.SI",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": []
+}

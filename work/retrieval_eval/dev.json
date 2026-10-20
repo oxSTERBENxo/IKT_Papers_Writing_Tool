@@ -1,0 +1,574 @@
+{
+  "summary": {
+    "dev": {
+      "baseline": {
+        "targets": 9,
+        "found": 1,
+        "in_top_20": 0,
+        "recall_any": 0.111,
+        "recall_at_20": 0.0
+      },
+      "challenge": {
+        "targets": 9,
+        "found": 4,
+        "in_top_20": 1,
+        "recall_any": 0.444,
+        "recall_at_20": 0.111
+      },
+      "landscape": {
+        "targets": 9,
+        "found": 4,
+        "in_top_20": 3,
+        "recall_any": 0.444,
+        "recall_at_20": 0.333
+      },
+      "full": {
+        "targets": 9,
+        "found": 4,
+        "in_top_20": 3,
+        "recall_any": 0.444,
+        "recall_at_20": 0.333
+      }
+    },
+    "caveat": "Pooled over few topics and few known papers per topic; treat differences of one or two papers as noise. Live results depend on rate limits and index coverage on the day of the run."
+  },
+  "results": [
+    {
+      "id": "absa-syntax-gcn",
+      "split": "dev",
+      "n_targets": 5,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.2,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 58,
+          "n_retrieved": 81,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 58,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 81
+        },
+        "challenge": {
+          "recall_any": 0.4,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 138.0,
+          "n_retrieved": 347,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 164,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": 112,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 347,
+          "expansion_errors": 0
+        },
+        "landscape": {
+          "recall_any": 0.4,
+          "recall_at_20": 0.4,
+          "median_rank_of_found": 6.5,
+          "n_retrieved": 330,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": false
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": 10,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": false
+            }
+          ],
+          "n": 330,
+          "must_read": [
+            {
+              "title": "Aspect-Based Sentiment Classification with Background Information and Syntactic Auxiliary Tasks",
+              "arxiv_id": null,
+              "doi": "10.1109/ijcnn52387.2021.9533506"
+            },
+            {
+              "title": "Aspect-based Sentiment Analysis with Type-aware Graph Convolutional Networks and Layer Ensemble",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/2021.naacl-main.231"
+            },
+            {
+              "title": "On the Robustness of Aspect-based Sentiment Analysis: Rethinking Model, Data, and Training",
+              "arxiv_id": "2304.09563",
+              "doi": "10.1145/3564281"
+            },
+            {
+              "title": "Recurrent Attention Network on Memory for Aspect Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/d17-1047"
+            },
+            {
+              "title": "PyABSA: A Modularized Framework for Reproducible Aspect-based Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.1145/3583780.3614752"
+            },
+            {
+              "title": "The Reproducibility Gap in Graph Neural Network Workflows for Cell Dynamics: A Checklist-Driven Evaluation",
+              "arxiv_id": null,
+              "doi": "10.22541/au.176463842.29639629/v1"
+            },
+            {
+              "title": "Review for \"A reproducibility study of atomistic line graph neural networks for materials property prediction\"",
+              "arxiv_id": null,
+              "doi": "10.1039/d4dd00064a/v1/review1"
+            },
+            {
+              "title": "PAGEN: A Prediction-Alignment Protocol for Reproducible Heterogeneous GNN Ensembling in Aspect-Based Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.7199162"
+            },
+            {
+              "title": "Bayesian Biaffine Variational Graph Convolutional Network for Aspect-Based Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.3390/app16189065"
+            },
+            {
+              "title": "An entropy-regularized counterfactual framework for robust and generalizable ABSA",
+              "arxiv_id": null,
+              "doi": "10.1007/s40747-025-02170-7"
+            },
+            {
+              "title": "Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification",
+              "arxiv_id": null,
+              "doi": "10.1109/tcss.2024.3514901"
+            },
+            {
+              "title": "Fine-tuning Pretrained Multilingual BERT Model for Indonesian Aspect-based Sentiment Analysis",
+              "arxiv_id": "2103.03732",
+              "doi": "10.1109/icaicta49861.2020.9428882"
+            },
+            {
+              "title": "DualGCN: Exploring Syntactic and Semantic Information for Aspect-Based Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.1109/tnnls.2022.3219615"
+            },
+            {
+              "title": "Aspect Sentiment Triplet Extraction with Syntax-Semantics Graph Convolutional Network",
+              "arxiv_id": null,
+              "doi": "10.1007/s44196-025-00900-w"
+            },
+            {
+              "title": "Syntactic Information and Multiple Semantic Segments for Aspect-Based Sentiment Classification",
+              "arxiv_id": null,
+              "doi": "10.1142/s2717554522500060"
+            },
+            {
+              "title": "The Impact of Social Media on Consumers Purchase Decisions for Travel Services (A Study Using the Technology Acceptance Model)",
+              "arxiv_id": null,
+              "doi": "10.52340/eab.2024.16.03.09"
+            },
+            {
+              "title": "Modeling Structured Dependency Tree with Graph Convolutional Networks for Aspect-Level Sentiment Classification",
+              "arxiv_id": null,
+              "doi": "10.3390/s24020418"
+            }
+          ],
+          "coverage_notes": [
+            "citation expansion had 1 error(s)",
+            "166 of 330 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "bucket_sizes": {
+            "negative_result": 20,
+            "comparison": 82,
+            "reproducibility": 7,
+            "benchmark_critique": 3,
+            "stated_limitation": 27,
+            "survey": 33,
+            "method_proposal": 80
+          }
+        },
+        "full": {
+          "recall_any": 0.4,
+          "recall_at_20": 0.4,
+          "median_rank_of_found": 11.5,
+          "n_retrieved": 403,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 5,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": 18,
+              "found": true,
+              "in_top_k": true
+            }
+          ]
+        }
+      },
+      "missed_by_all": [
+        "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+        "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+        "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis"
+      ]
+    },
+    {
+      "id": "upfd-graph-vs-no-graph",
+      "split": "dev",
+      "n_targets": 4,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 51,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [
+            "openalex",
+            "arxiv"
+          ],
+          "n": 51
+        },
+        "challenge": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "median_rank_of_found": 55.5,
+          "n_retrieved": 246,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": 110,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 246,
+          "expansion_errors": 3
+        },
+        "landscape": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "median_rank_of_found": 18.5,
+          "n_retrieved": 224,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": true
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": 34,
+              "found": true,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            }
+          ],
+          "n": 224,
+          "must_read": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "arxiv_id": "2512.06638",
+              "doi": "10.48550/arxiv.2512.06638"
+            },
+            {
+              "title": "Noise-Filtering Enhanced Graph Transformer for Robust Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.1109/tkde.2026.3677544"
+            },
+            {
+              "title": "Why Text Alone Is Not Enough: An Empirical Analysis of Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.36227/techrxiv.176827249.96394831/v1"
+            },
+            {
+              "title": "The Effects of Text Preprocessing Methods on Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.6798853"
+            },
+            {
+              "title": "DEVELOPMENT OF METHODS FOR DETECTION OF FAKE NEWS BASED ON GRAPH THEORY ANALYSIS",
+              "arxiv_id": null,
+              "doi": "10.28925/2663-4023.2026.32.1110"
+            },
+            {
+              "title": "The PolitiFact-Oslo Corpus: A New Dataset for Fake News Analysis and Detection",
+              "arxiv_id": null,
+              "doi": "10.3390/info14120627"
+            },
+            {
+              "title": "Assessing Reproducibility and Accessibility in Hate Speech and Fake News Detection Datasets: A Literature Review (2023-2024)",
+              "arxiv_id": null,
+              "doi": "10.1109/infoteh64129.2025.10959261"
+            },
+            {
+              "title": "Subject-Independent Sleep Apnea Detection from Single-Lead ECG: A Cross-Attention Network and a Measured Reproducibility Baseline",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.7602311"
+            },
+            {
+              "title": "Beyond Reported Accuracy: A Verifiability-Focused, Multi-Axis Review of Content and Context Based Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.62411/jcta.17476"
+            },
+            {
+              "title": "Causal Intervention via Visual–Linguistic Filtering for Multimodal Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.1109/bigdia68682.2025.11383406"
+            },
+            {
+              "title": "Rethinking sketch-based 3D shape retrieval: A simple baseline and benchmark reconstruction",
+              "arxiv_id": null,
+              "doi": "10.1016/j.neucom.2024.128990"
+            },
+            {
+              "title": "Propagation-Based Fake News Detection Using Graph Neural Networks with Transformer",
+              "arxiv_id": null,
+              "doi": "10.1109/gcce53005.2021.9621803"
+            },
+            {
+              "title": "Innovative fake health news detection: Integrating emotional features into graph neural networks",
+              "arxiv_id": null,
+              "doi": "10.59720/25-130"
+            },
+            {
+              "title": "DECOR: Degree-Corrected Social Graph Refinement for Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.1145/3580305.3599298"
+            },
+            {
+              "title": "Fake News Detection through Graph-based Neural Networks: A Survey",
+              "arxiv_id": null,
+              "doi": "10.21203/rs.3.rs-3252100/v1"
+            },
+            {
+              "title": "Fake News Detection via Graph-Based Markov Chains",
+              "arxiv_id": null,
+              "doi": "10.22541/au.167235021.16154701/v1"
+            }
+          ],
+          "coverage_notes": [
+            "citation expansion had 1 error(s)",
+            "94 of 224 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "bucket_sizes": {
+            "negative_result": 15,
+            "comparison": 48,
+            "reproducibility": 9,
+            "benchmark_critique": 4,
+            "stated_limitation": 20,
+            "survey": 25,
+            "method_proposal": 61
+          }
+        },
+        "full": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "median_rank_of_found": 30.0,
+          "n_retrieved": 276,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": 59,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ]
+        }
+      },
+      "missed_by_all": [
+        "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+        "Enhancing Fake-News Detection with Node-Level Topological Features"
+      ]
+    }
+  ],
+  "sources": [
+    "openalex",
+    "arxiv",
+    "crossref"
+  ],
+  "configs": [
+    "baseline",
+    "challenge",
+    "landscape",
+    "full"
+  ]
+}

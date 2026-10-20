@@ -1,0 +1,48 @@
+{
+  "paper": {
+    "title": "Open Graph Benchmark: Datasets for Machine Learning on Graphs",
+    "authors": [
+      "Weihua Hu",
+      "Matthias Fey",
+      "Marinka Zitnik",
+      "Yuxiao Dong",
+      "Hongyu Ren",
+      "Bowen Liu",
+      "Michele Catasta",
+      "Jure Leskovec"
+    ],
+    "year": 2020,
+    "date": "2020-05-02",
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv_id": "2005.00687",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": "597bd2e45427563cdf025e53a3239006aa364cfc",
+    "url": "https://arxiv.org/abs/2005.00687",
+    "pdf_url": "https://arxiv.org/pdf/2005.00687v7",
+    "abstract": "We present the Open Graph Benchmark (OGB), a diverse set of challenging and realistic benchmark datasets to facilitate scalable, robust, and reproducible graph machine learning (ML) research. OGB datasets are large-scale, encompass multiple important graph ML tasks, and cover a diverse range of domains, ranging from social and information networks to biological networks, molecular graphs, source code ASTs, and knowledge graphs. For each dataset, we provide a unified evaluation protocol using meaningful application-specific data splits and evaluation metrics. In addition to building the datasets, we also perform extensive benchmark experiments for each dataset. Our experiments suggest that OGB datasets present significant challenges of scalability to large-scale graphs and out-of-distribution generalization under realistic data splits, indicating fruitful opportunities for future research. Finally, OGB provides an automated end-to-end graph ML pipeline that simplifies and standardizes the process of graph data loading, experimental setup, and model evaluation. OGB will be regularly updated and welcomes inputs from the community. OGB datasets as well as data loaders, evaluation scripts, baseline code, and leaderboards are publicly available at https://ogb.stanford.edu .",
+    "citations": 3986,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "Fix dataset bug in ogbg-code",
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "quota exhausted (X-RateLimit-Reset=2117). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?",
+      "status": 429
+    }
+  ]
+}

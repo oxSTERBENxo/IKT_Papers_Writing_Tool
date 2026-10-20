@@ -1,0 +1,6 @@
+{
+  "frozen_at_utc": "2026-10-19T15:40:11+00:00",
+  "specs.json": "f7061d8f99c3d249b1383ab5ebfacb96e6fe7bbc82f118a44ded3dea86e93e92",
+  "build_fixtures.py": "70a0fa73d809cd4ef548a34626075c0ba235fdf86cda2abc67a0c71de699302e",
+  "note": "Recorded before any target search. Changing either file invalidates the blind set."
+}

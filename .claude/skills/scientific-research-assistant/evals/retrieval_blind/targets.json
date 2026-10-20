@@ -1,0 +1,268 @@
+{
+ "tabular-dl-vs-gbdt": [
+  {
+   "title": "When Do Neural Nets Outperform Boosted Trees on Tabular Data?",
+   "arxiv_id": "2305.02997",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Tabular Data: Is Deep Learning all you need?",
+   "arxiv_id": "2402.03970",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Revisiting Deep Learning Models for Tabular Data",
+   "arxiv_id": "2106.11959",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "transformer-vs-linear-forecasting": [
+  {
+   "title": "Are Transformers Effective for Time Series Forecasting?",
+   "arxiv_id": "2205.13504",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Revisiting Long-term Time Series Forecasting: An Investigation on Linear Mapping",
+   "arxiv_id": "2305.10721",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "UrbanAI 2025 Challenge: Linear vs Transformer Models for Long-Horizon Exogenous Temperature Forecasting",
+   "arxiv_id": "2512.10866",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "neural-recsys-vs-mf": [
+  {
+   "title": "Top-N Recommendation Algorithms: A Quest for the State-of-the-Art",
+   "arxiv_id": "2203.01155",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Reenvisioning Collaborative Filtering vs Matrix Factorization",
+   "arxiv_id": "2107.13472",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "metric-learning-losses": [
+  {
+   "title": "Variance & Greediness: A comparative study of metric-learning losses",
+   "arxiv_id": "2601.21450",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "meta-learning-vs-pretrained-features": [
+  {
+   "title": "Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?",
+   "arxiv_id": "2003.11539",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "domain-generalization-vs-erm": [
+  {
+   "title": "In Search of Lost Domain Generalization",
+   "arxiv_id": "2007.01434",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "OoD-Bench: Quantifying and Understanding Two Dimensions of Out-of-Distribution Generalization",
+   "arxiv_id": "2106.03721",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Rethinking the Evaluation Protocol of Domain Generalization",
+   "arxiv_id": "2305.15253",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "nas-vs-random-search": [
+  {
+   "title": "Can weight sharing outperform random architecture search? An investigation with TuNAS",
+   "arxiv_id": "2008.06120",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "NAS evaluation is frustratingly hard",
+   "arxiv_id": "1912.12522",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "pruning-vs-small-dense": [
+  {
+   "title": "A Closer Look at Structured Pruning for Neural Network Compression",
+   "arxiv_id": "1810.04622",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Rethinking the Value of Network Pruning",
+   "arxiv_id": "1810.05270",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Small LLMs: Pruning vs. Training from Scratch",
+   "arxiv_id": "2606.14150",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "adam-vs-sgd-generalization": [
+  {
+   "title": "The Marginal Value of Adaptive Gradient Methods in Machine Learning",
+   "arxiv_id": "1705.08292",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "continual-learning-vs-replay": [
+  {
+   "title": "Three scenarios for continual learning",
+   "arxiv_id": "1904.07734",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Class-Incremental Learning: A Survey",
+   "arxiv_id": "2302.03648",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "An analysis of best-practice strategies for replay and rehearsal in continual learning",
+   "arxiv_id": null,
+   "doi": "10.1109/cvprw63382.2024.00423",
+   "year": null
+  },
+  {
+   "title": "A Comprehensive Empirical Evaluation on Online Continual Learning",
+   "arxiv_id": "2308.10328",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "cot-beyond-math": [
+  {
+   "title": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+   "arxiv_id": "2409.12183",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "The Curse of CoT: On the Limitations of Chain-of-Thought in In-Context Learning",
+   "arxiv_id": "2504.05081",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "lora-vs-full-finetuning": [
+  {
+   "title": "LoRA Learns Less and Forgets Less",
+   "arxiv_id": "2405.09673",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "On Fairness of Low-Rank Adaptation of Large Models",
+   "arxiv_id": "2405.17512",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "long-context-vs-rag": [
+  {
+   "title": "Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach",
+   "arxiv_id": "2407.16833",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs -- No Silver Bullet for LC or RAG Routing",
+   "arxiv_id": "2502.09977",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Long Context vs. RAG for LLMs: An Evaluation and Revisits",
+   "arxiv_id": "2501.01880",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Retrieval meets Long Context Large Language Models",
+   "arxiv_id": "2310.03025",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "kge-old-models-retuned": [
+  {
+   "title": "You CAN Teach an Old Dog New Tricks! On Training Knowledge Graph Embeddings",
+   "arxiv_id": null,
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Bringing Light Into the Dark: A Large-scale Evaluation of Knowledge Graph Embedding Models Under a Unified Framework",
+   "arxiv_id": "2006.13365",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Realistic Re-evaluation of Knowledge Graph Completion Methods: An Experimental Study",
+   "arxiv_id": "2003.08001",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Knowledge Graph Embedding for Link Prediction: A Comparative Analysis",
+   "arxiv_id": "2002.00819",
+   "doi": "10.1145/3424672",
+   "year": null
+  }
+ ],
+ "vit-vs-convnets": [
+  {
+   "title": "A ConvNet for the 2020s",
+   "arxiv_id": "2201.03545",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "Are Transformers More Robust Than CNNs?",
+   "arxiv_id": "2111.05464",
+   "doi": null,
+   "year": null
+  },
+  {
+   "title": "ConvNet vs Transformer, Supervised vs CLIP: Beyond ImageNet Accuracy",
+   "arxiv_id": "2311.09215",
+   "doi": null,
+   "year": null
+  }
+ ],
+ "ssl-speech-vs-mfcc-emotion": [
+  {
+   "title": "Recognizing More Emotions with Less Data Using Self-supervised Transfer Learning",
+   "arxiv_id": "2011.05585",
+   "doi": null,
+   "year": null
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "source": "huggingface",
+    "id": "rmanluo/RoG-webqsp",
+    "url": "https://huggingface.co/datasets/rmanluo/RoG-webqsp",
+    "name": "rmanluo/RoG-webqsp",
+    "license": null,
+    "gated": false,
+    "private": false,
+    "disabled": false,
+    "downloads": 3927,
+    "likes": 29,
+    "last_modified": "2023-10-01T23:40:22.000Z",
+    "tasks": [],
+    "languages": [],
+    "modalities": [
+      "text"
+    ],
+    "formats": [
+      "parquet"
+    ],
+    "size_category": "1K<n<10K",
+    "arxiv_ids": [],
+    "configs": [],
+    "ref": "rmanluo/RoG-webqsp",
+    "exists": true,
+    "missing": [
+      "license",
+      "download size"
+    ],
+    "blockers": [],
+    "notes": [
+      "Licence is missing or 'other': read the dataset card before using or redistributing."
+    ],
+    "num_rows": 4700,
+    "download_bytes": null,
+    "in_memory_bytes": 1658338115,
+    "splits": [
+      {
+        "config": "default",
+        "split": "train",
+        "num_rows": 2826
+      },
+      {
+        "config": "default",
+        "split": "validation",
+        "num_rows": 246
+      },
+      {
+        "config": "default",
+        "split": "test",
+        "num_rows": 1628
+      }
+    ],
+    "storage_estimate": null
+  }
+]

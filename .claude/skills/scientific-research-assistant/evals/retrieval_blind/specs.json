@@ -1,0 +1,27 @@
+{
+  "frozen_note": "Written on 2026-10-19 before any search for target papers. Claims, queries, design elements and anchors are generated from these specs by build_fixtures.py with a fixed template; seeds are the canonical method papers a student would already know. Do not edit after targets are added; add new specs to a new file instead.",
+  "relevance_criteria": "A paper is known-relevant if its title or abstract shows that it directly runs the idea's comparison (the method against the baseline on the task, or a controlled re-evaluation, benchmark or reproduction that reports how they compare), or explicitly reports the idea's answer. Papers that merely use or propose the method are not relevant. Seeds are never targets.",
+  "specs": [
+    {"id": "tabular-dl-vs-gbdt", "method": "deep neural networks", "baseline": "gradient boosted decision trees", "task": "tabular data classification", "data": "OpenML datasets", "seeds": ["1603.02754"]},
+    {"id": "transformer-vs-linear-forecasting", "method": "transformer models", "baseline": "linear models", "task": "long-term time series forecasting", "data": "ETT electricity weather datasets", "seeds": ["2012.07436"]},
+    {"id": "neural-recsys-vs-mf", "method": "neural collaborative filtering", "baseline": "matrix factorization", "task": "top-n recommendation", "data": "MovieLens", "seeds": ["1708.05031"]},
+    {"id": "metric-learning-losses", "method": "deep metric learning losses", "baseline": "contrastive and triplet loss", "task": "image retrieval", "data": "CUB-200 and Cars196", "seeds": ["1503.03832"]},
+    {"id": "meta-learning-vs-pretrained-features", "method": "meta-learning", "baseline": "pretrained features with a linear classifier", "task": "few-shot image classification", "data": "miniImageNet", "seeds": ["1703.03400"]},
+    {"id": "domain-generalization-vs-erm", "method": "domain generalization algorithms", "baseline": "empirical risk minimization", "task": "out-of-distribution image classification", "data": "PACS and VLCS", "seeds": ["1505.07818"]},
+    {"id": "nas-vs-random-search", "method": "neural architecture search", "baseline": "random search", "task": "image classification architectures", "data": "CIFAR-10", "seeds": ["1806.09055"]},
+    {"id": "pruning-vs-small-dense", "method": "neural network pruning", "baseline": "training a smaller dense network from scratch", "task": "model compression", "data": "ImageNet", "seeds": ["1510.00149"]},
+    {"id": "adam-vs-sgd-generalization", "method": "adaptive gradient methods", "baseline": "SGD with momentum", "task": "deep learning generalization", "data": "CIFAR and ImageNet", "seeds": ["1412.6980"]},
+    {"id": "continual-learning-vs-replay", "method": "continual learning methods", "baseline": "simple experience replay", "task": "class-incremental learning", "data": "Split CIFAR-100", "seeds": ["1612.00796"]},
+    {"id": "cot-beyond-math", "method": "chain-of-thought prompting", "baseline": "direct answering", "task": "non-mathematical reasoning tasks", "data": "MMLU and BIG-Bench", "seeds": ["2201.11903"]},
+    {"id": "lora-vs-full-finetuning", "method": "LoRA", "baseline": "full fine-tuning", "task": "large language model fine-tuning", "data": "code and math benchmarks", "seeds": ["2106.09685"]},
+    {"id": "long-context-vs-rag", "method": "long-context language models", "baseline": "retrieval-augmented generation", "task": "long document question answering", "data": "long-context benchmarks", "seeds": ["2005.11401"]},
+    {"id": "kge-old-models-retuned", "method": "recent knowledge graph embedding models", "baseline": "retuned older embedding models", "task": "link prediction", "data": "FB15k-237 and WN18RR", "seeds": ["1606.06357"]},
+    {"id": "vit-vs-convnets", "method": "vision transformers", "baseline": "convolutional networks with the same training recipe", "task": "image classification", "data": "ImageNet", "seeds": ["2010.11929"]},
+    {"id": "ssl-speech-vs-mfcc-emotion", "method": "self-supervised speech representations", "baseline": "handcrafted acoustic features", "task": "speech emotion recognition", "data": "IEMOCAP", "seeds": ["2006.11477"]}
+  ],
+  "controls": [
+    {"id": "control-bellringing-tides", "method": "transformer models", "baseline": "linear models", "task": "forecasting tide heights from cathedral bell-ringing logs", "data": "medieval parish records", "seeds": []},
+    {"id": "control-lora-harpsichord-volcano", "method": "LoRA", "baseline": "full fine-tuning", "task": "predicting volcanic eruptions from harpsichord tuning manuscripts", "data": "Baroque tuning treatises", "seeds": []},
+    {"id": "control-gbdt-knitting", "method": "deep neural networks", "baseline": "gradient boosted decision trees", "task": "predicting knitting pattern errors from yarn spectra", "data": "hobbyist knitting forums", "seeds": []}
+  ]
+}

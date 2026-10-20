@@ -1,0 +1,10 @@
+  1. Semi-Supervised Classification with Graph Convolutional Networks
+     Kipf et al. 2016 | arXiv | cited ? | arXiv:1609.02907 OA | via arxiv
+     URL: https://arxiv.org/abs/1609.02907
+     PDF: https://arxiv.org/pdf/1609.02907v4
+
+Abstract: We present a scalable approach for semi-supervised learning on graph-structured data that is based on an efficient variant of convolutional neural networks which operate directly on graphs. We motivate the choice of our convolutional architecture via a localized first-order approximation of spectral graph convolutions. Our model scales linearly in the number of graph edges and learns hidden layer representations that encode both local graph structure and features of nodes. In a number of experiments on citation networks and on a knowledge graph dataset we demonstrate that our approach outperforms related methods by a significant margin.
+  note: semantic_scholar: rate_limited HTTP 429 after retries
+  note: openalex: rate_limited quota exhausted (X-RateLimit-Reset=2112). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?
+
+Full JSON written to llm-memorisation\refs\r8.json

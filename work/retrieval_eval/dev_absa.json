@@ -1,0 +1,325 @@
+{
+  "summary": {
+    "dev": {
+      "baseline": {
+        "targets": 5,
+        "found": 1,
+        "in_top_20": 0,
+        "recall_any": 0.2,
+        "recall_at_20": 0.0
+      },
+      "challenge": {
+        "targets": 5,
+        "found": 2,
+        "in_top_20": 0,
+        "recall_any": 0.4,
+        "recall_at_20": 0.0
+      },
+      "landscape": {
+        "targets": 5,
+        "found": 2,
+        "in_top_20": 2,
+        "recall_any": 0.4,
+        "recall_at_20": 0.4
+      },
+      "full": {
+        "targets": 5,
+        "found": 2,
+        "in_top_20": 2,
+        "recall_any": 0.4,
+        "recall_at_20": 0.4
+      }
+    },
+    "caveat": "Pooled over few topics and few known papers per topic; treat differences of one or two papers as noise. Live results depend on rate limits and index coverage on the day of the run."
+  },
+  "results": [
+    {
+      "id": "absa-syntax-gcn",
+      "split": "dev",
+      "n_targets": 5,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.2,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 58,
+          "n_retrieved": 81,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 58,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 81
+        },
+        "challenge": {
+          "recall_any": 0.4,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 138.0,
+          "n_retrieved": 347,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 164,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": 112,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 347,
+          "expansion_errors": 0
+        },
+        "landscape": {
+          "recall_any": 0.4,
+          "recall_at_20": 0.4,
+          "median_rank_of_found": 6.5,
+          "n_retrieved": 334,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": false
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": 10,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": false
+            }
+          ],
+          "n": 334,
+          "must_read": [
+            {
+              "title": "Aspect-Based Sentiment Classification with Background Information and Syntactic Auxiliary Tasks",
+              "arxiv_id": null,
+              "doi": "10.1109/ijcnn52387.2021.9533506"
+            },
+            {
+              "title": "Aspect-based Sentiment Analysis with Type-aware Graph Convolutional Networks and Layer Ensemble",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/2021.naacl-main.231"
+            },
+            {
+              "title": "On the Robustness of Aspect-based Sentiment Analysis: Rethinking Model, Data, and Training",
+              "arxiv_id": "2304.09563",
+              "doi": "10.1145/3564281"
+            },
+            {
+              "title": "Recurrent Attention Network on Memory for Aspect Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.18653/v1/d17-1047"
+            },
+            {
+              "title": "Epidemiology at a time for unity",
+              "arxiv_id": null,
+              "doi": "10.1093/ije/dyy179"
+            },
+            {
+              "title": "PyABSA: A Modularized Framework for Reproducible Aspect-based Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.1145/3583780.3614752"
+            },
+            {
+              "title": "The Reproducibility Gap in Graph Neural Network Workflows for Cell Dynamics: A Checklist-Driven Evaluation",
+              "arxiv_id": null,
+              "doi": "10.22541/au.176463842.29639629/v1"
+            },
+            {
+              "title": "Review for \"A reproducibility study of atomistic line graph neural networks for materials property prediction\"",
+              "arxiv_id": null,
+              "doi": "10.1039/d4dd00064a/v1/review1"
+            },
+            {
+              "title": "Bayesian Biaffine Variational Graph Convolutional Network for Aspect-Based Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.3390/app16189065"
+            },
+            {
+              "title": "An entropy-regularized counterfactual framework for robust and generalizable ABSA",
+              "arxiv_id": null,
+              "doi": "10.1007/s40747-025-02170-7"
+            },
+            {
+              "title": "Syntax-Enhanced Pretrained Language Models for Aspect-Level Sentiment Classification",
+              "arxiv_id": null,
+              "doi": "10.1109/tcss.2024.3514901"
+            },
+            {
+              "title": "Fine-tuning Pretrained Multilingual BERT Model for Indonesian Aspect-based Sentiment Analysis",
+              "arxiv_id": "2103.03732",
+              "doi": "10.1109/icaicta49861.2020.9428882"
+            },
+            {
+              "title": "DualGCN: Exploring Syntactic and Semantic Information for Aspect-Based Sentiment Analysis",
+              "arxiv_id": null,
+              "doi": "10.1109/tnnls.2022.3219615"
+            },
+            {
+              "title": "Aspect Sentiment Triplet Extraction with Syntax-Semantics Graph Convolutional Network",
+              "arxiv_id": null,
+              "doi": "10.1007/s44196-025-00900-w"
+            },
+            {
+              "title": "Syntactic Information and Multiple Semantic Segments for Aspect-Based Sentiment Classification",
+              "arxiv_id": null,
+              "doi": "10.1142/s2717554522500060"
+            },
+            {
+              "title": "The Impact of Social Media on Consumers Purchase Decisions for Travel Services (A Study Using the Technology Acceptance Model)",
+              "arxiv_id": null,
+              "doi": "10.52340/eab.2024.16.03.09"
+            },
+            {
+              "title": "Modeling Structured Dependency Tree with Graph Convolutional Networks for Aspect-Level Sentiment Classification",
+              "arxiv_id": null,
+              "doi": "10.3390/s24020418"
+            }
+          ],
+          "coverage_notes": [
+            "citation expansion had 1 error(s)",
+            "167 of 334 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "bucket_sizes": {
+            "negative_result": 23,
+            "comparison": 85,
+            "reproducibility": 9,
+            "benchmark_critique": 3,
+            "stated_limitation": 28,
+            "survey": 36,
+            "method_proposal": 80
+          }
+        },
+        "full": {
+          "recall_any": 0.4,
+          "recall_at_20": 0.4,
+          "median_rank_of_found": 11.5,
+          "n_retrieved": 407,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 5,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": 18,
+              "found": true,
+              "in_top_k": true
+            }
+          ]
+        }
+      },
+      "missed_by_all": [
+        "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+        "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+        "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis"
+      ]
+    }
+  ],
+  "sources": [
+    "openalex",
+    "arxiv",
+    "crossref"
+  ],
+  "configs": [
+    "baseline",
+    "challenge",
+    "landscape",
+    "full"
+  ]
+}

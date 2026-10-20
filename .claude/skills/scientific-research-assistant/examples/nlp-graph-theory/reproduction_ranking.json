@@ -1,0 +1,668 @@
+{
+  "constraints": {
+    "field": "NLP and graph theory (graph neural networks for text classification)",
+    "experience": "undergraduate, comfortable with Python",
+    "hardware": "one consumer GPU, 8 GB VRAM",
+    "gpu_vram_gb": 8,
+    "time_budget_weeks": 8,
+    "language": "Python",
+    "difficulty": "moderate",
+    "mode": "any",
+    "defaults_used": [
+      "experience",
+      "hardware",
+      "gpu_vram_gb",
+      "time_budget_weeks",
+      "language",
+      "difficulty",
+      "mode"
+    ]
+  },
+  "weights": {
+    "scientific_relevance": 12,
+    "novelty_or_replication_value": 12,
+    "paper_and_code_availability": 10,
+    "dataset_accessibility": 12,
+    "compute_fit": 12,
+    "implementation_simplicity": 10,
+    "time_fit": 10,
+    "reproducibility": 8,
+    "evaluation_clarity": 7,
+    "low_failure_risk": 7
+  },
+  "method": "Each criterion is scored 0-5 with evidence. score_percent is the weighted share earned on scored criteria only; score_range shows the total if unscored criteria were 0 or 5. Any blocker removes a candidate from the ranking no matter how high its other scores are. Novelty is capped at 2 unless the closest prior work was read in full, and at 1 when that work already ran the experiment.",
+  "ranking": [
+    {
+      "id": "galke2022",
+      "title": "Bag-of-Words vs. Graph vs. Sequence (Galke & Scherp)",
+      "mode": "reproduction",
+      "status": "viable",
+      "blockers": [],
+      "score_percent": 68.2,
+      "score_range": [
+        68.2,
+        68.2
+      ],
+      "scored_weight_percent": 100.0,
+      "verified_weight_percent": 52.0,
+      "unscored_criteria": [],
+      "missing_information": [
+        "dataset_accessibility: Licence of the benchmark files",
+        "compute_fit: No hardware statement found"
+      ],
+      "caps_applied": [
+        {
+          "criterion": "novelty_or_replication_value",
+          "cap": 2,
+          "reason": "closest prior work read at level 'abstract', not full text",
+          "submitted_score": 4
+        }
+      ],
+      "estimates": {
+        "weeks": 4
+      },
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 9.6,
+          "evidence": [
+            "ACL 2022; 43 citations at retrieval"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": 2,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": 4.8,
+          "evidence": [
+            "The result contradicts a line of graph-based work, so independent confirmation is informative"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 8.0,
+          "evidence": [
+            "Open access on arXiv",
+            "https://github.com/lgalke/text-clf-baselines (licence MIT, 29 stars, last push 2026-04-21, 0 open issues)",
+            "requirements.txt, pyproject.toml and uv.lock are present"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": 7.2,
+          "evidence": [
+            "README sends the user to the TextGCN repository data folder, which responds (HTTP 200)"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "Licence of the benchmark files"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": 9.6,
+          "evidence": [
+            "The headline model is an MLP on bag-of-words; the BERT comparison is heavier and can be dropped"
+          ],
+          "evidence_level": "estimate",
+          "missing": [
+            "No hardware statement found"
+          ]
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": 8.0,
+          "evidence": [
+            "Entry points exist: main.py, run_text_classification.py"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": 4,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": 8.0,
+          "evidence": [
+            "About 4 weeks"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": 2,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": 3.2,
+          "evidence": [
+            "No seed or determinism text and no config files were found by the automated check"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": 3,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": 4.2,
+          "evidence": [
+            "Accuracy on standard benchmarks; no results table was detected in the README"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": 4,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": 5.6,
+          "evidence": [
+            "Maintained repository with pinned dependencies"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "id": "zhang2020",
+      "title": "TextING (Zhang et al.)",
+      "mode": "reproduction",
+      "status": "viable",
+      "blockers": [],
+      "score_percent": 59.8,
+      "score_range": [
+        52.6,
+        64.6
+      ],
+      "scored_weight_percent": 88.0,
+      "verified_weight_percent": 49.0,
+      "unscored_criteria": [
+        "compute_fit"
+      ],
+      "missing_information": [
+        "dataset_accessibility: Where to download the corpora; their licence",
+        "compute_fit: README says to raise hidden size and batch size 'as long as your memory allows'; no figure is given"
+      ],
+      "caps_applied": [
+        {
+          "criterion": "novelty_or_replication_value",
+          "cap": 2,
+          "reason": "closest prior work read at level 'abstract', not full text",
+          "submitted_score": 3
+        }
+      ],
+      "estimates": {
+        "weeks": 5
+      },
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 9.6,
+          "evidence": [
+            "316 citations at retrieval"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": 2,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": 4.8,
+          "evidence": [
+            "A common baseline in later papers"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 6.0,
+          "evidence": [
+            "Open access on arXiv",
+            "https://github.com/CRIPAC-DIG/TextING (licence None, 182 stars, last push 2024-04-25, 15 open issues)",
+            "No licence and no dependency file found"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": 7.2,
+          "evidence": [
+            "README describes where corpus and label files go; build_graph.py is present"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "Where to download the corpora; their licence"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": null,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": [
+            "README says to raise hidden size and batch size 'as long as your memory allows'; no figure is given"
+          ]
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": 6.0,
+          "evidence": [
+            "train.py with documented command-line options"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": 6.0,
+          "evidence": [
+            "About 5 weeks"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": 2,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": 3.2,
+          "evidence": [
+            "No dependency file and no seed handling found; hyperparameters are command-line flags"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": 4,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": 5.6,
+          "evidence": [
+            "README states the configuration used for the reported results"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": 3,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": 4.2,
+          "evidence": [
+            "2 issue(s) mention reproduction"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "id": "yao2019",
+      "title": "TextGCN (Yao et al.)",
+      "mode": "reproduction",
+      "status": "viable",
+      "blockers": [],
+      "score_percent": 59.5,
+      "score_range": [
+        52.4,
+        64.4
+      ],
+      "scored_weight_percent": 88.0,
+      "verified_weight_percent": 59.0,
+      "unscored_criteria": [
+        "compute_fit"
+      ],
+      "missing_information": [
+        "dataset_accessibility: Licence of the benchmark files",
+        "compute_fit: No hardware statement found; graph memory on the larger benchmarks is unknown"
+      ],
+      "caps_applied": [
+        {
+          "criterion": "novelty_or_replication_value",
+          "cap": 2,
+          "reason": "closest prior work read at level 'abstract', not full text",
+          "submitted_score": 3
+        }
+      ],
+      "estimates": {
+        "weeks": 6
+      },
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 5,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 12.0,
+          "evidence": [
+            "2145 citations at retrieval; the reference method of the area"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": 2,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": 4.8,
+          "evidence": [
+            "Already re-implemented several times (two third-party repositories were found)"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 6.0,
+          "evidence": [
+            "Open access on arXiv",
+            "https://github.com/yao8839836/text_gcn (licence None, 1390 stars, last push 2021-12-29, 112 open issues)",
+            "No licence"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": 4,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": 9.6,
+          "evidence": [
+            "Data folder and preparation scripts are in the repository"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "Licence of the benchmark files"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": null,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": [
+            "No hardware statement found; graph memory on the larger benchmarks is unknown"
+          ]
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": 2,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": 4.0,
+          "evidence": [
+            "README requires Python 2.7 or 3.6 and TensorFlow >= 1.4, a legacy stack"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": 3,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": 6.0,
+          "evidence": [
+            "About 6 weeks, mostly environment work"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": 1,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": 1.6,
+          "evidence": [
+            "No dependency file, no seed handling",
+            "5 issues mention reproduction"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": 4,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": 5.6,
+          "evidence": [
+            "README has a 'Reproducing Results' section with the commands"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": 2,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": 2.8,
+          "evidence": [
+            "Unmaintained since 2021 with many open issues"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "id": "abdalla2023",
+      "title": "BoW-based neural networks vs. cutting-edge models (Abdalla et al.)",
+      "mode": "reproduction",
+      "status": "blocked",
+      "blockers": [
+        {
+          "type": "full_text",
+          "description": "No open-access copy of the paper was located, so the method cannot be checked against the code",
+          "evidence": [
+            "Sources list no open-access copy"
+          ],
+          "origin": "declared"
+        }
+      ],
+      "score_percent": 41.8,
+      "score_range": [
+        9.2,
+        87.2
+      ],
+      "scored_weight_percent": 22.0,
+      "verified_weight_percent": 10.0,
+      "unscored_criteria": [
+        "novelty_or_replication_value",
+        "dataset_accessibility",
+        "compute_fit",
+        "implementation_simplicity",
+        "time_fit",
+        "reproducibility",
+        "evaluation_clarity",
+        "low_failure_risk"
+      ],
+      "missing_information": [
+        "dataset_accessibility: No dataset instructions found",
+        "compute_fit: Unknown",
+        "time_fit: Unknown"
+      ],
+      "caps_applied": [],
+      "estimates": {},
+      "criteria": [
+        {
+          "criterion": "scientific_relevance",
+          "weight": 12,
+          "score": 3,
+          "meaning_of_5": "Answers a question the field demonstrably cares about.",
+          "points": 7.2,
+          "evidence": [
+            "Directly related to the bag-of-words versus graph question"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        {
+          "criterion": "novelty_or_replication_value",
+          "weight": 12,
+          "score": null,
+          "meaning_of_5": "Supported gap, or a replication the literature would value.",
+          "points": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": []
+        },
+        {
+          "criterion": "paper_and_code_availability",
+          "weight": 10,
+          "score": 1,
+          "meaning_of_5": "Open paper plus a working, documented implementation.",
+          "points": 2.0,
+          "evidence": [
+            "https://github.com/aliamer/BoW-Based-Neural-Networks-for-Text-Classification (licence None, 2 stars, last push 2023-06-15, 0 open issues)",
+            "No training or evaluation entry point, dependency file or licence was found"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        {
+          "criterion": "dataset_accessibility",
+          "weight": 12,
+          "score": null,
+          "meaning_of_5": "Public, licensed, downloadable data of manageable size.",
+          "points": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": [
+            "No dataset instructions found"
+          ]
+        },
+        {
+          "criterion": "compute_fit",
+          "weight": 12,
+          "score": null,
+          "meaning_of_5": "Fits the stated hardware with margin.",
+          "points": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": [
+            "Unknown"
+          ]
+        },
+        {
+          "criterion": "implementation_simplicity",
+          "weight": 10,
+          "score": null,
+          "meaning_of_5": "Mostly reuse of existing code; little new engineering.",
+          "points": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": []
+        },
+        {
+          "criterion": "time_fit",
+          "weight": 10,
+          "score": null,
+          "meaning_of_5": "Fits the time budget with slack for reruns.",
+          "points": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": [
+            "Unknown"
+          ]
+        },
+        {
+          "criterion": "reproducibility",
+          "weight": 8,
+          "score": null,
+          "meaning_of_5": "Seeds, configs and environment are specified.",
+          "points": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": []
+        },
+        {
+          "criterion": "evaluation_clarity",
+          "weight": 7,
+          "score": null,
+          "meaning_of_5": "Standard metric and protocol with published numbers to compare to.",
+          "points": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": []
+        },
+        {
+          "criterion": "low_failure_risk",
+          "weight": 7,
+          "score": null,
+          "meaning_of_5": "Few ways for the project to end without a reportable result.",
+          "points": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": []
+        }
+      ],
+      "rank": null
+    }
+  ]
+}

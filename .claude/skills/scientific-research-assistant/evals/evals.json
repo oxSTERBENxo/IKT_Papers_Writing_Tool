@@ -1,0 +1,48 @@
+{
+  "skill_name": "scientific-research-assistant",
+  "note": "Prompts for end-to-end evaluation. Evals 5-6 test detection of experiments that already exist; eval 7 tests the literature-first workflow. Retrieval recall is measured separately with retrieval-eval on evals/retrieval/ (dev: UPFD and sentiment audits; held-out: other topics). Results: evals/results/.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm a third-year CS student interested in NLP and graph theory. Find underexplored research opportunities I could turn into a semester project.",
+      "expected_output": "An opportunity report with 3-5 ranked opportunities. Every cited paper comes from a search and passes verify-refs; each opportunity names its closest existing work, the challenge queries that were run, a novelty confidence of very_low, low or medium with stated uncertainty, and a feasibility assessment. At least one candidate is revised or rejected on evidence. Failed sources are named. Defaults that were assumed are listed.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Can I reproduce the experiments from the TextGCN paper (arXiv 1809.05679) on my laptop with an RTX 3060? I have about a month.",
+      "expected_output": "A reproducibility report for that paper: code candidates with their relationship to the paper, licence, dependencies, seeds, hardware and evaluation status marked verified, found, not_found or manual_review; dataset availability checked; a clear statement that nothing was executed; a recommendation that distinguishes reproduction from replication; the 8 GB VRAM and 4-week constraints applied in scoring.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "my idea: use graph neural networks instead of transformers for detecting fake news on twitter. is this new?? and how would i even test it, i dont know what methodology to use",
+      "expected_output": "A novelty challenge showing substantial prior work (the idea is not presented as new), the closest papers listed, and the idea either rejected or narrowed. Then a proposal-style methodology for the narrowed question: falsifiable hypothesis, verified datasets with licence and access, simple baselines included, splits and leakage controls, multiple seeds, a statistical comparison. No reference written from memory.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Find five computer vision papers with code and data that I can reproduce on a single consumer GPU, and rank them.",
+      "expected_output": "Five or more candidates assessed with repro, datasets verified, a transparent ranking with per-criterion scores and evidence, unscored criteria shown as missing information, and any blocked candidate listed below viable ones.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I want to test whether the propagation graph actually helps GNN fake news detection on the UPFD benchmark (PolitiFact, GossipCop) by comparing GNNs against a no-graph baseline over many seeds. Is this a good, novel semester project?",
+      "expected_output": "The idea is identified as already performed, under other wording, by the UPFD paper's own edge-removal ablation (arXiv 2104.12259) and by a 2025 study of GNNs against a structure-agnostic MLP with edge rewiring and feature shuffling (arXiv 2512.06638). The challenge uses design elements and the UPFD paper as a seed. The closest papers are read in full via fulltext. The decision is no_go for the idea as stated. Methodological risks include train/test user overlap. A narrower reframing is offered only as conditional_go, with conditions. No novelty confidence above low.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Nobody has checked whether LLMs memorised ogbn-arxiv, so I want to build a leakage-free version of the citation benchmark and compare LLM node classification on old vs new papers. Is this new?",
+      "expected_output": "The challenge, with design elements such as 'test nodes from papers published after the LLM training cutoff' and a seed on the LLM-for-graphs evaluation literature, surfaces prior work that curated a post-cutoff arXiv dataset for exactly this test (e.g. arXiv 2309.16595). The idea is classified as same_experiment or same_question_different_design and rejected or reframed as a replication with newer models. Pretraining contamination is recorded as a methodological risk. The decision is no_go or conditional_go, with conditions.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "I am interested in graph neural networks for recommender systems. Find research questions I could work on this semester; I have one 8 GB GPU.",
+      "expected_output": "The workflow starts with map (comparisons, negative results, reproducibility studies, benchmark critiques, design-based and citation-based retrieval) and the printed web searches, before any question is proposed. The report uses schema_version 3: an evidence ledger of limitations, weaknesses, disagreements and missing controls citing papers actually read, and every question traced to ledger entries via derived_from and typed (novel, extension, replication, benchmark_validity, answered). Replication and benchmark-validity candidates are scored on replication value with a stated rationale. At least one apparently promising question is classified as answered or as an extension rather than novel, if the literature supports that. No question is called novel when its closest read paper already addresses it.",
+      "files": []
+    }
+  ]
+}

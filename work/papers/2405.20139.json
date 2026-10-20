@@ -1,0 +1,41 @@
+{
+  "paper": {
+    "title": "GNN-RAG: Graph Neural Retrieval for Large Language Model Reasoning",
+    "authors": [
+      "Costas Mavromatis",
+      "George Karypis"
+    ],
+    "year": 2024,
+    "date": "2024-05-30",
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2405.20139",
+    "arxiv_id": "2405.20139",
+    "pmid": null,
+    "openalex_id": "W4399253046",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2405.20139",
+    "pdf_url": "https://arxiv.org/pdf/2405.20139v1",
+    "abstract": "Knowledge Graphs (KGs) represent human-crafted factual knowledge in the form of triplets (head, relation, tail), which collectively form a graph. Question Answering over KGs (KGQA) is the task of answering natural questions grounding the reasoning to the information provided by the KG. Large Language Models (LLMs) are the state-of-the-art models for QA tasks due to their remarkable ability to understand natural language. On the other hand, Graph Neural Networks (GNNs) have been widely used for KGQA as they can handle the complex graph information stored in the KG. In this work, we introduce GNN-RAG, a novel method for combining language understanding abilities of LLMs with the reasoning abilities of GNNs in a retrieval-augmented generation (RAG) style. First, a GNN reasons over a dense KG subgraph to retrieve answer candidates for a given question. Second, the shortest paths in the KG that connect question entities and answer candidates are extracted to represent KG reasoning paths. The extracted paths are verbalized and given as input for LLM reasoning with RAG. In our GNN-RAG framework, the GNN acts as a dense subgraph reasoner to extract useful graph information, while the LLM leverages its natural language processing ability for ultimate KGQA. Furthermore, we develop a retrieval augmentation (RA) technique to further boost KGQA performance with GNN-RAG. Experimental results show that GNN-RAG achieves state-of-the-art performance in two widely used KGQA benchmarks (WebQSP and CWQ), outperforming or matching GPT-4 performance with a 7B tuned LLM. In addition, GNN-RAG excels on multi-hop and multi-entity questions outperforming competing approaches by 8.9--15.5% points at answer F1.",
+    "citations": 19,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_category": "cs.CL",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

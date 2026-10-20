@@ -1,0 +1,112 @@
+{
+ "constraints": {
+  "field": "NLP combined with Graph Neural Networks",
+  "experience": "undergraduate, comfortable with Python",
+  "hardware": "one consumer GPU, 8 GB VRAM (or a free cloud notebook)",
+  "gpu_vram_gb": 8,
+  "time_budget_weeks": 8,
+  "gpu_hours_budget": 60,
+  "storage_gb": 50,
+  "language": "Python",
+  "difficulty": "moderate",
+  "mode": "any",
+  "defaults_used": ["experience", "hardware", "gpu_vram_gb", "time_budget_weeks", "gpu_hours_budget", "storage_gb", "language", "difficulty", "mode"]
+ },
+ "candidates": [
+  {
+   "id": "O1",
+   "title": "UPFD fake news: multi-seed graph vs no-graph re-evaluation",
+   "mode": "replication",
+   "estimates": {"weeks": 4, "min_vram_gb": 2, "gpu_hours": 5, "storage_gb": 3},
+   "blockers": [],
+   "criteria": {
+    "scientific_relevance": {"score": 3, "evidence": ["Two surveys cover GNN fake news detection [@phan2023fakesurvey; @gong2023fakesurvey]", "A WSDM 2025 paper questions the standard evaluation protocol [@kim2025dawn]"], "evidence_level": "verified", "missing": []},
+    "novelty_or_replication_value": {"score": 3, "evidence": ["UPFD is widely used (cited 360 per Crossref/OpenAlex) and no seed control was found in its repository [@dou2021upfd]", "Temporal evaluation is already covered by [@kim2025dawn], so the remaining value is the graph vs no-graph control"], "evidence_level": "estimate", "missing": []},
+    "paper_and_code_availability": {"score": 4, "evidence": ["github.com/safe-graph/GNN-FakeNews: Apache-2.0, last push 2025-12-11, requirements.txt, utils/eval_helper.py"], "evidence_level": "verified", "missing": ["No training entry point detected by the automated check"]},
+    "dataset_accessibility": {"score": 3, "evidence": ["Loader in PyTorch Geometric (documentation page HTTP 200); sizes in README"], "evidence_level": "verified", "missing": ["Data licence not stated", "Raw news text not included"]},
+    "compute_fit": {"score": 5, "evidence": ["Graphs average 58-131 nodes; GNNs this size train on CPU"], "evidence_level": "estimate", "missing": []},
+    "implementation_simplicity": {"score": 4, "evidence": ["PyG ships an UPFD example; the project is mostly re-running with more seeds and a no-graph baseline"], "evidence_level": "estimate", "missing": []},
+    "time_fit": {"score": 5, "evidence": ["About 4 weeks including write-up, leaving room for reruns"], "evidence_level": "estimate", "missing": []},
+    "reproducibility": {"score": 2, "evidence": ["Repository check: environment file found, seeds and hardware not found"], "evidence_level": "verified", "missing": []},
+    "evaluation_clarity": {"score": 4, "evidence": ["Accuracy and F1 are the standard metrics; evaluation helper in the repository"], "evidence_level": "verified", "missing": ["Split protocol not stated in README"]},
+    "low_failure_risk": {"score": 5, "evidence": ["Both outcomes (graph helps / does not) are reportable"], "evidence_level": "estimate", "missing": []}
+   }
+  },
+  {
+   "id": "O2",
+   "title": "ABSA: do dependency-graph GCNs help with a fixed modern encoder?",
+   "mode": "replication",
+   "estimates": {"weeks": 6, "min_vram_gb": 6, "gpu_hours": 30, "storage_gb": 5},
+   "blockers": [],
+   "criteria": {
+    "scientific_relevance": {"score": 4, "evidence": ["Published claims conflict: [@dai2021syntax] vs continued syntax-GCN papers [@li2024sebert; @zhao2023rdgcn; @huang2025mvasegcn]", "Dai et al. cited 197 times"], "evidence_level": "verified", "missing": []},
+    "novelty_or_replication_value": {"score": 4, "evidence": ["Replication of a contested result; no controlled re-test found (novelty confidence low)"], "evidence_level": "estimate", "missing": []},
+    "paper_and_code_availability": {"score": 3, "evidence": ["github.com/ROGERDJQ/RoBERTaABSA linked by the paper; ASGCN/PWCN/RGAT train and infer scripts; no licence; last push 2023-03-08"], "evidence_level": "verified", "missing": ["Licence"]},
+    "dataset_accessibility": {"score": 3, "evidence": ["SemEval-2014 restaurants and laptops on Hugging Face, not gated, under 200 KB each"], "evidence_level": "verified", "missing": ["Licence on the dataset card", "Equivalence with the split used by Dai et al."]},
+    "compute_fit": {"score": 4, "evidence": ["Base-size encoders on about 4,000 sentences fit 8 GB"], "evidence_level": "estimate", "missing": []},
+    "implementation_simplicity": {"score": 3, "evidence": ["Existing code, but 2021-era environment and a parser to set up; DeBERTa needs porting"], "evidence_level": "estimate", "missing": []},
+    "time_fit": {"score": 4, "evidence": ["About 60 short fine-tuning runs plus porting fits 6 weeks"], "evidence_level": "estimate", "missing": []},
+    "reproducibility": {"score": 2, "evidence": ["Repository check: dependencies and configs found, seeds and hardware not found"], "evidence_level": "verified", "missing": []},
+    "evaluation_clarity": {"score": 5, "evidence": ["Accuracy and macro-F1 on SemEval-2014 with many published numbers to compare"], "evidence_level": "estimate", "missing": []},
+    "low_failure_risk": {"score": 5, "evidence": ["A null result answers the question as well as a positive one"], "evidence_level": "estimate", "missing": []}
+   }
+  },
+  {
+   "id": "O3",
+   "title": "TAPE with explanation features from LLMs that fit in 8 GB",
+   "mode": "extension",
+   "estimates": {"weeks": 7, "min_vram_gb": 8, "gpu_hours": 45, "storage_gb": 20},
+   "blockers": [],
+   "criteria": {
+    "scientific_relevance": {"score": 4, "evidence": ["LLM-on-graphs survey cited 154 times [@jin2024llmgraphs]; LLM query cost named as a limitation [@chen2024exploring]"], "evidence_level": "verified", "missing": []},
+    "novelty_or_replication_value": {"score": 3, "evidence": ["Partly covered by LLMNodeBed's Mistral-7B vs GPT-4o comparison [@wu2025llmnodebed]; the 4B-and-under regime and the embedding comparison remain"], "evidence_level": "estimate", "missing": []},
+    "paper_and_code_availability": {"score": 4, "evidence": ["github.com/XiaoxinHe/TAPE: MIT, entry points, checkpoints and GPT responses downloadable", "LLMNodeBed code implements TAPE (no licence found)"], "evidence_level": "verified", "missing": []},
+    "dataset_accessibility": {"score": 5, "evidence": ["huggingface.co/datasets/xxwu/LLMNodeBed: MIT, not gated, includes Cora and PubMed text"], "evidence_level": "verified", "missing": []},
+    "compute_fit": {"score": 2, "evidence": ["Explanation generation with a 4-bit model under 4B fits; LM interpreter fine-tuning on PubMed is tight on 8 GB", "TAPE took 5.9 h on PubMed on an H100 [@wu2025llmnodebed]"], "evidence_level": "estimate", "missing": ["Measured memory use of the interpreter step on 8 GB"]},
+    "implementation_simplicity": {"score": 3, "evidence": ["Code exists; swapping the explainer and adding an embedding baseline is moderate adaptation; old PyTorch 1.12 environment"], "evidence_level": "estimate", "missing": []},
+    "time_fit": {"score": 3, "evidence": ["Fits about 7 weeks with little slack if PubMed generation is slow"], "evidence_level": "estimate", "missing": []},
+    "reproducibility": {"score": 3, "evidence": ["Environment, entry points and checkpoints found; seeds and hardware not found"], "evidence_level": "verified", "missing": []},
+    "evaluation_clarity": {"score": 5, "evidence": ["Accuracy on Cora/PubMed with published TAPE and LLMNodeBed numbers"], "evidence_level": "verified", "missing": []},
+    "low_failure_risk": {"score": 4, "evidence": ["A cost-accuracy curve is reportable whichever way it falls; the risk is not finishing PubMed"], "evidence_level": "estimate", "missing": []}
+   }
+  },
+  {
+   "id": "O4",
+   "title": "LLM memorisation on citation graphs: re-test with 2024-2026 open models",
+   "mode": "replication",
+   "estimates": {"weeks": 7, "min_vram_gb": 6, "gpu_hours": 25, "storage_gb": 10},
+   "blockers": [],
+   "criteria": {
+    "scientific_relevance": {"score": 4, "evidence": ["Leakage raised as a key finding [@chen2024exploring] and disputed [@huang2023leakage]; not discussed by the largest recent benchmark [@wu2025llmnodebed]"], "evidence_level": "verified", "missing": []},
+    "novelty_or_replication_value": {"score": 3, "evidence": ["Replication of [@huang2023leakage] with new models; topic drift is a confound"], "evidence_level": "estimate", "missing": []},
+    "paper_and_code_availability": {"score": 2, "evidence": ["github.com/TRAIS-Lab/LLM-Structured-Data: data and an OpenAI-only template; no licence, no entry point, no environment file"], "evidence_level": "verified", "missing": []},
+    "dataset_accessibility": {"score": 3, "evidence": ["arxiv-2023 in the repository; ogbn-arxiv text via LLMNodeBed (MIT)", "New post-cutoff split must be built from the arXiv API"], "evidence_level": "estimate", "missing": ["Licence of arxiv-2023"]},
+    "compute_fit": {"score": 4, "evidence": ["Inference only with a quantised 4-8B model"], "evidence_level": "estimate", "missing": []},
+    "implementation_simplicity": {"score": 3, "evidence": ["Data collection, prompt pipeline and matched sampling must be written"], "evidence_level": "estimate", "missing": []},
+    "time_fit": {"score": 3, "evidence": ["Building and checking a new split takes time; fits 7 weeks with little slack"], "evidence_level": "estimate", "missing": []},
+    "reproducibility": {"score": 1, "evidence": ["Repository check found no environment, seeds or entry point"], "evidence_level": "verified", "missing": []},
+    "evaluation_clarity": {"score": 3, "evidence": ["Accuracy is clear, but separating memorisation from topic drift needs a careful protocol"], "evidence_level": "estimate", "missing": []},
+    "low_failure_risk": {"score": 3, "evidence": ["A null result is reportable but may be hard to interpret because of confounds"], "evidence_level": "estimate", "missing": []}
+   }
+  },
+  {
+   "id": "O5",
+   "title": "GNN-RAG answer-coverage failure analysis with a small frozen reader",
+   "mode": "extension",
+   "estimates": {"weeks": 8, "gpu_hours": 40, "storage_gb": 40},
+   "blockers": [],
+   "criteria": {
+    "scientific_relevance": {"score": 4, "evidence": ["Limitation stated in GNN-RAG itself [@mavromatis2024gnnrag]; small readers named as underexplored [@um2026rporag]"], "evidence_level": "verified", "missing": []},
+    "novelty_or_replication_value": {"score": 3, "evidence": ["Error decomposition not found in abstracts; novelty confidence low"], "evidence_level": "estimate", "missing": []},
+    "paper_and_code_availability": {"score": 2, "evidence": ["github.com/cmavro/GNN-RAG: no licence, last push 2024-06-12, 15 open issues"], "evidence_level": "verified", "missing": []},
+    "dataset_accessibility": {"score": 3, "evidence": ["rmanluo/RoG-webqsp and RoG-cwq on Hugging Face, not gated"], "evidence_level": "verified", "missing": ["Licence", "Size of the KG subgraph files"]},
+    "compute_fit": {"score": null, "evidence": [], "evidence_level": null, "missing": ["Paper's GNN runs used 128 GB RAM; minimum RAM and VRAM for the GNN step are not stated"]},
+    "implementation_simplicity": {"score": 2, "evidence": ["Two-stage pipeline (GNN + LLM) with separate requirements files; adding coverage logging and a fallback"], "evidence_level": "estimate", "missing": []},
+    "time_fit": {"score": 2, "evidence": ["Setup risk of the pipeline uses most of 8 weeks"], "evidence_level": "estimate", "missing": []},
+    "reproducibility": {"score": 2, "evidence": ["Requirements and evaluation scripts found; seeds, hardware and checkpoints not found"], "evidence_level": "verified", "missing": []},
+    "evaluation_clarity": {"score": 4, "evidence": ["Hit, H@1 and F1 on WebQSP with published numbers (Hit 85.7 for the 7B reader)"], "evidence_level": "verified", "missing": []},
+    "low_failure_risk": {"score": 2, "evidence": ["If the pipeline cannot be run, there is nothing to report"], "evidence_level": "estimate", "missing": []}
+   }
+  }
+ ]
+}

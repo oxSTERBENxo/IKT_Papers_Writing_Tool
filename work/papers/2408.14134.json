@@ -1,0 +1,48 @@
+{
+  "paper": {
+    "title": "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+    "authors": [
+      "Yuxia Wu",
+      "Shujie Li",
+      "Yuan Fang",
+      "Chuan Shi"
+    ],
+    "year": 2024,
+    "date": "2024-08-26",
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv_id": "2408.14134",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2408.14134",
+    "pdf_url": "https://arxiv.org/pdf/2408.14134v3",
+    "abstract": "Large language models (LLMs) have presented significant opportunities to enhance various machine learning applications, including graph neural networks (GNNs). By leveraging the vast open-world knowledge within LLMs, we can more effectively interpret and utilize textual data to better characterize heterophilic graphs, where neighboring nodes often have different labels. However, existing approaches for heterophilic graphs overlook the rich textual data associated with nodes, which could unlock deeper insights into their heterophilic contexts. In this work, we explore the potential of LLMs for modeling heterophilic graphs and propose a novel two-stage framework: LLM-enhanced edge discriminator and LLM-guided edge reweighting. In the first stage, we fine-tune the LLM to better identify homophilic and heterophilic edges based on the textual content of their nodes. In the second stage, we adaptively manage message propagation in GNNs for different edge types based on node features, structures, and heterophilic or homophilic characteristics. To cope with the computational demands when deploying LLMs in practical scenarios, we further explore model distillation techniques to fine-tune smaller, more efficient models that maintain competitive performance. Extensive experiments validate the effectiveness of our framework, demonstrating the feasibility of using LLMs to enhance node classification on heterophilic graphs.",
+    "citations": null,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "Accepted by NAACL 2025",
+      "arxiv_category": "cs.LG"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

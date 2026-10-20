@@ -1,0 +1,85 @@
+
+absa-syntax-gcn [dev] - 5 known relevant paper(s)
+  baseline   recall 0.20 | in top 20: 0.00 | median rank 58 | retrieved 80
+  challenge  recall 0.40 | in top 20: 0.00 | median rank 124.0 | retrieved 304
+  landscape  recall 0.40 | in top 20: 0.40 | median rank 7.0 | retrieved 329
+  full       recall 0.40 | in top 20: 0.40 | median rank 12.5 | retrieved 374
+  missed by every configuration (check with web search):
+    - Do Syntax Trees Help Pre-trained Transformers Extract Information?
+    - Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis …
+    - On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis
+
+upfd-graph-vs-no-graph [dev] - 4 known relevant paper(s)
+  baseline   recall 0.00 | in top 20: 0.00 | median rank None | retrieved 71
+  challenge  recall 0.50 | in top 20: 0.25 | median rank 61.5 | retrieved 263
+  landscape  recall 0.50 | in top 20: 0.25 | median rank 18.0 | retrieved 247
+  full       recall 0.50 | in top 20: 0.25 | median rank 29.5 | retrieved 314
+  missed by every configuration (check with web search):
+    - Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness
+    - Enhancing Fake-News Detection with Node-Level Topological Features
+
+gnn-rag-small-reader [heldout] - 1 known relevant paper(s)
+  baseline   recall 0.00 | in top 20: 0.00 | median rank None | retrieved 53 | failed: arxiv
+  challenge  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 168 | failed: arxiv
+  landscape  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 156 | failed: arxiv
+  full       recall 0.00 | in top 20: 0.00 | median rank None | retrieved 187
+  missed by every configuration (check with web search):
+    - RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answeri…
+
+heterophily-llm-tag [heldout] - 3 known relevant paper(s)
+  baseline   recall 0.67 | in top 20: 0.67 | median rank 1.5 | retrieved 72
+  challenge  recall 1.00 | in top 20: 0.67 | median rank 16 | retrieved 146
+  landscape  recall 0.67 | in top 20: 0.67 | median rank 8.0 | retrieved 125
+  full       recall 1.00 | in top 20: 0.33 | median rank 23 | retrieved 187
+
+llm-graph-leakage [heldout] - 2 known relevant paper(s)
+  baseline   recall 0.00 | in top 20: 0.00 | median rank None | retrieved 62
+  challenge  recall 0.50 | in top 20: 0.00 | median rank 88 | retrieved 207
+  landscape  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 211
+  full       recall 0.50 | in top 20: 0.00 | median rank 124 | retrieved 262
+  missed by every configuration (check with web search):
+    - Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?
+
+simple-baselines-vs-llm-graph [heldout] - 3 known relevant paper(s)
+  baseline   recall 0.33 | in top 20: 0.33 | median rank 3 | retrieved 63
+  challenge  recall 0.67 | in top 20: 0.67 | median rank 7.5 | retrieved 207
+  landscape  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 245
+  full       recall 0.67 | in top 20: 0.33 | median rank 12.5 | retrieved 300
+  missed by every configuration (check with web search):
+    - When Do LLMs Help With Node Classification? A Comprehensive Analysis
+
+tag-robustness [heldout] - 4 known relevant paper(s)
+  baseline   recall 1.00 | in top 20: 1.00 | median rank 4.5 | retrieved 63
+  challenge  recall 1.00 | in top 20: 1.00 | median rank 5.5 | retrieved 157
+  landscape  recall 1.00 | in top 20: 1.00 | median rank 3.5 | retrieved 152
+  full       recall 1.00 | in top 20: 1.00 | median rank 5.0 | retrieved 206
+
+tape-small-llms [heldout] - 1 known relevant paper(s)
+  baseline   recall 0.00 | in top 20: 0.00 | median rank None | retrieved 54
+  challenge  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 154
+  landscape  recall 0.00 | in top 20: 0.00 | median rank None | retrieved 155
+  full       recall 0.00 | in top 20: 0.00 | median rank None | retrieved 184
+  missed by every configuration (check with web search):
+    - When Do LLMs Help With Node Classification? A Comprehensive Analysis
+
+textgcn-vs-mlp [heldout] - 1 known relevant paper(s)
+  baseline   recall 0.00 | in top 20: 0.00 | median rank None | retrieved 80
+  challenge  recall 1.00 | in top 20: 1.00 | median rank 2 | retrieved 263
+  landscape  recall 1.00 | in top 20: 1.00 | median rank 6 | retrieved 229
+  full       recall 1.00 | in top 20: 1.00 | median rank 3 | retrieved 347
+
+Pooled recall (known relevant papers found / targets):
+  dev:
+    baseline   1/9 any rank, 0/9 in top 20
+    challenge  4/9 any rank, 1/9 in top 20
+    landscape  4/9 any rank, 3/9 in top 20
+    full       4/9 any rank, 3/9 in top 20
+  heldout:
+    baseline   7/15 any rank, 7/15 in top 20
+    challenge  11/15 any rank, 9/15 in top 20
+    landscape  7/15 any rank, 7/15 in top 20
+    full       11/15 any rank, 7/15 in top 20
+
+CAVEAT: Pooled over few topics and few known papers per topic; treat differences of one or two papers as noise. Live results depend on rate limits and index coverage on the day of the run.
+
+Full JSON written to work\retrieval_eval\all_arxiv_crossref.json

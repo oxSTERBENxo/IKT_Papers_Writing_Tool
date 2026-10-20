@@ -1,0 +1,50 @@
+[
+  {
+    "source": "url",
+    "ref": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.UPFD.html",
+    "exists": true,
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "error": null,
+    "missing": [
+      "license",
+      "size",
+      "format",
+      "access terms"
+    ],
+    "blockers": [],
+    "note": "Only reachability was checked. Licence, size and contents must be read from the page itself."
+  },
+  {
+    "source": "url",
+    "ref": "https://github.com/safe-graph/GNN-FakeNews/tree/main/data",
+    "exists": true,
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "error": null,
+    "missing": [
+      "license",
+      "size",
+      "format",
+      "access terms"
+    ],
+    "blockers": [],
+    "note": "Only reachability was checked. Licence, size and contents must be read from the page itself."
+  },
+  {
+    "source": "url",
+    "ref": "https://github.com/KaiDMML/FakeNewsNet/tree/master/dataset",
+    "exists": true,
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "error": null,
+    "missing": [
+      "license",
+      "size",
+      "format",
+      "access terms"
+    ],
+    "blockers": [],
+    "note": "Only reachability was checked. Licence, size and contents must be read from the page itself."
+  }
+]

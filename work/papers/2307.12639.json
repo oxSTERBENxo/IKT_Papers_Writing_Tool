@@ -1,0 +1,39 @@
+{
+  "paper": {
+    "title": "Fake News Detection Through Graph-based Neural Networks: A Survey",
+    "authors": [
+      "Shuzhi Gong",
+      "Richard O. Sinnott",
+      "Jianzhong Qi",
+      "Cecile Paris"
+    ],
+    "year": 2023,
+    "date": "2023-08-16",
+    "venue": "Research Square",
+    "doi": "10.21203/rs.3.rs-3252100/v1",
+    "arxiv_id": "2307.12639",
+    "pmid": null,
+    "openalex_id": "W4385894011",
+    "s2_id": "d3cf086517a959bd254c51130d53dbd3541b3979",
+    "url": "https://arxiv.org/abs/2307.12639",
+    "pdf_url": "https://arxiv.org/pdf/2307.12639v1",
+    "abstract": "The popularity of online social networks has enabled rapid dissemination of information. People now can share and consume information much more rapidly than ever before. However, low-quality and/or accidentally/deliberately fake information can also spread rapidly. This can lead to considerable and negative impacts on society. Identifying, labelling and debunking online misinformation as early as possible has become an increasingly urgent problem. Many methods have been proposed to detect fake news including many deep learning and graph-based approaches. In recent years, graph-based methods have yielded strong results, as they can closely model the social context and propagation process of online news. In this paper, we present a systematic review of fake news detection studies based on graph-based and deep learning-based techniques. We classify existing graph-based methods into knowledge-driven methods, propagation-based methods, and heterogeneous social context-based methods, depending on how a graph structure is constructed to model news related information flows. We further discuss the challenges and open problems in graph-based fake news detection and identify future research directions.",
+    "citations": 33,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "18 pages, 3 tables, 7 figures",
+      "arxiv_category": "cs.SI",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": []
+}

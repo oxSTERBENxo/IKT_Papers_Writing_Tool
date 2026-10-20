@@ -1,0 +1,719 @@
+{
+  "summary": {
+    "dev": {
+      "baseline": {
+        "targets": 9,
+        "found": 1,
+        "in_top_20": 0,
+        "recall_any": 0.111,
+        "recall_at_20": 0.0
+      },
+      "challenge": {
+        "targets": 9,
+        "found": 4,
+        "in_top_20": 1,
+        "recall_any": 0.444,
+        "recall_at_20": 0.111
+      }
+    },
+    "heldout": {
+      "baseline": {
+        "targets": 15,
+        "found": 7,
+        "in_top_20": 7,
+        "recall_any": 0.467,
+        "recall_at_20": 0.467
+      },
+      "challenge": {
+        "targets": 15,
+        "found": 11,
+        "in_top_20": 9,
+        "recall_any": 0.733,
+        "recall_at_20": 0.6
+      }
+    },
+    "challenge_signal": {
+      "dev": {
+        "baseline": {
+          "fixtures": 2,
+          "flagged_prior_work": 0
+        },
+        "challenge": {
+          "fixtures": 2,
+          "flagged_prior_work": 1
+        }
+      },
+      "heldout": {
+        "baseline": {
+          "fixtures": 7,
+          "flagged_prior_work": 0
+        },
+        "challenge": {
+          "fixtures": 7,
+          "flagged_prior_work": 4
+        }
+      },
+      "control": {
+        "baseline": {
+          "fixtures": 2,
+          "flagged_prior_work": 0
+        },
+        "challenge": {
+          "fixtures": 2,
+          "flagged_prior_work": 0
+        }
+      }
+    },
+    "caveat": "Pooled over few topics and few known papers per topic; treat differences of one or two papers as noise. Live results depend on rate limits and index coverage on the day of the run."
+  },
+  "results": [
+    {
+      "id": "absa-beekeeping-hive-graphs",
+      "split": "control",
+      "n_targets": 0,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 73,
+          "hits": [],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 73
+        },
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 134,
+          "hits": [],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 134,
+          "expansion_errors": 5
+        }
+      },
+      "missed_by_all": []
+    },
+    {
+      "id": "gnn-chant-floorplans",
+      "split": "control",
+      "n_targets": 0,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 76,
+          "hits": [],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 76
+        },
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 139,
+          "hits": [],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 139,
+          "expansion_errors": 3
+        }
+      },
+      "missed_by_all": []
+    },
+    {
+      "id": "absa-syntax-gcn",
+      "split": "dev",
+      "n_targets": 5,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.2,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 58,
+          "n_retrieved": 80,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 58,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 80
+        },
+        "challenge": {
+          "recall_any": 0.4,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 124.0,
+          "n_retrieved": 304,
+          "hits": [
+            {
+              "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+              "rank": 150,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+              "rank": 98,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 304,
+          "expansion_errors": 0
+        }
+      },
+      "missed_by_all": [
+        "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+        "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+        "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis"
+      ]
+    },
+    {
+      "id": "upfd-graph-vs-no-graph",
+      "split": "dev",
+      "n_targets": 4,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 71,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 71
+        },
+        "challenge": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "median_rank_of_found": 61.5,
+          "n_retrieved": 263,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": 122,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 263,
+          "expansion_errors": 2
+        }
+      },
+      "missed_by_all": [
+        "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+        "Enhancing Fake-News Detection with Node-Level Topological Features"
+      ]
+    },
+    {
+      "id": "gnn-rag-small-reader",
+      "split": "heldout",
+      "n_targets": 1,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 53,
+          "hits": [
+            {
+              "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 53
+        },
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 169,
+          "hits": [
+            {
+              "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 169,
+          "expansion_errors": 4
+        }
+      },
+      "missed_by_all": [
+        "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering"
+      ]
+    },
+    {
+      "id": "heterophily-llm-tag",
+      "split": "heldout",
+      "n_targets": 3,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.667,
+          "recall_at_20": 0.667,
+          "median_rank_of_found": 1.5,
+          "n_retrieved": 72,
+          "hits": [
+            {
+              "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+              "rank": 2,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 72
+        },
+        "challenge": {
+          "recall_any": 1.0,
+          "recall_at_20": 0.667,
+          "median_rank_of_found": 17,
+          "n_retrieved": 149,
+          "hits": [
+            {
+              "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+              "rank": 17,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+              "rank": 55,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 149,
+          "expansion_errors": 3
+        }
+      },
+      "missed_by_all": []
+    },
+    {
+      "id": "llm-graph-leakage",
+      "split": "heldout",
+      "n_targets": 2,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 62,
+          "hits": [
+            {
+              "title": "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 62
+        },
+        "challenge": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": 88,
+          "n_retrieved": 207,
+          "hits": [
+            {
+              "title": "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs",
+              "rank": 88,
+              "found": true,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 207,
+          "expansion_errors": 1
+        }
+      },
+      "missed_by_all": [
+        "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?"
+      ]
+    },
+    {
+      "id": "simple-baselines-vs-llm-graph",
+      "split": "heldout",
+      "n_targets": 3,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.333,
+          "recall_at_20": 0.333,
+          "median_rank_of_found": 3,
+          "n_retrieved": 63,
+          "hits": [
+            {
+              "title": "GLBench: A Comprehensive Benchmark for Graph with Large Language Models",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 63
+        },
+        "challenge": {
+          "recall_any": 0.667,
+          "recall_at_20": 0.667,
+          "median_rank_of_found": 7.5,
+          "n_retrieved": 207,
+          "hits": [
+            {
+              "title": "GLBench: A Comprehensive Benchmark for Graph with Large Language Models",
+              "rank": 14,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 207,
+          "expansion_errors": 3
+        }
+      },
+      "missed_by_all": [
+        "When Do LLMs Help With Node Classification? A Comprehensive Analysis"
+      ]
+    },
+    {
+      "id": "tag-robustness",
+      "split": "heldout",
+      "n_targets": 4,
+      "configs": {
+        "baseline": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "median_rank_of_found": 4.5,
+          "n_retrieved": 63,
+          "hits": [
+            {
+              "title": "Intruding with Words: Towards Understanding Graph Injection Attacks at the Text Level",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses",
+              "rank": 6,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Are LLM-Enhanced Graph Neural Networks Robust against Poisoning Attacks?",
+              "rank": 12,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 63
+        },
+        "challenge": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "median_rank_of_found": 5.5,
+          "n_retrieved": 157,
+          "hits": [
+            {
+              "title": "Intruding with Words: Towards Understanding Graph Injection Attacks at the Text Level",
+              "rank": 7,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses",
+              "rank": 4,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+              "rank": 2,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Are LLM-Enhanced Graph Neural Networks Robust against Poisoning Attacks?",
+              "rank": 17,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 157,
+          "expansion_errors": 0
+        }
+      },
+      "missed_by_all": []
+    },
+    {
+      "id": "tape-small-llms",
+      "split": "heldout",
+      "n_targets": 1,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 54,
+          "hits": [
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 54
+        },
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 154,
+          "hits": [
+            {
+              "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 154,
+          "expansion_errors": 3
+        }
+      },
+      "missed_by_all": [
+        "When Do LLMs Help With Node Classification? A Comprehensive Analysis"
+      ]
+    },
+    {
+      "id": "textgcn-vs-mlp",
+      "split": "heldout",
+      "n_targets": 1,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 80,
+          "hits": [
+            {
+              "title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 80
+        },
+        "challenge": {
+          "recall_any": 1.0,
+          "recall_at_20": 1.0,
+          "median_rank_of_found": 2,
+          "n_retrieved": 263,
+          "hits": [
+            {
+              "title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+              "rank": 2,
+              "found": true,
+              "in_top_k": true
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 263,
+          "expansion_errors": 1
+        }
+      },
+      "missed_by_all": []
+    }
+  ],
+  "sources": [
+    "arxiv",
+    "crossref"
+  ],
+  "configs": [
+    "baseline",
+    "challenge"
+  ]
+}

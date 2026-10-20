@@ -1,0 +1,1298 @@
+{
+  "claim": "Quantifying how often GNN-based knowledge graph retrieval for question answering fails because the retrieved subgraph lacks the answer entity, and how a frozen small LLM reader degrades on those questions",
+  "queries": [
+    "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering",
+    "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP",
+    "error analysis entity linking subgraph retrieval KGQA large language model",
+    "graph neural network retriever small language model knowledge base question answering"
+  ],
+  "sources_ok": [
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [],
+  "sources_status": {
+    "arxiv": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "crossref": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 240,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 240,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "n_papers_examined": 127,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 8,
+  "n_without_abstract": 28,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "interpretation": "No closely worded paper was retrieved, but only 1 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "EntropyRAG: Entropy-Aware Retrieval-Augmented Generation for Knowledge Graph Question Answering",
+        "authors": [
+          "Donglin Qi",
+          "Long Cheng",
+          "Haofei Wang",
+          "Yan Zhang",
+          "Dayan Wan"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": null,
+        "doi": "10.2139/ssrn.6794971",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.6794971",
+        "pdf_url": null,
+        "abstract": "Large language models (LLMs) have shown strong performance in natural lan-guage understanding and generation. However, their knowledge is mainly derived from pre-training corpora, making it difficult to capture emerging domain knowledge in a timely man-ner, and they are prone to hallucinations when evidence is insufficient. Retrieval-augmentedgeneration (RAG) mitigates this issue by leveraging the updatable and auditable structuredfacts in knowledge graphs, thereby improving faithfulness and interpretability. However,existing knowledge graph retrieval methods often underutilize graph-structured informationand lack adaptive control over subgraph expansion during retrieval. To address these issues,we propose an entropy-aware retrieval-augmented generation method for knowledge graphquestion answering. Our framework consists of two stages. In the retrieval stage, we designa GNN-based retriever with an entropy-aware mechanism over edge attention distributionsto adaptively control subgraph expansion, reducing subgraph size while improving the qual-ity of candidate answers and reasoning paths. In the generation stage, we fuse graph-siderepresentations with structured prompts by encoding the retrieved subgraph into a structure-aware graph vector and injecting it into the LLM as a soft prompt to support final answergeneration. Experiments on WebQSP and CWQ show that EntropyRAG achieves com-petitive performance against representative LLM-based and graph-based retrieval baselines,with clearer gains over representative GNN-based retrieval methods on the multi-hop CWQbenchmark.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.818,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 2.511
+          }
+        }
+      },
+      "term_overlap": 0.319,
+      "tfidf_similarity": 0.122,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Hybrid Graph Neural Network and Large Language Model Framework for Robust Knowledge Graph Question Answering via Retrieval-Augmented Generation",
+        "authors": [
+          "Sohail Khan"
+        ],
+        "year": 2026,
+        "date": "2026-05-31",
+        "venue": "International Journal for Research in Applied Science and Engineering Technology",
+        "doi": "10.22214/ijraset.2026.82233",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.22214/ijraset.2026.82233",
+        "pdf_url": null,
+        "abstract": "Knowledge graphs (KGs) hold facts about the world as connected triples, and they have become a backbone for any system that needs to reason over linked information. The task of Knowledge Graph Question Answering (KGQA) is to map a natural-language question onto the right entity, or set of entities, somewhere inside such a graph. Two communities have been pulling at this problem from opposite ends. Large language models (LLMs) read a question fluently but tend to invent facts and stumble on multi-hop chains they cannot verify. Graph neural networks (GNNs), on the other side, are good at walking through neighbourhoods and weighing relations, but cannot phrase an answer the way a person would. In this work, we describe a practical hybrid that places the two inside a retrieval- augmented generation (RAG) loop. A GNN first prunes a small subgraph around the question's seed entities and ranks candidate answers; we then extract shortest paths between the seeds and the top candidates, score each path with a lightweight function that combines GNN attention with degree centrality, and finally verbalise the surviving paths into plain-English sentences before passing them to a 7-8B open-source LLM. The proposed entity-priority scoring step is training-free and runs in milliseconds, yet it lifts Hits@1 by roughly 4-5 percentage points on the harder questions of ComplexWebQuestions. Experiments on WebQuestionsSP and ComplexWebQuestions show competitive or superior results against recent baselines, with the largest gains on multi-entity and three-or-more hop queries. The pipeline uses about one LLM call per question, runs comfortably on a single mid-range GPU, and exposes its reasoning as a short list of human-readable paths that anyone can audit. We argue that this combination of grounded retrieval, lightweight path scoring, and modest model size makes the approach particularly suited to academic and resourceconstrained settings.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.818,
+            "title_match": 0.727,
+            "retrieval_hits": 3,
+            "score": 2.739
+          }
+        }
+      },
+      "term_overlap": 0.275,
+      "tfidf_similarity": 0.099,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "SSR: Structured Subgraph Retrieval for Temporal Knowledge Graph Question Answering with LLMs",
+        "authors": [
+          "Ying Zhang",
+          "Li Zhang",
+          "Wenya Guo",
+          "Shilong Ping",
+          "Xinying Qian"
+        ],
+        "year": 2026,
+        "date": "2026-07-19",
+        "venue": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+        "doi": "10.1145/3805712.3809612",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W7167884800",
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/3805712.3809612",
+        "pdf_url": "https://doi.org/10.1145/3805712.3809612",
+        "abstract": "Temporal Knowledge Graph Question Answering (TKGQA) aims to answer natural language questions based on quadruple facts stored in Temporal Knowledge Graphs (TKGs). Recent studies have integrated Large Language Models (LLMs) to handle the complex semantic reasoning required by temporal questions. They typically linearize TKG quadruples into plain text, reducing TKGQA to a top-n text retrieval and context-based question answering problem. However, this textualization process destroys the original quadruple structure and entangles structural and temporal information with text semantics. Moreover, selecting top-n facts based on semantic similarity inevitably introduces a large amount of irrelevant noise into the LLM input, which degrades reasoning performance. To address these limitations, we propose SSR, a Structured Subgraph Retrieval framework for TKGQA with LLMs. In SSR, a Temporal Question Parser is first introduced to extract structured subgraph patterns and temporal constraints from the input questions, leveraging background context obtained via text retrieval. The Subgraph Retrieval module is then applied to directly filter a relevant subgraph from the TKG that contains the facts required to answer the question. The retrieved subgraph is further temporally compressed and subsequently incorporated into the LLM context for final question answering. Experimental results on two benchmark datasets demonstrate that SSR consistently outperforms strong baselines by a clear margin, achieving state-of-the-art performance. Our code is available at https://github.com/zhangli-coding/SSR.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.6,
+            "retrieval_hits": 3,
+            "score": 2.175
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W2889782235",
+            "W2897253439",
+            "W3034862985",
+            "W3168292164",
+            "W4283793506",
+            "W4385571246",
+            "W4385573101",
+            "W4385573465",
+            "W4386566692",
+            "W4396758658",
+            "W4402670350",
+            "W4402670856",
+            "W4402671650",
+            "W4404782541",
+            "W4416036942",
+            "W7131874588"
+          ]
+        }
+      },
+      "term_overlap": 0.251,
+      "tfidf_similarity": 0.107,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "A Dynamic Graph Reasoning Model with an Auxiliary Task for Knowledge Base Question Answering",
+        "authors": [
+          "Zhichao Wu",
+          "Xuan Tian"
+        ],
+        "year": 2024,
+        "date": "2024-12-20",
+        "venue": "Electronics",
+        "doi": "10.3390/electronics13245011",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/electronics13245011",
+        "pdf_url": null,
+        "abstract": "In the field of question answering (QA), the methods of large language models (LLMs) cannot learn vertical domain knowledge during the pre-training stage, leading to low accuracy in domain QA. Conversely, knowledge base question answering (KBQA) can combine the knowledge base (KB) that contains domain knowledge with small language models to achieve high accuracy with a low cost. In KBQA, the inference subgraph is composed of entity nodes and their relationships pertinent to the question, with the final answers being derived from the subgraph. However, there are still two critical problems in this field: (i) fixed or decreased scopes of the inference subgraphs over the reasoning process may lead to limited knowledge, restricted in KBQA, and (ii) a lack of alignment between the inference subgraph and the question leads to low accuracy. In this work, we propose a dynamic graph reasoning model with an auxiliary task, the DGRMWAT, which addresses the above challenges through two key innovations, as follows: (i) dynamic graph reasoning, whereby we update the scope of the inference subgraph during each reasoning step to obtain more relevant knowledge and reduce irrelevant knowledge, and (ii) an auxiliary task to enhance the correlation between the inference subgraph and the question by computing the similarities between the inference subgraph and the QA context node. The experiments on two QA benchmark datasets, CommonsenseQA and OpenbookQA, indicate that the DGRMWAT allowed improvements compared to the baseline models and LLMs.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.727,
+            "title_match": 0.545,
+            "retrieval_hits": 3,
+            "score": 2.375
+          }
+        }
+      },
+      "term_overlap": 0.251,
+      "tfidf_similarity": 0.099,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "GNN-RAG: Graph Neural Retrieval for Large Language Model Reasoning",
+        "authors": [
+          "Costas Mavromatis",
+          "George Karypis"
+        ],
+        "year": 2024,
+        "date": "2024-05-30",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2405.20139",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2405.20139",
+        "pdf_url": null,
+        "abstract": "Knowledge Graphs (KGs) represent human-crafted factual knowledge in the form of triplets (head, relation, tail), which collectively form a graph. Question Answering over KGs (KGQA) is the task of answering natural questions grounding the reasoning to the information provided by the KG. Large Language Models (LLMs) are the state-of-the-art models for QA tasks due to their remarkable ability to understand natural language. On the other hand, Graph Neural Networks (GNNs) have been widely used for KGQA as they can handle the complex graph information stored in the KG. In this work, we introduce GNN-RAG, a novel method for combining language understanding abilities of LLMs with the reasoning abilities of GNNs in a retrieval-augmented generation (RAG) style. First, a GNN reasons over a dense KG subgraph to retrieve answer candidates for a given question. Second, the shortest paths in the KG that connect question entities and answer candidates are extracted to represent KG reasoning paths. The extracted paths are verbalized and given as input for LLM reasoning with RAG. In our GNN-RAG framework, the GNN acts as a dense subgraph reasoner to extract useful graph information, while the LLM leverages its natural language processing ability for ultimate KGQA. Furthermore, we develop a retrieval augmentation (RA) technique to further boost KGQA performance with GNN-RAG. Experimental results show that GNN-RAG achieves state-of-the-art performance in two widely used KGQA benchmarks (WebQSP and CWQ), outperforming or matching GPT-4 performance with a 7B tuned LLM. In addition, GNN-RAG excels on multi-hop and multi-entity questions outperforming competing approaches by 8.9--15.5% points at answer F1.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.727,
+            "title_match": 0.4,
+            "retrieval_hits": 12,
+            "score": 2.355
+          }
+        }
+      },
+      "term_overlap": 0.213,
+      "tfidf_similarity": 0.129,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Interpretable Question Answering with Knowledge Graphs",
+        "authors": [
+          "Kartikeya Aneja",
+          "Manasvi Srivastava",
+          "Subhayan Das",
+          "Nagender Aneja"
+        ],
+        "year": 2025,
+        "date": "2025-10-22",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2510.19181",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2510.19181",
+        "pdf_url": null,
+        "abstract": "This paper presents a question answering system that operates exclusively on a knowledge graph retrieval without relying on retrieval augmented generation (RAG) with large language models (LLMs). Instead, a small paraphraser model is used to paraphrase the entity relationship edges retrieved from querying the knowledge graph. The proposed pipeline is divided into two main stages. The first stage involves pre-processing a document to generate sets of question-answer (QA) pairs. The second stage converts these QAs into a knowledge graph from which graph-based retrieval is performed using embeddings and fuzzy techniques. The graph is queried, re-ranked, and paraphrased to generate a final answer. This work includes an evaluation using LLM-as-a-judge on the CRAG benchmark, which resulted in accuracies of 71.9% and 54.4% using LLAMA-3.2 and GPT-3.5-Turbo, respectively.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.636,
+            "title_match": 0.4,
+            "retrieval_hits": 9,
+            "score": 2.173
+          }
+        }
+      },
+      "term_overlap": 0.228,
+      "tfidf_similarity": 0.111,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Harnessing Large Language Models for Knowledge Graph Question Answering via Adaptive Multi-Aspect Retrieval-Augmentation",
+        "authors": [
+          "Derong Xu",
+          "Xinhang Li",
+          "Ziheng Zhang",
+          "Zhenxi Lin",
+          "Zhihong Zhu",
+          "Zhi Zheng",
+          "Xian Wu",
+          "Xiangyu Zhao",
+          "Tong Xu",
+          "Enhong Chen"
+        ],
+        "year": 2024,
+        "date": "2024-12-24",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2412.18537",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2412.18537",
+        "pdf_url": null,
+        "abstract": "Large Language Models (LLMs) demonstrate remarkable capabilities, yet struggle with hallucination and outdated knowledge when tasked with complex knowledge reasoning, resulting in factually incorrect outputs. Previous studies have attempted to mitigate it by retrieving factual knowledge from large-scale knowledge graphs (KGs) to assist LLMs in logical reasoning and prediction of answers. However, this kind of approach often introduces noise and irrelevant data, especially in situations with extensive context from multiple knowledge aspects. In this way, LLM attention can be potentially mislead from question and relevant information. In our study, we introduce an Adaptive Multi-Aspect Retrieval-augmented over KGs (Amar) framework. This method retrieves knowledge including entities, relations, and subgraphs, and converts each piece of retrieved text into prompt embeddings. The Amar framework comprises two key sub-components: 1) a self-alignment module that aligns commonalities among entities, relations, and subgraphs to enhance retrieved text, thereby reducing noise interference; 2) a relevance gating module that employs a soft gate to learn the relevance score between question and multi-aspect retrieved data, to determine which information should be used to enhance LLMs' output, or even filtered altogether. Our method has achieved state-of-the-art performance on two common datasets, WebQSP and CWQ, showing a 1.9\\% improvement in accuracy over its best competitor and a 6.6\\% improvement in logical form generation over a method that directly uses retrieved text as context prompts. These results demonstrate the effectiveness of Amar in improving the reasoning of LLMs.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.7,
+            "title_match": 0.545,
+            "retrieval_hits": 3,
+            "score": 2.32
+          }
+        }
+      },
+      "term_overlap": 0.236,
+      "tfidf_similarity": 0.094,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "STEM: Structure-Tracing Evidence Mining for Knowledge Graphs-Driven Retrieval-Augmented Generation",
+        "authors": [
+          "Peng Yu",
+          "En Xu",
+          "Bin Chen",
+          "Haibiao Chen",
+          "Yinfei Xu"
+        ],
+        "year": 2026,
+        "date": "2026-05-18",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2604.22282",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2604.22282",
+        "pdf_url": null,
+        "abstract": "Knowledge Graph-based Question Answering (KGQA) plays a pivotal role in complex reasoning tasks but remains constrained by two persistent challenges: the structural heterogeneity of Knowledge Graphs(KGs) often leads to semantic mismatch during retrieval, while existing reasoning path retrieval methods lack a global structural perspective. To address these issues, we propose Structure-Tracing Evidence Mining (STEM), a novel framework that reframes multi-hop reasoning as a schema-guided graph search task. First, we design a Semantic-to-Structural Projection pipeline that leverages KG structural priors to decompose queries into atomic relational assertions and construct an adaptive query schema graph. Subsequently, we execute globally-aware node anchoring and subgraph retrieval to obtain the final evidence reasoning graph from KG. To more effectively integrate global structural information during the graph construction process, we design a Triple-Dependent GNN (Triple-GNN) to generate a Global Guidance Subgraph (Guidance Graph) that guides the construction. STEM significantly improves both the accuracy and evidence completeness of multi-hop reasoning graph retrieval, and achieves State-of-the-Art performance on multiple multi-hop benchmarks.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.3,
+            "retrieval_hits": 5,
+            "score": 2.0
+          }
+        }
+      },
+      "term_overlap": 0.233,
+      "tfidf_similarity": 0.096,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+        "authors": [
+          "Kaehyun Um",
+          "KyuHwan Yeom",
+          "Haerim Yang",
+          "Minyoung Choi",
+          "Hyeongjun Yang",
+          "Kyong-Ho Lee"
+        ],
+        "year": 2026,
+        "date": "2026-01-28",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2601.19225",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2601.19225",
+        "pdf_url": null,
+        "abstract": "Large Language Models (LLMs) have recently demonstrated remarkable reasoning abilities, yet hallucinate on knowledge-intensive tasks. Retrieval-augmented generation (RAG) mitigates this issue by grounding answers in external sources, e.g., knowledge graphs (KGs). However, existing KG-based RAG approaches rely on semantics-unaware path sampling and are weakly aligned with KG reasoning objectives, which limits further accuracy gains. They also feed retrieved paths directly into the reasoner without organizing them into answer-centered reasoning paths, hindering small LLMs' ability to leverage the retrieved knowledge. Furthermore, prior works predominantly rely on large LLMs (e.g., ChatGPT/GPT-4) or assume backbones above 7B parameters, leaving sub-7B models underexplored. We address this gap with RPO-RAG, the first KG-based RAG framework specifically designed for small LLMs, to the best of our knowledge. RPO-RAG introduces three key innovations: (1) a query-path semantic sampling strategy that provides informative supervisory signals; (2) a relation-aware preference optimization that aligns training with intermediate KG reasoning signals (e.g., relation); and (3) an answer-centered prompt design that organizes entities and reasoning paths in an interpretable format. Extensive experiments on two benchmark Knowledge Graph Question Answering (KGQA) datasets, WebQSP and CWQ, demonstrate that RPO-RAG effectively bridges the performance gap between small and large language models. On WebQSP, it improves F1 by up to 8.8%, reflecting enhanced answer precision, while on CWQ it achieves new state-of-the-art results among models under 8B parameters in both Hit and F1. Overall, RPO-RAG substantially improves the reasoning capability of small LLMs, even under 3B parameters-highlighting their potential for resource-efficient and practical on-device KGQA applications.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.636,
+            "title_match": 0.455,
+            "retrieval_hits": 2,
+            "score": 1.977
+          }
+        }
+      },
+      "term_overlap": 0.228,
+      "tfidf_similarity": 0.101,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Retrieval-augmented Knowledge Graph Reasoning for Commonsense Question Answering",
+        "authors": [
+          "Yuchen Sha",
+          "Yujian Feng",
+          "Miao He",
+          "Shangdong Liu",
+          "Yimu Ji"
+        ],
+        "year": 2023,
+        "date": "2023-06-06",
+        "venue": null,
+        "doi": "10.20944/preprints202306.0430.v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.20944/preprints202306.0430.v1",
+        "pdf_url": null,
+        "abstract": "Existing Knowledge Graph (KG) models for commonsense question answering present two challenges: (i) existing methods retrieved entities related to questions from the knowledge graph, which may extract noise and irrelevant nodes, and (ii) lack of interaction representation between questions and graph entities. However, current methods mainly focus on retrieving relevant entities with some noisy and irrelevant nodes. In this paper, we propose a novel Retrieval-augmented Knowledge Graph (RAKG) model, which solves the above issues through two key innovations. First, we leverage the density matrix to make the model reason along the corrected knowledge path and extract an enhanced knowledge graph subgraph. Second, we fuse representations of questions and graph entities through a bidirectional attention strategy, in which two representations fuse and update by Graph Convolutional Network (GCN). To evaluate the performance of our method, we conduct experiments on two widely-used benchmark datasets CommonsenseQA and OpenBookQA. The case study gives insight into findings that the augmented subgraph provides reasoning along the corrected knowledge path for question answering.",
+        "citations": 5,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 2.133
+          }
+        }
+      },
+      "term_overlap": 0.203,
+      "tfidf_similarity": 0.106,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "SRTK: A Toolkit for Semantic-relevant Subgraph Retrieval",
+        "authors": [
+          "Yuanchun Shen"
+        ],
+        "year": 2023,
+        "date": "2023-05-06",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2305.04101",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2305.04101",
+        "pdf_url": null,
+        "abstract": "Information retrieval based knowledge base question answering (KBQA) first retrieves a subgraph to reduce search space, then reasons on the subgraph to select answer entities. Existing approaches have three issues that impede the retrieval of such subgraphs. Firstly, there is no off-the-shelf toolkit for semantic-relevant subgraph retrieval. Secondly, existing methods are knowledge-graph-dependent, resulting in outdated knowledge graphs used even in recent studies. Thirdly, previous solutions fail to incorporate the best available techniques for entity linking or path expansion. In this paper, we present SRTK, a user-friendly toolkit for semantic-relevant subgraph retrieval from large-scale knowledge graphs. SRTK is the first toolkit that streamlines the entire lifecycle of subgraph retrieval across multiple knowledge graphs. Additionally, it comes with state-of-the-art subgraph retrieval algorithms, guaranteeing an up-to-date solution set out of the box.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "error analysis entity linking subgraph retrieval KGQA large language model review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.2,
+            "retrieval_hits": 9,
+            "score": 1.9
+          }
+        }
+      },
+      "term_overlap": 0.201,
+      "tfidf_similarity": 0.106,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "RJE: A Retrieval-Judgment-Exploration Framework for Efficient Knowledge Graph Question Answering with LLMs",
+        "authors": [
+          "Can Lin",
+          "Zhengwang Jiang",
+          "Ling Zheng",
+          "Qi Zhao",
+          "Yuhang Zhang",
+          "Qi Song",
+          "Wangqiu Zhou"
+        ],
+        "year": 2025,
+        "date": "2025-09-25",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2510.01257",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2510.01257",
+        "pdf_url": null,
+        "abstract": "Knowledge graph question answering (KGQA) aims to answer natural language questions using knowledge graphs. Recent research leverages large language models (LLMs) to enhance KGQA reasoning, but faces limitations: retrieval-based methods are constrained by the quality of retrieved information, while agent-based methods rely heavily on proprietary LLMs. To address these limitations, we propose Retrieval-Judgment-Exploration (RJE), a framework that retrieves refined reasoning paths, evaluates their sufficiency, and conditionally explores additional evidence. Moreover, RJE introduces specialized auxiliary modules enabling small-sized LLMs to perform effectively: Reasoning Path Ranking, Question Decomposition, and Retriever-assisted Exploration. Experiments show that our approach with proprietary LLMs (such as GPT-4o-mini) outperforms existing baselines while enabling small open-source LLMs (such as 3B and 8B parameters) to achieve competitive results without fine-tuning LLMs. Additionally, RJE substantially reduces the number of LLM calls and token usage compared to agent-based methods, yielding significant efficiency improvements.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "graph neural network retriever small language model knowledge base question answering review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "graph neural network retriever small language model knowledge base question answering"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.727,
+            "title_match": 0.5,
+            "retrieval_hits": 2,
+            "score": 2.205
+          }
+        }
+      },
+      "term_overlap": 0.202,
+      "tfidf_similarity": 0.102,
+      "is_survey_like": false,
+      "has_abstract": true
+    }
+  ],
+  "log": [
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "graph neural network retriever small language model knowledge base question answering",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "graph neural network retriever small language model knowledge base question answering",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "graph neural network retriever small language model knowledge base question answering",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "graph neural network retriever small language model knowledge base question answering survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "graph neural network retriever small language model knowledge base question answering survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "graph neural network retriever small language model knowledge base question answering survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "graph neural network retriever small language model knowledge base question answering review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "graph neural network retriever small language model knowledge base question answering review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "graph neural network retriever small language model knowledge base question answering review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "knowledge graph question answering retrieval failure analysis subgraph recall WebQSP",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "error analysis entity linking subgraph retrieval KGQA large language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "graph neural network retriever small language model knowledge base question answering",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "graph neural network retriever small language model knowledge base question answering",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "graph neural network retriever small language model knowledge base question answering",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-17"
+}

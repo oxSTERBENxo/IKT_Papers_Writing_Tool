@@ -1,0 +1,1483 @@
+{
+  "claim": "Evaluating whether LLM-derived node features help graph neural networks on heterophilic text-attributed graphs, where linked nodes tend to have different labels",
+  "queries": [
+    "heterophily text-attributed graph large language model",
+    "heterophilic graphs LLM node features GNN",
+    "LLM enhanced heterophilic graph representation learning",
+    "text-rich heterophilic graph benchmark dataset",
+    "language model embeddings low homophily node classification"
+  ],
+  "sources_ok": [
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [],
+  "sources_status": {
+    "arxiv": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 8,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "crossref": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "n_papers_examined": 156,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 11,
+  "n_without_abstract": 40,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "medium",
+  "interpretation": "No closely worded paper was retrieved among related work. This supports only an 'unverified novelty hypothesis'; coverage was reasonable.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+        "authors": [
+          "Shujie Li",
+          "Yuxia Wu",
+          "Yuan Fang",
+          "Chuan Shi"
+        ],
+        "year": 2025,
+        "date": "2025-03-05",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2503.04822",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2503.04822",
+        "pdf_url": "https://arxiv.org/pdf/2503.04822v2",
+        "abstract": "Graph neural networks (GNNs) have demonstrated success in modeling relational data primarily under the assumption of homophily. However, many real-world graphs exhibit heterophily, where linked nodes belong to different categories or possess diverse attributes, such as webpages, Wikipedia articles, social networks, and e-commerce platforms. Additionally, nodes in many domains are associated with textual descriptions, forming heterophilic text-attributed graphs (TAGs). Despite their significance, heterophilic TAGs remain underexplored due to the lack of dedicated benchmarks that jointly capture heterophilic structures and rich textual attributes. To address this gap, we introduce the \\textbf{He}terophilic \\textbf{T}ext-attributed \\textbf{G}raph \\textbf{B}enchmark (HeTGB), a novel benchmark comprising five real-world heterophilic graph datasets from diverse domains, with nodes enriched by extensive textual descriptions. HeTGB enables systematic evaluation of GNNs, pre-trained language models (PLMs) and co-training methods on the node classification task. Through extensive benchmarking experiments, we showcase the utility of text attributes in heterophilic graphs, analyze the challenges posed by heterophilic TAGs and the limitations of existing models, and provide insights into the interplay between graph structures and textual attributes.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "text-rich heterophilic graph benchmark dataset"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "text-rich heterophilic graph benchmark dataset"
+          }
+        ],
+        "extra": {
+          "arxiv_comment": "EMNLP Findings, 2026",
+          "arxiv_category": "cs.CL",
+          "abstract_source": "arxiv",
+          "rank": {
+            "query_match": 1.0,
+            "title_match": 0.667,
+            "retrieval_hits": 1,
+            "score": 2.792
+          }
+        }
+      },
+      "term_overlap": 0.448,
+      "tfidf_similarity": 0.182,
+      "is_survey_like": true,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Label-free Node Classification on Graphs with Large Language Models (LLMS)",
+        "authors": [
+          "Zhikai Chen",
+          "Haitao Mao",
+          "Hongzhi Wen",
+          "Haoyu Han",
+          "Wei Jin",
+          "Haiyang Zhang",
+          "Hui Liu",
+          "Jiliang Tang"
+        ],
+        "year": 2023,
+        "date": "2023-10-07",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2310.04668",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2310.04668",
+        "pdf_url": null,
+        "abstract": "In recent years, there have been remarkable advancements in node classification achieved by Graph Neural Networks (GNNs). However, they necessitate abundant high-quality labels to ensure promising performance. In contrast, Large Language Models (LLMs) exhibit impressive zero-shot proficiency on text-attributed graphs. Yet, they face challenges in efficiently processing structural data and suffer from high inference costs. In light of these observations, this work introduces a label-free node classification on graphs with LLMs pipeline, LLM-GNN. It amalgamates the strengths of both GNNs and LLMs while mitigating their limitations. Specifically, LLMs are leveraged to annotate a small portion of nodes and then GNNs are trained on LLMs' annotations to make predictions for the remaining large portion of nodes. The implementation of LLM-GNN faces a unique challenge: how can we actively select nodes for LLMs to annotate and consequently enhance the GNN training? How can we leverage LLMs to obtain annotations of high quality, representativeness, and diversity, thereby enhancing GNN performance with less cost? To tackle this challenge, we develop an annotation quality heuristic and leverage the confidence scores derived from LLMs to advanced node selection. Comprehensive experimental results validate the effectiveness of LLM-GNN. In particular, LLM-GNN can achieve an accuracy of 74.9% on a vast-scale dataset \\products with a cost less than 1 dollar.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "heterophilic graphs LLM node features GNN"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophilic graphs LLM node features GNN survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophilic graphs LLM node features GNN review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "language model embeddings low homophily node classification review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.571,
+            "retrieval_hits": 4,
+            "score": 2.786
+          }
+        }
+      },
+      "term_overlap": 0.439,
+      "tfidf_similarity": 0.169,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Interpretable and Adaptive Node Classification on Heterophilic Graphs via Combinatorial Scoring and Hybrid Learning",
+        "authors": [
+          "Soroush Vahidi"
+        ],
+        "year": 2025,
+        "date": "2025-12-22",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2512.22221",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2512.22221",
+        "pdf_url": null,
+        "abstract": "Graph neural networks (GNNs) achieve strong performance on homophilic graphs but often struggle under heterophily, where adjacent nodes frequently belong to different classes. We propose an interpretable and adaptive framework for semi-supervised node classification based on explicit combinatorial inference rather than deep message passing. Our method assigns labels using a confidence-ordered greedy procedure driven by an additive scoring function that integrates class priors, neighborhood statistics, feature similarity, and training-derived label-label compatibility. A small set of transparent hyperparameters controls the relative influence of these components, enabling smooth adaptation between homophilic and heterophilic regimes. We further introduce a validation-gated hybrid strategy in which combinatorial predictions are optionally injected as priors into a lightweight neural model. Hybrid refinement is applied only when it improves validation performance, preserving interpretability when neuralization is unnecessary. All adaptation signals are computed strictly from training data, ensuring a leakage-free evaluation protocol. Experiments on heterophilic and transitional benchmarks demonstrate competitive performance with modern GNNs while offering advantages in interpretability, tunability, and computational efficiency.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "heterophilic graphs LLM node features GNN"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "LLM enhanced heterophilic graph representation learning"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophilic graphs LLM node features GNN survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophilic graphs LLM node features GNN review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "heterophilic graphs LLM node features GNN"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "LLM enhanced heterophilic graph representation learning"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "text-rich heterophilic graph benchmark dataset"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.833,
+            "title_match": 0.5,
+            "retrieval_hits": 5,
+            "score": 2.667
+          }
+        }
+      },
+      "term_overlap": 0.43,
+      "tfidf_similarity": 0.155,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+        "authors": [
+          "Yuxia Wu",
+          "Shujie Li",
+          "Yuan Fang",
+          "Chuan Shi"
+        ],
+        "year": 2024,
+        "date": "2024-08-26",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2408.14134",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2408.14134",
+        "pdf_url": "https://arxiv.org/pdf/2408.14134v3",
+        "abstract": "Large language models (LLMs) have presented significant opportunities to enhance various machine learning applications, including graph neural networks (GNNs). By leveraging the vast open-world knowledge within LLMs, we can more effectively interpret and utilize textual data to better characterize heterophilic graphs, where neighboring nodes often have different labels. However, existing approaches for heterophilic graphs overlook the rich textual data associated with nodes, which could unlock deeper insights into their heterophilic contexts. In this work, we explore the potential of LLMs for modeling heterophilic graphs and propose a novel two-stage framework: LLM-enhanced edge discriminator and LLM-guided edge reweighting. In the first stage, we fine-tune the LLM to better identify homophilic and heterophilic edges based on the textual content of their nodes. In the second stage, we adaptively manage message propagation in GNNs for different edge types based on node features, structures, and heterophilic or homophilic characteristics. To cope with the computational demands when deploying LLMs in practical scenarios, we further explore model distillation techniques to fine-tune smaller, more efficient models that maintain competitive performance. Extensive experiments validate the effectiveness of our framework, demonstrating the feasibility of using LLMs to enhance node classification on heterophilic graphs.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "heterophilic graphs LLM node features GNN"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "heterophilic graphs LLM node features GNN"
+          }
+        ],
+        "extra": {
+          "arxiv_comment": "Accepted by NAACL 2025",
+          "arxiv_category": "cs.LG",
+          "abstract_source": "arxiv",
+          "rank": {
+            "query_match": 1.0,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 2.696
+          }
+        }
+      },
+      "term_overlap": 0.392,
+      "tfidf_similarity": 0.181,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "UniGraph: Learning a Unified Cross-Domain Foundation Model for Text-Attributed Graphs",
+        "authors": [
+          "Yufei He",
+          "Yuan Sui",
+          "Xiaoxin He",
+          "Bryan Hooi"
+        ],
+        "year": 2024,
+        "date": "2024-02-21",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2402.13630",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2402.13630",
+        "pdf_url": null,
+        "abstract": "Foundation models like ChatGPT and GPT-4 have revolutionized artificial intelligence, exhibiting remarkable abilities to generalize across a wide array of tasks and applications beyond their initial training objectives. However, graph learning has predominantly focused on single-graph models, tailored to specific tasks or datasets, lacking the ability to transfer learned knowledge to different domains. This limitation stems from the inherent complexity and diversity of graph structures, along with the different feature and label spaces specific to graph data. In this paper, we recognize text as an effective unifying medium and employ Text-Attributed Graphs (TAGs) to leverage this potential. We present our UniGraph framework, designed to learn a foundation model for TAGs, which is capable of generalizing to unseen graphs and tasks across diverse domains. Unlike single-graph models that use pre-computed node features of varying dimensions as input, our approach leverages textual features for unifying node representations, even for graphs such as molecular graphs that do not naturally have textual features. We propose a novel cascaded architecture of Language Models (LMs) and Graph Neural Networks (GNNs) as backbone networks. Additionally, we propose the first pre-training algorithm specifically designed for large-scale self-supervised learning on TAGs, based on Masked Graph Modeling. We introduce graph instruction tuning using Large Language Models (LLMs) to enable zero-shot prediction ability. Our comprehensive experiments across various graph learning tasks and domains demonstrate the model's effectiveness in self-supervised representation learning on unseen graphs, few-shot in-context transfer, and zero-shot transfer, even surpassing or matching the performance of GNNs that have undergone supervised training on target datasets.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "heterophily text-attributed graph large language model"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.571,
+            "retrieval_hits": 1,
+            "score": 2.411
+          }
+        }
+      },
+      "term_overlap": 0.423,
+      "tfidf_similarity": 0.15,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "FinSCRA: An LLM-Powered Multi-Chain Reasoning Framework for Interpretable Node Classification on Text-Attributed Graphs",
+        "authors": [
+          "Pengfei Pan",
+          "Lizi Chen",
+          "Qi He",
+          "Han Wang",
+          "Keyu Yuan",
+          "Wenchao Zhang"
+        ],
+        "year": 2026,
+        "date": "2026-02-25",
+        "venue": null,
+        "doi": "10.22541/au.177204304.42015977/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.22541/au.177204304.42015977/v1",
+        "pdf_url": null,
+        "abstract": "Text-attributed graph node classification is still a challenge since it needs to reason about the topology structure simultaneously with the free-text semantics. Although graph neural network can perform well on structural propagation,they tend to be blind for the details in the text associated with nodes. On the other hand, LLMs have excellent NLU skills and are weak on structured,multi-hop reasoning over network agents.To address the above gap, in this work we propose FinSCRA, a novel LLM-powered multi-chain reasoning framework to inject domain-aware reasoning capability into a financial LLM with parameters efficient fine-tuning. Specifically, our framework designs a hierarchy of structured reasoning chains (singlehint,parallel, cascaded, and hybrid methods to extract and fuse the semantic signals like sentiment, correlation, and risk signals in the nodes' text.A fusion layer based on fuzzy logic fuses the results of different reasoning lines for better robustness and explainability.While FinSCRA is generic and can be applied to other types of text-attributed graphs, here we assess its performance on credit risk analysis in supply chain networks,on the task of entity relation extraction, in which entities are related through their financial relation and described with rich text reports; we show experimentally on realworld datasets that our model FinSCRA greatly outperforms graphbased as well as LLM-based baselines,as an accurate and explainable technique to perform node classification over complex networked systems.We release our code and models for further research on LLM-grap.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "heterophilic graphs LLM node features GNN"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "heterophilic graphs LLM node features GNN survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "heterophilic graphs LLM node features GNN"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.5,
+            "retrieval_hits": 2,
+            "score": 2.083
+          }
+        }
+      },
+      "term_overlap": 0.419,
+      "tfidf_similarity": 0.143,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "A Unified Benchmark for Evaluating Knowledge Graph Construction Methods and Graph Neural Networks",
+        "authors": [
+          "Othmane Kabal",
+          "Mounira Harzallah",
+          "Fabrice Guillet",
+          "Hideaki Takeda",
+          "Ryutaro Ichise"
+        ],
+        "year": 2026,
+        "date": "2026-05-06",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2605.05476",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2605.05476",
+        "pdf_url": null,
+        "abstract": "Knowledge graphs automatically constructed from text are increasingly used in real-world applications. However, their inherent noise, fragmentation, and semantic inconsistencies significantly affect the performance of Graph Neural Networks (GNNs) on downstream tasks. Assessing their performance and robustness remains difficult, as it is often unclear whether observed results stem from the learning model or from the quality of the constructed graph itself. In this work, we introduce a dual-purpose benchmark designed to jointly evaluate (i) the performance of GNNs on noisy, text-derived graphs and (ii) the effectiveness of graph construction methods on a downstream task. The benchmark is built in the biomedical domain from a single textual corpus and includes two automatically constructed graphs generated using different extraction methods, alongside a high-quality reference graph curated by experts that serves as an upper performance bound. This design enables controlled comparison of construction methods and systematic evaluation of GNN robustness through semi-supervised node classification. We further provide a standardized, reproducible, and extensible evaluation framework, facilitating the integration of new graph extraction methods and learning models.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "text-rich heterophilic graph benchmark dataset"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-rich heterophilic graph benchmark dataset survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-rich heterophilic graph benchmark dataset review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "text-rich heterophilic graph benchmark dataset"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.333,
+            "retrieval_hits": 3,
+            "score": 1.708
+          }
+        }
+      },
+      "term_overlap": 0.403,
+      "tfidf_similarity": 0.151,
+      "is_survey_like": true,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Bootstrapping Heterophily Graph Representation Learning via a Large Language Model-Based Approach",
+        "authors": [
+          "Wenxuan Huang",
+          "Fengge Wu",
+          "Hang Gao",
+          "Junsuo Zhao"
+        ],
+        "year": 2025,
+        "date": "2025-11-03",
+        "venue": "2025 IEEE 37th International Conference on Tools with Artificial Intelligence (ICTAI)",
+        "doi": "10.1109/ictai66417.2025.00024",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4417339523",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/ictai66417.2025.00024",
+        "pdf_url": null,
+        "abstract": "Graph Neural Networks (GNNs) excel in homophilic graphs but struggle with heterophilic graphs where connected nodes exhibit divergent characteristics. Existing methods underutilize semantic information in node attributes, a key factor for interpreting heterophilic interactions. To bridge this gap, we propose LLM-Enhanced Graph Neural Network for Heterophily (LEGNNH), a novel framework that synergizes large language model (LLM) with spectral graph convolutions for node classification in heterophilic graphs. LEGNNH operates in three stages: (1) Task-aware semantic embedding using LLMs with instruction-based prompting to encode raw node text; (2) Multi-channel spectral filtering dynamically aggregating local patterns via adaptive low-pass, high-pass, and identity filters; (3) A hierarchical attention module selectively integrates higher-order neighborhood semantics while suppressing noise propagation from label-discordant connections. Addressing the scarcity of heterophilic benchmarks, we contribute two text-attributed graph datasets (YelpNYC and Amazon-Review) with explicit feature-label heterophily. Extensive experiments on seven benchmarks show LEGNNH achieves state-of-the-art performance (average rank 1.86 across 10 baselines), outperforming the best heterophily-specific model by$\\mathbf{1. 3 1 - 5. 3 3 \\%}$accuracy on key datasets.",
+        "citations": 0,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "heterophily text-attributed graph large language model"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "heterophily text-attributed graph large language model survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "heterophily text-attributed graph large language model review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "heterophily text-attributed graph large language model"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.714,
+            "title_match": 0.714,
+            "retrieval_hits": 3,
+            "score": 2.518
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W2064058256",
+            "W2168190036",
+            "W3128443161",
+            "W3157999218",
+            "W3210034512",
+            "W4320060387",
+            "W4376864968",
+            "W4387847650",
+            "W4389988847",
+            "W4393160468",
+            "W4393277515",
+            "W4396735838",
+            "W4400269519",
+            "W4400524696",
+            "W4402669912",
+            "W4415797224"
+          ]
+        }
+      },
+      "term_overlap": 0.38,
+      "tfidf_similarity": 0.157,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Can LLMs Convert Graphs to Text-Attributed Graphs?",
+        "authors": [
+          "Zehong Wang",
+          "Sidney Liu",
+          "Zheyuan Zhang",
+          "Tianyi Ma",
+          "Chuxu Zhang",
+          "Yanfang Ye"
+        ],
+        "year": 2024,
+        "date": "2024-12-13",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2412.10136",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2412.10136",
+        "pdf_url": null,
+        "abstract": "Graphs are ubiquitous structures found in numerous real-world applications, such as drug discovery, recommender systems, and social network analysis. To model graph-structured data, graph neural networks (GNNs) have become a popular tool. However, existing GNN architectures encounter challenges in cross-graph learning where multiple graphs have different feature spaces. To address this, recent approaches introduce text-attributed graphs (TAGs), where each node is associated with a textual description, which can be projected into a unified feature space using textual encoders. While promising, this method relies heavily on the availability of text-attributed graph data, which is difficult to obtain in practice. To bridge this gap, we propose a novel method named Topology-Aware Node description Synthesis (TANS), leveraging large language models (LLMs) to convert existing graphs into text-attributed graphs. The key idea is to integrate topological information into LLMs to explain how graph topology influences node semantics. We evaluate our TANS on text-rich, text-limited, and text-free graphs, demonstrating its applicability. Notably, on text-free graphs, our method significantly outperforms existing approaches that manually design node features, showcasing the potential of LLMs for preprocessing graph-structured data in the absence of textual information. The code and data are available at https://github.com/Zehong-Wang/TANS.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "heterophily text-attributed graph large language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "heterophilic graphs LLM node features GNN"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophily text-attributed graph large language model survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophily text-attributed graph large language model review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "heterophily text-attributed graph large language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "heterophilic graphs LLM node features GNN"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.429,
+            "retrieval_hits": 4,
+            "score": 2.643
+          }
+        }
+      },
+      "term_overlap": 0.359,
+      "tfidf_similarity": 0.178,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Leveraging Large Language Models for Node Generation in Few-Shot Learning on Text-Attributed Graphs",
+        "authors": [
+          "Jianxiang Yu",
+          "Yuxiang Ren",
+          "Chenghua Gong",
+          "Jiaqi Tan",
+          "Xiang Li",
+          "Xuecang Zhang"
+        ],
+        "year": 2023,
+        "date": "2023-10-15",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2310.09872",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2310.09872",
+        "pdf_url": null,
+        "abstract": "Text-attributed graphs have recently garnered significant attention due to their wide range of applications in web domains. Existing methodologies employ word embedding models for acquiring text representations as node features, which are subsequently fed into Graph Neural Networks (GNNs) for training. Recently, the advent of Large Language Models (LLMs) has introduced their powerful capabilities in information retrieval and text generation, which can greatly enhance the text attributes of graph data. Furthermore, the acquisition and labeling of extensive datasets are both costly and time-consuming endeavors. Consequently, few-shot learning has emerged as a crucial problem in the context of graph learning tasks. In order to tackle this challenge, we propose a lightweight paradigm called LLM4NG, which adopts a plug-and-play approach to empower text-attributed graphs through node generation using LLMs. Specifically, we utilize LLMs to extract semantic information from the labels and generate samples that belong to these categories as exemplars. Subsequently, we employ an edge predictor to capture the structural information inherent in the raw dataset and integrate the newly generated samples into the original graph. This approach harnesses LLMs for enhancing class-level information and seamlessly introduces labeled nodes and edges without modifying the raw dataset, thereby facilitating the node classification task in few-shot scenarios. Extensive experiments demonstrate the outstanding performance of our proposed paradigm, particularly in low-shot scenarios. For instance, in the 1-shot setting of the ogbn-arxiv dataset, LLM4NG achieves a 76% improvement over the baseline model.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "heterophily text-attributed graph large language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "LLM enhanced heterophilic graph representation learning"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "language model embeddings low homophily node classification"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophily text-attributed graph large language model survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophily text-attributed graph large language model review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "LLM enhanced heterophilic graph representation learning survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "LLM enhanced heterophilic graph representation learning review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "language model embeddings low homophily node classification survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "language model embeddings low homophily node classification review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.857,
+            "retrieval_hits": 9,
+            "score": 3.071
+          }
+        }
+      },
+      "term_overlap": 0.368,
+      "tfidf_similarity": 0.134,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+        "authors": [
+          "Oleg Platonov",
+          "Denis Kuznedelev",
+          "Michael Diskin",
+          "Artem Babenko",
+          "Liudmila Prokhorenkova"
+        ],
+        "year": 2023,
+        "date": "2023-02-22",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2302.11640",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2302.11640",
+        "pdf_url": null,
+        "abstract": "Node classification is a classical graph machine learning task on which Graph Neural Networks (GNNs) have recently achieved strong results. However, it is often believed that standard GNNs only work well for homophilous graphs, i.e., graphs where edges tend to connect nodes of the same class. Graphs without this property are called heterophilous, and it is typically assumed that specialized methods are required to achieve strong performance on such graphs. In this work, we challenge this assumption. First, we show that the standard datasets used for evaluating heterophily-specific models have serious drawbacks, making results obtained by using them unreliable. The most significant of these drawbacks is the presence of a large number of duplicate nodes in the datasets Squirrel and Chameleon, which leads to train-test data leakage. We show that removing duplicate nodes strongly affects GNN performance on these datasets. Then, we propose a set of heterophilous graphs of varying properties that we believe can serve as a better benchmark for evaluating the performance of GNNs under heterophily. We show that standard GNNs achieve strong results on these heterophilous graphs, almost always outperforming specialized models. Our datasets and the code for reproducing our experiments are available at https://github.com/yandex-research/heterophilous-graphs",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "heterophilic graphs LLM node features GNN"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "text-rich heterophilic graph benchmark dataset"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophilic graphs LLM node features GNN survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophilic graphs LLM node features GNN review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-rich heterophilic graph benchmark dataset survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "text-rich heterophilic graph benchmark dataset review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.167,
+            "retrieval_hits": 6,
+            "score": 1.81
+          }
+        }
+      },
+      "term_overlap": 0.343,
+      "tfidf_similarity": 0.148,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Beyond Smoothing: A Recurrent State-Space Perspective on Heterophilic Graph Dynamics",
+        "authors": [
+          "Jake Nelson"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": null,
+        "doi": "10.2139/ssrn.6163086",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.6163086",
+        "pdf_url": null,
+        "abstract": "Graph Neural Networks (GNNs) have achieved remarkable success in homophilic settings where connected nodes share similar properties. However, their performance degrades significantly in heterophilic graphs-networks where edges link dissimilar entities. Standard message-passing paradigms implicitly act as low-pass filters, smoothing node features across the topology. In heterophilic regimes, this smoothing obliterates the high-frequency signals necessary for discrimination, a phenomenon inextricably linked to the vanishing gradient problem in deep architectures. In this work, we propose the Heterophilic Recurrent State-Space (HeRSS) model, a novel framework that bridges graph signal processing and linear recurrent dynamics. By reframing graph propagation as a continuous-time state-space evolution, we derive a stable, gradient-preserving update rule that decouples feature mixing from structural diffusion. Theoretical analysis reveals that HeRSS mitigates over-smoothing by maintaining an infinite impulse response to high-frequency components, effectively allowing nodes to retain distinct identities despite aggregating disparate neighborhood information. Extensive experiments on a suite of heterophilic benchmarks (including Texas, Wisconsin, and Squirrel) demonstrate that HeRSS significantly outperforms state-of-the-art baselines, offering a robust solution to the \"heterophily nightmare\" while maintaining linear computational complexity.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "text-rich heterophilic graph benchmark dataset"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "text-rich heterophilic graph benchmark dataset survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "text-rich heterophilic graph benchmark dataset review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "text-rich heterophilic graph benchmark dataset"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.833,
+            "title_match": 0.333,
+            "retrieval_hits": 3,
+            "score": 2.375
+          }
+        }
+      },
+      "term_overlap": 0.35,
+      "tfidf_similarity": 0.124,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "GraphICL: Unlocking Graph Learning Potential in LLMs through Structured Prompt Design",
+        "authors": [
+          "Yuanfu Sun",
+          "Zhengnan Ma",
+          "Yi Fang",
+          "Jing Ma",
+          "Qiaoyu Tan"
+        ],
+        "year": 2025,
+        "date": "2025-01-27",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2501.15755",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2501.15755",
+        "pdf_url": null,
+        "abstract": "The growing importance of textual and relational systems has driven interest in enhancing large language models (LLMs) for graph-structured data, particularly Text-Attributed Graphs (TAGs), where samples are represented by textual descriptions interconnected by edges. While research has largely focused on developing specialized graph LLMs through task-specific instruction tuning, a comprehensive benchmark for evaluating LLMs solely through prompt design remains surprisingly absent. Without such a carefully crafted evaluation benchmark, most if not all, tailored graph LLMs are compared against general LLMs using simplistic queries (e.g., zero-shot reasoning with LLaMA), which can potentially camouflage many advantages as well as unexpected predicaments of them. To achieve more general evaluations and unveil the true potential of LLMs for graph tasks, we introduce Graph In-context Learning (GraphICL) Benchmark, a comprehensive benchmark comprising novel prompt templates designed to capture graph structure and handle limited label knowledge. Our systematic evaluation shows that general-purpose LLMs equipped with our GraphICL outperform state-of-the-art specialized graph LLMs and graph neural network models in resource-constrained settings and out-of-domain tasks. These findings highlight the significant potential of prompt engineering to enhance LLM performance on graph learning tasks without training and offer a strong baseline for advancing research in graph LLMs.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "heterophily text-attributed graph large language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophily text-attributed graph large language model survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "heterophily text-attributed graph large language model review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "LLM enhanced heterophilic graph representation learning review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "heterophily text-attributed graph large language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "LLM enhanced heterophilic graph representation learning"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.5,
+            "retrieval_hits": 5,
+            "score": 2.714
+          }
+        }
+      },
+      "term_overlap": 0.355,
+      "tfidf_similarity": 0.113,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "A Survey of Unifying Large Language Models with Graph Learning: Concepts, Methods, and Recent Advancements for Text-attributed Graph",
+        "authors": [
+          "Lihui Liu"
+        ],
+        "year": 2026,
+        "date": "2026-03-05",
+        "venue": null,
+        "doi": "10.36227/techrxiv.177272839.92930143/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.36227/techrxiv.177272839.92930143/v1",
+        "pdf_url": null,
+        "abstract": "Graphs are ubiquitous and have been used in a wide range of applications. Before the rise of large language models (LLMs), graph neural networks (GNNs) were among the most popular methods for graph learning. Techniques such as node embedding, graph convolution, graph attention, and random walkbased methods have been widely adopted. When handling graphs with textual node attributes, shallow text embeddings are typically used as initial node representations. However, these embeddings often capture only limited general knowledge. In recent years, LLMs have demonstrated remarkable capabilities in natural language processing, opening new opportunities for handling text data. In this survey, we explore how to leverage LLMs for graph machine learning. We focus on different types of tasks, including node classification, link prediction, and graph-based question answering. Specifically, we investigate two main approaches: LLMs as Enhancers and LLMs as Predictors. In the first approach, LLMs enrich node textual attributes with their vast knowledge, after which graph learning methods are used to make predictions. In the second approach, graph data is treated as input for LLMs, which directly solve various graph-related tasks. Through a thorough investigation of these two directions, we share observations and new insights on integrating LLMs with graph learning.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "heterophily text-attributed graph large language model"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "heterophily text-attributed graph large language model survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "heterophily text-attributed graph large language model review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "text-rich heterophilic graph benchmark dataset survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "heterophily text-attributed graph large language model"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.857,
+            "retrieval_hits": 4,
+            "score": 3.071
+          }
+        }
+      },
+      "term_overlap": 0.317,
+      "tfidf_similarity": 0.15,
+      "is_survey_like": true,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Leveraging Large Language Models for Effective Label-free Node Classification in Text-Attributed Graphs",
+        "authors": [
+          "Taiyan Zhang",
+          "Renchi Yang",
+          "Yurui Lai",
+          "Mingyu Yan",
+          "Xiaochun Ye",
+          "Dongrui Fan"
+        ],
+        "year": 2024,
+        "date": "2024-12-16",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2412.11983",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2412.11983",
+        "pdf_url": null,
+        "abstract": "Graph neural networks (GNNs) have become the preferred models for node classification in graph data due to their robust capabilities in integrating graph structures and attributes. However, these models heavily depend on a substantial amount of high-quality labeled data for training, which is often costly to obtain. With the rise of large language models (LLMs), a promising approach is to utilize their exceptional zero-shot capabilities and extensive knowledge for node labeling. Despite encouraging results, this approach either requires numerous queries to LLMs or suffers from reduced performance due to noisy labels generated by LLMs. To address these challenges, we introduce Locle, an active self-training framework that does Label-free node Classification with LLMs cost-Effectively. Locle iteratively identifies small sets of \"critical\" samples using GNNs and extracts informative pseudo-labels for them with both LLMs and GNNs, serving as additional supervision signals to enhance model training. Specifically, Locle comprises three key components: (i) an effective active node selection strategy for initial annotations; (ii) a careful sample selection scheme to identify \"critical\" nodes based on label disharmonicity and entropy; and (iii) a label refinement module that combines LLMs and GNNs with a rewired topology. Extensive experiments on five benchmark text-attributed graph datasets demonstrate that Locle significantly outperforms state-of-the-art methods under the same query budget to LLMs in terms of label-free node classification. Notably, on the DBLP dataset with 14.3k nodes, Locle achieves an 8.08% improvement in accuracy over the state-of-the-art at a cost of less than one cent. Our code is available at https://github.com/HKBU-LAGAS/Locle.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "heterophilic graphs LLM node features GNN"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.857,
+            "retrieval_hits": 1,
+            "score": 2.696
+          }
+        }
+      },
+      "term_overlap": 0.327,
+      "tfidf_similarity": 0.138,
+      "is_survey_like": false,
+      "has_abstract": true
+    }
+  ],
+  "log": [
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "heterophily text-attributed graph large language model",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "heterophily text-attributed graph large language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "heterophily text-attributed graph large language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "heterophilic graphs LLM node features GNN",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "heterophilic graphs LLM node features GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "heterophilic graphs LLM node features GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "LLM enhanced heterophilic graph representation learning",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "LLM enhanced heterophilic graph representation learning",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "LLM enhanced heterophilic graph representation learning",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "text-rich heterophilic graph benchmark dataset",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "text-rich heterophilic graph benchmark dataset",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "text-rich heterophilic graph benchmark dataset",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "language model embeddings low homophily node classification",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "language model embeddings low homophily node classification",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "language model embeddings low homophily node classification",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "heterophily text-attributed graph large language model survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "heterophily text-attributed graph large language model survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "heterophily text-attributed graph large language model survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "heterophily text-attributed graph large language model review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "heterophily text-attributed graph large language model review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "heterophily text-attributed graph large language model review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "heterophilic graphs LLM node features GNN survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "heterophilic graphs LLM node features GNN survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "heterophilic graphs LLM node features GNN survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "heterophilic graphs LLM node features GNN review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "heterophilic graphs LLM node features GNN review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "heterophilic graphs LLM node features GNN review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM enhanced heterophilic graph representation learning survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM enhanced heterophilic graph representation learning survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM enhanced heterophilic graph representation learning survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM enhanced heterophilic graph representation learning review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM enhanced heterophilic graph representation learning review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM enhanced heterophilic graph representation learning review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "text-rich heterophilic graph benchmark dataset survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "text-rich heterophilic graph benchmark dataset survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "text-rich heterophilic graph benchmark dataset survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "text-rich heterophilic graph benchmark dataset review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "text-rich heterophilic graph benchmark dataset review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "text-rich heterophilic graph benchmark dataset review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "language model embeddings low homophily node classification survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "language model embeddings low homophily node classification survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "language model embeddings low homophily node classification survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "language model embeddings low homophily node classification review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "language model embeddings low homophily node classification review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "language model embeddings low homophily node classification review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "heterophily text-attributed graph large language model",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "heterophily text-attributed graph large language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "heterophily text-attributed graph large language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "heterophilic graphs LLM node features GNN",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "heterophilic graphs LLM node features GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "heterophilic graphs LLM node features GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "LLM enhanced heterophilic graph representation learning",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "LLM enhanced heterophilic graph representation learning",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "LLM enhanced heterophilic graph representation learning",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "text-rich heterophilic graph benchmark dataset",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "text-rich heterophilic graph benchmark dataset",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "text-rich heterophilic graph benchmark dataset",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "language model embeddings low homophily node classification",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "language model embeddings low homophily node classification",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "language model embeddings low homophily node classification",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-17"
+}

@@ -1,0 +1,36 @@
+{
+  "paper": {
+    "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+    "authors": [
+      "Isha Karn",
+      "David Jensen"
+    ],
+    "year": 2025,
+    "date": "2025-12-07",
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2512.06638",
+    "arxiv_id": "2512.06638",
+    "pmid": null,
+    "openalex_id": "W7111136384",
+    "s2_id": "ee29a09d0eb60c057bba1f0bf2f65394dc07b9f6",
+    "url": "https://arxiv.org/abs/2512.06638",
+    "pdf_url": "https://arxiv.org/pdf/2512.06638v1",
+    "abstract": "Graph neural networks (GNNs) are widely used for the detection of fake news by modeling the content and propagation structure of news articles on social media. We show that two of the most commonly used benchmark data sets - GossipCop and PolitiFact - are poorly suited to evaluating the utility of models that use propagation structure. Specifically, these data sets exhibit shallow, ego-like graph topologies that provide little or no ability to differentiate among modeling methods. We systematically benchmark five GNN architectures against a structure-agnostic multilayer perceptron (MLP) that uses the same node features. We show that MLPs match or closely trail the performance of GNNs, with performance gaps often within 1-2% and overlapping confidence intervals. To isolate the contribution of structure in these datasets, we conduct controlled experiments where node features are shuffled or edge structures randomized. We find that performance collapses under feature shuffling but remains stable under edge randomization. This suggests that structure plays a negligible role in these benchmarks. Structural analysis further reveals that over 75% of nodes are only one hop from the root, exhibiting minimal structural diversity. In contrast, on synthetic datasets where node features are noisy and structure is informative, GNNs significantly outperform MLPs. These findings provide strong evidence that widely used benchmarks do not meaningfully test the utility of modeling structural features, and they motivate the development of datasets with richer, more diverse graph topologies.",
+    "citations": 1,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "Preprint. Approximately 15 pages, 5 figures, 3 tables",
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": []
+}

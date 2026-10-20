@@ -1,0 +1,313 @@
+== absa-syntax-gcn (dev)
+  [openalex/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [arxiv/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [crossref/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 10 results
+  [openalex/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [arxiv/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [crossref/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 10 results
+  [openalex/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [arxiv/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [crossref/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 10 results
+  [openalex/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 1 results
+  [arxiv/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 0 results
+  [crossref/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 10 results
+  [openalex/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [arxiv/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [crossref/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 10 results
+  [openalex/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 0 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 10 results
+  [openalex/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 0 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 10 results
+  [openalex/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 0 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 10 results
+  [openalex/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 0 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 10 results
+  [openalex/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 0 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 10 results
+  [openalex/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 0 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 10 results
+  [openalex/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 0 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 10 results
+  [openalex/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 0 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 10 results
+  [openalex/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 0 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 10 results
+  [openalex/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 0 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 10 results
+  [openalex/recent] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [arxiv/recent] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [crossref/recent] 'does syntax matter aspect-based sentiment analysis pretrained language model': 10 results
+  [openalex/recent] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [arxiv/recent] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [crossref/recent] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 10 results
+  [openalex/recent] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [arxiv/recent] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [crossref/recent] 'syntactic information unnecessary aspect sentiment classification strong baseline': 10 results
+  [openalex/recent] 'reproducibility aspect-based sentiment graph neural network variance seeds': 1 results
+  [arxiv/recent] 'reproducibility aspect-based sentiment graph neural network variance seeds': 0 results
+  [crossref/recent] 'reproducibility aspect-based sentiment graph neural network variance seeds': 10 results
+  [openalex/recent] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [arxiv/recent] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [crossref/recent] 'induced trees versus parser trees aspect sentiment DeBERTa': 10 results
+  [openalex/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [arxiv/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [crossref/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 10 results
+  [openalex/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [arxiv/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [crossref/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 10 results
+  [openalex/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [arxiv/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [crossref/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 10 results
+  [openalex/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 1 results
+  [arxiv/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 0 results
+  [crossref/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 10 results
+  [openalex/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [arxiv/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [crossref/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 10 results
+  [openalex/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 0 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 10 results
+  [openalex/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 0 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 10 results
+  [openalex/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 0 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 10 results
+  [openalex/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 0 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 10 results
+  [openalex/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 0 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 10 results
+  [openalex/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 0 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 10 results
+  [openalex/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 0 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 10 results
+  [openalex/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 0 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 10 results
+  [openalex/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 0 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 10 results
+  [openalex/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 0 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 10 results
+  [openalex/recent] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [arxiv/recent] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [crossref/recent] 'does syntax matter aspect-based sentiment analysis pretrained language model': 10 results
+  [openalex/recent] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [arxiv/recent] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [crossref/recent] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 10 results
+  [openalex/recent] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [arxiv/recent] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [crossref/recent] 'syntactic information unnecessary aspect sentiment classification strong baseline': 10 results
+  [openalex/recent] 'reproducibility aspect-based sentiment graph neural network variance seeds': 1 results
+  [arxiv/recent] 'reproducibility aspect-based sentiment graph neural network variance seeds': 0 results
+  [crossref/recent] 'reproducibility aspect-based sentiment graph neural network variance seeds': 10 results
+  [openalex/recent] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [arxiv/recent] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [crossref/recent] 'induced trees versus parser trees aspect sentiment DeBERTa': 10 results
+  [openalex/keyword] 'same pretrained encoder with and without dependency tree aspect sentiment': 0 results
+  [arxiv/keyword] 'same pretrained encoder with and without dependency tree aspect sentiment': 0 results
+  [crossref/keyword] 'same pretrained encoder with and without dependency tree aspect sentiment': 10 results
+  [openalex/keyword] 'model selection on a validation set aspect sentiment': 10 results
+  [arxiv/keyword] 'model selection on a validation set aspect sentiment': 0 results
+  [crossref/keyword] 'model selection on a validation set aspect sentiment': 10 results
+  [openalex/keyword] 'multiple random seeds aspect sentiment': 5 results
+  [arxiv/keyword] 'multiple random seeds aspect sentiment': 0 results
+  [crossref/keyword] 'multiple random seeds aspect sentiment': 10 results
+  [openalex/keyword] 'parser trees versus induced trees aspect sentiment': 0 results
+  [arxiv/keyword] 'parser trees versus induced trees aspect sentiment': 0 results
+  [crossref/keyword] 'parser trees versus induced trees aspect sentiment': 10 results
+  [openalex/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [arxiv/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [crossref/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 10 results
+  [openalex/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [arxiv/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [crossref/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 10 results
+  [openalex/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [arxiv/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [crossref/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 10 results
+  [openalex/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 1 results
+  [arxiv/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 0 results
+  [crossref/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 10 results
+  [openalex/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [arxiv/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [crossref/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 10 results
+  [openalex/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 0 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 10 results
+  [openalex/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 0 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 10 results
+  [openalex/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 0 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 10 results
+  [openalex/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 0 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 10 results
+  [openalex/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 0 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 10 results
+  [openalex/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 0 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 10 results
+  [openalex/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 0 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 10 results
+  [openalex/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 0 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 10 results
+  [openalex/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 0 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 10 results
+  [openalex/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 0 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 10 results
+  [openalex/negative] 'does syntax matter aspect-based sentiment analysis pretrained language model revisiting': 0 results
+  [arxiv/negative] 'does syntax matter aspect-based sentiment analysis pretrained language model revisiting': 0 results
+  [crossref/negative] 'does syntax matter aspect-based sentiment analysis pretrained language model revisiting': 10 results
+  [openalex/negative] 'does syntax matter aspect-based sentiment analysis pretrained language model does not improve': 0 results
+  [arxiv/negative] 'does syntax matter aspect-based sentiment analysis pretrained language model does not improve': 0 results
+  [crossref/negative] 'does syntax matter aspect-based sentiment analysis pretrained language model does not improve': 10 results
+  [openalex/negative] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa revisiting': 0 results
+  [arxiv/negative] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa revisiting': 0 results
+  [crossref/negative] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa revisiting': 10 results
+  [openalex/negative] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa does not improve': 0 results
+  [arxiv/negative] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa does not improve': 0 results
+  [crossref/negative] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa does not improve': 10 results
+  [openalex/negative] 'syntactic information unnecessary aspect sentiment classification strong baseline revisiting': 0 results
+  [arxiv/negative] 'syntactic information unnecessary aspect sentiment classification strong baseline revisiting': 0 results
+  [crossref/negative] 'syntactic information unnecessary aspect sentiment classification strong baseline revisiting': 10 results
+  [openalex/negative] 'syntactic information unnecessary aspect sentiment classification strong baseline does not improve': 0 results
+  [arxiv/negative] 'syntactic information unnecessary aspect sentiment classification strong baseline does not improve': 0 results
+  [crossref/negative] 'syntactic information unnecessary aspect sentiment classification strong baseline does not improve': 10 results
+  [openalex/negative] 'reproducibility aspect-based sentiment graph neural network variance seeds revisiting': 0 results
+  [arxiv/negative] 'reproducibility aspect-based sentiment graph neural network variance seeds revisiting': 0 results
+  [crossref/negative] 'reproducibility aspect-based sentiment graph neural network variance seeds revisiting': 10 results
+  [openalex/negative] 'reproducibility aspect-based sentiment graph neural network variance seeds does not improve': 0 results
+  [arxiv/negative] 'reproducibility aspect-based sentiment graph neural network variance seeds does not improve': 0 results
+  [crossref/negative] 'reproducibility aspect-based sentiment graph neural network variance seeds does not improve': 10 results
+  [openalex/negative] 'induced trees versus parser trees aspect sentiment DeBERTa revisiting': 0 results
+  [arxiv/negative] 'induced trees versus parser trees aspect sentiment DeBERTa revisiting': 0 results
+  [crossref/negative] 'induced trees versus parser trees aspect sentiment DeBERTa revisiting': 10 results
+  [openalex/negative] 'induced trees versus parser trees aspect sentiment DeBERTa does not improve': 0 results
+  [arxiv/negative] 'induced trees versus parser trees aspect sentiment DeBERTa does not improve': 0 results
+  [crossref/negative] 'induced trees versus parser trees aspect sentiment DeBERTa does not improve': 10 results
+  [openalex/comparisons] 'does syntax matter aspect-based sentiment analysis pretrained language model empirical comparison': 0 results
+  [arxiv/comparisons] 'does syntax matter aspect-based sentiment analysis pretrained language model empirical comparison': 0 results
+  [crossref/comparisons] 'does syntax matter aspect-based sentiment analysis pretrained language model empirical comparison': 10 results
+  [openalex/comparisons] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa empirical comparison': 0 results
+  [arxiv/comparisons] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa empirical comparison': 0 results
+  [crossref/comparisons] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa empirical comparison': 10 results
+  [openalex/comparisons] 'syntactic information unnecessary aspect sentiment classification strong baseline empirical comparison': 0 results
+  [arxiv/comparisons] 'syntactic information unnecessary aspect sentiment classification strong baseline empirical comparison': 0 results
+  [crossref/comparisons] 'syntactic information unnecessary aspect sentiment classification strong baseline empirical comparison': 10 results
+  [openalex/comparisons] 'reproducibility aspect-based sentiment graph neural network variance seeds empirical comparison': 0 results
+  [arxiv/comparisons] 'reproducibility aspect-based sentiment graph neural network variance seeds empirical comparison': 0 results
+  [crossref/comparisons] 'reproducibility aspect-based sentiment graph neural network variance seeds empirical comparison': 10 results
+  [openalex/comparisons] 'induced trees versus parser trees aspect sentiment DeBERTa empirical comparison': 0 results
+  [arxiv/comparisons] 'induced trees versus parser trees aspect sentiment DeBERTa empirical comparison': 0 results
+  [crossref/comparisons] 'induced trees versus parser trees aspect sentiment DeBERTa empirical comparison': 10 results
+  [openalex/critique] 'does syntax matter aspect-based sentiment analysis pretrained language model evaluation pitfalls': 0 results
+  [arxiv/critique] 'does syntax matter aspect-based sentiment analysis pretrained language model evaluation pitfalls': 0 results
+  [crossref/critique] 'does syntax matter aspect-based sentiment analysis pretrained language model evaluation pitfalls': 10 results
+  [openalex/critique] 'does syntax matter aspect-based sentiment analysis pretrained language model simple baseline': 0 results
+  [arxiv/critique] 'does syntax matter aspect-based sentiment analysis pretrained language model simple baseline': 0 results
+  [crossref/critique] 'does syntax matter aspect-based sentiment analysis pretrained language model simple baseline': 10 results
+  [openalex/critique] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa evaluation pitfalls': 0 results
+  [arxiv/critique] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa evaluation pitfalls': 0 results
+  [crossref/critique] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa evaluation pitfalls': 10 results
+  [openalex/critique] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa simple baseline': 0 results
+  [arxiv/critique] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa simple baseline': 0 results
+  [crossref/critique] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa simple baseline': 10 results
+  [openalex/critique] 'syntactic information unnecessary aspect sentiment classification strong baseline evaluation pitfalls': 0 results
+  [arxiv/critique] 'syntactic information unnecessary aspect sentiment classification strong baseline evaluation pitfalls': 0 results
+  [crossref/critique] 'syntactic information unnecessary aspect sentiment classification strong baseline evaluation pitfalls': 10 results
+  [openalex/critique] 'syntactic information unnecessary aspect sentiment classification strong baseline simple baseline': 0 results
+  [arxiv/critique] 'syntactic information unnecessary aspect sentiment classification strong baseline simple baseline': 0 results
+  [crossref/critique] 'syntactic information unnecessary aspect sentiment classification strong baseline simple baseline': 10 results
+  [openalex/critique] 'reproducibility aspect-based sentiment graph neural network variance seeds evaluation pitfalls': 0 results
+  [arxiv/critique] 'reproducibility aspect-based sentiment graph neural network variance seeds evaluation pitfalls': 0 results
+  [crossref/critique] 'reproducibility aspect-based sentiment graph neural network variance seeds evaluation pitfalls': 10 results
+  [openalex/critique] 'reproducibility aspect-based sentiment graph neural network variance seeds simple baseline': 0 results
+  [arxiv/critique] 'reproducibility aspect-based sentiment graph neural network variance seeds simple baseline': 0 results
+  [crossref/critique] 'reproducibility aspect-based sentiment graph neural network variance seeds simple baseline': 10 results
+  [openalex/critique] 'induced trees versus parser trees aspect sentiment DeBERTa evaluation pitfalls': 0 results
+  [arxiv/critique] 'induced trees versus parser trees aspect sentiment DeBERTa evaluation pitfalls': 0 results
+  [crossref/critique] 'induced trees versus parser trees aspect sentiment DeBERTa evaluation pitfalls': 10 results
+  [openalex/critique] 'induced trees versus parser trees aspect sentiment DeBERTa simple baseline': 0 results
+  [arxiv/critique] 'induced trees versus parser trees aspect sentiment DeBERTa simple baseline': 0 results
+  [crossref/critique] 'induced trees versus parser trees aspect sentiment DeBERTa simple baseline': 10 results
+  [openalex/reproducibility] 'does syntax matter aspect-based sentiment analysis pretrained language model reproducibility': 0 results
+  [arxiv/reproducibility] 'does syntax matter aspect-based sentiment analysis pretrained language model reproducibility': 0 results
+  [crossref/reproducibility] 'does syntax matter aspect-based sentiment analysis pretrained language model reproducibility': 10 results
+  [openalex/reproducibility] 'does syntax matter aspect-based sentiment analysis pretrained language model replication': 0 results
+  [arxiv/reproducibility] 'does syntax matter aspect-based sentiment analysis pretrained language model replication': 0 results
+  [crossref/reproducibility] 'does syntax matter aspect-based sentiment analysis pretrained language model replication': 10 results
+  [openalex/reproducibility] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa reproducibility': 0 results
+  [arxiv/reproducibility] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa reproducibility': 0 results
+  [crossref/reproducibility] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa reproducibility': 10 results
+  [openalex/reproducibility] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa replication': 0 results
+  [arxiv/reproducibility] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa replication': 0 results
+  [crossref/reproducibility] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa replication': 10 results
+  [openalex/reproducibility] 'syntactic information unnecessary aspect sentiment classification strong baseline reproducibility': 0 results
+  [arxiv/reproducibility] 'syntactic information unnecessary aspect sentiment classification strong baseline reproducibility': 0 results
+  [crossref/reproducibility] 'syntactic information unnecessary aspect sentiment classification strong baseline reproducibility': 10 results
+  [openalex/reproducibility] 'syntactic information unnecessary aspect sentiment classification strong baseline replication': 0 results
+  [arxiv/reproducibility] 'syntactic information unnecessary aspect sentiment classification strong baseline replication': 0 results
+  [crossref/reproducibility] 'syntactic information unnecessary aspect sentiment classification strong baseline replication': 10 results
+  [openalex/reproducibility] 'reproducibility aspect-based sentiment graph neural network variance seeds reproducibility': 1 results
+  [arxiv/reproducibility] 'reproducibility aspect-based sentiment graph neural network variance seeds reproducibility': 0 results
+  [crossref/reproducibility] 'reproducibility aspect-based sentiment graph neural network variance seeds reproducibility': 10 results
+  [openalex/reproducibility] 'reproducibility aspect-based sentiment graph neural network variance seeds replication': 0 results
+  [arxiv/reproducibility] 'reproducibility aspect-based sentiment graph neural network variance seeds replication': 0 results
+  [crossref/reproducibility] 'reproducibility aspect-based sentiment graph neural network variance seeds replication': 10 results
+  [openalex/reproducibility] 'induced trees versus parser trees aspect sentiment DeBERTa reproducibility': 0 results
+  [arxiv/reproducibility] 'induced trees versus parser trees aspect sentiment DeBERTa reproducibility': 0 results
+  [crossref/reproducibility] 'induced trees versus parser trees aspect sentiment DeBERTa reproducibility': 10 results
+  [openalex/reproducibility] 'induced trees versus parser trees aspect sentiment DeBERTa replication': 0 results
+  [arxiv/reproducibility] 'induced trees versus parser trees aspect sentiment DeBERTa replication': 0 results
+  [crossref/reproducibility] 'induced trees versus parser trees aspect sentiment DeBERTa replication': 10 results
+  [openalex/keyword] 'same pretrained encoder with and without dependency tree aspect sentiment': 0 results
+  [arxiv/keyword] 'same pretrained encoder with and without dependency tree aspect sentiment': 0 results
+  [crossref/keyword] 'same pretrained encoder with and without dependency tree aspect sentiment': 10 results
+  [openalex/keyword] 'model selection on a validation set aspect sentiment': 10 results
+  [arxiv/keyword] 'model selection on a validation set aspect sentiment': 0 results
+  [crossref/keyword] 'model selection on a validation set aspect sentiment': 10 results
+  [openalex/keyword] 'multiple random seeds aspect sentiment': 5 results
+  [arxiv/keyword] 'multiple random seeds aspect sentiment': 0 results
+  [crossref/keyword] 'multiple random seeds aspect sentiment': 10 results
+  [openalex/keyword] 'parser trees versus induced trees aspect sentiment': 0 results
+  [arxiv/keyword] 'parser trees versus induced trees aspect sentiment': 0 results
+  [crossref/keyword] 'parser trees versus induced trees aspect sentiment': 10 results
+  [openalex/negative] 'same pretrained encoder with and without dependency tree aspect sentiment revisiting': 0 results
+  [arxiv/negative] 'same pretrained encoder with and without dependency tree aspect sentiment revisiting': 0 results
+  [crossref/negative] 'same pretrained encoder with and without dependency tree aspect sentiment revisiting': 10 results
+  [openalex/negative] 'same pretrained encoder with and without dependency tree aspect sentiment does not improve': 0 results
+  [arxiv/negative] 'same pretrained encoder with and without dependency tree aspect sentiment does not improve': error rate_limited
+  [crossref/negative] 'same pretrained encoder with and without dependency tree aspect sentiment does not improve': 10 results
+  [openalex/negative] 'model selection on a validation set aspect sentiment revisiting': 0 results
+  [crossref/negative] 'model selection on a validation set aspect sentiment revisiting': 10 results
+  [openalex/negative] 'model selection on a validation set aspect sentiment does not improve': 8 results
+  [crossref/negative] 'model selection on a validation set aspect sentiment does not improve': 10 results
+  [openalex/negative] 'multiple random seeds aspect sentiment revisiting': 0 results
+  [crossref/negative] 'multiple random seeds aspect sentiment revisiting': 10 results
+  [openalex/negative] 'multiple random seeds aspect sentiment does not improve': 1 results
+  [crossref/negative] 'multiple random seeds aspect sentiment does not improve': 10 results
+  [openalex/negative] 'parser trees versus induced trees aspect sentiment revisiting': 0 results
+  [crossref/negative] 'parser trees versus induced trees aspect sentiment revisiting': 10 results
+  [openalex/negative] 'parser trees versus induced trees aspect sentiment does not improve': 0 results
+  [crossref/negative] 'parser trees versus induced trees aspect sentiment does not improve': 10 results

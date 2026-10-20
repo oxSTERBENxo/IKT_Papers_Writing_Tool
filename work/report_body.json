@@ -1,0 +1,298 @@
+{
+ "type": "opportunity_report",
+ "title": "Research Opportunities at the Intersection of NLP and Graph Neural Networks (2023-2026)",
+ "date": "2026-10-17",
+ "constraints": {
+  "field": "Natural Language Processing combined with Graph Neural Networks",
+  "experience": "undergraduate, comfortable with Python",
+  "hardware": "one consumer GPU with 8 GB VRAM (or a free cloud notebook)",
+  "gpu_vram_gb": 8,
+  "time_budget_weeks": 8,
+  "language": "Python",
+  "difficulty": "moderate",
+  "mode": "any (reproduction, replication, extension or original)",
+  "defaults_used": ["experience", "hardware", "gpu_vram_gb", "time_budget_weeks", "language", "difficulty"]
+ },
+ "search_log": {
+  "sources_ok": ["openalex", "arxiv", "crossref", "huggingface", "zenodo", "github"],
+  "sources_failed": [
+   {"source": "semantic_scholar", "reason": "rate_limited: HTTP 429 on every search call (no API key)"},
+   {"source": "openalex", "reason": "keyless daily budget exhausted part-way through (HTTP 429 from the UPFD challenge onward)"},
+   {"source": "github", "reason": "unauthenticated quota (60/h) exhausted once; repository checks resumed after the reset"}
+  ],
+  "strategies": ["surveys", "recent", "limitations", "keyword", "foundational", "reproducibility", "citation exploration", "novelty challenge (keyword, surveys, recent)", "full-text reading (WebFetch of arXiv HTML)"],
+  "date_range": "2023 onwards for mapping (2021 onwards for the ABSA and fake-news challenges)",
+  "n_retrieved": 1202,
+  "n_after_dedup": 442,
+  "date": "2026-10-17",
+  "queries": [
+   "graph neural networks natural language processing",
+   "large language models graph neural networks text",
+   "text-attributed graphs language models",
+   "benchmark text-attributed graph node classification language model embeddings GNN",
+   "are graph neural networks necessary text-attributed graphs simple baselines",
+   "LLM explanations as features node classification TAPE",
+   "dependency graph neural network aspect-based sentiment analysis",
+   "graph neural network fake news detection propagation",
+   "document-level relation extraction graph neural network",
+   "graph neural network retrieval augmented generation knowledge graph question answering",
+   "graph neural network text classification inductive"
+  ],
+  "notes": [
+   "n_retrieved and n_after_dedup add up three separate searches; deduplication was per search, so some papers are counted more than once.",
+   "Semantic Scholar answered some single-paper lookups and one citation listing but no search request.",
+   "OpenAlex ran out of keyless budget during the session; later challenges used arXiv, Crossref and Hugging Face only, and 'existing reproduction attempts' could not be checked for any paper.",
+   "Full text was read (via arXiv HTML) for LLMNodeBed, Chen et al. 2024 and GNN-RAG, and READMEs for TAPE, GNN-FakeNews, LLM-Structured-Data and LLMNodeBed. Everything else rests on abstracts or titles and is labelled that way in the paper notes.",
+   "The challenge tool's wording-overlap signal said 'no close match' for the heterophily, robustness and simple-baselines ideas, but reading the retrieved papers showed close or identical prior work. Those ideas were rejected on that reading, not on the signal."
+  ]
+ },
+ "sections": {
+  "summary": "NLP combined with GNNs has become mostly a question of how large language models and graph learning work together on text-attributed graphs (TAGs), where every node carries text [@jin2024llmgraphs; @wu2023gnnnlp]. Benchmarks now exist for supervised and zero-shot comparison [@li2024glbench; @wu2025llmnodebed], and graph methods for classic NLP tasks such as aspect-based sentiment analysis (ABSA) and fake news detection already have surveys or large literatures [@phan2023fakesurvey; @gong2023fakesurvey]. Eight candidate questions were drafted. Each was attacked with a novelty search and the closest papers were read. Three were rejected because recent work already answers them (simple baselines on TAGs, LLMs on heterophilic TAGs, robustness of LLM-enhanced GNNs). Five survived, four of them only after revision, and all five are best framed as replications or extensions. None of them can be called new with more than low confidence.",
+  "well_explored": [
+   {"text": "Comparing LLM-enhanced and LLM-as-predictor methods against classic GNNs under fixed protocols: two benchmarks with released code report that gains are marginal in supervised settings", "level": "verified", "sources": ["li2024glbench", "wu2025llmnodebed"]},
+   {"text": "Re-tuning classic GNNs as strong baselines for node classification", "level": "verified", "sources": ["luo2024classic"]},
+   {"text": "Embedding node text with LLMs and training GNNs on top (TAPE, STAGE and many 2024-2026 variants)", "level": "verified", "sources": ["he2023tape", "zolnai2024stage"]},
+   {"text": "LLMs on heterophilic text-attributed graphs, including a dedicated benchmark", "level": "verified", "sources": ["li2025hetgb", "wu2024llmhetero", "wu2025llmnodebed"]},
+   {"text": "Adversarial robustness of GNNs and GraphLLMs to text- and structure-level perturbations on TAGs", "level": "verified", "sources": ["lei2024intruding", "lei2025tagrobust", "ma2026poisoning", "fan2026vulnerability"]},
+   {"text": "New dependency-graph GCN architectures for aspect-based sentiment analysis (dozens of 2023-2026 papers in this search alone)", "level": "verified", "sources": ["zhao2023rdgcn", "huang2025mvasegcn", "li2024sebert"]},
+   {"text": "Graph-based fake news detection architectures over propagation graphs, including out-of-domain variants", "level": "verified", "sources": ["phan2023fakesurvey", "gong2023fakesurvey", "gong2024csda"]}
+  ],
+  "recommendation": "For a student with one 8 GB GPU and about 8 weeks, the three most suitable opportunities are: (1) a multi-seed re-evaluation of GNN fake news detection on UPFD against a no-graph baseline (cheapest, lowest risk, but modest publication potential); (2) a controlled test of whether dependency-graph GCNs still help ABSA once a modern encoder is held fixed (clearest scientific question, because published results disagree); (3) TAPE-style explanation features from small open LLMs that fit in 8 GB, compared with plain embeddings from the same model (closest to current TAG research, highest publication potential of the three, but tightest on compute and time). The score ranges of these three overlap, so the order is not decisive: pick by interest. Before committing to any of them, read the full text of the closest paper listed for it, because every novelty judgement here rests on a lexical search and mostly on abstracts. Opportunity 4 (LLM memorisation on citation graphs) is a good alternative if no GPU is available beyond inference. Opportunity 5 (GNN-RAG answer coverage) is not recommended under these constraints: the paper's GNN runs used 128 GB of RAM, and the code has no licence."
+ },
+ "opportunities": [
+  {
+   "id": "O1",
+   "challenge_file": "challenge_upfd.json",
+   "title": "Does the propagation graph help? Multi-seed re-evaluation of UPFD fake news detection against a no-graph baseline",
+   "category": "reported_limitation",
+   "mode": "replication",
+   "status": "revised",
+   "revision_note": "Originally framed as a general critique of graph-based fake news evaluation. Following the citations of UPFD found Kim et al. 2025, which already shows that conventional evaluation leaks future information and that performance drops under temporal splits [@kim2025dawn]. The idea was narrowed to a question that paper does not address in its abstract: graph versus no-graph under seed and split variance on UPFD's own features.",
+   "research_question": "On UPFD PolitiFact (314 graphs) and GossipCop (5,464 graphs), how much accuracy and F1 do GNNs over user-engagement graphs add beyond a classifier on the news (root-node) features alone, and do the published rankings of GNN variants survive 10+ seeds and repeated random splits?",
+   "motivation": "UPFD is the standard GNN fake-news benchmark and is built into PyG [@dou2021upfd]. Its PolitiFact split is very small, which makes single-run comparisons fragile, and a 2025 study shows that the usual evaluation protocol is unrealistic [@kim2025dawn].",
+   "supporting_papers": ["dou2021upfd", "phan2023fakesurvey", "gong2023fakesurvey"],
+   "closest_existing_work": [
+    {"key": "kim2025dawn", "how_it_differs": "Changes the evaluation to temporal splits and proposes a new model; according to its abstract it does not isolate the contribution of the graph against a no-graph baseline on UPFD's features."},
+    {"key": "dou2021upfd", "how_it_differs": "Original benchmark; the README does not state run count, seeds or splits, and lists no news-content-only baseline."}
+   ],
+   "gap_evidence": [
+    {"text": "PolitiFact in UPFD has 314 graphs (157 fake); GossipCop has 5,464 (repository README)", "level": "verified", "sources": ["dou2021upfd"]},
+    {"text": "The automated reproducibility check found no seed or determinism control and no training entry point in the official repository", "level": "verified", "sources": ["dou2021upfd"]},
+    {"text": "Conventional social-graph fake news evaluation gives models access to future information; performance drops sharply under temporality-aware evaluation (abstract)", "level": "verified", "sources": ["kim2025dawn"]},
+    {"text": "With 314 graphs, a test split of about 60-90 graphs can move accuracy by more than one point per misclassified graph, so differences between GNN variants may be inside seed variance", "level": "estimate"}
+   ],
+   "contribution": "A variance-aware re-evaluation with a no-graph control, reported with confidence intervals; either outcome (graph helps or does not) is publishable as a short reproducibility paper or workshop contribution.",
+   "novelty": {"confidence": "low", "uncertainty": "Challenge searches ran without OpenAlex and Semantic Scholar. Papers citing UPFD were listed, but only titles and abstracts were screened. A reproducibility note on UPFD in a workshop or on GitHub issues could exist and would not be found by these sources."},
+   "feasibility": [
+    {"text": "Data loads through torch_geometric.datasets.UPFD (documentation page reachable); repository licence Apache-2.0, last push 2025-12-11", "level": "verified"},
+    {"text": "Graphs average 58-131 nodes; training GCN/GAT/GraphSAGE runs on CPU or any GPU in minutes per seed", "level": "estimate"},
+    {"text": "Raw news text is not in the PyG release (only BERT, spaCy, profile and content features); a modern text encoder would require re-collecting FakeNewsNet text, which depends on deleted tweets and may be impossible. The text-only baseline therefore uses the provided root-node BERT features.", "level": "estimate"},
+    {"text": "Baselines: MLP or logistic regression on root-node features; GCN, GAT, GraphSAGE, UPFD-GNN with each feature type. Metrics: accuracy, macro-F1, mean and 95% CI over 10 seeds x 5 splits; paired comparison per split.", "level": "speculative"}
+   ]
+  },
+  {
+   "id": "O2",
+   "challenge_file": "challenge_absa.json",
+   "title": "Does syntax still matter? Controlled multi-seed test of dependency-graph GCNs for ABSA with a fixed modern encoder",
+   "category": "unresolved_contradiction",
+   "mode": "replication",
+   "status": "kept",
+   "research_question": "When the encoder (RoBERTa-base and DeBERTa-v3-base) and training budget are held fixed, do dependency-tree GCN heads (ASGCN, RGAT) give a statistically reliable gain in accuracy and macro-F1 over the plain fine-tuned encoder on SemEval-2014 laptops and restaurants, across at least 5 seeds?",
+   "motivation": "Dai et al. found that a pure RoBERTa model matches or beats syntax-aware models and that induced trees beat parser trees [@dai2021syntax], yet papers from 2023-2026 continue to propose dependency-GCN heads and report gains [@zhao2023rdgcn; @huang2025mvasegcn; @li2024sebert].",
+   "supporting_papers": ["dai2021syntax", "li2024sebert", "zhao2023rdgcn", "huang2025mvasegcn"],
+   "closest_existing_work": [
+    {"key": "dai2021syntax", "how_it_differs": "Uses 2021-era RoBERTa and compares tree sources; its abstract does not report multi-seed significance testing, and it predates DeBERTa-v3 and the 2023-2026 GCN variants."},
+    {"key": "li2024sebert", "how_it_differs": "Proposes a new syntax-integrated model rather than testing whether syntax adds anything under a fixed encoder."},
+    {"key": "fei2022absarobust", "how_it_differs": "Studies robustness with a universal-syntax GCN and data augmentation, not the controlled syntax-versus-no-syntax question."}
+   ],
+   "gap_evidence": [
+    {"text": "A pure RoBERTa model outperforms or approximates previous SOTA on six datasets in four languages (abstract)", "level": "verified", "sources": ["dai2021syntax"]},
+    {"text": "A 2024 paper still states that existing methods improve aspect-level sentiment classification by adding a syntactic GCN layer on BERT (abstract)", "level": "verified", "sources": ["li2024sebert"]},
+    {"text": "The 2023-2026 search returned many new dependency-GCN ABSA models; none of the closest 15 challenge results is a controlled re-test", "level": "verified", "sources": ["zhao2023rdgcn", "huang2025mvasegcn"]},
+    {"text": "Reported gains between ABSA models are often around one point on test sets of 600-1,100 aspects, which may be within seed variance", "level": "speculative"}
+   ],
+   "contribution": "Evidence on whether a widely used design choice still matters for modern encoders, with a reusable multi-seed protocol. A null result (syntax does not help) is as reportable as a positive one.",
+   "novelty": {"confidence": "low", "uncertainty": "The challenge tool warned that only one retrieved paper was loosely related, so the queries may have missed the literature. The 25 citing works of Dai et al. visible through Semantic Scholar were screened by title only. A replication inside a larger ABSA survey or a 2024-2026 workshop paper could exist."},
+   "feasibility": [
+    {"text": "Official code (ASGCN, PWCN, RGAT folders with train and infer scripts): github.com/ROGERDJQ/RoBERTaABSA, linked by the paper; no licence; last push 2023-03-08", "level": "verified"},
+    {"text": "SemEval-2014 restaurant (3,693 train / 1,134 test rows) and laptop (2,358 / 654) data on Hugging Face, not gated, licence not stated", "level": "verified"},
+    {"text": "Base-size encoders on about 4,000 sentences fit 8 GB at batch 16 and sequence length 128; about 2 datasets x 2 encoders x 3 heads x 5 seeds = 60 short runs", "level": "estimate"},
+    {"text": "The 2021 code likely needs porting to current transformers versions and a dependency parser (e.g. spaCy or Stanza)", "level": "estimate"},
+    {"text": "Baselines: plain encoder + linear head; ASGCN and RGAT with parser trees; same with FT-RoBERTa induced trees. Metrics: accuracy and macro-F1; paired bootstrap or Wilcoxon over seeds.", "level": "speculative"}
+   ]
+  },
+  {
+   "id": "O3",
+   "challenge_file": "challenge_tape.json",
+   "title": "TAPE on a student budget: explanation features from open LLMs that fit in 8 GB versus plain embeddings from the same model",
+   "category": "reported_limitation",
+   "mode": "extension",
+   "status": "revised",
+   "revision_note": "Originally 'TAPE with open LLMs instead of GPT'. Reading LLMNodeBed's full text showed it already runs TAPE with Mistral-7B by default and compares it with GPT-4o, recommending open models [@wu2025llmnodebed]. The idea was narrowed to models of about 4B parameters or fewer that run quantised on 8 GB, and to the comparison LLMNodeBed does not make: explanations versus embeddings from the same small model at matched compute.",
+   "research_question": "On Cora and PubMed, how much of TAPE's improvement over a GNN on LM embeddings remains when explanations come from open LLMs of 4B parameters or fewer run quantised on 8 GB, and does that beat using the same LLM's embeddings directly (STAGE-style) for the same GPU time?",
+   "motivation": "The main barrier to LLM-enhanced graph learning for students is cost: Chen et al. name the cost of querying an LLM once per node as a limitation [@chen2024exploring], and TAPE took 5.9 hours on PubMed on an H100 in LLMNodeBed [@wu2025llmnodebed]. STAGE suggests embeddings alone may be enough [@zolnai2024stage].",
+   "supporting_papers": ["he2023tape", "chen2024exploring", "zolnai2024stage", "wu2025llmnodebed"],
+   "closest_existing_work": [
+    {"key": "wu2025llmnodebed", "how_it_differs": "Compares Mistral-7B with GPT-4o as TAPE explainer on an H100; no models of 4B or less as explainers, and the size sweep (Qwen 3B-32B) applies to LLaGA, not TAPE (full text)."},
+    {"key": "zolnai2024stage", "how_it_differs": "Uses LLM embeddings only; does not compare against explanation features from the same model at matched cost (abstract)."},
+    {"key": "he2023tape", "how_it_differs": "Original method with API-based GPT explanations."}
+   ],
+   "gap_evidence": [
+    {"text": "LLM API cost scales with the number of nodes and is a stated limitation (Sections 7.2-7.3, full text)", "level": "verified", "sources": ["chen2024exploring"]},
+    {"text": "In LLMNodeBed TAPE took 5.9 h on PubMed on one H100-80G, against 13.4 min for a GCN on LLM embeddings (full text)", "level": "verified", "sources": ["wu2025llmnodebed"]},
+    {"text": "GPT-4o over Mistral-7B helps TAPE by up to 4% in semi-supervised PubMed, and the gap narrows with supervision (full text)", "level": "verified", "sources": ["wu2025llmnodebed"]},
+    {"text": "No paper testing TAPE-style explanations from models of 4B or less was found by the challenge searches", "level": "estimate"}
+   ],
+   "contribution": "A cost-accuracy curve for explanation features at the low end of model size, telling practitioners with small GPUs whether explanations are worth generating or whether embeddings suffice.",
+   "novelty": {"confidence": "low", "uncertainty": "The challenge retrieved almost no closely related papers, so the wording probably missed some; only 22 citing works of TAPE were visible through OpenAlex. 2025-2026 efficiency papers on GraphLLMs could already include small explainers."},
+   "feasibility": [
+    {"text": "TAPE code MIT licence, entry points core/trainGNN.py, trainLM.py, trainEnsemble.py, checkpoints and GPT responses downloadable; environment pinned to PyTorch 1.12.1 / CUDA 11.3; LM example uses 4 GPUs", "level": "verified"},
+    {"text": "LLMNodeBed (code: github.com/WxxShirley/LLMNodeBed, no licence found) implements TAPE, and its data is on Hugging Face (xxwu/LLMNodeBed, MIT, not gated)", "level": "verified"},
+    {"text": "A 1.5-4B model in 4-bit fits in 8 GB; generating about 100-token explanations for Cora (2,708 nodes) takes about an hour, PubMed (19,717 nodes) several hours", "level": "estimate"},
+    {"text": "Fine-tuning the LM interpreter (DeBERTa-base in TAPE) on PubMed with one 8 GB GPU needs small batches or gradient accumulation; this is the main compute risk", "level": "estimate"},
+    {"text": "Baselines: GCN/SAGE on shallow features, on sentence-encoder embeddings, on the small LLM's embeddings; TAPE with the provided GPT responses as the upper reference. Metric: accuracy, mean and std over 5 seeds, plus GPU-hours per method.", "level": "speculative"}
+   ]
+  },
+  {
+   "id": "O4",
+   "challenge_file": "challenge_leak.json",
+   "title": "Has the leakage-free split expired? Re-testing LLM memorisation on citation-graph node classification with 2024-2026 open models",
+   "category": "unresolved_contradiction",
+   "mode": "replication",
+   "status": "revised",
+   "revision_note": "Originally 'measure contamination with a post-cutoff split'. Following a citation from Chen et al. showed Huang et al. 2023 already built a leakage-free arxiv-2023 dataset and found no substantial evidence of leakage with ChatGPT [@huang2023leakage]. The idea became a replication with newer open models, whose training data now includes 2023 papers, plus a fresh post-cutoff split.",
+   "research_question": "For open LLMs released in 2024-2026, is zero-shot node classification accuracy on papers published before the model's training cutoff higher than on matched papers published after it, once arXiv category distribution is controlled for?",
+   "motivation": "Chen et al. report a potential test-data leakage problem on ogbn-arxiv as a key finding [@chen2024exploring], while Huang et al. find no substantial evidence of leakage [@huang2023leakage]. LLMNodeBed, the largest recent benchmark, does not discuss leakage [@wu2025llmnodebed].",
+   "supporting_papers": ["chen2024exploring", "huang2023leakage", "wu2025llmnodebed"],
+   "closest_existing_work": [
+    {"key": "huang2023leakage", "how_it_differs": "Tests ChatGPT (2023) only; its 2023 test papers predate the training cutoff of most 2024-2026 models, so its leakage-free property no longer holds for them (reasoned from dates)."},
+    {"key": "chen2024exploring", "how_it_differs": "Raises the concern and remarks on post-2023 papers, but reports no dedicated dataset or numbers (full text)."}
+   ],
+   "gap_evidence": [
+    {"text": "Chen et al., Section 7.1 Finding 3: 'a potential test data leakage problem on Ogbn-arxiv' (full text)", "level": "verified", "sources": ["chen2024exploring"]},
+    {"text": "Huang et al.: 'no substantial evidence that the performance of LLMs is significantly attributed to data leakage' (abstract)", "level": "verified", "sources": ["huang2023leakage"]},
+    {"text": "No discussion of training-data overlap or memorisation was found in LLMNodeBed's full text", "level": "verified", "sources": ["wu2025llmnodebed"]},
+    {"text": "arxiv-2023 test papers (2023) are inside the training window of models released from 2024 on, so the original control is no longer leakage-free for them", "level": "estimate"}
+   ],
+   "contribution": "An updated, open-model answer to a disputed question, plus a refreshed post-cutoff split that others can reuse.",
+   "novelty": {"confidence": "low", "uncertainty": "The challenge found only two loosely related papers, so the wording may have missed relevant work; general LLM contamination literature (outside graphs) was not searched in depth. Topic drift between years is a confound that may make any accuracy gap hard to attribute to memorisation."},
+   "feasibility": [
+    {"text": "arxiv-2023 (33,868 nodes, 305,672 edges) with raw text is in github.com/TRAIS-Lab/LLM-Structured-Data; no licence stated; template targets the OpenAI API only", "level": "verified"},
+    {"text": "A new post-cutoff split can be built from the arXiv API (which responded throughout this session) by sampling 2026 CS papers per category", "level": "estimate"},
+    {"text": "Inference only: a 4-8B model in 4-bit on a few thousand nodes fits 8 GB in a few GPU-hours", "level": "estimate"},
+    {"text": "Repository check found no environment file, no entry point and no seeds", "level": "verified"}
+   ]
+  },
+  {
+   "id": "O5",
+   "challenge_file": "challenge_gnnrag.json",
+   "title": "When the subgraph has no answer: coverage failure analysis of GNN-RAG with a frozen small LLM reader",
+   "category": "reported_limitation",
+   "mode": "extension",
+   "status": "revised",
+   "revision_note": "Originally 'GNN-RAG with a small LLM'. The GNN-RAG full text already reports Flan-T5-xl as a reader (Table 5), and RPO-RAG targets sub-7B readers with training [@um2026rporag]. The idea was narrowed to the limitation GNN-RAG states itself: questions whose retrieved subgraph lacks the answer.",
+   "research_question": "On WebQSP, what fraction of test questions have no answer entity in the GNN-retrieved subgraph, how does a frozen instruction-tuned LLM of 4B parameters or fewer perform on covered versus uncovered questions, and does falling back to no-retrieval answering when GNN confidence is low reduce errors?",
+   "motivation": "GNN-RAG states that it assumes the KG subgraph contains the answer nodes and that entity-linking errors break this [@mavromatis2024gnnrag]; RPO-RAG notes that sub-7B readers are underexplored in KG RAG [@um2026rporag].",
+   "supporting_papers": ["mavromatis2024gnnrag", "um2026rporag"],
+   "closest_existing_work": [
+    {"key": "mavromatis2024gnnrag", "how_it_differs": "Reports aggregate Hit/F1 per reader; per the full text read, it gives no breakdown by subgraph answer coverage."},
+    {"key": "um2026rporag", "how_it_differs": "Trains small readers with preference optimisation; does not analyse coverage failures (abstract)."}
+   ],
+   "gap_evidence": [
+    {"text": "GNN-RAG limitation: assumes the KG subgraph contains answer nodes; entity-linking errors and disconnected KG parts give empty paths (full text)", "level": "verified", "sources": ["mavromatis2024gnnrag"]},
+    {"text": "Prior KG-RAG work relies on large LLMs or backbones above 7B (abstract)", "level": "verified", "sources": ["um2026rporag"]}
+   ],
+   "contribution": "A quantified error decomposition (retrieval miss vs reader error) and a cheap confidence-based fallback, useful for anyone deploying KG RAG with small models.",
+   "novelty": {"confidence": "low", "uncertainty": "The challenge found only one loosely related paper; KGQA error analyses often appear inside method papers and would not be found by title or abstract wording."},
+   "feasibility": [
+    {"text": "Code: github.com/cmavro/GNN-RAG, no licence, last push 2024-06-12, 15 open issues, no seeds found; GNN entry point gnn/main.py and evaluation scripts present", "level": "verified"},
+    {"text": "WebQSP on Hugging Face (rmanluo/RoG-webqsp: 2,826 train / 246 validation / 1,628 test, not gated, licence not stated)", "level": "verified"},
+    {"text": "The paper's GNN experiments used an RTX-3090 with 128 GB RAM (full text); memory needs on a student machine are unknown and may block the project", "level": "verified"},
+    {"text": "Without a licence the code cannot safely be redistributed; using it for private research is a grey area to check with a supervisor", "level": "estimate"}
+   ]
+  },
+  {
+   "id": "R1",
+   "challenge_file": "challenge_baselines.json",
+   "title": "Simple baselines versus LLM-enhanced methods on text-attributed graphs",
+   "category": "well_studied",
+   "mode": "replication",
+   "status": "rejected",
+   "revision_note": "GLBench [@li2024glbench] and LLMNodeBed [@wu2025llmnodebed] compare GraphLLM methods with classic baselines under consistent protocols and report marginal gains in supervised settings; Luo et al. re-tune classic GNNs as strong baselines [@luo2024classic]. The challenge signal said 'no close match', but reading these papers shows the question is answered.",
+   "research_question": "Do well-tuned classic GNNs on language-model embeddings match LLM-enhanced methods on TAG node classification?",
+   "motivation": "Rejected; kept here as evidence of what is already known.",
+   "supporting_papers": ["li2024glbench", "wu2025llmnodebed", "luo2024classic"],
+   "closest_existing_work": [
+    {"key": "wu2025llmnodebed", "how_it_differs": "Answers the question directly with over 2,700 trained models."},
+    {"key": "li2024glbench", "how_it_differs": "Answers it for supervised and zero-shot settings."}
+   ],
+   "gap_evidence": [
+    {"text": "LLM-based methods give a marginal advantage in the supervised setting (abstract)", "level": "verified", "sources": ["wu2025llmnodebed"]}
+   ],
+   "contribution": "None beyond existing benchmarks.",
+   "novelty": {"confidence": "very_low", "uncertainty": "Directly answered by two benchmarks."},
+   "feasibility": []
+  },
+  {
+   "id": "R2",
+   "challenge_file": "challenge_hetero.json",
+   "title": "LLM-derived features for GNNs on heterophilic text-attributed graphs",
+   "category": "well_studied",
+   "mode": "original",
+   "status": "rejected",
+   "revision_note": "Reading the challenge results found a dedicated benchmark of heterophilic TAGs [@li2025hetgb], an LLM-based method for heterophilic graphs [@wu2024llmhetero], and LLMNodeBed's four heterophilic datasets [@wu2025llmnodebed]. The challenge tool's 'medium' ceiling rested on wording only.",
+   "research_question": "Do LLM-derived node features help GNNs on heterophilic text-attributed graphs?",
+   "motivation": "LLMNodeBed names heterophilic TAGs as underexplored [@wu2025llmnodebed], but other 2024-2025 work already covers the broad question.",
+   "supporting_papers": ["wu2025llmnodebed", "platonov2023hetero"],
+   "closest_existing_work": [
+    {"key": "li2025hetgb", "how_it_differs": "Benchmarks GNNs, PLMs and co-training on five heterophilic TAGs."},
+    {"key": "wu2024llmhetero", "how_it_differs": "Proposes LLM-guided edge reweighting for heterophilic graphs."}
+   ],
+   "gap_evidence": [
+    {"text": "Heterophilic TAGs were described as underexplored before HeTGB was released (abstract)", "level": "verified", "sources": ["li2025hetgb"]}
+   ],
+   "contribution": "None at this breadth; a narrower variant (re-running HeTGB with Platonov-style tuned classic GNNs) was not checked.",
+   "novelty": {"confidence": "very_low", "uncertainty": "Broad question answered; narrow variants not challenged."},
+   "feasibility": []
+  },
+  {
+   "id": "R3",
+   "challenge_file": "challenge_robust.json",
+   "title": "Robustness of LLM-enhanced GNNs to text-level perturbations",
+   "category": "well_studied",
+   "mode": "original",
+   "status": "rejected",
+   "revision_note": "At least four close papers were retrieved and read at abstract or title level: text-level graph injection attacks [@lei2024intruding], a unified robustness framework across ten datasets [@lei2025tagrobust], poisoning attacks on LLM-enhanced GNNs [@ma2026poisoning] and multi-dimensional attacks on TAGs [@fan2026vulnerability].",
+   "research_question": "How robust are LLM-enhanced GNNs to typos, paraphrases and adversarial word substitutions in node text?",
+   "motivation": "Rejected; the area is active and covered.",
+   "supporting_papers": ["lei2025tagrobust"],
+   "closest_existing_work": [
+    {"key": "lei2025tagrobust", "how_it_differs": "Evaluates text, structure and hybrid perturbations for GNNs, robust GNNs and GraphLLMs."},
+    {"key": "ma2026poisoning", "how_it_differs": "Studies poisoning of LLM-enhanced GNNs specifically."}
+   ],
+   "gap_evidence": [
+    {"text": "A 2025 framework already evaluates text-based, structure-based and hybrid perturbations across ten datasets (abstract)", "level": "verified", "sources": ["lei2025tagrobust"]}
+   ],
+   "contribution": "None at this breadth.",
+   "novelty": {"confidence": "very_low", "uncertainty": "Four or more close papers found."},
+   "feasibility": []
+  }
+ ],
+ "datasets": [
+  {"name": "UPFD (PolitiFact, GossipCop) via PyTorch Geometric", "url": "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.UPFD.html", "purpose": "O1", "size": "PolitiFact 314 graphs / 41,054 nodes; GossipCop 5,464 graphs / 314,262 nodes (README); raw files about 1.2 GB", "format": "PyG InMemoryDataset", "license": null, "access": "open (documentation page reachable; download through the PyG loader)", "preprocessing": "Choose a feature type (bert, spacy, profile, content)", "suitability": "Small and CPU-friendly; licence of the data is not stated, only of the code (Apache-2.0)", "verified": true},
+  {"name": "SemEval-2014 ABSA restaurants (SetFit copy)", "url": "https://huggingface.co/datasets/tomaarsen/setfit-absa-semeval-restaurants", "purpose": "O2", "size": "3,693 train / 1,134 test rows", "format": "parquet", "license": null, "access": "open, not gated", "preprocessing": "Check against the split shipped with the RoBERTaABSA repository before comparing with published numbers; this copy may be restructured for SetFit", "suitability": "Small, fast to fine-tune; licence must be read from the card", "verified": true},
+  {"name": "SemEval-2014 ABSA laptops (SetFit copy)", "url": "https://huggingface.co/datasets/tomaarsen/setfit-absa-semeval-laptops", "purpose": "O2", "size": "2,358 train / 654 test rows", "format": "parquet", "license": null, "access": "open, not gated", "preprocessing": "As above; the RoBERTaABSA repository also ships its own preprocessing", "suitability": "Small; licence must be read from the card", "verified": true},
+  {"name": "LLMNodeBed datasets (Cora, PubMed, arXiv and 11 more TAGs)", "url": "https://huggingface.co/datasets/xxwu/LLMNodeBed", "purpose": "O3 (and O4 for ogbn-arxiv text)", "size": "857,129 rows in total", "format": "json", "license": "mit", "access": "open, not gated", "preprocessing": "Use LLMNodeBed loaders; download only the needed datasets", "suitability": "Raw node text with a clear licence", "verified": true},
+  {"name": "arxiv-2023 leakage-control dataset", "url": "https://github.com/TRAIS-Lab/LLM-Structured-Data", "purpose": "O4", "size": "33,868 nodes, 305,672 edges (README)", "format": "PyG data with raw text in the repository", "license": null, "access": "open (repository reachable)", "preprocessing": "load_data('arxiv_2023', use_text=True) per README", "suitability": "Reference control; no longer post-cutoff for 2024+ models", "verified": true},
+  {"name": "WebQSP (RoG release)", "url": "https://huggingface.co/datasets/rmanluo/RoG-webqsp", "purpose": "O5", "size": "2,826 train / 246 validation / 1,628 test", "format": "parquet", "license": null, "access": "open, not gated", "preprocessing": "Subgraphs as used by GNN-RAG; check against the repository's preprocessing scripts", "suitability": "Standard KGQA set; licence not stated", "verified": true},
+  {"name": "CWQ (RoG release)", "url": "https://huggingface.co/datasets/rmanluo/RoG-cwq", "purpose": "O5 (optional second dataset)", "size": "16,894 train / 3,519 validation / 3,531 test", "format": "parquet", "license": null, "access": "open, not gated", "preprocessing": null, "suitability": "Larger, harder multi-hop set", "verified": true}
+ ],
+ "limitations": [
+  "Novelty judgements rest on lexical searches of arXiv, Crossref, Hugging Face and (until it ran out) OpenAlex. Semantic Scholar search failed throughout. 'Not found' means not found in these sources with these queries.",
+  "Most paper summaries come from abstracts. Full text was read only for LLMNodeBed, Chen et al. 2024 and GNN-RAG, and READMEs for four repositories.",
+  "No code was executed and no dataset was downloaded. Every compute and time figure marked as an estimate is a projection, not a measurement.",
+  "Existing reproduction attempts could not be checked for any paper because OpenAlex was rate-limited.",
+  "Dataset licences are missing for five of the seven datasets; read each dataset card before use.",
+  "Scores are assigned by the assistant from the evidence above; the tool only enforces that each score has evidence and that blockers are respected."
+ ]
+}

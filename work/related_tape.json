@@ -1,0 +1,996 @@
+{
+  "seed": {
+    "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+    "authors": [
+      "Xiaoxin He",
+      "Xavier Bresson",
+      "Thomas Laurent",
+      "Adam Perold",
+      "Yann LeCun",
+      "Bryan Hooi"
+    ],
+    "year": 2023,
+    "date": "2023-05-31",
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2305.19523",
+    "arxiv_id": "2305.19523",
+    "pmid": null,
+    "openalex_id": "W4379087246",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2305.19523",
+    "pdf_url": "https://arxiv.org/pdf/2305.19523v5",
+    "abstract": "Representation learning on text-attributed graphs (TAGs) has become a critical research problem in recent years. A typical example of a TAG is a paper citation graph, where the text of each paper serves as node attributes. Initial graph neural network (GNN) pipelines handled these text attributes by transforming them into shallow or hand-crafted features, such as skip-gram or bag-of-words features. Recent efforts have focused on enhancing these pipelines with language models (LMs), which typically demand intricate designs and substantial computational resources. With the advent of powerful large language models (LLMs) such as GPT or Llama2, which demonstrate an ability to reason and to utilize general knowledge, there is a growing need for techniques which combine the textual modelling abilities of LLMs with the structural learning capabilities of GNNs. Hence, in this work, we focus on leveraging LLMs to capture textual information as features, which can be used to boost GNN performance on downstream tasks. A key innovation is our use of explanations as features: we prompt an LLM to perform zero-shot classification, request textual explanations for its decision-making process, and design an LLM-to-LM interpreter to translate these explanations into informative features for downstream GNNs. Our experiments demonstrate that our method achieves state-of-the-art results on well-established TAG datasets, including Cora, PubMed, ogbn-arxiv, as well as our newly introduced dataset, tape-arxiv23. Furthermore, our method significantly speeds up training, achieving a 2.88 times improvement over the closest baseline on ogbn-arxiv. Lastly, we believe the versatility of the proposed method extends beyond TAGs and holds the potential to enhance other tasks involving graph-text data. Our codes and datasets are available at: https://github.com/XiaoxinHe/TAPE.",
+    "citations": 22,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "In Proceedings of ICLR 2024",
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "counts": {
+    "citations_most_cited": 22,
+    "citations_most_recent": 22
+  },
+  "errors": [],
+  "papers": [
+    {
+      "title": "Graph Foundation Models: Concepts, Opportunities and Challenges",
+      "authors": [
+        "Jiawei Liu",
+        "Cheng Hong Yang",
+        "Zhiyuan Lu",
+        "Junze Chen",
+        "Yibo Li",
+        "Mengmei Zhang",
+        "Ting Bai",
+        "Yuan Fang",
+        "Lichao Sun",
+        "Philip S. Yu",
+        "Chuan Shi"
+      ],
+      "year": 2025,
+      "date": "2025-03-06",
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "doi": "10.1109/tpami.2025.3548729",
+      "arxiv_id": "2310.11829",
+      "pmid": "40048343",
+      "openalex_id": "W4408183463",
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/tpami.2025.3548729",
+      "pdf_url": "https://arxiv.org/pdf/2310.11829",
+      "abstract": "Foundation models have emerged as critical components in a variety of artificial intelligence applications, and showcase significant success in natural language processing and several other domains. Meanwhile, the field of graph machine learning is witnessing a paradigm transition from shallow methods to more sophisticated deep learning approaches. The capabilities of foundation models in generalization and adaptation motivate graph machine learning researchers to discuss the potential of developing a new graph learning paradigm. This paradigm envisions models that are pre-trained on extensive graph data and can be adapted for various graph tasks. Despite this burgeoning interest, there is a noticeable lack of clear definitions and systematic analyses pertaining to this neuicew domain. To this end, this article introduces the concept of Graph Foundation Models (GFMs), and offers an exhaustive explanation of their key characteristics and underlying technologies. We proceed to classify the existing work related to GFMs into three distinct categories, based on their dependence on graph neural networks and large language models. In addition to providing a thorough review of the current state of GFMs, this article also outlooks potential avenues for future research in this rapidly evolving domain.",
+      "citations": 53,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Large Language Model (LLM)-Enabled Graphs in Dynamic Networking",
+      "authors": [
+        "Geng Sun",
+        "Yixian Wang",
+        "Dusit Tao Niyato",
+        "Jiacheng Wang",
+        "Xinying Wang",
+        "H. Vincent Poor",
+        "Khaled B. Letaief"
+      ],
+      "year": 2024,
+      "date": "2024-12-05",
+      "venue": "IEEE Network",
+      "doi": "10.1109/mnet.2024.3511662",
+      "arxiv_id": "2407.20840",
+      "pmid": null,
+      "openalex_id": "W4405092734",
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/mnet.2024.3511662",
+      "pdf_url": "https://arxiv.org/pdf/2407.20840",
+      "abstract": "Recent advances in generative artificial intelligence (AI), and particularly the integration of large language models (LLMs), have had considerable impact on multiple domains. Meanwhile, enhancing dynamic network performance is a crucial element in promoting technological advancement and meeting the growing demands of users in many applications areas involving networks. In this article, we explore an integration of LLMs and graphs in dynamic networks, focusing on potential applications and a practical study. Specifically, we first review essential technologies and applications of LLM-enabled graphs, followed by an exploration of their advantages in dynamic networking. Subsequently, we introduce and analyze LLM-enabled graphs and their applications in dynamic networks from the perspective of LLMs in different roles. On this basis, we propose a novel framework of LLM-enabled graphs for networking optimization, and then present a case study on UAV networking, concentrating on optimizing UAV trajectory and communication resource allocation to validate the effectiveness of the proposed framework. Finally, we outline several potential future extensions.",
+      "citations": 35,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "From Cluster Assumption to Graph Convolution: Graph-Based Semi-Supervised Learning Revisited",
+      "authors": [
+        "Zheng Wang",
+        "Hongming Ding",
+        "Li Pan",
+        "Jianhua Li",
+        "Zhiguo Gong",
+        "Philip S. Yu"
+      ],
+      "year": 2024,
+      "date": "2024-10-07",
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+      "doi": "10.1109/tnnls.2024.3454710",
+      "arxiv_id": "2309.13599",
+      "pmid": "39374279",
+      "openalex_id": "W4403182815",
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/tnnls.2024.3454710",
+      "pdf_url": "https://arxiv.org/pdf/2309.13599",
+      "abstract": "Graph-based semi-supervised learning (GSSL) has long been a research focus. Traditional methods are generally shallow learners, based on the cluster assumption. Recently, graph convolutional networks (GCNs) have become the predominant techniques for their promising performance. However, a critical question remains largely unanswered: why do deep GCNs encounter the oversmoothing problem, while traditional shallow GSSL methods do not, despite both progressing through the graph in a similar iterative manner? In this article, we theoretically discuss the relationship between these two types of methods in a unified optimization framework. One of the most intriguing findings is that, unlike traditional ones, typical GCNs may not effectively incorporate both graph structure and label information at each layer. Motivated by this, we propose three simple but powerful graph convolution methods. The first, optimized simple graph convolution (OGC), is a supervised method, which guides the graph convolution process with labels. The others are two \"no-learning\" unsupervised methods: graph structure preserving graph convolution (GGC) and its multiscale version GGCM, both aiming to preserve the graph structure information during the convolution process. Finally, we conduct extensive experiments to show the effectiveness of our methods.",
+      "citations": 26,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Graph Machine Learning in the Era of Large Language Models (LLMs)",
+      "authors": [
+        "Shijie Wang",
+        "Jiani Huang",
+        "Zhikai Chen",
+        "Yu Song",
+        "Wenzhuo Tang",
+        "Haitao Mao",
+        "Wenqi Fan",
+        "Hui Liu",
+        "Xiaorui Liu",
+        "Dawei Yin",
+        "Qing Li"
+      ],
+      "year": 2025,
+      "date": "2025-05-06",
+      "venue": "ACM Transactions on Intelligent Systems and Technology",
+      "doi": "10.1145/3732786",
+      "arxiv_id": "2404.14928",
+      "pmid": null,
+      "openalex_id": "W4410120638",
+      "s2_id": null,
+      "url": "https://doi.org/10.1145/3732786",
+      "pdf_url": "https://arxiv.org/pdf/2404.14928",
+      "abstract": "Graphs play an important role in representing complex relationships in various domains like social networks, knowledge graphs, and molecular discovery. With the advent of deep learning, Graph Neural Networks (GNNs) have emerged as a cornerstone in Graph Machine Learning (Graph ML), facilitating the representation and processing of graphs. Recently, LLMs have demonstrated unprecedented capabilities in language tasks and are widely adopted in a variety of applications, such as computer vision and recommender systems. This remarkable success has also attracted interest in applying LLMs to the graph domain. Increasing efforts have been made to explore the potential of LLMs in advancing Graph ML’s generalization, transferability, and few-shot learning ability. Meanwhile, graphs, especially knowledge graphs, are rich in reliable factual knowledge, which can be utilized to enhance the reasoning capabilities of LLMs and potentially alleviate their limitations, such as hallucinations and the lack of explainability. Given the rapid progress of this research direction, a systematic review summarizing the latest advancements for Graph ML in the era of LLMs is necessary to provide an in-depth understanding to researchers and practitioners. Therefore, in this survey, we first review the recent developments in Graph ML. We then explore how LLMs can be utilized to enhance the quality of graph features, alleviate the reliance on labeled data, and address challenges such as graph Heterophily and Out-of-Distribution (OOD) generalization. Afterward, we delve into how graphs can enhance LLMs, highlighting their abilities to enhance LLM pre-training and inference. Furthermore, we investigate various applications and discuss the potential future directions in this promising field.",
+      "citations": 22,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Can Large Language Models Improve the Adversarial Robustness of Graph Neural Networks?",
+      "authors": [
+        "Zhongjian Zhang",
+        "Xiao Wang",
+        "Huichi Zhou",
+        "Yue Yu",
+        "Mengmei Zhang",
+        "Cheng Hong Yang",
+        "Chuan Shi"
+      ],
+      "year": 2025,
+      "date": "2025-04-04",
+      "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+      "doi": "10.1145/3690624.3709256",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4409157937",
+      "s2_id": null,
+      "url": "https://doi.org/10.1145/3690624.3709256",
+      "pdf_url": "https://doi.org/10.1145/3690624.3709256",
+      "abstract": "Graph neural networks (GNNs) are vulnerable to adversarial attacks, especially for topology perturbations, and many methods that improve the robustness of GNNs have received considerable attention. Recently, we have witnessed the significant success of large language models (LLMs), leading many to explore the great potential of LLMs on GNNs. However, they mainly focus on improving the performance of GNNs by utilizing LLMs to enhance the node features. Therefore, we ask: Will the robustness of GNNs also be enhanced with the powerful understanding and inference capabilities of LLMs? By presenting the empirical results, we find that despite that LLMs can improve the robustness of GNNs, there is still an average decrease of 23.1% in accuracy, implying that the GNNs remain extremely vulnerable against topology attacks. Therefore, another question is how to extend the capabilities of LLMs on graph adversarial robustness. In this paper, we propose an LLM-based robust graph structure inference framework, LLM4RGNN, which distills the inference capabilities of GPT-4 into a local LLM for identifying malicious edges and an LM-based edge predictor for finding missing important edges, so as to recover a robust graph structure. Extensive experiments demonstrate that LLM4RGNN consistently improves the robustness across various GNNs. Even in some cases where the perturbation ratio increases to 40%, the accuracy of GNNs is still better than that on the clean graph. The source code can be found in https://github.com/zhongjian-zhang/LLM4RGNN.",
+      "citations": 18,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Reconstruction and Generation of Porous Metamaterial Units Via Variational Graph Autoencoder and Large Language Model",
+      "authors": [
+        "Kiarash Naghavi Khanghah",
+        "Zihan Wang",
+        "Hongyi Xu"
+      ],
+      "year": 2024,
+      "date": "2024-07-31",
+      "venue": "Journal of Computing and Information Science in Engineering",
+      "doi": "10.1115/1.4066095",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4401173403",
+      "s2_id": null,
+      "url": "https://doi.org/10.1115/1.4066095",
+      "pdf_url": null,
+      "abstract": "Abstract In this paper, we propose and compare two novel deep generative model-based approaches for the design representation, reconstruction, and generation of porous metamaterials characterized by complex and fully connected solid and pore networks. A highly diverse porous metamaterial database is curated, with each sample represented by solid and pore phase graphs and a voxel image. All metamaterial samples adhere to the requirement of complete connectivity in both pore and solid phases. The first approach employs a dual decoder variational graph autoencoder to generate both solid phase and pore phase graphs. The second approach employs a variational graph autoencoder for reconstructing/generating the nodes in the solid phase and pore phase graphs and a transformer-based large language model (LLM) for reconstructing/generating the connections, i.e., the edges among the nodes. A comparative study was conducted, and we found that both approaches achieved high accuracy in reconstructing node features, while the LLM exhibited superior performance in reconstructing edge features. Reconstruction accuracy is also validated by voxel-to-voxel comparison between the reconstructions and the original images in the test set. Additionally, discussions on the advantages and limitations of using LLMs in metamaterial design generation, along with the rationale behind their utilization, are provided.",
+      "citations": 15,
+      "is_oa": false,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Explainable prediction of knowledge recombination: A synergized method with heterogeneous hypergraph learning and large language models",
+      "authors": [
+        "Junyi Chen",
+        "Mengjia Wu",
+        "Qian Liu",
+        "Yi Zhang"
+      ],
+      "year": 2025,
+      "date": "2025-08-06",
+      "venue": "Information Processing & Management",
+      "doi": "10.1016/j.ipm.2025.104336",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4413016526",
+      "s2_id": null,
+      "url": "https://doi.org/10.1016/j.ipm.2025.104336",
+      "pdf_url": "https://doi.org/10.1016/j.ipm.2025.104336",
+      "abstract": "Despite growing interest in graph-based models for knowledge recombination prediction using academic knowledge graphs, existing approaches suffer from significant limitations: they fail to learn informative and robust knowledge entity representations by neglecting high-order information, inadequately account for real-world dynamics, and crucially, cannot provide readable rationales for their predictions. We address these challenges with H2GLM, which reformulates traditional graph learning as heterogeneous hypergraph learning to capture high-order information, incorporating a variational autoencoder (VAE) mechanism to enhance informativeness and robustness. Our approach then integrates large language models (LLMs) with the learned graph contextual information through a step-wise methodology, enabling evidence-supported decisions with clear, readable rationales. Experimental results highlight that H2GLM outperforms previous strong graph-based and LLM-based baselines by 4% to 8% in accuracy, 3% to 9% in AUC and 5% to 8% in F1 on extensive academic knowledge graphs containing over 1,000,000 nodes, with a small amount of training data. Visualizations and case studies further illustrate our method’s substantial utility over existing approaches in real-world scenarios. Further explainability and efficiency analyses underscore the practical value of our method",
+      "citations": 11,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Democratizing large language model-based graph data augmentation via latent knowledge graphs",
+      "authors": [
+        "Yushi Feng",
+        "Tsai Hor Chan",
+        "Guosheng Yin",
+        "Lequan Yu"
+      ],
+      "year": 2025,
+      "date": "2025-07-15",
+      "venue": "Neural Networks",
+      "doi": "10.1016/j.neunet.2025.107777",
+      "arxiv_id": null,
+      "pmid": "40669404",
+      "openalex_id": "W4412429528",
+      "s2_id": null,
+      "url": "https://doi.org/10.1016/j.neunet.2025.107777",
+      "pdf_url": "https://doi.org/10.1016/j.neunet.2025.107777",
+      "abstract": "Data augmentation is necessary for graph representation learning due to the scarcity and noise present in graph data. Most of the existing augmentation methods overlook the context information inherited from the dataset as they rely solely on the graph structure for augmentation. Despite the success of some large language model-based (LLM) graph learning methods, they are mostly white-box which require access to the weights or latent features from the open-access LLMs, making them difficult to be democratized for everyone as the most advanced LLMs are often closed-source for commercial considerations. To overcome these limitations, we propose a black-box context-driven graph data augmentation approach, with the guidance of LLMs - DemoGraph. Leveraging the text prompt as context-related information, we task the LLM with generating knowledge graphs (KGs), which allow us to capture the structural interactions from the text outputs. We then design a dynamic merging schema to stochastically integrate the LLM-generated KGs into the original graph during training. To control the sparsity of the augmented graph, we further devise a granularity-aware prompting strategy and an instruction fine-tuning module, which seamlessly generates text prompts according to different granularity levels of the dataset. Extensive experiments on various graph learning tasks validate the effectiveness of our method over existing graph data augmentation methods. Notably, our approach excels in scenarios involving electronic health records (EHRs), which validates its maximal utilization of contextual knowledge, leading to enhanced predictive performance and interpretability.",
+      "citations": 6,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Insight at the right spot: Provide decisive subgraph information to Graph LLM with reinforcement learning",
+      "authors": [
+        "Tiesunlong Shen",
+        "Erik Cambria",
+        "Jin Wang",
+        "Yi Cai",
+        "Xuejie Zhang"
+      ],
+      "year": 2024,
+      "date": "2024-12-11",
+      "venue": "Information Fusion",
+      "doi": "10.1016/j.inffus.2024.102860",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4405283621",
+      "s2_id": null,
+      "url": "https://doi.org/10.1016/j.inffus.2024.102860",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 6,
+      "is_oa": false,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Enhancing Collaborative Semantics of Language Model-Driven Recommendations via Graph-Aware Learning",
+      "authors": [
+        "Zhong Guan",
+        "Likang Wu",
+        "Hongke Zhao",
+        "Ming Xuan He",
+        "Jianpin Fan"
+      ],
+      "year": 2025,
+      "date": "2025-06-19",
+      "venue": "IEEE Transactions on Knowledge and Data Engineering",
+      "doi": "10.1109/tkde.2025.3581606",
+      "arxiv_id": "2406.13235",
+      "pmid": null,
+      "openalex_id": "W4411446462",
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/tkde.2025.3581606",
+      "pdf_url": "https://arxiv.org/pdf/2406.13235",
+      "abstract": "Large Language Models (LLMs) are increasingly prominent in the recommendation systems domain. Existing studies usually utilize in-context learning or supervised finetuning on task-specific data to align LLMs into recommendations. However, the substantial bias in semantic spaces between language processing tasks and recommendation tasks poses a non-negligible challenge. Specifically, without the adequate capturing ability of collaborative information, existing modeling paradigms struggle to capture behavior patterns within community groups, leading to LLMs' ineffectiveness in discerning implicit interaction semantic in recommendation scenarios. To address this, we consider enhancing the learning capability of language modeldriven recommendation models for structured data, specifically by utilizing interaction graphs rich in collaborative semantics. We propose a Graph-Aware Learning for Language ModelDriven Recommendations (GAL-Rec). GAL-Rec enhances the understanding of user-item collaborative semantics by imitating the intent of Graph Neural Networks (GNNs) to aggregate multihop information, thereby fully exploiting the substantial learning capacity of LLMs to independently address the complex graphs in the recommendation system. Sufficient experimental results on three real-world datasets demonstrate that GAL-Rec significantly enhances the comprehension of collaborative semantics, and improves recommendation performance.",
+      "citations": 4,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Graph Perceiver IO: A general architecture for graph-structured data",
+      "authors": [
+        "Seyun Bae",
+        "Hoyoon Byun",
+        "Changdae Oh",
+        "Yoon-Sik Cho",
+        "Kyungwoo Song"
+      ],
+      "year": 2025,
+      "date": "2025-06-16",
+      "venue": "Pattern Recognition",
+      "doi": "10.1016/j.patcog.2025.111889",
+      "arxiv_id": "2209.06418",
+      "pmid": null,
+      "openalex_id": "W4411348932",
+      "s2_id": null,
+      "url": "https://doi.org/10.1016/j.patcog.2025.111889",
+      "pdf_url": "https://arxiv.org/pdf/2209.06418",
+      "abstract": null,
+      "citations": 3,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making",
+      "authors": [
+        "Shreya Chappidi",
+        "Jatinder Pal Singh",
+        "Andra Valentina Krauze"
+      ],
+      "year": 2026,
+      "date": "2026-04-13",
+      "venue": "CHI Conference on Human Factors in Computing Systems",
+      "doi": "10.1145/3772318.3791428",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W7154042241",
+      "s2_id": null,
+      "url": "https://doi.org/10.1145/3772318.3791428",
+      "pdf_url": null,
+      "abstract": "LLMs are increasingly supporting decision-making across high-stakes domains, requiring critical reflection on the socio-technical factors that shape how humans and LLMs are assigned roles and interact during human-in-the-loop decision-making. This paper introduces the concept of human-LLM archetypes – defined as recurring socio-technical interaction patterns that structure the roles of humans and LLMs in collaborative decision-making. We describe 17 human-LLM archetypes derived from a scoping literature review and thematic analysis of 113 LLM-supported decision-making papers. Then, we evaluate these diverse archetypes across real-world clinical diagnostic cases to examine the potential effects of adopting distinct human-LLM archetypes on LLM outputs and decision outcomes. Finally, we present relevant tradeoffs and design choices across human-LLM archetypes, including decision control, social hierarchies, cognitive forcing strategies, and information requirements. Through our analysis, we show that selection of human-LLM interaction archetype can influence LLM outputs and decisions, bringing important risks and considerations for the designers of human-AI decision-making systems.",
+      "citations": 2,
+      "is_oa": false,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Graph Triple Attention Networks: A Decoupled Perspective",
+      "authors": [
+        "X. C. Wang",
+        "Yun Zhu",
+        "Haizhou Shi",
+        "Yongchao Liu",
+        "Chuntao Hong"
+      ],
+      "year": 2025,
+      "date": "2025-04-04",
+      "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+      "doi": "10.1145/3690624.3709223",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4409149743",
+      "s2_id": null,
+      "url": "https://doi.org/10.1145/3690624.3709223",
+      "pdf_url": null,
+      "abstract": "Graph Transformers (GTs) have recently achieved significant success in the graph domain by effectively capturing both long-range dependencies and graph inductive biases. However, these methods face two primary challenges: (1) multi-view chaos, which results from coupling multi-view information (positional, structural, attribute), thereby impeding flexible usage and the interpretability of the propagation process. (2) local-global chaos, which arises from coupling local message passing with global attention, leading to issues of overfitting and over-globalizing. To address these challenges, we propose a high-level decoupled perspective of GTs, breaking them down into three components and two interaction levels: positional attention, structural attention, and attribute attention, alongside local and global interaction. Based on this decoupled perspective, we design a decoupled graph triple attention network named DeGTA, which separately computes multi-view attentions and adaptively integrates multi-view local and global information. This approach offers three key advantages: enhanced interpretability, flexible design, and adaptive integration of local and global information. Through extensive experiments, DeGTA achieves state-of-the-art performance across various datasets and tasks, including node classification and graph classification. Comprehensive ablation studies demonstrate that decoupling is essential for improving performance and enhancing interpretability. Our code is available at: https://github.com/wangxiaotang0906/DeGTA",
+      "citations": 2,
+      "is_oa": false,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Boosting not so Large Language Models by using Knowledge Graphs and Reinforcement Learning",
+      "authors": [
+        "William Jones Beckhauser",
+        "Renato Fileto"
+      ],
+      "year": 2024,
+      "date": "2024-11-17",
+      "venue": null,
+      "doi": "10.5753/stil.2024.245396",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4405193304",
+      "s2_id": null,
+      "url": "https://doi.org/10.5753/stil.2024.245396",
+      "pdf_url": "https://sol.sbc.org.br/index.php/stil/article/download/31128/30931",
+      "abstract": "Ensuring the viability of large language models (LLMs) in situations requiring data privacy with limited on-premise resources is a significant current challenge. This work investigates how to tackle this challenge using knowledge graphs (KGs) and reinforcement learning (RL) to enhance minor LLMs by reducing non-factual responses and response gaps. We evaluated variations of GPT (4o, 4, and 3.5), Llama2 (7b, 13b, and 70b), and Llama3 (8b and 70b) for multi-label classification and information extraction, with or without KG and RL, and also fine-tuned a BERT model. Llama3 8b combined with KG and RL outperformed all other LLM models, and the fine-tuned BERT model too.",
+      "citations": 2,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Multiplex graph prompt collaboration for open-set social event detection",
+      "authors": [
+        "Xiuqin Liang",
+        "Jiazhen Chen",
+        "Sichao Fu",
+        "Wuli Wang",
+        "Mingbin Feng",
+        "Tony S. Wirjanto",
+        "Qinmu Peng",
+        "Baodi Liu",
+        "Weihua Ou"
+      ],
+      "year": 2025,
+      "date": "2025-07-04",
+      "venue": "Expert Systems with Applications",
+      "doi": "10.1016/j.eswa.2025.128887",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4412025916",
+      "s2_id": null,
+      "url": "https://doi.org/10.1016/j.eswa.2025.128887",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 1,
+      "is_oa": false,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Analyzing and Identifying Russian Disinformation in Telegram Using Graph-Based Methods",
+      "authors": [
+        "Justina Mandravickaitė",
+        "Milita Songailaitė",
+        "Veronika Bryskina",
+        "Maksym Bondar",
+        "Tomas Krilavičius"
+      ],
+      "year": 2025,
+      "date": "2025-05-13",
+      "venue": "International Conference on Military Communication and Information Systems (ICMCIS)",
+      "doi": "10.1109/icmcis64378.2025.11047922",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4411800024",
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/icmcis64378.2025.11047922",
+      "pdf_url": null,
+      "abstract": "Monitoring social and traditional media means han-dling vast amounts of unstructured data. In such scenarios, it is essential to extract only key information, reducing volume and organizing it into a structured form. In this study, we report information extraction and structuring using knowledge graphs. We explored occurrences of disinformation cases on the Telegram platform through knowledge graphs formed from triples ex-tracted in Subject-Verb-Object (SVO) and Entity-Relation-Entity (ERE) manner to test their information extraction capabilities. Disinformation was identified by computing graph similarity via Graph Kernels between knowledge graphs constructed from Telegram messages and verified disinformation cases from the EUvsDisinfo database. We analysed over 100 thousand messages from 9 Russian Telegram channels. The findings showed that disinformation was present across all channels, with particular emphasis on mentions of the downing of Flight MH17, various claims regarding Western assistance, and narratives surrounding occupied regions of Ukraine. The study showed that the Shortest Path Graph Kernel and Subgraph Matching methods were the most effective at detecting disinformation using both knowledge graph building techniques, as they uniquely identified graphs containing substantial disinformation while disregarding those with minimal disinformation.",
+      "citations": 1,
+      "is_oa": false,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "StAR: Learning on Text-Attributed Graphs with Structure-Aware Rationales",
+      "authors": [
+        "Zheyuan Zhang",
+        "Song Wang",
+        "Jingguo Ge",
+        "Yiming Xu",
+        "Yulei Wu",
+        "Jifei Wen",
+        "Chang Liu"
+      ],
+      "year": 2024,
+      "date": "2024-12-01",
+      "venue": "IEEE International Conference on High Performance Computing and Communications (HPCC)",
+      "doi": "10.1109/hpcc64274.2024.00055",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4412610612",
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/hpcc64274.2024.00055",
+      "pdf_url": null,
+      "abstract": "In recent years, the integration of Large Language Models (LLMs) with graph neural networks (GNNs) has opened new avenues in handling Text-Attributed Graphs (TAGs). This paper presents a novel approach leveraging LLMs for tackling TAG node classification problems, focusing on text augmentation and structural information enhancement through neighbor information integration. Our method employs a supervised fine-tuning process for LLMs with generated structure-ware rationales that involve structural information from TAGs. Through a combination of structure-aware rationale generation and alignment training, we enhance the learning and integration of graph structural information. We demonstrate the effectiveness of our approach across multiple datasets, showcasing improvements in node classification accuracy. Our contributions include the development of a self-guided approach to generate high-quality rationale text and the fine-tuning of a text embedding model for enhanced graph information understanding, ultimately feeding enriched features into a GNN for final node classification.",
+      "citations": 1,
+      "is_oa": false,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "GraphICL: Unlocking Graph Learning Potential in LLMs through Structured Prompt Design",
+      "authors": [
+        "Yuanfu Sun",
+        "Zhengnan Ma",
+        "Yi Fang",
+        "Jing Ma",
+        "Qiaoyu Tan"
+      ],
+      "year": 2025,
+      "date": "2025-02-06",
+      "venue": "Qeios",
+      "doi": "10.32388/9eeufo",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4407189494",
+      "s2_id": null,
+      "url": "https://doi.org/10.32388/9eeufo",
+      "pdf_url": "https://www.qeios.com/read/9EEUFO/pdf",
+      "abstract": "The growing importance of textual and relational systems has driven interest in enhancing large language models (LLMs) for graph-structured data, particularly Text-Attributed Graphs (TAGs), where samples are represented by textual descriptions interconnected by edges. While research has largely focused on developing specialized graph LLMs through task-specific instruction tuning, _a comprehensive benchmark for evaluating LLMs solely through prompt design_ remains surprisingly absent. Without such a carefully crafted evaluation benchmark, most if not all, tailored graph LLMs are compared against general LLMs using simplistic queries (e.g., zero-shot reasoning with LLaMA), which can potentially camouflage many advantages as well as unexpected predicaments of them. To achieve more general evaluations and unveil the true potential of LLMs for graph tasks, we introduce GRAPH IN-CONTEXT LEARNING (GRAPHICL) BENCHMARK, a comprehensive benchmark comprising novel prompt templates designed to capture graph structure and handle limited label knowledge. Our systematic evaluation shows that general-purpose LLMs equipped with our GraphICL outperform state-of-the-art specialized graph LLMs and graph neural network models in resource-constrained settings and out-of-domain tasks. These findings highlight the significant potential of prompt engineering to enhance LLM performance on graph learning tasks without training and offer a strong baseline for advancing research in graph LLMs.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "preprint",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "A Graph Network Approach to Disinformation Detection in Social Media",
+      "authors": [
+        "Milita Songailaitė",
+        "Justina Mandravickaitė",
+        "Veronika Bryskina",
+        "Maksym Bondar",
+        "Tomas Krilavičius"
+      ],
+      "year": 2025,
+      "date": "2025-01-01",
+      "venue": "Lecture notes in computer science",
+      "doi": "10.1007/978-3-031-92898-7_10",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4410561945",
+      "s2_id": null,
+      "url": "https://doi.org/10.1007/978-3-031-92898-7_10",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": false,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Summarizing Online Discussions with Prototype Relation Networks Using Large Language Models",
+      "authors": [
+        "William Power",
+        "Shelly Gupta",
+        "Zoran Obradovic A"
+      ],
+      "year": 2025,
+      "date": "2025-01-01",
+      "venue": "IFIP advances in information and communication technology",
+      "doi": "10.1007/978-3-031-96235-6_28",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4411531928",
+      "s2_id": null,
+      "url": "https://doi.org/10.1007/978-3-031-96235-6_28",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": false,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "title": "Computing in Science & Engineering",
+      "authors": [],
+      "year": 2024,
+      "date": "2024-01-01",
+      "venue": "IEEE Intelligent Systems",
+      "doi": "10.1109/mis.2024.3359874",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4392251586",
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/mis.2024.3359874",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/9670/10453363/10453366.pdf",
+      "abstract": "Question 5: How to Integrate Graph Structures Into the Pipeline of LLMs? The applicability of graph structures is not confined to reasoning and collaboration. There's a compelling case to be made for their integration across all stages of the LLM lifecycle, from training and fine-tuning, to inference.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex"
+      }
+    },
+    {
+      "title": "Decoupled Community Detection and Community-Aware Weighted Aggregation for Node Classification on Text-Attributed Graphs",
+      "authors": [
+        "Yun Wang",
+        "Qiang Zhou",
+        "Tianhua Ran",
+        "Dingkun Lu",
+        "Yunqi Mi",
+        "Naibin He",
+        "Xueming Qian",
+        "Guoshuai Zhao"
+      ],
+      "year": 2024,
+      "date": "2024-01-01",
+      "venue": "SSRN Electronic Journal",
+      "doi": "10.2139/ssrn.5055340",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4405356494",
+      "s2_id": null,
+      "url": "https://doi.org/10.2139/ssrn.5055340",
+      "pdf_url": "https://doi.org/10.2139/ssrn.5055340",
+      "abstract": null,
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "preprint",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "citations_most_cited",
+          "query": "W4379087246"
+        },
+        {
+          "source": "openalex",
+          "strategy": "citations_most_recent",
+          "query": "W4379087246"
+        }
+      ],
+      "extra": {}
+    }
+  ],
+  "resolution_notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

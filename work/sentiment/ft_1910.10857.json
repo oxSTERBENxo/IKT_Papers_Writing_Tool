@@ -1,0 +1,42 @@
+{
+  "ident": "1910.10857",
+  "arxiv_id": "1910.10857",
+  "status": "full_text",
+  "source": "arxiv_tex",
+  "sections": [
+    {
+      "heading": "Front matter",
+      "level": "section",
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\documentclass[11pt,a4paper]{article}\n\\usepackage[hyperref]{eacl2021}\n\\usepackage{times}\n\\usepackage{latexsym}\n\\renewcommand{\\UrlFont}{\\ttfamily\\small}\n\n\n\n\n\\usepackage{microtype}\n\\usepackage{graphicx}\n\\usepackage{subcaption}\n\\usepackage{multirow}\n\\usepackage{adjustbox}\n\\usepackage{amsmath}\n\\usepackage{subcaption}\n\\usepackage{enumitem}\n\\usepackage{graphics}\n\n\\usepackage{amsfonts}\n\\usepackage{mathrsfs}\n\\usepackage{amssymb}\n\\usepackage{amsthm}\n\\usepackage{fixmath}\n\\usepackage{tikz} \n\\usepackage{float}\n\\usepackage{tabularx}\n\\usepackage{caption}\n\\usepackage{comment}\n\\setlength{\\textfloatsep}{3pt}\n\\setlength{\\abovecaptionskip}{5pt}\n\\setlength{\\belowcaptionskip}{2pt}\n\\usepackage{threeparttable}\n\\usepackage{siunitx}\n\n\\restylefloat{table}\n\\newcommand{\\xhdr}[1]{{\\noindent\\bfseries #1}.}\n\\definecolor{ultramarine}{RGB}{255,105,180}\n\\definecolor{steelblue}{RGB}{51, 117, 204}\n\\definecolor{skyblue}{RGB}{102, 157, 229}\n\\definecolor{lightblue}{RGB}{153,197,255}\n\n\\setlength{\\belowdisplayskip}{0pt} \\setlength{\\belowdisplayshortskip}{0pt}\n\\setlength{\\abovedisplayskip}{-10pt} \\setlength{\\abovedisplayshortskip}{-10pt}\n\n\n\n\n\n\n\n\n\n\n\\newcommand\\BibTeX{B\\textsc{ib}\\TeX}\n\\newcommand{\\jing}[1]{{{\\textcolor{red} {[{Jing:}  #1]}}}}\n\n\n\n\\title{Selective Attention Based Graph Convolutional Networks for Aspect-Level Sentiment Classification}\n\n\\author{First Author \\\\\n  Affiliation / Address line 1 \\\\\n  Affiliation / Address line 2 \\\\\n  Affiliation / Address line 3 \\\\\n  email@domain \\\\\\And\n  Second Author \\\\\n  Affiliation / Address line 1 \\\\\n  Affiliation / Address line 2 \\\\\n  Affiliation / Address line 3 \\\\\n  email@domain \\\\}\n\n\\date{}\n\n\\begin{document}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\onecolumn\n",
+      "roles": [],
+      "chars": 2262
+    },
+    {
+      "heading": "Supplemental Material",
+      "level": "section",
+      "text": "\n\\xhdr{Dependency Trees} The dependency trees of 3 cases in Table 3 are presented in Figure . The dependency trees are obtained from Stanford Stanza toolkit. As shown in the figure, in the first example, the aspect term ``food'' is four hops away from the opinion words ``favorite'' and ``on the money''. In the second and third example, there are also three-hops distance between aspect terms and opinion words. All three cases are correctly predicted by our SA-GCN model, but wrongly by the 2-layer GCN model.\n\n[FLOAT] case 1 case 2 case 3 Dependency trees of case study.\n  figure* [!h]\n \n  subfigure  0.9  \n \n  case_1.pdf \n  case 1 \n  fig:case1 \n  subfigure \n  subfigure  1.0  \n  case_2.pdf   \n  case 2   fig:case2 \n  subfigure \n  subfigure  1.0  \n  case_3.pdf   \n  case 3   fig:case3 \n  subfigure \n  Dependency trees of case study. \n  fig:casestudy \n  figure* \n[/FLOAT]\n\n\n\\xhdr{Hyper-parameter Analysis} We examine the effect of the hype-parameter $k$ and the block number $N$ on our proposed model under head-independent and head-dependent selection respectively. Figure  shows the results on 14Rest dataset.\n\n\n[FLOAT] Impact of $k$ Impact of block numbers Impact of $k$ and block numbers on SA-GCN over Restaurant dataset.\n  figure [!ht]\n \n  subfigure  .495  \n \n  topk.pdf \n  Impact of $k$ \n  fig:top-k \n  subfigure \n  subfigure  .495  \n  block.pdf   \n  Impact of block numbers   fig:block \n  subfigure \n  Impact of $k$ and block numbers on   SA-GCN  over Restaurant dataset. \n  fig:impactanalysis \n  -10pt \n  figure \n[/FLOAT]\n\n\n\\begin{enumerate}[leftmargin=10pt]\n\\itemsep0em\n\\item\n\\xhdr{Effect of Hyper-parameter $k$} From Figure , we observe that: 1) the highest accuracy appears when $k$ is equal to 3. As $k$ becomes bigger, the accuracy goes down. The reason is that integrating information from too many context words could introduce distractions and confuse the representation of the current word. \n2) Head-independent selection performs better than head-dependent selection as $k$ increases. As mentioned before, compared with head-independent, head-dependent selection might have more than $k$ context words contribute to the aggregation and introduce some noise.\n\\item\\xhdr{Effect of Block Number} Figure  shows the effect of different number of SA-GCN blocks. As the block number increases, the accuracy decreases for both head-independent and head-dependent selection. A single SA-GCN block is sufficient for selecting top-$k$ important context words.\nStacking multiple blocks introduces more parameters and thus would lead to over-fitting with such a small amount of training data. This might be the reason why stacking multiple blocks is not helpful.\nFor our future work we plan to look into suitable deeper GNN models that are good for this task.\n\\end{enumerate}\n\n\\end{document}\n",
+      "roles": [],
+      "chars": 2800
+    }
+  ],
+  "flags": {
+    "runs_and_seeds": [],
+    "split_protocol": [],
+    "validation_only_reporting": [],
+    "variance_reported": [],
+    "structure_free_baseline": [],
+    "ablation_or_control": [],
+    "leakage_or_overlap": [],
+    "code_or_data_link": [],
+    "hardware_and_cost": [],
+    "stated_limitation": []
+  },
+  "notes": [],
+  "oa_pdf": null,
+  "missing_roles": [
+    "experiments",
+    "results",
+    "limitations",
+    "related_work"
+  ]
+}

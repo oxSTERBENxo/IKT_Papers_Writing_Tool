@@ -1,0 +1,414 @@
+{
+ "constraints": {
+  "time_budget_weeks": 8,
+  "gpu_vram_gb": 8,
+  "gpu_hours_budget": 60,
+  "storage_gb": 50
+ },
+ "candidates": [
+  {
+   "id": "D1",
+   "title": "D1 replication: protocol-corrected re-test",
+   "mode": "replication",
+   "estimates": {
+    "weeks": 4,
+    "min_vram_gb": 8,
+    "gpu_hours": 25,
+    "storage_gb": 10
+   },
+   "novelty_evidence": {
+    "closest_read": "full_text",
+    "prior_overlap": "same_experiment"
+   },
+   "blockers": [],
+   "criteria": {
+    "dataset_accessibility": {
+     "score": 3,
+     "evidence": [
+      "Shipped splits with parses; counts match the paper"
+     ],
+     "evidence_level": "verified",
+     "missing": [
+      "No licence"
+     ]
+    },
+    "compute_fit": {
+     "score": 4,
+     "evidence": [
+      "Base encoders, ~3.6k training aspects"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "paper_and_code_availability": {
+     "score": 3,
+     "evidence": [
+      "Papers open; tree-head code GloVe-only, pinned to 2020 libraries"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "reproducibility": {
+     "score": 2,
+     "evidence": [
+      "Test-set selection, few runs, missing RoBERTa+tree code"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "scientific_relevance": {
+     "score": 4,
+     "evidence": [
+      "Null result is cited as settled; claims of gains continue [@li2024sebert]"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "novelty_or_replication_value": {
+     "score": 4,
+     "evidence": [
+      "Single-table, test-selected result that many papers rely on [@dai2021syntax]"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "implementation_simplicity": {
+     "score": 3,
+     "evidence": [
+      "Reimplement heads on current transformers"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "time_fit": {
+     "score": 4,
+     "evidence": [
+      "About 4 weeks"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "evaluation_clarity": {
+     "score": 4,
+     "evidence": [
+      "Standard metrics, published numbers to compare"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "low_failure_risk": {
+     "score": 5,
+     "evidence": [
+      "Either outcome reportable"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    }
+   }
+  },
+  {
+   "id": "D2",
+   "title": "D2 extension: structure controls",
+   "mode": "extension",
+   "estimates": {
+    "weeks": 6,
+    "min_vram_gb": 8,
+    "gpu_hours": 35,
+    "storage_gb": 10
+   },
+   "novelty_evidence": {
+    "closest_read": "full_text",
+    "prior_overlap": "partial"
+   },
+   "blockers": [],
+   "criteria": {
+    "dataset_accessibility": {
+     "score": 3,
+     "evidence": [
+      "Shipped splits with parses; counts match the paper"
+     ],
+     "evidence_level": "verified",
+     "missing": [
+      "No licence"
+     ]
+    },
+    "compute_fit": {
+     "score": 4,
+     "evidence": [
+      "Base encoders, ~3.6k training aspects"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "paper_and_code_availability": {
+     "score": 3,
+     "evidence": [
+      "Papers open; tree-head code GloVe-only, pinned to 2020 libraries"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "reproducibility": {
+     "score": 2,
+     "evidence": [
+      "Test-set selection, few runs, missing RoBERTa+tree code"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "scientific_relevance": {
+     "score": 4,
+     "evidence": [
+      "Tests the mechanism behind a large literature"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "novelty_or_replication_value": {
+     "score": 3,
+     "evidence": [
+      "No PLM structure controls found in the full texts read"
+     ],
+     "evidence_level": "estimate",
+     "missing": [
+      "Recent ablation tables unread"
+     ]
+    },
+    "implementation_simplicity": {
+     "score": 3,
+     "evidence": [
+      "Graph generators on D1 pipeline"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "time_fit": {
+     "score": 3,
+     "evidence": [
+      "6 weeks including D1"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "evaluation_clarity": {
+     "score": 3,
+     "evidence": [
+      "No published numbers for the controls"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "low_failure_risk": {
+     "score": 4,
+     "evidence": [
+      "Null or positive both informative"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    }
+   }
+  },
+  {
+   "id": "D3",
+   "title": "D3 novel: frozen vs fine-tuned encoder",
+   "mode": "original",
+   "estimates": {
+    "weeks": 4,
+    "min_vram_gb": 4,
+    "gpu_hours": 8,
+    "storage_gb": 5
+   },
+   "novelty_evidence": {
+    "closest_read": "full_text",
+    "prior_overlap": "partial"
+   },
+   "blockers": [],
+   "criteria": {
+    "dataset_accessibility": {
+     "score": 3,
+     "evidence": [
+      "Shipped splits with parses; counts match the paper"
+     ],
+     "evidence_level": "verified",
+     "missing": [
+      "No licence"
+     ]
+    },
+    "compute_fit": {
+     "score": 4,
+     "evidence": [
+      "Base encoders, ~3.6k training aspects"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "paper_and_code_availability": {
+     "score": 3,
+     "evidence": [
+      "Papers open; tree-head code GloVe-only, pinned to 2020 libraries"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "reproducibility": {
+     "score": 2,
+     "evidence": [
+      "Test-set selection, few runs, missing RoBERTa+tree code"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "scientific_relevance": {
+     "score": 3,
+     "evidence": [
+      "Relevant to compute-limited practice"
+     ],
+     "evidence_level": "speculative",
+     "missing": []
+    },
+    "novelty_or_replication_value": {
+     "score": 3,
+     "evidence": [
+      "Not found in the closest full texts"
+     ],
+     "evidence_level": "estimate",
+     "missing": [
+      "Probing literature unsearched"
+     ]
+    },
+    "implementation_simplicity": {
+     "score": 4,
+     "evidence": [
+      "Cached features, small heads"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "time_fit": {
+     "score": 5,
+     "evidence": [
+      "About 4 weeks"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "evaluation_clarity": {
+     "score": 3,
+     "evidence": [
+      "No published numbers"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "low_failure_risk": {
+     "score": 4,
+     "evidence": [
+      "Either outcome reportable"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    }
+   }
+  },
+  {
+   "id": "D4",
+   "title": "D4 parser-quality moderator",
+   "mode": "extension",
+   "estimates": {
+    "weeks": 5,
+    "min_vram_gb": 8,
+    "gpu_hours": 30,
+    "storage_gb": 10
+   },
+   "novelty_evidence": {
+    "closest_read": "full_text",
+    "prior_overlap": "same_question_different_design"
+   },
+   "blockers": [],
+   "criteria": {
+    "dataset_accessibility": {
+     "score": 3,
+     "evidence": [
+      "Shipped splits with parses; counts match the paper"
+     ],
+     "evidence_level": "verified",
+     "missing": [
+      "No licence"
+     ]
+    },
+    "compute_fit": {
+     "score": 4,
+     "evidence": [
+      "Base encoders, ~3.6k training aspects"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "paper_and_code_availability": {
+     "score": 3,
+     "evidence": [
+      "Papers open; tree-head code GloVe-only, pinned to 2020 libraries"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "reproducibility": {
+     "score": 2,
+     "evidence": [
+      "Test-set selection, few runs, missing RoBERTa+tree code"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "scientific_relevance": {
+     "score": 2,
+     "evidence": [
+      "Shown for IE [@sachan2021syntax]"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "novelty_or_replication_value": {
+     "score": 2,
+     "evidence": [
+      "Moderator not isolable without gold parses"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "implementation_simplicity": {
+     "score": 3,
+     "evidence": [
+      "Multiple parsers"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "time_fit": {
+     "score": 4,
+     "evidence": [
+      "5 weeks"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "evaluation_clarity": {
+     "score": 1,
+     "evidence": [
+      "No gold trees for review data"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "low_failure_risk": {
+     "score": 2,
+     "evidence": [
+      "Likely inconclusive"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "llm-graph-leakage",
+  "split": "heldout",
+  "claim": "Measuring whether zero-shot LLM node classification accuracy on text-attributed graph benchmarks (Cora, PubMed, ogbn-arxiv) is inflated by pretraining data contamination, using a temporal split of papers published after the LLM training cutoff",
+  "queries": [
+    "data leakage large language models node classification Cora arxiv memorization",
+    "test set contamination LLM graph benchmark text-attributed",
+    "temporal split papers after training cutoff LLM zero-shot classification citation graph",
+    "LLM memorization benchmark inflation graph learning evaluation",
+    "LLM-as-predictor node classification label leakage"
+  ],
+  "anchor": "LLM node classification",
+  "design": [
+    "papers published after the model training cutoff",
+    "new citation dataset",
+    "with and without neighbour text"
+  ],
+  "seeds": [
+    "2305.19523"
+  ],
+  "known_relevant": [
+    {
+      "title": "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?",
+      "arxiv_id": "2309.16595",
+      "doi": null,
+      "year": 2023,
+      "why": "built a post-cutoff arXiv dataset for this test"
+    },
+    {
+      "title": "Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs",
+      "arxiv_id": "2307.03393",
+      "doi": "10.1145/3655103.3655110",
+      "year": 2024,
+      "why": "raised test leakage on ogbn-arxiv"
+    }
+  ],
+  "provenance": "Claim and queries copied from the challenge run of the first opportunity report (work/challenge_leak.json), written before the known papers were found. Design elements, anchor and seeds were added later by an author who knew the answers; they are generic but not blind."
+}

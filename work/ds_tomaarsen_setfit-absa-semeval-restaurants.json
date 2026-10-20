@@ -1,0 +1,51 @@
+[
+  {
+    "source": "huggingface",
+    "id": "tomaarsen/setfit-absa-semeval-restaurants",
+    "url": "https://huggingface.co/datasets/tomaarsen/setfit-absa-semeval-restaurants",
+    "name": "tomaarsen/setfit-absa-semeval-restaurants",
+    "license": null,
+    "gated": false,
+    "private": false,
+    "disabled": false,
+    "downloads": 414,
+    "likes": 4,
+    "last_modified": "2023-11-16T10:37:20.000Z",
+    "tasks": [],
+    "languages": [],
+    "modalities": [
+      "text"
+    ],
+    "formats": [
+      "parquet"
+    ],
+    "size_category": "1K<n<10K",
+    "arxiv_ids": [],
+    "configs": [],
+    "ref": "tomaarsen/setfit-absa-semeval-restaurants",
+    "exists": true,
+    "missing": [
+      "license"
+    ],
+    "blockers": [],
+    "notes": [
+      "Licence is missing or 'other': read the dataset card before using or redistributing."
+    ],
+    "num_rows": 4827,
+    "download_bytes": 193352,
+    "in_memory_bytes": 632141,
+    "splits": [
+      {
+        "config": "default",
+        "split": "train",
+        "num_rows": 3693
+      },
+      {
+        "config": "default",
+        "split": "test",
+        "num_rows": 1134
+      }
+    ],
+    "storage_estimate": "about 188.8 KB to download, 617.3 KB in memory (dataset viewer figures)"
+  }
+]

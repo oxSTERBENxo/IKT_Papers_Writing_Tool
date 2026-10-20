@@ -1,0 +1,48 @@
+{
+  "paper": {
+    "title": "Replication package for: Severity is not exploitation: An explainable machine learning analysis of CVSS scores and known exploited vulnerabilities",
+    "authors": [
+      "Mohammed Abdullatif H. Aljaafari"
+    ],
+    "year": 2026,
+    "date": "2026-10-15",
+    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+    "doi": "10.5281/zenodo.23401129",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W7221892484",
+    "s2_id": null,
+    "url": "https://doi.org/10.5281/zenodo.23401129",
+    "pdf_url": "https://doi.org/10.5281/zenodo.23401129",
+    "abstract": "Code and data to reproduce all results in the article “Severity is not exploitation: An explainable machine learning analysis of CVSS scores and known exploited vulnerabilities”. The package uses public secondary data only: National Vulnerability Database records (CVEs published 2018–2023, via the fkie-cad/nvd-json-data-feeds mirror, commit f5aef06, 14 Oct 2026) and the CISA Known Exploited Vulnerabilities catalog (v2026.10.13). It includes Python code (run_all.py), pinned requirements, derived datasets, model outputs and figures. The package is split into two archives (partA: code, outputs, KEV and derived data; partB: parsed NVD data); extract both into the same folder before running. This product uses data from the NVD API but is not endorsed or certified by the NVD.",
+    "citations": 0,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "software",
+    "sources": [
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {}
+  },
+  "notes": [
+    {
+      "source": "crossref",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    },
+    {
+      "source": "crossref",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "paper": {
+    "title": "Less is More: Unseen Domain Fake News Detection via Causal Propagation Substructures",
+    "authors": [
+      "Shuzhi Gong",
+      "Richard O. Sinnott",
+      "Jianzhong Qi",
+      "Cecile Paris"
+    ],
+    "year": 2024,
+    "date": "2024-11-14",
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2411.09389",
+    "arxiv_id": "2411.09389",
+    "pmid": null,
+    "openalex_id": "W4404450781",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2411.09389",
+    "pdf_url": "https://arxiv.org/pdf/2411.09389v1",
+    "abstract": "The spread of fake news on social media poses significant threats to individuals and society. Text-based and graph-based models have been employed for fake news detection by analysing news content and propagation networks, showing promising results in specific scenarios. However, these data-driven models heavily rely on pre-existing in-distribution data for training, limiting their performance when confronted with fake news from emerging or previously unseen domains, known as out-of-distribution (OOD) data. Tackling OOD fake news is a challenging yet critical task. In this paper, we introduce the Causal Subgraph-oriented Domain Adaptive Fake News Detection (CSDA) model, designed to enhance zero-shot fake news detection by extracting causal substructures from propagation graphs using in-distribution data and generalising this approach to OOD data. The model employs a graph neural network based mask generation process to identify dominant nodes and edges within the propagation graph, using these substructures for fake news detection. Additionally, the performance of CSDA is further improved through contrastive learning in few-shot scenarios, where a limited amount of OOD data is available for training. Extensive experiments on public social media datasets demonstrate that CSDA effectively handles OOD fake news detection, achieving a 7 to 16 percents accuracy improvement over other state-of-the-art models.",
+    "citations": 0,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "9 pages, 2 figures, 5 tables",
+      "arxiv_category": "cs.SI",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

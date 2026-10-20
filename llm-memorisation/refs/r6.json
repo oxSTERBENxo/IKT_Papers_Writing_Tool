@@ -1,0 +1,47 @@
+{
+  "paper": {
+    "title": "Actions Speak Louder than Prompts: A Large-Scale Study of LLMs for Graph Inference",
+    "authors": [
+      "Ben Finkelshtein",
+      "Silviu Cucerzan",
+      "Sujay Kumar Jauhar",
+      "Ryen White"
+    ],
+    "year": 2025,
+    "date": "2025-09-23",
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv_id": "2509.18487",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2509.18487",
+    "pdf_url": "https://arxiv.org/pdf/2509.18487v2",
+    "abstract": "Large language models (LLMs) are increasingly used for text-rich graph machine learning tasks such as node classification in high-impact domains like fraud detection and recommendation systems. Yet, despite a surge of interest, the field lacks a principled understanding of the capabilities of LLMs in their interaction with graph data. In this work, we conduct a large-scale, controlled evaluation across several key axes of variability to systematically assess the strengths and weaknesses of LLM-based graph reasoning methods in text-based applications. The axes include the LLM-graph interaction mode, comparing prompting, tool-use, and code generation; dataset domains, spanning citation, web-link, e-commerce, and social networks; structural regimes contrasting homophilic and heterophilic graphs; feature characteristics involving both short- and long-text node attributes; and model configurations with varying LLM sizes and reasoning capabilities. We further analyze dependencies by methodically truncating features, deleting edges, and removing labels to quantify reliance on input types. Our findings provide practical and actionable guidance. (1) LLMs as code generators achieve the strongest overall performance on graph data, with especially large gains on long-text or high-degree graphs where prompting quickly exceeds the token budget. (2) All interaction strategies remain effective on heterophilic graphs, challenging the assumption that LLM-based methods collapse under low homophily. (3) Code generation is able to flexibly adapt its reliance between structure, features, or labels to leverage the most informative input type. Together, these findings provide a comprehensive view of the strengths and limitations of current LLM-graph interaction modes and highlight key design principles for future approaches.",
+    "citations": null,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_category": "cs.CL"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "quota exhausted (X-RateLimit-Reset=2118). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?",
+      "status": 429
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "resolved": true,
+  "paper": {
+    "title": "User Preference-aware Fake News Detection",
+    "authors": [
+      "Yingtong Dou",
+      "Kai Shu",
+      "Congyin Xia",
+      "Philip S. Yu",
+      "Li-Chao Sun"
+    ],
+    "year": 2021,
+    "date": "2021-07-11",
+    "venue": "Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "doi": "10.1145/3404835.3462990",
+    "arxiv_id": "2104.12259",
+    "pmid": null,
+    "openalex_id": "W3153567752",
+    "s2_id": "081a386a2a314b5bc2da6fd20ed3e7cafbcad76e",
+    "url": "https://www.semanticscholar.org/paper/081a386a2a314b5bc2da6fd20ed3e7cafbcad76e",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3404835.3462990",
+    "abstract": "Disinformation and fake news have posed detrimental effects on individuals and society in recent years, attracting broad attention to fake news detection. The majority of existing fake news detection algorithms focus on mining news content and/or the surrounding exogenous context for discovering deceptive signals; while the endogenous preference of a user when he/she decides to spread a piece of fake news or not is ignored. The confirmation bias theory has indicated that a user is more likely to spread a piece of fake news when it confirms his/her existing beliefs/preferences. Users' historical, social engagements such as posts provide rich information about users' preferences toward news and have great potential to advance fake news detection. However, the work on exploring user preference for fake news detection is somewhat limited. Therefore, in this paper, we study the novel problem of exploiting user preference for fake news detection. We propose a new framework, UPFD, which simultaneously captures various signals from user preferences by joint content and graph modeling. Experimental results on real-world datasets demonstrate the effectiveness of the proposed framework. We release our code and data as a benchmark for GNN-based fake news detection: https://github.com/safe-graph/GNN-FakeNews.",
+    "citations": 360,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "abstract_source": "arxiv",
+      "arxiv_comment": "Accepted by SIGIR'21. Code is available at https://github.com/safe-graph/GNN-FakeNews",
+      "arxiv_category": "cs.SI"
+    }
+  },
+  "resolution_notes": [],
+  "executed": false,
+  "disclaimer": "Automated pre-assessment only. No code was executed and no result was reproduced. 'found' means a file or phrase is present, not that it is complete or correct; 'not_found' means the automated check did not find it, not that it does not exist.",
+  "checklist": {
+    "full_text": {
+      "label": "Full paper publicly available",
+      "status": "verified",
+      "evidence": [
+        "https://arxiv.org/abs/2104.12259"
+      ],
+      "note": null
+    },
+    "code": {
+      "label": "Implementation available",
+      "status": "found",
+      "evidence": [
+        "https://github.com/safe-graph/GNN-FakeNews"
+      ],
+      "note": "linked from the paper's own metadata (likely official)"
+    },
+    "license": {
+      "label": "Code licence",
+      "status": "verified",
+      "evidence": [
+        "SPDX: Apache-2.0"
+      ],
+      "note": null
+    },
+    "dependencies": {
+      "label": "Dependencies / environment specified",
+      "status": "found",
+      "evidence": [
+        "file: requirements.txt",
+        "README: \"...clone https://github.com/safe-graph/GNN-FakeNews.git cd GNN-FakeNews pip install -r requirements.txt ``` ## Datasets If you have installed the lates...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "data_instructions": {
+      "label": "Dataset access and preprocessing instructions",
+      "status": "found",
+      "evidence": [
+        "README: \"...d the UPFD dataset. If you install the project manually, you need to download the dataset (1.2GB) via the links below and unzip the corresponding data unde...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "configs": {
+      "label": "Training configuration and hyperparameters",
+      "status": "found",
+      "evidence": [
+        "README: \"...t. ## How to Contribute You are welcomed to submit your model code, hyper-parameters, and results to this repo via create a pull request. After verifying...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "training": {
+      "label": "Training entry point",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "seeds": {
+      "label": "Random seeds / determinism controls",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "hardware": {
+      "label": "Hardware requirements stated",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "evaluation": {
+      "label": "Evaluation script or protocol",
+      "status": "found",
+      "evidence": [
+        "file: utils/eval_helper.py",
+        "README: \"...s detection models. All [GNN models](#user-guide) are implemented and evaluated under the User Preference-aware Fake News Detection ([UPFD](https://...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "pretrained": {
+      "label": "Pretrained weights or checkpoints",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "reported_results": {
+      "label": "Published results to compare against",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "architecture": {
+      "label": "Model architecture fully specified",
+      "status": "manual_review",
+      "evidence": [],
+      "note": "Not determinable from metadata; read the paper's method and experiment sections."
+    },
+    "maintenance": {
+      "label": "Repository maintenance",
+      "status": "verified",
+      "evidence": [
+        "last push 2025-12-11",
+        "archived: False",
+        "open issues: 4",
+        "issues mentioning reproduction: 2"
+      ],
+      "note": null
+    },
+    "prior_reproductions": {
+      "label": "Existing reproduction attempts",
+      "status": "unavailable",
+      "evidence": [],
+      "note": "OpenAlex lookup failed; see errors."
+    }
+  },
+  "code_candidates": [
+    {
+      "repo": "safe-graph/GNN-FakeNews",
+      "url": "https://github.com/safe-graph/GNN-FakeNews",
+      "relationship": "linked_by_paper",
+      "checks": {
+        "license": {
+          "status": "verified",
+          "evidence": [
+            "SPDX: Apache-2.0"
+          ],
+          "note": null
+        },
+        "dependencies": {
+          "status": "found",
+          "evidence": [
+            "file: requirements.txt",
+            "README: \"...clone https://github.com/safe-graph/GNN-FakeNews.git cd GNN-FakeNews pip install -r requirements.txt ``` ## Datasets If you have installed the lates...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "data_instructions": {
+          "status": "found",
+          "evidence": [
+            "README: \"...d the UPFD dataset. If you install the project manually, you need to download the dataset (1.2GB) via the links below and unzip the corresponding data unde...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "configs": {
+          "status": "found",
+          "evidence": [
+            "README: \"...t. ## How to Contribute You are welcomed to submit your model code, hyper-parameters, and results to this repo via create a pull request. After verifying...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "training": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "seeds": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "hardware": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "evaluation": {
+          "status": "found",
+          "evidence": [
+            "file: utils/eval_helper.py",
+            "README: \"...s detection models. All [GNN models](#user-guide) are implemented and evaluated under the User Preference-aware Fake News Detection ([UPFD](https://...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "pretrained": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "reported_results": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "maintenance": {
+          "status": "verified",
+          "evidence": [
+            "last push 2025-12-11",
+            "archived: False",
+            "open issues: 4",
+            "issues mentioning reproduction: 2"
+          ],
+          "note": null
+        }
+      },
+      "errors": [],
+      "exists": true,
+      "stars": 556,
+      "forks": 108,
+      "open_issues": 4,
+      "archived": false,
+      "pushed_at": "2025-12-11T00:33:51Z",
+      "created_at": "2021-03-03T10:01:06Z",
+      "license": "Apache-2.0",
+      "language": "Python",
+      "description": "A collection of GNN-based fake news detection models.",
+      "is_fork": false,
+      "n_files": 21,
+      "tree_truncated": false,
+      "readme_chars": 9545,
+      "reproduction_issue_count": 2
+    }
+  ],
+  "huggingface_linked": {
+    "datasets": [],
+    "models": [],
+    "note": "Repos tagged with this arXiv ID. They cite the paper; they are not necessarily the data or weights it used."
+  },
+  "prior_reproduction_candidates": [],
+  "potential_blockers": [],
+  "missing": [
+    "Training entry point",
+    "Random seeds / determinism controls",
+    "Hardware requirements stated",
+    "Pretrained weights or checkpoints",
+    "Published results to compare against",
+    "Model architecture fully specified"
+  ],
+  "errors": [
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429,
+      "step": "prior_reproductions"
+    }
+  ]
+}

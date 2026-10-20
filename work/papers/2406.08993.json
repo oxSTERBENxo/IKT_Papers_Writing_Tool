@@ -1,0 +1,38 @@
+{
+  "paper": {
+    "title": "Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification",
+    "authors": [
+      "Yuankai Luo",
+      "Lei Shi",
+      "Xiao-Ming Wu"
+    ],
+    "year": 2024,
+    "date": "2024",
+    "venue": "Advances in Neural Information Processing Systems 37",
+    "doi": "10.52202/079017-3098",
+    "arxiv_id": "2406.08993",
+    "pmid": null,
+    "openalex_id": "W4415796266",
+    "s2_id": "ddfc1bc4b69dc6de3d4aab10593825875135e029",
+    "url": "https://arxiv.org/abs/2406.08993",
+    "pdf_url": "https://arxiv.org/pdf/2406.08993v2",
+    "abstract": "Graph Transformers (GTs) have recently emerged as popular alternatives to traditional message-passing Graph Neural Networks (GNNs), due to their theoretically superior expressiveness and impressive performance reported on standard node classification benchmarks, often significantly outperforming GNNs. In this paper, we conduct a thorough empirical analysis to reevaluate the performance of three classic GNN models (GCN, GAT, and GraphSAGE) against GTs. Our findings suggest that the previously reported superiority of GTs may have been overstated due to suboptimal hyperparameter configurations in GNNs. Remarkably, with slight hyperparameter tuning, these classic GNN models achieve state-of-the-art performance, matching or even exceeding that of recent GTs across 17 out of the 18 diverse datasets examined. Additionally, we conduct detailed ablation studies to investigate the influence of various GNN configurations, such as normalization, dropout, residual connections, and network depth, on node classification performance. Our study aims to promote a higher standard of empirical rigor in the field of graph machine learning, encouraging more accurate comparisons and evaluations of model capabilities.",
+    "citations": 142,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "NeurIPS 2024",
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": []
+}

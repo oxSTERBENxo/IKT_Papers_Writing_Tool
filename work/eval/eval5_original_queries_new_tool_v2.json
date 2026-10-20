@@ -1,0 +1,3784 @@
+{
+  "claim": "No prior work tests whether user-engagement propagation graphs add predictive value over news-content-only classifiers on the UPFD benchmark under multi-seed evaluation",
+  "queries": [
+    "UPFD fake news graph neural network content-only baseline",
+    "does propagation structure help fake news detection",
+    "propagation graph ablation fake news detection text-only baseline outperforms",
+    "rethinking evaluation fake news detection graph neural networks benchmark",
+    "user engagement graph necessary fake news detection GNN",
+    "FakeNewsNet propagation-based detection reproducibility",
+    "simple baseline fake news detection propagation graphs"
+  ],
+  "design_elements": [
+    "MLP baseline on the same node features",
+    "randomly rewired edges",
+    "shuffled node features",
+    "removing all edges from the propagation graph"
+  ],
+  "seeds": [
+    {
+      "seed": "2104.12259",
+      "resolved": true,
+      "title": "User Preference-aware Fake News Detection",
+      "openalex_id": "W3153567752"
+    }
+  ],
+  "sources_ok": [
+    "openalex",
+    "arxiv",
+    "semantic_scholar",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [],
+  "sources_status": {
+    "openalex": {
+      "calls": 28,
+      "ok_calls": 28,
+      "results": 4,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "arxiv": {
+      "calls": 28,
+      "ok_calls": 28,
+      "results": 4,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 2,
+      "ok_calls": 1,
+      "results": 15,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "partial"
+    },
+    "crossref": {
+      "calls": 28,
+      "ok_calls": 28,
+      "results": 418,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 28,
+      "ok_calls": 28,
+      "results": 420,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "query_diversity": {
+    "n_queries": 7,
+    "distinct_terms": 26,
+    "mean_pairwise_term_overlap": 0.269,
+    "near_paraphrases": false
+  },
+  "n_papers_examined": 426,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 15,
+  "n_without_abstract": 139,
+  "n_from_citation_expansion": 197,
+  "n_possible_same_design": 11,
+  "high_overlap_by_year": {},
+  "signal": "close_prior_work_found",
+  "max_supported_novelty_confidence": "low",
+  "ceiling_lowered_because": [],
+  "interpretation": "Prior work close to the idea exists; 11 paper(s) mention 2+ of the stated design elements, so the same experiment may have been run under different words. Read them in full. Revise the idea to differ in a stated, checkable way, or reframe it as a replication or extension.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+        "authors": [
+          "Xu, Kaiyuan"
+        ],
+        "year": 2025,
+        "date": "2025-12-10",
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2512.09974",
+        "arxiv_id": "2512.09974",
+        "pmid": null,
+        "openalex_id": "W4417293512",
+        "s2_id": null,
+        "url": "http://arxiv.org/abs/2512.09974",
+        "pdf_url": "https://arxiv.org/pdf/2512.09974",
+        "abstract": "In recent years, the proliferation of misinformation and fake news has posed serious threats to individuals and society, spurring intense research into automated detection methods. Previous work showed that integrating content, user preferences, and propagation structure achieves strong performance, but leaves all graph-level representation learning entirely to the GNN, hiding any explicit topological cues. To close this gap, we introduce a lightweight enhancement: for each node, we append two classical graph-theoretic metrics, degree centrality and local clustering coefficient, to its original BERT and profile embeddings, thus explicitly flagging the roles of hub and community. In the UPFD Politifact subset, this simple modification boosts macro F1 from 0.7753 to 0.8344 over the original baseline. Our study not only demonstrates the practical value of explicit topology features in fake-news detection but also provides an interpretable, easily reproducible template for fusing graph metrics in other information-diffusion tasks.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "preprint",
+        "sources": [
+          "arxiv",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "keyword",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "openalex",
+            "strategy": "recent",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "simple baseline fake news detection propagation graphs"
+          }
+        ],
+        "extra": {
+          "abstract_source": "arxiv",
+          "arxiv_category": "cs.SI",
+          "rank": {
+            "query_match": 1.0,
+            "title_match": 0.5,
+            "retrieval_hits": 2,
+            "score": 2.75
+          }
+        }
+      },
+      "term_overlap": 0.325,
+      "tfidf_similarity": 0.111,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features",
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Fake News Detection using Graph Neural Networks: A Hybrid Approach Utilizing Content and Propagation Patterns",
+        "authors": [
+          "G. Guruprasad",
+          "Matam Eranna Swamy",
+          "Nadagona Praveen Kumar Reddy",
+          "Nangar Abuzar Muzammil",
+          "Narra Ranjith Kumr",
+          "R. Nagesh"
+        ],
+        "year": 2026,
+        "date": "2026-06-10",
+        "venue": "International Journal of Scientific Research in Science Engineering and Technology",
+        "doi": "10.32628/ijsrset2613353",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "7b30cb14fb62e9842cd1cc2ddca48d4298420672",
+        "url": "https://www.semanticscholar.org/paper/7b30cb14fb62e9842cd1cc2ddca48d4298420672",
+        "pdf_url": "https://ijsrset.com/home/article/download/IJSRSET2613353/IJSRSET2613353",
+        "abstract": "The proliferation of misinformation on social media platforms poses a significant threat to public discourse and societal stability. Traditional approaches to fake news detection largely rely on natural language processing (NLP) techniques that analyze the textual content of news articles. However, these methods often fail to capture the complex propagation patterns and user interaction dynamics that characterize the spread of misinformation. This paper proposes a novel framework utilizing Graph Neural Networks (GNNs) to detect misleading news by integrating semantic content features with social graph topology. Specifically, the proposed model constructs a heterogeneous graph where nodes represent news articles and social media users, and edges represent interaction behaviors. We utilize BERT transformers for high-dimensional text embedding and employ Graph Convolutional Networks (GCN) to aggregate neighborhood information. Experimental results on the FakeNewsNet dataset demonstrate that the proposed method outperforms state-of-the-art baseline models that rely solely on text or static network features, achieving a significant improvement in detection accuracy.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.714,
+            "retrieval_hits": 1,
+            "score": 2.554
+          }
+        }
+      },
+      "term_overlap": 0.123,
+      "tfidf_similarity": 0.073,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features",
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "A comparative analysis of Graph Neural Networks and commonly used machine learning algorithms on fake news detection",
+        "authors": [
+          "F. Mahmud",
+          "Mahi Md. Sadek Rayhan",
+          "Mahdi Hasan Shuvo",
+          "I. Sadia",
+          "M. Morol"
+        ],
+        "year": 2022,
+        "date": "2022-03-01",
+        "venue": "2022 7th International Conference on Data Science and Machine Learning Applications (CDMA)",
+        "doi": "10.1109/cdma54072.2022.00021",
+        "arxiv_id": "2203.14132",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "61a4fb1b9a20550f389c48ec4099f2b266b72fdf",
+        "url": "https://www.semanticscholar.org/paper/61a4fb1b9a20550f389c48ec4099f2b266b72fdf",
+        "pdf_url": "https://arxiv.org/pdf/2203.14132",
+        "abstract": "Fake news on social media is increasingly regarded as one of the most concerning issues. Low cost, simple accessibility via social platforms, and a plethora of low-budget online news sources are some of the factors that contribute to the spread of false news. Most of the existing fake news detection algorithms are solely focused on the news content only but engaged users' prior posts or social activities provide a wealth of information about their views on news and have significant ability to improve fake news identification. Graph Neural Networks are a form of deep learning approach that conducts prediction on graph-described data. Social media platforms are followed graph structure in their representation, Graph Neural Network are special types of neural networks that could be usually applied to graphs, making it much easier to execute edge, node and graph-level prediction. Therefore, in this paper, we present a comparative analysis among some commonly used machine learning algorithms and Graph Neural Networks for detecting the spread of false news on social media platforms. In this study, we take the UPFD dataset and implement several existing machine learning algorithms on text data only. Besides this, we create different GNN layers for fusing graph-structured news propagation data and the text data as the node feature in our GNN models. GNNs provide the best solutions to the dilemma of identifying false news in our research.",
+        "citations": 19,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.889,
+            "title_match": 0.667,
+            "retrieval_hits": 1,
+            "score": 2.667
+          }
+        }
+      },
+      "term_overlap": 0.315,
+      "tfidf_similarity": 0.12,
+      "design_elements_matched": [
+        "shuffled node features",
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Improving Graph Convolutional Network with Learnable Edge Weights and Edge-Node Co-Embedding for Graph Anomaly Detection",
+        "authors": [
+          "Xaoyu Tan",
+          "Jianfeng Yang",
+          "Zhengang Zhao",
+          "Jinsheng Xiao",
+          "Chengwang Li"
+        ],
+        "year": 2024,
+        "date": "2024-04-18",
+        "venue": "Sensors",
+        "doi": "10.3390/s24082591",
+        "arxiv_id": null,
+        "pmid": "38676208",
+        "openalex_id": "W4394932151",
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/s24082591",
+        "pdf_url": "https://www.mdpi.com/1424-8220/24/8/2591/pdf?version=1713438941",
+        "abstract": "The era of Industry 4.0 is gradually transforming our society into a data-driven one, which can help us uncover valuable information from accumulated data, thereby improving the level of social governance. The detection of anomalies, is crucial for maintaining societal trust and fairness, yet it poses significant challenges due to the ubiquity of anomalies and the difficulty in identifying them accurately. This paper aims to enhance the performance of the current Graph Convolutional Network (GCN)-based Graph Anomaly Detection (GAD) algorithm on datasets with extremely low proportions of anomalous labels. This goal is achieved through modifying the GCN network structure and conducting feature extraction, thus fully utilizing three types of information in the graph: node label information, node feature information, and edge information. Firstly, we theoretically demonstrate the relationship between label propagation and feature convolution, indicating that the Label Propagation Algorithm (LPA) can serve as a regularization penalty term for GCN, aiding in training and enabling learnable edge weights, providing a basis for incorporating node label information into GCN networks. Secondly, we introduce a method to aggregate node and edge features, thereby incorporating edge information into GCN networks. Finally, we design different GCN trainable weights for node features and co-embedding features. This design allows different features to be projected into different spaces, greatly enhancing model expressiveness. Experimental results on the DGraph dataset demonstrate superior AUC performance compared to baseline models, highlighting the feasibility and efficacy of the proposed approach in addressing GAD tasks in the scene with extremely low proportions of anomalous data.",
+        "citations": 6,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.054,
+      "tfidf_similarity": 0.02,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features",
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Multiknowledge and LLM-Inspired Heterogeneous Graph Neural Network for Fake News Detection",
+        "authors": [
+          "Bingbing Xie",
+          "Xiao-Xia Ma",
+          "Shan Xue",
+          "A. Beheshti",
+          "Jian Yang",
+          "Hao Fan",
+          "Jia Wu"
+        ],
+        "year": 2025,
+        "date": "2025-04-01",
+        "venue": "IEEE Transactions on Computational Social Systems",
+        "doi": "10.1109/tcss.2024.3488191",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "873ad8eb49caae9a1476139c0d88311f9d9b76a6",
+        "url": "https://www.semanticscholar.org/paper/873ad8eb49caae9a1476139c0d88311f9d9b76a6",
+        "pdf_url": null,
+        "abstract": "The widespread diffusion of fake news has become a critical problem on dynamic social media worldwide, which requires effective strategies for fake news detection to alleviate its hazardous consequences for society. However, most recent efforts only focus on the features of news content and social context without realizing the benefits of large language models (LLMs) and multiple knowledge graphs (KGs), thus failing to improve detection capabilities further. To tackle this issue, we present a multiknowledge and LLM-inspired heterogeneous graph neural network for fake news detection (MiLk-FD), by combining KGs, LLMs, and graph neural networks (GNNs). Specifically, we first model news content as a heterogeneous graph (HG) containing news, entity, and topic nodes and then fuse the knowledge from three KGs to augment the factual basis of news articles. Meanwhile, we leverage TransE to initialize the knowledge features and employ LLaMa2-7B to obtain the initial feature vectors of news articles. After that, we utilize the devised HG transformer to learn news embeddings with specific feature distribution in high-dimensional spaces by aggregating neighborhood information according to metapaths. Finally, a classifier based on multilayer perceptron (MLP) is trained to predict each news article as fake or true. Through experiments, we demonstrate that our proposed framework surpasses ten baselines according to accuracy, precision, F1-score, recall, and ROC in four public real-world benchmarks (i.e., COVID-19, FakeNewsNet, PAN2020, Liar).",
+        "citations": 21,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.889,
+            "title_match": 0.667,
+            "retrieval_hits": 1,
+            "score": 2.67
+          }
+        }
+      },
+      "term_overlap": 0.21,
+      "tfidf_similarity": 0.067,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "HG-SL: Jointly Learning of Global and Local User Spreading Behavior for Fake News Early Detection",
+        "authors": [
+          "Ling Sun",
+          "Yuan Rao",
+          "Yuqian Lan",
+          "Bingcan Xia",
+          "Yangyang Li"
+        ],
+        "year": 2023,
+        "date": "2023-06-26",
+        "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "doi": "10.1609/aaai.v37i4.25655",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4382239831",
+        "s2_id": null,
+        "url": "https://doi.org/10.1609/aaai.v37i4.25655",
+        "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/25655/25427",
+        "abstract": "Recently, fake news forgery technology has become more and more sophisticated, and even the profiles of participants may be faked, which challenges the robustness and effectiveness of traditional detection methods involving text or user identity. Most propagation-only approaches mainly rely on neural networks to learn the diffusion pattern of individual news, which is insufficient to describe the differences in news spread ability, and also ignores the valuable global connections of news and users, limiting the performance of detection. Therefore, we propose a joint learning model named HG-SL, which is blind to news content and user identities, but capable of catching the differences between true and fake news in the early stages of propagation through global and local user spreading behavior. Specifically, we innovatively design a Hypergraph-based Global interaction learning module to capture the global preferences of users from their co-spreading relationships, and introduce node centrality encoding to complement user influence in hypergraph learning. Moreover, the designed Self-attention-based Local context learning module first introduce spread status to highlight the propagation ability of news and users, thus providing additional signals for verifying news authenticity. Experiments on real-world datasets indicate that our HG-SL, which solely relies on user behavior, outperforms SOTA baselines utilizing multidimensional features in both fake news detection and early detection task.",
+        "citations": 30,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: network content-only baseline"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation detection outperforms"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.144,
+      "tfidf_similarity": 0.06,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Heterogeneous Graph Neural Network via Knowledge Relations for Fake News Detection",
+        "authors": [
+          "Bingbing Xie",
+          "Xiao-Xia Ma",
+          "Jia Wu",
+          "Jian Yang",
+          "Shan Xue",
+          "Hao Fan"
+        ],
+        "year": 2023,
+        "date": "2023-07-10",
+        "venue": "International Conference on Statistical and Scientific Database Management",
+        "doi": "10.1145/3603719.3603736",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "89541b077ec458bccc47c0372d03a965740dcdcb",
+        "url": "https://www.semanticscholar.org/paper/89541b077ec458bccc47c0372d03a965740dcdcb",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3603719.3603736",
+        "abstract": "The proliferation of fake news in social media has been recognized as a severe problem for society, and substantial attempts have been devoted to fake news detection to alleviate the detrimental impacts. Knowledge graphs (KGs) comprise rich factual relations among real entities, which could be utilized as ground-truth databases and enhance fake news detection. However, most of the existing methods only leveraged natural language processing and graph mining techniques to extract features of fake news for detection and rarely explored the ground knowledge in knowledge graphs. In this work, we propose a novel Heterogeneous Graph Neural Network via Knowledge Relations for Fake News Detection (HGNNR4FD). The devised framework has four major components: 1) A heterogeneous graph (HG) built upon news content, including three types of nodes, i.e., news, entities, and topics, and their relations. 2) A KG that provides the factual basis for detecting fake news by generating embeddings via relations in the KG. 3) A novel attention-based heterogeneous graph neural network that can aggregate information from HG and KG, and 4) a fake news detector, which is capable of identifying fake news based on the news embeddings generated by HGNNR4FD. We further validate the performance of our method by comparison with seven state-of-art baselines and verify the effectiveness of the components through a thorough ablation analysis. From the results, we empirically demonstrate that our framework achieves superior results and yields improvement over the baselines regarding evaluation metrics of accuracy, precision, recall, and F1-score on four real-world datasets.",
+        "citations": 14,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.889,
+            "title_match": 0.667,
+            "retrieval_hits": 1,
+            "score": 2.658
+          }
+        }
+      },
+      "term_overlap": 0.147,
+      "tfidf_similarity": 0.049,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Inductive Representation Learning on Large Graphs",
+        "authors": [
+          "William L. Hamilton",
+          "Rex Ying",
+          "Jure Leskovec"
+        ],
+        "year": 2017,
+        "date": "2017-06-07",
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.1706.02216",
+        "arxiv_id": "1706.02216",
+        "pmid": null,
+        "openalex_id": "W2624431344",
+        "s2_id": "6b7d6e6416343b2a122f8416e69059ce919026ef",
+        "url": "http://arxiv.org/abs/1706.02216",
+        "pdf_url": "https://arxiv.org/pdf/1706.02216",
+        "abstract": "Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, from content recommendation to identifying protein functions. However, most existing approaches require that all nodes in the graph are present during training of the embeddings; these previous approaches are inherently transductive and do not naturally generalize to unseen nodes. Here we present GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data. Instead of training individual embeddings for each node, we learn a function that generates embeddings by sampling and aggregating features from a node's local neighborhood. Our algorithm outperforms strong baselines on three inductive node-classification benchmarks: we classify the category of unseen nodes in evolving information graphs based on citation and Reddit post data, and we show that our algorithm generalizes to completely unseen graphs using a multi-graph dataset of protein-protein interactions.",
+        "citations": 21608,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "preprint",
+        "sources": [
+          "openalex",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W3153567752"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.12259"
+          },
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2203.14132"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.13,
+      "tfidf_similarity": 0.044,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Structure Learning Via Meta-Hyperedge for Dynamic Rumor Detection",
+        "authors": [
+          "Xiangguo Sun",
+          "Hongzhi Yin",
+          "Bo Liu",
+          "Qing Meng",
+          "Jiuxin Cao",
+          "Alexander Zhou",
+          "Hongxu Chen"
+        ],
+        "year": 2022,
+        "date": "2022-11-11",
+        "venue": "IEEE Transactions on Knowledge and Data Engineering",
+        "doi": "10.1109/tkde.2022.3221438",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4313071591",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tkde.2022.3221438",
+        "pdf_url": null,
+        "abstract": "Online social networks have greatly facilitated our lives but have also propagated the spreading of rumours. Traditional works mostly find rumors from content, but content can be strategically manipulated to evade such detection, making these methods brittle. To improve the accuracy and robustness of rumor detection, we propose to integrate and exploit the content, propagation structure, and temporal relations because information in the networks always spreads dynamically with significant structures. In this paper, we propose a novel rumor detection framework in online temporal networks via structure learning. Specifically, to exploit the propagation structure, we propose a novel hyperedge walking strategy on a meta-hyperedge graph to learn the representations of sub-structures in the networks. Then a hyperedge expansion method is proposed to generate more global structural features. The expanded hyperedges are more hierarchical, making the learned structural embeddings more expressive. To make full use of content, we design a hypergraph learning model using hyperedge expansion to fuse node content with structural features and generate comprehensive representations for the entire graph. To exploit temporal relations, we design a masked temporal attention unit for learning the evolving patterns of the network. Extensive evaluations with six state-of-the-art baselines on two real-world datasets demonstrate the superiority of our solution.",
+        "citations": 43,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.124,
+      "tfidf_similarity": 0.047,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Unsupervised Fake News Detection: A Graph-based Approach",
+        "authors": [
+          "Siva Charan Reddy Gangireddy",
+          "D. P.",
+          "C. Long",
+          "Tanmoy Chakraborty"
+        ],
+        "year": 2020,
+        "date": "2020-05-28",
+        "venue": "ACM Conference on Hypertext & Social Media",
+        "doi": "10.1145/3372923.3404783",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "d482a85b80b48a3a3d70e024905f1d84e6b704c4",
+        "url": "https://www.semanticscholar.org/paper/d482a85b80b48a3a3d70e024905f1d84e6b704c4",
+        "pdf_url": "https://pureadmin.qub.ac.uk/ws/files/212663108/ht20_crc.pdf",
+        "abstract": "Fake news has become more prevalent than ever, correlating with the rise of social media that allows every user to rapidly publish their views or hearsay. Today, fake news spans almost every realm of human activity, across diverse fields such as politics and healthcare. Most existing methods for fake news detection leverage supervised learning methods and expect a large labelled corpus of articles and social media user engagement information, which are often hard, time-consuming and costly to procure. In this paper, we consider the task of unsupervised fake news detection, which considers fake news detection in the absence of labelled historical data. We develop GTUT, a graph-based approach for the task which operates in three phases. Starting off with identifying a seed set of fake and legitimate articles exploiting high-level observations on inter-user behavior in fake news propagation, it progressively expands the labelling to all articles in the dataset. Our technique draws upon graph-based methods such as biclique identification, graph-based feature vector learning and label spreading. Through an extensive empirical evaluation over multiple real-world datasets, we establish the improved effectiveness of our method over state-of-the-art techniques for the task.",
+        "citations": 77,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2203.14132"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.302,
+      "tfidf_similarity": 0.117,
+      "design_elements_matched": [
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Graph Contrastive Learning With Feature Augmentation for Rumor Detection",
+        "authors": [
+          "Shaohua Li",
+          "Weimin Li",
+          "Alex Munyole Luvembe",
+          "Weiqin Tong"
+        ],
+        "year": 2023,
+        "date": "2023-05-04",
+        "venue": "IEEE Transactions on Computational Social Systems",
+        "doi": "10.1109/tcss.2023.3269303",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4372037325",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tcss.2023.3269303",
+        "pdf_url": null,
+        "abstract": "While online social media brings convenience to people’s communication, it has also caused the widespread spread of rumors and brought great harm. Recent deep-learning approaches attempt to identify rumors by engaging in interactive user feedback. However, the performance of these models suffers from insufficient and noisy labeled data. In this article, we propose a novel rumor detection model called graph contrastive learning with feature augmentation (FAGCL), which injects noise into the feature space and learns contrastively by constructing asymmetric structures. FAGCL takes user preference and news embedding as the initial features of the rumor propagation tree and then adopts a graph attention network to update node representations. To obtain the graph-level representation for rumor classification, FAGCL fuses multiple pooling techniques. Moreover, FAGCL adopts graph contrastive learning as an auxiliary task to constrain the representation consistency. Contrastive learning on noisy data mines the supervision information of the rumor propagation tree itself, making the model more robust and effective. Results on two real-world datasets demonstrate that our proposed FAGCL model achieves significant improvements over the baseline models.",
+        "citations": 40,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.098,
+      "tfidf_similarity": 0.041,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "A Collective Intelligence Framework for Fake News Detection on Social Networks",
+        "authors": [
+          "Trung Van Nguyen",
+          "Hai Bang Truong"
+        ],
+        "year": 2026,
+        "date": "2026-08-12",
+        "venue": "Applied Sciences",
+        "doi": "10.3390/app16168023",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W7202247912",
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/app16168023",
+        "pdf_url": "https://doi.org/10.3390/app16168023",
+        "abstract": "The rapid diffusion of user-generated content on social networks has amplified the reach of fake news, creating an urgent need for detection methods that combine scalability with epistemic robustness. This paper proposes a Collective Intelligence (CI) framework for fake news detection that formalizes the crowd assessing a news item as an intelligent collective characterized by diversity, independence, decentralization, and aggregation. A directed weighted graph is used to represent the collective, where vertices denote users, edge weights encode reputation-derived influence, and each user contributes a veracity judgment together with a set of stance-bearing content and context features. We instantiate collective independence through a reputation-based influence measure adapted from prior work and integrate the resulting independence-aware weights into a two-stage aggregation pipeline: (i) a supervised classifier that produces machine-generated veracity scores from news content, and (ii) a consensus operator that fuses machine scores with independence-weighted crowd signals. The framework is evaluated on the GossipCop split of the FakeNewsNet corpus, treating the tweet propagation graph associated with each news item as the collective. Experimental results show that the CI-based model outperforms content-only and unweighted crowd baselines in accuracy, precision, recall, and F1-score, and that independence-aware aggregation contributes the largest incremental gain among the four CI principles. These findings support the view that treating social-media crowds as structured collectives, rather than as bags of independent votes, yields measurable robustness against coordinated misinformation.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: network content-only baseline"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation detection outperforms"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.298,
+      "tfidf_similarity": 0.083,
+      "design_elements_matched": [
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "A Comprehensive Survey on Graph Anomaly Detection With Deep Learning",
+        "authors": [
+          "Xiaoxiao Ma",
+          "Jia Xin Wu",
+          "Shan Xue",
+          "Jian Yu Yang",
+          "Chuan Zhou",
+          "Quan Z. Sheng",
+          "Hui Xiong",
+          "Leman Akoglu"
+        ],
+        "year": 2021,
+        "date": "2021-10-10",
+        "venue": "IEEE Transactions on Knowledge and Data Engineering",
+        "doi": "10.1109/tkde.2021.3118815",
+        "arxiv_id": "2106.07178",
+        "pmid": null,
+        "openalex_id": "W3171259348",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tkde.2021.3118815",
+        "pdf_url": "https://arxiv.org/pdf/2106.07178",
+        "abstract": "Anomalies are rare observations (e.g., data records or events) that deviate significantly from the others in the sample. Over the past few decades, research on anomaly mining has received increasing interests due to the implications of these occurrences in a wide range of disciplines - for instance, security, finance, and medicine. For this reason, anomaly detection, which aims to identify these rare observations, has become one of the most vital tasks in the world and has shown its power in preventing detrimental events, such as financial fraud, network intrusions, and social spam. The detection task is typically solved by identifying outlying data points in the feature space, which, inherently, overlooks the relational information in real-world data. At the same time, graphs have been prevalently used to represent the structural/relational information, which raises thegraph anomaly detection problem- identifying anomalous graph objects (i.e., nodes, edges and sub-graphs) in a single graph, or anomalous graphs in a set/database of graphs. Conventional anomaly detection techniques cannot tackle this problem well because of the complexity of graph data (e.g., irregular structures, relational dependencies, node/edge types/attributes/directions/multiplicities/weights, large scale, etc.). However, thanks to the advent of deep learning in breaking these limitations, graph anomaly detection with deep learning has received a growing attention recently. In this survey, we aim to provide a systematic and comprehensive review of the contemporary deep learning techniques for graph anomaly detection. Specifically, we provide a taxonomy that follows a task-driven strategy and categorizes existing work according to the anomalous graph objects that they can detect. We especially focus on the challenges in this research area and discuss the key intuitions, technical details as well as relative strengths and weaknesses of various techniques in each category. From the survey results, we highlight 12 future research directions spanning unsolved and emerging problems introduced by graph data, anomaly detection, deep learning and real-world applications. Additionally, to provide a wealth of useful resources for future studies, we have compiled a set of open-source implementations, public datasets, and commonly-used evaluation metrics. With this survey, our goal is to create a “one-stop-shop” that provides a unified understanding of the problem categories and existing approaches, publicly available hands-on resources, and high-impact open challenges for graph anomaly detection using deep learning.",
+        "citations": 843,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.067,
+      "tfidf_similarity": 0.02,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Unraveling Hidden Representations: A Multi-Modal Layer Analysis for Better Synthetic Content Forensics",
+        "authors": [
+          "Tom Or",
+          "Omri Azencot"
+        ],
+        "year": 2025,
+        "date": "2025-08-01",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2508.00784",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2508.00784",
+        "pdf_url": null,
+        "abstract": "Generative models achieve remarkable results in multiple data domains, including images and texts, among other examples. Unfortunately, malicious users exploit synthetic media for spreading misinformation and disseminating deepfakes. Consequently, the need for robust and stable fake detectors is pressing, especially when new generative models appear everyday. While the majority of existing work train classifiers that discriminate between real and fake information, such tools typically generalize only within the same family of generators and data modalities, yielding poor results on other generative classes and data domains. Towards a universal classifier, we propose the use of large pre-trained multi-modal models for the detection of generative content. Effectively, we show that the latent code of these models naturally captures information discriminating real from fake. Building on this observation, we demonstrate that linear classifiers trained on these features can achieve state-of-the-art results across various modalities, while remaining computationally efficient, fast to train, and effective even in few-shot settings. Our work primarily focuses on fake detection in audio and images, achieving performance that surpasses or matches that of strong baseline methods.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "does propagation structure help fake news detection"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "FakeNewsNet propagation-based detection reproducibility"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.111,
+            "retrieval_hits": 2,
+            "score": 1.361
+          }
+        }
+      },
+      "term_overlap": 0.203,
+      "tfidf_similarity": 0.09,
+      "design_elements_matched": [
+        "MLP baseline on the same node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "DECOR: Degree-Corrected Social Graph Refinement for Fake News Detection",
+        "authors": [
+          "Jiaying Wu",
+          "Bryan Hooi"
+        ],
+        "year": 2023,
+        "date": "2023-08-04",
+        "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+        "doi": "10.1145/3580305.3599298",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4383175621",
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/3580305.3599298",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3580305.3599298",
+        "abstract": "Recent efforts in fake news detection have witnessed a surge of interest in using graph neural networks (GNNs) to exploit rich social context. Existing studies generally leverage fixed graph structures, assuming that the graphs accurately represent the related social engagements. However, edge noise remains a critical challenge in real-world graphs, as training on suboptimal structures can severely limit the expressiveness of GNNs. Despite initial efforts in graph structure learning (GSL), prior works often leverage node features to update edge weights, resulting in heavy computational costs that hinder the methods' applicability to large-scale social graphs. In this work, we approach the fake news detection problem with a novel aspect of social graph refinement. We find that the degrees of news article nodes exhibit distinctive patterns, which are indicative of news veracity. Guided by this, we propose DECOR, a novel application of Degree-Corrected Stochastic Blockmodels to the fake news detection problem. Specifically, we encapsulate our empirical observations into a lightweight social graph refinement component that iteratively updates the edge weights via a learnable degree correction mask, which allows for joint optimization with a GNN-based detector. Extensive experiments on two real-world benchmarks validate the effectiveness and efficiency of DECOR1.",
+        "citations": 42,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.211,
+      "tfidf_similarity": 0.074,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Graph Attention Networks",
+        "authors": [
+          "Petar Velickovic",
+          "Guillem Cucurull",
+          "Arantxa Casanova",
+          "Adriana Romero",
+          "Pietro Lió",
+          "Yoshua Bengio"
+        ],
+        "year": 2017,
+        "date": "2017-10-30",
+        "venue": "International Conference on Learning Representations",
+        "doi": "10.17863/cam.48429",
+        "arxiv_id": "1710.10903",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "33998aff64ce51df8dee45989cdca4b6b1329ec4",
+        "url": "https://www.semanticscholar.org/paper/33998aff64ce51df8dee45989cdca4b6b1329ec4",
+        "pdf_url": null,
+        "abstract": "We present graph attention networks (GATs), novel neural network architectures that operate on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based on graph convolutions or their approximations. By stacking layers in which nodes are able to attend over their neighborhoods' features, we enable (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront. In this way, we address several key challenges of spectral-based graph neural networks simultaneously, and make our model readily applicable to inductive as well as transductive problems. Our GAT models have achieved or matched state-of-the-art results across four established transductive and inductive graph benchmarks: the Cora, Citeseer and Pubmed citation network datasets, as well as a protein-protein interaction dataset (wherein test graphs remain unseen during training).",
+        "citations": 28985,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2203.14132"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.2,
+      "tfidf_similarity": 0.074,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "LOSS-GAT: Label Propagation and One-Class Semi-Supervised Graph Attention Network for Fake News Detection",
+        "authors": [
+          "Batool Lakzaei",
+          "M. H. Chehreghani",
+          "Alireza Bagheri"
+        ],
+        "year": 2024,
+        "date": "2024-02-13",
+        "venue": "Applied Soft Computing",
+        "doi": "10.48550/arxiv.2402.08401",
+        "arxiv_id": "2402.08401",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "95f202c81c38809d0a486691213edde855c5b32d",
+        "url": "https://www.semanticscholar.org/paper/95f202c81c38809d0a486691213edde855c5b32d",
+        "pdf_url": null,
+        "abstract": "In the era of widespread social networks, the rapid dissemination of fake news has emerged as a significant threat, inflicting detrimental consequences across various dimensions of people's lives. Machine learning and deep learning approaches have been extensively employed for identifying fake news. However, a significant challenge in identifying fake news is the limited availability of labeled news datasets. Therefore, the One-Class Learning (OCL) approach, utilizing only a small set of labeled data from the interest class, can be a suitable approach to address this challenge. On the other hand, representing data as a graph enables access to diverse content and structural information, and label propagation methods on graphs can be effective in predicting node labels. In this paper, we adopt a graph-based model for data representation and introduce a semi-supervised and one-class approach for fake news detection, called LOSS-GAT. Initially, we employ a two-step label propagation algorithm, utilizing Graph Neural Networks (GNNs) as an initial classifier to categorize news into two groups: interest (fake) and non-interest (real). Subsequently, we enhance the graph structure using structural augmentation techniques. Ultimately, we predict the final labels for all unlabeled data using a GNN that induces randomness within the local neighborhood of nodes through the aggregation function. We evaluate our proposed method on five common datasets and compare the results against a set of baseline models, including both OCL and binary labeled models. The results demonstrate that LOSS-GAT achieves a notable improvement, surpassing 10%, with the advantage of utilizing only a limited set of labeled fake news. Noteworthy, LOSS-GAT even outperforms binary labeled models.",
+        "citations": 11,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.889,
+            "title_match": 0.714,
+            "retrieval_hits": 1,
+            "score": 2.698
+          }
+        }
+      },
+      "term_overlap": 0.199,
+      "tfidf_similarity": 0.071,
+      "design_elements_matched": [
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Noise-Filtering Enhanced Graph Transformer for Robust Fake News Detection",
+        "authors": [
+          "Junyou Zhu",
+          "Chao Gao",
+          "Ze Yin",
+          "Xianghua Li",
+          "Zhen Wang",
+          "Jürgen Kurths"
+        ],
+        "year": 2026,
+        "date": "2026-03-25",
+        "venue": "IEEE Transactions on Knowledge and Data Engineering",
+        "doi": "10.1109/tkde.2026.3677544",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W7140283986",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tkde.2026.3677544",
+        "pdf_url": null,
+        "abstract": "The rapid spread of fake news on social media has significantly increased the importance of computational detection methods. Graph-based approaches, particularly Graph Neural Networks (GNNs), have emerged as powerful tools for modeling news propagation patterns. Despite their potential, current GNN-based methods still face challenges in robustness and interpretability due to two key shortcomings: they inadequately filter out irrelevant user-induced noise within propagation graphs, and their shallow architectures fail to effectively capture the intricate long-range dependencies characteristic of news propagation. To overcome these limitations, we propose NEGT (Noise-filtering Enhanced Graph Transformer), a novel graph Transformer framework explicitly designed for fake news detection. NEGT introduces a noise-augmented information bottleneck strategy embedded within its self-attention mechanism, effectively identifying and removing task-irrelevant interactions. Additionally, we propose a novel relational propagation graph encoding a strategy that explicitly captures multi-scale user relationships and propagation depth, enabling NEGT to model long-sequence propagation dependencies accurately. Experiments on various benchmark datasets show that NEGT surpasses current methods in accuracy, noise robustness, and interpretability.",
+        "citations": 4,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.18,
+      "tfidf_similarity": 0.075,
+      "design_elements_matched": [
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "A hybrid contrastive graph neural network framework for fake news and hate speech detection using content and user interaction signals",
+        "authors": [
+          "V. Nivedita",
+          "A. Banu"
+        ],
+        "year": 2025,
+        "date": "2025-12-04",
+        "venue": "Scientific Reports",
+        "doi": "10.1038/s41598-025-30299-5",
+        "arxiv_id": null,
+        "pmid": "41345193",
+        "openalex_id": null,
+        "s2_id": "c88fe429054aee1cb9720db81cfb89ea4f89c466",
+        "url": "https://www.semanticscholar.org/paper/c88fe429054aee1cb9720db81cfb89ea4f89c466",
+        "pdf_url": "https://www.nature.com/articles/s41598-025-30299-5_reference.pdf",
+        "abstract": "Detecting fake discussions and aggressive speech on social platforms remains a complex task due to evolving user dynamics and the minimal overlap between normal and harmful content. Traditional detection methods lag in classifying these contents as they focus only on textual features or user behavior. This leads to limited performance specially in sparse interaction environments. To overcome these limitations a hybrid graph-based classification model is proposed in this research work which incorporates semantic, behavioral, and contextual data into a combined architecture. The proposed system models content and users as nodes, with interaction types such as replies, mentions, and shares to create a forming weighted edges based on temporal and behavioral factors. Also, a contrastive strategy is incorporated to differentiate the aligned and conflicting user-content associations. The textual representation in the comments is captured using a semantic encoder and the relational dependencies are modeled through graph attention layers which further enhanced with metadata like credibility scores and user activity. Experimental evaluations using the FakeNewsNet dataset confirm the proposed model superior performance through the attained 97.12% accuracy which is superior over conventional methods like GRU-MCAF (94.82%) and Attention-LSTM (93.57%). The proposed model also recorded the highest F1-score of 96.43%, precision of 96.72%, and recall of 96.15% which indicates the model consistent classification across labels over conventional methods.",
+        "citations": 1,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "user engagement graph necessary fake news detection GNN"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news graph neural network content-only baseline review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "user engagement graph necessary fake news detection GNN review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "user engagement graph necessary fake news detection GNN"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar",
+          "rank": {
+            "query_match": 0.778,
+            "title_match": 0.667,
+            "retrieval_hits": 7,
+            "score": 2.745
+          }
+        }
+      },
+      "term_overlap": 0.179,
+      "tfidf_similarity": 0.064,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Improving Recommender Systems for Fake News Detection in Social Networks with Knowledge Graphs and Graph Attention Networks",
+        "authors": [
+          "A.O. Golovin",
+          "Nataly Alexandrovna Zhukova",
+          "Radhakrishnan Delhibabu",
+          "Alexey Subbotin"
+        ],
+        "year": 2025,
+        "date": "2025-03-20",
+        "venue": "Mathematics",
+        "doi": "10.3390/math13061011",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4408659039",
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/math13061011",
+        "pdf_url": "https://doi.org/10.3390/math13061011",
+        "abstract": "This paper addresses the pervasive problem of fake news propagation in social networks. Traditional text-based detection models often suffer from performance degradation over time due to their reliance on evolving textual features. To overcome this limitation, we propose a novel recommender system that leverages the power of knowledge graphs and graph attention networks (GATs). This approach captures both the semantic relationships within the news content and the underlying social network structure, enabling more accurate and robust fake news detection. The GAT model, by assigning different weights to neighboring nodes, effectively captures the importance of various users in disseminating information. We conducted a comprehensive evaluation of our system using the FakeNewsNet dataset, comparing its performance against classical machine learning models and the DistilBERT language model. Our results demonstrate that the proposed graph-based system achieves state-of-the-art performance, with an F1-score of 95%, significantly outperforming other models. Moreover, it maintains its effectiveness over time, unlike text-based approaches that are susceptible to concept drift. This research underscores the potential of knowledge graphs and GATs in combating fake news and provides a robust framework for building more resilient and accurate detection systems.",
+        "citations": 8,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation detection outperforms"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.168,
+      "tfidf_similarity": 0.059,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    }
+  ],
+  "possible_same_design": [
+    {
+      "paper": {
+        "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+        "authors": [
+          "Xu, Kaiyuan"
+        ],
+        "year": 2025,
+        "date": "2025-12-10",
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.2512.09974",
+        "arxiv_id": "2512.09974",
+        "pmid": null,
+        "openalex_id": "W4417293512",
+        "s2_id": null,
+        "url": "http://arxiv.org/abs/2512.09974",
+        "pdf_url": "https://arxiv.org/pdf/2512.09974",
+        "abstract": "In recent years, the proliferation of misinformation and fake news has posed serious threats to individuals and society, spurring intense research into automated detection methods. Previous work showed that integrating content, user preferences, and propagation structure achieves strong performance, but leaves all graph-level representation learning entirely to the GNN, hiding any explicit topological cues. To close this gap, we introduce a lightweight enhancement: for each node, we append two classical graph-theoretic metrics, degree centrality and local clustering coefficient, to its original BERT and profile embeddings, thus explicitly flagging the roles of hub and community. In the UPFD Politifact subset, this simple modification boosts macro F1 from 0.7753 to 0.8344 over the original baseline. Our study not only demonstrates the practical value of explicit topology features in fake-news detection but also provides an interpretable, easily reproducible template for fusing graph metrics in other information-diffusion tasks.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "preprint",
+        "sources": [
+          "arxiv",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "keyword",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "openalex",
+            "strategy": "recent",
+            "query": "simple baseline fake news detection propagation graphs"
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "simple baseline fake news detection propagation graphs"
+          }
+        ],
+        "extra": {
+          "abstract_source": "arxiv",
+          "arxiv_category": "cs.SI",
+          "rank": {
+            "query_match": 1.0,
+            "title_match": 0.5,
+            "retrieval_hits": 2,
+            "score": 2.75
+          }
+        }
+      },
+      "term_overlap": 0.325,
+      "tfidf_similarity": 0.111,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features",
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Fake News Detection using Graph Neural Networks: A Hybrid Approach Utilizing Content and Propagation Patterns",
+        "authors": [
+          "G. Guruprasad",
+          "Matam Eranna Swamy",
+          "Nadagona Praveen Kumar Reddy",
+          "Nangar Abuzar Muzammil",
+          "Narra Ranjith Kumr",
+          "R. Nagesh"
+        ],
+        "year": 2026,
+        "date": "2026-06-10",
+        "venue": "International Journal of Scientific Research in Science Engineering and Technology",
+        "doi": "10.32628/ijsrset2613353",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "7b30cb14fb62e9842cd1cc2ddca48d4298420672",
+        "url": "https://www.semanticscholar.org/paper/7b30cb14fb62e9842cd1cc2ddca48d4298420672",
+        "pdf_url": "https://ijsrset.com/home/article/download/IJSRSET2613353/IJSRSET2613353",
+        "abstract": "The proliferation of misinformation on social media platforms poses a significant threat to public discourse and societal stability. Traditional approaches to fake news detection largely rely on natural language processing (NLP) techniques that analyze the textual content of news articles. However, these methods often fail to capture the complex propagation patterns and user interaction dynamics that characterize the spread of misinformation. This paper proposes a novel framework utilizing Graph Neural Networks (GNNs) to detect misleading news by integrating semantic content features with social graph topology. Specifically, the proposed model constructs a heterogeneous graph where nodes represent news articles and social media users, and edges represent interaction behaviors. We utilize BERT transformers for high-dimensional text embedding and employ Graph Convolutional Networks (GCN) to aggregate neighborhood information. Experimental results on the FakeNewsNet dataset demonstrate that the proposed method outperforms state-of-the-art baseline models that rely solely on text or static network features, achieving a significant improvement in detection accuracy.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.857,
+            "title_match": 0.714,
+            "retrieval_hits": 1,
+            "score": 2.554
+          }
+        }
+      },
+      "term_overlap": 0.123,
+      "tfidf_similarity": 0.073,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features",
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "A comparative analysis of Graph Neural Networks and commonly used machine learning algorithms on fake news detection",
+        "authors": [
+          "F. Mahmud",
+          "Mahi Md. Sadek Rayhan",
+          "Mahdi Hasan Shuvo",
+          "I. Sadia",
+          "M. Morol"
+        ],
+        "year": 2022,
+        "date": "2022-03-01",
+        "venue": "2022 7th International Conference on Data Science and Machine Learning Applications (CDMA)",
+        "doi": "10.1109/cdma54072.2022.00021",
+        "arxiv_id": "2203.14132",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "61a4fb1b9a20550f389c48ec4099f2b266b72fdf",
+        "url": "https://www.semanticscholar.org/paper/61a4fb1b9a20550f389c48ec4099f2b266b72fdf",
+        "pdf_url": "https://arxiv.org/pdf/2203.14132",
+        "abstract": "Fake news on social media is increasingly regarded as one of the most concerning issues. Low cost, simple accessibility via social platforms, and a plethora of low-budget online news sources are some of the factors that contribute to the spread of false news. Most of the existing fake news detection algorithms are solely focused on the news content only but engaged users' prior posts or social activities provide a wealth of information about their views on news and have significant ability to improve fake news identification. Graph Neural Networks are a form of deep learning approach that conducts prediction on graph-described data. Social media platforms are followed graph structure in their representation, Graph Neural Network are special types of neural networks that could be usually applied to graphs, making it much easier to execute edge, node and graph-level prediction. Therefore, in this paper, we present a comparative analysis among some commonly used machine learning algorithms and Graph Neural Networks for detecting the spread of false news on social media platforms. In this study, we take the UPFD dataset and implement several existing machine learning algorithms on text data only. Besides this, we create different GNN layers for fusing graph-structured news propagation data and the text data as the node feature in our GNN models. GNNs provide the best solutions to the dilemma of identifying false news in our research.",
+        "citations": 19,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.889,
+            "title_match": 0.667,
+            "retrieval_hits": 1,
+            "score": 2.667
+          }
+        }
+      },
+      "term_overlap": 0.315,
+      "tfidf_similarity": 0.12,
+      "design_elements_matched": [
+        "shuffled node features",
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Improving Graph Convolutional Network with Learnable Edge Weights and Edge-Node Co-Embedding for Graph Anomaly Detection",
+        "authors": [
+          "Xaoyu Tan",
+          "Jianfeng Yang",
+          "Zhengang Zhao",
+          "Jinsheng Xiao",
+          "Chengwang Li"
+        ],
+        "year": 2024,
+        "date": "2024-04-18",
+        "venue": "Sensors",
+        "doi": "10.3390/s24082591",
+        "arxiv_id": null,
+        "pmid": "38676208",
+        "openalex_id": "W4394932151",
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/s24082591",
+        "pdf_url": "https://www.mdpi.com/1424-8220/24/8/2591/pdf?version=1713438941",
+        "abstract": "The era of Industry 4.0 is gradually transforming our society into a data-driven one, which can help us uncover valuable information from accumulated data, thereby improving the level of social governance. The detection of anomalies, is crucial for maintaining societal trust and fairness, yet it poses significant challenges due to the ubiquity of anomalies and the difficulty in identifying them accurately. This paper aims to enhance the performance of the current Graph Convolutional Network (GCN)-based Graph Anomaly Detection (GAD) algorithm on datasets with extremely low proportions of anomalous labels. This goal is achieved through modifying the GCN network structure and conducting feature extraction, thus fully utilizing three types of information in the graph: node label information, node feature information, and edge information. Firstly, we theoretically demonstrate the relationship between label propagation and feature convolution, indicating that the Label Propagation Algorithm (LPA) can serve as a regularization penalty term for GCN, aiding in training and enabling learnable edge weights, providing a basis for incorporating node label information into GCN networks. Secondly, we introduce a method to aggregate node and edge features, thereby incorporating edge information into GCN networks. Finally, we design different GCN trainable weights for node features and co-embedding features. This design allows different features to be projected into different spaces, greatly enhancing model expressiveness. Experimental results on the DGraph dataset demonstrate superior AUC performance compared to baseline models, highlighting the feasibility and efficacy of the proposed approach in addressing GAD tasks in the scene with extremely low proportions of anomalous data.",
+        "citations": 6,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.054,
+      "tfidf_similarity": 0.02,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features",
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Multiknowledge and LLM-Inspired Heterogeneous Graph Neural Network for Fake News Detection",
+        "authors": [
+          "Bingbing Xie",
+          "Xiao-Xia Ma",
+          "Shan Xue",
+          "A. Beheshti",
+          "Jian Yang",
+          "Hao Fan",
+          "Jia Wu"
+        ],
+        "year": 2025,
+        "date": "2025-04-01",
+        "venue": "IEEE Transactions on Computational Social Systems",
+        "doi": "10.1109/tcss.2024.3488191",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "873ad8eb49caae9a1476139c0d88311f9d9b76a6",
+        "url": "https://www.semanticscholar.org/paper/873ad8eb49caae9a1476139c0d88311f9d9b76a6",
+        "pdf_url": null,
+        "abstract": "The widespread diffusion of fake news has become a critical problem on dynamic social media worldwide, which requires effective strategies for fake news detection to alleviate its hazardous consequences for society. However, most recent efforts only focus on the features of news content and social context without realizing the benefits of large language models (LLMs) and multiple knowledge graphs (KGs), thus failing to improve detection capabilities further. To tackle this issue, we present a multiknowledge and LLM-inspired heterogeneous graph neural network for fake news detection (MiLk-FD), by combining KGs, LLMs, and graph neural networks (GNNs). Specifically, we first model news content as a heterogeneous graph (HG) containing news, entity, and topic nodes and then fuse the knowledge from three KGs to augment the factual basis of news articles. Meanwhile, we leverage TransE to initialize the knowledge features and employ LLaMa2-7B to obtain the initial feature vectors of news articles. After that, we utilize the devised HG transformer to learn news embeddings with specific feature distribution in high-dimensional spaces by aggregating neighborhood information according to metapaths. Finally, a classifier based on multilayer perceptron (MLP) is trained to predict each news article as fake or true. Through experiments, we demonstrate that our proposed framework surpasses ten baselines according to accuracy, precision, F1-score, recall, and ROC in four public real-world benchmarks (i.e., COVID-19, FakeNewsNet, PAN2020, Liar).",
+        "citations": 21,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.889,
+            "title_match": 0.667,
+            "retrieval_hits": 1,
+            "score": 2.67
+          }
+        }
+      },
+      "term_overlap": 0.21,
+      "tfidf_similarity": 0.067,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "HG-SL: Jointly Learning of Global and Local User Spreading Behavior for Fake News Early Detection",
+        "authors": [
+          "Ling Sun",
+          "Yuan Rao",
+          "Yuqian Lan",
+          "Bingcan Xia",
+          "Yangyang Li"
+        ],
+        "year": 2023,
+        "date": "2023-06-26",
+        "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "doi": "10.1609/aaai.v37i4.25655",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4382239831",
+        "s2_id": null,
+        "url": "https://doi.org/10.1609/aaai.v37i4.25655",
+        "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/25655/25427",
+        "abstract": "Recently, fake news forgery technology has become more and more sophisticated, and even the profiles of participants may be faked, which challenges the robustness and effectiveness of traditional detection methods involving text or user identity. Most propagation-only approaches mainly rely on neural networks to learn the diffusion pattern of individual news, which is insufficient to describe the differences in news spread ability, and also ignores the valuable global connections of news and users, limiting the performance of detection. Therefore, we propose a joint learning model named HG-SL, which is blind to news content and user identities, but capable of catching the differences between true and fake news in the early stages of propagation through global and local user spreading behavior. Specifically, we innovatively design a Hypergraph-based Global interaction learning module to capture the global preferences of users from their co-spreading relationships, and introduce node centrality encoding to complement user influence in hypergraph learning. Moreover, the designed Self-attention-based Local context learning module first introduce spread status to highlight the propagation ability of news and users, thus providing additional signals for verifying news authenticity. Experiments on real-world datasets indicate that our HG-SL, which solely relies on user behavior, outperforms SOTA baselines utilizing multidimensional features in both fake news detection and early detection task.",
+        "citations": 30,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: network content-only baseline"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation detection outperforms"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.144,
+      "tfidf_similarity": 0.06,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Heterogeneous Graph Neural Network via Knowledge Relations for Fake News Detection",
+        "authors": [
+          "Bingbing Xie",
+          "Xiao-Xia Ma",
+          "Jia Wu",
+          "Jian Yang",
+          "Shan Xue",
+          "Hao Fan"
+        ],
+        "year": 2023,
+        "date": "2023-07-10",
+        "venue": "International Conference on Statistical and Scientific Database Management",
+        "doi": "10.1145/3603719.3603736",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "89541b077ec458bccc47c0372d03a965740dcdcb",
+        "url": "https://www.semanticscholar.org/paper/89541b077ec458bccc47c0372d03a965740dcdcb",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3603719.3603736",
+        "abstract": "The proliferation of fake news in social media has been recognized as a severe problem for society, and substantial attempts have been devoted to fake news detection to alleviate the detrimental impacts. Knowledge graphs (KGs) comprise rich factual relations among real entities, which could be utilized as ground-truth databases and enhance fake news detection. However, most of the existing methods only leveraged natural language processing and graph mining techniques to extract features of fake news for detection and rarely explored the ground knowledge in knowledge graphs. In this work, we propose a novel Heterogeneous Graph Neural Network via Knowledge Relations for Fake News Detection (HGNNR4FD). The devised framework has four major components: 1) A heterogeneous graph (HG) built upon news content, including three types of nodes, i.e., news, entities, and topics, and their relations. 2) A KG that provides the factual basis for detecting fake news by generating embeddings via relations in the KG. 3) A novel attention-based heterogeneous graph neural network that can aggregate information from HG and KG, and 4) a fake news detector, which is capable of identifying fake news based on the news embeddings generated by HGNNR4FD. We further validate the performance of our method by comparison with seven state-of-art baselines and verify the effectiveness of the components through a thorough ablation analysis. From the results, we empirically demonstrate that our framework achieves superior results and yields improvement over the baselines regarding evaluation metrics of accuracy, precision, recall, and F1-score on four real-world datasets.",
+        "citations": 14,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "keyword",
+            "query": "UPFD fake news graph neural network content-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.889,
+            "title_match": 0.667,
+            "retrieval_hits": 1,
+            "score": 2.658
+          }
+        }
+      },
+      "term_overlap": 0.147,
+      "tfidf_similarity": 0.049,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Inductive Representation Learning on Large Graphs",
+        "authors": [
+          "William L. Hamilton",
+          "Rex Ying",
+          "Jure Leskovec"
+        ],
+        "year": 2017,
+        "date": "2017-06-07",
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.1706.02216",
+        "arxiv_id": "1706.02216",
+        "pmid": null,
+        "openalex_id": "W2624431344",
+        "s2_id": "6b7d6e6416343b2a122f8416e69059ce919026ef",
+        "url": "http://arxiv.org/abs/1706.02216",
+        "pdf_url": "https://arxiv.org/pdf/1706.02216",
+        "abstract": "Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, from content recommendation to identifying protein functions. However, most existing approaches require that all nodes in the graph are present during training of the embeddings; these previous approaches are inherently transductive and do not naturally generalize to unseen nodes. Here we present GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data. Instead of training individual embeddings for each node, we learn a function that generates embeddings by sampling and aggregating features from a node's local neighborhood. Our algorithm outperforms strong baselines on three inductive node-classification benchmarks: we classify the category of unseen nodes in evolving information graphs based on citation and Reddit post data, and we show that our algorithm generalizes to completely unseen graphs using a multi-graph dataset of protein-protein interactions.",
+        "citations": 21608,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "preprint",
+        "sources": [
+          "openalex",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W3153567752"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.12259"
+          },
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2203.14132"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.13,
+      "tfidf_similarity": 0.044,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Structure Learning Via Meta-Hyperedge for Dynamic Rumor Detection",
+        "authors": [
+          "Xiangguo Sun",
+          "Hongzhi Yin",
+          "Bo Liu",
+          "Qing Meng",
+          "Jiuxin Cao",
+          "Alexander Zhou",
+          "Hongxu Chen"
+        ],
+        "year": 2022,
+        "date": "2022-11-11",
+        "venue": "IEEE Transactions on Knowledge and Data Engineering",
+        "doi": "10.1109/tkde.2022.3221438",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4313071591",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tkde.2022.3221438",
+        "pdf_url": null,
+        "abstract": "Online social networks have greatly facilitated our lives but have also propagated the spreading of rumours. Traditional works mostly find rumors from content, but content can be strategically manipulated to evade such detection, making these methods brittle. To improve the accuracy and robustness of rumor detection, we propose to integrate and exploit the content, propagation structure, and temporal relations because information in the networks always spreads dynamically with significant structures. In this paper, we propose a novel rumor detection framework in online temporal networks via structure learning. Specifically, to exploit the propagation structure, we propose a novel hyperedge walking strategy on a meta-hyperedge graph to learn the representations of sub-structures in the networks. Then a hyperedge expansion method is proposed to generate more global structural features. The expanded hyperedges are more hierarchical, making the learned structural embeddings more expressive. To make full use of content, we design a hypergraph learning model using hyperedge expansion to fuse node content with structural features and generate comprehensive representations for the entire graph. To exploit temporal relations, we design a masked temporal attention unit for learning the evolving patterns of the network. Extensive evaluations with six state-of-the-art baselines on two real-world datasets demonstrate the superiority of our solution.",
+        "citations": 43,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.124,
+      "tfidf_similarity": 0.047,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Graph Contrastive Learning With Feature Augmentation for Rumor Detection",
+        "authors": [
+          "Shaohua Li",
+          "Weimin Li",
+          "Alex Munyole Luvembe",
+          "Weiqin Tong"
+        ],
+        "year": 2023,
+        "date": "2023-05-04",
+        "venue": "IEEE Transactions on Computational Social Systems",
+        "doi": "10.1109/tcss.2023.3269303",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4372037325",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tcss.2023.3269303",
+        "pdf_url": null,
+        "abstract": "While online social media brings convenience to people’s communication, it has also caused the widespread spread of rumors and brought great harm. Recent deep-learning approaches attempt to identify rumors by engaging in interactive user feedback. However, the performance of these models suffers from insufficient and noisy labeled data. In this article, we propose a novel rumor detection model called graph contrastive learning with feature augmentation (FAGCL), which injects noise into the feature space and learns contrastively by constructing asymmetric structures. FAGCL takes user preference and news embedding as the initial features of the rumor propagation tree and then adopts a graph attention network to update node representations. To obtain the graph-level representation for rumor classification, FAGCL fuses multiple pooling techniques. Moreover, FAGCL adopts graph contrastive learning as an auxiliary task to constrain the representation consistency. Contrastive learning on noisy data mines the supervision information of the rumor propagation tree itself, making the model more robust and effective. Results on two real-world datasets demonstrate that our proposed FAGCL model achieves significant improvements over the baseline models.",
+        "citations": 40,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.098,
+      "tfidf_similarity": 0.041,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "A Comprehensive Survey on Graph Anomaly Detection With Deep Learning",
+        "authors": [
+          "Xiaoxiao Ma",
+          "Jia Xin Wu",
+          "Shan Xue",
+          "Jian Yu Yang",
+          "Chuan Zhou",
+          "Quan Z. Sheng",
+          "Hui Xiong",
+          "Leman Akoglu"
+        ],
+        "year": 2021,
+        "date": "2021-10-10",
+        "venue": "IEEE Transactions on Knowledge and Data Engineering",
+        "doi": "10.1109/tkde.2021.3118815",
+        "arxiv_id": "2106.07178",
+        "pmid": null,
+        "openalex_id": "W3171259348",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tkde.2021.3118815",
+        "pdf_url": "https://arxiv.org/pdf/2106.07178",
+        "abstract": "Anomalies are rare observations (e.g., data records or events) that deviate significantly from the others in the sample. Over the past few decades, research on anomaly mining has received increasing interests due to the implications of these occurrences in a wide range of disciplines - for instance, security, finance, and medicine. For this reason, anomaly detection, which aims to identify these rare observations, has become one of the most vital tasks in the world and has shown its power in preventing detrimental events, such as financial fraud, network intrusions, and social spam. The detection task is typically solved by identifying outlying data points in the feature space, which, inherently, overlooks the relational information in real-world data. At the same time, graphs have been prevalently used to represent the structural/relational information, which raises thegraph anomaly detection problem- identifying anomalous graph objects (i.e., nodes, edges and sub-graphs) in a single graph, or anomalous graphs in a set/database of graphs. Conventional anomaly detection techniques cannot tackle this problem well because of the complexity of graph data (e.g., irregular structures, relational dependencies, node/edge types/attributes/directions/multiplicities/weights, large scale, etc.). However, thanks to the advent of deep learning in breaking these limitations, graph anomaly detection with deep learning has received a growing attention recently. In this survey, we aim to provide a systematic and comprehensive review of the contemporary deep learning techniques for graph anomaly detection. Specifically, we provide a taxonomy that follows a task-driven strategy and categorizes existing work according to the anomalous graph objects that they can detect. We especially focus on the challenges in this research area and discuss the key intuitions, technical details as well as relative strengths and weaknesses of various techniques in each category. From the survey results, we highlight 12 future research directions spanning unsolved and emerging problems introduced by graph data, anomaly detection, deep learning and real-world applications. Additionally, to provide a wealth of useful resources for future studies, we have compiled a set of open-source implementations, public datasets, and commonly-used evaluation metrics. With this survey, our goal is to create a “one-stop-shop” that provides a unified understanding of the problem categories and existing approaches, publicly available hands-on resources, and high-impact open challenges for graph anomaly detection using deep learning.",
+        "citations": 843,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.067,
+      "tfidf_similarity": 0.02,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    }
+  ],
+  "found_via_citations": [
+    {
+      "paper": {
+        "title": "Improving Graph Convolutional Network with Learnable Edge Weights and Edge-Node Co-Embedding for Graph Anomaly Detection",
+        "authors": [
+          "Xaoyu Tan",
+          "Jianfeng Yang",
+          "Zhengang Zhao",
+          "Jinsheng Xiao",
+          "Chengwang Li"
+        ],
+        "year": 2024,
+        "date": "2024-04-18",
+        "venue": "Sensors",
+        "doi": "10.3390/s24082591",
+        "arxiv_id": null,
+        "pmid": "38676208",
+        "openalex_id": "W4394932151",
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/s24082591",
+        "pdf_url": "https://www.mdpi.com/1424-8220/24/8/2591/pdf?version=1713438941",
+        "abstract": "The era of Industry 4.0 is gradually transforming our society into a data-driven one, which can help us uncover valuable information from accumulated data, thereby improving the level of social governance. The detection of anomalies, is crucial for maintaining societal trust and fairness, yet it poses significant challenges due to the ubiquity of anomalies and the difficulty in identifying them accurately. This paper aims to enhance the performance of the current Graph Convolutional Network (GCN)-based Graph Anomaly Detection (GAD) algorithm on datasets with extremely low proportions of anomalous labels. This goal is achieved through modifying the GCN network structure and conducting feature extraction, thus fully utilizing three types of information in the graph: node label information, node feature information, and edge information. Firstly, we theoretically demonstrate the relationship between label propagation and feature convolution, indicating that the Label Propagation Algorithm (LPA) can serve as a regularization penalty term for GCN, aiding in training and enabling learnable edge weights, providing a basis for incorporating node label information into GCN networks. Secondly, we introduce a method to aggregate node and edge features, thereby incorporating edge information into GCN networks. Finally, we design different GCN trainable weights for node features and co-embedding features. This design allows different features to be projected into different spaces, greatly enhancing model expressiveness. Experimental results on the DGraph dataset demonstrate superior AUC performance compared to baseline models, highlighting the feasibility and efficacy of the proposed approach in addressing GAD tasks in the scene with extremely low proportions of anomalous data.",
+        "citations": 6,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.054,
+      "tfidf_similarity": 0.02,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features",
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "HG-SL: Jointly Learning of Global and Local User Spreading Behavior for Fake News Early Detection",
+        "authors": [
+          "Ling Sun",
+          "Yuan Rao",
+          "Yuqian Lan",
+          "Bingcan Xia",
+          "Yangyang Li"
+        ],
+        "year": 2023,
+        "date": "2023-06-26",
+        "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "doi": "10.1609/aaai.v37i4.25655",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4382239831",
+        "s2_id": null,
+        "url": "https://doi.org/10.1609/aaai.v37i4.25655",
+        "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/25655/25427",
+        "abstract": "Recently, fake news forgery technology has become more and more sophisticated, and even the profiles of participants may be faked, which challenges the robustness and effectiveness of traditional detection methods involving text or user identity. Most propagation-only approaches mainly rely on neural networks to learn the diffusion pattern of individual news, which is insufficient to describe the differences in news spread ability, and also ignores the valuable global connections of news and users, limiting the performance of detection. Therefore, we propose a joint learning model named HG-SL, which is blind to news content and user identities, but capable of catching the differences between true and fake news in the early stages of propagation through global and local user spreading behavior. Specifically, we innovatively design a Hypergraph-based Global interaction learning module to capture the global preferences of users from their co-spreading relationships, and introduce node centrality encoding to complement user influence in hypergraph learning. Moreover, the designed Self-attention-based Local context learning module first introduce spread status to highlight the propagation ability of news and users, thus providing additional signals for verifying news authenticity. Experiments on real-world datasets indicate that our HG-SL, which solely relies on user behavior, outperforms SOTA baselines utilizing multidimensional features in both fake news detection and early detection task.",
+        "citations": 30,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: network content-only baseline"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation detection outperforms"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.144,
+      "tfidf_similarity": 0.06,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Inductive Representation Learning on Large Graphs",
+        "authors": [
+          "William L. Hamilton",
+          "Rex Ying",
+          "Jure Leskovec"
+        ],
+        "year": 2017,
+        "date": "2017-06-07",
+        "venue": "arXiv (Cornell University)",
+        "doi": "10.48550/arxiv.1706.02216",
+        "arxiv_id": "1706.02216",
+        "pmid": null,
+        "openalex_id": "W2624431344",
+        "s2_id": "6b7d6e6416343b2a122f8416e69059ce919026ef",
+        "url": "http://arxiv.org/abs/1706.02216",
+        "pdf_url": "https://arxiv.org/pdf/1706.02216",
+        "abstract": "Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, from content recommendation to identifying protein functions. However, most existing approaches require that all nodes in the graph are present during training of the embeddings; these previous approaches are inherently transductive and do not naturally generalize to unseen nodes. Here we present GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data. Instead of training individual embeddings for each node, we learn a function that generates embeddings by sampling and aggregating features from a node's local neighborhood. Our algorithm outperforms strong baselines on three inductive node-classification benchmarks: we classify the category of unseen nodes in evolving information graphs based on citation and Reddit post data, and we show that our algorithm generalizes to completely unseen graphs using a multi-graph dataset of protein-protein interactions.",
+        "citations": 21608,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "preprint",
+        "sources": [
+          "openalex",
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "references",
+            "query": "W3153567752"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_references",
+            "query": "2104.12259"
+          },
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2203.14132"
+          }
+        ],
+        "extra": {
+          "abstract_source": "semantic_scholar"
+        }
+      },
+      "term_overlap": 0.13,
+      "tfidf_similarity": 0.044,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Structure Learning Via Meta-Hyperedge for Dynamic Rumor Detection",
+        "authors": [
+          "Xiangguo Sun",
+          "Hongzhi Yin",
+          "Bo Liu",
+          "Qing Meng",
+          "Jiuxin Cao",
+          "Alexander Zhou",
+          "Hongxu Chen"
+        ],
+        "year": 2022,
+        "date": "2022-11-11",
+        "venue": "IEEE Transactions on Knowledge and Data Engineering",
+        "doi": "10.1109/tkde.2022.3221438",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4313071591",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tkde.2022.3221438",
+        "pdf_url": null,
+        "abstract": "Online social networks have greatly facilitated our lives but have also propagated the spreading of rumours. Traditional works mostly find rumors from content, but content can be strategically manipulated to evade such detection, making these methods brittle. To improve the accuracy and robustness of rumor detection, we propose to integrate and exploit the content, propagation structure, and temporal relations because information in the networks always spreads dynamically with significant structures. In this paper, we propose a novel rumor detection framework in online temporal networks via structure learning. Specifically, to exploit the propagation structure, we propose a novel hyperedge walking strategy on a meta-hyperedge graph to learn the representations of sub-structures in the networks. Then a hyperedge expansion method is proposed to generate more global structural features. The expanded hyperedges are more hierarchical, making the learned structural embeddings more expressive. To make full use of content, we design a hypergraph learning model using hyperedge expansion to fuse node content with structural features and generate comprehensive representations for the entire graph. To exploit temporal relations, we design a masked temporal attention unit for learning the evolving patterns of the network. Extensive evaluations with six state-of-the-art baselines on two real-world datasets demonstrate the superiority of our solution.",
+        "citations": 43,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.124,
+      "tfidf_similarity": 0.047,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Unsupervised Fake News Detection: A Graph-based Approach",
+        "authors": [
+          "Siva Charan Reddy Gangireddy",
+          "D. P.",
+          "C. Long",
+          "Tanmoy Chakraborty"
+        ],
+        "year": 2020,
+        "date": "2020-05-28",
+        "venue": "ACM Conference on Hypertext & Social Media",
+        "doi": "10.1145/3372923.3404783",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "d482a85b80b48a3a3d70e024905f1d84e6b704c4",
+        "url": "https://www.semanticscholar.org/paper/d482a85b80b48a3a3d70e024905f1d84e6b704c4",
+        "pdf_url": "https://pureadmin.qub.ac.uk/ws/files/212663108/ht20_crc.pdf",
+        "abstract": "Fake news has become more prevalent than ever, correlating with the rise of social media that allows every user to rapidly publish their views or hearsay. Today, fake news spans almost every realm of human activity, across diverse fields such as politics and healthcare. Most existing methods for fake news detection leverage supervised learning methods and expect a large labelled corpus of articles and social media user engagement information, which are often hard, time-consuming and costly to procure. In this paper, we consider the task of unsupervised fake news detection, which considers fake news detection in the absence of labelled historical data. We develop GTUT, a graph-based approach for the task which operates in three phases. Starting off with identifying a seed set of fake and legitimate articles exploiting high-level observations on inter-user behavior in fake news propagation, it progressively expands the labelling to all articles in the dataset. Our technique draws upon graph-based methods such as biclique identification, graph-based feature vector learning and label spreading. Through an extensive empirical evaluation over multiple real-world datasets, we establish the improved effectiveness of our method over state-of-the-art techniques for the task.",
+        "citations": 77,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2203.14132"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.302,
+      "tfidf_similarity": 0.117,
+      "design_elements_matched": [
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Graph Contrastive Learning With Feature Augmentation for Rumor Detection",
+        "authors": [
+          "Shaohua Li",
+          "Weimin Li",
+          "Alex Munyole Luvembe",
+          "Weiqin Tong"
+        ],
+        "year": 2023,
+        "date": "2023-05-04",
+        "venue": "IEEE Transactions on Computational Social Systems",
+        "doi": "10.1109/tcss.2023.3269303",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4372037325",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tcss.2023.3269303",
+        "pdf_url": null,
+        "abstract": "While online social media brings convenience to people’s communication, it has also caused the widespread spread of rumors and brought great harm. Recent deep-learning approaches attempt to identify rumors by engaging in interactive user feedback. However, the performance of these models suffers from insufficient and noisy labeled data. In this article, we propose a novel rumor detection model called graph contrastive learning with feature augmentation (FAGCL), which injects noise into the feature space and learns contrastively by constructing asymmetric structures. FAGCL takes user preference and news embedding as the initial features of the rumor propagation tree and then adopts a graph attention network to update node representations. To obtain the graph-level representation for rumor classification, FAGCL fuses multiple pooling techniques. Moreover, FAGCL adopts graph contrastive learning as an auxiliary task to constrain the representation consistency. Contrastive learning on noisy data mines the supervision information of the rumor propagation tree itself, making the model more robust and effective. Results on two real-world datasets demonstrate that our proposed FAGCL model achieves significant improvements over the baseline models.",
+        "citations": 40,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.098,
+      "tfidf_similarity": 0.041,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "A Collective Intelligence Framework for Fake News Detection on Social Networks",
+        "authors": [
+          "Trung Van Nguyen",
+          "Hai Bang Truong"
+        ],
+        "year": 2026,
+        "date": "2026-08-12",
+        "venue": "Applied Sciences",
+        "doi": "10.3390/app16168023",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W7202247912",
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/app16168023",
+        "pdf_url": "https://doi.org/10.3390/app16168023",
+        "abstract": "The rapid diffusion of user-generated content on social networks has amplified the reach of fake news, creating an urgent need for detection methods that combine scalability with epistemic robustness. This paper proposes a Collective Intelligence (CI) framework for fake news detection that formalizes the crowd assessing a news item as an intelligent collective characterized by diversity, independence, decentralization, and aggregation. A directed weighted graph is used to represent the collective, where vertices denote users, edge weights encode reputation-derived influence, and each user contributes a veracity judgment together with a set of stance-bearing content and context features. We instantiate collective independence through a reputation-based influence measure adapted from prior work and integrate the resulting independence-aware weights into a two-stage aggregation pipeline: (i) a supervised classifier that produces machine-generated veracity scores from news content, and (ii) a consensus operator that fuses machine scores with independence-weighted crowd signals. The framework is evaluated on the GossipCop split of the FakeNewsNet corpus, treating the tweet propagation graph associated with each news item as the collective. Experimental results show that the CI-based model outperforms content-only and unweighted crowd baselines in accuracy, precision, recall, and F1-score, and that independence-aware aggregation contributes the largest incremental gain among the four CI principles. These findings support the view that treating social-media crowds as structured collectives, rather than as bags of independent votes, yields measurable robustness against coordinated misinformation.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: network content-only baseline"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation detection outperforms"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.298,
+      "tfidf_similarity": 0.083,
+      "design_elements_matched": [
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "A Comprehensive Survey on Graph Anomaly Detection With Deep Learning",
+        "authors": [
+          "Xiaoxiao Ma",
+          "Jia Xin Wu",
+          "Shan Xue",
+          "Jian Yu Yang",
+          "Chuan Zhou",
+          "Quan Z. Sheng",
+          "Hui Xiong",
+          "Leman Akoglu"
+        ],
+        "year": 2021,
+        "date": "2021-10-10",
+        "venue": "IEEE Transactions on Knowledge and Data Engineering",
+        "doi": "10.1109/tkde.2021.3118815",
+        "arxiv_id": "2106.07178",
+        "pmid": null,
+        "openalex_id": "W3171259348",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tkde.2021.3118815",
+        "pdf_url": "https://arxiv.org/pdf/2106.07178",
+        "abstract": "Anomalies are rare observations (e.g., data records or events) that deviate significantly from the others in the sample. Over the past few decades, research on anomaly mining has received increasing interests due to the implications of these occurrences in a wide range of disciplines - for instance, security, finance, and medicine. For this reason, anomaly detection, which aims to identify these rare observations, has become one of the most vital tasks in the world and has shown its power in preventing detrimental events, such as financial fraud, network intrusions, and social spam. The detection task is typically solved by identifying outlying data points in the feature space, which, inherently, overlooks the relational information in real-world data. At the same time, graphs have been prevalently used to represent the structural/relational information, which raises thegraph anomaly detection problem- identifying anomalous graph objects (i.e., nodes, edges and sub-graphs) in a single graph, or anomalous graphs in a set/database of graphs. Conventional anomaly detection techniques cannot tackle this problem well because of the complexity of graph data (e.g., irregular structures, relational dependencies, node/edge types/attributes/directions/multiplicities/weights, large scale, etc.). However, thanks to the advent of deep learning in breaking these limitations, graph anomaly detection with deep learning has received a growing attention recently. In this survey, we aim to provide a systematic and comprehensive review of the contemporary deep learning techniques for graph anomaly detection. Specifically, we provide a taxonomy that follows a task-driven strategy and categorizes existing work according to the anomalous graph objects that they can detect. We especially focus on the challenges in this research area and discuss the key intuitions, technical details as well as relative strengths and weaknesses of various techniques in each category. From the survey results, we highlight 12 future research directions spanning unsolved and emerging problems introduced by graph data, anomaly detection, deep learning and real-world applications. Additionally, to provide a wealth of useful resources for future studies, we have compiled a set of open-source implementations, public datasets, and commonly-used evaluation metrics. With this survey, our goal is to create a “one-stop-shop” that provides a unified understanding of the problem categories and existing approaches, publicly available hands-on resources, and high-impact open challenges for graph anomaly detection using deep learning.",
+        "citations": 843,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.067,
+      "tfidf_similarity": 0.02,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "DECOR: Degree-Corrected Social Graph Refinement for Fake News Detection",
+        "authors": [
+          "Jiaying Wu",
+          "Bryan Hooi"
+        ],
+        "year": 2023,
+        "date": "2023-08-04",
+        "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+        "doi": "10.1145/3580305.3599298",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4383175621",
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/3580305.3599298",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3580305.3599298",
+        "abstract": "Recent efforts in fake news detection have witnessed a surge of interest in using graph neural networks (GNNs) to exploit rich social context. Existing studies generally leverage fixed graph structures, assuming that the graphs accurately represent the related social engagements. However, edge noise remains a critical challenge in real-world graphs, as training on suboptimal structures can severely limit the expressiveness of GNNs. Despite initial efforts in graph structure learning (GSL), prior works often leverage node features to update edge weights, resulting in heavy computational costs that hinder the methods' applicability to large-scale social graphs. In this work, we approach the fake news detection problem with a novel aspect of social graph refinement. We find that the degrees of news article nodes exhibit distinctive patterns, which are indicative of news veracity. Guided by this, we propose DECOR, a novel application of Degree-Corrected Stochastic Blockmodels to the fake news detection problem. Specifically, we encapsulate our empirical observations into a lightweight social graph refinement component that iteratively updates the edge weights via a learnable degree correction mask, which allows for joint optimization with a GNN-based detector. Extensive experiments on two real-world benchmarks validate the effectiveness and efficiency of DECOR1.",
+        "citations": 42,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.211,
+      "tfidf_similarity": 0.074,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Graph Attention Networks",
+        "authors": [
+          "Petar Velickovic",
+          "Guillem Cucurull",
+          "Arantxa Casanova",
+          "Adriana Romero",
+          "Pietro Lió",
+          "Yoshua Bengio"
+        ],
+        "year": 2017,
+        "date": "2017-10-30",
+        "venue": "International Conference on Learning Representations",
+        "doi": "10.17863/cam.48429",
+        "arxiv_id": "1710.10903",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "33998aff64ce51df8dee45989cdca4b6b1329ec4",
+        "url": "https://www.semanticscholar.org/paper/33998aff64ce51df8dee45989cdca4b6b1329ec4",
+        "pdf_url": null,
+        "abstract": "We present graph attention networks (GATs), novel neural network architectures that operate on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based on graph convolutions or their approximations. By stacking layers in which nodes are able to attend over their neighborhoods' features, we enable (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront. In this way, we address several key challenges of spectral-based graph neural networks simultaneously, and make our model readily applicable to inductive as well as transductive problems. Our GAT models have achieved or matched state-of-the-art results across four established transductive and inductive graph benchmarks: the Cora, Citeseer and Pubmed citation network datasets, as well as a protein-protein interaction dataset (wherein test graphs remain unseen during training).",
+        "citations": 28985,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "2203.14132"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.2,
+      "tfidf_similarity": 0.074,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Noise-Filtering Enhanced Graph Transformer for Robust Fake News Detection",
+        "authors": [
+          "Junyou Zhu",
+          "Chao Gao",
+          "Ze Yin",
+          "Xianghua Li",
+          "Zhen Wang",
+          "Jürgen Kurths"
+        ],
+        "year": 2026,
+        "date": "2026-03-25",
+        "venue": "IEEE Transactions on Knowledge and Data Engineering",
+        "doi": "10.1109/tkde.2026.3677544",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W7140283986",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tkde.2026.3677544",
+        "pdf_url": null,
+        "abstract": "The rapid spread of fake news on social media has significantly increased the importance of computational detection methods. Graph-based approaches, particularly Graph Neural Networks (GNNs), have emerged as powerful tools for modeling news propagation patterns. Despite their potential, current GNN-based methods still face challenges in robustness and interpretability due to two key shortcomings: they inadequately filter out irrelevant user-induced noise within propagation graphs, and their shallow architectures fail to effectively capture the intricate long-range dependencies characteristic of news propagation. To overcome these limitations, we propose NEGT (Noise-filtering Enhanced Graph Transformer), a novel graph Transformer framework explicitly designed for fake news detection. NEGT introduces a noise-augmented information bottleneck strategy embedded within its self-attention mechanism, effectively identifying and removing task-irrelevant interactions. Additionally, we propose a novel relational propagation graph encoding a strategy that explicitly captures multi-scale user relationships and propagation depth, enabling NEGT to model long-sequence propagation dependencies accurately. Experiments on various benchmark datasets show that NEGT surpasses current methods in accuracy, noise robustness, and interpretability.",
+        "citations": 4,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.18,
+      "tfidf_similarity": 0.075,
+      "design_elements_matched": [
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Improving Recommender Systems for Fake News Detection in Social Networks with Knowledge Graphs and Graph Attention Networks",
+        "authors": [
+          "A.O. Golovin",
+          "Nataly Alexandrovna Zhukova",
+          "Radhakrishnan Delhibabu",
+          "Alexey Subbotin"
+        ],
+        "year": 2025,
+        "date": "2025-03-20",
+        "venue": "Mathematics",
+        "doi": "10.3390/math13061011",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4408659039",
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/math13061011",
+        "pdf_url": "https://doi.org/10.3390/math13061011",
+        "abstract": "This paper addresses the pervasive problem of fake news propagation in social networks. Traditional text-based detection models often suffer from performance degradation over time due to their reliance on evolving textual features. To overcome this limitation, we propose a novel recommender system that leverages the power of knowledge graphs and graph attention networks (GATs). This approach captures both the semantic relationships within the news content and the underlying social network structure, enabling more accurate and robust fake news detection. The GAT model, by assigning different weights to neighboring nodes, effectively captures the importance of various users in disseminating information. We conducted a comprehensive evaluation of our system using the FakeNewsNet dataset, comparing its performance against classical machine learning models and the DistilBERT language model. Our results demonstrate that the proposed graph-based system achieves state-of-the-art performance, with an F1-score of 95%, significantly outperforming other models. Moreover, it maintains its effectiveness over time, unlike text-based approaches that are susceptible to concept drift. This research underscores the potential of knowledge graphs and GATs in combating fake news and provides a robust framework for building more resilient and accurate detection systems.",
+        "citations": 8,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation detection outperforms"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.168,
+      "tfidf_similarity": 0.059,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "TRGCN: a hybrid framework for social network rumor detection",
+        "authors": [
+          "Yanqin Yan",
+          "Suiyu Zhang",
+          "Dingguo Yu",
+          "Yijie Zhou",
+          "Wang Cheng-jun",
+          "Ke-ke Shang"
+        ],
+        "year": 2026,
+        "date": "2026-03-26",
+        "venue": "Humanities and Social Sciences Communications",
+        "doi": "10.1057/s41599-026-06946-1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W7140511728",
+        "s2_id": null,
+        "url": "https://doi.org/10.1057/s41599-026-06946-1",
+        "pdf_url": "https://www.nature.com/articles/s41599-026-06946-1_reference.pdf",
+        "abstract": "Abstract Accurate and efficient rumor detection is critical for information governance, particularly in the context of the rapid spread of misinformation on social networks. Traditional rumor detection relied primarily on manual analysis. With the continuous advancement of technology, machine learning and deep learning approaches for rumor identification have gradually emerged and gained prominence. However, previous approaches often struggle to simultaneously capture both the sequential and the global structural relationships among topological nodes within a social network. To tackle this issue, we introduce a hybrid model for detecting rumors that integrates a Graph Convolutional Network (GCN) with a Transformer architecture, aiming to leverage the complementary strengths of structural and semantic feature extraction. Positional encoding helps preserve the sequential order of these nodes within the propagation structure. The use of Multi-head attention mechanisms enables the model to capture features across diverse representational subspaces, thereby enhancing both the richness and depth of text comprehension. This integration allows the framework to concurrently identify the key propagation network of rumors, the textual content, the long-range dependencies, and the sequence among propagation nodes. Experimental evaluations on publicly available datasets, including Twitter 15 and Twitter 16, demonstrate that our proposed fusion model significantly outperforms both standalone models and existing mainstream methods in terms of accuracy. These results validate the effectiveness and superiority of our approach for the rumor detection task.",
+        "citations": 3,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation detection outperforms"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.164,
+      "tfidf_similarity": 0.048,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Mining User-aware Multi-relations for Fake News Detection in Large Scale Online Social Networks",
+        "authors": [
+          "Xing Su",
+          "Jian Yu Yang",
+          "Jia Xin Wu",
+          "Yuchen Zhang"
+        ],
+        "year": 2023,
+        "date": "2023-02-22",
+        "venue": null,
+        "doi": "10.1145/3539597.3570478",
+        "arxiv_id": "2212.10778",
+        "pmid": null,
+        "openalex_id": "W4321485409",
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/3539597.3570478",
+        "pdf_url": "https://arxiv.org/pdf/2212.10778",
+        "abstract": "Users' involvement in creating and propagating news is a vital aspect of fake news detection in online social networks. Intuitively, credible users are more likely to share trustworthy news, while untrusted users have a higher probability of spreading untrustworthy news. In this paper, we construct a dual-layer graph (i.e., news layer and user layer) to extract multi-relations of news and users in social networks to derive rich information for detecting fake news. Based on the dual-layer graph, we propose a fake news detection model Us-DeFake. It learns the propagation features of news in the news layer and the interaction features of users in the user layer. Through the inter-layer in the graph, Us-DeFake fuses the user signals that contain credibility information into the news features, to provide distinctive user-aware embeddings of news for fake news detection. The training process conducts on multiple dual-layer subgraphs obtained by a graph sampler to scale Us-DeFake in large scale social networks. Extensive experiments on real-world datasets illustrate the superiority of Us-DeFake which outperforms all baselines, and the users' credibility signals learned by interaction relation can notably improve the performance of our model.",
+        "citations": 37,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          },
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation detection outperforms"
+          }
+        ],
+        "extra": {
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.137,
+      "tfidf_similarity": 0.074,
+      "design_elements_matched": [
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "A Graph Neural Network Approach To Combatting Fake News",
+        "authors": [
+          "T. S. Teja",
+          "L. S. Hemanta Sandhya",
+          "S. Choudhary"
+        ],
+        "year": 2023,
+        "date": "2023-06-14",
+        "venue": "2023 International Conference on Sustainable Computing and Smart Systems (ICSCSS)",
+        "doi": "10.1109/icscss57650.2023.10169219",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "0ec8c1b008fd43434317e6d38344ab9c8c9aa93c",
+        "url": "https://www.semanticscholar.org/paper/0ec8c1b008fd43434317e6d38344ab9c8c9aa93c",
+        "pdf_url": null,
+        "abstract": "One of the facts regarding social media or internet is that bad information is everywhere. It is difficult for a common man to decide whether it is a misleading or a false information. And believing false information can lead to many problems such as making bad decisions, making unnecessary arguments, disturbances in relationships between people and can also lead to mental stress. Hence to avoid these consequences, this study proposes a novel model to detect the fake news efficiently and effectively. Proposed model is based on Graph Neural Networks (GNN). GNN belongs to the class of deep learning models, and it can work on nonlinear and multidimensional data. GNN can perform prediction tasks on graphs at node-level, edge-level and also entire graph-level. The reason for choosing GNN is Convolutional Neural Networks cannot be applied on nonlinear data as proposed dataset consists of nonlinear data and GNN can provide better accuracy for the model than Convolutional Neural Networks. Most of the models based on graph neural networks will need both text information and node features, but the proposed model can perform the prediction using only node features. This makes easier for us to detect the fake news with minimal computations without comprising in terms of accuracy. Proposed GNN model achieves a test accuracy of 95%.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "2203.14132"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.053,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Tracing truth: dynamic temporal networks for multi-modal fake news detection",
+        "authors": [
+          "Jiaen Hu",
+          "Juan Zhang",
+          "Zichen Li"
+        ],
+        "year": 2025,
+        "date": "2025-07-07",
+        "venue": "PeerJ Computer Science",
+        "doi": "10.7717/peerj-cs.2998",
+        "arxiv_id": null,
+        "pmid": "40989433",
+        "openalex_id": "W4412094123",
+        "s2_id": null,
+        "url": "https://doi.org/10.7717/peerj-cs.2998",
+        "pdf_url": "https://peerj.com/articles/cs-2998.pdf",
+        "abstract": "As the internet continues to evolve rapidly and social media becomes increasingly prevalent, the ways people access information has become increasingly diverse. However, the proliferation of fake news has emerged as a critical problem, presenting major challenges to the integrity of the information ecosystem. To address the complex propagation mechanisms of fake news, existing studies leverage multi-modal information and dynamic propagation social graphs for effective detection. Nonetheless, capturing the temporal relationships of propagation nodes in dynamic social networks accurately and dynamically integrating multi-modal information for improved detection accuracy remains a technical challenge. In response, This study proposes a multimodal approach to fake news detection-the dynamic temporal network (DTN) model. Firstly, this model designs a time similarity strength metric to measure the temporal similarity among nodes in propagation sequences and introduces a weighting mechanism to dynamically fuse multi-modal information. Secondly, it constructs a social propagation graph model, enhancing node representation through the dynamic variations of time similarity and graph structure, and utilizes the Transformer encoder to extract the overall semantic features of news propagation. Furthermore, the model views the news propagation process as a complex system, analyzing the temporal dynamics of news in real social networks, effectively revealing the abnormal propagation patterns of fake news. Further analysis demonstrates that the proposed DTN model exhibits high accuracy and effectiveness in multi-modal fake news detection.",
+        "citations": 6,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.106,
+      "tfidf_similarity": 0.068,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Debunking Fake News in Online Social Networks Without Text Analysis",
+        "authors": [
+          "Xing Su",
+          "Jian Yu Yang",
+          "Jia Xin Wu",
+          "Zitai Qiu"
+        ],
+        "year": 2024,
+        "date": "2024-12-09",
+        "venue": "Proceedings",
+        "doi": "10.1109/icdm59182.2024.00052",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4407831904",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/icdm59182.2024.00052",
+        "pdf_url": null,
+        "abstract": "Since the inception of online fake news detection, the technique of natural language processing has predominantly been leading the field by utilizing text classification to discern veracity. From the network perspective, news traveling within a social network typically exhibits non-textual correlations aligned with the network of news propagation or news-user interaction. Therefore, with the advancement of graph learning, there have been emerging approaches incorporating graphs of social contexts as auxiliary information, of which the performance still relies on learning semantics from news text. As fake news becomes more adept at employing the writing pattern of real news and the assessment of certain news contents requires domain-specific knowledge, distinguishing real news from fake ones based on the text has become increasingly challenging. This raises a question: Can we debunk fake news without going through the text? Thus, this work aims to explore the feasibility of differentiating between real and fake news by capturing its relationships with other news and people in the network. We propose a method named ComE-DeFake which extracts intricate relations beyond pairwise of news and users in social contexts to detect fake news. Experimental results reveal that our method without using news text outperforms all baseline methods. This suggests that, if high-order complicated relations are fully captured, it is achievable to debunk fake news without analyzing its text.",
+        "citations": 2,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation detection outperforms"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.123,
+      "tfidf_similarity": 0.046,
+      "design_elements_matched": [
+        "removing all edges from the propagation graph"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Community-Enhanced Dynamic Graph Convolutional Networks for Rumor Detection on Social Networks",
+        "authors": [
+          "Wei Guo Zhou",
+          "Chenzhan Wang",
+          "Fengji Luo",
+          "Yu Wang",
+          "Min Gao",
+          "Junhao Wen"
+        ],
+        "year": 2024,
+        "date": "2024-12-11",
+        "venue": "IEEE Transactions on Computational Social Systems",
+        "doi": "10.1109/tcss.2024.3505892",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4405232473",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/tcss.2024.3505892",
+        "pdf_url": null,
+        "abstract": "Along with the increasing popularization of social platforms, rumors in the Web environment have become one of the significant threats to human society. Existing rumor detection methods ignore modeling and analyzing the community structure of the rumor propagation network. This article proposes a new community-enhanced dynamic graph convolutional network (CDGCN) for effective rumor detection on online social networks, which utilize the communities formed in a rumor propagation process to improve rumor detection accuracy. CDGCN uses a designed method that combines node features and topology features to identify the communities and learn the community features of rumors. Following this, a graph convolutional network (GCN) with a community-aware attention mechanism is proposed to enable the nodes to dynamically aggregate information from their neighboring nodes’ global and community features, effectively prioritizing critical neighborhood information, enhancing the representation of both local community structures and global network patterns for improved analytical performance. The final rumor representations generated by the GCN are processed by a classifier to detect false rumors. Comprehensive experiments and comparison studies are conducted on four real-world datasets to validate the effectiveness of CDGCN.",
+        "citations": 12,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.118,
+      "tfidf_similarity": 0.048,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Beyond Reported Accuracy: A Verifiability-Focused, Multi-Axis Review of Content and Context Based Fake News Detection",
+        "authors": [
+          "Long Dinh Tuan",
+          "Le Ngoc An",
+          "Duong Dinh Thai"
+        ],
+        "year": 2026,
+        "date": "2026-09-11",
+        "venue": "Journal of Computing Theories and Applications",
+        "doi": "10.62411/jcta.17476",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W7212387815",
+        "s2_id": null,
+        "url": "https://doi.org/10.62411/jcta.17476",
+        "pdf_url": "https://publikasi.dinus.ac.id/jcta/article/download/17476/6415",
+        "abstract": "Fake news undermines information integrity, and the proliferation of large language models (LLMs) has intensified both its generation and its detection. Prior surveys catalogue methods but rarely verify the performance figures they synthesize, restrict comparison to same-benchmark settings, or assess risk of bias, so reported accuracies are often over-read. This verifiability-focused review analyzes an enumerated, non-exhaustive corpus of 45 content- and context-based detection studies (2018-2025; 42 quantitative-core) in which each reported headline metric is traced to its primary source and confirmed against it wherever the source is accessible (36 of 45; the nine paywalled studies are flagged as reported-but-unconfirmed), and released with the corpus. Studies are grouped into five method families, Transformer/PLM (31.0%), multimodal (26.2%), LLM-based (21.4%), graph/propagation (16.7%), and traditional machine learning (4.8%), and interpreted through a four-axis framework of evidence source, detection time, data dependence, and deployment objective. Without metric conversion or pooling, reported accuracies are strongly heterogeneous and not comparable across families (Transformer 74.8-99.36%, multimodal 82.4-99.97%, graph 84.4-94.36% or 0.75-0.93 AUC, LLM-based 48.6-89.0%); within Weibo, seven multimodal models span 82.4-91.8%, and GPT-4 attains 68.2% (not the ~95% often cited) on LIAR-binary. Three findings follow. First, reported performance appears shaped as much by data and evaluation design as by architecture, so architecture-only interpretations can be misleading; near-perfect results may reflect dataset-specific separability, leakage, or favorable evaluation designs rather than superior transferable capability. Second, the field has evolved cumulatively from static content cues toward multi-source evidence integration and reasoning, so the families are complementary evidence sources rather than exclusive choices. Third, no family is optimal across scenarios, and a central open problem is sustaining reliability under drift, new languages, attacks, and AI-generated content. We derive a dependency-ordered research agenda and, from a Vietnamese case study, transferable design principles for low-resource languages.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "article",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citations",
+            "query": "2104.12259"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.33,
+      "tfidf_similarity": 0.072,
+      "design_elements_matched": [],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Heterogeneous Graph Attention Networks with Bi-directional Information Propagation for Rumor Detection",
+        "authors": [
+          "Mengqi Yan",
+          "Wenyuan Yang",
+          "Boyu Sun",
+          "Yuesheng Zhu"
+        ],
+        "year": 2022,
+        "date": "2022-03-04",
+        "venue": "International Conference on Big Data Analytics (ICBDA)",
+        "doi": "10.1109/icbda55095.2022.9760328",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4224262279",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/icbda55095.2022.9760328",
+        "pdf_url": null,
+        "abstract": "Social media has developed rapidly because of its easy spread and access characteristics, but it provides a platform for the spread of rumors. Recent rumor detection methods generally seek clues from the rich graphical structure representation in the social context. However, they often ignore the interactive information generated during the spread of rumors, which would lose some inherent structural features. In this paper, we propose a Heterogeneous Graph Attention Network with Bi-directional information propagation mechanism for rumor detection. We establish a heterogeneous graph to represent a social network for modeling users and tweets and the interaction between them. We explore a bi-directional information propagation mechanism to simulate the spreading mode of rumors in the heterogeneous social network, in which the structural features scattered in the graph are captured by modeling the spreading process of rumors and aggregating information from neighboring nodes. We also use the graph attention network to encode heterogeneous graphs and extract the features of users and tweets to perform detection. Our experimental results on three representative datasets have demonstrated our method has better detection performance compared with other methods.",
+        "citations": 5,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "conference-paper",
+        "sources": [
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "openalex",
+            "strategy": "seed_citing_search",
+            "query": "2104.12259 :: propagation structure detection"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.085,
+      "tfidf_similarity": 0.046,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    }
+  ],
+  "must_read": [
+    {
+      "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+      "year": 2025,
+      "arxiv_id": "2512.09974",
+      "doi": "10.48550/arxiv.2512.09974",
+      "pdf_url": "https://arxiv.org/pdf/2512.09974",
+      "why": "term overlap 0.325, design elements: MLP baseline on the same node features; shuffled node features; removing all edges from the propagation graph",
+      "next": "fulltext --id 2512.09974"
+    },
+    {
+      "title": "Fake News Detection using Graph Neural Networks: A Hybrid Approach Utilizing Content and Propagation Patterns",
+      "year": 2026,
+      "arxiv_id": null,
+      "doi": "10.32628/ijsrset2613353",
+      "pdf_url": "https://ijsrset.com/home/article/download/IJSRSET2613353/IJSRSET2613353",
+      "why": "term overlap 0.123, design elements: MLP baseline on the same node features; shuffled node features; removing all edges from the propagation graph",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "A comparative analysis of Graph Neural Networks and commonly used machine learning algorithms on fake news detection",
+      "year": 2022,
+      "arxiv_id": "2203.14132",
+      "doi": "10.1109/cdma54072.2022.00021",
+      "pdf_url": "https://arxiv.org/pdf/2203.14132",
+      "why": "term overlap 0.315, design elements: shuffled node features; removing all edges from the propagation graph",
+      "next": "fulltext --id 2203.14132"
+    },
+    {
+      "title": "Improving Graph Convolutional Network with Learnable Edge Weights and Edge-Node Co-Embedding for Graph Anomaly Detection",
+      "year": 2024,
+      "arxiv_id": null,
+      "doi": "10.3390/s24082591",
+      "pdf_url": "https://www.mdpi.com/1424-8220/24/8/2591/pdf?version=1713438941",
+      "why": "term overlap 0.054, design elements: MLP baseline on the same node features; shuffled node features; removing all edges from the propagation graph, found only through the citation graph",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "Multiknowledge and LLM-Inspired Heterogeneous Graph Neural Network for Fake News Detection",
+      "year": 2025,
+      "arxiv_id": null,
+      "doi": "10.1109/tcss.2024.3488191",
+      "pdf_url": null,
+      "why": "term overlap 0.21, design elements: MLP baseline on the same node features; shuffled node features",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "HG-SL: Jointly Learning of Global and Local User Spreading Behavior for Fake News Early Detection",
+      "year": 2023,
+      "arxiv_id": null,
+      "doi": "10.1609/aaai.v37i4.25655",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/25655/25427",
+      "why": "term overlap 0.144, design elements: MLP baseline on the same node features; shuffled node features, found only through the citation graph",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "Inductive Representation Learning on Large Graphs",
+      "year": 2017,
+      "arxiv_id": "1706.02216",
+      "doi": "10.48550/arxiv.1706.02216",
+      "pdf_url": "https://arxiv.org/pdf/1706.02216",
+      "why": "term overlap 0.13, design elements: MLP baseline on the same node features; shuffled node features, found only through the citation graph",
+      "next": "fulltext --id 1706.02216"
+    },
+    {
+      "title": "Structure Learning Via Meta-Hyperedge for Dynamic Rumor Detection",
+      "year": 2022,
+      "arxiv_id": null,
+      "doi": "10.1109/tkde.2022.3221438",
+      "pdf_url": null,
+      "why": "term overlap 0.124, design elements: MLP baseline on the same node features; shuffled node features, found only through the citation graph",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Unsupervised Fake News Detection: A Graph-based Approach",
+      "year": 2020,
+      "arxiv_id": null,
+      "doi": "10.1145/3372923.3404783",
+      "pdf_url": "https://pureadmin.qub.ac.uk/ws/files/212663108/ht20_crc.pdf",
+      "why": "term overlap 0.302, design elements: removing all edges from the propagation graph, found only through the citation graph",
+      "next": "read the open-access PDF"
+    }
+  ],
+  "expansion_log": [
+    {
+      "seed": "2104.12259",
+      "query": "network content-only baseline",
+      "results": 6
+    },
+    {
+      "seed": "2104.12259",
+      "query": "propagation structure detection",
+      "results": 25
+    },
+    {
+      "seed": "2104.12259",
+      "query": "propagation detection outperforms",
+      "results": 24
+    },
+    {
+      "seed": "2104.12259",
+      "query": "rethinking evaluation detection",
+      "results": 0
+    },
+    {
+      "seed": "2104.12259",
+      "query": "engagement necessary detection",
+      "results": 0
+    },
+    {
+      "seed": "2104.12259",
+      "query": "FakeNewsNet propagation-based reproducibility",
+      "results": 0
+    },
+    {
+      "expanded": "Enhancing Fake-News Detection with Node-Level Topological Features",
+      "citing_and_references": 25
+    },
+    {
+      "expanded": "Fake News Detection using Graph Neural Networks: A Hybrid Approach Utilizing Content and Propagation Patterns",
+      "citing_and_references": 0
+    },
+    {
+      "expanded": "A comparative analysis of Graph Neural Networks and commonly used machine learning algorithms on fake news detection",
+      "citing_and_references": 44
+    }
+  ],
+  "expansion_errors": [
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429,
+      "step": "seed_citing_search"
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429,
+      "step": "seed_citing_search"
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429,
+      "step": "seed_citing_search"
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429,
+      "step": "seed_citing_search"
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429,
+      "step": "seed_citing_search"
+    }
+  ],
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "does propagation structure help fake news detection",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "does propagation structure help fake news detection",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "does propagation structure help fake news detection",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "does propagation structure help fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "does propagation structure help fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "UPFD fake news graph neural network content-only baseline review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "does propagation structure help fake news detection review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "user engagement graph necessary fake news detection GNN review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility survey",
+      "results": 13,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "FakeNewsNet propagation-based detection reproducibility review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "simple baseline fake news detection propagation graphs review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "UPFD fake news graph neural network content-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "does propagation structure help fake news detection",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "does propagation structure help fake news detection",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "does propagation structure help fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "does propagation structure help fake news detection",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "propagation graph ablation fake news detection text-only baseline outperforms",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "rethinking evaluation fake news detection graph neural networks benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "user engagement graph necessary fake news detection GNN",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "FakeNewsNet propagation-based detection reproducibility",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "recent",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "simple baseline fake news detection propagation graphs",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-18"
+}

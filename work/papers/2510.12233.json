@@ -1,0 +1,49 @@
+{
+  "paper": {
+    "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+    "authors": [
+      "Bo-Wen Fan",
+      "Zhilin Guo",
+      "Xun-Kai Li",
+      "Yihan Zhou",
+      "Bing Zhou",
+      "Zhenjun Li",
+      "Rong-Hua Li",
+      "Guo-Ren Wang"
+    ],
+    "year": 2026,
+    "date": "2026-04-12",
+    "venue": "Proceedings of the ACM Web Conference 2026",
+    "doi": "10.1145/3774904.3792284",
+    "arxiv_id": "2510.12233",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": "70034b4f42b0e06b82a6663e8d62c482b0baf97d",
+    "url": "https://www.semanticscholar.org/paper/70034b4f42b0e06b82a6663e8d62c482b0baf97d",
+    "pdf_url": "https://doi.org/10.1145/3774904.3792284",
+    "abstract": "Graph Neural Networks (GNNs) have become a pivotal framework for modeling graph-structured data, enabling a wide range of applications from social network analysis to molecular chemistry. By integrating large language models (LLMs), text-attributed graphs (TAGs) enhance node representations with rich textual semantics, significantly boosting the expressive power of graph-based learning. However, this sophisticated synergy introduces critical vulnerabilities, as Graph-LLMs are susceptible to adversarial attacks on both their structural topology and textual attributes. Although specialized attack methods have been designed for each of these aspects, no work has yet unified them into a comprehensive approach. In this work, we propose the Interpretable Multi-Dimensional Graph Attack (IMDGA), a novel human-centric adversarial attack framework designed to orchestrate multi-level perturbations across both graph structure and textual features. IMDGA utilizes three tightly integrated modules to craft attacks that balance interpretability and impact, enabling a deeper understanding of Graph-LLM vulnerabilities. Through rigorous theoretical analysis and comprehensive empirical evaluations on diverse datasets and architectures, IMDGA demonstrates superior interpretability, attack effectiveness, stealthiness, and robustness compared to existing methods. By exposing critical weaknesses in TAG representation learning, this work uncovers a previously underexplored semantic dimension of vulnerability in Graph-LLMs, offering valuable insights for improving their resilience. Our code and resources are publicly available at https://anonymous.4open.science/r/IMDGA-7289.",
+    "citations": 0,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "abstract_source": "arxiv",
+      "arxiv_comment": "12 pages, 4 figures",
+      "arxiv_category": "cs.LG"
+    }
+  },
+  "notes": [
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

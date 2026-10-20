@@ -1,0 +1,3790 @@
+{
+  "claim": "Comparing upvote counts with semantic cluster size as signals for which student questions instructors should answer first",
+  "queries": [
+    "upvoting student questions lecture",
+    "question voting audience prioritization",
+    "popular questions upvotes versus frequency",
+    "crowd voting questions classroom",
+    "Q&A upvotes instructor answer priority"
+  ],
+  "design_elements": [
+    "upvote ranking",
+    "cluster size ranking",
+    "instructor priority judgement"
+  ],
+  "design_queries": [
+    "upvote ranking Comparing questions instructors",
+    "cluster size ranking Comparing questions instructors",
+    "instructor priority judgement Comparing questions instructors"
+  ],
+  "anchor": "Comparing questions instructors",
+  "seeds": [],
+  "sources_ok": [
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [],
+  "sources_status": {
+    "arxiv": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "crossref": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 198,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 200,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "query_diversity": {
+    "n_queries": 5,
+    "distinct_terms": 17,
+    "mean_pairwise_term_overlap": 0.111,
+    "near_paraphrases": false
+  },
+  "n_papers_examined": 306,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 14,
+  "n_without_abstract": 120,
+  "n_from_citation_expansion": 48,
+  "n_possible_same_design": 0,
+  "n_design_matches_off_topic": 0,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "ceiling_lowered_because": [
+    "citation expansion partly failed (2 call(s): not_found)"
+  ],
+  "interpretation": "No closely worded paper was retrieved, but only 2 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Event-Aligned Learning Analytics for Instructor Priority Review: Preceding Performance Signals and Task-Progression Interruption in a Large-Scale Online Course",
+        "authors": [
+          "Zhaohong Zuo"
+        ],
+        "year": 2026,
+        "date": "2026-08-27",
+        "venue": null,
+        "doi": "10.21203/rs.3.rs-10823614/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21203/rs.3.rs-10823614/v1",
+        "pdf_url": null,
+        "abstract": "Abstract Large-scale online courses create a practical instructional problem: instructors cannot continuously inspect every learner’s evolving record, yet aggregate indicators and prediction scores offer limited guidance about when closer review is warranted and which students should receive priority. Framed by situated instructional decision-making, temporal learning analytics, and validity-conscious use of trace data, this study examined whether interpretable performance evidence precedes first task-progression interruption and can support resource-constrained instructor review. Retrospective platform records from 4,821 students across two consecutive cohorts of an undergraduate online course were organized into three instructional stages. Students who subsequently experienced a first interruption showed lower within-task relative performance in the preceding stage across both cohorts and transitions. The early-to-middle transition met the study-defined two-part rule for a course-specific critical transition window, with higher first-interruption incidence than the middle-to-late transition in both cohorts and a replicated preceding performance signal. Reviewing approximately one-fifth of the risk set at this transition covered 57.14% and 61.29% of subsequent first interruptions, with lifts of 2.62 and 2.93. Findings were broadly robust to alternative event definitions and performance constructions. The study contributes an event-aligned, validity-conscious, and resource-aware approach to instructor prioritization without treating trace-based signals as deterministic warning rules.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "Q&A upvotes instructor answer priority",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "Q&A upvotes instructor answer priority survey",
+            "position": 5
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "Q&A upvotes instructor answer priority review",
+            "position": 2
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "Q&A upvotes instructor answer priority",
+            "position": 2
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 3,
+            "score": 1.575
+          }
+        }
+      },
+      "term_overlap": 0.385,
+      "tfidf_similarity": 0.146,
+      "design_elements_matched": [
+        "instructor priority judgement"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Comparing completely and stratified randomized designs in cluster randomized trials when the stratifying factor is cluster size: a simulation study",
+        "authors": [
+          "J. D. Lewsey"
+        ],
+        "year": 2004,
+        "date": "2004-03-03",
+        "venue": "Statistics in Medicine",
+        "doi": "10.1002/sim.1665",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1002/sim.1665",
+        "pdf_url": null,
+        "abstract": "Abstract Stratified randomized designs are popular in cluster randomized trials (CRTs) because they increase the chance of the intervention groups being well balanced in terms of identified prognostic factors at baseline and may increase statistical power. The objective of this paper is to assess the gains in power obtained by stratifying randomization by cluster size, when cluster size is associated with an important cluster level factor which is otherwise unaccounted for in data analysis. A simulation study was carried out using a CRT where UK general practices were the randomized units as a template. The results show that when cluster size is strongly associated with a cluster level factor which is predictive of outcome, the stratified randomized design has superior power results to the completely randomized design and that the superiority is related to the number of clusters. Copyright © 2004 John Wiley &amp; Sons, Ltd.",
+        "citations": 19,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "cluster size ranking Comparing questions instructors",
+            "position": 2
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.723
+          }
+        }
+      },
+      "term_overlap": 0.24,
+      "tfidf_similarity": 0.131,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Sample size considerations for stratified cluster randomization design with binary outcomes and varying cluster size",
+        "authors": [
+          "Xiaohan Xu",
+          "Hong Zhu",
+          "Chul W. Ahn"
+        ],
+        "year": 2019,
+        "date": "2019-04-29",
+        "venue": "Statistics in Medicine",
+        "doi": "10.1002/sim.8175",
+        "arxiv_id": null,
+        "pmid": "31033011",
+        "openalex_id": null,
+        "s2_id": "1cf3b2ebfa91a9216f62dabed9ea78a5e802e3c7",
+        "url": "https://www.semanticscholar.org/paper/1cf3b2ebfa91a9216f62dabed9ea78a5e802e3c7",
+        "pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6649663",
+        "abstract": "Stratified cluster randomization trials (CRTs) have been frequently employed in clinical and healthcare research. Comparing with simple randomized CRTs, stratified CRTs reduce the imbalance of baseline prognostic factors among different intervention groups. Due to the popularity, there has been a growing interest in methodological development on sample size estimation and power analysis for stratified CRTs; however, existing work mostly assumes equal cluster size within each stratum and uses multilevel models. Clusters are often naturally formed with random sizes in CRTs. With varying cluster size, commonly used ad hoc approaches ignore the variability in cluster size, which may underestimate (overestimate) the required number of clusters for each group per stratum and lead to underpowered (overpowered) clinical trials. We propose closed‐form sample size formulas for estimating the required total number of subjects and for estimating the number of clusters for each group per stratum, based on Cochran‐Mantel‐Haenszel statistic for stratified cluster randomization design with binary outcomes, accounting for both clustering and varying cluster size. We investigate the impact of various design parameters on the relative change in the required number of clusters for each group per stratum due to varying cluster size. Simulation studies are conducted to evaluate the finite‐sample performance of the proposed sample size method. A real application example of a pragmatic stratified CRT of a triad of chronic kidney disease, diabetes, and hypertension is presented for illustration.",
+        "citations": 9,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.24,
+      "tfidf_similarity": 0.12,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Covariate balance in simple stratified and clustered comparative studies",
+        "authors": [
+          "Ben B. Hansen",
+          "Jake Bowers"
+        ],
+        "year": 2008,
+        "date": "2008-05-01",
+        "venue": null,
+        "doi": "10.1214/08-sts254",
+        "arxiv_id": "0808.3857",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "15bdc0149967acb4d22a1b5778d4ee8e8a1dab88",
+        "url": "https://www.semanticscholar.org/paper/15bdc0149967acb4d22a1b5778d4ee8e8a1dab88",
+        "pdf_url": "https://projecteuclid.org/journals/statistical-science/volume-23/issue-2/Covariate-Balance-in-Simple-Stratified-and-Clustered-Comparative-Studies/10.1214/08-STS254.pdf",
+        "abstract": "In randomized experiments, treatment and control groups should be roughly the same—balanced—in their distributions of pre- treatment variables. But how nearly so? Can descriptive comparisons meaningfully be paired with significance tests? If so, should there be several such tests, one for each pretreatment variable, or should there be a single, omnibus test? Could such a test be engineered to give eas- ily computed p-values that are reliable in samples of moderate size, or would simulation be needed for reliable calibration? What new con- cerns are introduced by random assignment of clusters? Which tests of balance would be optimal? To address these questions, Fisher's randomization inference is ap- plied to the question of balance. Its application suggests the reversal of published conclusions about two studies, one clinical and the other a field experiment in political participation.",
+        "citations": 462,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.25,
+      "tfidf_similarity": 0.096,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Randomization methods and cluster size in cluster randomized trials conducted in elementary and high schools",
+        "authors": [],
+        "year": 2021,
+        "date": null,
+        "venue": "Vojnosanitetski pregled",
+        "doi": null,
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": null,
+        "pdf_url": null,
+        "abstract": null,
+        "citations": null,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.176,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Power analysis for stratified cluster randomisation trials with cluster size being the stratifying factor",
+        "authors": [
+          "Ji-Jia Wang",
+          "Song Zhang",
+          "Chul W. Ahn"
+        ],
+        "year": 2017,
+        "date": "2017-01-02",
+        "venue": null,
+        "doi": "10.1080/24754269.2017.1347309",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "f8fcce16e53b94b0019d617ca849f8cf5965a359",
+        "url": "https://www.semanticscholar.org/paper/f8fcce16e53b94b0019d617ca849f8cf5965a359",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/24754269.2017.1347309?needAccess=true&role=button",
+        "abstract": null,
+        "citations": 8,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.163,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Sample size calculations for cluster randomised trials, with a focus on ordinal outcomes.",
+        "authors": [
+          "C. Robinson"
+        ],
+        "year": 2016,
+        "date": "2016-05-16",
+        "venue": null,
+        "doi": null,
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "52ecac6de4c9052dea33b55efa9f6992aa2aaf6c",
+        "url": "https://www.semanticscholar.org/paper/52ecac6de4c9052dea33b55efa9f6992aa2aaf6c",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.131,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Capturing LLM Capabilities via Evidence-Calibrated Query Clustering",
+        "authors": [
+          "Fangzhou Wu",
+          "Sandeep Silwal",
+          "Qiuyi Zhang"
+        ],
+        "year": 2026,
+        "date": "2026-05-16",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2605.17110",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2605.17110",
+        "pdf_url": null,
+        "abstract": "Query clustering organizes queries into groups that reflect shared latent capability demands, enabling capability-aware LLM evaluation. Existing clustering methods, which primarily rely on semantic taxonomies or embeddings, often fail to capture such latent capability requirements due to a misalignment between surface-level semantics and actual model performance. We propose ECC, an algorithm that calibrates prior semantic embeddings using limited posterior model comparisons to bridge the gap between surface-level semantics and latent capability requirements. ECC characterizes each cluster through a capability profile parameterized by a Bradley-Terry model and uses trainable mixture weights to accommodate queries with mixed capability demands, jointly learning a flexible, capability-aware clustering structure that supports query-specific inference of LLM capabilities. Extensive quantitative and qualitative evaluations demonstrate that ECC significantly improves LLM capability ranking quality, outperforming human-labeled and embedding-based baselines by an average of 17.64 and 18.02 percentage points, respectively, and proves effective in downstream tasks such as query routing.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "cluster size ranking Comparing questions instructors",
+            "position": 10
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.333,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 0.792
+          }
+        }
+      },
+      "term_overlap": 0.164,
+      "tfidf_similarity": 0.076,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "The Benefits of Probability-Proportional-to-Size Sampling in Cluster-Randomized Experiments",
+        "authors": [
+          "Yeng Xiong",
+          "Michael J. Higgins"
+        ],
+        "year": 2020,
+        "date": "2020-02-19",
+        "venue": null,
+        "doi": null,
+        "arxiv_id": "2002.08009",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "b3798ec36874c755aca66d68a7a08520d789195b",
+        "url": "https://www.semanticscholar.org/paper/b3798ec36874c755aca66d68a7a08520d789195b",
+        "pdf_url": null,
+        "abstract": "In a cluster-randomized experiment, treatment is assigned to clusters of individual units of interest‐households, classrooms, villages, etc.‐instead of the units themselves. The number of clusters sampled and the number of units sampled within each cluster is typically restricted by a budget constraint. Previous analysis of cluster randomized experiments under the NeymanRubin potential outcomes model of response have assumed a simple random sample of clusters; estimators of the population average treatment effect (PATE) under this assumption are often either biased or not invariant to location shifts of potential outcomes. We demonstrate that, by sampling clusters with probability proportional to the number of units within a cluster, the PATE can be unbiasedly estimated using an estimator that is invariant to location shifts.",
+        "citations": 2,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.083,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Model‐Robust Standardization in Cluster‐Randomized Trials",
+        "authors": [
+          "Fan Li",
+          "Jia-Qi Tong",
+          "Xi Fang",
+          "Chao Cheng",
+          "B. Kahan",
+          "Bingkai Wang"
+        ],
+        "year": 2025,
+        "date": "2025-05-25",
+        "venue": "Statistics in Medicine",
+        "doi": "10.1002/sim.70270",
+        "arxiv_id": "2505.19336",
+        "pmid": "40968363",
+        "openalex_id": null,
+        "s2_id": "98aa3b19c849bcd6f289b462cbe16b160ed6a6e3",
+        "url": "https://www.semanticscholar.org/paper/98aa3b19c849bcd6f289b462cbe16b160ed6a6e3",
+        "pdf_url": "https://arxiv.org/pdf/2505.19336",
+        "abstract": "In cluster‐randomized trials, generalized linear mixed models and generalized estimating equations have conventionally been the default analytic methods for estimating the average treatment effect as routine practice. However, recent studies have demonstrated that their treatment effect coefficient estimators may correspond to ambiguous estimands when the models are misspecified or when there exist informative cluster sizes. In this article, we present a unified approach that standardizes output from a given regression model to ensure estimand‐aligned inference for the treatment effect parameters in cluster‐randomized trials. We introduce estimators for both the cluster‐average and the individual‐average treatment effects (marginal estimands) that are always consistent regardless of whether the specified working regression models align with the unknown data generating process. We further explore the use of a deletion‐based jackknife variance estimator for inference. The development of our approach also motivates a natural test for informative cluster size. Extensive simulation experiments are designed to demonstrate the advantage of the proposed estimators under a variety of scenarios. The proposed model‐robust standardization methods are implemented in the MRStdCRT R package.",
+        "citations": 12,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.075,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Enhancing student-instructor interaction in online learning environments through a doubt management system with LSTM-based priority classification",
+        "authors": [
+          "B. Moganapriya",
+          "F. Mary Harin Fernandez"
+        ],
+        "year": 2026,
+        "date": "2026",
+        "venue": "AIP Conference Proceedings PROCEEDINGS OF THE 2025 12TH INTERNATIONAL CONFERENCE ON MECHANICS, MATERIALS AND MANUFACTURING: ICMMM2025",
+        "doi": "10.1063/5.0298850",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1063/5.0298850",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "Q&A upvotes instructor answer priority",
+            "position": 7
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.325
+          }
+        }
+      },
+      "term_overlap": 0.12,
+      "tfidf_similarity": 0.086,
+      "design_elements_matched": [
+        "instructor priority judgement"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Questioning the Survey Responses of Large Language Models",
+        "authors": [
+          "Ricardo Dominguez-Olmedo",
+          "Moritz Hardt",
+          "Celestine Mendler-Dünner"
+        ],
+        "year": 2023,
+        "date": "2023-06-13",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2306.07951",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2306.07951",
+        "pdf_url": null,
+        "abstract": "As large language models increase in capability, researchers have started to conduct surveys of all kinds on these models with varying scientific motivations. In this work, we examine what we can learn from a model's survey responses on the basis of the well-established American Community Survey (ACS) by the U.S. Census Bureau. Evaluating more than a dozen different models, varying in size from a few hundred million to ten billion parameters, hundreds of thousands of times each on questions from the ACS, we systematically establish two dominant patterns. First, smaller models have a significant position and labeling bias, for example, towards survey responses labeled with the letter \"A\". This A-bias diminishes, albeit slowly, as model size increases. Second, when adjusting for this labeling bias through randomized answer ordering, models still do not trend toward US population statistics or those of any cognizable population. Rather, models across the board trend toward uniformly random aggregate statistics over survey responses. This pattern is robust to various different ways of prompting the model, including what is the de-facto standard. Our findings demonstrate that aggregate statistics of a language model's survey responses lack the signals found in human populations. This absence of statistical signal cautions about the use of survey responses from large language models at present time.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "popular questions upvotes versus frequency survey",
+            "position": 6
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.25,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 0.625
+          }
+        }
+      },
+      "term_overlap": 0.316,
+      "tfidf_similarity": 0.113,
+      "design_elements_matched": [],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Figure 6: Ranking of attributes in cluster label classification.",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.7717/peerj-cs.2019/fig-6",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.7717/peerj-cs.2019/fig-6",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "component",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "cluster size ranking Comparing questions instructors",
+            "position": 1
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.333,
+            "title_match": 0.333,
+            "retrieval_hits": 1,
+            "score": 1.125
+          }
+        }
+      },
+      "term_overlap": 0.074,
+      "tfidf_similarity": 0.08,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Large Language Models Struggle to Learn Long-Tail Knowledge",
+        "authors": [
+          "Nikhil Kandpal",
+          "Haikang Deng",
+          "Adam Roberts",
+          "Eric Wallace",
+          "Colin Raffel"
+        ],
+        "year": 2022,
+        "date": "2022-11-15",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2211.08411",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2211.08411",
+        "pdf_url": null,
+        "abstract": "The internet contains a wealth of knowledge -- from the birthdays of historical figures to tutorials on how to code -- all of which may be learned by language models. However, there is a huge variability in the number of times a given piece of information appears on the web. In this paper, we study the relationship between the knowledge memorized by large language models and the information in their pre-training datasets. In particular, we show that a language model's ability to answer a fact-based question relates to how many documents associated with that question were seen during pre-training. We identify these relevant documents by entity linking pre-training datasets and counting documents that contain the same entities as a given question-answer pair. Our results demonstrate strong correlational and causal relationships between accuracy and relevant document count for numerous question answering datasets (e.g., TriviaQA), pre-training corpora (e.g., ROOTS), and model sizes (e.g., 176B parameters). Moreover, we find that while larger models are better at learning long-tail knowledge, we estimate that today's models must be scaled by many orders of magnitude to reach competitive QA performance on questions with little support in the pre-training data. Finally, we show that retrieval-augmentation can reduce the dependence on relevant document count, presenting a promising approach for capturing the long-tail.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "cluster size ranking Comparing questions instructors",
+            "position": 9
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.333,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 0.792
+          }
+        }
+      },
+      "term_overlap": 0.264,
+      "tfidf_similarity": 0.112,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Dialogue Response Ranking Training with Large-Scale Human Feedback Data",
+        "authors": [
+          "Xiang Gao",
+          "Yizhe Zhang",
+          "Michel Galley",
+          "Chris Brockett",
+          "Bill Dolan"
+        ],
+        "year": 2020,
+        "date": "2020-09-15",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2009.06978",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2009.06978",
+        "pdf_url": null,
+        "abstract": "Existing open-domain dialog models are generally trained to minimize the perplexity of target human responses. However, some human replies are more engaging than others, spawning more followup interactions. Current conversational models are increasingly capable of producing turns that are context-relevant, but in order to produce compelling agents, these models need to be able to predict and optimize for turns that are genuinely engaging. We leverage social media feedback data (number of replies and upvotes) to build a large-scale training dataset for feedback prediction. To alleviate possible distortion between the feedback and engagingness, we convert the ranking problem to a comparison of response pairs which involve few confounding factors. We trained DialogRPT, a set of GPT-2 based models on 133M pairs of human feedback data and the resulting ranker outperformed several baselines. Particularly, our ranker outperforms the conventional dialog perplexity baseline with a large margin on predicting Reddit feedback. We finally combine the feedback prediction models and a human-like scoring model to rank the machine-generated dialog responses. Crowd-sourced human evaluation shows that our ranking method correlates better with real human preferences than baseline models.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "upvoting student questions lecture review",
+            "position": 9
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.25,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 0.625
+          }
+        }
+      },
+      "term_overlap": 0.092,
+      "tfidf_similarity": 0.025,
+      "design_elements_matched": [
+        "upvote ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Student Perceptions of Instructors Comparing a Low Mediated Immediacy Syllabus to a High Mediated Immediacy Syllabus",
+        "authors": [
+          "Ann Marie Kamps"
+        ],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.30707/etd2022.20221020070312296104.999984",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.30707/etd2022.20221020070312296104.999984",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "dissertation",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "upvote ranking Comparing questions instructors",
+            "position": 4
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "cluster size ranking Comparing questions instructors",
+            "position": 5
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 2,
+            "score": 1.45
+          }
+        }
+      },
+      "term_overlap": 0.215,
+      "tfidf_similarity": 0.14,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "When Evidence Conflicts: Reliability-aware Meta-review Generation",
+        "authors": [
+          "Xinzhe Wang",
+          "Fei Tao",
+          "Jiang Xie",
+          "Hong Yu",
+          "Ye Wang"
+        ],
+        "year": 2026,
+        "date": "2026-09-21",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2609.24028",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2609.24028",
+        "pdf_url": null,
+        "abstract": "Generating coherent meta-reviews from multiple peer reviews is challenging when reviewer evidence conflicts and varies in reliability. Existing approaches typically formulate meta-review generation as a multi-document summarization task and aggregate reviewer feedback uniformly, making it difficult to determine which opinions should be prioritized under disagreement. In this paper, we study meta-review generation through reliability-aware evidence aggregation. Our framework first extracts aspect-level opinions from peer reviews and identifies conflicting evidence within each aspect. It then estimates opinion-level support and review-level quality to measure evidence reliability. Based on these signals, the framework assigns reliability-aware weights to reviewer feedback, enabling the generator to prioritize better-supported arguments while preserving diverse perspectives. Experiments demonstrate that our method consistently improves meta-review generation over strong baselines on both automatic and human evaluations, with clear gains in conflict recognition and resolution under high-conflict review scenarios. The code and implementation details are publicly available at https://github.com/Wangxz729/reliability-aware-meta-review.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "question voting audience prioritization review",
+            "position": 4
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.0,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 0.125
+          }
+        }
+      },
+      "term_overlap": 0.265,
+      "tfidf_similarity": 0.076,
+      "design_elements_matched": [],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Is foreknowledge necessary for CPR-instructors? A randomised controlled trial comparing three different instructor groups",
+        "authors": [
+          "P.J.P.M. Cuijpers",
+          "G. Bookelman",
+          "A.P.M. Gorgels",
+          "W. de Vries"
+        ],
+        "year": 2010,
+        "date": "2010-12",
+        "venue": "Resuscitation",
+        "doi": "10.1016/j.resuscitation.2010.09.135",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.resuscitation.2010.09.135",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "instructor priority judgement Comparing questions instructors",
+            "position": 1
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.325
+          }
+        }
+      },
+      "term_overlap": 0.162,
+      "tfidf_similarity": 0.171,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Student questions",
+        "authors": [
+          "Anthony Cody"
+        ],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.31979/etd.ue8v-5xme",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.31979/etd.ue8v-5xme",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "dissertation",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "upvoting student questions lecture",
+            "position": 1
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.625
+          }
+        }
+      },
+      "term_overlap": 0.075,
+      "tfidf_similarity": 0.236,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "The social optics of monetized UGC contests: Reward size influences peer upvotes",
+        "authors": [
+          "Debjit Gupta",
+          "Dipankar Chakravarti",
+          "Juncai Jiang"
+        ],
+        "year": 2026,
+        "date": "2026-07-14",
+        "venue": "Advancing Consumer Psychology",
+        "doi": "10.4337/9781035359684.00016",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.4337/9781035359684.00016",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "book-chapter",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "Q&A upvotes instructor answer priority",
+            "position": 10
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.2,
+            "title_match": 0.2,
+            "retrieval_hits": 1,
+            "score": 0.725
+          }
+        }
+      },
+      "term_overlap": 0.164,
+      "tfidf_similarity": 0.144,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    }
+  ],
+  "possible_same_design": [],
+  "design_matches_off_topic": [],
+  "found_via_citations": [
+    {
+      "paper": {
+        "title": "Sample size considerations for stratified cluster randomization design with binary outcomes and varying cluster size",
+        "authors": [
+          "Xiaohan Xu",
+          "Hong Zhu",
+          "Chul W. Ahn"
+        ],
+        "year": 2019,
+        "date": "2019-04-29",
+        "venue": "Statistics in Medicine",
+        "doi": "10.1002/sim.8175",
+        "arxiv_id": null,
+        "pmid": "31033011",
+        "openalex_id": null,
+        "s2_id": "1cf3b2ebfa91a9216f62dabed9ea78a5e802e3c7",
+        "url": "https://www.semanticscholar.org/paper/1cf3b2ebfa91a9216f62dabed9ea78a5e802e3c7",
+        "pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6649663",
+        "abstract": "Stratified cluster randomization trials (CRTs) have been frequently employed in clinical and healthcare research. Comparing with simple randomized CRTs, stratified CRTs reduce the imbalance of baseline prognostic factors among different intervention groups. Due to the popularity, there has been a growing interest in methodological development on sample size estimation and power analysis for stratified CRTs; however, existing work mostly assumes equal cluster size within each stratum and uses multilevel models. Clusters are often naturally formed with random sizes in CRTs. With varying cluster size, commonly used ad hoc approaches ignore the variability in cluster size, which may underestimate (overestimate) the required number of clusters for each group per stratum and lead to underpowered (overpowered) clinical trials. We propose closed‐form sample size formulas for estimating the required total number of subjects and for estimating the number of clusters for each group per stratum, based on Cochran‐Mantel‐Haenszel statistic for stratified cluster randomization design with binary outcomes, accounting for both clustering and varying cluster size. We investigate the impact of various design parameters on the relative change in the required number of clusters for each group per stratum due to varying cluster size. Simulation studies are conducted to evaluate the finite‐sample performance of the proposed sample size method. A real application example of a pragmatic stratified CRT of a triad of chronic kidney disease, diabetes, and hypertension is presented for illustration.",
+        "citations": 9,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.24,
+      "tfidf_similarity": 0.12,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Covariate balance in simple stratified and clustered comparative studies",
+        "authors": [
+          "Ben B. Hansen",
+          "Jake Bowers"
+        ],
+        "year": 2008,
+        "date": "2008-05-01",
+        "venue": null,
+        "doi": "10.1214/08-sts254",
+        "arxiv_id": "0808.3857",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "15bdc0149967acb4d22a1b5778d4ee8e8a1dab88",
+        "url": "https://www.semanticscholar.org/paper/15bdc0149967acb4d22a1b5778d4ee8e8a1dab88",
+        "pdf_url": "https://projecteuclid.org/journals/statistical-science/volume-23/issue-2/Covariate-Balance-in-Simple-Stratified-and-Clustered-Comparative-Studies/10.1214/08-STS254.pdf",
+        "abstract": "In randomized experiments, treatment and control groups should be roughly the same—balanced—in their distributions of pre- treatment variables. But how nearly so? Can descriptive comparisons meaningfully be paired with significance tests? If so, should there be several such tests, one for each pretreatment variable, or should there be a single, omnibus test? Could such a test be engineered to give eas- ily computed p-values that are reliable in samples of moderate size, or would simulation be needed for reliable calibration? What new con- cerns are introduced by random assignment of clusters? Which tests of balance would be optimal? To address these questions, Fisher's randomization inference is ap- plied to the question of balance. Its application suggests the reversal of published conclusions about two studies, one clinical and the other a field experiment in political participation.",
+        "citations": 462,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.25,
+      "tfidf_similarity": 0.096,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Randomization methods and cluster size in cluster randomized trials conducted in elementary and high schools",
+        "authors": [],
+        "year": 2021,
+        "date": null,
+        "venue": "Vojnosanitetski pregled",
+        "doi": null,
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": null,
+        "pdf_url": null,
+        "abstract": null,
+        "citations": null,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.176,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Power analysis for stratified cluster randomisation trials with cluster size being the stratifying factor",
+        "authors": [
+          "Ji-Jia Wang",
+          "Song Zhang",
+          "Chul W. Ahn"
+        ],
+        "year": 2017,
+        "date": "2017-01-02",
+        "venue": null,
+        "doi": "10.1080/24754269.2017.1347309",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "f8fcce16e53b94b0019d617ca849f8cf5965a359",
+        "url": "https://www.semanticscholar.org/paper/f8fcce16e53b94b0019d617ca849f8cf5965a359",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/24754269.2017.1347309?needAccess=true&role=button",
+        "abstract": null,
+        "citations": 8,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.163,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Sample size calculations for cluster randomised trials, with a focus on ordinal outcomes.",
+        "authors": [
+          "C. Robinson"
+        ],
+        "year": 2016,
+        "date": "2016-05-16",
+        "venue": null,
+        "doi": null,
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "52ecac6de4c9052dea33b55efa9f6992aa2aaf6c",
+        "url": "https://www.semanticscholar.org/paper/52ecac6de4c9052dea33b55efa9f6992aa2aaf6c",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.131,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "The Benefits of Probability-Proportional-to-Size Sampling in Cluster-Randomized Experiments",
+        "authors": [
+          "Yeng Xiong",
+          "Michael J. Higgins"
+        ],
+        "year": 2020,
+        "date": "2020-02-19",
+        "venue": null,
+        "doi": null,
+        "arxiv_id": "2002.08009",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "b3798ec36874c755aca66d68a7a08520d789195b",
+        "url": "https://www.semanticscholar.org/paper/b3798ec36874c755aca66d68a7a08520d789195b",
+        "pdf_url": null,
+        "abstract": "In a cluster-randomized experiment, treatment is assigned to clusters of individual units of interest‐households, classrooms, villages, etc.‐instead of the units themselves. The number of clusters sampled and the number of units sampled within each cluster is typically restricted by a budget constraint. Previous analysis of cluster randomized experiments under the NeymanRubin potential outcomes model of response have assumed a simple random sample of clusters; estimators of the population average treatment effect (PATE) under this assumption are often either biased or not invariant to location shifts of potential outcomes. We demonstrate that, by sampling clusters with probability proportional to the number of units within a cluster, the PATE can be unbiasedly estimated using an estimator that is invariant to location shifts.",
+        "citations": 2,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.083,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Model‐Robust Standardization in Cluster‐Randomized Trials",
+        "authors": [
+          "Fan Li",
+          "Jia-Qi Tong",
+          "Xi Fang",
+          "Chao Cheng",
+          "B. Kahan",
+          "Bingkai Wang"
+        ],
+        "year": 2025,
+        "date": "2025-05-25",
+        "venue": "Statistics in Medicine",
+        "doi": "10.1002/sim.70270",
+        "arxiv_id": "2505.19336",
+        "pmid": "40968363",
+        "openalex_id": null,
+        "s2_id": "98aa3b19c849bcd6f289b462cbe16b160ed6a6e3",
+        "url": "https://www.semanticscholar.org/paper/98aa3b19c849bcd6f289b462cbe16b160ed6a6e3",
+        "pdf_url": "https://arxiv.org/pdf/2505.19336",
+        "abstract": "In cluster‐randomized trials, generalized linear mixed models and generalized estimating equations have conventionally been the default analytic methods for estimating the average treatment effect as routine practice. However, recent studies have demonstrated that their treatment effect coefficient estimators may correspond to ambiguous estimands when the models are misspecified or when there exist informative cluster sizes. In this article, we present a unified approach that standardizes output from a given regression model to ensure estimand‐aligned inference for the treatment effect parameters in cluster‐randomized trials. We introduce estimators for both the cluster‐average and the individual‐average treatment effects (marginal estimands) that are always consistent regardless of whether the specified working regression models align with the unknown data generating process. We further explore the use of a deletion‐based jackknife variance estimator for inference. The development of our approach also motivates a natural test for informative cluster size. Extensive simulation experiments are designed to demonstrate the advantage of the proposed estimators under a variety of scenarios. The proposed model‐robust standardization methods are implemented in the MRStdCRT R package.",
+        "citations": 12,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1002/sim.1665"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.075,
+      "design_elements_matched": [
+        "cluster size ranking"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    }
+  ],
+  "ranked": [
+    {
+      "title": "Event-Aligned Learning Analytics for Instructor Priority Review: Preceding Performance Signals and Task-Progression Interruption in a Large-Scale Online Course",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-10823614/v1",
+      "year": 2026
+    },
+    {
+      "title": "Comparing completely and stratified randomized designs in cluster randomized trials when the stratifying factor is cluster size: a simulation study",
+      "arxiv_id": null,
+      "doi": "10.1002/sim.1665",
+      "year": 2004
+    },
+    {
+      "title": "Sample size considerations for stratified cluster randomization design with binary outcomes and varying cluster size",
+      "arxiv_id": null,
+      "doi": "10.1002/sim.8175",
+      "year": 2019
+    },
+    {
+      "title": "Covariate balance in simple stratified and clustered comparative studies",
+      "arxiv_id": "0808.3857",
+      "doi": "10.1214/08-sts254",
+      "year": 2008
+    },
+    {
+      "title": "Randomization methods and cluster size in cluster randomized trials conducted in elementary and high schools",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Power analysis for stratified cluster randomisation trials with cluster size being the stratifying factor",
+      "arxiv_id": null,
+      "doi": "10.1080/24754269.2017.1347309",
+      "year": 2017
+    },
+    {
+      "title": "Sample size calculations for cluster randomised trials, with a focus on ordinal outcomes.",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2016
+    },
+    {
+      "title": "Capturing LLM Capabilities via Evidence-Calibrated Query Clustering",
+      "arxiv_id": "2605.17110",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "The Benefits of Probability-Proportional-to-Size Sampling in Cluster-Randomized Experiments",
+      "arxiv_id": "2002.08009",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "Model‐Robust Standardization in Cluster‐Randomized Trials",
+      "arxiv_id": "2505.19336",
+      "doi": "10.1002/sim.70270",
+      "year": 2025
+    },
+    {
+      "title": "Enhancing student-instructor interaction in online learning environments through a doubt management system with LSTM-based priority classification",
+      "arxiv_id": null,
+      "doi": "10.1063/5.0298850",
+      "year": 2026
+    },
+    {
+      "title": "Questioning the Survey Responses of Large Language Models",
+      "arxiv_id": "2306.07951",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Figure 6: Ranking of attributes in cluster label classification.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.2019/fig-6",
+      "year": null
+    },
+    {
+      "title": "Large Language Models Struggle to Learn Long-Tail Knowledge",
+      "arxiv_id": "2211.08411",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Dialogue Response Ranking Training with Large-Scale Human Feedback Data",
+      "arxiv_id": "2009.06978",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "Student Perceptions of Instructors Comparing a Low Mediated Immediacy Syllabus to a High Mediated Immediacy Syllabus",
+      "arxiv_id": null,
+      "doi": "10.30707/etd2022.20221020070312296104.999984",
+      "year": null
+    },
+    {
+      "title": "When Evidence Conflicts: Reliability-aware Meta-review Generation",
+      "arxiv_id": "2609.24028",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Is foreknowledge necessary for CPR-instructors? A randomised controlled trial comparing three different instructor groups",
+      "arxiv_id": null,
+      "doi": "10.1016/j.resuscitation.2010.09.135",
+      "year": 2010
+    },
+    {
+      "title": "Student questions",
+      "arxiv_id": null,
+      "doi": "10.31979/etd.ue8v-5xme",
+      "year": null
+    },
+    {
+      "title": "The social optics of monetized UGC contests: Reward size influences peer upvotes",
+      "arxiv_id": null,
+      "doi": "10.4337/9781035359684.00016",
+      "year": 2026
+    },
+    {
+      "title": "Exploiting Primacy Effect To Improve Large Language Models",
+      "arxiv_id": "2507.13949",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "upvote, n.",
+      "arxiv_id": null,
+      "doi": "10.1093/oed/8219488043",
+      "year": 2023
+    },
+    {
+      "title": "Comparing Group Means",
+      "arxiv_id": null,
+      "doi": "10.4135/9781071878989.n6",
+      "year": 2012
+    },
+    {
+      "title": "The Strongest Teacher Is Not Always the Best Teacher: Student-Centric Answer Selection",
+      "arxiv_id": "2605.26872",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "KCluster: An LLM-based Clustering Approach to Knowledge Component Discovery",
+      "arxiv_id": "2505.06469",
+      "doi": "10.5281/zenodo.15870196",
+      "year": 2025
+    },
+    {
+      "title": "AI Meets Mathematics Education: A Case Study on Supporting an Instructor in a Large Mathematics Class with Context-Aware AI",
+      "arxiv_id": "2603.26679",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "upvote, v.",
+      "arxiv_id": null,
+      "doi": "10.1093/oed/1191138490",
+      "year": 2023
+    },
+    {
+      "title": "The Effects of Instructors Discussing Alcohol In The Classroom on Student Perceptions of Their Instructor",
+      "arxiv_id": null,
+      "doi": "10.30707/etd2018.brophy.n",
+      "year": null
+    },
+    {
+      "title": "Questions and Answers",
+      "arxiv_id": null,
+      "doi": "10.1086/469170",
+      "year": 1882
+    },
+    {
+      "title": "Recall Questions for Soil Compression: Potential Learning Gains for Students and Instructors",
+      "arxiv_id": null,
+      "doi": "10.1061/9780784484067.051",
+      "year": 2022
+    },
+    {
+      "title": "EduFair-Bench: Evaluating Pedagogical Fairness of LLM Tutors Across Student Demographics",
+      "arxiv_id": "2609.12949",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "NaturalThoughts: Selecting and Distilling Reasoning Traces for General Reasoning Tasks",
+      "arxiv_id": "2507.01921",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "ClusterLLM: Large Language Models as a Guide for Text Clustering",
+      "arxiv_id": "2305.14871",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "SkillContrast: Difference-Guided Text Selection for Agent Skill Reranking",
+      "arxiv_id": "2610.11650",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Training Curricula for Open Domain Answer Re-Ranking",
+      "arxiv_id": "2004.14269",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "Teaching Mathematics with Classroom Voting",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781614443018.002",
+      "year": 2012
+    },
+    {
+      "title": "SyllabusQA: A Course Logistics Question Answering Dataset",
+      "arxiv_id": "2403.14666",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Analyzing Student Confidence in Classroom Voting With Multiple Choice Questions",
+      "arxiv_id": null,
+      "doi": "10.1080/10511970.2013.801381",
+      "year": 2013
+    },
+    {
+      "title": "Empirical Realism and the Priority of Judgement",
+      "arxiv_id": null,
+      "doi": "10.1093/acprof:oso/9780199242740.003.0002",
+      "year": 2002
+    },
+    {
+      "title": "How are SJT Questions Created?",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780198805809.003.0015",
+      "year": 2018
+    },
+    {
+      "title": "Corpus Prevalence of Multiple-Choice Question Options",
+      "arxiv_id": "2602.17377",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Measuring the Quality of Answers in Political Q&As with Large Language Models",
+      "arxiv_id": "2404.08816",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "LiveBench: A Challenging, Contamination-Free LLM Benchmark",
+      "arxiv_id": "2406.19314",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Exploring and Comparing Moroccan EFL Writing Instructors’ and University Students’ Perceptions and Reported Practices of Written Feedback",
+      "arxiv_id": null,
+      "doi": "10.14232/phd.12110",
+      "year": null
+    },
+    {
+      "title": "Effect of lecture instruction on student performance on qualitative questions",
+      "arxiv_id": null,
+      "doi": "10.1103/physrevstper.11.010102",
+      "year": 2015
+    },
+    {
+      "title": "Cite or Decline: A Strict Course-Grounded Chatbot for STEM Lecture Videos",
+      "arxiv_id": "2609.01846",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Questions Admitted Students Should Ask Before Committing to Enroll",
+      "arxiv_id": null,
+      "doi": "10.64934/d7bmen71",
+      "year": 2026
+    },
+    {
+      "title": "PaRaDe: Passage Ranking using Demonstrations with Large Language Models",
+      "arxiv_id": "2310.14408",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "The Voting Audience",
+      "arxiv_id": null,
+      "doi": "10.5204/mcj.2716",
+      "year": 2008
+    },
+    {
+      "title": "ComparisonQA: Evaluating Factuality Robustness of LLMs Through Knowledge Frequency Control and Uncertainty",
+      "arxiv_id": "2412.20251",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Instructor-Centered Per-Question Adaptation for Short Answer Grading Using LLM Scores and Informative Sampling",
+      "arxiv_id": null,
+      "doi": "10.1145/3774935.3806189",
+      "year": 2026
+    },
+    {
+      "title": "Do High Upvotes Reflect Community Consensus?: Exploring the Relationship Between User Diversity and Upvotes in FM Korea Posts",
+      "arxiv_id": null,
+      "doi": "10.21562/kjs.2025.05.59.2.111",
+      "year": 2025
+    },
+    {
+      "title": "Beyond Upvotes: A New Approach to Measuring Influence on Reddit",
+      "arxiv_id": null,
+      "doi": "10.1145/3716554.3716604",
+      "year": 2024
+    },
+    {
+      "title": "Classroom Voting Questions to Stimulate Discussions in Precalculus",
+      "arxiv_id": null,
+      "doi": "10.1080/10511970.2017.1388313",
+      "year": 2018
+    },
+    {
+      "title": "Student Questions",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003780021-2",
+      "year": 2026
+    },
+    {
+      "title": "GQA: A New Dataset for Real-World Visual Reasoning and Compositional Question Answering",
+      "arxiv_id": "1902.09506",
+      "doi": null,
+      "year": 2019
+    },
+    {
+      "title": "RankingProject: The Ranking Project: Visualizations for Comparing Populations",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.rankingproject",
+      "year": 2017
+    },
+    {
+      "title": "Cluster Randomized Trials",
+      "arxiv_id": null,
+      "doi": "10.1007/978-0-387-09834-0_47",
+      "year": 2014
+    },
+    {
+      "title": "Instructor Presentation",
+      "arxiv_id": null,
+      "doi": "10.5040/9798216413127.ch2",
+      "year": 2024
+    },
+    {
+      "title": "All those likes and upvotes are bad news for democracy",
+      "arxiv_id": null,
+      "doi": "10.64628/ab.xvdrt63a4",
+      "year": 2013
+    },
+    {
+      "title": "The effect of nonrandom selection of clusters in a two stage cluster design",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2012
+    },
+    {
+      "title": "ComQA: A Community-sourced Dataset for Complex Factoid Question Answering with Paraphrase Clusters",
+      "arxiv_id": "1809.09528",
+      "doi": null,
+      "year": 2018
+    },
+    {
+      "title": "Effective Transfer Learning for Identifying Similar Questions: Matching User Questions to COVID-19 FAQs",
+      "arxiv_id": "2008.13546",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "When All Options Are Wrong: Evaluating Large Language Model Robustness with Incorrect Multiple-Choice Options",
+      "arxiv_id": "2409.00113",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Establishing Knowledge Preference in Language Models",
+      "arxiv_id": "2407.13048",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Writing and Adapting Classroom Voting Questions: New Functions from Old",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781614443018.018",
+      "year": 2012
+    },
+    {
+      "title": "Qualitative Analysis of Student Responses to Survey Questions Investigating Student Perceptions of Case-Based Learning",
+      "arxiv_id": null,
+      "doi": "10.4103/ehp.ehp_37_20",
+      "year": 2021
+    },
+    {
+      "title": "Differences in the Visual Design Language of Paper-and-Pencil Surveys Versus Web Surveys",
+      "arxiv_id": null,
+      "doi": "10.1177/0894439308325201",
+      "year": 2009
+    },
+    {
+      "title": "Comparing Major Ranking Systems",
+      "arxiv_id": null,
+      "doi": "10.4018/979-8-3373-1072-5.ch007",
+      "year": 2025
+    },
+    {
+      "title": "Automated Educational Question Generation at Different Bloom's Skill Levels using Large Language Models: Strategies and Evaluation",
+      "arxiv_id": "2408.04394",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "TopClustRAG at SIGIR 2025 LiveRAG Challenge",
+      "arxiv_id": "2506.15246",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Equal Ranking Quality, Different Decisions: Measuring and Reducing Order Dependence in LLM Scorers",
+      "arxiv_id": "2608.26762",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Iterative Utility Judgment Framework via LLMs Inspired by Relevance in Philosophy",
+      "arxiv_id": "2406.11290",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "The Bible Instructor: a Manual for the Training of Lay Bible Instructors",
+      "arxiv_id": null,
+      "doi": "10.32597/dmin/163/",
+      "year": null
+    },
+    {
+      "title": "New Instructor Checklist",
+      "arxiv_id": null,
+      "doi": "10.5040/9798216413127.ch11",
+      "year": 2024
+    },
+    {
+      "title": "Student Answer Forecasting: Transformer-Driven Answer Choice Prediction for Language Learning",
+      "arxiv_id": "2405.20079",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Review Rarely Beats the Stronger Model: Separating Verification from Capability Transfer in LLM Pipelines",
+      "arxiv_id": "2610.15897",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Table 6: Spearman correlation comparing all tools based on stability values ranking of reference gene.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.14221/table-6",
+      "year": null
+    },
+    {
+      "title": "Master Questions, Student Questions, and Genuine Questions: A Performative Analysis of Questions in Chan Encounter Dialogues",
+      "arxiv_id": null,
+      "doi": "10.3390/rel11020072",
+      "year": 2020
+    },
+    {
+      "title": "Graph-Based Tri-Attention Network for Answer Ranking in CQA",
+      "arxiv_id": "2103.03583",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Measuring short-form factuality in large language models",
+      "arxiv_id": "2411.04368",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Audience Design and Pragmatic Conceptions of Moves and Upvotes During Advice-Giving on Reddit",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.4539128",
+      "year": 2023
+    },
+    {
+      "title": "ResearchQA: Evaluating Scholarly Question Answering at Scale Across 75 Fields with Survey-Mined Questions and Rubrics",
+      "arxiv_id": "2509.00496",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "JudgeBoard: Benchmarking and Enhancing Small Language Models for Reasoning Evaluation",
+      "arxiv_id": "2511.15958",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Helps for the Orientation Instructor",
+      "arxiv_id": null,
+      "doi": "10.1097/00006247-197612000-00006",
+      "year": 1976
+    },
+    {
+      "title": "VecCISC: Improving Confidence-Informed Self-Consistency with Reasoning Trace Clustering and Candidate Answer Selection",
+      "arxiv_id": "2605.08070",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Exploring Instructor Presence, Slide Content Variation, and Answer Cue Presentation Modes on Cognitive Load and Learning in Video-Based Learning Environments",
+      "arxiv_id": null,
+      "doi": "10.1109/educon62633.2025.11016555",
+      "year": 2025
+    },
+    {
+      "title": "Lesson Planning with Classroom Voting: An Example from Linear Algebra",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781614443018.024",
+      "year": 2012
+    },
+    {
+      "title": "Q&A Prompts: Discovering Rich Visual Clues through Mining Question-Answer Prompts for VQA requiring Diverse World Knowledge",
+      "arxiv_id": "2401.10712",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge",
+      "arxiv_id": "1811.00937",
+      "doi": null,
+      "year": 2018
+    },
+    {
+      "title": "The wider role of the instructor",
+      "arxiv_id": null,
+      "doi": "10.1002/9781394292134.ch13",
+      "year": 2024
+    },
+    {
+      "title": "What Draws the Upvotes? Examining Relationships among Performance, Interpersonal Skills, and Learning Behaviors in Online Social Annotation Environments (Poster 51)",
+      "arxiv_id": null,
+      "doi": "10.3102/ip.26.2275388",
+      "year": 2026
+    },
+    {
+      "title": "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+      "arxiv_id": null,
+      "doi": "10.18653/v1/2025.emnlp-main.1760",
+      "year": 2025
+    },
+    {
+      "title": "Instructor Presentation Supplement",
+      "arxiv_id": null,
+      "doi": "10.5040/9798216413127.ch7",
+      "year": 2024
+    },
+    {
+      "title": "Leveraging Large Language Models for Actionable Course Evaluation Student Feedback to Lecturers",
+      "arxiv_id": "2407.01274",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Discovering a speaker’s audience through an informal question-and-answer session activity",
+      "arxiv_id": null,
+      "doi": "10.1080/17404622.2025.2594483",
+      "year": 2025
+    },
+    {
+      "title": "Literature Review Of Instructor Competencies",
+      "arxiv_id": null,
+      "doi": "10.1108/979-8-88730-409-020251006",
+      "year": 2023
+    },
+    {
+      "title": "SIGHT: A Large Annotated Dataset on Student Insights Gathered from Higher Education Transcripts",
+      "arxiv_id": "2306.09343",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Can Instructors Detect Ai-Generated Papers? Postsecondary Writing Instructor Knowledge and Perceptions of Ai",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.4655981",
+      "year": 2023
+    },
+    {
+      "title": "Cluster randomized trials for health care quality improvement research.",
+      "arxiv_id": null,
+      "doi": "10.1016/j.acap.2013.07.008",
+      "year": 2013
+    },
+    {
+      "title": "Developments in cluster randomized trials and Statistics in Medicine",
+      "arxiv_id": null,
+      "doi": "10.1002/sim.2731",
+      "year": 2007
+    },
+    {
+      "title": "ASAG2024: A Combined Benchmark for Short Answer Grading",
+      "arxiv_id": "2409.18596",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Which of These Best Describes Multiple Choice Evaluation with LLMs? A) Forced B) Flawed C) Fixable D) All of the Above",
+      "arxiv_id": "2502.14127",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "NLP Methods May Actually Be Better Than Professors at Estimating Question Difficulty",
+      "arxiv_id": "2508.03294",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Sample size considerations when groups are the appropriate unit of analysis.",
+      "arxiv_id": null,
+      "doi": "10.1016/j.apnr.2006.02.004",
+      "year": 2007
+    },
+    {
+      "title": "SAS-Bench: A Fine-Grained Benchmark for Evaluating Short Answer Scoring with Large Language Models",
+      "arxiv_id": "2505.07247",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Unearthing Skill-Level Insights for Understanding Trade-Offs of Foundation Models",
+      "arxiv_id": "2410.13826",
+      "doi": "10.48550/arxiv.2410.13826",
+      "year": 2024
+    },
+    {
+      "title": "ASKQUESTIONS!: Leveraging Multimodal AI Architectures for Dynamic Event Interaction and Question Prioritization",
+      "arxiv_id": null,
+      "doi": "10.55041/ijsrem49821",
+      "year": 2025
+    },
+    {
+      "title": "Automatic Generation of Socratic Subquestions for Teaching Math Word Problems",
+      "arxiv_id": "2211.12835",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Student-Generated Questions and Goal Orientation in Literacy Assessment",
+      "arxiv_id": null,
+      "doi": "10.3102/ip.25.2185450",
+      "year": 2025
+    },
+    {
+      "title": "A black market for upvotes and likes",
+      "arxiv_id": null,
+      "doi": "10.22503/inftars.xix.2019.4.2",
+      "year": 2019
+    },
+    {
+      "title": "Precise but Uncoupled: Reviewer Precision Does Not Guarantee Critique Uptake in Multi-Agent Math Reasoning",
+      "arxiv_id": "2607.15388",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Methods to adjust for stratification variables in stratified cluster randomized trials",
+      "arxiv_id": null,
+      "doi": "10.1007/s10742-025-00346-9",
+      "year": 2025
+    },
+    {
+      "title": "Distilling a Small Utility-Based Passage Selector to Enhance Retrieval-Augmented Generation",
+      "arxiv_id": "2507.19102",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Token-Weighted Multi-Target Learning for Generative Recommenders with Curriculum Learning",
+      "arxiv_id": "2601.17787",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Student of Clouds",
+      "arxiv_id": null,
+      "doi": "10.2307/j.ctt9qh75r.6",
+      "year": null
+    },
+    {
+      "title": "Questions",
+      "arxiv_id": null,
+      "doi": "10.7551/mitpress/15659.003.0004",
+      "year": 2026
+    },
+    {
+      "title": "Sample Size Considerations for Clustered and Correlated Outcomes in Clinical Research",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2019
+    },
+    {
+      "title": "Developing a New Identity as a Clinical Nursing Instructor",
+      "arxiv_id": null,
+      "doi": "10.1891/9780826157287.0001",
+      "year": 2024
+    },
+    {
+      "title": "US Instructor Survey 2024: Findings from a National Survey",
+      "arxiv_id": null,
+      "doi": "10.18665/sr.321165",
+      "year": 2024
+    },
+    {
+      "title": "Answer review",
+      "arxiv_id": null,
+      "doi": "10.5194/wes-2016-50-ac2",
+      "year": 2017
+    },
+    {
+      "title": "Review of an instructor computation model for Navy learning centers and a Navy instructor workweek analysis for facilitated self-paced instruction",
+      "arxiv_id": null,
+      "doi": "10.1002/pfi.190",
+      "year": 2008
+    },
+    {
+      "title": "Beyond Bias Scores: Answerability Confounds in Activation Steering with Gradient-Constrained Direction Design (GCD)",
+      "arxiv_id": "2610.17641",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "De-grading student evaluations: What’s wrong with student polls of teaching",
+      "arxiv_id": null,
+      "doi": "10.1007/bf02682768",
+      "year": 1988
+    },
+    {
+      "title": "How to Answer Tough Interview Questions",
+      "arxiv_id": null,
+      "doi": "10.64934/vxjez2rp",
+      "year": 2019
+    },
+    {
+      "title": "Systematic Reviews to Answer Health Care Questions",
+      "arxiv_id": null,
+      "doi": "10.1038/s41406-026-1617-1",
+      "year": 2026
+    },
+    {
+      "title": "Instructor performance evaluation: a nationwide survey of performance appraisal in two-year colleges",
+      "arxiv_id": null,
+      "doi": "10.31274/rtd-180813-10293",
+      "year": null
+    },
+    {
+      "title": "WARP: Wasserstein-Aligned RAG for Population Opinions",
+      "arxiv_id": "2608.22859",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "IDENTIFY STUDENT QUESTIONS ABOUT TRAINING INSTITUTIONS FROM ONLINE MEDIA POSTS",
+      "arxiv_id": null,
+      "doi": "10.18173/2354-1059.2024-0036",
+      "year": 2024
+    },
+    {
+      "title": "Using Open-Ended Survey Questions to Understand Student Perceptions of Internship and Research Engagement During the COVID-19 Pandemic (Poster 15)",
+      "arxiv_id": null,
+      "doi": "10.3102/ip.22.1888391",
+      "year": 2022
+    },
+    {
+      "title": "Teens answer survey questions on weight control inconsistently but answer reliably about other risk behaviors",
+      "arxiv_id": null,
+      "doi": "10.1037/e504432010-011",
+      "year": 2009
+    },
+    {
+      "title": "QUESTIONS TO CONSIDER WHEN SELECTING STUDENT SAMPLES",
+      "arxiv_id": null,
+      "doi": "10.1111/j.1745-493x.2011.03233.x",
+      "year": 2011
+    },
+    {
+      "title": "IRT-Router: Effective and Interpretable Multi-LLM Routing via Item Response Theory",
+      "arxiv_id": "2506.01048",
+      "doi": "10.48550/arxiv.2506.01048",
+      "year": 2025
+    },
+    {
+      "title": "IntelliAsk: Learning to Ask High-Quality Research Questions via RLVR",
+      "arxiv_id": "2602.15849",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Does RAG Introduce Unfairness in LLMs? Evaluating Fairness in Retrieval-Augmented Generation Systems",
+      "arxiv_id": "2409.19804",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Classroom Voting Questions that Provoke Teachable Moments in Differential Equations",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781614443018.022",
+      "year": 2012
+    },
+    {
+      "title": "Agent Trajectory Priority: Encoding Network Based on Question-and-Answer Social Interaction",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.4985223",
+      "year": 2024
+    },
+    {
+      "title": "Editions (1920 versus 1947) and Performance Questions",
+      "arxiv_id": null,
+      "doi": "10.5406/illinois/9780252040856.003.0014",
+      "year": 2018
+    },
+    {
+      "title": "Beyond Factual QA: Mentorship-Oriented Question Answering over Long-Form Multilingual Content",
+      "arxiv_id": "2601.17173",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Large-Scale, Longitudinal Study of Large Language Models During the 2024 US Election Season",
+      "arxiv_id": "2509.18446",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "326 What are the most important questions to answer? – experiences in priority setting in cochrane work review group",
+      "arxiv_id": null,
+      "doi": "10.1136/oemed-2018-icohabstracts.503",
+      "year": 2018
+    },
+    {
+      "title": "ACM SIGCOMM Student Mentoring Column",
+      "arxiv_id": null,
+      "doi": "10.1145/2831347.2831355",
+      "year": 2015
+    },
+    {
+      "title": "Priority Setting: Right Answer to a Far Too Narrow Question? Comment on \"Global Developments in Priority Setting in Health\"",
+      "arxiv_id": null,
+      "doi": "10.15171/ijhpm.2017.66",
+      "year": 2017
+    },
+    {
+      "title": "WebGPT: Browser-assisted question-answering with human feedback",
+      "arxiv_id": "2112.09332",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Evidence-based care of older people with suspected cognitive impairment in general practice: protocol for the IRIS cluster randomised trial",
+      "arxiv_id": null,
+      "doi": "10.1186/1748-5908-8-91",
+      "year": 2013
+    },
+    {
+      "title": "A pragmatic cluster randomized trial evaluating the impact of a community pharmacy intervention on statin adherence: rationale and design of the Community Pharmacy Assisting in Total Cardiovascular Health (CPATCH) study",
+      "arxiv_id": null,
+      "doi": "10.1186/1745-6215-11-76",
+      "year": 2010
+    },
+    {
+      "title": "Between Student Expectations and Institutional Questions",
+      "arxiv_id": null,
+      "doi": "10.59704/44bfc5a56177e919",
+      "year": 2026
+    },
+    {
+      "title": "Crowdsourcing Multiple Choice Science Questions",
+      "arxiv_id": "1707.06209",
+      "doi": null,
+      "year": 2017
+    },
+    {
+      "title": "Answer Matching Outperforms Multiple Choice for Language Model Evaluation",
+      "arxiv_id": "2507.02856",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing",
+      "arxiv_id": "2404.14618",
+      "doi": "10.48550/arxiv.2404.14618",
+      "year": 2024
+    },
+    {
+      "title": "EduQG: A Multi-format Multiple Choice Dataset for the Educational Domain",
+      "arxiv_id": "2210.06104",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "NewsQA: A Machine Comprehension Dataset",
+      "arxiv_id": "1611.09830",
+      "doi": null,
+      "year": 2016
+    },
+    {
+      "title": "Efficacy of a Community-Based Physical Activity Program KM2H2 for Stroke and Heart Attack Prevention among Senior Hypertensive Patients: A Cluster Randomized Controlled Phase-II Trial",
+      "arxiv_id": null,
+      "doi": "10.1371/journal.pone.0139442",
+      "year": 2015
+    },
+    {
+      "title": "When to Retrieve: Teaching LLMs to Utilize Information Retrieval Effectively",
+      "arxiv_id": "2404.19705",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Model Capability Dominates: Inference-Time Optimization Lessons from AIMO 3",
+      "arxiv_id": "2603.27844",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "metabench -- A Sparse Benchmark of Reasoning and Knowledge in Large Language Models",
+      "arxiv_id": "2407.12844",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "SCB-Dataset3: A Benchmark for Detecting Student Classroom Behavior",
+      "arxiv_id": "2310.02522",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "arxiv_id": "2408.04810",
+      "doi": "10.48550/arxiv.2408.04810",
+      "year": 2024
+    },
+    {
+      "title": "Question answering systems for health professionals at the point of care -- a systematic review",
+      "arxiv_id": "2402.01700",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "PRD: Peer Rank and Discussion Improve Large Language Model based Evaluations",
+      "arxiv_id": "2307.02762",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "SkillVerse : Assessing and Enhancing LLMs with Tree Evaluation",
+      "arxiv_id": "2506.00319",
+      "doi": "10.48550/arxiv.2506.00319",
+      "year": 2025
+    },
+    {
+      "title": "Think Twice: Enhancing LLM Reasoning by Scaling Multi-round Test-time Thinking",
+      "arxiv_id": "2503.19855",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "ORQA: An Occupation-Realistic Question and Answer Framework for LLM Professional Knowledge",
+      "arxiv_id": "2609.12366",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "RadialRouter: Structured Representation for Efficient and Robust Large Language Models Routing",
+      "arxiv_id": "2506.03880",
+      "doi": "10.48550/arxiv.2506.03880",
+      "year": 2025
+    },
+    {
+      "title": "Large Language Models Systematically Favor Popular Options: Evidence and Mitigation Across MCQs",
+      "arxiv_id": "2608.29257",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Efficient Training-Free Online Routing for High-Volume Multi-LLM Serving",
+      "arxiv_id": "2509.02718",
+      "doi": "10.48550/arxiv.2509.02718",
+      "year": 2025
+    },
+    {
+      "title": "Student Classroom Behavior Detection based on YOLOv7-BRA and Multi-Model Fusion",
+      "arxiv_id": "2305.07825",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Chain-of-Action: Faithful and Multimodal Question Answering through Large Language Models",
+      "arxiv_id": "2403.17359",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Optimal Design for Human Preference Elicitation",
+      "arxiv_id": "2404.13895",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "MixLLM: Dynamic Routing in Mixed Large Language Models",
+      "arxiv_id": "2502.18482",
+      "doi": "10.48550/arxiv.2502.18482",
+      "year": 2025
+    },
+    {
+      "title": "A Simple Approach to Jointly Rank Passages and Select Relevant Sentences in the OBQA Context",
+      "arxiv_id": "2109.10497",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Thinking LLMs: General Instruction Following with Thought Generation",
+      "arxiv_id": "2410.10630",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+      "arxiv_id": "2506.13131",
+      "doi": "10.48550/arxiv.2506.13131",
+      "year": 2025
+    },
+    {
+      "title": "Retrieval Helps or Hurts? A Deeper Dive into the Efficacy of Retrieval Augmentation to Language Models",
+      "arxiv_id": "2402.13492",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "QSTN: A Modular Framework for Robust Questionnaire Inference with Large Language Models",
+      "arxiv_id": "2512.08646",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "MathVerse: Does Your Multi-modal LLM Truly See the Diagrams in Visual Math Problems?",
+      "arxiv_id": "2403.14624",
+      "doi": "10.48550/arxiv.2403.14624",
+      "year": 2024
+    },
+    {
+      "title": "LIABILITY IN SPACE LAW: QUESTIONS ON PRACTICAL APPLICATION OF ABSOLUTE AND FAULT LIABILITY",
+      "arxiv_id": null,
+      "doi": "10.29053/pslr.v9i.1972",
+      "year": 2015
+    },
+    {
+      "title": "Research Questions and Models",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-032-02823-5_4",
+      "year": 2025
+    },
+    {
+      "title": "Leveraging Retrieval-Augmented Generation for University Knowledge Retrieval",
+      "arxiv_id": "2411.06237",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Does the Selected Object Reach the Reader? Auditing Identity Handoffs in Grounded Language-Model Pipelines",
+      "arxiv_id": "2609.04579",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Multi-Stage Verification-Centric Framework for Mitigating Hallucination in Multi-Modal RAG",
+      "arxiv_id": "2507.20136",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "The Question of Audience",
+      "arxiv_id": null,
+      "doi": "10.1086/443177",
+      "year": 1974
+    },
+    {
+      "title": "Are Priority Review Vouchers The Answer To Incentivize Drug Development? Not So Fast.",
+      "arxiv_id": null,
+      "doi": "10.1377/forefront.20160615.055372",
+      "year": 2016
+    },
+    {
+      "title": "Questions Answered",
+      "arxiv_id": null,
+      "doi": "10.1086/469088",
+      "year": 1882
+    },
+    {
+      "title": "Questions Answered",
+      "arxiv_id": null,
+      "doi": "10.1086/469150",
+      "year": 1882
+    },
+    {
+      "title": "Questions Answered",
+      "arxiv_id": null,
+      "doi": "10.1086/469110",
+      "year": 1882
+    },
+    {
+      "title": "Writing Survey Questions",
+      "arxiv_id": null,
+      "doi": "10.4135/9781506367125",
+      "year": 2014
+    },
+    {
+      "title": "Developing Survey Questions",
+      "arxiv_id": null,
+      "doi": "10.4135/9781473985469",
+      "year": 2015
+    },
+    {
+      "title": "Questions of discipline",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003769712-3",
+      "year": 2026
+    },
+    {
+      "title": "Introduction: questions and sources",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781139227070.002",
+      "year": 2012
+    },
+    {
+      "title": "Table 1: Survey questions.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.17594/table-1",
+      "year": null
+    },
+    {
+      "title": "Table 1: Survey questions.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.19595/table-1",
+      "year": null
+    },
+    {
+      "title": "Survey Question Wordings",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781139198714.010",
+      "year": 2012
+    },
+    {
+      "title": "Table 7: Survey questions.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3513/table-7",
+      "year": null
+    },
+    {
+      "title": "Mitigating the Bias of Large Language Model Evaluation",
+      "arxiv_id": "2409.16788",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Open Versus Closed Survey Questions",
+      "arxiv_id": null,
+      "doi": "10.4135/9781526421036907648",
+      "year": 2020
+    },
+    {
+      "title": "When and What to Ask: AskBench and Rubric-Guided RLVR for LLM Clarification",
+      "arxiv_id": "2602.11199",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Table S4: Number of questions answered versus scores on different groups of exam 2 questions",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.1322/supp-4",
+      "year": null
+    },
+    {
+      "title": "Reading Guided by Questions versus Careful Reading and Re-Reading without Questions",
+      "arxiv_id": null,
+      "doi": "10.1086/439186",
+      "year": 1931
+    },
+    {
+      "title": "Research Questions Versus Research Hypotheses",
+      "arxiv_id": null,
+      "doi": "10.4135/9781529694550",
+      "year": 2021
+    },
+    {
+      "title": "REVIEW QUESTIONS FOR APPENDIX E: The Cell",
+      "arxiv_id": null,
+      "doi": "10.1016/b978-0-12-705955-6.50031-9",
+      "year": 1977
+    },
+    {
+      "title": "Asking Questions About Media and Popular Culture",
+      "arxiv_id": null,
+      "doi": "10.4135/9781506335445.n5",
+      "year": 2013
+    },
+    {
+      "title": "Miscellaneous Questions About ABA",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003470144-22",
+      "year": 2025
+    },
+    {
+      "title": "A Question of Publishers and a Question of Audience",
+      "arxiv_id": null,
+      "doi": "10.1080/00064246.1986.11414398",
+      "year": 1986
+    },
+    {
+      "title": "Can Good Questions and Peer Discussion Improve Calculus Instruction?",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781614443018.004",
+      "year": null
+    },
+    {
+      "title": "REVIEW QUESTIONS FOR APPENDIX C: Orbitals",
+      "arxiv_id": null,
+      "doi": "10.1016/b978-0-12-705955-6.50029-0",
+      "year": 1977
+    },
+    {
+      "title": "Voting Rights: Mrs. Hamer's Question",
+      "arxiv_id": null,
+      "doi": "10.5040/9798216019534.0013",
+      "year": 2006
+    },
+    {
+      "title": "REVIEW QUESTIONS FOR APPENDIX B: Metric system conversions",
+      "arxiv_id": null,
+      "doi": "10.1016/b978-0-12-705955-6.50028-9",
+      "year": 1977
+    },
+    {
+      "title": "Special Survey Questions: Factorial, Conjoint, and Online",
+      "arxiv_id": null,
+      "doi": "10.4135/9781412984393.n5",
+      "year": 2003
+    },
+    {
+      "title": "At the edges: A question of audience invisibility, disappearance and failure",
+      "arxiv_id": null,
+      "doi": "10.5040/9781350234161.ch-5",
+      "year": 2024
+    },
+    {
+      "title": "Good Questions for Mathematics Eduction: An Example from Multivariable Calculus",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9781614443018.020",
+      "year": null
+    },
+    {
+      "title": "Knowledge, Attitudes, and Behavior: Additional Tips for Creating Survey Questions",
+      "arxiv_id": null,
+      "doi": "10.4135/9781412984393.n4",
+      "year": 2003
+    },
+    {
+      "title": "REVIEW QUESTIONS FOR APPENDIX D: Details of glucose catabolism",
+      "arxiv_id": null,
+      "doi": "10.1016/b978-0-12-705955-6.50030-7",
+      "year": 1977
+    },
+    {
+      "title": "Top 10 AI questions from oral healthcare professionals published",
+      "arxiv_id": null,
+      "doi": "10.1038/s41406-026-1646-9",
+      "year": 2026
+    },
+    {
+      "title": "Indigenous systems of healing: questions for professional, popular, and folk care",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003294900-6",
+      "year": 2022
+    },
+    {
+      "title": "Safi Faye: Ethnographic Films and Questions of Subjectivity",
+      "arxiv_id": null,
+      "doi": "10.1002/j.2831-865x.1998.tb00126.x",
+      "year": 1998
+    },
+    {
+      "title": "Review for \"Disagreeing Perspectives Enhance Inner-Crowd Wisdom for Difficult (but Not Easy) Questions\"",
+      "arxiv_id": null,
+      "doi": "10.1177/09567976251325518/v1/review3",
+      "year": 2024
+    },
+    {
+      "title": "Right of Holders of Non-Voting Stock to Vote on Question of Dissolution",
+      "arxiv_id": null,
+      "doi": "10.2307/1329975",
+      "year": 1927
+    },
+    {
+      "title": "Machines For Ultimate Questions: Popular Culture Between Techno Elegies and Raving Ecstasy",
+      "arxiv_id": null,
+      "doi": "10.1002/j.2831-865x.2001.tb00539.x",
+      "year": 2001
+    },
+    {
+      "title": "Constitutional Law. Voting. Comparative Weight of Each Vote in Primary Elections Held to be Political and Not Justiciable Question",
+      "arxiv_id": null,
+      "doi": "10.2307/1069409",
+      "year": 1950
+    },
+    {
+      "title": "Figure 4: Frequency distribution of the number of query images (30 questions in total) correctly matched per survey event.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.11190/fig-4",
+      "year": null
+    },
+    {
+      "title": "Open-World Evaluation for Retrieving Diverse Perspectives",
+      "arxiv_id": "2409.18110",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Lost in the Prompt Order: Revealing the Limitations of Causal Attention in Language Models",
+      "arxiv_id": "2601.14152",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+      "arxiv_id": "2406.01574",
+      "doi": "10.48550/arxiv.2406.01574",
+      "year": 2024
+    },
+    {
+      "title": "Popular Imagination Versus Historical Reality",
+      "arxiv_id": null,
+      "doi": "10.5130/phrj.v25i0.6157",
+      "year": 2018
+    },
+    {
+      "title": "What Are You Talking About? Discussion Frequency of Issues Captured in Common Survey Questions",
+      "arxiv_id": null,
+      "doi": "10.31235/osf.io/vqp2g_v1",
+      "year": 2025
+    },
+    {
+      "title": "Whom to Query for What: Adaptive Group Elicitation via Multi-Turn LLM Interactions",
+      "arxiv_id": "2602.14279",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "20 Questions: Dr. Joshua DeJong, Pediatrician",
+      "arxiv_id": null,
+      "doi": "10.64934/y7kepy06",
+      "year": 2026
+    },
+    {
+      "title": "Maximally Random Sortition",
+      "arxiv_id": "2604.02712",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Fine Tuning vs. Retrieval Augmented Generation for Less Popular Knowledge",
+      "arxiv_id": "2403.01432",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "A Politics in Search of a Poetics: The Aesthetic Questions of a Popular Theatre Artist",
+      "arxiv_id": null,
+      "doi": "10.3138/ctr.123.013",
+      "year": 2005
+    },
+    {
+      "title": "Introduction",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780192849472.003.0001",
+      "year": 2021
+    },
+    {
+      "title": "Language Model Fine-Tuning on Scaled Survey Data for Predicting Distributions of Public Opinions",
+      "arxiv_id": "2502.16761",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+      "arxiv_id": "2403.04132",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "CommunityLM: Probing Partisan Worldviews from Language Models",
+      "arxiv_id": "2209.07065",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Questões sociais e políticas dos catadores de materiais recicláveis Social and political questions of recyclable material collectors",
+      "arxiv_id": null,
+      "doi": "10.14393/rep-2024-70019",
+      "year": 2024
+    },
+    {
+      "title": "Rescue: Ranking LLM Responses with Partial Ordering to Improve Response Generation",
+      "arxiv_id": "2311.09136",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Large Language Models are not Fair Evaluators",
+      "arxiv_id": "2305.17926",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Search Arena: Analyzing Search-Augmented LLMs",
+      "arxiv_id": "2506.05334",
+      "doi": "10.48550/arxiv.2506.05334",
+      "year": 2025
+    },
+    {
+      "title": "CARROT: A Cost Aware Rate Optimal Router",
+      "arxiv_id": "2502.03261",
+      "doi": "10.48550/arxiv.2502.03261",
+      "year": 2025
+    },
+    {
+      "title": "Enlightening the Other: Colonial Korean Cinema and the Question of Audience",
+      "arxiv_id": null,
+      "doi": "10.25024/review.2015.18.1.002",
+      "year": 2015
+    },
+    {
+      "title": "SlopBench: How Well Can We Rank Language Models by Slop? A Multi-Domain Benchmark of Repetitive AI Writing",
+      "arxiv_id": "2609.33905",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "MMT-Bench: A Comprehensive Multimodal Benchmark for Evaluating Large Vision-Language Models Towards Multitask AGI",
+      "arxiv_id": "2404.16006",
+      "doi": "10.48550/arxiv.2404.16006",
+      "year": 2024
+    },
+    {
+      "title": "Audience Voting Share Estimation of Competitive Reality Shows Based on Bayesian MCMC Framework",
+      "arxiv_id": null,
+      "doi": "10.5220/0015109900005244",
+      "year": 2026
+    },
+    {
+      "title": "Case study: crowd wisdom, crowd creation, crowd voting",
+      "arxiv_id": null,
+      "doi": "10.4337/9781035388509.00010",
+      "year": 2026
+    },
+    {
+      "title": "Optimizing Requirements Prioritization: Majority Voting Goal-Based Approach with Vertical Binary Search",
+      "arxiv_id": null,
+      "doi": "10.1109/icetsis61505.2024.10459533",
+      "year": 2024
+    },
+    {
+      "title": "Overcoming the Trade-Off Effect: Environmental or Economic Prioritization and the Propensity for Green Voting",
+      "arxiv_id": null,
+      "doi": "10.1093/ijpor/edaf017",
+      "year": 2025
+    },
+    {
+      "title": "Being asked to dance: Evidence of racial bias in audience voting behavior on the television show Strictly Come Dancing.",
+      "arxiv_id": null,
+      "doi": "10.1037/ppm0000498",
+      "year": 2024
+    },
+    {
+      "title": "The Reconstruction of Unobserved Audience Voting and the Robustness of Evaluation Mechanisms Based on Constrained Optimization Models and Sensitivity Analysis",
+      "arxiv_id": null,
+      "doi": "10.1051/itmconf/20268904025",
+      "year": 2026
+    },
+    {
+      "title": "The Dynamic Reconstruction of Hidden Audience Voting in Competitive Reality Shows Based on Covariate-Augmented Bayesian State Space Models",
+      "arxiv_id": null,
+      "doi": "10.1051/itmconf/20268904012",
+      "year": 2026
+    },
+    {
+      "title": "ClassRoom-Crowd: A Comprehensive Dataset for Classroom Crowd Counting and Cross-Domain Baseline Analysis",
+      "arxiv_id": null,
+      "doi": "10.3390/engproc2024078010",
+      "year": 2025
+    },
+    {
+      "title": "Crowd Comparative Reasoning: Unlocking Comprehensive Evaluations for LLM-as-a-Judge",
+      "arxiv_id": "2502.12501",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Follow the Wisdom of the Crowd: Effective Text Generation via Minimum Bayes Risk Decoding",
+      "arxiv_id": "2211.07634",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Electoral College Versus Popular Vote",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.4852420",
+      "year": 2024
+    },
+    {
+      "title": "The Aging Audience for Politics on TV",
+      "arxiv_id": null,
+      "doi": "10.4324/9781315663746-9",
+      "year": 2015
+    },
+    {
+      "title": "Unsupervised Classification by Iterative Voting",
+      "arxiv_id": null,
+      "doi": "10.26599/ijcs.2022.9100037",
+      "year": 2023
+    },
+    {
+      "title": "GIS-BASED LANDSCAPE PRIORITIZATION TO GUIDE INVASIVE SPECIES SURVEY",
+      "arxiv_id": null,
+      "doi": "10.37099/mtu.dc.etdr/1755",
+      "year": null
+    },
+    {
+      "title": "AudienceView: AI-Assisted Interpretation of Audience Feedback in Journalism",
+      "arxiv_id": "2407.12613",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Dynamic Sentiment Analysis with Local Large Language Models using Majority Voting: A Study on Factors Affecting Restaurant Evaluation",
+      "arxiv_id": "2407.13069",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "A defense of popular culture",
+      "arxiv_id": null,
+      "doi": "10.1007/s12129-999-1045-z",
+      "year": 2000
+    },
+    {
+      "title": "#Instabod versus #BoPo: An experimental study of the effects of viewing idealized versus body-positive content on collegiate males’ and females’ body satisfaction.",
+      "arxiv_id": null,
+      "doi": "10.1037/ppm0000454",
+      "year": 2024
+    },
+    {
+      "title": "Vaccine priority survey",
+      "arxiv_id": null,
+      "doi": "10.1126/science.aae0168",
+      "year": 2021
+    },
+    {
+      "title": "Comparison of listening experiences by podcast styles: Monologue versus dialogue.",
+      "arxiv_id": null,
+      "doi": "10.1037/ppm0000622",
+      "year": 2025
+    },
+    {
+      "title": "'Popular Religiosity and Liturgy'",
+      "arxiv_id": null,
+      "doi": "10.2143/ql.79.1.2003590",
+      "year": 1998
+    },
+    {
+      "title": "Supplemental Material for Comparison of Listening Experiences by Podcast Styles: Monologue Versus Dialogue",
+      "arxiv_id": null,
+      "doi": "10.1037/ppm0000622.supp",
+      "year": 2025
+    },
+    {
+      "title": "What does popular fiction have to do with the occult?",
+      "arxiv_id": null,
+      "doi": "10.5117/9789463720205-12",
+      "year": 2025
+    },
+    {
+      "title": "Supplemental Material for The “Ideal Versus Real” Social Media Posts Increase Female Adults’ Body Appreciation",
+      "arxiv_id": null,
+      "doi": "10.1037/ppm0000631.supp",
+      "year": 2025
+    },
+    {
+      "title": "On the Role of Reviewer Expertise in Temporal Review Helpfulness Prediction",
+      "arxiv_id": "2303.00923",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "The Many Dimensions of Truthfulness: Crowdsourcing Misinformation Assessments on a Multidimensional Scale",
+      "arxiv_id": "2108.01222",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Teaching LLMs at Charles University: Assignments and Activities",
+      "arxiv_id": "2407.19798",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Auto Arena of LLMs: Automating LLM Evaluations with Agent Peer-battles and Committee Discussions",
+      "arxiv_id": "2405.20267",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Model, Analyze, and Comprehend User Interactions within a Social Media Platform",
+      "arxiv_id": "2403.15937",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Multi-Aspect Reviewed-Item Retrieval via LLM Query Decomposition and Aspect Fusion",
+      "arxiv_id": "2408.00878",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Evaluating ChatGPT as a Recommender System: A Rigorous Approach",
+      "arxiv_id": "2309.03613",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Language Model Council: Benchmarking Foundation Models on Highly Subjective Tasks by Consensus",
+      "arxiv_id": "2406.08598",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "The language of sound search: Examining User Queries in Audio Search Engines",
+      "arxiv_id": "2410.08324",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "SurveyBench: How Well Can LLM(-Agents) Write Academic Surveys?",
+      "arxiv_id": "2510.03120",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Television in Barranquilla, Colombia",
+      "arxiv_id": null,
+      "doi": "10.31979/etd.5tv7-5u5y",
+      "year": null
+    },
+    {
+      "title": "In Agents We Trust, but Who Do Agents Trust? Latent Source Preferences Steer LLM Generations",
+      "arxiv_id": "2602.15456",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "OpenReviewer: A Specialized Large Language Model for Generating Critical Scientific Paper Reviews",
+      "arxiv_id": "2412.11948",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "SurveyGen: Quality-Aware Scientific Survey Generation with Large Language Models",
+      "arxiv_id": "2508.17647",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Deep Literature Survey Automation with an Iterative Workflow",
+      "arxiv_id": "2510.21900",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Neural Rankers for Effective Screening Prioritisation in Medical Systematic Review Literature Search",
+      "arxiv_id": "2212.09017",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Reviewer2: Optimizing Review Generation Through Prompt Generation",
+      "arxiv_id": "2402.10886",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "MathTutorBench: A Benchmark for Measuring Open-ended Pedagogical Capabilities of LLM Tutors",
+      "arxiv_id": "2502.18940",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "APPENDIX C: Assignment-Ranking Activity",
+      "arxiv_id": null,
+      "doi": "10.7330/9781607329343.c008",
+      "year": 2020
+    },
+    {
+      "title": "RETRACTED ARTICLE: A novel approach for ranking customer reviews using a modified PSO-based aspect ranking algorithm",
+      "arxiv_id": null,
+      "doi": "10.1007/s10586-018-2012-7",
+      "year": 2018
+    },
+    {
+      "title": "Retraction Note: A novel approach for ranking customer reviews using a modified PSO-based aspect ranking algorithm",
+      "arxiv_id": null,
+      "doi": "10.1007/s10586-022-03848-0",
+      "year": 2022
+    },
+    {
+      "title": "Rank-K: Test-Time Reasoning for Listwise Reranking",
+      "arxiv_id": "2505.14432",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Judging the Judges: A Systematic Study of Position Bias in LLM-as-a-Judge",
+      "arxiv_id": "2406.07791",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Toward Robust LLM-Based Judges: Taxonomic Bias Evaluation and Debiasing Optimization",
+      "arxiv_id": "2603.08091",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Design efficiency for imbalanced multilevel data",
+      "arxiv_id": null,
+      "doi": "10.3758/brm.41.1.192",
+      "year": 2009
+    },
+    {
+      "title": "Multilevel Design Efficiency using Simulation.",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2008
+    },
+    {
+      "title": "Outcome of primary root canal treatment: systematic review of the literature -- Part 2. Influence of clinical factors.",
+      "arxiv_id": null,
+      "doi": "10.1111/j.1365-2591.2007.01323.x",
+      "year": 2007
+    },
+    {
+      "title": "Impacts of the Stimulate, Appreciate, Learn and Transfer community engagement approach to increase immunization coverage in Assam, India",
+      "arxiv_id": null,
+      "doi": "10.23846/tw10ie130",
+      "year": 2020
+    },
+    {
+      "title": "Multilevel Modelling Newsletter Centre for Multilevel Modelling the Royal Statistical Society- Joint Meeting of the Social Statistics Section/ General Applications Section Also in This Issue Esrc Research Methods Festival Rc33 Sixth International Conference on Social Science Methodology Multilevel M",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2004
+    },
+    {
+      "title": "MULTILEVEL MODELLING NEWSLETTER",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2004
+    },
+    {
+      "title": "Adaptive Testing for LLM Evaluation: A Psychometric Alternative to Static Benchmarks",
+      "arxiv_id": "2511.04689",
+      "doi": "10.48550/arxiv.2511.04689",
+      "year": 2025
+    },
+    {
+      "title": "gpt-oss-120b&gpt-oss-20b Model Card",
+      "arxiv_id": "2508.10925",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Arena-lite: Efficient and Reliable Large Language Model Evaluation via Tournament-Based Direct Comparisons",
+      "arxiv_id": "2411.01281",
+      "doi": "10.18653/v1/2025.emnlp-main.360",
+      "year": 2024
+    },
+    {
+      "title": "GraphRouter: A Graph-based Router for LLM Selections",
+      "arxiv_id": "2410.03834",
+      "doi": "10.48550/arxiv.2410.03834",
+      "year": 2024
+    },
+    {
+      "title": "TensorOpera Router: A Multi-Model Router for Efficient LLM Inference",
+      "arxiv_id": "2408.12320",
+      "doi": "10.18653/v1/2024.emnlp-industry.34",
+      "year": 2024
+    },
+    {
+      "title": "RouteLLM: Learning to Route LLMs with Preference Data",
+      "arxiv_id": "2406.18665",
+      "doi": "10.48550/arxiv.2406.18665",
+      "year": 2024
+    },
+    {
+      "title": "LLM as Dataset Analyst: Subpopulation Structure Discovery with Large Language Model",
+      "arxiv_id": "2405.02363",
+      "doi": "10.48550/arxiv.2405.02363",
+      "year": 2024
+    },
+    {
+      "title": "RouterBench: A Benchmark for Multi-LLM Routing System",
+      "arxiv_id": "2403.12031",
+      "doi": "10.48550/arxiv.2403.12031",
+      "year": 2024
+    },
+    {
+      "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+      "arxiv_id": "2403.05530",
+      "doi": null,
+      "year": 2024
+    }
+  ],
+  "ranking": "claim",
+  "semantic_model": null,
+  "arxiv_match": "all",
+  "must_read": [
+    {
+      "title": "Event-Aligned Learning Analytics for Instructor Priority Review: Preceding Performance Signals and Task-Progression Interruption in a Large-Scale Online Course",
+      "year": 2026,
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-10823614/v1",
+      "pdf_url": null,
+      "why": "term overlap 0.385, design elements: instructor priority judgement, survey-like",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Comparing completely and stratified randomized designs in cluster randomized trials when the stratifying factor is cluster size: a simulation study",
+      "year": 2004,
+      "arxiv_id": null,
+      "doi": "10.1002/sim.1665",
+      "pdf_url": null,
+      "why": "term overlap 0.24, design elements: cluster size ranking",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Sample size considerations for stratified cluster randomization design with binary outcomes and varying cluster size",
+      "year": 2019,
+      "arxiv_id": null,
+      "doi": "10.1002/sim.8175",
+      "pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6649663",
+      "why": "term overlap 0.24, design elements: cluster size ranking, found only through the citation graph",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "Covariate balance in simple stratified and clustered comparative studies",
+      "year": 2008,
+      "arxiv_id": "0808.3857",
+      "doi": "10.1214/08-sts254",
+      "pdf_url": "https://projecteuclid.org/journals/statistical-science/volume-23/issue-2/Covariate-Balance-in-Simple-Stratified-and-Clustered-Comparative-Studies/10.1214/08-STS254.pdf",
+      "why": "term overlap 0.25, design elements: cluster size ranking, found only through the citation graph",
+      "next": "fulltext --id 0808.3857"
+    },
+    {
+      "title": "Randomization methods and cluster size in cluster randomized trials conducted in elementary and high schools",
+      "year": 2021,
+      "arxiv_id": null,
+      "doi": null,
+      "pdf_url": null,
+      "why": "term overlap 0.145, design elements: cluster size ranking, found only through the citation graph, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Power analysis for stratified cluster randomisation trials with cluster size being the stratifying factor",
+      "year": 2017,
+      "arxiv_id": null,
+      "doi": "10.1080/24754269.2017.1347309",
+      "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/24754269.2017.1347309?needAccess=true&role=button",
+      "why": "term overlap 0.145, design elements: cluster size ranking, found only through the citation graph, no abstract retrieved",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "Sample size calculations for cluster randomised trials, with a focus on ordinal outcomes.",
+      "year": 2016,
+      "arxiv_id": null,
+      "doi": null,
+      "pdf_url": null,
+      "why": "term overlap 0.145, design elements: cluster size ranking, found only through the citation graph, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    }
+  ],
+  "expansion_log": [
+    {
+      "expanded": "Event-Aligned Learning Analytics for Instructor Priority Review: Preceding Performance Signals and Task-Progression Interruption in a Large-Scale Online Course",
+      "citing_and_references": 0
+    },
+    {
+      "expanded": "Comparing completely and stratified randomized designs in cluster randomized trials when the stratifying factor is cluster size: a simulation study",
+      "citing_and_references": 23
+    },
+    {
+      "expanded": "Capturing LLM Capabilities via Evidence-Calibrated Query Clustering",
+      "citing_and_references": 25
+    }
+  ],
+  "expansion_errors": [
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404,
+      "step": "citations"
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404,
+      "step": "references"
+    }
+  ],
+  "log": [
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "upvoting student questions lecture",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "upvoting student questions lecture",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "upvoting student questions lecture",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "question voting audience prioritization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "question voting audience prioritization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "question voting audience prioritization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "popular questions upvotes versus frequency",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "popular questions upvotes versus frequency",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "popular questions upvotes versus frequency",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "crowd voting questions classroom",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "crowd voting questions classroom",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "crowd voting questions classroom",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "Q&A upvotes instructor answer priority",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "Q&A upvotes instructor answer priority",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "Q&A upvotes instructor answer priority",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "upvoting student questions lecture survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "upvoting student questions lecture survey",
+      "results": 9,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "upvoting student questions lecture survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "upvoting student questions lecture review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "upvoting student questions lecture review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "upvoting student questions lecture review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "question voting audience prioritization survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "question voting audience prioritization survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "question voting audience prioritization survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "question voting audience prioritization review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "question voting audience prioritization review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "question voting audience prioritization review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "popular questions upvotes versus frequency survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "popular questions upvotes versus frequency survey",
+      "results": 9,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "popular questions upvotes versus frequency survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "popular questions upvotes versus frequency review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "popular questions upvotes versus frequency review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "popular questions upvotes versus frequency review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "crowd voting questions classroom survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "crowd voting questions classroom survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "crowd voting questions classroom survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "crowd voting questions classroom review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "crowd voting questions classroom review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "crowd voting questions classroom review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "Q&A upvotes instructor answer priority survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "Q&A upvotes instructor answer priority survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "Q&A upvotes instructor answer priority survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "Q&A upvotes instructor answer priority review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "Q&A upvotes instructor answer priority review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "Q&A upvotes instructor answer priority review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "upvoting student questions lecture",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "upvoting student questions lecture",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "upvoting student questions lecture",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "question voting audience prioritization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "question voting audience prioritization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "question voting audience prioritization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "popular questions upvotes versus frequency",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "popular questions upvotes versus frequency",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "popular questions upvotes versus frequency",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "crowd voting questions classroom",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "crowd voting questions classroom",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "crowd voting questions classroom",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "Q&A upvotes instructor answer priority",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "Q&A upvotes instructor answer priority",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "Q&A upvotes instructor answer priority",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "upvote ranking Comparing questions instructors",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "upvote ranking Comparing questions instructors",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "upvote ranking Comparing questions instructors",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "cluster size ranking Comparing questions instructors",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "cluster size ranking Comparing questions instructors",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "cluster size ranking Comparing questions instructors",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "instructor priority judgement Comparing questions instructors",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "instructor priority judgement Comparing questions instructors",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "instructor priority judgement Comparing questions instructors",
+      "results": 10,
+      "error": null
+    }
+  ],
+  "date": "2026-10-19"
+}

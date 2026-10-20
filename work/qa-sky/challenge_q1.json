@@ -1,0 +1,3423 @@
+{
+  "claim": "Evaluating how well embedding and LLM clustering of live student lecture questions agrees with instructor groupings, and how sensitive the most frequent question cluster is to the clustering threshold",
+  "queries": [
+    "clustering student questions evaluation",
+    "student question grouping human agreement",
+    "short text clustering student questions embeddings",
+    "LLM question similarity clustering education",
+    "duplicate student questions detection forum"
+  ],
+  "design_elements": [
+    "agreement with instructor groupings",
+    "adjusted rand index",
+    "clustering threshold sensitivity"
+  ],
+  "design_queries": [
+    "agreement with instructor groupings Evaluating clustering instructor clustering",
+    "adjusted rand index Evaluating clustering instructor clustering",
+    "clustering threshold sensitivity Evaluating clustering instructor clustering"
+  ],
+  "anchor": "Evaluating clustering instructor clustering",
+  "seeds": [],
+  "sources_ok": [
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [],
+  "sources_status": {
+    "arxiv": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 28,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "crossref": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 197,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 200,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "query_diversity": {
+    "n_queries": 5,
+    "distinct_terms": 16,
+    "mean_pairwise_term_overlap": 0.242,
+    "near_paraphrases": false
+  },
+  "n_papers_examined": 283,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 17,
+  "n_without_abstract": 101,
+  "n_from_citation_expansion": 38,
+  "n_possible_same_design": 0,
+  "n_design_matches_off_topic": 0,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "ceiling_lowered_because": [
+    "citation expansion partly failed (2 call(s): not_found)",
+    "70% of the ten closest records have no abstract"
+  ],
+  "interpretation": "No closely worded paper was retrieved, but only 0 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Quality Threshold Clustering",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": "SpringerReference",
+        "doi": "10.1007/springerreference_179398",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/springerreference_179398",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "reference-entry",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+            "position": 1
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.325
+          }
+        }
+      },
+      "term_overlap": 0.095,
+      "tfidf_similarity": 0.28,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Factions Within, Uncertain Across: Within-Document Reader Sub-Groups in Social Highlighting",
+        "authors": [
+          "Kazuki Nakayashiki",
+          "Keisuke Watanabe"
+        ],
+        "year": 2026,
+        "date": "2026-06-10",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2606.11613",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2606.11613",
+        "pdf_url": null,
+        "abstract": "When many people highlight the same document, is the crowd a single consensus, or is it internally structured into reader sub-groups that mark different things -- and is that structure a stable property of a reader or of the document? Building on prior work showing an individual's within-document highlighting signal is a whisper while individuality lives in selection, we ask the group-level question on a co-readership platform using a margin-preserving curveball null. Experiment 1: within a document, readers form strong sub-groups -- pairs agree far beyond what shared salience, mark density, and sentence popularity predict (nearest-neighbour agreement z=+6.3, significant in 88% of documents). Under an eight-block region-preserving null, shared engagement with the same coarse regions of the document accounts for about 40% of this excess; the majority survives as finer reader-specific agreement (z=+3.6, 77% significant). So the within-document crowd is, in a descriptive sense, factional. Experiment 2: is that grouping a stable reader trait? Here we are honest about power. The cross-document split-half reproducibility of a pair's agreement is near zero pooled (+0.078 and 0.000 in two separately drawn samples), and a power calibration shows the test is informative only for pairs that co-read many documents. In the only informative high-overlap subset (k>=4), point estimates are positive but small-sample, imprecise across the separately drawn samples, never significant, and attenuate under the region-preserving null. We therefore leave cross-document stability unresolved: the data is consistent with anything from situational grouping to a weak-to-moderate stable reader trait. The crowd is factional within a document; whether its factions follow the reader across documents is, honestly, beyond our reach.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "student question grouping human agreement",
+            "position": 5
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "student question grouping human agreement survey",
+            "position": 8
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "student question grouping human agreement",
+            "position": 3
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.6,
+            "title_match": 0.0,
+            "retrieval_hits": 2,
+            "score": 1.45
+          }
+        }
+      },
+      "term_overlap": 0.246,
+      "tfidf_similarity": 0.067,
+      "design_elements_matched": [
+        "agreement with instructor groupings"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Multi-Method Analysis of Mathematics Placement Assessments: Classical, Machine Learning, and Clustering Approaches",
+        "authors": [
+          "Julian D. Allagan",
+          "Dasia A. Singleton",
+          "Shanae N. Perry",
+          "Gabrielle C. Morgan",
+          "Essence A. Morgan"
+        ],
+        "year": 2025,
+        "date": "2025-11-06",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2511.04667",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2511.04667",
+        "pdf_url": "https://arxiv.org/pdf/2511.04667v1",
+        "abstract": "This study evaluates a 40-item mathematics placement examination administered to 198 students using a multi-method framework combining Classical Test Theory, machine learning, and unsupervised clustering. Classical Test Theory analysis reveals that 55\\% of items achieve excellent discrimination ($D \\geq 0.40$) while 30\\% demonstrate poor discrimination ($D < 0.20$) requiring replacement. Question 6 (Graph Interpretation) emerges as the examination's most powerful discriminator, achieving perfect discrimination ($D = 1.000$), highest ANOVA F-statistic ($F = 4609.1$), and maximum Random Forest feature importance (0.206), accounting for 20.6\\% of predictive power. Machine learning algorithms demonstrate exceptional performance, with Random Forest and Gradient Boosting achieving 97.5\\% and 96.0\\% cross-validation accuracy. K-means clustering identifies a natural binary competency structure with a boundary at 42.5\\%, diverging from the institutional threshold of 55\\% and suggesting potential overclassification into remedial categories. The two-cluster solution exhibits exceptional stability (bootstrap ARI = 0.855) with perfect lower-cluster purity. Convergent evidence across methods supports specific refinements: replace poorly discriminating items, implement a two-stage assessment, and integrate Random Forest predictions with transparency mechanisms. These findings demonstrate that multi-method integration provides a robust empirical foundation for evidence-based mathematics placement optimization.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "clustering student questions evaluation",
+            "position": 7
+          }
+        ],
+        "extra": {
+          "arxiv_comment": "28 pages, 8 table, 4figures, NAM conference",
+          "arxiv_category": "cs.LG",
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.25,
+            "retrieval_hits": 1,
+            "score": 1.875
+          }
+        }
+      },
+      "term_overlap": 0.233,
+      "tfidf_similarity": 0.065,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Supplemental Information 2: Clustering threshold.",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.7717/peerj.4588/supp-2",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.7717/peerj.4588/supp-2",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "component",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+            "position": 2
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.325
+          }
+        }
+      },
+      "term_overlap": 0.095,
+      "tfidf_similarity": 0.181,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Clustering Edge Values for Threshold Selection",
+        "authors": [
+          "David L. Milgram",
+          "Martin Herman"
+        ],
+        "year": 1977,
+        "date": "1977-12-01",
+        "venue": null,
+        "doi": "10.21236/ada049592",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21236/ada049592",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "report",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+            "position": 10
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.348
+          }
+        }
+      },
+      "term_overlap": 0.095,
+      "tfidf_similarity": 0.164,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Table 2: Comparison of the clustering properties when varying the distance metric, the distance threshold or the clustering strategy.",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.7717/peerj.11348/table-2",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.7717/peerj.11348/table-2",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "component",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+            "position": 4
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.325
+          }
+        }
+      },
+      "term_overlap": 0.095,
+      "tfidf_similarity": 0.133,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Table 3: Effect of the strict clustering mode on the clustering properties when varying the distance threshold.",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.7717/peerj.11348/table-3",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.7717/peerj.11348/table-3",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "component",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+            "position": 3
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.325
+          }
+        }
+      },
+      "term_overlap": 0.095,
+      "tfidf_similarity": 0.131,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Quality Threshold Clustering of Molecular Dynamics: A Word of Caution",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.1021/acs.jcim.9b00558.s001",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1021/acs.jcim.9b00558.s001",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "component",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+            "position": 6
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.325
+          }
+        }
+      },
+      "term_overlap": 0.095,
+      "tfidf_similarity": 0.131,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "CSTS: A Benchmark for the Discovery of Correlation Structures in Time Series Clustering",
+        "authors": [
+          "Isabella Degen",
+          "Zahraa S Abdallah",
+          "Henry W J Reeve",
+          "Kate Robson Brown"
+        ],
+        "year": 2025,
+        "date": "2025-05-20",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2505.14596",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2505.14596",
+        "pdf_url": null,
+        "abstract": "Time series clustering promises to uncover hidden structural patterns in data with applications across healthcare, finance, industrial systems, and other critical domains. However, without validated ground truth information, researchers cannot objectively assess clustering quality or determine whether poor results stem from absent structures in the data, algorithmic limitations, or inappropriate validation methods, raising the question whether clustering is \"more art than science\" (Guyon et al., 2009). To address these challenges, we introduce CSTS (Correlation Structures in Time Series), a synthetic benchmark for evaluating the discovery of correlation structures in multivariate time series data. CSTS provides a clean benchmark that enables researchers to isolate and identify specific causes of clustering failures by differentiating between correlation structure deterioration and limitations of clustering algorithms and validation methods. Our contributions are: (1) a comprehensive benchmark for correlation structure discovery with distinct correlation structures, systematically varied data conditions, established performance thresholds, and recommended evaluation protocols; (2) empirical validation of correlation structure preservation showing moderate distortion from downsampling and minimal effects from distribution shifts and sparsification; and (3) an extensible data generation framework enabling structure-first clustering evaluation. A case study demonstrates CSTS's practical utility by identifying an algorithm's previously undocumented sensitivity to non-normal distributions, illustrating how the benchmark enables precise diagnosis of methodological limitations. CSTS advances rigorous evaluation standards for correlation-based time series clustering.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "agreement with instructor groupings Evaluating clustering instructor clustering",
+            "position": 9
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+            "position": 5
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.8,
+            "title_match": 0.2,
+            "retrieval_hits": 2,
+            "score": 2.05
+          }
+        }
+      },
+      "term_overlap": 0.163,
+      "tfidf_similarity": 0.058,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Extended Quality (eQual): Radial Threshold Clustering Based on nary Similarity",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.1021/acs.jcim.4c02341.s001",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1021/acs.jcim.4c02341.s001",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "component",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+            "position": 8
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.325
+          }
+        }
+      },
+      "term_overlap": 0.095,
+      "tfidf_similarity": 0.116,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "ExKMC: Expanding Explainable k-Means Clustering",
+        "authors": [
+          "Nave Frost",
+          "Michal Moshkovitz",
+          "Cyrus Rashtchian"
+        ],
+        "year": 2020,
+        "date": "2020-06-03",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2006.02399",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2006.02399",
+        "pdf_url": null,
+        "abstract": "Despite the popularity of explainable AI, there is limited work on effective methods for unsupervised learning. We study algorithms for k-means clustering, focusing on a trade-off between explainability and accuracy. Following prior work, we use a small decision tree to partition a dataset into k clusters. This enables us to explain each cluster assignment by a short sequence of single-feature thresholds. While larger trees produce more accurate clusterings, they also require more complex explanations. To allow flexibility, we develop a new explainable k-means clustering algorithm, ExKMC, that takes an additional parameter k' geq k and outputs a decision tree with k' leaves. We use a new surrogate cost to efficiently expand the tree and to label the leaves with one of k clusters. We prove that as k' increases, the surrogate cost is non-increasing, and hence, we trade explainability for accuracy. Empirically, we validate that ExKMC produces a low cost clustering, outperforming both standard decision tree methods and other algorithms for explainable clustering. Implementation of ExKMC available at https://github.com/navefr/ExKMC.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+            "position": 9
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.2,
+            "retrieval_hits": 1,
+            "score": 1.125
+          }
+        }
+      },
+      "term_overlap": 0.136,
+      "tfidf_similarity": 0.067,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Algorithm 1 : Description of Euclidean similarity clustering (ESC) algorithm. t: similarity threshold.",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.7717/peerj-cs.3309/table-19",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.7717/peerj-cs.3309/table-19",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "component",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "LLM question similarity clustering education",
+            "position": 4
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "LLM question similarity clustering education survey",
+            "position": 8
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+            "position": 9
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 2,
+            "score": 1.45
+          }
+        }
+      },
+      "term_overlap": 0.095,
+      "tfidf_similarity": 0.105,
+      "design_elements_matched": [
+        "clustering threshold sensitivity"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Spatially Aware Adjusted Rand Index for Evaluating Spatial Transcriptomics Clustering",
+        "authors": [
+          "Yinqiao Yan",
+          "Xiangnan Feng",
+          "Xiangyu Luo"
+        ],
+        "year": 2025,
+        "date": "2025-03-28",
+        "venue": "Biometrics",
+        "doi": "10.1101/2025.03.25.645156",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1101/2025.03.25.645156",
+        "pdf_url": null,
+        "abstract": "Abstract The spatial transcriptomics (ST) clustering plays a crucial role in elucidating the tissue spatial heterogeneity. An accurate ST clustering result can greatly benefit downstream biological analyses. As various ST clustering approaches are proposed in recent years, comparing their clustering accuracy becomes important in benchmarking studies. However, the widely used metric, adjusted Rand index (ARI), totally ignores the spatial information in ST data, which prevents ARI from fully evaluating spatial ST clustering methods. We propose a spatially aware Rand index (spRI) as well as spARI that incorporate the spatial distance information. Specifically, when comparing two partitions, spRI provides a disagreement object pair with a weight relying on the distance of the two objects, whereas Rand index assigns a zero weight to it. This spatially aware feature of spRI adaptively differentiates disagreement object pairs based on their distinct distances, providing a useful evaluation metric that favors spatial coherence of clustering. The spARI is obtained by adjusting spRI for random chances such that its expectation takes zero under an appropriate null model. Statistical properties of spRI and spARI are discussed. The applications to simulation study and two ST datasets demonstrate the improved utilities of spARI compared to ARI in evaluating ST clustering methods. The R package to compute spRI and spARI is available at https://github.com/yinqiaoyan/spARI .",
+        "citations": 2,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "adjusted rand index Evaluating clustering instructor clustering",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "adjusted rand index Evaluating clustering instructor clustering",
+            "position": 2
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.833,
+            "title_match": 0.833,
+            "retrieval_hits": 1,
+            "score": 2.661
+          }
+        }
+      },
+      "term_overlap": 0.126,
+      "tfidf_similarity": 0.054,
+      "design_elements_matched": [
+        "adjusted rand index"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Writing Sensitive Questions and Questions for Sensitive Populations",
+        "authors": [
+          "Emilia Peytcheva",
+          "Ting Yan"
+        ],
+        "year": 2025,
+        "date": "2025-02-08",
+        "venue": "A Practical Guide to Survey Questionnaire Design and Evaluation",
+        "doi": "10.4324/9781003367826-8",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.4324/9781003367826-8",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "book-chapter",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "clustering student questions evaluation survey",
+            "position": 5
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.25,
+            "title_match": 0.25,
+            "retrieval_hits": 1,
+            "score": 0.875
+          }
+        }
+      },
+      "term_overlap": 0.115,
+      "tfidf_similarity": 0.313,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Foundations for NLP-assisted formative assessment feedback for short-answer tasks in large-enrollment classes",
+        "authors": [
+          "Susan Lloyd",
+          "Matthew Beckman",
+          "Dennis Pearl",
+          "Rebecca Passonneau",
+          "Zhaohui Li",
+          "Zekun Wang"
+        ],
+        "year": 2022,
+        "date": "2022-05-05",
+        "venue": "arXiv",
+        "doi": "10.52041/iase.icots11.t3c3",
+        "arxiv_id": "2205.02829",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2205.02829",
+        "pdf_url": "https://arxiv.org/pdf/2205.02829v1",
+        "abstract": "Research suggests \"write-to-learn\" tasks improve learning outcomes, yet constructed-response methods of formative assessment become unwieldy with large class sizes. This study evaluates natural language processing algorithms to assist this aim. Six short-answer tasks completed by 1,935 students were scored by several human raters, using a detailed rubric, and an algorithm. Results indicate substantial inter-rater agreement using quadratic weighted kappa for rater pairs (each QWK > 0.74) and group consensus (Fleiss Kappa = 0.68). Additionally, intra-rater agreement was estimated for one rater who had scored 178 responses seven years prior (QWK = 0.89). With compelling rater agreement, the study then pilots cluster analysis of response text toward enabling instructors to ascribe meaning to clusters as a means for scalable formative assessment.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "agreement with instructor groupings Evaluating clustering instructor clustering",
+            "position": 1
+          }
+        ],
+        "extra": {
+          "arxiv_comment": "6 pages",
+          "arxiv_category": "stat.OT",
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 0.925
+          }
+        }
+      },
+      "term_overlap": 0.134,
+      "tfidf_similarity": 0.043,
+      "design_elements_matched": [
+        "agreement with instructor groupings"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Grouping Byzantine Agreement",
+        "authors": [
+          "K.Q. Yan",
+          "S.C. Wang"
+        ],
+        "year": 2005,
+        "date": "2005-07",
+        "venue": "Computer Standards &amp; Interfaces",
+        "doi": "10.1016/j.csi.2004.09.001",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.csi.2004.09.001",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 17,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "student question grouping human agreement",
+            "position": 8
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.419
+          }
+        }
+      },
+      "term_overlap": 0.056,
+      "tfidf_similarity": 0.101,
+      "design_elements_matched": [
+        "agreement with instructor groupings"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Adjusted Rand Index-Guided DPSO for Clustering and Data Routing in Wireless Sensor Networks",
+        "authors": [
+          "Sidi Mohamed Mohi Dine",
+          "Zhiyi Zhu",
+          "Patrick Finnerty",
+          "Chikara Ohta"
+        ],
+        "year": 2026,
+        "date": "2026-06-10",
+        "venue": "Sensors",
+        "doi": "10.3390/s26123700",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/s26123700",
+        "pdf_url": null,
+        "abstract": "Establishing an energy-balanced data routing and clustering approach is among the most fundamental steps to extend the longevity of wireless sensor networks (WSNs). This study presents an intelligent and energy-aware framework for data routing and clustering in WSN employing an adjusted Rand index (ARI)-guided discrete particle swarm optimization algorithm: ARI-DPSO. This method uses Dijkstra’s algorithm to establish energy-efficient data paths and uses the network lifetime as the ARI-DPSO’s fitness function. The discrete particle swarm optimization searches for the globally optimal cluster configuration that extends the network’s operational lifetime. The novelty of the ARI-DPSO lies in its capability to avoid premature convergence by using the ARI metric to quantify the similarity between the swarm’s global best solution and the current particles. Based on this level of similarity, ARI-DPSO employs an ARI-derived mechanism to trigger a dynamic perturbation element to force the swarm of particles to explore new search areas. The simulation results show that the ARI-DPSO improves the dynamics and diversity of the swarm, thereby maximizing the stable operational lifetime of wireless sensor networks (first node death).",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "adjusted rand index Evaluating clustering instructor clustering",
+            "position": 4
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 1,
+            "score": 2.125
+          }
+        }
+      },
+      "term_overlap": 0.114,
+      "tfidf_similarity": 0.033,
+      "design_elements_matched": [
+        "adjusted rand index"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Cite or Decline: A Strict Course-Grounded Chatbot for STEM Lecture Videos",
+        "authors": [
+          "S M Masrur Ahmed",
+          "Jaspal Subhlok"
+        ],
+        "year": 2026,
+        "date": "2026-09-01",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2609.01846",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2609.01846",
+        "pdf_url": null,
+        "abstract": "Recorded lecture videos, often enhanced with search and summarization features, are a standard study resource. However, students cannot easily ask course specific questions or verify answers against an instructor's lecture. We report a semester-long deployment of VideoPoints platform with a retrieval-augmented chatbot that answers from course lecture materials and returns timestamped citations. The chatbot retrieves only from the active course, uses chapter summaries to guide transcript ranking, and returns clickable timestamped citations. Students used it for quick lookups and exam review. Across 833 messages, 70.5% included citations, none crossed a course boundary, and when no lecture evidence matched, the chatbot usually declined rather than answering. Among the users, citations were the most consistently useful feature, while practice-question generation was the strongest unmet request. We also evaluated the design on the real-world test split of EduVidQA, a public multimodal benchmark for lecture-video question answering. Our design improved correct-lecture retrieval by 6.3 percentage points over dense-only retrieval. Together, the results show that effective deployment depends on course isolation, supported citations, and alignment with students' study practices.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "duplicate student questions detection forum",
+            "position": 5
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "duplicate student questions detection forum survey",
+            "position": 6
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "duplicate student questions detection forum review",
+            "position": 4
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "duplicate student questions detection forum",
+            "position": 1
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.0,
+            "retrieval_hits": 3,
+            "score": 1.375
+          }
+        }
+      },
+      "term_overlap": 0.246,
+      "tfidf_similarity": 0.136,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "What is Cluster Grouping?",
+        "authors": [
+          "Marcia Gentry"
+        ],
+        "year": 2021,
+        "date": "2021-09-13",
+        "venue": "Total School Cluster Grouping &amp; Differentiation",
+        "doi": "10.4324/9781003239239-2",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.4324/9781003239239-2",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "book-chapter",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "student question grouping human agreement",
+            "position": 7
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.2,
+            "title_match": 0.2,
+            "retrieval_hits": 1,
+            "score": 0.725
+          }
+        }
+      },
+      "term_overlap": 0.098,
+      "tfidf_similarity": 0.275,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "7. Gruppierung nach Übereinstimmungsquoten / Grouping by Percentages of Agreement",
+        "authors": [],
+        "year": 2017,
+        "date": "2017-06-26",
+        "venue": "Die Apokalypse",
+        "doi": "10.1515/9783110548433-009",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1515/9783110548433-009",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "book-chapter",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "student question grouping human agreement",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "student question grouping human agreement survey",
+            "position": 3
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "student question grouping human agreement review",
+            "position": 3
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 3,
+            "score": 1.575
+          }
+        }
+      },
+      "term_overlap": 0.056,
+      "tfidf_similarity": 0.06,
+      "design_elements_matched": [
+        "agreement with instructor groupings"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    }
+  ],
+  "possible_same_design": [],
+  "design_matches_off_topic": [],
+  "found_via_citations": [],
+  "ranked": [
+    {
+      "title": "Quality Threshold Clustering",
+      "arxiv_id": null,
+      "doi": "10.1007/springerreference_179398",
+      "year": null
+    },
+    {
+      "title": "Factions Within, Uncertain Across: Within-Document Reader Sub-Groups in Social Highlighting",
+      "arxiv_id": "2606.11613",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Multi-Method Analysis of Mathematics Placement Assessments: Classical, Machine Learning, and Clustering Approaches",
+      "arxiv_id": "2511.04667",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Supplemental Information 2: Clustering threshold.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.4588/supp-2",
+      "year": null
+    },
+    {
+      "title": "Clustering Edge Values for Threshold Selection",
+      "arxiv_id": null,
+      "doi": "10.21236/ada049592",
+      "year": 1977
+    },
+    {
+      "title": "Table 2: Comparison of the clustering properties when varying the distance metric, the distance threshold or the clustering strategy.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.11348/table-2",
+      "year": null
+    },
+    {
+      "title": "Table 3: Effect of the strict clustering mode on the clustering properties when varying the distance threshold.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.11348/table-3",
+      "year": null
+    },
+    {
+      "title": "Quality Threshold Clustering of Molecular Dynamics: A Word of Caution",
+      "arxiv_id": null,
+      "doi": "10.1021/acs.jcim.9b00558.s001",
+      "year": null
+    },
+    {
+      "title": "CSTS: A Benchmark for the Discovery of Correlation Structures in Time Series Clustering",
+      "arxiv_id": "2505.14596",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Extended Quality (eQual): Radial Threshold Clustering Based on nary Similarity",
+      "arxiv_id": null,
+      "doi": "10.1021/acs.jcim.4c02341.s001",
+      "year": null
+    },
+    {
+      "title": "ExKMC: Expanding Explainable k-Means Clustering",
+      "arxiv_id": "2006.02399",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "Algorithm 1 : Description of Euclidean similarity clustering (ESC) algorithm. t: similarity threshold.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3309/table-19",
+      "year": null
+    },
+    {
+      "title": "Spatially Aware Adjusted Rand Index for Evaluating Spatial Transcriptomics Clustering",
+      "arxiv_id": null,
+      "doi": "10.1101/2025.03.25.645156",
+      "year": 2025
+    },
+    {
+      "title": "Writing Sensitive Questions and Questions for Sensitive Populations",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003367826-8",
+      "year": 2025
+    },
+    {
+      "title": "Foundations for NLP-assisted formative assessment feedback for short-answer tasks in large-enrollment classes",
+      "arxiv_id": "2205.02829",
+      "doi": "10.52041/iase.icots11.t3c3",
+      "year": 2022
+    },
+    {
+      "title": "Grouping Byzantine Agreement",
+      "arxiv_id": null,
+      "doi": "10.1016/j.csi.2004.09.001",
+      "year": 2005
+    },
+    {
+      "title": "Adjusted Rand Index-Guided DPSO for Clustering and Data Routing in Wireless Sensor Networks",
+      "arxiv_id": null,
+      "doi": "10.3390/s26123700",
+      "year": 2026
+    },
+    {
+      "title": "Cite or Decline: A Strict Course-Grounded Chatbot for STEM Lecture Videos",
+      "arxiv_id": "2609.01846",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "What is Cluster Grouping?",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003239239-2",
+      "year": 2021
+    },
+    {
+      "title": "7. Gruppierung nach Übereinstimmungsquoten / Grouping by Percentages of Agreement",
+      "arxiv_id": null,
+      "doi": "10.1515/9783110548433-009",
+      "year": 2017
+    },
+    {
+      "title": "A close‐up comparison of the misclassification error distance and the adjusted Rand index for external clustering evaluation",
+      "arxiv_id": null,
+      "doi": "10.1111/bmsp.12212",
+      "year": 2020
+    },
+    {
+      "title": "Data-Efficient Learning via Clustering-Based Sensitivity Sampling: Foundation Models and Beyond",
+      "arxiv_id": "2402.17327",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "The European Grouping of Territorial Cooperation (EGTC) as a Strategic Agreement for Cooperation Policies",
+      "arxiv_id": null,
+      "doi": "10.1080/02513625.2010.10557115",
+      "year": 2010
+    },
+    {
+      "title": "Evaluating your instructor",
+      "arxiv_id": null,
+      "doi": "10.1037/e545662013-080",
+      "year": 2013
+    },
+    {
+      "title": "Clustering: Techniques for Evaluating Clustering",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.clustering",
+      "year": 2020
+    },
+    {
+      "title": "Probabilistic Partitive Partitioning (PPP)",
+      "arxiv_id": "2003.04372",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "Personal Salience: Highlighting Is Social, but Individuality Lives in Selection",
+      "arxiv_id": "2606.09024",
+      "doi": "10.48550/arxiv.2606.09024",
+      "year": 2026
+    },
+    {
+      "title": "Comparing High-Dimensional Partitions with the Co-clustering Adjusted Rand Index",
+      "arxiv_id": null,
+      "doi": "10.1007/s00357-020-09379-w",
+      "year": 2020
+    },
+    {
+      "title": "KCluster: An LLM-based Clustering Approach to Knowledge Component Discovery",
+      "arxiv_id": "2505.06469",
+      "doi": "10.5281/zenodo.15870196",
+      "year": 2025
+    },
+    {
+      "title": "Ranked Adjusted Rand: integrating distance and partition information in a measure of clustering agreement",
+      "arxiv_id": null,
+      "doi": "10.1186/1471-2105-8-44",
+      "year": 2007
+    },
+    {
+      "title": "AI-University: An LLM-based platform for instructional alignment to scientific classrooms",
+      "arxiv_id": "2504.08846",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Text Clustering as Classification with LLMs",
+      "arxiv_id": "2410.00927",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "bikm1: Co-Clustering Adjusted Rand Index and Bikm1 Procedure for Contingency and Binary Data-Sets",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.bikm1",
+      "year": 2019
+    },
+    {
+      "title": "Figure 11: (A) RAND, Adjusted mutual information, Homogeneity and Completeness metrics and (B) Silhouette metric corresponding to the three selected clustering algorithms.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.6770/fig-11",
+      "year": null
+    },
+    {
+      "title": "Classifying Clustering Schemes",
+      "arxiv_id": "1011.5270",
+      "doi": null,
+      "year": 2010
+    },
+    {
+      "title": "ClusterLLM: Large Language Models as a Guide for Text Clustering",
+      "arxiv_id": "2305.14871",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Examining Student Interactions with a Pedagogical AI-Assistant for Essay Writing and their Impact on Students Writing Quality",
+      "arxiv_id": "2512.08596",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "To the Instructor",
+      "arxiv_id": null,
+      "doi": "10.1016/b978-0-12-266050-4.50004-5",
+      "year": 1973
+    },
+    {
+      "title": "Pattern Discovery in Students' Evaluations of Professors: A Statistical Data Mining Approach",
+      "arxiv_id": "1501.02263",
+      "doi": null,
+      "year": 2015
+    },
+    {
+      "title": "Historical Backtesting for Scientific Question Discovery: A Protocol and Astronomy Pilot",
+      "arxiv_id": "2608.16795",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Student questions",
+      "arxiv_id": null,
+      "doi": "10.31979/etd.ue8v-5xme",
+      "year": null
+    },
+    {
+      "title": "Clustering Student Programming Assignments to Multiply Instructor Leverage",
+      "arxiv_id": null,
+      "doi": "10.1145/2724660.2728695",
+      "year": 2015
+    },
+    {
+      "title": "Ability Grouping and Student Learning",
+      "arxiv_id": null,
+      "doi": "10.2307/jj.21341692.29",
+      "year": 2025
+    },
+    {
+      "title": "Scalable and Equitable Math Problem Solving Strategy Prediction in Big Educational Data",
+      "arxiv_id": "2308.03892",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Automated Generation and Tagging of Knowledge Components from Multiple-Choice Questions",
+      "arxiv_id": "2405.20526",
+      "doi": "10.1145/3657604.3662030",
+      "year": 2024
+    },
+    {
+      "title": "Finding a Simple Solution to the Problem of Student Evaluations: An Index of Traditional Evaluation Questions",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.3189094",
+      "year": 2018
+    },
+    {
+      "title": "Cluster-R1: Large Reasoning Models Are Instruction-following Clustering Agents",
+      "arxiv_id": "2603.23518",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Teaching and evaluating instructor effectiveness using the instructor effectiveness questionnaire and the instructor effectiveness check sheet combination",
+      "arxiv_id": null,
+      "doi": "10.1080/14729670585200591",
+      "year": 2005
+    },
+    {
+      "title": "Management of Student Grouping",
+      "arxiv_id": null,
+      "doi": "10.4135/9781483346243.n201",
+      "year": 2014
+    },
+    {
+      "title": "Total School Cluster Grouping Model",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003239239-3",
+      "year": 2021
+    },
+    {
+      "title": "Deep learning for sentence clustering in essay grading support",
+      "arxiv_id": "2104.11556",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Joint Learning of Sentence Embeddings for Relevance and Entailment",
+      "arxiv_id": "1605.04655",
+      "doi": null,
+      "year": 2016
+    },
+    {
+      "title": "Annotating Educational Questions for Student Response Analysis",
+      "arxiv_id": null,
+      "doi": "10.63317/4hjqyvt6vw49",
+      "year": 2018
+    },
+    {
+      "title": "Asking the Right Questions: Using Student-Written Exams as an Innovative Approach to Learning and Evaluation",
+      "arxiv_id": null,
+      "doi": "10.2753/mer1052-8008230105",
+      "year": 2013
+    },
+    {
+      "title": "Corpus Prevalence of Multiple-Choice Question Options",
+      "arxiv_id": "2602.17377",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Clustering Deviation Index (CDI): A robust and accurate unsupervised measure for evaluating scRNA-seq data clustering",
+      "arxiv_id": null,
+      "doi": "10.1101/2022.01.03.474840",
+      "year": 2022
+    },
+    {
+      "title": "Dynamic Surveys: Using LLMs to Blend Qualitative Depth,Quantitative Structure, and Collaborative Interaction",
+      "arxiv_id": "2608.00357",
+      "doi": "10.1145/3757586",
+      "year": 2026
+    },
+    {
+      "title": "Ability Grouping and Student Friendships",
+      "arxiv_id": null,
+      "doi": "10.2307/jj.21341692.33",
+      "year": 2025
+    },
+    {
+      "title": "SIGHT: A Large Annotated Dataset on Student Insights Gathered from Higher Education Transcripts",
+      "arxiv_id": "2306.09343",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Generative Pretrained Test-Taker: Evaluating LLM Performance on Exams for Accuracy and Similarity to Students",
+      "arxiv_id": null,
+      "doi": "10.5220/0014774400004021",
+      "year": 2026
+    },
+    {
+      "title": "What Can Student-AI Dialogues Tell Us About Students' Self-Regulated Learning? An exploratory framework",
+      "arxiv_id": "2601.11576",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Instructor Courses",
+      "arxiv_id": null,
+      "doi": "10.1542/9781581106381-ch09",
+      "year": 2011
+    },
+    {
+      "title": "Capturing LLM Capabilities via Evidence-Calibrated Query Clustering",
+      "arxiv_id": "2605.17110",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Evaluating the Quality of Student-Created Multiple-Choice Questions against Faculty-Created Multiple-Choice Questions Using the Item Writing Flaws Evaluation Instrument",
+      "arxiv_id": null,
+      "doi": "10.1021/acs.jchemed.5c00180",
+      "year": 2026
+    },
+    {
+      "title": "Cequel: Cost-Effective Querying of Large Language Models for Text Clustering",
+      "arxiv_id": "2504.15640",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "German Text Embedding Clustering Benchmark",
+      "arxiv_id": "2401.02709",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Applying a resources framework to analysis of the Force and Motion Conceptual Evaluation",
+      "arxiv_id": "0711.1838",
+      "doi": "10.1103/physrevstper.4.020101",
+      "year": 2007
+    },
+    {
+      "title": "Short Text Clustering Algorithms, Application and Challenges: A Survey",
+      "arxiv_id": null,
+      "doi": "10.3390/app13010342",
+      "year": 2022
+    },
+    {
+      "title": "Do Transformers Always Win? An Empirical Study of Semantic Embeddings for Short-Text E-commerce Reviews",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-9163424/v1",
+      "year": 2026
+    },
+    {
+      "title": "Ability grouping",
+      "arxiv_id": null,
+      "doi": "10.4324/9781351257848-13",
+      "year": 2019
+    },
+    {
+      "title": "Ability Grouping and Student Achievement in Elementary Schools: A Best-Evidence Synthesis",
+      "arxiv_id": null,
+      "doi": "10.2307/1170460",
+      "year": 1987
+    },
+    {
+      "title": "Effective Transfer Learning for Identifying Similar Questions: Matching User Questions to COVID-19 FAQs",
+      "arxiv_id": "2008.13546",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "Beyond Lexical Similarity: Evaluating Faithfulness in LLM-Based Medical Question Reformulation",
+      "arxiv_id": null,
+      "doi": "10.18653/v1/2026.smm4h-1.16",
+      "year": 2026
+    },
+    {
+      "title": "Clustering-Based Analysis of Student Academic Data for Teacher Performance Evaluation",
+      "arxiv_id": null,
+      "doi": "10.58257/ijprems54536",
+      "year": 2026
+    },
+    {
+      "title": "Applying, evaluating, and accelerating clustering",
+      "arxiv_id": null,
+      "doi": "10.31274/td-20240329-82",
+      "year": null
+    },
+    {
+      "title": "Agreement and error in automated scoring of student marketing posts",
+      "arxiv_id": null,
+      "doi": "10.35542/osf.io/w4fzp_v1",
+      "year": 2026
+    },
+    {
+      "title": "Silhouettes: a graphical aid to the interpretation and validation of cluster analysis",
+      "arxiv_id": null,
+      "doi": "10.1016/0377-0427(87)90125-7",
+      "year": 1987
+    },
+    {
+      "title": "Do LLMs Make Mistakes Like Students? Exploring Natural Alignment between Language Models and Human Error Patterns",
+      "arxiv_id": "2502.15140",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Cluster Explanation via Polyhedral Descriptions",
+      "arxiv_id": "2210.08798",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Advancing Academic Chatbots: Evaluation of Non Traditional Outputs",
+      "arxiv_id": "2512.00991",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Thai Question-Answering System Using Similarity Search and LLM",
+      "arxiv_id": null,
+      "doi": "10.37936/ecti-cit.2024183.256043",
+      "year": 2024
+    },
+    {
+      "title": "Evaluating the construct validity of text embeddings with application to survey questions",
+      "arxiv_id": null,
+      "doi": "10.1140/epjds/s13688-022-00353-7",
+      "year": 2022
+    },
+    {
+      "title": "Introducing the Cosine Clustering Index (CCI): A Balanced Approach to Evaluating Deep Clustering",
+      "arxiv_id": null,
+      "doi": "10.1007/s42979-024-02970-7",
+      "year": 2024
+    },
+    {
+      "title": "Evaluating Learner Representations for Differentiation Prior to Instructional Outcomes",
+      "arxiv_id": "2604.05848",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Ability-grouping and Academic Inequality: Evidence From Rule-based Student Assignments",
+      "arxiv_id": null,
+      "doi": "10.3386/w14911",
+      "year": 2009
+    },
+    {
+      "title": "Answer is All You Need: Instruction-following Text Embedding via Answering the Question",
+      "arxiv_id": "2402.09642",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Evaluation on embeddings application for spanish automatic text clustering",
+      "arxiv_id": null,
+      "doi": "10.4067/s0718-33052024000100221",
+      "year": 2024
+    },
+    {
+      "title": "TopClustRAG at SIGIR 2025 LiveRAG Challenge",
+      "arxiv_id": "2506.15246",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Embedding And Clustering Your Data Can Improve Contrastive Pretraining",
+      "arxiv_id": "2407.18887",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "BERTopic: Neural topic modeling with a class-based TF-IDF procedure",
+      "arxiv_id": "2203.05794",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Core Instructor Competencies",
+      "arxiv_id": null,
+      "doi": "10.1108/979-8-88730-409-020251008",
+      "year": 2023
+    },
+    {
+      "title": "Chatbot Conversations in Physics Education: Using Artificial Intelligence to Analyze Student Reasoning through Computational Grounded Theory",
+      "arxiv_id": "2603.04616",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "The Long Tail, Not the Front Page: Cold-Start Prediction of Crowd Highlight Salience",
+      "arxiv_id": "2606.11654",
+      "doi": "10.48550/arxiv.2606.11654",
+      "year": 2026
+    },
+    {
+      "title": "Similarity Controlled Text Generation using an Embedding Informed LLM Architecture",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.5236110",
+      "year": 2025
+    },
+    {
+      "title": "Questions Admitted Students Should Ask Before Committing to Enroll",
+      "arxiv_id": null,
+      "doi": "10.64934/d7bmen71",
+      "year": 2026
+    },
+    {
+      "title": "SENTENCE EMBEDDINGS AND DENSITY-BASED CLUSTERING FOR ANALYSING OPEN-ENDED SURVEY RESPONSES",
+      "arxiv_id": null,
+      "doi": "10.70286/isu-19.08.2026.004",
+      "year": 2026
+    },
+    {
+      "title": "Measuring Self-Rating Bias in LLM-Generated Survey Data: A Semantic Similarity Framework for Independent Scale Mapping",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.6208718",
+      "year": 2026
+    },
+    {
+      "title": "Extracting candidate factors affecting long-term trends of student abilities across subjects",
+      "arxiv_id": "2103.06446",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "JE-IRT: A Geometric Lens on LLM Abilities through Joint Embedding Item Response Theory",
+      "arxiv_id": "2509.22888",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Short-Text Clustering Enhancement Based on Semantic-Aware Iterative Refinement",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.5273496",
+      "year": 2025
+    },
+    {
+      "title": "Answering List Questions using Co-occurrence and Clustering",
+      "arxiv_id": null,
+      "doi": "10.63317/2nns9zej6tgk",
+      "year": 2008
+    },
+    {
+      "title": "Curriculum Learning: A Survey",
+      "arxiv_id": "2101.10382",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "No Free Labels: Limitations of LLM-as-a-Judge Without Human Grounding",
+      "arxiv_id": "2503.05061",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Question-to-Question Retrieval for Hallucination-Free Knowledge Access: An Approach for Wikipedia and Wikidata Question Answering",
+      "arxiv_id": "2501.11301",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Randomizing survey question order vs. grouping questions by construct: an empirical test of the impact on apparent reliabilities and links to related constructs",
+      "arxiv_id": null,
+      "doi": "10.1109/hicss.2002.994385",
+      "year": null
+    },
+    {
+      "title": "ComparisonQA: Evaluating Factuality Robustness of LLMs Through Knowledge Frequency Control and Uncertainty",
+      "arxiv_id": "2412.20251",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "PROGRAM FOR INTERNATIONAL STUDENT ASSESSMENT (PISA) ANALYSIS OF ASIAN COUNTRIES USING K-MEAN CLUSTERING ALGORITHMS",
+      "arxiv_id": null,
+      "doi": "10.21009/jisae.v8i1.25445",
+      "year": 2022
+    },
+    {
+      "title": "Researchy Questions: A Dataset of Multi-Perspective, Decompositional Questions for LLM Web Agents",
+      "arxiv_id": "2402.17896",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Automated Generation of Multiple-Choice Cloze Questions for Assessing English Vocabulary Using GPT-turbo 3.5",
+      "arxiv_id": "2403.02078",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "MechGPT, a language-based strategy for mechanics and materials modeling that connects knowledge across scales, disciplines and modalities",
+      "arxiv_id": "2310.10445",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "What Can We Learn from Collective Human Opinions on Natural Language Inference Data?",
+      "arxiv_id": "2010.03532",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "Language Models Agree With Each Other, Not With Readers",
+      "arxiv_id": "2607.29274",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "PaRaDe: Passage Ranking using Demonstrations with Large Language Models",
+      "arxiv_id": "2310.14408",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Indiana secondary instructor and Indiana vocational technical college instructor absenteeism as related to instructor perception of administrative management style and job satisfaction",
+      "arxiv_id": null,
+      "doi": "10.31274/rtd-180817-3524",
+      "year": null
+    },
+    {
+      "title": "PRD: Peer Rank and Discussion Improve Large Language Model based Evaluations",
+      "arxiv_id": "2307.02762",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Simulating Disengaged Students to Evaluate LLM-based Tutors",
+      "arxiv_id": "2609.12331",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "ResearchQA: Evaluating Scholarly Question Answering at Scale Across 75 Fields with Survey-Mined Questions and Rubrics",
+      "arxiv_id": "2509.00496",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Unveiling the Merits and Defects of LLMs in Automatic Review Generation for Scientific Papers",
+      "arxiv_id": "2509.19326",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Is Neural Topic Modelling Better than Clustering? An Empirical Study on Clustering with Contextual Embeddings for Topics",
+      "arxiv_id": "2204.09874",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Clustering Techniques and the Similarity Measures used in Clustering: A Survey",
+      "arxiv_id": null,
+      "doi": "10.5120/ijca2016907841",
+      "year": 2016
+    },
+    {
+      "title": "Evaluating the Knowledge Dependency of Questions",
+      "arxiv_id": "2211.11902",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Qualitative Analysis of Student Responses to Survey Questions Investigating Student Perceptions of Case-Based Learning",
+      "arxiv_id": null,
+      "doi": "10.4103/ehp.ehp_37_20",
+      "year": 2021
+    },
+    {
+      "title": "Are LLMs Court-Ready? Evaluating Frontier Models on Indian Legal Reasoning",
+      "arxiv_id": "2510.17900",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "A Survey of Spatio-Temporal Grouping Techniques",
+      "arxiv_id": null,
+      "doi": "10.21236/ada459242",
+      "year": 2002
+    },
+    {
+      "title": "Automated Educational Question Generation at Different Bloom's Skill Levels using Large Language Models: Strategies and Evaluation",
+      "arxiv_id": "2408.04394",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Answer Matching Outperforms Multiple Choice for Language Model Evaluation",
+      "arxiv_id": "2507.02856",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "FoundationalASSIST: An Educational Dataset for Foundational Knowledge Tracing and Pedagogical Grounding of LLMs",
+      "arxiv_id": "2602.00070",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "SimsterQ: A Similarity based Clustering Approach to Opinion Question Answering",
+      "arxiv_id": null,
+      "doi": "10.18653/v1/2020.ecnlp-1.11",
+      "year": 2020
+    },
+    {
+      "title": "PageRecall: Measuring Page Selection in Literature-Grounded Question Answering",
+      "arxiv_id": "2609.18154",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Automatically Inferring Gender Associations from Language",
+      "arxiv_id": "1909.00091",
+      "doi": null,
+      "year": 2019
+    },
+    {
+      "title": "Can a Five-Minute, Three-Question Survey Foretell First-Year Engineering Student Performance and Retention?",
+      "arxiv_id": null,
+      "doi": "10.18260/p.26427",
+      "year": 2016
+    },
+    {
+      "title": "Adapting Large Language Models for Education: Foundational Capabilities, Potentials, and Challenges",
+      "arxiv_id": "2401.08664",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Reflecting in the Reflection: Integrating a Socratic Questioning Framework into Automated AI-Based Question Generation",
+      "arxiv_id": "2601.14798",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Can LLMs Design Good Questions Based on Context?",
+      "arxiv_id": "2501.03491",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Student Engagement and Assessment Satisfaction with Student- Created Multiple-Choice Question Exams in Human Physiology",
+      "arxiv_id": null,
+      "doi": "10.21692/haps.2025.009",
+      "year": 2025
+    },
+    {
+      "title": "Experimental Study of Clustering Approaches for Text Embeddings",
+      "arxiv_id": null,
+      "doi": "10.1109/smartindustrycon65166.2025.10986283",
+      "year": 2025
+    },
+    {
+      "title": "CADM: Cluster-customized Adaptive Distance Metric for Categorical Data Clustering",
+      "arxiv_id": "2511.05826",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Evaluation of E-Learners Behaviour using Different Fuzzy Clustering Models: A Comparative Study",
+      "arxiv_id": "1003.1499",
+      "doi": null,
+      "year": 2010
+    },
+    {
+      "title": "Image Clustering Conditioned on Text Criteria",
+      "arxiv_id": "2310.18297",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "On Pairwise Clustering with Side Information",
+      "arxiv_id": "1706.06474",
+      "doi": null,
+      "year": 2017
+    },
+    {
+      "title": "RQUGE: Reference-Free Metric for Evaluating Question Generation by Answering the Question",
+      "arxiv_id": "2211.01482",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "ClusterNet: A Perception-Based Clustering Model for Scattered Data",
+      "arxiv_id": "2304.14185",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "\"I understand why I got this grade\": Automatic Short Answer Grading with Feedback",
+      "arxiv_id": "2407.12818",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Interpretable Clustering: A Survey",
+      "arxiv_id": "2409.00743",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Duplicate Questions Pair Detection Using Siamese MaLSTM",
+      "arxiv_id": null,
+      "doi": "10.1109/access.2020.2969041",
+      "year": 2020
+    },
+    {
+      "title": "CLARA: A Modular Framework for Unsupervised Transit Detection Using TESS Light Curves",
+      "arxiv_id": "2508.04722",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "New Survey Questions and Estimators for Network Clustering with Respondent-Driven Sampling Data",
+      "arxiv_id": null,
+      "doi": "10.31235/osf.io/w3d86_v1",
+      "year": 2016
+    },
+    {
+      "title": "A Survey of LLM-Based Question Answering Architectures and the Role of Semantics in Enterprise Decision Support Systems",
+      "arxiv_id": null,
+      "doi": "10.5220/0014950700004018",
+      "year": 2026
+    },
+    {
+      "title": "Anomaly Aware Symmetric Non-negative Matrix Factorization for Short Text Clustering",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-1543071/v1",
+      "year": 2022
+    },
+    {
+      "title": "Review for \"OPENXRD: A Comprehensive Benchmark Framework for LLM/MLLM XRD Question Answering\"",
+      "arxiv_id": null,
+      "doi": "10.1039/d5dd00519a/v1/review1",
+      "year": 2025
+    },
+    {
+      "title": "Challenges and Opportunities for Higher Education",
+      "arxiv_id": null,
+      "doi": "10.1177/016146810310501106",
+      "year": 2003
+    },
+    {
+      "title": "ComQA: A Community-sourced Dataset for Complex Factoid Question Answering with Paraphrase Clusters",
+      "arxiv_id": "1809.09528",
+      "doi": null,
+      "year": 2018
+    },
+    {
+      "title": "EduQG: A Multi-format Multiple Choice Dataset for the Educational Domain",
+      "arxiv_id": "2210.06104",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Customer satisfaction with Tokyo Metropolitan Government ward office counter services: confirmatory factor analysis of question grouping and principal component regression analysis",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-1204123/v1",
+      "year": 2021
+    },
+    {
+      "title": "A Comprehensive Survey of Clustering Algorithms",
+      "arxiv_id": null,
+      "doi": "10.1007/s40745-015-0040-1",
+      "year": 2015
+    },
+    {
+      "title": "Employing Siamese MaLSTM Model and ELMO Word Embedding for Quora Duplicate Questions Detection",
+      "arxiv_id": null,
+      "doi": "10.1109/access.2024.3367978",
+      "year": 2024
+    },
+    {
+      "title": "SurveyBench: How Well Can LLM(-Agents) Write Academic Surveys?",
+      "arxiv_id": "2510.03120",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "AI-Integrated Scientific Inquiry: A Practice-Centered Vision for Science Education",
+      "arxiv_id": "2607.21777",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Evaluation of Preprocessing Pipelines for Improving Student Risk Clustering in Educational Data",
+      "arxiv_id": null,
+      "doi": "10.24167/proxies.v9i2.14948",
+      "year": 2026
+    },
+    {
+      "title": "Student engagement with assessment and feedback: Some lessons from short-answer free-text e-assessment questions",
+      "arxiv_id": null,
+      "doi": "10.1016/j.compedu.2011.10.007",
+      "year": 2012
+    },
+    {
+      "title": "question-and-answer-seriessrie-questions-et-rponses-zaire-the-student-movement-dec-1990-11-pp",
+      "arxiv_id": null,
+      "doi": "10.1163/2210-7975_hrd-4371-0079",
+      "year": null
+    },
+    {
+      "title": "Improving Student Forum Responsiveness: Detecting Duplicate Questions in Educational Forums",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-030-36718-3_35",
+      "year": 2019
+    },
+    {
+      "title": "Student-Generated Questions as Output for Evaluation of English Grammar Learning Through Scaffolds with Different Levels of Structures",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.5295082",
+      "year": 2025
+    },
+    {
+      "title": "A Practical Approach to Novel Class Discovery in Tabular Data",
+      "arxiv_id": "2311.05440",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Using Nearpod Poll Questions to Improve Student Engagement in Classroom",
+      "arxiv_id": null,
+      "doi": "10.2514/6.2025-2378",
+      "year": 2025
+    },
+    {
+      "title": "Arctic-Embed 2.0: Multilingual Retrieval Without Compromise",
+      "arxiv_id": "2412.04506",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Algorithm 1: Similarity-based clustering algorithm.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.253/table-6",
+      "year": null
+    },
+    {
+      "title": "A Gold Standard Dataset for the Reviewer Assignment Problem",
+      "arxiv_id": "2303.16750",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Emergent Learner Agency in Implicit Human-AI Collaboration: How Supportive and Contrarian AI Personas Reshape Interaction",
+      "arxiv_id": "2512.18239",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Exploring the MIT Mathematics and EECS Curriculum Using Large Language Models",
+      "arxiv_id": "2306.08997",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Student of Clouds",
+      "arxiv_id": null,
+      "doi": "10.2307/j.ctt9qh75r.6",
+      "year": null
+    },
+    {
+      "title": "Selection, Not Salience: The Shape and Limits of Personalization in Social Highlighting",
+      "arxiv_id": "2606.10398",
+      "doi": "10.48550/arxiv.2606.10398",
+      "year": 2026
+    },
+    {
+      "title": "Using student-generated questions for student-centred assessment",
+      "arxiv_id": null,
+      "doi": "10.1080/02602938.2010.538666",
+      "year": 2012
+    },
+    {
+      "title": "FreshStack: Building Realistic Benchmarks for Evaluating Retrieval on Technical Documents",
+      "arxiv_id": "2504.13128",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "What Makes a Good Fiqh Retriever? Answer Retrieval for Arabic Islamic Jurisprudence",
+      "arxiv_id": "2608.20246",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Questions for the Student Evaluation of Distance Courses",
+      "arxiv_id": null,
+      "doi": "10.4018/978-1-60566-198-8.ch254",
+      "year": 2009
+    },
+    {
+      "title": "IntelliAsk: Learning to Ask High-Quality Research Questions via RLVR",
+      "arxiv_id": "2602.15849",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "LIABILITY IN SPACE LAW: QUESTIONS ON PRACTICAL APPLICATION OF ABSOLUTE AND FAULT LIABILITY",
+      "arxiv_id": null,
+      "doi": "10.29053/pslr.v9i.1972",
+      "year": 2015
+    },
+    {
+      "title": "Wisdom of the silicon crowd: LLM ensemble prediction capabilities rival human crowd accuracy",
+      "arxiv_id": "2402.19379",
+      "doi": "10.1126/sciadv.adp1528",
+      "year": 2024
+    },
+    {
+      "title": "QUDsim: Quantifying Discourse Similarities in LLM-Generated Text",
+      "arxiv_id": "2504.09373",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Dynamic Short-Text Clustering Algorithms - A Comprehensive Survey",
+      "arxiv_id": null,
+      "doi": "10.1109/icbdml68582.2026.11544317",
+      "year": 2026
+    },
+    {
+      "title": "Review for \"Human-interpretable clustering of short text using large language models\"",
+      "arxiv_id": null,
+      "doi": "10.1098/rsos.241692/v1/review1",
+      "year": 2024
+    },
+    {
+      "title": "Which of These Best Describes Multiple Choice Evaluation with LLMs? A) Forced B) Flawed C) Fixable D) All of the Above",
+      "arxiv_id": "2502.14127",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "A Survey of LLM-Powered Question Answering Through the Lens of Query Processing",
+      "arxiv_id": null,
+      "doi": "10.20944/preprints202606.1165.v1",
+      "year": 2026
+    },
+    {
+      "title": "Design and Evaluation of Survey Questions",
+      "arxiv_id": null,
+      "doi": "10.4135/9781526421036867321",
+      "year": 2020
+    },
+    {
+      "title": "Highlights as an Early Predictor of Student Comprehension and Interests",
+      "arxiv_id": null,
+      "doi": "10.1111/cogs.12901",
+      "year": 2020
+    },
+    {
+      "title": "Data clustering: 50 years beyond K-means",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-540-87479-9_3",
+      "year": 2008
+    },
+    {
+      "title": "PustakAI: Curriculum-Aligned and Interactive Textbooks Using Large Language Models",
+      "arxiv_id": "2511.10002",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Susu Box or Piggy Bank: Assessing Cultural Commonsense Knowledge between Ghana and the U.S",
+      "arxiv_id": "2410.16451",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "On the Theoretical Limitations of Embedding-Based Retrieval",
+      "arxiv_id": "2508.21038",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Analysis and evaluation of college entrance examination questions based on clustering algorithm",
+      "arxiv_id": null,
+      "doi": "10.61091/jcmcc127b-393",
+      "year": 2025
+    },
+    {
+      "title": "All Models are Wrong, but Many are Useful: Learning a Variable’s Importance by Studying an Entire Class of Prediction Models Simultaneously",
+      "arxiv_id": "1801.01489",
+      "doi": null,
+      "year": 2018
+    },
+    {
+      "title": "Adam: A Method for Stochastic Optimization",
+      "arxiv_id": "1412.6980",
+      "doi": null,
+      "year": 2014
+    },
+    {
+      "title": "DuReader_retrieval: A Large-scale Chinese Benchmark for Passage Retrieval from Web Search Engine",
+      "arxiv_id": "2203.10232",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Between Student Expectations and Institutional Questions",
+      "arxiv_id": null,
+      "doi": "10.59704/44bfc5a56177e919",
+      "year": 2026
+    },
+    {
+      "title": "FAQ-Based Question Answering Systems with Query-Question and Query-Answer Similarity",
+      "arxiv_id": null,
+      "doi": "10.5220/0012454800003636",
+      "year": 2024
+    },
+    {
+      "title": "PERBANDINGAN HASIL BELAJAR SISWA DENGAN MENGGUNAKAN METODE SQ3R (SURVEY, QUESTION, READ, RECITE, REVIEW)",
+      "arxiv_id": null,
+      "doi": "10.36985/jpbm.v8i2.389",
+      "year": 2020
+    },
+    {
+      "title": "Investigating Code Similarity Patterns in LLM-Generated and Human-Written Programming Solutions",
+      "arxiv_id": null,
+      "doi": "10.5220/0014949400004021",
+      "year": 2026
+    },
+    {
+      "title": "Figure 6: Review-based hierarchical clustering of hotels using SBERT similarity.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3713/fig-6",
+      "year": null
+    },
+    {
+      "title": "Predicting student performance: an application of data mining methods with an educational Web-based system",
+      "arxiv_id": null,
+      "doi": "10.1109/fie.2003.1263284",
+      "year": 2003
+    },
+    {
+      "title": "LaMP: When Large Language Models Meet Personalization",
+      "arxiv_id": "2304.11406",
+      "doi": "10.48550/arxiv.2304.11406",
+      "year": 2023
+    },
+    {
+      "title": "Figure 12: (A) K-means clustering for fake news response similarity <i>vs</i> . prompt similarity. (B) K-means clustering for phishing email response similarity <i>vs</i> . prompt similarity. (C) K-means clustering for malicious information response similarity <i>vs</i> . prompt similarity. (D) K-means clustering for SQL injection response similarity <i>vs</i> . prompt similarity.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.2374/fig-12",
+      "year": null
+    },
+    {
+      "title": "Doctor Of Ministry Program Evaluation Using A Student Satisfaction Survey",
+      "arxiv_id": null,
+      "doi": "10.2986/tren.001-1238",
+      "year": null
+    },
+    {
+      "title": "ACM SIGCOMM Student Mentoring Column",
+      "arxiv_id": null,
+      "doi": "10.1145/2831347.2831355",
+      "year": 2015
+    },
+    {
+      "title": "Agreement in Sexing and Estimating Stature in Human Skeletal Remains",
+      "arxiv_id": null,
+      "doi": "10.47611/jsr.v12i3.2107",
+      "year": 2023
+    },
+    {
+      "title": "Review Arcade: On the Human Alignment and Gameability of LLM Reviews",
+      "arxiv_id": "2605.28897",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "MTMM Experiments and the Quality of Survey Questions",
+      "arxiv_id": null,
+      "doi": "10.1002/9781118634646.ch12",
+      "year": 2014
+    },
+    {
+      "title": "The Precalculus Concept Assessment: A Tool for Assessing Students’ Reasoning Abilities and Understandings",
+      "arxiv_id": null,
+      "doi": "10.1080/07370001003676587",
+      "year": 2010
+    },
+    {
+      "title": "How to Answer Tough Interview Questions",
+      "arxiv_id": null,
+      "doi": "10.64934/vxjez2rp",
+      "year": 2019
+    },
+    {
+      "title": "Truth Is a Lie: Crowd Truth and the Seven Myths of Human Annotation",
+      "arxiv_id": null,
+      "doi": "10.1609/aimag.v36i1.2564",
+      "year": 2015
+    },
+    {
+      "title": "Educational data mining and learning analytics: An updated survey",
+      "arxiv_id": "2402.07956",
+      "doi": "10.1002/widm.1355",
+      "year": 2020
+    },
+    {
+      "title": "Recent methods on short text stream clustering: A survey study",
+      "arxiv_id": null,
+      "doi": "10.1002/wics.1610",
+      "year": 2023
+    },
+    {
+      "title": "Creating organizing and indexing digital video contents using frame similarity value techniques using hierarchical clustering techniques",
+      "arxiv_id": null,
+      "doi": "10.52783/jier.v4i1.580",
+      "year": 2024
+    },
+    {
+      "title": "Supplemental Information 1: Semantic Question Similarity Dataset.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3988/supp-1",
+      "year": null
+    },
+    {
+      "title": "REVIEW QUESTIONS FOR APPENDIX E: The Cell",
+      "arxiv_id": null,
+      "doi": "10.1016/b978-0-12-705955-6.50031-9",
+      "year": 1977
+    },
+    {
+      "title": "Miscellaneous Questions About ABA",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003470144-22",
+      "year": 2025
+    },
+    {
+      "title": "REVIEW QUESTIONS FOR APPENDIX C: Orbitals",
+      "arxiv_id": null,
+      "doi": "10.1016/b978-0-12-705955-6.50029-0",
+      "year": 1977
+    },
+    {
+      "title": "How Extending Time in Developmental Math Impacts Student Persistence and Success: Evidence from a Regression Discontinuity in Community Colleges",
+      "arxiv_id": null,
+      "doi": "10.1353/rhe.2017.0004",
+      "year": 2016
+    },
+    {
+      "title": "Figure 15: Results from a post-course survey asking student participants to rate their agreement with a statement designed to assess scientific self-efficacy.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.21333/fig-15",
+      "year": null
+    },
+    {
+      "title": "Systematic Reviews to Answer Health Care Questions",
+      "arxiv_id": null,
+      "doi": "10.1038/s41406-026-1617-1",
+      "year": 2026
+    },
+    {
+      "title": "Naturalistic measure of social norms alignment",
+      "arxiv_id": "2605.23420",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "REVIEW QUESTIONS FOR APPENDIX B: Metric system conversions",
+      "arxiv_id": null,
+      "doi": "10.1016/b978-0-12-705955-6.50028-9",
+      "year": 1977
+    },
+    {
+      "title": "Virtual Personas for Language Models via an Anthology of Backstories",
+      "arxiv_id": "2407.06576",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "A Short Summary, Frequently Asked Questions, and a Wrap‐Up",
+      "arxiv_id": null,
+      "doi": "10.1002/9781394308316.ch15",
+      "year": 2024
+    },
+    {
+      "title": "Cognitive Interview Evaluation of “Healthy and Ready to Learn” Survey Questions (HRSA)",
+      "arxiv_id": null,
+      "doi": "10.15620/cdc/150783",
+      "year": 2022
+    },
+    {
+      "title": "Beyond Majority Voting: Agreement-Based Clustering to Model Annotator Perspectives in Subjective NLP Tasks",
+      "arxiv_id": "2605.09955",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Crowdsourcing Multiple Choice Science Questions",
+      "arxiv_id": "1707.06209",
+      "doi": null,
+      "year": 2017
+    },
+    {
+      "title": "Cognitive Testing Evaluation of Survey Questions on COVID-19",
+      "arxiv_id": null,
+      "doi": "10.15620/cdc/251399",
+      "year": 2021
+    },
+    {
+      "title": "RIFT: A RubrIc Failure Mode Taxonomy and Automated Diagnostics",
+      "arxiv_id": "2604.01375",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Duplicate and Similar Questions Pair Detection using Natural Language Processing",
+      "arxiv_id": null,
+      "doi": "10.1109/amlds63918.2025.11159422",
+      "year": 2025
+    },
+    {
+      "title": "WITHDRAWAL – Administrative duplicate publication: Afterword: Cross-border journalism: Issues and questions for research and practice",
+      "arxiv_id": null,
+      "doi": "10.1177/14648849251329652",
+      "year": 2025
+    },
+    {
+      "title": "WITHDRAWN—Administrative Duplicate Publication: Afterword: Cross-border journalism: Issues and questions for research and practice",
+      "arxiv_id": null,
+      "doi": "10.1177/14648849251321612",
+      "year": 2025
+    },
+    {
+      "title": "Forum Duplicate Question Detection by Domain Adaptive Semantic Matching",
+      "arxiv_id": null,
+      "doi": "10.1109/access.2020.2982268",
+      "year": 2020
+    },
+    {
+      "title": "MQDD: Pre-training of Multimodal Question Duplicity Detection for Software Engineering Domain",
+      "arxiv_id": "2203.14093",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Cognitive Interview Evaluation of Select Questions for the National Survey of Family Growth",
+      "arxiv_id": null,
+      "doi": "10.15620/cdc/150781",
+      "year": 2022
+    },
+    {
+      "title": "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering",
+      "arxiv_id": "2007.01282",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "Natural Language Understanding with the Quora Question Pairs Dataset",
+      "arxiv_id": "1907.01041",
+      "doi": null,
+      "year": 2019
+    },
+    {
+      "title": "Duplicate Question Retrieval and Confirmation Time Prediction in Software Communities",
+      "arxiv_id": "2309.05035",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Controllable Evidence Selection in Retrieval-Augmented Question Answering via Deterministic Utility Gating",
+      "arxiv_id": "2603.18011",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "20 Questions: Dr. Joshua DeJong, Pediatrician",
+      "arxiv_id": null,
+      "doi": "10.64934/y7kepy06",
+      "year": 2026
+    },
+    {
+      "title": "CPRet: A Dataset, Benchmark, and Model for Retrieval in Competitive Programming",
+      "arxiv_id": "2505.12925",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Trait, Not State: The Durability of Reading Identity in Social Highlighting",
+      "arxiv_id": "2606.12904",
+      "doi": "10.48550/arxiv.2606.12904",
+      "year": 2026
+    },
+    {
+      "title": "Plagiarism analysis, authorship identification, and near-duplicate detection PAN'07",
+      "arxiv_id": null,
+      "doi": "10.1145/1328964.1328976",
+      "year": 2007
+    },
+    {
+      "title": "Duplicate Detection",
+      "arxiv_id": null,
+      "doi": "10.1007/springerreference_64834",
+      "year": null
+    },
+    {
+      "title": "Video Near-duplicate Detection",
+      "arxiv_id": null,
+      "doi": "10.1007/springerreference_72916",
+      "year": null
+    },
+    {
+      "title": "Duplicate Defect Detection",
+      "arxiv_id": null,
+      "doi": "10.33915/etd.4768",
+      "year": null
+    },
+    {
+      "title": "A survey analysis on duplicate detection in Hierarchical Data",
+      "arxiv_id": null,
+      "doi": "10.1109/pervasive.2015.7087099",
+      "year": 2015
+    },
+    {
+      "title": "Progressive Detection of Duplicate Data",
+      "arxiv_id": null,
+      "doi": "10.21275/15011702",
+      "year": 2017
+    },
+    {
+      "title": "Survey of duplicate detection using progressive detection techniques",
+      "arxiv_id": null,
+      "doi": "10.14419/ijet.v7i1.9.9757",
+      "year": 2018
+    },
+    {
+      "title": "Transformer Models for Automated Bug Triaging and Duplicate Bug Detection",
+      "arxiv_id": null,
+      "doi": "10.32920/26871409.v1",
+      "year": 2024
+    },
+    {
+      "title": "From Data Entry to ML Inference: End-to-End Pipelines for Duplicate Detection",
+      "arxiv_id": null,
+      "doi": "10.37547/tajas/volume07issue10-05",
+      "year": 2025
+    },
+    {
+      "title": "RATIFICATION WITHOUT AGREEMENT",
+      "arxiv_id": null,
+      "doi": "10.2307/jj.30019283.8",
+      "year": 2025
+    },
+    {
+      "title": "University enters resolution agreement",
+      "arxiv_id": null,
+      "doi": "10.1002/say.31614",
+      "year": 2025
+    },
+    {
+      "title": "University enters into resolution agreement",
+      "arxiv_id": null,
+      "doi": "10.1002/say.31474",
+      "year": 2024
+    },
+    {
+      "title": "Chapter Four RATIFICATION WITHOUT AGREEMENT",
+      "arxiv_id": null,
+      "doi": "10.4159/9780674300767-006",
+      "year": 2025
+    },
+    {
+      "title": "College enters into voluntary resolution agreement",
+      "arxiv_id": null,
+      "doi": "10.1002/say.31357",
+      "year": 2024
+    },
+    {
+      "title": "University enters resolution agreement over website accessibility",
+      "arxiv_id": null,
+      "doi": "10.1002/say.31379",
+      "year": 2024
+    },
+    {
+      "title": "SkillContrast: Difference-Guided Text Selection for Agent Skill Reranking",
+      "arxiv_id": "2610.11650",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "The Consequences of Gender-Affirming Care: A Survey of U.S. and U.K. Law",
+      "arxiv_id": null,
+      "doi": "10.25172/ilrasf.2.1.4",
+      "year": 2023
+    },
+    {
+      "title": "U.S.-Canadian Wildfire Cooperation",
+      "arxiv_id": null,
+      "doi": "10.25172/ilrasf.2.1.2",
+      "year": 2023
+    },
+    {
+      "title": "Appendix G",
+      "arxiv_id": null,
+      "doi": "10.1542/9781581106381-appendix_g",
+      "year": 2011
+    },
+    {
+      "title": "Appendix A",
+      "arxiv_id": null,
+      "doi": "10.1542/9781581106381-appendix_a",
+      "year": 2011
+    },
+    {
+      "title": "Introduction",
+      "arxiv_id": null,
+      "doi": "10.1108/979-8-88730-409-020251004",
+      "year": 2023
+    },
+    {
+      "title": "Reading Position Is the Baseline to Beat: A Time-Ordered Evaluation of Personalised Highlight Prediction",
+      "arxiv_id": "2610.09262",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "The “Problem” of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+      "arxiv_id": "2211.02570",
+      "doi": "10.18653/v1/2022.emnlp-main.731",
+      "year": 2022
+    },
+    {
+      "title": "PHD-GIFs: Personalized Highlight Detection for Automatic GIF Creation",
+      "arxiv_id": "1804.06604",
+      "doi": "10.1145/3240508.3240599",
+      "year": 2018
+    },
+    {
+      "title": "Generative Agent Simulations of 1,000 People",
+      "arxiv_id": "2411.10109",
+      "doi": "10.48550/arxiv.2411.10109",
+      "year": 2024
+    },
+    {
+      "title": "The wisdom of crowds.",
+      "arxiv_id": null,
+      "doi": "10.1016/s0140-6736(16)31130-8",
+      "year": 2016
+    },
+    {
+      "title": "A Unified Approach to Interpreting Model Predictions",
+      "arxiv_id": "1705.07874",
+      "doi": "10.9728/dcs.2024.25.7.1847",
+      "year": 2017
+    },
+    {
+      "title": "Data mining and education.",
+      "arxiv_id": null,
+      "doi": "10.1002/wcs.1350",
+      "year": 2015
+    },
+    {
+      "title": "Research problems in community college mathematics education: testing the boundaries of K-12 research",
+      "arxiv_id": null,
+      "doi": "10.5951/jresematheduc.45.2.0173",
+      "year": 2014
+    },
+    {
+      "title": "Mutual Information between Discrete and Continuous Data Sets",
+      "arxiv_id": null,
+      "doi": "10.1371/journal.pone.0087357",
+      "year": 2014
+    },
+    {
+      "title": "Gradient boosting machines, a tutorial",
+      "arxiv_id": null,
+      "doi": "10.3389/fnbot.2013.00021",
+      "year": 2013
+    },
+    {
+      "title": "Basic Skills Education in Community Colleges: Inside and Outside of Classrooms",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2012
+    },
+    {
+      "title": "Handbook of Educational Data Mining",
+      "arxiv_id": null,
+      "doi": "10.1201/b10274",
+      "year": 2010
+    },
+    {
+      "title": "A systematic analysis of performance measures for classification tasks",
+      "arxiv_id": null,
+      "doi": "10.1016/j.ipm.2009.03.002",
+      "year": 2009
+    },
+    {
+      "title": "Greedy function approximation: A gradient boosting machine.",
+      "arxiv_id": null,
+      "doi": "10.1214/aos/1013203451",
+      "year": 2001
+    },
+    {
+      "title": "Support-Vector Networks",
+      "arxiv_id": null,
+      "doi": "10.1023/a:1022627411411",
+      "year": 1995
+    },
+    {
+      "title": "A Study of Cross-Validation and Bootstrap for Accuracy Estimation and Model Selection",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 1995
+    },
+    {
+      "title": "Introduction to Classical and Modern Test Theory",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 1986
+    },
+    {
+      "title": "Statistical Theories of Mental Test Scores.",
+      "arxiv_id": null,
+      "doi": "10.2307/2283550",
+      "year": 1971
+    },
+    {
+      "title": "Who belongs in the family?",
+      "arxiv_id": null,
+      "doi": "10.1007/bf02289263",
+      "year": 1953
+    },
+    {
+      "title": "“Artificial intelligence in education: A comprehensive review of machine learning applications,”",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2020
+    }
+  ],
+  "ranking": "claim",
+  "semantic_model": null,
+  "arxiv_match": "all",
+  "must_read": [
+    {
+      "title": "Quality Threshold Clustering",
+      "year": null,
+      "arxiv_id": null,
+      "doi": "10.1007/springerreference_179398",
+      "pdf_url": null,
+      "why": "term overlap 0.095, design elements: clustering threshold sensitivity, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Factions Within, Uncertain Across: Within-Document Reader Sub-Groups in Social Highlighting",
+      "year": 2026,
+      "arxiv_id": "2606.11613",
+      "doi": null,
+      "pdf_url": null,
+      "why": "term overlap 0.246, design elements: agreement with instructor groupings",
+      "next": "fulltext --id 2606.11613"
+    },
+    {
+      "title": "Multi-Method Analysis of Mathematics Placement Assessments: Classical, Machine Learning, and Clustering Approaches",
+      "year": 2025,
+      "arxiv_id": "2511.04667",
+      "doi": null,
+      "pdf_url": "https://arxiv.org/pdf/2511.04667v1",
+      "why": "term overlap 0.233, design elements: clustering threshold sensitivity",
+      "next": "fulltext --id 2511.04667"
+    },
+    {
+      "title": "Supplemental Information 2: Clustering threshold.",
+      "year": null,
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.4588/supp-2",
+      "pdf_url": null,
+      "why": "term overlap 0.095, design elements: clustering threshold sensitivity, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Clustering Edge Values for Threshold Selection",
+      "year": 1977,
+      "arxiv_id": null,
+      "doi": "10.21236/ada049592",
+      "pdf_url": null,
+      "why": "term overlap 0.095, design elements: clustering threshold sensitivity, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    }
+  ],
+  "expansion_log": [
+    {
+      "expanded": "Quality Threshold Clustering",
+      "citing_and_references": 0
+    },
+    {
+      "expanded": "Factions Within, Uncertain Across: Within-Document Reader Sub-Groups in Social Highlighting",
+      "citing_and_references": 13
+    },
+    {
+      "expanded": "Multi-Method Analysis of Mathematics Placement Assessments: Classical, Machine Learning, and Clustering Approaches",
+      "citing_and_references": 25
+    }
+  ],
+  "expansion_errors": [
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404,
+      "step": "citations"
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404,
+      "step": "references"
+    }
+  ],
+  "log": [
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "clustering student questions evaluation",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "clustering student questions evaluation",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "clustering student questions evaluation",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "student question grouping human agreement",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "student question grouping human agreement",
+      "results": 9,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "student question grouping human agreement",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "short text clustering student questions embeddings",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "short text clustering student questions embeddings",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "short text clustering student questions embeddings",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "LLM question similarity clustering education",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "LLM question similarity clustering education",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "LLM question similarity clustering education",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "duplicate student questions detection forum",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "duplicate student questions detection forum",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "duplicate student questions detection forum",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "clustering student questions evaluation survey",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "clustering student questions evaluation survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "clustering student questions evaluation survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "clustering student questions evaluation review",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "clustering student questions evaluation review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "clustering student questions evaluation review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "student question grouping human agreement survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "student question grouping human agreement survey",
+      "results": 9,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "student question grouping human agreement survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "student question grouping human agreement review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "student question grouping human agreement review",
+      "results": 9,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "student question grouping human agreement review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "short text clustering student questions embeddings survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "short text clustering student questions embeddings survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "short text clustering student questions embeddings survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "short text clustering student questions embeddings review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "short text clustering student questions embeddings review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "short text clustering student questions embeddings review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM question similarity clustering education survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM question similarity clustering education survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM question similarity clustering education survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "LLM question similarity clustering education review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "LLM question similarity clustering education review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "LLM question similarity clustering education review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "duplicate student questions detection forum survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "duplicate student questions detection forum survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "duplicate student questions detection forum survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "duplicate student questions detection forum review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "duplicate student questions detection forum review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "duplicate student questions detection forum review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "clustering student questions evaluation",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "clustering student questions evaluation",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "clustering student questions evaluation",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "student question grouping human agreement",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "student question grouping human agreement",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "student question grouping human agreement",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "short text clustering student questions embeddings",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "short text clustering student questions embeddings",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "short text clustering student questions embeddings",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "LLM question similarity clustering education",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "LLM question similarity clustering education",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "LLM question similarity clustering education",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "duplicate student questions detection forum",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "duplicate student questions detection forum",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "duplicate student questions detection forum",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "agreement with instructor groupings Evaluating clustering instructor clustering",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "agreement with instructor groupings Evaluating clustering instructor clustering",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "agreement with instructor groupings Evaluating clustering instructor clustering",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "adjusted rand index Evaluating clustering instructor clustering",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "adjusted rand index Evaluating clustering instructor clustering",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "adjusted rand index Evaluating clustering instructor clustering",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "clustering threshold sensitivity Evaluating clustering instructor clustering",
+      "results": 10,
+      "error": null
+    }
+  ],
+  "date": "2026-10-19"
+}

@@ -1,0 +1,66 @@
+{
+  "paper": {
+    "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+    "authors": [
+      "Elisabeth Lebmeier",
+      "Matthias Aßenmacher",
+      "Christian Heumann"
+    ],
+    "year": 2023,
+    "date": "2023-01-01",
+    "venue": "Lecture notes in computer science",
+    "doi": "10.1007/978-3-031-26390-3_31",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W4327652212",
+    "s2_id": "00defef3fa3c67d6fbc5fce999321f741d597994",
+    "url": "https://doi.org/10.1007/978-3-031-26390-3_31",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/978-3-031-26390-3_31.pdf",
+    "abstract": "Abstract For the latter part of the past decade, Aspect-Based Sentiment Analysis has been a field of great interest within Natural Language Processing. Supported by the Semantic Evaluation Conferences in 2014–2016, a variety of methods has been developed competing in improving performances on benchmark data sets. Exploiting the transformer architecture behind BERT, results improved rapidly and efforts in this direction still continue today. Our contribution to this body of research is a holistic comparison of six different architectures which achieved (near) state-of-the-art results at some point in time. We utilize a broad spectrum of five publicly available benchmark data sets and introduce a fixed setting with respect to the pre-processing, the train/validation splits, the performance measures and the quantification of uncertainty. Overall, our findings are two-fold: First, we find that the results reported in the scientific articles are hardly reproducible, since in our experiments the observed performance most of the time fell short of the reported one. Second, the results are burdened with notable uncertainty, depending on the data splits, which is why a reporting of uncertainty measures is crucial.",
+    "citations": 2,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "conference-paper",
+    "sources": [
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W2966661",
+        "W2101234009",
+        "W2251648804",
+        "W2891778157",
+        "W2962808042",
+        "W2963341956",
+        "W2965510113",
+        "W2969743835",
+        "W2971014768",
+        "W2985056549",
+        "W3013708524",
+        "W3037109418",
+        "W3083435909",
+        "W3100561719",
+        "W3100785471",
+        "W3122420389",
+        "W4297971002"
+      ],
+      "related_works": [
+        "W2378211422",
+        "W4321353415",
+        "W2745001401",
+        "W2130974462",
+        "W2028665553",
+        "W2086519370",
+        "W4246352526",
+        "W2121910908",
+        "W915438175",
+        "W4230315250"
+      ],
+      "abstract_source": "crossref"
+    }
+  },
+  "notes": []
+}

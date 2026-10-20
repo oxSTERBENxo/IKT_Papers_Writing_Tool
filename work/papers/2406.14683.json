@@ -1,0 +1,46 @@
+{
+  "paper": {
+    "title": "TAGLAS: An atlas of text-attributed graph datasets in the era of large graph and language models",
+    "authors": [
+      "Jiarui Feng",
+      "Hao Liu",
+      "Lecheng Kong",
+      "Mingfang Zhu",
+      "Yixin Chen",
+      "Muhan Zhang"
+    ],
+    "year": 2024,
+    "date": "2024-06-20",
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2406.14683",
+    "arxiv_id": "2406.14683",
+    "pmid": null,
+    "openalex_id": "W4399986615",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2406.14683",
+    "pdf_url": "https://arxiv.org/pdf/2406.14683v2",
+    "abstract": "In this report, we present TAGLAS, an atlas of text-attributed graph (TAG) datasets and benchmarks. TAGs are graphs with node and edge features represented in text, which have recently gained wide applicability in training graph-language or graph foundation models. In TAGLAS, we collect and integrate more than 23 TAG datasets with domains ranging from citation graphs to molecule graphs and tasks from node classification to graph question-answering. Unlike previous graph datasets and benchmarks, all datasets in TAGLAS have a unified node and edge text feature format, which allows a graph model to be simultaneously trained and evaluated on multiple datasets from various domains. Further, we provide a standardized, efficient, and simplified way to load all datasets and tasks. We also provide useful utils like text-to-embedding conversion, and graph-to-text conversion, which can facilitate different evaluation scenarios. Finally, we also provide standard and easy-to-use evaluation utils. The project is open-sourced at https://github.com/JiaruiFeng/TAGLAS and is still under construction. Please expect more datasets/features in the future.",
+    "citations": 0,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "Preprint",
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

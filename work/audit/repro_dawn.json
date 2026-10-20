@@ -1,0 +1,527 @@
+{
+  "resolved": true,
+  "paper": {
+    "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+    "authors": [
+      "Junghoon Kim",
+      "Junmo Lee",
+      "Yeonjun In",
+      "Kanghoon Yoon",
+      "Chanyoung Park"
+    ],
+    "year": 2025,
+    "date": "2025-03-10",
+    "venue": "Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining",
+    "doi": "10.1145/3701551.3703524",
+    "arxiv_id": "2411.12775",
+    "pmid": null,
+    "openalex_id": "W4404648464",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2411.12775",
+    "pdf_url": "https://arxiv.org/pdf/2411.12775v1",
+    "abstract": "Social graph-based fake news detection aims to identify news articles containing false information by utilizing social contexts, e.g., user information, tweets and comments. However, conventional methods are evaluated under less realistic scenarios, where the model has access to future knowledge on article-related and context-related data during training. In this work, we newly formalize a more realistic evaluation scheme that mimics real-world scenarios, where the data is temporality-aware and the detection model can only be trained on data collected up to a certain point in time. We show that the discriminative capabilities of conventional methods decrease sharply under this new setting, and further propose DAWN, a method more applicable to such scenarios. Our empirical findings indicate that later engagements (e.g., consuming or reposting news) contribute more to noisy edges that link real news-fake news pairs in the social graph. Motivated by this, we utilize feature representations of engagement earliness to guide an edge weight estimator to suppress the weights of such noisy edges, thereby enhancing the detection performance of DAWN. Through extensive experiments, we demonstrate that DAWN outperforms existing fake news detection methods under real-world environments. The source code is available at https://github.com/LeeJunmo/DAWN.",
+    "citations": 3,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "WSDM 2025",
+      "arxiv_category": "cs.SI",
+      "abstract_source": "arxiv"
+    }
+  },
+  "resolution_notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ],
+  "executed": false,
+  "disclaimer": "Automated pre-assessment only. No code was executed and no result was reproduced. 'found' means a file or phrase is present, not that it is complete or correct; 'not_found' means the automated check did not find it, not that it does not exist.",
+  "checklist": {
+    "full_text": {
+      "label": "Full paper publicly available",
+      "status": "verified",
+      "evidence": [
+        "https://arxiv.org/abs/2411.12775"
+      ],
+      "note": null
+    },
+    "code": {
+      "label": "Implementation available",
+      "status": "found",
+      "evidence": [
+        "https://github.com/LeeJunmo/DAWN"
+      ],
+      "note": "linked from the paper's own metadata (likely official)"
+    },
+    "license": {
+      "label": "Code licence",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No recognised licence; reuse rights are unclear."
+    },
+    "dependencies": {
+      "label": "Dependencies / environment specified",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "data_instructions": {
+      "label": "Dataset access and preprocessing instructions",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "configs": {
+      "label": "Training configuration and hyperparameters",
+      "status": "found",
+      "evidence": [
+        "README: \"...plementation version or directly customize the dataset with different hyperparameters. Here's the following procedures. ### 1. Use paper's implementation...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "training": {
+      "label": "Training entry point",
+      "status": "found",
+      "evidence": [
+        "file: run.py",
+        "file: run.sh"
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "seeds": {
+      "label": "Random seeds / determinism controls",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "hardware": {
+      "label": "Hardware requirements stated",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "evaluation": {
+      "label": "Evaluation script or protocol",
+      "status": "found",
+      "evidence": [
+        "README: \"...News Detection: Exploiting Engagement Earliness for Temporality-aware Evaluation This repository contains the official implementation of **DAWN**, a...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "pretrained": {
+      "label": "Pretrained weights or checkpoints",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "reported_results": {
+      "label": "Published results to compare against",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "architecture": {
+      "label": "Model architecture fully specified",
+      "status": "manual_review",
+      "evidence": [],
+      "note": "Not determinable from metadata; read the paper's method and experiment sections."
+    },
+    "maintenance": {
+      "label": "Repository maintenance",
+      "status": "verified",
+      "evidence": [
+        "last push 2026-05-29",
+        "archived: False",
+        "open issues: 0",
+        "issues mentioning reproduction: 0"
+      ],
+      "note": null
+    },
+    "prior_reproductions": {
+      "label": "Existing reproduction attempts",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No citing work mentioning reproducibility was found in OpenAlex."
+    }
+  },
+  "code_candidates": [
+    {
+      "repo": "LeeJunmo/DAWN",
+      "url": "https://github.com/LeeJunmo/DAWN",
+      "relationship": "linked_by_paper",
+      "checks": {
+        "license": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No recognised licence; reuse rights are unclear."
+        },
+        "dependencies": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "data_instructions": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "configs": {
+          "status": "found",
+          "evidence": [
+            "README: \"...plementation version or directly customize the dataset with different hyperparameters. Here's the following procedures. ### 1. Use paper's implementation...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "training": {
+          "status": "found",
+          "evidence": [
+            "file: run.py",
+            "file: run.sh"
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "seeds": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "hardware": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "evaluation": {
+          "status": "found",
+          "evidence": [
+            "README: \"...News Detection: Exploiting Engagement Earliness for Temporality-aware Evaluation This repository contains the official implementation of **DAWN**, a...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "pretrained": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "reported_results": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "maintenance": {
+          "status": "verified",
+          "evidence": [
+            "last push 2026-05-29",
+            "archived: False",
+            "open issues: 0",
+            "issues mentioning reproduction: 0"
+          ],
+          "note": null
+        }
+      },
+      "errors": [],
+      "exists": true,
+      "stars": 20,
+      "forks": 0,
+      "open_issues": 0,
+      "archived": false,
+      "pushed_at": "2026-05-29T06:02:39Z",
+      "created_at": "2024-11-18T10:39:21Z",
+      "license": null,
+      "language": "Python",
+      "description": "The official source code of the paper \"A New DAWN for Fake News Detection: Exploiting Engagement Earliness for Temporality-aware Evaluation\" (TIST 2026)",
+      "is_fork": false,
+      "n_files": 9,
+      "tree_truncated": false,
+      "readme_chars": 7353,
+      "reproduction_issue_count": 0
+    },
+    {
+      "repo": "Khadarvali17/fake-news-detection",
+      "url": "https://github.com/Khadarvali17/fake-news-detection",
+      "relationship": "paper_list",
+      "checks": {
+        "license": {
+          "status": "verified",
+          "evidence": [
+            "SPDX: MIT"
+          ],
+          "note": null
+        },
+        "dependencies": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "data_instructions": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "configs": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "training": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "seeds": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "hardware": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "evaluation": {
+          "status": "found",
+          "evidence": [
+            "README: \"...2025]** <i>Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness</i> [[Paper](https://dl.acm.org/do...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "pretrained": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "reported_results": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "maintenance": {
+          "status": "verified",
+          "evidence": [
+            "last push 2026-05-09",
+            "archived: False",
+            "open issues: 0",
+            "issues mentioning reproduction: 0"
+          ],
+          "note": null
+        }
+      },
+      "errors": [],
+      "exists": true,
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "archived": false,
+      "pushed_at": "2026-05-09T06:45:07Z",
+      "created_at": "2026-05-09T06:43:37Z",
+      "license": "MIT",
+      "language": "Jupyter Notebook",
+      "description": "rumors detection",
+      "is_fork": false,
+      "n_files": 7,
+      "tree_truncated": false,
+      "readme_chars": 35382,
+      "reproduction_issue_count": 0
+    },
+    {
+      "repo": "bsmanojgowda99-creator/fake-news-detection",
+      "url": "https://github.com/bsmanojgowda99-creator/fake-news-detection",
+      "relationship": "paper_list",
+      "checks": {
+        "license": {
+          "status": "verified",
+          "evidence": [
+            "SPDX: MIT"
+          ],
+          "note": null
+        },
+        "dependencies": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "data_instructions": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "configs": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "training": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "seeds": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "hardware": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "evaluation": {
+          "status": "found",
+          "evidence": [
+            "README: \"...2025]** <i>Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness</i> [[Paper](https://dl.acm.org/do...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "pretrained": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "reported_results": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "maintenance": {
+          "status": "verified",
+          "evidence": [
+            "last push 2026-05-08",
+            "archived: False",
+            "open issues: 0",
+            "issues mentioning reproduction: 0"
+          ],
+          "note": null
+        }
+      },
+      "errors": [],
+      "exists": true,
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "archived": false,
+      "pushed_at": "2026-05-08T08:22:57Z",
+      "created_at": "2026-05-08T08:21:07Z",
+      "license": "MIT",
+      "language": "Jupyter Notebook",
+      "description": "fake news detection & rumors detection",
+      "is_fork": false,
+      "n_files": 7,
+      "tree_truncated": false,
+      "readme_chars": 35382,
+      "reproduction_issue_count": 0
+    },
+    {
+      "repo": "mohammedalijb46-dot/main-project-2",
+      "url": "https://github.com/mohammedalijb46-dot/main-project-2",
+      "relationship": "paper_list",
+      "checks": {
+        "license": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No recognised licence; reuse rights are unclear."
+        },
+        "dependencies": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "data_instructions": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "configs": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "training": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "seeds": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "hardware": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "evaluation": {
+          "status": "found",
+          "evidence": [
+            "README: \"...2025]** <i>Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness</i> [[Paper](https://dl.acm.org/do...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "pretrained": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "reported_results": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "maintenance": {
+          "status": "verified",
+          "evidence": [
+            "last push 2026-05-20",
+            "archived: False",
+            "open issues: 0",
+            "issues mentioning reproduction: 0"
+          ],
+          "note": null
+        }
+      },
+      "errors": [],
+      "exists": true,
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "archived": false,
+      "pushed_at": "2026-05-20T10:13:49Z",
+      "created_at": "2026-05-20T10:11:27Z",
+      "license": null,
+      "language": "Python",
+      "description": null,
+      "is_fork": false,
+      "n_files": 4,
+      "tree_truncated": false,
+      "readme_chars": 35382,
+      "reproduction_issue_count": 0
+    }
+  ],
+  "huggingface_linked": {
+    "datasets": [],
+    "models": [],
+    "note": "Repos tagged with this arXiv ID. They cite the paper; they are not necessarily the data or weights it used."
+  },
+  "prior_reproduction_candidates": [],
+  "potential_blockers": [],
+  "missing": [
+    "Code licence",
+    "Dependencies / environment specified",
+    "Dataset access and preprocessing instructions",
+    "Random seeds / determinism controls",
+    "Hardware requirements stated",
+    "Pretrained weights or checkpoints",
+    "Published results to compare against",
+    "Model architecture fully specified",
+    "Existing reproduction attempts"
+  ],
+  "errors": []
+}

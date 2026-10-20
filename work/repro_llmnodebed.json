@@ -1,0 +1,282 @@
+{
+  "resolved": true,
+  "paper": {
+    "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+    "authors": [
+      "Xixi Wu",
+      "Yifei Shen",
+      "Fangzhou Ge",
+      "Caihua Shan",
+      "Yizhu Jiao",
+      "Xiangguo Sun",
+      "Hong Cheng"
+    ],
+    "year": 2025,
+    "date": "2025-02-02",
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv_id": "2502.00829",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": "dad6bee756659d76487774474afd99fb15775d21",
+    "url": "https://arxiv.org/abs/2502.00829",
+    "pdf_url": "https://arxiv.org/pdf/2502.00829v2",
+    "abstract": "Node classification is a fundamental task in graph analysis, with broad applications across various fields. Recent breakthroughs in Large Language Models (LLMs) have enabled LLM-based approaches for this task. Although many studies demonstrate the impressive performance of LLM-based methods, the lack of clear design guidelines may hinder their practical application. In this work, we aim to establish such guidelines through a fair and systematic comparison of these algorithms. As a first step, we developed LLMNodeBed, a comprehensive codebase and testbed for node classification using LLMs. It includes 10 homophilic datasets, 4 heterophilic datasets, 8 LLM-based algorithms, 8 classic baselines, and 3 learning paradigms. Subsequently, we conducted extensive experiments, training and evaluating over 2,700 models, to determine the key settings (e.g., learning paradigms and homophily) and components (e.g., model size and prompt) that affect performance. Our findings uncover 8 insights, e.g., (1) LLM-based methods can significantly outperform traditional methods in a semi-supervised setting, while the advantage is marginal in a supervised setting; (2) Graph Foundation Models can beat open-source LLMs but still fall short of strong LLMs like GPT-4o in a zero-shot setting. We hope that the release of LLMNodeBed, along with our insights, will facilitate reproducible research and inspire future studies in this field. Codes and datasets are released at \\href{https://llmnodebed.github.io/}{\\texttt{https://llmnodebed.github.io/}}.",
+    "citations": 30,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "Accepted by ICML 2025",
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "resolution_notes": [
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ],
+  "executed": false,
+  "disclaimer": "Automated pre-assessment only. No code was executed and no result was reproduced. 'found' means a file or phrase is present, not that it is complete or correct; 'not_found' means the automated check did not find it, not that it does not exist.",
+  "checklist": {
+    "full_text": {
+      "label": "Full paper publicly available",
+      "status": "verified",
+      "evidence": [
+        "https://arxiv.org/abs/2502.00829"
+      ],
+      "note": null
+    },
+    "code": {
+      "label": "Implementation available",
+      "status": "found",
+      "evidence": [
+        "https://github.com/WxxShirley/LLMNodeBed"
+      ],
+      "note": "README cites the paper (official or third-party; check authorship)"
+    },
+    "license": {
+      "label": "Code licence",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No recognised licence; reuse rights are unclear."
+    },
+    "dependencies": {
+      "label": "Dependencies / environment specified",
+      "status": "found",
+      "evidence": [
+        "file: requirements.txt",
+        "README: \"...rted, follow these steps to set up your Python environment: ```bash conda create -n NodeBed python=3.10 conda activate NodeBed pip install torch torch...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "data_instructions": {
+      "label": "Dataset access and preprocessing instructions",
+      "status": "found",
+      "evidence": [
+        "README: \"...# See full list in common/model_path.py } ``` ### 2. Datasets Download datasets either from [Google Drive](https://drive.google.com/file/d/14GmRV...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "configs": {
+      "label": "Training configuration and hyperparameters",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "training": {
+      "label": "Training entry point",
+      "status": "found",
+      "evidence": [
+        "file: LLMEncoder/ENGINE/main.py",
+        "file: LLMEncoder/ENGINE/run_CACHE.sh",
+        "file: LLMEncoder/GNN/main.py",
+        "file: LLMEncoder/GNN/run.sh",
+        "file: LLMEncoder/MLP/main.py"
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "seeds": {
+      "label": "Random seeds / determinism controls",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "hardware": {
+      "label": "Hardware requirements stated",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "evaluation": {
+      "label": "Evaluation script or protocol",
+      "status": "found",
+      "evidence": [
+        "file: LLMZeroshot/Direct/evaluation.py"
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "pretrained": {
+      "label": "Pretrained weights or checkpoints",
+      "status": "found",
+      "evidence": [
+        "README: \"...g.shields.io/badge/📝-Paper-blue\" height=\"25\"></a> <a href=\"https://huggingface.co/datasets/xxwu/LLMNodeBed/tree/main\"><img src=\"https://img.shields.io/b...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "reported_results": {
+      "label": "Published results to compare against",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "architecture": {
+      "label": "Model architecture fully specified",
+      "status": "manual_review",
+      "evidence": [],
+      "note": "Not determinable from metadata; read the paper's method and experiment sections."
+    },
+    "maintenance": {
+      "label": "Repository maintenance",
+      "status": "verified",
+      "evidence": [
+        "last push 2025-07-01",
+        "archived: False",
+        "open issues: 0",
+        "issues mentioning reproduction: 1"
+      ],
+      "note": null
+    },
+    "prior_reproductions": {
+      "label": "Existing reproduction attempts",
+      "status": "unavailable",
+      "evidence": [],
+      "note": "Needs an OpenAlex record for the paper, which was not found."
+    }
+  },
+  "code_candidates": [
+    {
+      "repo": "WxxShirley/LLMNodeBed",
+      "url": "https://github.com/WxxShirley/LLMNodeBed",
+      "relationship": "readme_cites_paper",
+      "checks": {
+        "license": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No recognised licence; reuse rights are unclear."
+        },
+        "dependencies": {
+          "status": "found",
+          "evidence": [
+            "file: requirements.txt",
+            "README: \"...rted, follow these steps to set up your Python environment: ```bash conda create -n NodeBed python=3.10 conda activate NodeBed pip install torch torch...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "data_instructions": {
+          "status": "found",
+          "evidence": [
+            "README: \"...# See full list in common/model_path.py } ``` ### 2. Datasets Download datasets either from [Google Drive](https://drive.google.com/file/d/14GmRV...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "configs": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "training": {
+          "status": "found",
+          "evidence": [
+            "file: LLMEncoder/ENGINE/main.py",
+            "file: LLMEncoder/ENGINE/run_CACHE.sh",
+            "file: LLMEncoder/GNN/main.py",
+            "file: LLMEncoder/GNN/run.sh",
+            "file: LLMEncoder/MLP/main.py"
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "seeds": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "hardware": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "evaluation": {
+          "status": "found",
+          "evidence": [
+            "file: LLMZeroshot/Direct/evaluation.py"
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "pretrained": {
+          "status": "found",
+          "evidence": [
+            "README: \"...g.shields.io/badge/📝-Paper-blue\" height=\"25\"></a> <a href=\"https://huggingface.co/datasets/xxwu/LLMNodeBed/tree/main\"><img src=\"https://img.shields.io/b...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "reported_results": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "maintenance": {
+          "status": "verified",
+          "evidence": [
+            "last push 2025-07-01",
+            "archived: False",
+            "open issues: 0",
+            "issues mentioning reproduction: 1"
+          ],
+          "note": null
+        }
+      },
+      "errors": [],
+      "exists": true,
+      "stars": 74,
+      "forks": 5,
+      "open_issues": 0,
+      "archived": false,
+      "pushed_at": "2025-07-01T15:06:19Z",
+      "created_at": "2024-09-09T12:21:20Z",
+      "license": null,
+      "language": "Python",
+      "description": "[ICML 2025] Official implementation for paper \"A Comprehensive Analysis on LLM-based Node Classification Algorithms\"",
+      "is_fork": false,
+      "n_files": 71,
+      "tree_truncated": false,
+      "readme_chars": 6827,
+      "reproduction_issue_count": 1
+    }
+  ],
+  "huggingface_linked": {
+    "datasets": [],
+    "models": [],
+    "note": "Repos tagged with this arXiv ID. They cite the paper; they are not necessarily the data or weights it used."
+  },
+  "prior_reproduction_candidates": [],
+  "potential_blockers": [],
+  "missing": [
+    "Code licence",
+    "Training configuration and hyperparameters",
+    "Random seeds / determinism controls",
+    "Hardware requirements stated",
+    "Published results to compare against",
+    "Model architecture fully specified"
+  ],
+  "errors": []
+}

@@ -1,0 +1,1613 @@
+== absa-syntax-gcn (dev)
+  [arxiv/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [crossref/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 10 results
+  [arxiv/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [crossref/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 10 results
+  [arxiv/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [crossref/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 10 results
+  [arxiv/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 0 results
+  [crossref/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 10 results
+  [arxiv/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [crossref/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 10 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 10 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 10 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 10 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 10 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 10 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 10 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 10 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 10 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 10 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 10 results
+  [arxiv/recent] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [crossref/recent] 'does syntax matter aspect-based sentiment analysis pretrained language model': 10 results
+  [arxiv/recent] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [crossref/recent] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 10 results
+  [arxiv/recent] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [crossref/recent] 'syntactic information unnecessary aspect sentiment classification strong baseline': 10 results
+  [arxiv/recent] 'reproducibility aspect-based sentiment graph neural network variance seeds': 0 results
+  [crossref/recent] 'reproducibility aspect-based sentiment graph neural network variance seeds': 10 results
+  [arxiv/recent] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [crossref/recent] 'induced trees versus parser trees aspect sentiment DeBERTa': 10 results
+  [arxiv/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [crossref/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 10 results
+  [arxiv/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [crossref/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 10 results
+  [arxiv/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [crossref/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 10 results
+  [arxiv/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 0 results
+  [crossref/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 10 results
+  [arxiv/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [crossref/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 10 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 10 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 10 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 10 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 10 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 10 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 10 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 10 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 10 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 10 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 10 results
+  [arxiv/recent] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [crossref/recent] 'does syntax matter aspect-based sentiment analysis pretrained language model': 10 results
+  [arxiv/recent] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [crossref/recent] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 10 results
+  [arxiv/recent] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [crossref/recent] 'syntactic information unnecessary aspect sentiment classification strong baseline': 10 results
+  [arxiv/recent] 'reproducibility aspect-based sentiment graph neural network variance seeds': 0 results
+  [crossref/recent] 'reproducibility aspect-based sentiment graph neural network variance seeds': 10 results
+  [arxiv/recent] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [crossref/recent] 'induced trees versus parser trees aspect sentiment DeBERTa': 10 results
+  [arxiv/keyword] 'same pretrained encoder with and without dependency tree aspect sentiment': 0 results
+  [crossref/keyword] 'same pretrained encoder with and without dependency tree aspect sentiment': 10 results
+  [arxiv/keyword] 'model selection on a validation set aspect sentiment': 0 results
+  [crossref/keyword] 'model selection on a validation set aspect sentiment': 10 results
+  [arxiv/keyword] 'multiple random seeds aspect sentiment': 0 results
+  [crossref/keyword] 'multiple random seeds aspect sentiment': 10 results
+  [arxiv/keyword] 'parser trees versus induced trees aspect sentiment': 0 results
+  [crossref/keyword] 'parser trees versus induced trees aspect sentiment': 10 results
+  [arxiv/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 0 results
+  [crossref/keyword] 'does syntax matter aspect-based sentiment analysis pretrained language model': 10 results
+  [arxiv/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 0 results
+  [crossref/keyword] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa': 10 results
+  [arxiv/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 0 results
+  [crossref/keyword] 'syntactic information unnecessary aspect sentiment classification strong baseline': 10 results
+  [arxiv/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 0 results
+  [crossref/keyword] 'reproducibility aspect-based sentiment graph neural network variance seeds': 10 results
+  [arxiv/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 0 results
+  [crossref/keyword] 'induced trees versus parser trees aspect sentiment DeBERTa': 10 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model survey': 10 results
+  [arxiv/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 0 results
+  [crossref/surveys] 'does syntax matter aspect-based sentiment analysis pretrained language model review': 10 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa survey': 10 results
+  [arxiv/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 0 results
+  [crossref/surveys] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa review': 10 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline survey': 10 results
+  [arxiv/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 0 results
+  [crossref/surveys] 'syntactic information unnecessary aspect sentiment classification strong baseline review': 10 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds survey': 10 results
+  [arxiv/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 0 results
+  [crossref/surveys] 'reproducibility aspect-based sentiment graph neural network variance seeds review': 10 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa survey': 10 results
+  [arxiv/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 0 results
+  [crossref/surveys] 'induced trees versus parser trees aspect sentiment DeBERTa review': 10 results
+  [arxiv/negative] 'does syntax matter aspect-based sentiment analysis pretrained language model revisiting': 0 results
+  [crossref/negative] 'does syntax matter aspect-based sentiment analysis pretrained language model revisiting': 10 results
+  [arxiv/negative] 'does syntax matter aspect-based sentiment analysis pretrained language model does not improve': 0 results
+  [crossref/negative] 'does syntax matter aspect-based sentiment analysis pretrained language model does not improve': 10 results
+  [arxiv/negative] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa revisiting': 0 results
+  [crossref/negative] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa revisiting': 10 results
+  [arxiv/negative] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa does not improve': 0 results
+  [crossref/negative] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa does not improve': 10 results
+  [arxiv/negative] 'syntactic information unnecessary aspect sentiment classification strong baseline revisiting': 0 results
+  [crossref/negative] 'syntactic information unnecessary aspect sentiment classification strong baseline revisiting': 10 results
+  [arxiv/negative] 'syntactic information unnecessary aspect sentiment classification strong baseline does not improve': 0 results
+  [crossref/negative] 'syntactic information unnecessary aspect sentiment classification strong baseline does not improve': 10 results
+  [arxiv/negative] 'reproducibility aspect-based sentiment graph neural network variance seeds revisiting': 0 results
+  [crossref/negative] 'reproducibility aspect-based sentiment graph neural network variance seeds revisiting': 10 results
+  [arxiv/negative] 'reproducibility aspect-based sentiment graph neural network variance seeds does not improve': 0 results
+  [crossref/negative] 'reproducibility aspect-based sentiment graph neural network variance seeds does not improve': 10 results
+  [arxiv/negative] 'induced trees versus parser trees aspect sentiment DeBERTa revisiting': 0 results
+  [crossref/negative] 'induced trees versus parser trees aspect sentiment DeBERTa revisiting': 10 results
+  [arxiv/negative] 'induced trees versus parser trees aspect sentiment DeBERTa does not improve': 0 results
+  [crossref/negative] 'induced trees versus parser trees aspect sentiment DeBERTa does not improve': 10 results
+  [arxiv/comparisons] 'does syntax matter aspect-based sentiment analysis pretrained language model empirical comparison': 0 results
+  [crossref/comparisons] 'does syntax matter aspect-based sentiment analysis pretrained language model empirical comparison': 10 results
+  [arxiv/comparisons] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa empirical comparison': 0 results
+  [crossref/comparisons] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa empirical comparison': 10 results
+  [arxiv/comparisons] 'syntactic information unnecessary aspect sentiment classification strong baseline empirical comparison': 0 results
+  [crossref/comparisons] 'syntactic information unnecessary aspect sentiment classification strong baseline empirical comparison': 10 results
+  [arxiv/comparisons] 'reproducibility aspect-based sentiment graph neural network variance seeds empirical comparison': 0 results
+  [crossref/comparisons] 'reproducibility aspect-based sentiment graph neural network variance seeds empirical comparison': 10 results
+  [arxiv/comparisons] 'induced trees versus parser trees aspect sentiment DeBERTa empirical comparison': 0 results
+  [crossref/comparisons] 'induced trees versus parser trees aspect sentiment DeBERTa empirical comparison': 10 results
+  [arxiv/critique] 'does syntax matter aspect-based sentiment analysis pretrained language model evaluation pitfalls': 0 results
+  [crossref/critique] 'does syntax matter aspect-based sentiment analysis pretrained language model evaluation pitfalls': 10 results
+  [arxiv/critique] 'does syntax matter aspect-based sentiment analysis pretrained language model simple baseline': 0 results
+  [crossref/critique] 'does syntax matter aspect-based sentiment analysis pretrained language model simple baseline': 10 results
+  [arxiv/critique] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa evaluation pitfalls': 0 results
+  [crossref/critique] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa evaluation pitfalls': 10 results
+  [arxiv/critique] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa simple baseline': 0 results
+  [crossref/critique] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa simple baseline': 10 results
+  [arxiv/critique] 'syntactic information unnecessary aspect sentiment classification strong baseline evaluation pitfalls': 0 results
+  [crossref/critique] 'syntactic information unnecessary aspect sentiment classification strong baseline evaluation pitfalls': 10 results
+  [arxiv/critique] 'syntactic information unnecessary aspect sentiment classification strong baseline simple baseline': 0 results
+  [crossref/critique] 'syntactic information unnecessary aspect sentiment classification strong baseline simple baseline': 10 results
+  [arxiv/critique] 'reproducibility aspect-based sentiment graph neural network variance seeds evaluation pitfalls': 0 results
+  [crossref/critique] 'reproducibility aspect-based sentiment graph neural network variance seeds evaluation pitfalls': 10 results
+  [arxiv/critique] 'reproducibility aspect-based sentiment graph neural network variance seeds simple baseline': 0 results
+  [crossref/critique] 'reproducibility aspect-based sentiment graph neural network variance seeds simple baseline': 10 results
+  [arxiv/critique] 'induced trees versus parser trees aspect sentiment DeBERTa evaluation pitfalls': 0 results
+  [crossref/critique] 'induced trees versus parser trees aspect sentiment DeBERTa evaluation pitfalls': 10 results
+  [arxiv/critique] 'induced trees versus parser trees aspect sentiment DeBERTa simple baseline': 0 results
+  [crossref/critique] 'induced trees versus parser trees aspect sentiment DeBERTa simple baseline': 10 results
+  [arxiv/reproducibility] 'does syntax matter aspect-based sentiment analysis pretrained language model reproducibility': 0 results
+  [crossref/reproducibility] 'does syntax matter aspect-based sentiment analysis pretrained language model reproducibility': 10 results
+  [arxiv/reproducibility] 'does syntax matter aspect-based sentiment analysis pretrained language model replication': 0 results
+  [crossref/reproducibility] 'does syntax matter aspect-based sentiment analysis pretrained language model replication': 10 results
+  [arxiv/reproducibility] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa reproducibility': 0 results
+  [crossref/reproducibility] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa reproducibility': 10 results
+  [arxiv/reproducibility] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa replication': 0 results
+  [crossref/reproducibility] 'dependency graph convolutional network aspect sentiment ablation without syntax RoBERTa replication': 10 results
+  [arxiv/reproducibility] 'syntactic information unnecessary aspect sentiment classification strong baseline reproducibility': 0 results
+  [crossref/reproducibility] 'syntactic information unnecessary aspect sentiment classification strong baseline reproducibility': 10 results
+  [arxiv/reproducibility] 'syntactic information unnecessary aspect sentiment classification strong baseline replication': 0 results
+  [crossref/reproducibility] 'syntactic information unnecessary aspect sentiment classification strong baseline replication': 10 results
+  [arxiv/reproducibility] 'reproducibility aspect-based sentiment graph neural network variance seeds reproducibility': 0 results
+  [crossref/reproducibility] 'reproducibility aspect-based sentiment graph neural network variance seeds reproducibility': 10 results
+  [arxiv/reproducibility] 'reproducibility aspect-based sentiment graph neural network variance seeds replication': 0 results
+  [crossref/reproducibility] 'reproducibility aspect-based sentiment graph neural network variance seeds replication': 10 results
+  [arxiv/reproducibility] 'induced trees versus parser trees aspect sentiment DeBERTa reproducibility': 0 results
+  [crossref/reproducibility] 'induced trees versus parser trees aspect sentiment DeBERTa reproducibility': 10 results
+  [arxiv/reproducibility] 'induced trees versus parser trees aspect sentiment DeBERTa replication': 0 results
+  [crossref/reproducibility] 'induced trees versus parser trees aspect sentiment DeBERTa replication': 10 results
+  [arxiv/keyword] 'same pretrained encoder with and without dependency tree aspect sentiment': 0 results
+  [crossref/keyword] 'same pretrained encoder with and without dependency tree aspect sentiment': 10 results
+  [arxiv/keyword] 'model selection on a validation set aspect sentiment': 0 results
+  [crossref/keyword] 'model selection on a validation set aspect sentiment': 10 results
+  [arxiv/keyword] 'multiple random seeds aspect sentiment': 0 results
+  [crossref/keyword] 'multiple random seeds aspect sentiment': 10 results
+  [arxiv/keyword] 'parser trees versus induced trees aspect sentiment': 0 results
+  [crossref/keyword] 'parser trees versus induced trees aspect sentiment': 10 results
+  [arxiv/negative] 'same pretrained encoder with and without dependency tree aspect sentiment revisiting': 0 results
+  [crossref/negative] 'same pretrained encoder with and without dependency tree aspect sentiment revisiting': 10 results
+  [arxiv/negative] 'same pretrained encoder with and without dependency tree aspect sentiment does not improve': 0 results
+  [crossref/negative] 'same pretrained encoder with and without dependency tree aspect sentiment does not improve': 10 results
+  [arxiv/negative] 'model selection on a validation set aspect sentiment revisiting': 0 results
+  [crossref/negative] 'model selection on a validation set aspect sentiment revisiting': 10 results
+  [arxiv/negative] 'model selection on a validation set aspect sentiment does not improve': 0 results
+  [crossref/negative] 'model selection on a validation set aspect sentiment does not improve': 10 results
+  [arxiv/negative] 'multiple random seeds aspect sentiment revisiting': 0 results
+  [crossref/negative] 'multiple random seeds aspect sentiment revisiting': 10 results
+  [arxiv/negative] 'multiple random seeds aspect sentiment does not improve': 0 results
+  [crossref/negative] 'multiple random seeds aspect sentiment does not improve': 10 results
+  [arxiv/negative] 'parser trees versus induced trees aspect sentiment revisiting': 0 results
+  [crossref/negative] 'parser trees versus induced trees aspect sentiment revisiting': 10 results
+  [arxiv/negative] 'parser trees versus induced trees aspect sentiment does not improve': 0 results
+  [crossref/negative] 'parser trees versus induced trees aspect sentiment does not improve': 10 results
+== upfd-graph-vs-no-graph (dev)
+  [arxiv/keyword] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [crossref/keyword] 'UPFD fake news detection reproducibility text-only baseline': 10 results
+  [arxiv/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [crossref/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 10 results
+  [arxiv/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [crossref/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 10 results
+  [arxiv/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [crossref/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 10 results
+  [arxiv/keyword] 'rethinking graph-based fake news detection benchmark': 0 results
+  [crossref/keyword] 'rethinking graph-based fake news detection benchmark': 10 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 10 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 10 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 10 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 10 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 10 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 10 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 10 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 10 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark survey': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark survey': 10 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark review': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark review': 10 results
+  [arxiv/recent] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [crossref/recent] 'UPFD fake news detection reproducibility text-only baseline': 10 results
+  [arxiv/recent] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [crossref/recent] 'propagation graph versus news content fake news detection ablation pretrained language model': 10 results
+  [arxiv/recent] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [crossref/recent] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 10 results
+  [arxiv/recent] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [crossref/recent] 'GNN fake news detection evaluation variance small datasets PolitiFact': 10 results
+  [arxiv/recent] 'rethinking graph-based fake news detection benchmark': 0 results
+  [crossref/recent] 'rethinking graph-based fake news detection benchmark': 10 results
+  [arxiv/keyword] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [crossref/keyword] 'UPFD fake news detection reproducibility text-only baseline': 10 results
+  [arxiv/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [crossref/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 10 results
+  [arxiv/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [crossref/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 10 results
+  [arxiv/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [crossref/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 10 results
+  [arxiv/keyword] 'rethinking graph-based fake news detection benchmark': 0 results
+  [crossref/keyword] 'rethinking graph-based fake news detection benchmark': 10 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 10 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 10 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 10 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 10 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 10 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 10 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 10 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 10 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark survey': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark survey': 10 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark review': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark review': 10 results
+  [arxiv/recent] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [crossref/recent] 'UPFD fake news detection reproducibility text-only baseline': 10 results
+  [arxiv/recent] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [crossref/recent] 'propagation graph versus news content fake news detection ablation pretrained language model': 10 results
+  [arxiv/recent] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [crossref/recent] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 10 results
+  [arxiv/recent] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [crossref/recent] 'GNN fake news detection evaluation variance small datasets PolitiFact': 10 results
+  [arxiv/recent] 'rethinking graph-based fake news detection benchmark': 0 results
+  [crossref/recent] 'rethinking graph-based fake news detection benchmark': 10 results
+  [arxiv/keyword] 'MLP baseline on the same node features fake news propagation graph': 0 results
+  [crossref/keyword] 'MLP baseline on the same node features fake news propagation graph': 10 results
+  [arxiv/keyword] 'randomly rewired edges fake news propagation graph': 0 results
+  [crossref/keyword] 'randomly rewired edges fake news propagation graph': 10 results
+  [arxiv/keyword] 'shuffled node features fake news propagation graph': 1 results
+  [crossref/keyword] 'shuffled node features fake news propagation graph': 10 results
+  [arxiv/keyword] 'users shared between training and test fake news propagation graph': 0 results
+  [crossref/keyword] 'users shared between training and test fake news propagation graph': 10 results
+  [arxiv/keyword] 'UPFD fake news detection reproducibility text-only baseline': 0 results
+  [crossref/keyword] 'UPFD fake news detection reproducibility text-only baseline': 10 results
+  [arxiv/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 0 results
+  [crossref/keyword] 'propagation graph versus news content fake news detection ablation pretrained language model': 10 results
+  [arxiv/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 0 results
+  [crossref/keyword] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline': 10 results
+  [arxiv/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 0 results
+  [crossref/keyword] 'GNN fake news detection evaluation variance small datasets PolitiFact': 10 results
+  [arxiv/keyword] 'rethinking graph-based fake news detection benchmark': 0 results
+  [crossref/keyword] 'rethinking graph-based fake news detection benchmark': 10 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline survey': 10 results
+  [arxiv/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 0 results
+  [crossref/surveys] 'UPFD fake news detection reproducibility text-only baseline review': 10 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model survey': 10 results
+  [arxiv/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 0 results
+  [crossref/surveys] 'propagation graph versus news content fake news detection ablation pretrained language model review': 10 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline survey': 10 results
+  [arxiv/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 0 results
+  [crossref/surveys] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline review': 10 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact survey': 10 results
+  [arxiv/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 0 results
+  [crossref/surveys] 'GNN fake news detection evaluation variance small datasets PolitiFact review': 10 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark survey': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark survey': 10 results
+  [arxiv/surveys] 'rethinking graph-based fake news detection benchmark review': 0 results
+  [crossref/surveys] 'rethinking graph-based fake news detection benchmark review': 10 results
+  [arxiv/negative] 'UPFD fake news detection reproducibility text-only baseline revisiting': 0 results
+  [crossref/negative] 'UPFD fake news detection reproducibility text-only baseline revisiting': 10 results
+  [arxiv/negative] 'UPFD fake news detection reproducibility text-only baseline does not improve': 0 results
+  [crossref/negative] 'UPFD fake news detection reproducibility text-only baseline does not improve': 10 results
+  [arxiv/negative] 'propagation graph versus news content fake news detection ablation pretrained language model revisiting': 0 results
+  [crossref/negative] 'propagation graph versus news content fake news detection ablation pretrained language model revisiting': 10 results
+  [arxiv/negative] 'propagation graph versus news content fake news detection ablation pretrained language model does not improve': 0 results
+  [crossref/negative] 'propagation graph versus news content fake news detection ablation pretrained language model does not improve': 10 results
+  [arxiv/negative] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline revisiting': 0 results
+  [crossref/negative] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline revisiting': 10 results
+  [arxiv/negative] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline does not improve': 0 results
+  [crossref/negative] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline does not improve': 10 results
+  [arxiv/negative] 'GNN fake news detection evaluation variance small datasets PolitiFact revisiting': 0 results
+  [crossref/negative] 'GNN fake news detection evaluation variance small datasets PolitiFact revisiting': 10 results
+  [arxiv/negative] 'GNN fake news detection evaluation variance small datasets PolitiFact does not improve': 0 results
+  [crossref/negative] 'GNN fake news detection evaluation variance small datasets PolitiFact does not improve': 10 results
+  [arxiv/negative] 'rethinking graph-based fake news detection benchmark revisiting': 0 results
+  [crossref/negative] 'rethinking graph-based fake news detection benchmark revisiting': 10 results
+  [arxiv/negative] 'rethinking graph-based fake news detection benchmark does not improve': 0 results
+  [crossref/negative] 'rethinking graph-based fake news detection benchmark does not improve': 10 results
+  [arxiv/comparisons] 'UPFD fake news detection reproducibility text-only baseline empirical comparison': 0 results
+  [crossref/comparisons] 'UPFD fake news detection reproducibility text-only baseline empirical comparison': 10 results
+  [arxiv/comparisons] 'propagation graph versus news content fake news detection ablation pretrained language model empirical comparison': 0 results
+  [crossref/comparisons] 'propagation graph versus news content fake news detection ablation pretrained language model empirical comparison': 10 results
+  [arxiv/comparisons] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline empirical comparison': 0 results
+  [crossref/comparisons] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline empirical comparison': 10 results
+  [arxiv/comparisons] 'GNN fake news detection evaluation variance small datasets PolitiFact empirical comparison': 0 results
+  [crossref/comparisons] 'GNN fake news detection evaluation variance small datasets PolitiFact empirical comparison': 10 results
+  [arxiv/comparisons] 'rethinking graph-based fake news detection benchmark empirical comparison': 0 results
+  [crossref/comparisons] 'rethinking graph-based fake news detection benchmark empirical comparison': 10 results
+  [arxiv/critique] 'UPFD fake news detection reproducibility text-only baseline evaluation pitfalls': 0 results
+  [crossref/critique] 'UPFD fake news detection reproducibility text-only baseline evaluation pitfalls': 10 results
+  [arxiv/critique] 'UPFD fake news detection reproducibility text-only baseline simple baseline': 0 results
+  [crossref/critique] 'UPFD fake news detection reproducibility text-only baseline simple baseline': 10 results
+  [arxiv/critique] 'propagation graph versus news content fake news detection ablation pretrained language model evaluation pitfalls': 0 results
+  [crossref/critique] 'propagation graph versus news content fake news detection ablation pretrained language model evaluation pitfalls': 10 results
+  [arxiv/critique] 'propagation graph versus news content fake news detection ablation pretrained language model simple baseline': 0 results
+  [crossref/critique] 'propagation graph versus news content fake news detection ablation pretrained language model simple baseline': 10 results
+  [arxiv/critique] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline evaluation pitfalls': 0 results
+  [crossref/critique] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline evaluation pitfalls': 10 results
+  [arxiv/critique] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline simple baseline': 0 results
+  [crossref/critique] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline simple baseline': 10 results
+  [arxiv/critique] 'GNN fake news detection evaluation variance small datasets PolitiFact evaluation pitfalls': 0 results
+  [crossref/critique] 'GNN fake news detection evaluation variance small datasets PolitiFact evaluation pitfalls': 10 results
+  [arxiv/critique] 'GNN fake news detection evaluation variance small datasets PolitiFact simple baseline': 0 results
+  [crossref/critique] 'GNN fake news detection evaluation variance small datasets PolitiFact simple baseline': 10 results
+  [arxiv/critique] 'rethinking graph-based fake news detection benchmark evaluation pitfalls': 0 results
+  [crossref/critique] 'rethinking graph-based fake news detection benchmark evaluation pitfalls': 10 results
+  [arxiv/critique] 'rethinking graph-based fake news detection benchmark simple baseline': 0 results
+  [crossref/critique] 'rethinking graph-based fake news detection benchmark simple baseline': 10 results
+  [arxiv/reproducibility] 'UPFD fake news detection reproducibility text-only baseline reproducibility': 0 results
+  [crossref/reproducibility] 'UPFD fake news detection reproducibility text-only baseline reproducibility': 10 results
+  [arxiv/reproducibility] 'UPFD fake news detection reproducibility text-only baseline replication': 0 results
+  [crossref/reproducibility] 'UPFD fake news detection reproducibility text-only baseline replication': 10 results
+  [arxiv/reproducibility] 'propagation graph versus news content fake news detection ablation pretrained language model reproducibility': 0 results
+  [crossref/reproducibility] 'propagation graph versus news content fake news detection ablation pretrained language model reproducibility': 10 results
+  [arxiv/reproducibility] 'propagation graph versus news content fake news detection ablation pretrained language model replication': 0 results
+  [crossref/reproducibility] 'propagation graph versus news content fake news detection ablation pretrained language model replication': 10 results
+  [arxiv/reproducibility] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline reproducibility': 0 results
+  [crossref/reproducibility] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline reproducibility': 10 results
+  [arxiv/reproducibility] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline replication': 0 results
+  [crossref/reproducibility] 'do graph neural networks help fake news detection FakeNewsNet strong text baseline replication': 10 results
+  [arxiv/reproducibility] 'GNN fake news detection evaluation variance small datasets PolitiFact reproducibility': 0 results
+  [crossref/reproducibility] 'GNN fake news detection evaluation variance small datasets PolitiFact reproducibility': 10 results
+  [arxiv/reproducibility] 'GNN fake news detection evaluation variance small datasets PolitiFact replication': 0 results
+  [crossref/reproducibility] 'GNN fake news detection evaluation variance small datasets PolitiFact replication': 10 results
+  [arxiv/reproducibility] 'rethinking graph-based fake news detection benchmark reproducibility': 0 results
+  [crossref/reproducibility] 'rethinking graph-based fake news detection benchmark reproducibility': 10 results
+  [arxiv/reproducibility] 'rethinking graph-based fake news detection benchmark replication': 0 results
+  [crossref/reproducibility] 'rethinking graph-based fake news detection benchmark replication': 10 results
+  [arxiv/keyword] 'MLP baseline on the same node features fake news propagation graph': 0 results
+  [crossref/keyword] 'MLP baseline on the same node features fake news propagation graph': 10 results
+  [arxiv/keyword] 'randomly rewired edges fake news propagation graph': 0 results
+  [crossref/keyword] 'randomly rewired edges fake news propagation graph': 10 results
+  [arxiv/keyword] 'shuffled node features fake news propagation graph': 1 results
+  [crossref/keyword] 'shuffled node features fake news propagation graph': 10 results
+  [arxiv/keyword] 'users shared between training and test fake news propagation graph': 0 results
+  [crossref/keyword] 'users shared between training and test fake news propagation graph': 10 results
+  [arxiv/negative] 'MLP baseline on the same node features fake news propagation graph revisiting': 0 results
+  [crossref/negative] 'MLP baseline on the same node features fake news propagation graph revisiting': 10 results
+  [arxiv/negative] 'MLP baseline on the same node features fake news propagation graph does not improve': error rate_limited
+  [crossref/negative] 'MLP baseline on the same node features fake news propagation graph does not improve': 10 results
+  [crossref/negative] 'randomly rewired edges fake news propagation graph revisiting': 10 results
+  [crossref/negative] 'randomly rewired edges fake news propagation graph does not improve': 10 results
+  [crossref/negative] 'shuffled node features fake news propagation graph revisiting': 10 results
+  [crossref/negative] 'shuffled node features fake news propagation graph does not improve': 10 results
+  [crossref/negative] 'users shared between training and test fake news propagation graph revisiting': 10 results
+  [crossref/negative] 'users shared between training and test fake news propagation graph does not improve': 10 results
+== gnn-rag-small-reader (heldout)
+  [arxiv/keyword] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering': error rate_limited
+  [crossref/keyword] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering': 10 results
+  [crossref/keyword] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP': 10 results
+  [crossref/keyword] 'error analysis entity linking subgraph retrieval KGQA large language model': 10 results
+  [crossref/keyword] 'graph neural network retriever small language model knowledge base question answering': 10 results
+  [crossref/surveys] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering survey': 10 results
+  [crossref/surveys] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering review': 10 results
+  [crossref/surveys] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey': 10 results
+  [crossref/surveys] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review': 10 results
+  [crossref/surveys] 'error analysis entity linking subgraph retrieval KGQA large language model survey': 10 results
+  [crossref/surveys] 'error analysis entity linking subgraph retrieval KGQA large language model review': 10 results
+  [crossref/surveys] 'graph neural network retriever small language model knowledge base question answering survey': 10 results
+  [crossref/surveys] 'graph neural network retriever small language model knowledge base question answering review': 10 results
+  [crossref/recent] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering': 10 results
+  [crossref/recent] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP': 10 results
+  [crossref/recent] 'error analysis entity linking subgraph retrieval KGQA large language model': 10 results
+  [crossref/recent] 'graph neural network retriever small language model knowledge base question answering': 10 results
+  [arxiv/keyword] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering': error rate_limited
+  [crossref/keyword] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering': 10 results
+  [crossref/keyword] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP': 10 results
+  [crossref/keyword] 'error analysis entity linking subgraph retrieval KGQA large language model': 10 results
+  [crossref/keyword] 'graph neural network retriever small language model knowledge base question answering': 10 results
+  [crossref/surveys] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering survey': 10 results
+  [crossref/surveys] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering review': 10 results
+  [crossref/surveys] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey': 10 results
+  [crossref/surveys] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review': 10 results
+  [crossref/surveys] 'error analysis entity linking subgraph retrieval KGQA large language model survey': 10 results
+  [crossref/surveys] 'error analysis entity linking subgraph retrieval KGQA large language model review': 10 results
+  [crossref/surveys] 'graph neural network retriever small language model knowledge base question answering survey': 10 results
+  [crossref/surveys] 'graph neural network retriever small language model knowledge base question answering review': 10 results
+  [crossref/recent] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering': 10 results
+  [crossref/recent] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP': 10 results
+  [crossref/recent] 'error analysis entity linking subgraph retrieval KGQA large language model': 10 results
+  [crossref/recent] 'graph neural network retriever small language model knowledge base question answering': 10 results
+  [arxiv/keyword] 'small language model reader knowledge graph question answering': 2 results
+  [crossref/keyword] 'small language model reader knowledge graph question answering': 10 results
+  [arxiv/keyword] 'retrieved subgraph missing the answer knowledge graph question answering': 3 results
+  [crossref/keyword] 'retrieved subgraph missing the answer knowledge graph question answering': 10 results
+  [arxiv/keyword] 'WebQSP and CWQ evaluation knowledge graph question answering': 2 results
+  [crossref/keyword] 'WebQSP and CWQ evaluation knowledge graph question answering': 10 results
+  [arxiv/keyword] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering': error rate_limited
+  [crossref/keyword] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering': 10 results
+  [crossref/keyword] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP': 10 results
+  [crossref/keyword] 'error analysis entity linking subgraph retrieval KGQA large language model': 10 results
+  [crossref/keyword] 'graph neural network retriever small language model knowledge base question answering': 10 results
+  [crossref/surveys] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering survey': 10 results
+  [crossref/surveys] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering review': 10 results
+  [crossref/surveys] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP survey': 10 results
+  [crossref/surveys] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP review': 10 results
+  [crossref/surveys] 'error analysis entity linking subgraph retrieval KGQA large language model survey': 10 results
+  [crossref/surveys] 'error analysis entity linking subgraph retrieval KGQA large language model review': 10 results
+  [crossref/surveys] 'graph neural network retriever small language model knowledge base question answering survey': 10 results
+  [crossref/surveys] 'graph neural network retriever small language model knowledge base question answering review': 10 results
+  [crossref/negative] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering revisiting': 10 results
+  [crossref/negative] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering does not improve': 10 results
+  [crossref/negative] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP revisiting': 10 results
+  [crossref/negative] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP does not improve': 10 results
+  [crossref/negative] 'error analysis entity linking subgraph retrieval KGQA large language model revisiting': 10 results
+  [crossref/negative] 'error analysis entity linking subgraph retrieval KGQA large language model does not improve': 10 results
+  [crossref/negative] 'graph neural network retriever small language model knowledge base question answering revisiting': 10 results
+  [crossref/negative] 'graph neural network retriever small language model knowledge base question answering does not improve': 10 results
+  [crossref/comparisons] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering empirical comparison': 10 results
+  [crossref/comparisons] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP empirical comparison': 10 results
+  [crossref/comparisons] 'error analysis entity linking subgraph retrieval KGQA large language model empirical comparison': 10 results
+  [crossref/comparisons] 'graph neural network retriever small language model knowledge base question answering empirical comparison': 10 results
+  [crossref/critique] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering evaluation pitfalls': 10 results
+  [crossref/critique] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering simple baseline': 10 results
+  [crossref/critique] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP evaluation pitfalls': 10 results
+  [crossref/critique] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP simple baseline': 10 results
+  [crossref/critique] 'error analysis entity linking subgraph retrieval KGQA large language model evaluation pitfalls': 10 results
+  [crossref/critique] 'error analysis entity linking subgraph retrieval KGQA large language model simple baseline': 10 results
+  [crossref/critique] 'graph neural network retriever small language model knowledge base question answering evaluation pitfalls': 10 results
+  [crossref/critique] 'graph neural network retriever small language model knowledge base question answering simple baseline': 10 results
+  [crossref/reproducibility] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering reproducibility': 10 results
+  [crossref/reproducibility] 'GNN-RAG answer coverage retrieved subgraph missing answer knowledge graph question answering replication': 10 results
+  [crossref/reproducibility] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP reproducibility': 10 results
+  [crossref/reproducibility] 'knowledge graph question answering retrieval failure analysis subgraph recall WebQSP replication': 10 results
+  [crossref/reproducibility] 'error analysis entity linking subgraph retrieval KGQA large language model reproducibility': 10 results
+  [crossref/reproducibility] 'error analysis entity linking subgraph retrieval KGQA large language model replication': 10 results
+  [crossref/reproducibility] 'graph neural network retriever small language model knowledge base question answering reproducibility': 10 results
+  [crossref/reproducibility] 'graph neural network retriever small language model knowledge base question answering replication': 10 results
+  [arxiv/keyword] 'small language model reader knowledge graph question answering': 2 results
+  [crossref/keyword] 'small language model reader knowledge graph question answering': 10 results
+  [arxiv/keyword] 'retrieved subgraph missing the answer knowledge graph question answering': 3 results
+  [crossref/keyword] 'retrieved subgraph missing the answer knowledge graph question answering': 10 results
+  [arxiv/keyword] 'WebQSP and CWQ evaluation knowledge graph question answering': 2 results
+  [crossref/keyword] 'WebQSP and CWQ evaluation knowledge graph question answering': 10 results
+  [arxiv/negative] 'small language model reader knowledge graph question answering revisiting': 0 results
+  [crossref/negative] 'small language model reader knowledge graph question answering revisiting': 10 results
+  [arxiv/negative] 'small language model reader knowledge graph question answering does not improve': 0 results
+  [crossref/negative] 'small language model reader knowledge graph question answering does not improve': 10 results
+  [arxiv/negative] 'retrieved subgraph missing the answer knowledge graph question answering revisiting': 0 results
+  [crossref/negative] 'retrieved subgraph missing the answer knowledge graph question answering revisiting': 10 results
+  [arxiv/negative] 'retrieved subgraph missing the answer knowledge graph question answering does not improve': 2 results
+  [crossref/negative] 'retrieved subgraph missing the answer knowledge graph question answering does not improve': 10 results
+  [arxiv/negative] 'WebQSP and CWQ evaluation knowledge graph question answering revisiting': 0 results
+  [crossref/negative] 'WebQSP and CWQ evaluation knowledge graph question answering revisiting': 10 results
+  [arxiv/negative] 'WebQSP and CWQ evaluation knowledge graph question answering does not improve': 0 results
+  [crossref/negative] 'WebQSP and CWQ evaluation knowledge graph question answering does not improve': 10 results
+== heterophily-llm-tag (heldout)
+  [arxiv/keyword] 'heterophily text-attributed graph large language model': 0 results
+  [crossref/keyword] 'heterophily text-attributed graph large language model': 10 results
+  [arxiv/keyword] 'heterophilic graphs LLM node features GNN': 2 results
+  [crossref/keyword] 'heterophilic graphs LLM node features GNN': 10 results
+  [arxiv/keyword] 'LLM enhanced heterophilic graph representation learning': 0 results
+  [crossref/keyword] 'LLM enhanced heterophilic graph representation learning': 10 results
+  [arxiv/keyword] 'text-rich heterophilic graph benchmark dataset': 2 results
+  [crossref/keyword] 'text-rich heterophilic graph benchmark dataset': 10 results
+  [arxiv/keyword] 'language model embeddings low homophily node classification': 0 results
+  [crossref/keyword] 'language model embeddings low homophily node classification': 10 results
+  [arxiv/surveys] 'heterophily text-attributed graph large language model survey': 0 results
+  [crossref/surveys] 'heterophily text-attributed graph large language model survey': 10 results
+  [arxiv/surveys] 'heterophily text-attributed graph large language model review': 0 results
+  [crossref/surveys] 'heterophily text-attributed graph large language model review': 10 results
+  [arxiv/surveys] 'heterophilic graphs LLM node features GNN survey': 0 results
+  [crossref/surveys] 'heterophilic graphs LLM node features GNN survey': 10 results
+  [arxiv/surveys] 'heterophilic graphs LLM node features GNN review': 0 results
+  [crossref/surveys] 'heterophilic graphs LLM node features GNN review': 10 results
+  [arxiv/surveys] 'LLM enhanced heterophilic graph representation learning survey': 0 results
+  [crossref/surveys] 'LLM enhanced heterophilic graph representation learning survey': 10 results
+  [arxiv/surveys] 'LLM enhanced heterophilic graph representation learning review': 0 results
+  [crossref/surveys] 'LLM enhanced heterophilic graph representation learning review': 10 results
+  [arxiv/surveys] 'text-rich heterophilic graph benchmark dataset survey': 0 results
+  [crossref/surveys] 'text-rich heterophilic graph benchmark dataset survey': 10 results
+  [arxiv/surveys] 'text-rich heterophilic graph benchmark dataset review': 0 results
+  [crossref/surveys] 'text-rich heterophilic graph benchmark dataset review': 10 results
+  [arxiv/surveys] 'language model embeddings low homophily node classification survey': 0 results
+  [crossref/surveys] 'language model embeddings low homophily node classification survey': 10 results
+  [arxiv/surveys] 'language model embeddings low homophily node classification review': 0 results
+  [crossref/surveys] 'language model embeddings low homophily node classification review': 10 results
+  [arxiv/recent] 'heterophily text-attributed graph large language model': 0 results
+  [crossref/recent] 'heterophily text-attributed graph large language model': 10 results
+  [arxiv/recent] 'heterophilic graphs LLM node features GNN': 2 results
+  [crossref/recent] 'heterophilic graphs LLM node features GNN': 10 results
+  [arxiv/recent] 'LLM enhanced heterophilic graph representation learning': 0 results
+  [crossref/recent] 'LLM enhanced heterophilic graph representation learning': 10 results
+  [arxiv/recent] 'text-rich heterophilic graph benchmark dataset': 2 results
+  [crossref/recent] 'text-rich heterophilic graph benchmark dataset': 10 results
+  [arxiv/recent] 'language model embeddings low homophily node classification': 0 results
+  [crossref/recent] 'language model embeddings low homophily node classification': 10 results
+  [arxiv/keyword] 'heterophily text-attributed graph large language model': 0 results
+  [crossref/keyword] 'heterophily text-attributed graph large language model': 10 results
+  [arxiv/keyword] 'heterophilic graphs LLM node features GNN': 2 results
+  [crossref/keyword] 'heterophilic graphs LLM node features GNN': 10 results
+  [arxiv/keyword] 'LLM enhanced heterophilic graph representation learning': 0 results
+  [crossref/keyword] 'LLM enhanced heterophilic graph representation learning': 10 results
+  [arxiv/keyword] 'text-rich heterophilic graph benchmark dataset': 2 results
+  [crossref/keyword] 'text-rich heterophilic graph benchmark dataset': 10 results
+  [arxiv/keyword] 'language model embeddings low homophily node classification': 0 results
+  [crossref/keyword] 'language model embeddings low homophily node classification': 10 results
+  [arxiv/surveys] 'heterophily text-attributed graph large language model survey': 0 results
+  [crossref/surveys] 'heterophily text-attributed graph large language model survey': 10 results
+  [arxiv/surveys] 'heterophily text-attributed graph large language model review': 0 results
+  [crossref/surveys] 'heterophily text-attributed graph large language model review': 10 results
+  [arxiv/surveys] 'heterophilic graphs LLM node features GNN survey': 0 results
+  [crossref/surveys] 'heterophilic graphs LLM node features GNN survey': 10 results
+  [arxiv/surveys] 'heterophilic graphs LLM node features GNN review': 0 results
+  [crossref/surveys] 'heterophilic graphs LLM node features GNN review': 10 results
+  [arxiv/surveys] 'LLM enhanced heterophilic graph representation learning survey': 0 results
+  [crossref/surveys] 'LLM enhanced heterophilic graph representation learning survey': 10 results
+  [arxiv/surveys] 'LLM enhanced heterophilic graph representation learning review': 0 results
+  [crossref/surveys] 'LLM enhanced heterophilic graph representation learning review': 10 results
+  [arxiv/surveys] 'text-rich heterophilic graph benchmark dataset survey': 0 results
+  [crossref/surveys] 'text-rich heterophilic graph benchmark dataset survey': 10 results
+  [arxiv/surveys] 'text-rich heterophilic graph benchmark dataset review': 0 results
+  [crossref/surveys] 'text-rich heterophilic graph benchmark dataset review': 10 results
+  [arxiv/surveys] 'language model embeddings low homophily node classification survey': 0 results
+  [crossref/surveys] 'language model embeddings low homophily node classification survey': 10 results
+  [arxiv/surveys] 'language model embeddings low homophily node classification review': 0 results
+  [crossref/surveys] 'language model embeddings low homophily node classification review': 10 results
+  [arxiv/recent] 'heterophily text-attributed graph large language model': 0 results
+  [crossref/recent] 'heterophily text-attributed graph large language model': 10 results
+  [arxiv/recent] 'heterophilic graphs LLM node features GNN': 2 results
+  [crossref/recent] 'heterophilic graphs LLM node features GNN': 10 results
+  [arxiv/recent] 'LLM enhanced heterophilic graph representation learning': 0 results
+  [crossref/recent] 'LLM enhanced heterophilic graph representation learning': 10 results
+  [arxiv/recent] 'text-rich heterophilic graph benchmark dataset': 2 results
+  [crossref/recent] 'text-rich heterophilic graph benchmark dataset': 10 results
+  [arxiv/recent] 'language model embeddings low homophily node classification': 0 results
+  [crossref/recent] 'language model embeddings low homophily node classification': 10 results
+  [arxiv/keyword] 'low homophily datasets with text heterophilic graphs': 1 results
+  [crossref/keyword] 'low homophily datasets with text heterophilic graphs': 10 results
+  [arxiv/keyword] 'language model node embeddings heterophilic graphs': 4 results
+  [crossref/keyword] 'language model node embeddings heterophilic graphs': 10 results
+  [arxiv/keyword] 'benchmark of heterophilic text graphs heterophilic graphs': 10 results
+  [crossref/keyword] 'benchmark of heterophilic text graphs heterophilic graphs': 10 results
+  [arxiv/keyword] 'heterophily text-attributed graph large language model': 0 results
+  [crossref/keyword] 'heterophily text-attributed graph large language model': 10 results
+  [arxiv/keyword] 'heterophilic graphs LLM node features GNN': 2 results
+  [crossref/keyword] 'heterophilic graphs LLM node features GNN': 10 results
+  [arxiv/keyword] 'LLM enhanced heterophilic graph representation learning': 0 results
+  [crossref/keyword] 'LLM enhanced heterophilic graph representation learning': 10 results
+  [arxiv/keyword] 'text-rich heterophilic graph benchmark dataset': 2 results
+  [crossref/keyword] 'text-rich heterophilic graph benchmark dataset': 10 results
+  [arxiv/keyword] 'language model embeddings low homophily node classification': 0 results
+  [crossref/keyword] 'language model embeddings low homophily node classification': 10 results
+  [arxiv/surveys] 'heterophily text-attributed graph large language model survey': 0 results
+  [crossref/surveys] 'heterophily text-attributed graph large language model survey': 10 results
+  [arxiv/surveys] 'heterophily text-attributed graph large language model review': 0 results
+  [crossref/surveys] 'heterophily text-attributed graph large language model review': 10 results
+  [arxiv/surveys] 'heterophilic graphs LLM node features GNN survey': 0 results
+  [crossref/surveys] 'heterophilic graphs LLM node features GNN survey': 10 results
+  [arxiv/surveys] 'heterophilic graphs LLM node features GNN review': 0 results
+  [crossref/surveys] 'heterophilic graphs LLM node features GNN review': 10 results
+  [arxiv/surveys] 'LLM enhanced heterophilic graph representation learning survey': 0 results
+  [crossref/surveys] 'LLM enhanced heterophilic graph representation learning survey': 10 results
+  [arxiv/surveys] 'LLM enhanced heterophilic graph representation learning review': 0 results
+  [crossref/surveys] 'LLM enhanced heterophilic graph representation learning review': 10 results
+  [arxiv/surveys] 'text-rich heterophilic graph benchmark dataset survey': 0 results
+  [crossref/surveys] 'text-rich heterophilic graph benchmark dataset survey': 10 results
+  [arxiv/surveys] 'text-rich heterophilic graph benchmark dataset review': 0 results
+  [crossref/surveys] 'text-rich heterophilic graph benchmark dataset review': 10 results
+  [arxiv/surveys] 'language model embeddings low homophily node classification survey': 0 results
+  [crossref/surveys] 'language model embeddings low homophily node classification survey': 10 results
+  [arxiv/surveys] 'language model embeddings low homophily node classification review': 0 results
+  [crossref/surveys] 'language model embeddings low homophily node classification review': 10 results
+  [arxiv/negative] 'heterophily text-attributed graph large language model revisiting': 0 results
+  [crossref/negative] 'heterophily text-attributed graph large language model revisiting': 10 results
+  [arxiv/negative] 'heterophily text-attributed graph large language model does not improve': 0 results
+  [crossref/negative] 'heterophily text-attributed graph large language model does not improve': 10 results
+  [arxiv/negative] 'heterophilic graphs LLM node features GNN revisiting': 0 results
+  [crossref/negative] 'heterophilic graphs LLM node features GNN revisiting': 10 results
+  [arxiv/negative] 'heterophilic graphs LLM node features GNN does not improve': 0 results
+  [crossref/negative] 'heterophilic graphs LLM node features GNN does not improve': 10 results
+  [arxiv/negative] 'LLM enhanced heterophilic graph representation learning revisiting': 0 results
+  [crossref/negative] 'LLM enhanced heterophilic graph representation learning revisiting': 10 results
+  [arxiv/negative] 'LLM enhanced heterophilic graph representation learning does not improve': 0 results
+  [crossref/negative] 'LLM enhanced heterophilic graph representation learning does not improve': 10 results
+  [arxiv/negative] 'text-rich heterophilic graph benchmark dataset revisiting': 0 results
+  [crossref/negative] 'text-rich heterophilic graph benchmark dataset revisiting': 10 results
+  [arxiv/negative] 'text-rich heterophilic graph benchmark dataset does not improve': 1 results
+  [crossref/negative] 'text-rich heterophilic graph benchmark dataset does not improve': 10 results
+  [arxiv/negative] 'language model embeddings low homophily node classification revisiting': 0 results
+  [crossref/negative] 'language model embeddings low homophily node classification revisiting': 10 results
+  [arxiv/negative] 'language model embeddings low homophily node classification does not improve': 0 results
+  [crossref/negative] 'language model embeddings low homophily node classification does not improve': 10 results
+  [arxiv/comparisons] 'heterophily text-attributed graph large language model empirical comparison': 0 results
+  [crossref/comparisons] 'heterophily text-attributed graph large language model empirical comparison': 10 results
+  [arxiv/comparisons] 'heterophilic graphs LLM node features GNN empirical comparison': 0 results
+  [crossref/comparisons] 'heterophilic graphs LLM node features GNN empirical comparison': 10 results
+  [arxiv/comparisons] 'LLM enhanced heterophilic graph representation learning empirical comparison': 0 results
+  [crossref/comparisons] 'LLM enhanced heterophilic graph representation learning empirical comparison': 10 results
+  [arxiv/comparisons] 'text-rich heterophilic graph benchmark dataset empirical comparison': 0 results
+  [crossref/comparisons] 'text-rich heterophilic graph benchmark dataset empirical comparison': 10 results
+  [arxiv/comparisons] 'language model embeddings low homophily node classification empirical comparison': 0 results
+  [crossref/comparisons] 'language model embeddings low homophily node classification empirical comparison': 10 results
+  [arxiv/critique] 'heterophily text-attributed graph large language model evaluation pitfalls': 0 results
+  [crossref/critique] 'heterophily text-attributed graph large language model evaluation pitfalls': 10 results
+  [arxiv/critique] 'heterophily text-attributed graph large language model simple baseline': 0 results
+  [crossref/critique] 'heterophily text-attributed graph large language model simple baseline': 10 results
+  [arxiv/critique] 'heterophilic graphs LLM node features GNN evaluation pitfalls': 0 results
+  [crossref/critique] 'heterophilic graphs LLM node features GNN evaluation pitfalls': 10 results
+  [arxiv/critique] 'heterophilic graphs LLM node features GNN simple baseline': 0 results
+  [crossref/critique] 'heterophilic graphs LLM node features GNN simple baseline': 10 results
+  [arxiv/critique] 'LLM enhanced heterophilic graph representation learning evaluation pitfalls': 0 results
+  [crossref/critique] 'LLM enhanced heterophilic graph representation learning evaluation pitfalls': 10 results
+  [arxiv/critique] 'LLM enhanced heterophilic graph representation learning simple baseline': 0 results
+  [crossref/critique] 'LLM enhanced heterophilic graph representation learning simple baseline': 10 results
+  [arxiv/critique] 'text-rich heterophilic graph benchmark dataset evaluation pitfalls': 0 results
+  [crossref/critique] 'text-rich heterophilic graph benchmark dataset evaluation pitfalls': 10 results
+  [arxiv/critique] 'text-rich heterophilic graph benchmark dataset simple baseline': 0 results
+  [crossref/critique] 'text-rich heterophilic graph benchmark dataset simple baseline': 10 results
+  [arxiv/critique] 'language model embeddings low homophily node classification evaluation pitfalls': 0 results
+  [crossref/critique] 'language model embeddings low homophily node classification evaluation pitfalls': 10 results
+  [arxiv/critique] 'language model embeddings low homophily node classification simple baseline': 0 results
+  [crossref/critique] 'language model embeddings low homophily node classification simple baseline': 10 results
+  [arxiv/reproducibility] 'heterophily text-attributed graph large language model reproducibility': 0 results
+  [crossref/reproducibility] 'heterophily text-attributed graph large language model reproducibility': 10 results
+  [arxiv/reproducibility] 'heterophily text-attributed graph large language model replication': 0 results
+  [crossref/reproducibility] 'heterophily text-attributed graph large language model replication': 10 results
+  [arxiv/reproducibility] 'heterophilic graphs LLM node features GNN reproducibility': 0 results
+  [crossref/reproducibility] 'heterophilic graphs LLM node features GNN reproducibility': 10 results
+  [arxiv/reproducibility] 'heterophilic graphs LLM node features GNN replication': 0 results
+  [crossref/reproducibility] 'heterophilic graphs LLM node features GNN replication': 10 results
+  [arxiv/reproducibility] 'LLM enhanced heterophilic graph representation learning reproducibility': 0 results
+  [crossref/reproducibility] 'LLM enhanced heterophilic graph representation learning reproducibility': 10 results
+  [arxiv/reproducibility] 'LLM enhanced heterophilic graph representation learning replication': 0 results
+  [crossref/reproducibility] 'LLM enhanced heterophilic graph representation learning replication': 10 results
+  [arxiv/reproducibility] 'text-rich heterophilic graph benchmark dataset reproducibility': 0 results
+  [crossref/reproducibility] 'text-rich heterophilic graph benchmark dataset reproducibility': 10 results
+  [arxiv/reproducibility] 'text-rich heterophilic graph benchmark dataset replication': 0 results
+  [crossref/reproducibility] 'text-rich heterophilic graph benchmark dataset replication': 10 results
+  [arxiv/reproducibility] 'language model embeddings low homophily node classification reproducibility': 0 results
+  [crossref/reproducibility] 'language model embeddings low homophily node classification reproducibility': 10 results
+  [arxiv/reproducibility] 'language model embeddings low homophily node classification replication': 0 results
+  [crossref/reproducibility] 'language model embeddings low homophily node classification replication': 10 results
+  [arxiv/keyword] 'low homophily datasets with text heterophilic graphs': 1 results
+  [crossref/keyword] 'low homophily datasets with text heterophilic graphs': 10 results
+  [arxiv/keyword] 'language model node embeddings heterophilic graphs': 4 results
+  [crossref/keyword] 'language model node embeddings heterophilic graphs': 10 results
+  [arxiv/keyword] 'benchmark of heterophilic text graphs heterophilic graphs': 10 results
+  [crossref/keyword] 'benchmark of heterophilic text graphs heterophilic graphs': 10 results
+  [arxiv/negative] 'low homophily datasets with text heterophilic graphs revisiting': 0 results
+  [crossref/negative] 'low homophily datasets with text heterophilic graphs revisiting': 10 results
+  [arxiv/negative] 'low homophily datasets with text heterophilic graphs does not improve': 0 results
+  [crossref/negative] 'low homophily datasets with text heterophilic graphs does not improve': 10 results
+  [arxiv/negative] 'language model node embeddings heterophilic graphs revisiting': 0 results
+  [crossref/negative] 'language model node embeddings heterophilic graphs revisiting': 10 results
+  [arxiv/negative] 'language model node embeddings heterophilic graphs does not improve': 1 results
+  [crossref/negative] 'language model node embeddings heterophilic graphs does not improve': 10 results
+  [arxiv/negative] 'benchmark of heterophilic text graphs heterophilic graphs revisiting': 1 results
+  [crossref/negative] 'benchmark of heterophilic text graphs heterophilic graphs revisiting': 10 results
+  [arxiv/negative] 'benchmark of heterophilic text graphs heterophilic graphs does not improve': 4 results
+  [crossref/negative] 'benchmark of heterophilic text graphs heterophilic graphs does not improve': 10 results
+== llm-graph-leakage (heldout)
+  [arxiv/keyword] 'data leakage large language models node classification Cora arxiv memorization': 0 results
+  [crossref/keyword] 'data leakage large language models node classification Cora arxiv memorization': 10 results
+  [arxiv/keyword] 'test set contamination LLM graph benchmark text-attributed': 0 results
+  [crossref/keyword] 'test set contamination LLM graph benchmark text-attributed': 10 results
+  [arxiv/keyword] 'temporal split papers after training cutoff LLM zero-shot classification citation graph': 0 results
+  [crossref/keyword] 'temporal split papers after training cutoff LLM zero-shot classification citation graph': 10 results
+  [arxiv/keyword] 'LLM memorization benchmark inflation graph learning evaluation': 1 results
+  [crossref/keyword] 'LLM memorization benchmark inflation graph learning evaluation': 10 results
+  [arxiv/keyword] 'LLM-as-predictor node classification label leakage': 0 results
+  [crossref/keyword] 'LLM-as-predictor node classification label leakage': 10 results
+  [arxiv/surveys] 'data leakage large language models node classification Cora arxiv memorization survey': 0 results
+  [crossref/surveys] 'data leakage large language models node classification Cora arxiv memorization survey': 10 results
+  [arxiv/surveys] 'data leakage large language models node classification Cora arxiv memorization review': 0 results
+  [crossref/surveys] 'data leakage large language models node classification Cora arxiv memorization review': 10 results
+  [arxiv/surveys] 'test set contamination LLM graph benchmark text-attributed survey': 0 results
+  [crossref/surveys] 'test set contamination LLM graph benchmark text-attributed survey': 10 results
+  [arxiv/surveys] 'test set contamination LLM graph benchmark text-attributed review': 0 results
+  [crossref/surveys] 'test set contamination LLM graph benchmark text-attributed review': 10 results
+  [arxiv/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph survey': 0 results
+  [crossref/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph survey': 10 results
+  [arxiv/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph review': 0 results
+  [crossref/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph review': 10 results
+  [arxiv/surveys] 'LLM memorization benchmark inflation graph learning evaluation survey': 0 results
+  [crossref/surveys] 'LLM memorization benchmark inflation graph learning evaluation survey': 10 results
+  [arxiv/surveys] 'LLM memorization benchmark inflation graph learning evaluation review': 0 results
+  [crossref/surveys] 'LLM memorization benchmark inflation graph learning evaluation review': 10 results
+  [arxiv/surveys] 'LLM-as-predictor node classification label leakage survey': 0 results
+  [crossref/surveys] 'LLM-as-predictor node classification label leakage survey': 10 results
+  [arxiv/surveys] 'LLM-as-predictor node classification label leakage review': 0 results
+  [crossref/surveys] 'LLM-as-predictor node classification label leakage review': 10 results
+  [arxiv/recent] 'data leakage large language models node classification Cora arxiv memorization': 0 results
+  [crossref/recent] 'data leakage large language models node classification Cora arxiv memorization': 10 results
+  [arxiv/recent] 'test set contamination LLM graph benchmark text-attributed': 0 results
+  [crossref/recent] 'test set contamination LLM graph benchmark text-attributed': 10 results
+  [arxiv/recent] 'temporal split papers after training cutoff LLM zero-shot classification citation graph': 0 results
+  [crossref/recent] 'temporal split papers after training cutoff LLM zero-shot classification citation graph': 10 results
+  [arxiv/recent] 'LLM memorization benchmark inflation graph learning evaluation': 1 results
+  [crossref/recent] 'LLM memorization benchmark inflation graph learning evaluation': 10 results
+  [arxiv/recent] 'LLM-as-predictor node classification label leakage': 0 results
+  [crossref/recent] 'LLM-as-predictor node classification label leakage': 10 results
+  [arxiv/keyword] 'data leakage large language models node classification Cora arxiv memorization': 0 results
+  [crossref/keyword] 'data leakage large language models node classification Cora arxiv memorization': 10 results
+  [arxiv/keyword] 'test set contamination LLM graph benchmark text-attributed': 0 results
+  [crossref/keyword] 'test set contamination LLM graph benchmark text-attributed': 10 results
+  [arxiv/keyword] 'temporal split papers after training cutoff LLM zero-shot classification citation graph': 0 results
+  [crossref/keyword] 'temporal split papers after training cutoff LLM zero-shot classification citation graph': 10 results
+  [arxiv/keyword] 'LLM memorization benchmark inflation graph learning evaluation': 1 results
+  [crossref/keyword] 'LLM memorization benchmark inflation graph learning evaluation': 10 results
+  [arxiv/keyword] 'LLM-as-predictor node classification label leakage': 0 results
+  [crossref/keyword] 'LLM-as-predictor node classification label leakage': 10 results
+  [arxiv/surveys] 'data leakage large language models node classification Cora arxiv memorization survey': 0 results
+  [crossref/surveys] 'data leakage large language models node classification Cora arxiv memorization survey': 10 results
+  [arxiv/surveys] 'data leakage large language models node classification Cora arxiv memorization review': 0 results
+  [crossref/surveys] 'data leakage large language models node classification Cora arxiv memorization review': 10 results
+  [arxiv/surveys] 'test set contamination LLM graph benchmark text-attributed survey': 0 results
+  [crossref/surveys] 'test set contamination LLM graph benchmark text-attributed survey': 10 results
+  [arxiv/surveys] 'test set contamination LLM graph benchmark text-attributed review': 0 results
+  [crossref/surveys] 'test set contamination LLM graph benchmark text-attributed review': 10 results
+  [arxiv/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph survey': 0 results
+  [crossref/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph survey': 10 results
+  [arxiv/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph review': 0 results
+  [crossref/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph review': 10 results
+  [arxiv/surveys] 'LLM memorization benchmark inflation graph learning evaluation survey': 0 results
+  [crossref/surveys] 'LLM memorization benchmark inflation graph learning evaluation survey': 10 results
+  [arxiv/surveys] 'LLM memorization benchmark inflation graph learning evaluation review': 0 results
+  [crossref/surveys] 'LLM memorization benchmark inflation graph learning evaluation review': 10 results
+  [arxiv/surveys] 'LLM-as-predictor node classification label leakage survey': 0 results
+  [crossref/surveys] 'LLM-as-predictor node classification label leakage survey': 10 results
+  [arxiv/surveys] 'LLM-as-predictor node classification label leakage review': 0 results
+  [crossref/surveys] 'LLM-as-predictor node classification label leakage review': 10 results
+  [arxiv/recent] 'data leakage large language models node classification Cora arxiv memorization': 0 results
+  [crossref/recent] 'data leakage large language models node classification Cora arxiv memorization': 10 results
+  [arxiv/recent] 'test set contamination LLM graph benchmark text-attributed': 0 results
+  [crossref/recent] 'test set contamination LLM graph benchmark text-attributed': 10 results
+  [arxiv/recent] 'temporal split papers after training cutoff LLM zero-shot classification citation graph': 0 results
+  [crossref/recent] 'temporal split papers after training cutoff LLM zero-shot classification citation graph': 10 results
+  [arxiv/recent] 'LLM memorization benchmark inflation graph learning evaluation': 1 results
+  [crossref/recent] 'LLM memorization benchmark inflation graph learning evaluation': 10 results
+  [arxiv/recent] 'LLM-as-predictor node classification label leakage': 0 results
+  [crossref/recent] 'LLM-as-predictor node classification label leakage': 10 results
+  [arxiv/keyword] 'papers published after the model training cutoff LLM node classification': 0 results
+  [crossref/keyword] 'papers published after the model training cutoff LLM node classification': 10 results
+  [arxiv/keyword] 'new citation dataset LLM node classification': 10 results
+  [crossref/keyword] 'new citation dataset LLM node classification': 10 results
+  [arxiv/keyword] 'with and without neighbour text LLM node classification': 0 results
+  [crossref/keyword] 'with and without neighbour text LLM node classification': 10 results
+  [arxiv/keyword] 'data leakage large language models node classification Cora arxiv memorization': 0 results
+  [crossref/keyword] 'data leakage large language models node classification Cora arxiv memorization': 10 results
+  [arxiv/keyword] 'test set contamination LLM graph benchmark text-attributed': 0 results
+  [crossref/keyword] 'test set contamination LLM graph benchmark text-attributed': 10 results
+  [arxiv/keyword] 'temporal split papers after training cutoff LLM zero-shot classification citation graph': 0 results
+  [crossref/keyword] 'temporal split papers after training cutoff LLM zero-shot classification citation graph': 10 results
+  [arxiv/keyword] 'LLM memorization benchmark inflation graph learning evaluation': 1 results
+  [crossref/keyword] 'LLM memorization benchmark inflation graph learning evaluation': 10 results
+  [arxiv/keyword] 'LLM-as-predictor node classification label leakage': 0 results
+  [crossref/keyword] 'LLM-as-predictor node classification label leakage': 10 results
+  [arxiv/surveys] 'data leakage large language models node classification Cora arxiv memorization survey': 0 results
+  [crossref/surveys] 'data leakage large language models node classification Cora arxiv memorization survey': 10 results
+  [arxiv/surveys] 'data leakage large language models node classification Cora arxiv memorization review': 0 results
+  [crossref/surveys] 'data leakage large language models node classification Cora arxiv memorization review': 10 results
+  [arxiv/surveys] 'test set contamination LLM graph benchmark text-attributed survey': 0 results
+  [crossref/surveys] 'test set contamination LLM graph benchmark text-attributed survey': 10 results
+  [arxiv/surveys] 'test set contamination LLM graph benchmark text-attributed review': 0 results
+  [crossref/surveys] 'test set contamination LLM graph benchmark text-attributed review': 10 results
+  [arxiv/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph survey': 0 results
+  [crossref/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph survey': 10 results
+  [arxiv/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph review': 0 results
+  [crossref/surveys] 'temporal split papers after training cutoff LLM zero-shot classification citation graph review': 10 results
+  [arxiv/surveys] 'LLM memorization benchmark inflation graph learning evaluation survey': 0 results
+  [crossref/surveys] 'LLM memorization benchmark inflation graph learning evaluation survey': 10 results
+  [arxiv/surveys] 'LLM memorization benchmark inflation graph learning evaluation review': 0 results
+  [crossref/surveys] 'LLM memorization benchmark inflation graph learning evaluation review': 10 results
+  [arxiv/surveys] 'LLM-as-predictor node classification label leakage survey': 0 results
+  [crossref/surveys] 'LLM-as-predictor node classification label leakage survey': 10 results
+  [arxiv/surveys] 'LLM-as-predictor node classification label leakage review': 0 results
+  [crossref/surveys] 'LLM-as-predictor node classification label leakage review': 10 results
+  [arxiv/negative] 'data leakage large language models node classification Cora arxiv memorization revisiting': 0 results
+  [crossref/negative] 'data leakage large language models node classification Cora arxiv memorization revisiting': 10 results
+  [arxiv/negative] 'data leakage large language models node classification Cora arxiv memorization does not improve': 0 results
+  [crossref/negative] 'data leakage large language models node classification Cora arxiv memorization does not improve': 10 results
+  [arxiv/negative] 'test set contamination LLM graph benchmark text-attributed revisiting': 0 results
+  [crossref/negative] 'test set contamination LLM graph benchmark text-attributed revisiting': 10 results
+  [arxiv/negative] 'test set contamination LLM graph benchmark text-attributed does not improve': 0 results
+  [crossref/negative] 'test set contamination LLM graph benchmark text-attributed does not improve': 10 results
+  [arxiv/negative] 'temporal split papers after training cutoff LLM zero-shot classification citation graph revisiting': 0 results
+  [crossref/negative] 'temporal split papers after training cutoff LLM zero-shot classification citation graph revisiting': 10 results
+  [arxiv/negative] 'temporal split papers after training cutoff LLM zero-shot classification citation graph does not improve': 0 results
+  [crossref/negative] 'temporal split papers after training cutoff LLM zero-shot classification citation graph does not improve': 10 results
+  [arxiv/negative] 'LLM memorization benchmark inflation graph learning evaluation revisiting': 0 results
+  [crossref/negative] 'LLM memorization benchmark inflation graph learning evaluation revisiting': 10 results
+  [arxiv/negative] 'LLM memorization benchmark inflation graph learning evaluation does not improve': 0 results
+  [crossref/negative] 'LLM memorization benchmark inflation graph learning evaluation does not improve': 10 results
+  [arxiv/negative] 'LLM-as-predictor node classification label leakage revisiting': 0 results
+  [crossref/negative] 'LLM-as-predictor node classification label leakage revisiting': 10 results
+  [arxiv/negative] 'LLM-as-predictor node classification label leakage does not improve': 0 results
+  [crossref/negative] 'LLM-as-predictor node classification label leakage does not improve': 10 results
+  [arxiv/comparisons] 'data leakage large language models node classification Cora arxiv memorization empirical comparison': 0 results
+  [crossref/comparisons] 'data leakage large language models node classification Cora arxiv memorization empirical comparison': 10 results
+  [arxiv/comparisons] 'test set contamination LLM graph benchmark text-attributed empirical comparison': 0 results
+  [crossref/comparisons] 'test set contamination LLM graph benchmark text-attributed empirical comparison': 10 results
+  [arxiv/comparisons] 'temporal split papers after training cutoff LLM zero-shot classification citation graph empirical comparison': 0 results
+  [crossref/comparisons] 'temporal split papers after training cutoff LLM zero-shot classification citation graph empirical comparison': 10 results
+  [arxiv/comparisons] 'LLM memorization benchmark inflation graph learning evaluation empirical comparison': 0 results
+  [crossref/comparisons] 'LLM memorization benchmark inflation graph learning evaluation empirical comparison': 10 results
+  [arxiv/comparisons] 'LLM-as-predictor node classification label leakage empirical comparison': 0 results
+  [crossref/comparisons] 'LLM-as-predictor node classification label leakage empirical comparison': 10 results
+  [arxiv/critique] 'data leakage large language models node classification Cora arxiv memorization evaluation pitfalls': 0 results
+  [crossref/critique] 'data leakage large language models node classification Cora arxiv memorization evaluation pitfalls': 10 results
+  [arxiv/critique] 'data leakage large language models node classification Cora arxiv memorization simple baseline': 0 results
+  [crossref/critique] 'data leakage large language models node classification Cora arxiv memorization simple baseline': 10 results
+  [arxiv/critique] 'test set contamination LLM graph benchmark text-attributed evaluation pitfalls': 0 results
+  [crossref/critique] 'test set contamination LLM graph benchmark text-attributed evaluation pitfalls': 10 results
+  [arxiv/critique] 'test set contamination LLM graph benchmark text-attributed simple baseline': 0 results
+  [crossref/critique] 'test set contamination LLM graph benchmark text-attributed simple baseline': 10 results
+  [arxiv/critique] 'temporal split papers after training cutoff LLM zero-shot classification citation graph evaluation pitfalls': 0 results
+  [crossref/critique] 'temporal split papers after training cutoff LLM zero-shot classification citation graph evaluation pitfalls': 10 results
+  [arxiv/critique] 'temporal split papers after training cutoff LLM zero-shot classification citation graph simple baseline': 0 results
+  [crossref/critique] 'temporal split papers after training cutoff LLM zero-shot classification citation graph simple baseline': 10 results
+  [arxiv/critique] 'LLM memorization benchmark inflation graph learning evaluation evaluation pitfalls': 0 results
+  [crossref/critique] 'LLM memorization benchmark inflation graph learning evaluation evaluation pitfalls': 10 results
+  [arxiv/critique] 'LLM memorization benchmark inflation graph learning evaluation simple baseline': 0 results
+  [crossref/critique] 'LLM memorization benchmark inflation graph learning evaluation simple baseline': 10 results
+  [arxiv/critique] 'LLM-as-predictor node classification label leakage evaluation pitfalls': 0 results
+  [crossref/critique] 'LLM-as-predictor node classification label leakage evaluation pitfalls': 10 results
+  [arxiv/critique] 'LLM-as-predictor node classification label leakage simple baseline': 0 results
+  [crossref/critique] 'LLM-as-predictor node classification label leakage simple baseline': 10 results
+  [arxiv/reproducibility] 'data leakage large language models node classification Cora arxiv memorization reproducibility': 0 results
+  [crossref/reproducibility] 'data leakage large language models node classification Cora arxiv memorization reproducibility': 10 results
+  [arxiv/reproducibility] 'data leakage large language models node classification Cora arxiv memorization replication': 0 results
+  [crossref/reproducibility] 'data leakage large language models node classification Cora arxiv memorization replication': 10 results
+  [arxiv/reproducibility] 'test set contamination LLM graph benchmark text-attributed reproducibility': 0 results
+  [crossref/reproducibility] 'test set contamination LLM graph benchmark text-attributed reproducibility': 10 results
+  [arxiv/reproducibility] 'test set contamination LLM graph benchmark text-attributed replication': 0 results
+  [crossref/reproducibility] 'test set contamination LLM graph benchmark text-attributed replication': 10 results
+  [arxiv/reproducibility] 'temporal split papers after training cutoff LLM zero-shot classification citation graph reproducibility': 0 results
+  [crossref/reproducibility] 'temporal split papers after training cutoff LLM zero-shot classification citation graph reproducibility': 10 results
+  [arxiv/reproducibility] 'temporal split papers after training cutoff LLM zero-shot classification citation graph replication': 0 results
+  [crossref/reproducibility] 'temporal split papers after training cutoff LLM zero-shot classification citation graph replication': 10 results
+  [arxiv/reproducibility] 'LLM memorization benchmark inflation graph learning evaluation reproducibility': 0 results
+  [crossref/reproducibility] 'LLM memorization benchmark inflation graph learning evaluation reproducibility': 10 results
+  [arxiv/reproducibility] 'LLM memorization benchmark inflation graph learning evaluation replication': 0 results
+  [crossref/reproducibility] 'LLM memorization benchmark inflation graph learning evaluation replication': 10 results
+  [arxiv/reproducibility] 'LLM-as-predictor node classification label leakage reproducibility': 0 results
+  [crossref/reproducibility] 'LLM-as-predictor node classification label leakage reproducibility': 10 results
+  [arxiv/reproducibility] 'LLM-as-predictor node classification label leakage replication': 0 results
+  [crossref/reproducibility] 'LLM-as-predictor node classification label leakage replication': 10 results
+  [arxiv/keyword] 'papers published after the model training cutoff LLM node classification': 0 results
+  [crossref/keyword] 'papers published after the model training cutoff LLM node classification': 10 results
+  [arxiv/keyword] 'new citation dataset LLM node classification': 10 results
+  [crossref/keyword] 'new citation dataset LLM node classification': 10 results
+  [arxiv/keyword] 'with and without neighbour text LLM node classification': 0 results
+  [crossref/keyword] 'with and without neighbour text LLM node classification': 10 results
+  [arxiv/negative] 'papers published after the model training cutoff LLM node classification revisiting': 0 results
+  [crossref/negative] 'papers published after the model training cutoff LLM node classification revisiting': 10 results
+  [arxiv/negative] 'papers published after the model training cutoff LLM node classification does not improve': 0 results
+  [crossref/negative] 'papers published after the model training cutoff LLM node classification does not improve': 10 results
+  [arxiv/negative] 'new citation dataset LLM node classification revisiting': 0 results
+  [crossref/negative] 'new citation dataset LLM node classification revisiting': 10 results
+  [arxiv/negative] 'new citation dataset LLM node classification does not improve': 4 results
+  [crossref/negative] 'new citation dataset LLM node classification does not improve': 10 results
+  [arxiv/negative] 'with and without neighbour text LLM node classification revisiting': 0 results
+  [crossref/negative] 'with and without neighbour text LLM node classification revisiting': 10 results
+  [arxiv/negative] 'with and without neighbour text LLM node classification does not improve': 0 results
+  [crossref/negative] 'with and without neighbour text LLM node classification does not improve': 10 results
+== simple-baselines-vs-llm-graph (heldout)
+  [arxiv/keyword] 'simple baselines text-attributed graphs LLM node classification benchmark': 1 results
+  [crossref/keyword] 'simple baselines text-attributed graphs LLM node classification benchmark': 10 results
+  [arxiv/keyword] 'fair comparison GraphLLM methods classic GNN baselines': 0 results
+  [crossref/keyword] 'fair comparison GraphLLM methods classic GNN baselines': 10 results
+  [arxiv/keyword] 'do we need large language models for node classification': 10 results
+  [crossref/keyword] 'do we need large language models for node classification': 10 results
+  [arxiv/keyword] 'LLM-enhanced GNN marginal gains supervised node classification': 0 results
+  [crossref/keyword] 'LLM-enhanced GNN marginal gains supervised node classification': 10 results
+  [arxiv/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark survey': 0 results
+  [crossref/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark survey': 10 results
+  [arxiv/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark review': 0 results
+  [crossref/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark review': 10 results
+  [arxiv/surveys] 'fair comparison GraphLLM methods classic GNN baselines survey': 0 results
+  [crossref/surveys] 'fair comparison GraphLLM methods classic GNN baselines survey': 10 results
+  [arxiv/surveys] 'fair comparison GraphLLM methods classic GNN baselines review': 0 results
+  [crossref/surveys] 'fair comparison GraphLLM methods classic GNN baselines review': 10 results
+  [arxiv/surveys] 'do we need large language models for node classification survey': 0 results
+  [crossref/surveys] 'do we need large language models for node classification survey': 10 results
+  [arxiv/surveys] 'do we need large language models for node classification review': 1 results
+  [crossref/surveys] 'do we need large language models for node classification review': 10 results
+  [arxiv/surveys] 'LLM-enhanced GNN marginal gains supervised node classification survey': 0 results
+  [crossref/surveys] 'LLM-enhanced GNN marginal gains supervised node classification survey': 10 results
+  [arxiv/surveys] 'LLM-enhanced GNN marginal gains supervised node classification review': 0 results
+  [crossref/surveys] 'LLM-enhanced GNN marginal gains supervised node classification review': 10 results
+  [arxiv/recent] 'simple baselines text-attributed graphs LLM node classification benchmark': 1 results
+  [crossref/recent] 'simple baselines text-attributed graphs LLM node classification benchmark': 10 results
+  [arxiv/recent] 'fair comparison GraphLLM methods classic GNN baselines': 0 results
+  [crossref/recent] 'fair comparison GraphLLM methods classic GNN baselines': 10 results
+  [arxiv/recent] 'do we need large language models for node classification': 10 results
+  [crossref/recent] 'do we need large language models for node classification': 10 results
+  [arxiv/recent] 'LLM-enhanced GNN marginal gains supervised node classification': 0 results
+  [crossref/recent] 'LLM-enhanced GNN marginal gains supervised node classification': 10 results
+  [arxiv/keyword] 'simple baselines text-attributed graphs LLM node classification benchmark': 1 results
+  [crossref/keyword] 'simple baselines text-attributed graphs LLM node classification benchmark': 10 results
+  [arxiv/keyword] 'fair comparison GraphLLM methods classic GNN baselines': 0 results
+  [crossref/keyword] 'fair comparison GraphLLM methods classic GNN baselines': 10 results
+  [arxiv/keyword] 'do we need large language models for node classification': 10 results
+  [crossref/keyword] 'do we need large language models for node classification': 10 results
+  [arxiv/keyword] 'LLM-enhanced GNN marginal gains supervised node classification': 0 results
+  [crossref/keyword] 'LLM-enhanced GNN marginal gains supervised node classification': 10 results
+  [arxiv/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark survey': 0 results
+  [crossref/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark survey': 10 results
+  [arxiv/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark review': 0 results
+  [crossref/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark review': 10 results
+  [arxiv/surveys] 'fair comparison GraphLLM methods classic GNN baselines survey': 0 results
+  [crossref/surveys] 'fair comparison GraphLLM methods classic GNN baselines survey': 10 results
+  [arxiv/surveys] 'fair comparison GraphLLM methods classic GNN baselines review': 0 results
+  [crossref/surveys] 'fair comparison GraphLLM methods classic GNN baselines review': 10 results
+  [arxiv/surveys] 'do we need large language models for node classification survey': 0 results
+  [crossref/surveys] 'do we need large language models for node classification survey': 10 results
+  [arxiv/surveys] 'do we need large language models for node classification review': 1 results
+  [crossref/surveys] 'do we need large language models for node classification review': 10 results
+  [arxiv/surveys] 'LLM-enhanced GNN marginal gains supervised node classification survey': 0 results
+  [crossref/surveys] 'LLM-enhanced GNN marginal gains supervised node classification survey': 10 results
+  [arxiv/surveys] 'LLM-enhanced GNN marginal gains supervised node classification review': 0 results
+  [crossref/surveys] 'LLM-enhanced GNN marginal gains supervised node classification review': 10 results
+  [arxiv/recent] 'simple baselines text-attributed graphs LLM node classification benchmark': 1 results
+  [crossref/recent] 'simple baselines text-attributed graphs LLM node classification benchmark': 10 results
+  [arxiv/recent] 'fair comparison GraphLLM methods classic GNN baselines': 0 results
+  [crossref/recent] 'fair comparison GraphLLM methods classic GNN baselines': 10 results
+  [arxiv/recent] 'do we need large language models for node classification': 10 results
+  [crossref/recent] 'do we need large language models for node classification': 10 results
+  [arxiv/recent] 'LLM-enhanced GNN marginal gains supervised node classification': 0 results
+  [crossref/recent] 'LLM-enhanced GNN marginal gains supervised node classification': 10 results
+  [arxiv/keyword] 'tuned classic GNN baseline text-attributed graphs': 0 results
+  [crossref/keyword] 'tuned classic GNN baseline text-attributed graphs': 10 results
+  [arxiv/keyword] 'consistent splits across methods text-attributed graphs': 0 results
+  [crossref/keyword] 'consistent splits across methods text-attributed graphs': 10 results
+  [arxiv/keyword] 'supervised and semi-supervised settings text-attributed graphs': 5 results
+  [crossref/keyword] 'supervised and semi-supervised settings text-attributed graphs': 10 results
+  [arxiv/keyword] 'simple baselines text-attributed graphs LLM node classification benchmark': 1 results
+  [crossref/keyword] 'simple baselines text-attributed graphs LLM node classification benchmark': 10 results
+  [arxiv/keyword] 'fair comparison GraphLLM methods classic GNN baselines': 0 results
+  [crossref/keyword] 'fair comparison GraphLLM methods classic GNN baselines': 10 results
+  [arxiv/keyword] 'do we need large language models for node classification': 10 results
+  [crossref/keyword] 'do we need large language models for node classification': 10 results
+  [arxiv/keyword] 'LLM-enhanced GNN marginal gains supervised node classification': 0 results
+  [crossref/keyword] 'LLM-enhanced GNN marginal gains supervised node classification': 10 results
+  [arxiv/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark survey': 0 results
+  [crossref/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark survey': 10 results
+  [arxiv/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark review': 0 results
+  [crossref/surveys] 'simple baselines text-attributed graphs LLM node classification benchmark review': 10 results
+  [arxiv/surveys] 'fair comparison GraphLLM methods classic GNN baselines survey': 0 results
+  [crossref/surveys] 'fair comparison GraphLLM methods classic GNN baselines survey': 10 results
+  [arxiv/surveys] 'fair comparison GraphLLM methods classic GNN baselines review': 0 results
+  [crossref/surveys] 'fair comparison GraphLLM methods classic GNN baselines review': 10 results
+  [arxiv/surveys] 'do we need large language models for node classification survey': 0 results
+  [crossref/surveys] 'do we need large language models for node classification survey': 10 results
+  [arxiv/surveys] 'do we need large language models for node classification review': 1 results
+  [crossref/surveys] 'do we need large language models for node classification review': 10 results
+  [arxiv/surveys] 'LLM-enhanced GNN marginal gains supervised node classification survey': 0 results
+  [crossref/surveys] 'LLM-enhanced GNN marginal gains supervised node classification survey': 10 results
+  [arxiv/surveys] 'LLM-enhanced GNN marginal gains supervised node classification review': 0 results
+  [crossref/surveys] 'LLM-enhanced GNN marginal gains supervised node classification review': 10 results
+  [arxiv/negative] 'simple baselines text-attributed graphs LLM node classification benchmark revisiting': 0 results
+  [crossref/negative] 'simple baselines text-attributed graphs LLM node classification benchmark revisiting': 10 results
+  [arxiv/negative] 'simple baselines text-attributed graphs LLM node classification benchmark does not improve': 0 results
+  [crossref/negative] 'simple baselines text-attributed graphs LLM node classification benchmark does not improve': 10 results
+  [arxiv/negative] 'fair comparison GraphLLM methods classic GNN baselines revisiting': 0 results
+  [crossref/negative] 'fair comparison GraphLLM methods classic GNN baselines revisiting': 10 results
+  [arxiv/negative] 'fair comparison GraphLLM methods classic GNN baselines does not improve': 0 results
+  [crossref/negative] 'fair comparison GraphLLM methods classic GNN baselines does not improve': 10 results
+  [arxiv/negative] 'do we need large language models for node classification revisiting': 0 results
+  [crossref/negative] 'do we need large language models for node classification revisiting': 10 results
+  [arxiv/negative] 'do we need large language models for node classification does not improve': 5 results
+  [crossref/negative] 'do we need large language models for node classification does not improve': 10 results
+  [arxiv/negative] 'LLM-enhanced GNN marginal gains supervised node classification revisiting': 0 results
+  [crossref/negative] 'LLM-enhanced GNN marginal gains supervised node classification revisiting': 10 results
+  [arxiv/negative] 'LLM-enhanced GNN marginal gains supervised node classification does not improve': 0 results
+  [crossref/negative] 'LLM-enhanced GNN marginal gains supervised node classification does not improve': 10 results
+  [arxiv/comparisons] 'simple baselines text-attributed graphs LLM node classification benchmark empirical comparison': 0 results
+  [crossref/comparisons] 'simple baselines text-attributed graphs LLM node classification benchmark empirical comparison': 10 results
+  [arxiv/comparisons] 'fair comparison GraphLLM methods classic GNN baselines empirical comparison': 0 results
+  [crossref/comparisons] 'fair comparison GraphLLM methods classic GNN baselines empirical comparison': 10 results
+  [arxiv/comparisons] 'do we need large language models for node classification empirical comparison': 0 results
+  [crossref/comparisons] 'do we need large language models for node classification empirical comparison': 10 results
+  [arxiv/comparisons] 'LLM-enhanced GNN marginal gains supervised node classification empirical comparison': 0 results
+  [crossref/comparisons] 'LLM-enhanced GNN marginal gains supervised node classification empirical comparison': 10 results
+  [arxiv/critique] 'simple baselines text-attributed graphs LLM node classification benchmark evaluation pitfalls': 0 results
+  [crossref/critique] 'simple baselines text-attributed graphs LLM node classification benchmark evaluation pitfalls': 10 results
+  [arxiv/critique] 'simple baselines text-attributed graphs LLM node classification benchmark simple baseline': 1 results
+  [crossref/critique] 'simple baselines text-attributed graphs LLM node classification benchmark simple baseline': 10 results
+  [arxiv/critique] 'fair comparison GraphLLM methods classic GNN baselines evaluation pitfalls': 0 results
+  [crossref/critique] 'fair comparison GraphLLM methods classic GNN baselines evaluation pitfalls': 10 results
+  [arxiv/critique] 'fair comparison GraphLLM methods classic GNN baselines simple baseline': 0 results
+  [crossref/critique] 'fair comparison GraphLLM methods classic GNN baselines simple baseline': 10 results
+  [arxiv/critique] 'do we need large language models for node classification evaluation pitfalls': 0 results
+  [crossref/critique] 'do we need large language models for node classification evaluation pitfalls': 10 results
+  [arxiv/critique] 'do we need large language models for node classification simple baseline': 0 results
+  [crossref/critique] 'do we need large language models for node classification simple baseline': 10 results
+  [arxiv/critique] 'LLM-enhanced GNN marginal gains supervised node classification evaluation pitfalls': 0 results
+  [crossref/critique] 'LLM-enhanced GNN marginal gains supervised node classification evaluation pitfalls': 10 results
+  [arxiv/critique] 'LLM-enhanced GNN marginal gains supervised node classification simple baseline': 0 results
+  [crossref/critique] 'LLM-enhanced GNN marginal gains supervised node classification simple baseline': 10 results
+  [arxiv/reproducibility] 'simple baselines text-attributed graphs LLM node classification benchmark reproducibility': 0 results
+  [crossref/reproducibility] 'simple baselines text-attributed graphs LLM node classification benchmark reproducibility': 10 results
+  [arxiv/reproducibility] 'simple baselines text-attributed graphs LLM node classification benchmark replication': 0 results
+  [crossref/reproducibility] 'simple baselines text-attributed graphs LLM node classification benchmark replication': 10 results
+  [arxiv/reproducibility] 'fair comparison GraphLLM methods classic GNN baselines reproducibility': 0 results
+  [crossref/reproducibility] 'fair comparison GraphLLM methods classic GNN baselines reproducibility': 10 results
+  [arxiv/reproducibility] 'fair comparison GraphLLM methods classic GNN baselines replication': 0 results
+  [crossref/reproducibility] 'fair comparison GraphLLM methods classic GNN baselines replication': 10 results
+  [arxiv/reproducibility] 'do we need large language models for node classification reproducibility': 0 results
+  [crossref/reproducibility] 'do we need large language models for node classification reproducibility': 10 results
+  [arxiv/reproducibility] 'do we need large language models for node classification replication': 0 results
+  [crossref/reproducibility] 'do we need large language models for node classification replication': 10 results
+  [arxiv/reproducibility] 'LLM-enhanced GNN marginal gains supervised node classification reproducibility': 0 results
+  [crossref/reproducibility] 'LLM-enhanced GNN marginal gains supervised node classification reproducibility': 10 results
+  [arxiv/reproducibility] 'LLM-enhanced GNN marginal gains supervised node classification replication': 0 results
+  [crossref/reproducibility] 'LLM-enhanced GNN marginal gains supervised node classification replication': 10 results
+  [arxiv/keyword] 'tuned classic GNN baseline text-attributed graphs': 0 results
+  [crossref/keyword] 'tuned classic GNN baseline text-attributed graphs': 10 results
+  [arxiv/keyword] 'consistent splits across methods text-attributed graphs': 0 results
+  [crossref/keyword] 'consistent splits across methods text-attributed graphs': 10 results
+  [arxiv/keyword] 'supervised and semi-supervised settings text-attributed graphs': 5 results
+  [crossref/keyword] 'supervised and semi-supervised settings text-attributed graphs': 10 results
+  [arxiv/negative] 'tuned classic GNN baseline text-attributed graphs revisiting': 0 results
+  [crossref/negative] 'tuned classic GNN baseline text-attributed graphs revisiting': 10 results
+  [arxiv/negative] 'tuned classic GNN baseline text-attributed graphs does not improve': 0 results
+  [crossref/negative] 'tuned classic GNN baseline text-attributed graphs does not improve': 10 results
+  [arxiv/negative] 'consistent splits across methods text-attributed graphs revisiting': 0 results
+  [crossref/negative] 'consistent splits across methods text-attributed graphs revisiting': 10 results
+  [arxiv/negative] 'consistent splits across methods text-attributed graphs does not improve': 0 results
+  [crossref/negative] 'consistent splits across methods text-attributed graphs does not improve': 10 results
+  [arxiv/negative] 'supervised and semi-supervised settings text-attributed graphs revisiting': 0 results
+  [crossref/negative] 'supervised and semi-supervised settings text-attributed graphs revisiting': 10 results
+  [arxiv/negative] 'supervised and semi-supervised settings text-attributed graphs does not improve': 1 results
+  [crossref/negative] 'supervised and semi-supervised settings text-attributed graphs does not improve': 10 results
+== tag-robustness (heldout)
+  [arxiv/keyword] 'adversarial text attack text-attributed graph node classification': 0 results
+  [crossref/keyword] 'adversarial text attack text-attributed graph node classification': 10 results
+  [arxiv/keyword] 'robustness LLM-enhanced GNN textual perturbation': 2 results
+  [crossref/keyword] 'robustness LLM-enhanced GNN textual perturbation': 10 results
+  [arxiv/keyword] 'text-level graph adversarial attack language model node features': 2 results
+  [crossref/keyword] 'text-level graph adversarial attack language model node features': 10 results
+  [arxiv/keyword] 'poisoning attack text attributes graph neural network LLM': 3 results
+  [crossref/keyword] 'poisoning attack text attributes graph neural network LLM': 10 results
+  [arxiv/surveys] 'adversarial text attack text-attributed graph node classification survey': 0 results
+  [crossref/surveys] 'adversarial text attack text-attributed graph node classification survey': 10 results
+  [arxiv/surveys] 'adversarial text attack text-attributed graph node classification review': 0 results
+  [crossref/surveys] 'adversarial text attack text-attributed graph node classification review': 10 results
+  [arxiv/surveys] 'robustness LLM-enhanced GNN textual perturbation survey': 0 results
+  [crossref/surveys] 'robustness LLM-enhanced GNN textual perturbation survey': 10 results
+  [arxiv/surveys] 'robustness LLM-enhanced GNN textual perturbation review': 0 results
+  [crossref/surveys] 'robustness LLM-enhanced GNN textual perturbation review': 10 results
+  [arxiv/surveys] 'text-level graph adversarial attack language model node features survey': 0 results
+  [crossref/surveys] 'text-level graph adversarial attack language model node features survey': 10 results
+  [arxiv/surveys] 'text-level graph adversarial attack language model node features review': 0 results
+  [crossref/surveys] 'text-level graph adversarial attack language model node features review': 10 results
+  [arxiv/surveys] 'poisoning attack text attributes graph neural network LLM survey': 0 results
+  [crossref/surveys] 'poisoning attack text attributes graph neural network LLM survey': 10 results
+  [arxiv/surveys] 'poisoning attack text attributes graph neural network LLM review': 0 results
+  [crossref/surveys] 'poisoning attack text attributes graph neural network LLM review': 10 results
+  [arxiv/recent] 'adversarial text attack text-attributed graph node classification': 0 results
+  [crossref/recent] 'adversarial text attack text-attributed graph node classification': 10 results
+  [arxiv/recent] 'robustness LLM-enhanced GNN textual perturbation': 2 results
+  [crossref/recent] 'robustness LLM-enhanced GNN textual perturbation': 10 results
+  [arxiv/recent] 'text-level graph adversarial attack language model node features': 2 results
+  [crossref/recent] 'text-level graph adversarial attack language model node features': 10 results
+  [arxiv/recent] 'poisoning attack text attributes graph neural network LLM': 3 results
+  [crossref/recent] 'poisoning attack text attributes graph neural network LLM': 10 results
+  [arxiv/keyword] 'adversarial text attack text-attributed graph node classification': 0 results
+  [crossref/keyword] 'adversarial text attack text-attributed graph node classification': 10 results
+  [arxiv/keyword] 'robustness LLM-enhanced GNN textual perturbation': 2 results
+  [crossref/keyword] 'robustness LLM-enhanced GNN textual perturbation': 10 results
+  [arxiv/keyword] 'text-level graph adversarial attack language model node features': 2 results
+  [crossref/keyword] 'text-level graph adversarial attack language model node features': 10 results
+  [arxiv/keyword] 'poisoning attack text attributes graph neural network LLM': 3 results
+  [crossref/keyword] 'poisoning attack text attributes graph neural network LLM': 10 results
+  [arxiv/surveys] 'adversarial text attack text-attributed graph node classification survey': 0 results
+  [crossref/surveys] 'adversarial text attack text-attributed graph node classification survey': 10 results
+  [arxiv/surveys] 'adversarial text attack text-attributed graph node classification review': 0 results
+  [crossref/surveys] 'adversarial text attack text-attributed graph node classification review': 10 results
+  [arxiv/surveys] 'robustness LLM-enhanced GNN textual perturbation survey': 0 results
+  [crossref/surveys] 'robustness LLM-enhanced GNN textual perturbation survey': 10 results
+  [arxiv/surveys] 'robustness LLM-enhanced GNN textual perturbation review': 0 results
+  [crossref/surveys] 'robustness LLM-enhanced GNN textual perturbation review': 10 results
+  [arxiv/surveys] 'text-level graph adversarial attack language model node features survey': 0 results
+  [crossref/surveys] 'text-level graph adversarial attack language model node features survey': 10 results
+  [arxiv/surveys] 'text-level graph adversarial attack language model node features review': 0 results
+  [crossref/surveys] 'text-level graph adversarial attack language model node features review': 10 results
+  [arxiv/surveys] 'poisoning attack text attributes graph neural network LLM survey': 0 results
+  [crossref/surveys] 'poisoning attack text attributes graph neural network LLM survey': 10 results
+  [arxiv/surveys] 'poisoning attack text attributes graph neural network LLM review': 0 results
+  [crossref/surveys] 'poisoning attack text attributes graph neural network LLM review': 10 results
+  [arxiv/recent] 'adversarial text attack text-attributed graph node classification': 0 results
+  [crossref/recent] 'adversarial text attack text-attributed graph node classification': 10 results
+  [arxiv/recent] 'robustness LLM-enhanced GNN textual perturbation': 2 results
+  [crossref/recent] 'robustness LLM-enhanced GNN textual perturbation': 10 results
+  [arxiv/recent] 'text-level graph adversarial attack language model node features': 2 results
+  [crossref/recent] 'text-level graph adversarial attack language model node features': 10 results
+  [arxiv/recent] 'poisoning attack text attributes graph neural network LLM': 3 results
+  [crossref/recent] 'poisoning attack text attributes graph neural network LLM': 10 results
+  [arxiv/keyword] 'text-level perturbations of node attributes text-attributed graph': 2 results
+  [crossref/keyword] 'text-level perturbations of node attributes text-attributed graph': 10 results
+  [arxiv/keyword] 'poisoning attack text-attributed graph': 7 results
+  [crossref/keyword] 'poisoning attack text-attributed graph': 10 results
+  [arxiv/keyword] 'robustness evaluation of LLM-enhanced GNNs text-attributed graph': 2 results
+  [crossref/keyword] 'robustness evaluation of LLM-enhanced GNNs text-attributed graph': 10 results
+  [arxiv/keyword] 'adversarial text attack text-attributed graph node classification': 0 results
+  [crossref/keyword] 'adversarial text attack text-attributed graph node classification': 10 results
+  [arxiv/keyword] 'robustness LLM-enhanced GNN textual perturbation': 2 results
+  [crossref/keyword] 'robustness LLM-enhanced GNN textual perturbation': 10 results
+  [arxiv/keyword] 'text-level graph adversarial attack language model node features': 2 results
+  [crossref/keyword] 'text-level graph adversarial attack language model node features': 10 results
+  [arxiv/keyword] 'poisoning attack text attributes graph neural network LLM': 3 results
+  [crossref/keyword] 'poisoning attack text attributes graph neural network LLM': 10 results
+  [arxiv/surveys] 'adversarial text attack text-attributed graph node classification survey': 0 results
+  [crossref/surveys] 'adversarial text attack text-attributed graph node classification survey': 10 results
+  [arxiv/surveys] 'adversarial text attack text-attributed graph node classification review': 0 results
+  [crossref/surveys] 'adversarial text attack text-attributed graph node classification review': 10 results
+  [arxiv/surveys] 'robustness LLM-enhanced GNN textual perturbation survey': 0 results
+  [crossref/surveys] 'robustness LLM-enhanced GNN textual perturbation survey': 10 results
+  [arxiv/surveys] 'robustness LLM-enhanced GNN textual perturbation review': 0 results
+  [crossref/surveys] 'robustness LLM-enhanced GNN textual perturbation review': 10 results
+  [arxiv/surveys] 'text-level graph adversarial attack language model node features survey': 0 results
+  [crossref/surveys] 'text-level graph adversarial attack language model node features survey': 10 results
+  [arxiv/surveys] 'text-level graph adversarial attack language model node features review': 0 results
+  [crossref/surveys] 'text-level graph adversarial attack language model node features review': 10 results
+  [arxiv/surveys] 'poisoning attack text attributes graph neural network LLM survey': 0 results
+  [crossref/surveys] 'poisoning attack text attributes graph neural network LLM survey': 10 results
+  [arxiv/surveys] 'poisoning attack text attributes graph neural network LLM review': 0 results
+  [crossref/surveys] 'poisoning attack text attributes graph neural network LLM review': 10 results
+  [arxiv/negative] 'adversarial text attack text-attributed graph node classification revisiting': 0 results
+  [crossref/negative] 'adversarial text attack text-attributed graph node classification revisiting': 10 results
+  [arxiv/negative] 'adversarial text attack text-attributed graph node classification does not improve': 0 results
+  [crossref/negative] 'adversarial text attack text-attributed graph node classification does not improve': 10 results
+  [arxiv/negative] 'robustness LLM-enhanced GNN textual perturbation revisiting': 0 results
+  [crossref/negative] 'robustness LLM-enhanced GNN textual perturbation revisiting': 10 results
+  [arxiv/negative] 'robustness LLM-enhanced GNN textual perturbation does not improve': 2 results
+  [crossref/negative] 'robustness LLM-enhanced GNN textual perturbation does not improve': 10 results
+  [arxiv/negative] 'text-level graph adversarial attack language model node features revisiting': 0 results
+  [crossref/negative] 'text-level graph adversarial attack language model node features revisiting': 10 results
+  [arxiv/negative] 'text-level graph adversarial attack language model node features does not improve': 1 results
+  [crossref/negative] 'text-level graph adversarial attack language model node features does not improve': 10 results
+  [arxiv/negative] 'poisoning attack text attributes graph neural network LLM revisiting': 0 results
+  [crossref/negative] 'poisoning attack text attributes graph neural network LLM revisiting': 10 results
+  [arxiv/negative] 'poisoning attack text attributes graph neural network LLM does not improve': 0 results
+  [crossref/negative] 'poisoning attack text attributes graph neural network LLM does not improve': 10 results
+  [arxiv/comparisons] 'adversarial text attack text-attributed graph node classification empirical comparison': 0 results
+  [crossref/comparisons] 'adversarial text attack text-attributed graph node classification empirical comparison': 10 results
+  [arxiv/comparisons] 'robustness LLM-enhanced GNN textual perturbation empirical comparison': 0 results
+  [crossref/comparisons] 'robustness LLM-enhanced GNN textual perturbation empirical comparison': 10 results
+  [arxiv/comparisons] 'text-level graph adversarial attack language model node features empirical comparison': 0 results
+  [crossref/comparisons] 'text-level graph adversarial attack language model node features empirical comparison': 10 results
+  [arxiv/comparisons] 'poisoning attack text attributes graph neural network LLM empirical comparison': 0 results
+  [crossref/comparisons] 'poisoning attack text attributes graph neural network LLM empirical comparison': 10 results
+  [arxiv/critique] 'adversarial text attack text-attributed graph node classification evaluation pitfalls': 0 results
+  [crossref/critique] 'adversarial text attack text-attributed graph node classification evaluation pitfalls': 10 results
+  [arxiv/critique] 'adversarial text attack text-attributed graph node classification simple baseline': 0 results
+  [crossref/critique] 'adversarial text attack text-attributed graph node classification simple baseline': 10 results
+  [arxiv/critique] 'robustness LLM-enhanced GNN textual perturbation evaluation pitfalls': 0 results
+  [crossref/critique] 'robustness LLM-enhanced GNN textual perturbation evaluation pitfalls': 10 results
+  [arxiv/critique] 'robustness LLM-enhanced GNN textual perturbation simple baseline': 0 results
+  [crossref/critique] 'robustness LLM-enhanced GNN textual perturbation simple baseline': 10 results
+  [arxiv/critique] 'text-level graph adversarial attack language model node features evaluation pitfalls': 0 results
+  [crossref/critique] 'text-level graph adversarial attack language model node features evaluation pitfalls': 10 results
+  [arxiv/critique] 'text-level graph adversarial attack language model node features simple baseline': 0 results
+  [crossref/critique] 'text-level graph adversarial attack language model node features simple baseline': 10 results
+  [arxiv/critique] 'poisoning attack text attributes graph neural network LLM evaluation pitfalls': 0 results
+  [crossref/critique] 'poisoning attack text attributes graph neural network LLM evaluation pitfalls': 10 results
+  [arxiv/critique] 'poisoning attack text attributes graph neural network LLM simple baseline': 0 results
+  [crossref/critique] 'poisoning attack text attributes graph neural network LLM simple baseline': 10 results
+  [arxiv/reproducibility] 'adversarial text attack text-attributed graph node classification reproducibility': 0 results
+  [crossref/reproducibility] 'adversarial text attack text-attributed graph node classification reproducibility': 10 results
+  [arxiv/reproducibility] 'adversarial text attack text-attributed graph node classification replication': 0 results
+  [crossref/reproducibility] 'adversarial text attack text-attributed graph node classification replication': 10 results
+  [arxiv/reproducibility] 'robustness LLM-enhanced GNN textual perturbation reproducibility': 0 results
+  [crossref/reproducibility] 'robustness LLM-enhanced GNN textual perturbation reproducibility': 10 results
+  [arxiv/reproducibility] 'robustness LLM-enhanced GNN textual perturbation replication': 0 results
+  [crossref/reproducibility] 'robustness LLM-enhanced GNN textual perturbation replication': 10 results
+  [arxiv/reproducibility] 'text-level graph adversarial attack language model node features reproducibility': 0 results
+  [crossref/reproducibility] 'text-level graph adversarial attack language model node features reproducibility': 10 results
+  [arxiv/reproducibility] 'text-level graph adversarial attack language model node features replication': 0 results
+  [crossref/reproducibility] 'text-level graph adversarial attack language model node features replication': 10 results
+  [arxiv/reproducibility] 'poisoning attack text attributes graph neural network LLM reproducibility': 0 results
+  [crossref/reproducibility] 'poisoning attack text attributes graph neural network LLM reproducibility': 10 results
+  [arxiv/reproducibility] 'poisoning attack text attributes graph neural network LLM replication': 0 results
+  [crossref/reproducibility] 'poisoning attack text attributes graph neural network LLM replication': 10 results
+  [arxiv/keyword] 'text-level perturbations of node attributes text-attributed graph': 2 results
+  [crossref/keyword] 'text-level perturbations of node attributes text-attributed graph': 10 results
+  [arxiv/keyword] 'poisoning attack text-attributed graph': 7 results
+  [crossref/keyword] 'poisoning attack text-attributed graph': 10 results
+  [arxiv/keyword] 'robustness evaluation of LLM-enhanced GNNs text-attributed graph': 2 results
+  [crossref/keyword] 'robustness evaluation of LLM-enhanced GNNs text-attributed graph': 10 results
+  [arxiv/negative] 'text-level perturbations of node attributes text-attributed graph revisiting': 0 results
+  [crossref/negative] 'text-level perturbations of node attributes text-attributed graph revisiting': 10 results
+  [arxiv/negative] 'text-level perturbations of node attributes text-attributed graph does not improve': 1 results
+  [crossref/negative] 'text-level perturbations of node attributes text-attributed graph does not improve': 10 results
+  [arxiv/negative] 'poisoning attack text-attributed graph revisiting': 0 results
+  [crossref/negative] 'poisoning attack text-attributed graph revisiting': 10 results
+  [arxiv/negative] 'poisoning attack text-attributed graph does not improve': 2 results
+  [crossref/negative] 'poisoning attack text-attributed graph does not improve': 10 results
+  [arxiv/negative] 'robustness evaluation of LLM-enhanced GNNs text-attributed graph revisiting': 0 results
+  [crossref/negative] 'robustness evaluation of LLM-enhanced GNNs text-attributed graph revisiting': 10 results
+  [arxiv/negative] 'robustness evaluation of LLM-enhanced GNNs text-attributed graph does not improve': 2 results
+  [crossref/negative] 'robustness evaluation of LLM-enhanced GNNs text-attributed graph does not improve': 10 results
+== tape-small-llms (heldout)
+  [arxiv/keyword] 'TAPE explanations features open-source LLM Llama text-attributed graph': 0 results
+  [crossref/keyword] 'TAPE explanations features open-source LLM Llama text-attributed graph': 10 results
+  [arxiv/keyword] 'small language model LLM enhancer node classification cost accuracy trade-off': 0 results
+  [crossref/keyword] 'small language model LLM enhancer node classification cost accuracy trade-off': 10 results
+  [arxiv/keyword] 'LLM-generated explanations node features smaller models text-attributed graphs': 0 results
+  [crossref/keyword] 'LLM-generated explanations node features smaller models text-attributed graphs': 10 results
+  [arxiv/keyword] 'efficient LLM augmentation text-attributed graph without GPT': 0 results
+  [crossref/keyword] 'efficient LLM augmentation text-attributed graph without GPT': 10 results
+  [arxiv/keyword] 'does LLM size matter enhancing node features graph neural network': 0 results
+  [crossref/keyword] 'does LLM size matter enhancing node features graph neural network': 10 results
+  [arxiv/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph survey': 0 results
+  [crossref/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph survey': 10 results
+  [arxiv/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph review': 0 results
+  [crossref/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph review': 10 results
+  [arxiv/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off survey': 0 results
+  [crossref/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off survey': 10 results
+  [arxiv/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off review': 0 results
+  [crossref/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off review': 10 results
+  [arxiv/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs survey': 0 results
+  [crossref/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs survey': 10 results
+  [arxiv/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs review': 0 results
+  [crossref/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs review': 10 results
+  [arxiv/surveys] 'efficient LLM augmentation text-attributed graph without GPT survey': 0 results
+  [crossref/surveys] 'efficient LLM augmentation text-attributed graph without GPT survey': 10 results
+  [arxiv/surveys] 'efficient LLM augmentation text-attributed graph without GPT review': 0 results
+  [crossref/surveys] 'efficient LLM augmentation text-attributed graph without GPT review': 10 results
+  [arxiv/surveys] 'does LLM size matter enhancing node features graph neural network survey': 0 results
+  [crossref/surveys] 'does LLM size matter enhancing node features graph neural network survey': 10 results
+  [arxiv/surveys] 'does LLM size matter enhancing node features graph neural network review': 0 results
+  [crossref/surveys] 'does LLM size matter enhancing node features graph neural network review': 10 results
+  [arxiv/recent] 'TAPE explanations features open-source LLM Llama text-attributed graph': 0 results
+  [crossref/recent] 'TAPE explanations features open-source LLM Llama text-attributed graph': 10 results
+  [arxiv/recent] 'small language model LLM enhancer node classification cost accuracy trade-off': 0 results
+  [crossref/recent] 'small language model LLM enhancer node classification cost accuracy trade-off': 10 results
+  [arxiv/recent] 'LLM-generated explanations node features smaller models text-attributed graphs': 0 results
+  [crossref/recent] 'LLM-generated explanations node features smaller models text-attributed graphs': 10 results
+  [arxiv/recent] 'efficient LLM augmentation text-attributed graph without GPT': 0 results
+  [crossref/recent] 'efficient LLM augmentation text-attributed graph without GPT': 10 results
+  [arxiv/recent] 'does LLM size matter enhancing node features graph neural network': 0 results
+  [crossref/recent] 'does LLM size matter enhancing node features graph neural network': 10 results
+  [arxiv/keyword] 'TAPE explanations features open-source LLM Llama text-attributed graph': 0 results
+  [crossref/keyword] 'TAPE explanations features open-source LLM Llama text-attributed graph': 10 results
+  [arxiv/keyword] 'small language model LLM enhancer node classification cost accuracy trade-off': 0 results
+  [crossref/keyword] 'small language model LLM enhancer node classification cost accuracy trade-off': 10 results
+  [arxiv/keyword] 'LLM-generated explanations node features smaller models text-attributed graphs': 0 results
+  [crossref/keyword] 'LLM-generated explanations node features smaller models text-attributed graphs': 10 results
+  [arxiv/keyword] 'efficient LLM augmentation text-attributed graph without GPT': 0 results
+  [crossref/keyword] 'efficient LLM augmentation text-attributed graph without GPT': 10 results
+  [arxiv/keyword] 'does LLM size matter enhancing node features graph neural network': 0 results
+  [crossref/keyword] 'does LLM size matter enhancing node features graph neural network': 10 results
+  [arxiv/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph survey': 0 results
+  [crossref/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph survey': 10 results
+  [arxiv/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph review': 0 results
+  [crossref/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph review': 10 results
+  [arxiv/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off survey': 0 results
+  [crossref/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off survey': 10 results
+  [arxiv/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off review': 0 results
+  [crossref/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off review': 10 results
+  [arxiv/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs survey': 0 results
+  [crossref/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs survey': 10 results
+  [arxiv/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs review': 0 results
+  [crossref/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs review': 10 results
+  [arxiv/surveys] 'efficient LLM augmentation text-attributed graph without GPT survey': 0 results
+  [crossref/surveys] 'efficient LLM augmentation text-attributed graph without GPT survey': 10 results
+  [arxiv/surveys] 'efficient LLM augmentation text-attributed graph without GPT review': 0 results
+  [crossref/surveys] 'efficient LLM augmentation text-attributed graph without GPT review': 10 results
+  [arxiv/surveys] 'does LLM size matter enhancing node features graph neural network survey': 0 results
+  [crossref/surveys] 'does LLM size matter enhancing node features graph neural network survey': 10 results
+  [arxiv/surveys] 'does LLM size matter enhancing node features graph neural network review': 0 results
+  [crossref/surveys] 'does LLM size matter enhancing node features graph neural network review': 10 results
+  [arxiv/recent] 'TAPE explanations features open-source LLM Llama text-attributed graph': 0 results
+  [crossref/recent] 'TAPE explanations features open-source LLM Llama text-attributed graph': 10 results
+  [arxiv/recent] 'small language model LLM enhancer node classification cost accuracy trade-off': 0 results
+  [crossref/recent] 'small language model LLM enhancer node classification cost accuracy trade-off': 10 results
+  [arxiv/recent] 'LLM-generated explanations node features smaller models text-attributed graphs': 0 results
+  [crossref/recent] 'LLM-generated explanations node features smaller models text-attributed graphs': 10 results
+  [arxiv/recent] 'efficient LLM augmentation text-attributed graph without GPT': 0 results
+  [crossref/recent] 'efficient LLM augmentation text-attributed graph without GPT': 10 results
+  [arxiv/recent] 'does LLM size matter enhancing node features graph neural network': 0 results
+  [crossref/recent] 'does LLM size matter enhancing node features graph neural network': 10 results
+  [arxiv/keyword] 'open-weight LLM instead of GPT text-attributed graph': 0 results
+  [crossref/keyword] 'open-weight LLM instead of GPT text-attributed graph': 10 results
+  [arxiv/keyword] 'LLM explanations as node features text-attributed graph': 3 results
+  [crossref/keyword] 'LLM explanations as node features text-attributed graph': 10 results
+  [arxiv/keyword] 'compute cost versus accuracy text-attributed graph': 0 results
+  [crossref/keyword] 'compute cost versus accuracy text-attributed graph': 10 results
+  [arxiv/keyword] 'TAPE explanations features open-source LLM Llama text-attributed graph': 0 results
+  [crossref/keyword] 'TAPE explanations features open-source LLM Llama text-attributed graph': 10 results
+  [arxiv/keyword] 'small language model LLM enhancer node classification cost accuracy trade-off': 0 results
+  [crossref/keyword] 'small language model LLM enhancer node classification cost accuracy trade-off': 10 results
+  [arxiv/keyword] 'LLM-generated explanations node features smaller models text-attributed graphs': 0 results
+  [crossref/keyword] 'LLM-generated explanations node features smaller models text-attributed graphs': 10 results
+  [arxiv/keyword] 'efficient LLM augmentation text-attributed graph without GPT': 0 results
+  [crossref/keyword] 'efficient LLM augmentation text-attributed graph without GPT': 10 results
+  [arxiv/keyword] 'does LLM size matter enhancing node features graph neural network': 0 results
+  [crossref/keyword] 'does LLM size matter enhancing node features graph neural network': 10 results
+  [arxiv/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph survey': 0 results
+  [crossref/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph survey': 10 results
+  [arxiv/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph review': 0 results
+  [crossref/surveys] 'TAPE explanations features open-source LLM Llama text-attributed graph review': 10 results
+  [arxiv/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off survey': 0 results
+  [crossref/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off survey': 10 results
+  [arxiv/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off review': 0 results
+  [crossref/surveys] 'small language model LLM enhancer node classification cost accuracy trade-off review': 10 results
+  [arxiv/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs survey': 0 results
+  [crossref/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs survey': 10 results
+  [arxiv/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs review': 0 results
+  [crossref/surveys] 'LLM-generated explanations node features smaller models text-attributed graphs review': 10 results
+  [arxiv/surveys] 'efficient LLM augmentation text-attributed graph without GPT survey': 0 results
+  [crossref/surveys] 'efficient LLM augmentation text-attributed graph without GPT survey': 10 results
+  [arxiv/surveys] 'efficient LLM augmentation text-attributed graph without GPT review': 0 results
+  [crossref/surveys] 'efficient LLM augmentation text-attributed graph without GPT review': 10 results
+  [arxiv/surveys] 'does LLM size matter enhancing node features graph neural network survey': 0 results
+  [crossref/surveys] 'does LLM size matter enhancing node features graph neural network survey': 10 results
+  [arxiv/surveys] 'does LLM size matter enhancing node features graph neural network review': 0 results
+  [crossref/surveys] 'does LLM size matter enhancing node features graph neural network review': 10 results
+  [arxiv/negative] 'TAPE explanations features open-source LLM Llama text-attributed graph revisiting': 0 results
+  [crossref/negative] 'TAPE explanations features open-source LLM Llama text-attributed graph revisiting': 10 results
+  [arxiv/negative] 'TAPE explanations features open-source LLM Llama text-attributed graph does not improve': 0 results
+  [crossref/negative] 'TAPE explanations features open-source LLM Llama text-attributed graph does not improve': 10 results
+  [arxiv/negative] 'small language model LLM enhancer node classification cost accuracy trade-off revisiting': 0 results
+  [crossref/negative] 'small language model LLM enhancer node classification cost accuracy trade-off revisiting': 10 results
+  [arxiv/negative] 'small language model LLM enhancer node classification cost accuracy trade-off does not improve': 0 results
+  [crossref/negative] 'small language model LLM enhancer node classification cost accuracy trade-off does not improve': 10 results
+  [arxiv/negative] 'LLM-generated explanations node features smaller models text-attributed graphs revisiting': 0 results
+  [crossref/negative] 'LLM-generated explanations node features smaller models text-attributed graphs revisiting': 10 results
+  [arxiv/negative] 'LLM-generated explanations node features smaller models text-attributed graphs does not improve': error rate_limited
+  [crossref/negative] 'LLM-generated explanations node features smaller models text-attributed graphs does not improve': 10 results
+  [crossref/negative] 'efficient LLM augmentation text-attributed graph without GPT revisiting': 10 results
+  [crossref/negative] 'efficient LLM augmentation text-attributed graph without GPT does not improve': 10 results
+  [crossref/negative] 'does LLM size matter enhancing node features graph neural network revisiting': 10 results
+  [crossref/negative] 'does LLM size matter enhancing node features graph neural network does not improve': 10 results
+  [crossref/comparisons] 'TAPE explanations features open-source LLM Llama text-attributed graph empirical comparison': 10 results
+  [crossref/comparisons] 'small language model LLM enhancer node classification cost accuracy trade-off empirical comparison': 10 results
+  [crossref/comparisons] 'LLM-generated explanations node features smaller models text-attributed graphs empirical comparison': 10 results
+  [crossref/comparisons] 'efficient LLM augmentation text-attributed graph without GPT empirical comparison': 10 results
+  [crossref/comparisons] 'does LLM size matter enhancing node features graph neural network empirical comparison': 10 results
+  [crossref/critique] 'TAPE explanations features open-source LLM Llama text-attributed graph evaluation pitfalls': 10 results
+  [crossref/critique] 'TAPE explanations features open-source LLM Llama text-attributed graph simple baseline': 10 results
+  [crossref/critique] 'small language model LLM enhancer node classification cost accuracy trade-off evaluation pitfalls': 10 results
+  [crossref/critique] 'small language model LLM enhancer node classification cost accuracy trade-off simple baseline': 10 results
+  [crossref/critique] 'LLM-generated explanations node features smaller models text-attributed graphs evaluation pitfalls': 10 results
+  [crossref/critique] 'LLM-generated explanations node features smaller models text-attributed graphs simple baseline': 10 results
+  [crossref/critique] 'efficient LLM augmentation text-attributed graph without GPT evaluation pitfalls': 10 results
+  [crossref/critique] 'efficient LLM augmentation text-attributed graph without GPT simple baseline': 10 results
+  [crossref/critique] 'does LLM size matter enhancing node features graph neural network evaluation pitfalls': 10 results
+  [crossref/critique] 'does LLM size matter enhancing node features graph neural network simple baseline': 10 results
+  [crossref/reproducibility] 'TAPE explanations features open-source LLM Llama text-attributed graph reproducibility': 10 results
+  [crossref/reproducibility] 'TAPE explanations features open-source LLM Llama text-attributed graph replication': 10 results
+  [crossref/reproducibility] 'small language model LLM enhancer node classification cost accuracy trade-off reproducibility': 10 results
+  [crossref/reproducibility] 'small language model LLM enhancer node classification cost accuracy trade-off replication': 10 results
+  [crossref/reproducibility] 'LLM-generated explanations node features smaller models text-attributed graphs reproducibility': 10 results
+  [crossref/reproducibility] 'LLM-generated explanations node features smaller models text-attributed graphs replication': 10 results
+  [crossref/reproducibility] 'efficient LLM augmentation text-attributed graph without GPT reproducibility': 10 results
+  [crossref/reproducibility] 'efficient LLM augmentation text-attributed graph without GPT replication': 10 results
+  [crossref/reproducibility] 'does LLM size matter enhancing node features graph neural network reproducibility': 10 results
+  [crossref/reproducibility] 'does LLM size matter enhancing node features graph neural network replication': 10 results
+  [arxiv/keyword] 'open-weight LLM instead of GPT text-attributed graph': 0 results
+  [crossref/keyword] 'open-weight LLM instead of GPT text-attributed graph': 10 results
+  [arxiv/keyword] 'LLM explanations as node features text-attributed graph': 3 results
+  [crossref/keyword] 'LLM explanations as node features text-attributed graph': 10 results
+  [arxiv/keyword] 'compute cost versus accuracy text-attributed graph': 0 results
+  [crossref/keyword] 'compute cost versus accuracy text-attributed graph': 10 results
+  [arxiv/negative] 'open-weight LLM instead of GPT text-attributed graph revisiting': 0 results
+  [crossref/negative] 'open-weight LLM instead of GPT text-attributed graph revisiting': 10 results
+  [arxiv/negative] 'open-weight LLM instead of GPT text-attributed graph does not improve': 0 results
+  [crossref/negative] 'open-weight LLM instead of GPT text-attributed graph does not improve': 10 results
+  [arxiv/negative] 'LLM explanations as node features text-attributed graph revisiting': 0 results
+  [crossref/negative] 'LLM explanations as node features text-attributed graph revisiting': 10 results
+  [arxiv/negative] 'LLM explanations as node features text-attributed graph does not improve': 1 results
+  [crossref/negative] 'LLM explanations as node features text-attributed graph does not improve': 10 results
+  [arxiv/negative] 'compute cost versus accuracy text-attributed graph revisiting': 0 results
+  [crossref/negative] 'compute cost versus accuracy text-attributed graph revisiting': 10 results
+  [arxiv/negative] 'compute cost versus accuracy text-attributed graph does not improve': 0 results
+  [crossref/negative] 'compute cost versus accuracy text-attributed graph does not improve': 10 results
+== textgcn-vs-mlp (heldout)
+  [arxiv/keyword] 'text graph convolutional network document classification strong baseline': 1 results
+  [crossref/keyword] 'text graph convolutional network document classification strong baseline': 10 results
+  [arxiv/keyword] 'is a graph necessary for text classification': 9 results
+  [crossref/keyword] 'is a graph necessary for text classification': 10 results
+  [arxiv/keyword] 'word document graph versus multilayer perceptron': 0 results
+  [crossref/keyword] 'word document graph versus multilayer perceptron': 10 results
+  [arxiv/keyword] 'inductive text classification graph neural network comparison': 0 results
+  [crossref/keyword] 'inductive text classification graph neural network comparison': 10 results
+  [arxiv/surveys] 'text graph convolutional network document classification strong baseline survey': 0 results
+  [crossref/surveys] 'text graph convolutional network document classification strong baseline survey': 10 results
+  [arxiv/surveys] 'text graph convolutional network document classification strong baseline review': 0 results
+  [crossref/surveys] 'text graph convolutional network document classification strong baseline review': 10 results
+  [arxiv/surveys] 'is a graph necessary for text classification survey': 0 results
+  [crossref/surveys] 'is a graph necessary for text classification survey': 10 results
+  [arxiv/surveys] 'is a graph necessary for text classification review': 0 results
+  [crossref/surveys] 'is a graph necessary for text classification review': 10 results
+  [arxiv/surveys] 'word document graph versus multilayer perceptron survey': 0 results
+  [crossref/surveys] 'word document graph versus multilayer perceptron survey': 10 results
+  [arxiv/surveys] 'word document graph versus multilayer perceptron review': 0 results
+  [crossref/surveys] 'word document graph versus multilayer perceptron review': 10 results
+  [arxiv/surveys] 'inductive text classification graph neural network comparison survey': 0 results
+  [crossref/surveys] 'inductive text classification graph neural network comparison survey': 10 results
+  [arxiv/surveys] 'inductive text classification graph neural network comparison review': 0 results
+  [crossref/surveys] 'inductive text classification graph neural network comparison review': 10 results
+  [arxiv/recent] 'text graph convolutional network document classification strong baseline': 0 results
+  [crossref/recent] 'text graph convolutional network document classification strong baseline': 10 results
+  [arxiv/recent] 'is a graph necessary for text classification': 2 results
+  [crossref/recent] 'is a graph necessary for text classification': 10 results
+  [arxiv/recent] 'word document graph versus multilayer perceptron': 0 results
+  [crossref/recent] 'word document graph versus multilayer perceptron': 10 results
+  [arxiv/recent] 'inductive text classification graph neural network comparison': 0 results
+  [crossref/recent] 'inductive text classification graph neural network comparison': 10 results
+  [arxiv/keyword] 'text graph convolutional network document classification strong baseline': 1 results
+  [crossref/keyword] 'text graph convolutional network document classification strong baseline': 10 results
+  [arxiv/keyword] 'is a graph necessary for text classification': 9 results
+  [crossref/keyword] 'is a graph necessary for text classification': 10 results
+  [arxiv/keyword] 'word document graph versus multilayer perceptron': 0 results
+  [crossref/keyword] 'word document graph versus multilayer perceptron': 10 results
+  [arxiv/keyword] 'inductive text classification graph neural network comparison': 0 results
+  [crossref/keyword] 'inductive text classification graph neural network comparison': 10 results
+  [arxiv/surveys] 'text graph convolutional network document classification strong baseline survey': 0 results
+  [crossref/surveys] 'text graph convolutional network document classification strong baseline survey': 10 results
+  [arxiv/surveys] 'text graph convolutional network document classification strong baseline review': 0 results
+  [crossref/surveys] 'text graph convolutional network document classification strong baseline review': 10 results
+  [arxiv/surveys] 'is a graph necessary for text classification survey': 0 results
+  [crossref/surveys] 'is a graph necessary for text classification survey': 10 results
+  [arxiv/surveys] 'is a graph necessary for text classification review': 0 results
+  [crossref/surveys] 'is a graph necessary for text classification review': 10 results
+  [arxiv/surveys] 'word document graph versus multilayer perceptron survey': 0 results
+  [crossref/surveys] 'word document graph versus multilayer perceptron survey': 10 results
+  [arxiv/surveys] 'word document graph versus multilayer perceptron review': 0 results
+  [crossref/surveys] 'word document graph versus multilayer perceptron review': 10 results
+  [arxiv/surveys] 'inductive text classification graph neural network comparison survey': 0 results
+  [crossref/surveys] 'inductive text classification graph neural network comparison survey': 10 results
+  [arxiv/surveys] 'inductive text classification graph neural network comparison review': 0 results
+  [crossref/surveys] 'inductive text classification graph neural network comparison review': 10 results
+  [arxiv/recent] 'text graph convolutional network document classification strong baseline': 0 results
+  [crossref/recent] 'text graph convolutional network document classification strong baseline': 10 results
+  [arxiv/recent] 'is a graph necessary for text classification': 2 results
+  [crossref/recent] 'is a graph necessary for text classification': 10 results
+  [arxiv/recent] 'word document graph versus multilayer perceptron': 0 results
+  [crossref/recent] 'word document graph versus multilayer perceptron': 10 results
+  [arxiv/recent] 'inductive text classification graph neural network comparison': 0 results
+  [crossref/recent] 'inductive text classification graph neural network comparison': 10 results
+  [arxiv/keyword] 'bag-of-words MLP baseline text classification': 0 results
+  [crossref/keyword] 'bag-of-words MLP baseline text classification': 10 results
+  [arxiv/keyword] 'inductive versus transductive setting text classification': 0 results
+  [crossref/keyword] 'inductive versus transductive setting text classification': 10 results
+  [arxiv/keyword] 'same benchmark datasets text classification': 10 results
+  [crossref/keyword] 'same benchmark datasets text classification': 10 results
+  [arxiv/keyword] 'text graph convolutional network document classification strong baseline': 1 results
+  [crossref/keyword] 'text graph convolutional network document classification strong baseline': 10 results
+  [arxiv/keyword] 'is a graph necessary for text classification': 9 results
+  [crossref/keyword] 'is a graph necessary for text classification': 10 results
+  [arxiv/keyword] 'word document graph versus multilayer perceptron': 0 results
+  [crossref/keyword] 'word document graph versus multilayer perceptron': 10 results
+  [arxiv/keyword] 'inductive text classification graph neural network comparison': 0 results
+  [crossref/keyword] 'inductive text classification graph neural network comparison': 10 results
+  [arxiv/surveys] 'text graph convolutional network document classification strong baseline survey': 0 results
+  [crossref/surveys] 'text graph convolutional network document classification strong baseline survey': 10 results
+  [arxiv/surveys] 'text graph convolutional network document classification strong baseline review': 0 results
+  [crossref/surveys] 'text graph convolutional network document classification strong baseline review': 10 results
+  [arxiv/surveys] 'is a graph necessary for text classification survey': 0 results
+  [crossref/surveys] 'is a graph necessary for text classification survey': 10 results
+  [arxiv/surveys] 'is a graph necessary for text classification review': 0 results
+  [crossref/surveys] 'is a graph necessary for text classification review': 10 results
+  [arxiv/surveys] 'word document graph versus multilayer perceptron survey': 0 results
+  [crossref/surveys] 'word document graph versus multilayer perceptron survey': 10 results
+  [arxiv/surveys] 'word document graph versus multilayer perceptron review': 0 results
+  [crossref/surveys] 'word document graph versus multilayer perceptron review': 10 results
+  [arxiv/surveys] 'inductive text classification graph neural network comparison survey': 0 results
+  [crossref/surveys] 'inductive text classification graph neural network comparison survey': 10 results
+  [arxiv/surveys] 'inductive text classification graph neural network comparison review': 0 results
+  [crossref/surveys] 'inductive text classification graph neural network comparison review': 10 results
+  [arxiv/negative] 'text graph convolutional network document classification strong baseline revisiting': 0 results
+  [crossref/negative] 'text graph convolutional network document classification strong baseline revisiting': 10 results
+  [arxiv/negative] 'text graph convolutional network document classification strong baseline does not improve': 1 results
+  [crossref/negative] 'text graph convolutional network document classification strong baseline does not improve': 10 results
+  [arxiv/negative] 'is a graph necessary for text classification revisiting': 0 results
+  [crossref/negative] 'is a graph necessary for text classification revisiting': 10 results
+  [arxiv/negative] 'is a graph necessary for text classification does not improve': 2 results
+  [crossref/negative] 'is a graph necessary for text classification does not improve': 10 results
+  [arxiv/negative] 'word document graph versus multilayer perceptron revisiting': 0 results
+  [crossref/negative] 'word document graph versus multilayer perceptron revisiting': 10 results
+  [arxiv/negative] 'word document graph versus multilayer perceptron does not improve': 0 results
+  [crossref/negative] 'word document graph versus multilayer perceptron does not improve': 10 results
+  [arxiv/negative] 'inductive text classification graph neural network comparison revisiting': 0 results
+  [crossref/negative] 'inductive text classification graph neural network comparison revisiting': 10 results
+  [arxiv/negative] 'inductive text classification graph neural network comparison does not improve': 0 results
+  [crossref/negative] 'inductive text classification graph neural network comparison does not improve': 10 results
+  [arxiv/comparisons] 'text graph convolutional network document classification strong baseline empirical comparison': 0 results
+  [crossref/comparisons] 'text graph convolutional network document classification strong baseline empirical comparison': 10 results
+  [arxiv/comparisons] 'is a graph necessary for text classification empirical comparison': 0 results
+  [crossref/comparisons] 'is a graph necessary for text classification empirical comparison': 10 results
+  [arxiv/comparisons] 'word document graph versus multilayer perceptron empirical comparison': 0 results
+  [crossref/comparisons] 'word document graph versus multilayer perceptron empirical comparison': 10 results
+  [arxiv/comparisons] 'inductive text classification graph neural network comparison empirical comparison': 0 results
+  [crossref/comparisons] 'inductive text classification graph neural network comparison empirical comparison': 10 results
+  [arxiv/critique] 'text graph convolutional network document classification strong baseline evaluation pitfalls': 0 results
+  [crossref/critique] 'text graph convolutional network document classification strong baseline evaluation pitfalls': 10 results
+  [arxiv/critique] 'text graph convolutional network document classification strong baseline simple baseline': 1 results
+  [crossref/critique] 'text graph convolutional network document classification strong baseline simple baseline': 10 results
+  [arxiv/critique] 'is a graph necessary for text classification evaluation pitfalls': 0 results
+  [crossref/critique] 'is a graph necessary for text classification evaluation pitfalls': 10 results
+  [arxiv/critique] 'is a graph necessary for text classification simple baseline': 0 results
+  [crossref/critique] 'is a graph necessary for text classification simple baseline': 10 results
+  [arxiv/critique] 'word document graph versus multilayer perceptron evaluation pitfalls': 0 results
+  [crossref/critique] 'word document graph versus multilayer perceptron evaluation pitfalls': 10 results
+  [arxiv/critique] 'word document graph versus multilayer perceptron simple baseline': 0 results
+  [crossref/critique] 'word document graph versus multilayer perceptron simple baseline': 10 results
+  [arxiv/critique] 'inductive text classification graph neural network comparison evaluation pitfalls': 0 results
+  [crossref/critique] 'inductive text classification graph neural network comparison evaluation pitfalls': 10 results
+  [arxiv/critique] 'inductive text classification graph neural network comparison simple baseline': 0 results
+  [crossref/critique] 'inductive text classification graph neural network comparison simple baseline': 10 results
+  [arxiv/reproducibility] 'text graph convolutional network document classification strong baseline reproducibility': 0 results
+  [crossref/reproducibility] 'text graph convolutional network document classification strong baseline reproducibility': 10 results
+  [arxiv/reproducibility] 'text graph convolutional network document classification strong baseline replication': 0 results
+  [crossref/reproducibility] 'text graph convolutional network document classification strong baseline replication': 10 results
+  [arxiv/reproducibility] 'is a graph necessary for text classification reproducibility': 0 results
+  [crossref/reproducibility] 'is a graph necessary for text classification reproducibility': 10 results
+  [arxiv/reproducibility] 'is a graph necessary for text classification replication': 0 results
+  [crossref/reproducibility] 'is a graph necessary for text classification replication': 10 results
+  [arxiv/reproducibility] 'word document graph versus multilayer perceptron reproducibility': 0 results
+  [crossref/reproducibility] 'word document graph versus multilayer perceptron reproducibility': 10 results
+  [arxiv/reproducibility] 'word document graph versus multilayer perceptron replication': 0 results
+  [crossref/reproducibility] 'word document graph versus multilayer perceptron replication': 10 results
+  [arxiv/reproducibility] 'inductive text classification graph neural network comparison reproducibility': 0 results
+  [crossref/reproducibility] 'inductive text classification graph neural network comparison reproducibility': 10 results
+  [arxiv/reproducibility] 'inductive text classification graph neural network comparison replication': 0 results
+  [crossref/reproducibility] 'inductive text classification graph neural network comparison replication': 10 results
+  [arxiv/keyword] 'bag-of-words MLP baseline text classification': 0 results
+  [crossref/keyword] 'bag-of-words MLP baseline text classification': 10 results
+  [arxiv/keyword] 'inductive versus transductive setting text classification': 0 results
+  [crossref/keyword] 'inductive versus transductive setting text classification': 10 results
+  [arxiv/keyword] 'same benchmark datasets text classification': 10 results
+  [crossref/keyword] 'same benchmark datasets text classification': 10 results
+  [arxiv/negative] 'bag-of-words MLP baseline text classification revisiting': 0 results
+  [crossref/negative] 'bag-of-words MLP baseline text classification revisiting': 10 results
+  [arxiv/negative] 'bag-of-words MLP baseline text classification does not improve': 0 results
+  [crossref/negative] 'bag-of-words MLP baseline text classification does not improve': 10 results
+  [arxiv/negative] 'inductive versus transductive setting text classification revisiting': 0 results
+  [crossref/negative] 'inductive versus transductive setting text classification revisiting': 10 results
+  [arxiv/negative] 'inductive versus transductive setting text classification does not improve': 0 results
+  [crossref/negative] 'inductive versus transductive setting text classification does not improve': 10 results
+  [arxiv/negative] 'same benchmark datasets text classification revisiting': 1 results
+  [crossref/negative] 'same benchmark datasets text classification revisiting': 10 results
+  [arxiv/negative] 'same benchmark datasets text classification does not improve': 10 results
+  [crossref/negative] 'same benchmark datasets text classification does not improve': 10 results

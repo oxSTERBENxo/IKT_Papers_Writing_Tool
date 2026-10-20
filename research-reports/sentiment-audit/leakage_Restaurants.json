@@ -1,0 +1,88 @@
+{
+  "n_items": 4728,
+  "split_sizes": {
+    "train": 3608,
+    "test": 1120
+  },
+  "label_counts_by_split": {
+    "test": {
+      "positive": 728,
+      "neutral": 196,
+      "negative": 196
+    },
+    "train": {
+      "negative": 807,
+      "positive": 2164,
+      "neutral": 637
+    }
+  },
+  "entities": {
+    "unique": 1535,
+    "occurrences": 4728,
+    "in_more_than_one_item": 361,
+    "share_of_occurrences_from_repeat_entities": 0.7517,
+    "repeat_entities_with_a_single_label": 0.3407,
+    "max_items_per_entity": 486
+  },
+  "entity_vote": [
+    {
+      "test_items": 1120,
+      "share_test_items_with_seen_entity": 0.6857,
+      "mean_share_of_entities_seen_in_train": 0.6857,
+      "entity_vote_accuracy": 0.6536,
+      "majority_class_accuracy": 0.65,
+      "dropped_entities_in_at_least_n_items": null
+    },
+    {
+      "test_items": 1120,
+      "share_test_items_with_seen_entity": 0.2643,
+      "mean_share_of_entities_seen_in_train": 0.2643,
+      "entity_vote_accuracy": 0.6464,
+      "majority_class_accuracy": 0.65,
+      "dropped_entities_in_at_least_n_items": 20
+    }
+  ],
+  "disjoint_split_feasibility": [
+    {
+      "dropped_entities_in_at_least_n_items": null,
+      "n_components": 1535,
+      "largest_component_share": 0.1028,
+      "singleton_items": 1174
+    },
+    {
+      "dropped_entities_in_at_least_n_items": 20,
+      "n_components": 3569,
+      "largest_component_share": 0.004,
+      "singleton_items": 3242
+    }
+  ],
+  "masking_seen_entities": {
+    "median_entities_per_test_item_before": 1.0,
+    "median_entities_per_test_item_after": 0.0,
+    "test_items_left_without_entities": 768,
+    "share_of_test_entity_occurrences_removed": 0.6857
+  },
+  "duplicates": {
+    "test_items_with_text": 1120,
+    "exact_duplicates_of_train_text": 1,
+    "duplicates_with_a_different_label": 0
+  },
+  "scalar_rules": [],
+  "risks": [
+    {
+      "type": "train_test_overlap",
+      "level": "low",
+      "finding": "A vote over entities seen in training reaches 65.4% vs 65.0% for the majority class; 68.6% of test items share an entity with training."
+    },
+    {
+      "type": "masking_distribution_shift",
+      "level": "medium",
+      "finding": "Masking entities seen in training removes 68.6% of test entity occurrences; a masked evaluation would change the test distribution substantially."
+    },
+    {
+      "type": "duplicate_items",
+      "level": "low",
+      "finding": "1 test items duplicate a training text (0 with a different label)."
+    }
+  ]
+}

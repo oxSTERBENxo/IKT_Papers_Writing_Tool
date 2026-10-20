@@ -1,0 +1,50 @@
+{
+  "paper": {
+    "title": "LearnLens: An AI-Enhanced Dashboard to Support Teachers in Open-Ended Classrooms",
+    "authors": [
+      "Namrata Srivastava",
+      "Shruti Jain",
+      "Clayton Cohn",
+      "Naveeduddin Mohammed",
+      "Umesh Timalsina",
+      "Gautam Biswas"
+    ],
+    "year": 2025,
+    "date": "2025-09-11",
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv_id": "2509.10582",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2509.10582",
+    "pdf_url": "https://arxiv.org/pdf/2509.10582v1",
+    "abstract": "Exploratory learning environments (ELEs), such as simulation-based platforms and open-ended science curricula, promote hands-on exploration and problem-solving but make it difficult for teachers to gain timely insights into students' conceptual understanding. This paper presents LearnLens, a generative AI (GenAI)-enhanced teacher-facing dashboard designed to support problem-based instruction in middle school science. LearnLens processes students' open-ended responses from digital assessments to provide various insights, including sample responses, word clouds, bar charts, and AI-generated summaries. These features elucidate students' thinking, enabling teachers to adjust their instruction based on emerging patterns of understanding. The dashboard was informed by teacher input during professional development sessions and implemented within a middle school Earth science curriculum. We report insights from teacher interviews that highlight the dashboard's usability and potential to guide teachers' instruction in the classroom.",
+    "citations": null,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "9 pages",
+      "arxiv_category": "cs.CY"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "quota exhausted (X-RateLimit-Reset=16143). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?",
+      "status": 429
+    }
+  ]
+}

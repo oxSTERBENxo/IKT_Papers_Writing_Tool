@@ -1,0 +1,65 @@
+  [openalex/keyword] 'propagation graph contribution fake news detection GNN ablation': 0 results
+  [arxiv/keyword] 'propagation graph contribution fake news detection GNN ablation': 0 results
+  [semantic_scholar/keyword] 'propagation graph contribution fake news detection GNN ablation': error rate_limited
+  [crossref/keyword] 'propagation graph contribution fake news detection GNN ablation': 15 results
+  [huggingface/keyword] 'propagation graph contribution fake news detection GNN ablation': 15 results
+  [openalex/keyword] 'structure-agnostic baseline graph neural network misinformation benchmark': 1 results
+  [arxiv/keyword] 'structure-agnostic baseline graph neural network misinformation benchmark': 0 results
+  [crossref/keyword] 'structure-agnostic baseline graph neural network misinformation benchmark': 15 results
+  [huggingface/keyword] 'structure-agnostic baseline graph neural network misinformation benchmark': 15 results
+  [openalex/keyword] 'do graph neural networks need social context for fake news detection': 1 results
+  [arxiv/keyword] 'do graph neural networks need social context for fake news detection': 1 results
+  [crossref/keyword] 'do graph neural networks need social context for fake news detection': 15 results
+  [huggingface/keyword] 'do graph neural networks need social context for fake news detection': 15 results
+  [openalex/keyword] 'PolitiFact GossipCop graph structure node features evaluation': 2 results
+  [arxiv/keyword] 'PolitiFact GossipCop graph structure node features evaluation': 1 results
+  [crossref/keyword] 'PolitiFact GossipCop graph structure node features evaluation': 15 results
+  [huggingface/keyword] 'PolitiFact GossipCop graph structure node features evaluation': 15 results
+  [openalex/surveys] 'propagation graph contribution fake news detection GNN ablation survey': 0 results
+  [arxiv/surveys] 'propagation graph contribution fake news detection GNN ablation survey': 0 results
+  [crossref/surveys] 'propagation graph contribution fake news detection GNN ablation survey': 15 results
+  [huggingface/surveys] 'propagation graph contribution fake news detection GNN ablation survey': 15 results
+  [openalex/surveys] 'propagation graph contribution fake news detection GNN ablation review': 0 results
+  [arxiv/surveys] 'propagation graph contribution fake news detection GNN ablation review': 0 results
+  [crossref/surveys] 'propagation graph contribution fake news detection GNN ablation review': 15 results
+  [huggingface/surveys] 'propagation graph contribution fake news detection GNN ablation review': 15 results
+  [openalex/surveys] 'structure-agnostic baseline graph neural network misinformation benchmark survey': 0 results
+  [arxiv/surveys] 'structure-agnostic baseline graph neural network misinformation benchmark survey': 0 results
+  [crossref/surveys] 'structure-agnostic baseline graph neural network misinformation benchmark survey': 15 results
+  [huggingface/surveys] 'structure-agnostic baseline graph neural network misinformation benchmark survey': 15 results
+  [openalex/surveys] 'structure-agnostic baseline graph neural network misinformation benchmark review': 0 results
+  [arxiv/surveys] 'structure-agnostic baseline graph neural network misinformation benchmark review': 0 results
+  [crossref/surveys] 'structure-agnostic baseline graph neural network misinformation benchmark review': 15 results
+  [huggingface/surveys] 'structure-agnostic baseline graph neural network misinformation benchmark review': 15 results
+  [openalex/surveys] 'do graph neural networks need social context for fake news detection survey': 0 results
+  [arxiv/surveys] 'do graph neural networks need social context for fake news detection survey': 0 results
+  [crossref/surveys] 'do graph neural networks need social context for fake news detection survey': 15 results
+  [huggingface/surveys] 'do graph neural networks need social context for fake news detection survey': 15 results
+  [openalex/surveys] 'do graph neural networks need social context for fake news detection review': 1 results
+  [arxiv/surveys] 'do graph neural networks need social context for fake news detection review': 0 results
+  [crossref/surveys] 'do graph neural networks need social context for fake news detection review': 15 results
+  [huggingface/surveys] 'do graph neural networks need social context for fake news detection review': 15 results
+  [openalex/surveys] 'PolitiFact GossipCop graph structure node features evaluation survey': 0 results
+  [arxiv/surveys] 'PolitiFact GossipCop graph structure node features evaluation survey': 0 results
+  [crossref/surveys] 'PolitiFact GossipCop graph structure node features evaluation survey': 15 results
+  [huggingface/surveys] 'PolitiFact GossipCop graph structure node features evaluation survey': 15 results
+  [openalex/surveys] 'PolitiFact GossipCop graph structure node features evaluation review': 0 results
+  [arxiv/surveys] 'PolitiFact GossipCop graph structure node features evaluation review': 0 results
+  [crossref/surveys] 'PolitiFact GossipCop graph structure node features evaluation review': 15 results
+  [huggingface/surveys] 'PolitiFact GossipCop graph structure node features evaluation review': 15 results
+  [openalex/recent] 'propagation graph contribution fake news detection GNN ablation': 0 results
+  [arxiv/recent] 'propagation graph contribution fake news detection GNN ablation': 0 results
+  [crossref/recent] 'propagation graph contribution fake news detection GNN ablation': 15 results
+  [huggingface/recent] 'propagation graph contribution fake news detection GNN ablation': 15 results
+  [openalex/recent] 'structure-agnostic baseline graph neural network misinformation benchmark': 1 results
+  [arxiv/recent] 'structure-agnostic baseline graph neural network misinformation benchmark': 0 results
+  [crossref/recent] 'structure-agnostic baseline graph neural network misinformation benchmark': 15 results
+  [huggingface/recent] 'structure-agnostic baseline graph neural network misinformation benchmark': 15 results
+  [openalex/recent] 'do graph neural networks need social context for fake news detection': 1 results
+  [arxiv/recent] 'do graph neural networks need social context for fake news detection': 0 results
+  [crossref/recent] 'do graph neural networks need social context for fake news detection': 15 results
+  [huggingface/recent] 'do graph neural networks need social context for fake news detection': 15 results
+  [openalex/recent] 'PolitiFact GossipCop graph structure node features evaluation': 2 results
+  [arxiv/recent] 'PolitiFact GossipCop graph structure node features evaluation': 1 results
+  [crossref/recent] 'PolitiFact GossipCop graph structure node features evaluation': 15 results
+  [huggingface/recent] 'PolitiFact GossipCop graph structure node features evaluation': 15 results

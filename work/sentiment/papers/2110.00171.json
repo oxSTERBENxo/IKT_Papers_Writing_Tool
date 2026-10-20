@@ -1,0 +1,45 @@
+{
+  "paper": {
+    "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+    "authors": [
+      "Zeguan Xiao",
+      "Jiarun Wu",
+      "Qingliang Chen",
+      "Congjian Deng"
+    ],
+    "year": 2021,
+    "date": "2021",
+    "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2021.emnlp-main.724",
+    "arxiv_id": "2110.00171",
+    "pmid": null,
+    "openalex_id": "W3212760150",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2110.00171",
+    "pdf_url": "https://arxiv.org/pdf/2110.00171v1",
+    "abstract": "Graph-based Aspect-based Sentiment Classification (ABSC) approaches have yielded state-of-the-art results, expecially when equipped with contextual word embedding from pre-training language models (PLMs). However, they ignore sequential features of the context and have not yet made the best of PLMs. In this paper, we propose a novel model, BERT4GCN, which integrates the grammatical sequential features from the PLM of BERT, and the syntactic knowledge from dependency graphs. BERT4GCN utilizes outputs from intermediate layers of BERT and positional information between words to augment GCN (Graph Convolutional Network) to better encode the dependency graphs for the downstream classification. Experimental results demonstrate that the proposed BERT4GCN outperforms all state-of-the-art baselines, justifying that augmenting GCN with the grammatical features from intermediate layers of BERT can significantly empower ABSC models.",
+    "citations": 94,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "To appear in EMNLP 2021, 8 pages, 2 figures",
+      "arxiv_category": "cs.CL",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

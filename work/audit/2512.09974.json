@@ -1,0 +1,40 @@
+{
+  "paper": {
+    "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+    "authors": [
+      "Kaiyuan Xu"
+    ],
+    "year": 2025,
+    "date": "2025-12-10",
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2512.09974",
+    "arxiv_id": "2512.09974",
+    "pmid": null,
+    "openalex_id": "W4417293512",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2512.09974",
+    "pdf_url": "https://arxiv.org/pdf/2512.09974v3",
+    "abstract": "In recent years, the proliferation of misinformation and fake news has posed serious threats to individuals and society, spurring intense research into automated detection methods. Previous work showed that integrating content, user preferences, and propagation structure achieves strong performance, but leaves all graph-level representation learning entirely to the GNN, hiding any explicit topological cues. To close this gap, we introduce a lightweight enhancement: for each node, we append two classical graph-theoretic metrics, degree centrality and local clustering coefficient, to its original BERT and profile embeddings, thus explicitly flagging the roles of hub and community. In the UPFD Politifact subset, this simple modification boosts macro F1 from 0.7753 to 0.8344 over the original baseline. Our study not only demonstrates the practical value of explicit topology features in fake-news detection but also provides an interpretable, easily reproducible template for fusing graph metrics in other information-diffusion tasks.",
+    "citations": 0,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_category": "cs.SI",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

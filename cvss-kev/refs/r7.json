@@ -1,0 +1,39 @@
+{
+  "paper": {
+    "title": "When Severity and Exploitation Signals Diverge: A Cross-Sectional Study of CISA Known Exploited Vulnerabilities",
+    "authors": [
+      "Zigmārs Ancveirs"
+    ],
+    "year": 2026,
+    "date": "2026-01-01",
+    "venue": "SSRN Electronic Journal",
+    "doi": "10.2139/ssrn.7355200",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W7204668746",
+    "s2_id": null,
+    "url": "https://doi.org/10.2139/ssrn.7355200",
+    "pdf_url": "https://doi.org/10.2139/ssrn.7355200",
+    "abstract": "&lt;p&gt;Vulnerability-management programmes frequently use technical-severity thresholds even though severity, exploitation probability, confirmed exploitation, and response context are distinct signals. This study examines every CVE added to the U.S. Cybersecurity and Infrastructure Security Agency Known Exploited Vulnerabilities (CISA KEV) Catalog during 18-24 August 2026 (n=9), the last complete seven-day interval preceding the official 25 August catalog snapshot. For each vulnerability, the study records CVSS v3.1 Base severity, the EPSS probability available at data collection, CISA-ADP SSVC decision points, CVE publication date, and KEV addition date. Eight of nine vulnerabilities (88.9%) had CVSS v3.1 Base scores in the Critical range (&amp;gt;=9.0); CVE-2026-73570 had a score of 8.9 despite confirmed exploitation. EPSS probabilities ranged from 1.506% to 72.695%, a 48.3-fold spread, with a median of 10.431%. Illustrative current-score EPSS thresholds of 5%, 10%, and 20% retained 66.7%, 55.6%, and 33.3% of this known-exploited cohort, respectively. All nine records were marked “Exploitation: active” and “Technical Impact: total” in CISA-ADP SSVC data, while two were “Automatable: no.” The elapsed time between CVE publication and KEV addition ranged from 1 to 216 days (median 12 days). These descriptive findings show that technical severity, exploitation forecasts, confirmed exploitation, and exploit automation are non interchangeable. The study does not estimate predictive performance outside the KEV-selected cohort. Its operational implication is narrower: vulnerability prioritisation systems should preserve the semantics, timestamps, and provenance of distinct signals rather than treating any single threshold or synthetic score as a substitute for confirmed exploitation and local context.&lt;/p&gt;",
+    "citations": 0,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "abstract_source": "crossref"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404
+    }
+  ]
+}

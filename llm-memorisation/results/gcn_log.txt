@@ -1,0 +1,73 @@
+device: cuda NVIDIA GeForce RTX 5060 Laptop GPU
+S2019 nodes 169343 feat 128 classes 40 train/val/test 90941 29799 600
+    epoch 50/300  best val 0.695
+    epoch 100/300  best val 0.705
+    epoch 150/300  best val 0.705
+    epoch 200/300  best val 0.705
+    epoch 250/300  best val 0.705
+    epoch 300/300  best val 0.705
+  seed 0: val 0.705 test 0.673
+    epoch 50/300  best val 0.691
+    epoch 100/300  best val 0.702
+    epoch 150/300  best val 0.702
+    epoch 200/300  best val 0.708
+    epoch 250/300  best val 0.708
+    epoch 300/300  best val 0.710
+  seed 1: val 0.710 test 0.665
+    epoch 50/300  best val 0.693
+    epoch 100/300  best val 0.702
+    epoch 150/300  best val 0.702
+    epoch 200/300  best val 0.702
+    epoch 250/300  best val 0.702
+    epoch 300/300  best val 0.702
+  seed 2: val 0.702 test 0.682
+    epoch 50/300  best val 0.699
+    epoch 100/300  best val 0.708
+    epoch 150/300  best val 0.708
+    epoch 200/300  best val 0.708
+    epoch 250/300  best val 0.708
+    epoch 300/300  best val 0.708
+  seed 3: val 0.708 test 0.675
+    epoch 50/300  best val 0.696
+    epoch 100/300  best val 0.702
+    epoch 150/300  best val 0.702
+    epoch 200/300  best val 0.702
+    epoch 250/300  best val 0.702
+    epoch 300/300  best val 0.704
+  seed 4: val 0.704 test 0.682
+S2023 nodes 33868 feat 128 classes 40 train/val/test 19461 4682 668
+    epoch 50/300  best val 0.772
+    epoch 100/300  best val 0.776
+    epoch 150/300  best val 0.780
+    epoch 200/300  best val 0.780
+    epoch 250/300  best val 0.780
+    epoch 300/300  best val 0.780
+  seed 0: val 0.780 test 0.683
+    epoch 50/300  best val 0.771
+    epoch 100/300  best val 0.777
+    epoch 150/300  best val 0.779
+    epoch 200/300  best val 0.779
+    epoch 250/300  best val 0.785
+    epoch 300/300  best val 0.785
+  seed 1: val 0.785 test 0.698
+    epoch 50/300  best val 0.772
+    epoch 100/300  best val 0.777
+    epoch 150/300  best val 0.777
+    epoch 200/300  best val 0.779
+    epoch 250/300  best val 0.781
+    epoch 300/300  best val 0.781
+  seed 2: val 0.781 test 0.692
+    epoch 50/300  best val 0.771
+    epoch 100/300  best val 0.778
+    epoch 150/300  best val 0.778
+    epoch 200/300  best val 0.778
+    epoch 250/300  best val 0.778
+    epoch 300/300  best val 0.778
+  seed 3: val 0.778 test 0.695
+    epoch 50/300  best val 0.772
+    epoch 100/300  best val 0.776
+    epoch 150/300  best val 0.776
+    epoch 200/300  best val 0.776
+    epoch 250/300  best val 0.778
+    epoch 300/300  best val 0.778
+  seed 4: val 0.778 test 0.699

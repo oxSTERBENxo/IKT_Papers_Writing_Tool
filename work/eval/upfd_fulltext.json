@@ -1,0 +1,226 @@
+{
+  "ident": "2104.12259",
+  "arxiv_id": "2104.12259",
+  "status": "full_text",
+  "source": "arxiv_tex",
+  "sections": [
+    {
+      "heading": "Front matter",
+      "level": "section",
+      "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\documentclass[sigconf]{acmart}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\AtBeginDocument{\n  \\providecommand\\BibTeX{{\n    \\normalfont B\\kern-0.5em{\\scshape i\\kern-0.25em b}\\kern-0.8em\\TeX}}}\n\n\n\n\n\n\n\\copyrightyear{2021}\n\\acmYear{2021}\n\\setcopyright{acmcopyright}\n\\acmConference[SIGIR '21] {Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval}{July 11--15, 2021}{Virtual Event, Canada.}\n\\acmBooktitle{Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '21), July 11--15, 2021, Virtual Event, Canada}\n\\acmPrice{15.00}\n\\acmISBN{978-1-4503-8037-9/21/07}\n\\acmDOI{10.1145/XXXXXX.XXXXXX}\n\n\n\\settopmatter{printacmref=true}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\PassOptionsToPackage{usenames,dvipsnames}{xcolor}\n\n\n\n\\usepackage{algorithm}\n\\usepackage{graphicx}\n\\usepackage{subcaption}\n\\usepackage{caption}\n\\usepackage{textcomp}\n\n\\usepackage{url}\n\n\\usepackage{booktabs}\n\\usepackage{epstopdf}\n\\usepackage{multirow}\n\\usepackage{array}\n\\usepackage{enumitem}\n\\usepackage{wrapfig}\n\n\\usepackage[many]{tcolorbox}\n\\usepackage{mathtools}\n\n\\usepackage{dsfont}\n\n\\usepackage{esvect}\n\\usepackage{hyperref}\n\\usepackage{multicol}\n\\usepackage{xpatch}\n\\usepackage[noend]{algpseudocode}\n\\usepackage{comment}\n\\usepackage{todonotes}\n\n\n\n\n\n\n\n\\DeclareMathOperator*{\\argmin}{\\arg\\!\\min}\n\\DeclareMathOperator*{\\argmax}{\\arg\\!\\max}\n\n\n\\newcommand{\\INDSTATE}[1][1]{\\STATE\\hspace{#1\\algorithmicindent}}\n\\newcommand{\\kai}[1]{\\textcolor{blue}{{#1}}}\n\\newcommand{\\sun}[1]{\\textcolor{red}{{#1}}}\n\n\\makeatletter\n\\xpatchcmd{\\algorithmic}{\\itemsep\\z@}{\\itemsep=0.1ex plus0.5pt}{}{}\n\\makeatother\n\n\\newcommand{\\footremember}[2]{\n   \\footnote{#2}\n    \\newcounter{#1}\n    \\setcounter{#1}{\\value{footnote}}\n}\n\\newcommand{\\footrecall}[1]{\n    \\footnotemark[\\value{#1}]\n} \n\n\\usepackage{xspace}\n\\newcommand\\UPFD{$\\mathsf{UPFD}$\\xspace}\n\n\n\n\n\n\n\\begin{document}\n\n\n\n\n\\title{User Preference-aware Fake News Detection}\n\n\n\n\n\n\n\n\n\\author{Yingtong Dou$^{1}$, Kai Shu$^{2}$, Congying Xia$^{1}$, Philip S. Yu$^{1}$, Lichao Sun$^{3}$}\n\\affiliation{\n\\institution{\n$^1$Department of Computer Science, University of Illinois at Chicago, Chicago, IL, USA\\\\\n$^2$Department of Computer Science, Illinois Institute of Technology, Chicago, IL, USA\\\\\n$^3$Department of Computer Science and Engineering, Lehigh University, Bethlehem, PA, USA\\\\\n}\n\\country{}\n}\n\\email{{ydou5, cxia8, psyu}@uic.edu, kshu@iit.edu, james.lichao.sun@gmail.com}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\begin{abstract}\n\n\n\n\n\n\n\n\n\n\nDisinformation and fake news have posed detrimental effects on individuals and society in recent years, attracting broad attention to fake news detection. \nThe majority of existing fake news detection algorithms focus on mining news content and/or the surrounding exogenous context for discovering deceptive signals;\nwhile the endogenous preference of a user when he/she decides to spread a piece of fake news or not is ignored.\nThe confirmation bias theory has indicated that a user is more likely to spread a piece of fake news when it confirms his/her existing beliefs/preferences.\nUsers' historical, social engagements such as posts provide rich information about users' preferences toward news and have great potentials to advance fake news detection.\nHowever, the work on exploring user preference for fake news detection is somewhat limited.\nTherefore, in this paper, we study the novel problem of exploiting user preference for fake news detection.\nWe propose a new framework, \\UPFD, which simultaneously captures various signals from user preferences by joint content and graph modeling.\nExperimental results on real-world datasets demonstrate the effectiveness of the proposed framework.\nWe release our code and data as a benchmark for GNN-based fake news detection: \\url{https://github.com/safe-graph/GNN-FakeNews}.\n\\end{abstract}\n\n\n\n\n\n\n\\begin{CCSXML}\n<ccs2012>\n   <concept>\n       <concept_id>10010147.10010257</concept_id>\n       <concept_desc>Computing methodologies Machine learning</concept_desc>\n       <concept_significance>300</concept_significance>\n       </concept>\n   <concept>\n       <concept_id>10002951.10003260.10003282.10003292</concept_id>\n       <concept_desc>Information systems Social networks</concept_desc>\n       <concept_significance>500</concept_significance>\n       </concept>\n </ccs2012>\n\\end{CCSXML}\n\n\\ccsdesc[300]{Computing methodologies Machine learning}\n\\ccsdesc[500]{Information systems Social networks}\n\n\n\n\n\\keywords{Data Mining; Social Media Analysis; Fake News Detection}\n\n\n\n\n\n\n\n\n\\maketitle\n\n\n",
+      "roles": [],
+      "chars": 4554
+    },
+    {
+      "heading": "Introduction",
+      "level": "section",
+      "text": "\n\n\n\n\n\n\n\nIn recent years, social media has enabled the wide dissemination of disinformation and fake news-- false or misleading information disguised in news articles to mislead consumers \n.\nDisinformation has resulted in deleterious effects and raised serious concerns, demanding novel approaches for fake news detection.\n\n\n\n\n\n\n\n\n\nAmong various fake news detection techniques, fact-checking is the most straightforward approach; however, it is usually labor-intensive to acquire evidence from domain experts .\nIn addition, computational approaches using feature engineering or deep learning have shown many promising results .\nFor example, SAFE  and FakeBERT  used the TextCNN  and BERT  to encode the news textual information, respectively; GCNFN  and GNN-CL  leveraged the GCN  to encode the news propagation patterns on social media (e.g., news sharing cascading among social media accounts).\nHowever, these methods focus on modeling news content and its user exogenous context and ignore the user endogenous preferences. \n\n\n\n\n\n\n\n\n\nSociological and psychological studies on journalism have theorized the correlation between user preferences and their online news consumption behaviors .\nFor example, Na\\'ive Realism  indicates that consumers tend to believe that their perceptions of reality are the only accurate views, while others who disagree are regarded as uninformed, irrational, or biased;\nand Confirmation Bias theory  reveals that consumers prefer to receive information that confirms their existing views.\nFor instance, a user believes the election fraud would probably share similar news with a supportive stance, and the news asserting election is stolen would attract users with similar beliefs .\nTo model user endogenous preferences, existing works have attempted to utilize historical posts as a proxy and have shown promising performance to detect sarcasm , hate speech , and fake news spreaders  on social media.\n\n\n\n[FLOAT] \\small The proposed \\UPFD framework for user preference-aware fake news detection. Given the news piece and its engaged users on social media, we extract the exogenous context as a news propagation graph and encode the endogenous information based on user historical posts and news texts. The endogenous and exogenous information are fused using a GNN encoder. The final news embedding, composed of user engagement embedding and news textual embedding, is fed into the neural classifier to predict the news' credibility.\n  figure* \n     \n      overall.pdf \n        The proposed   framework for user preference-aware fake news detection. Given the news piece and its engaged users on social media, we extract the exogenous context as a news propagation graph and encode the endogenous information based on user historical posts and news texts. The endogenous and exogenous information are fused using a GNN encoder. The final news embedding, composed of user engagement embedding and news textual embedding, is fed into the neural classifier to predict the news' credibility. \n      fig:overall \n  figure* \n[/FLOAT]\n\n\n\nIn this paper, we consider the historical posts of social media users as their endogenous preference in news consumption.\nWe propose an end-to-end fake news detection framework named User Preference-aware Fake Detection (\\UPFD) to model endogenous preference and exogenous context jointly (as shown in Figure ).\nSpecifically, \\UPFD consists of the following major components: \n(1) To model the user endogenous preference, we encode news content and user historical posts using various text representation learning approaches.\n(2) To obtain the user exogenous context, we build a tree-structured propagation graph for each news based on its sharing cascading on social media.\nThe news post is regarded as the root node, and other nodes represent the users who shared the same news posts.\n(3) To integrate the endogenous and exogenous information, we take the vector representations of news and users as their node features and employ Graph Neural Networks (GNNs)  to learn a joint user engagement embedding.\nThe user engagement embedding and news textual embedding are used to train a neural classifier to detect fake news.\nOur major contributions can be summarized as follows:\n\\begin{itemize}[leftmargin=*]\n    \\item We study a novel problem of user preference-aware fake news detection on social media;\n    \\item We propose a principled way to exploit both endogenous preference and exogenous context jointly to detect fake news; and\n    \\item We conduct extensive experiments on real-world datasets to demonstrate the effectiveness of \\UPFD for detecting fake news.\n\\end{itemize}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n\n    \n\n\n\n\n",
+      "roles": [],
+      "chars": 4674
+    },
+    {
+      "heading": "Our Approach",
+      "level": "section",
+      "text": "\n\nIn this section, we present the details of the proposed framework for fake news detection named \\UPFD (User Preference-aware Fake News Detection).\nAs shown in Figure , our framework has three major components.\nFirst, given a news piece, we crawl the historical posts of the users engaged in the news to learn user endogenous preference.\nWe implicitly extract the preferences of engaged users by encoding historical posts using text representation learning techniques (e.g., word2vec , BERT ).\nThe news textual data is encoded using the same approach.\nSecond, to leverage user exogenous context, we build the news propagation graph according to its engagement information on social media platforms (e.g., retweets on Twitter).\nThird, we devise a hierarchical information fusion process to fuse the user endogenous preference and exogenous context.\nSpecifically, we obtain the user engagement embedding using GNN as the graph encoder, where the news and user embeddings encoded by the text encoder are used as their corresponding node features in the news propagation graph.\nThe final news embeddings are composed by the concatenation of user engagement embedding and news textual embedding.\n\nNext, we will introduce how we encode endogenous preference, extract the exogenous context, and fuse both information.\n\n",
+      "roles": [
+        "method"
+      ],
+      "chars": 1313
+    },
+    {
+      "heading": "Endogenous Preference Encoding",
+      "level": "subsection",
+      "text": "\n\n\nIt is non-trivial to explicitly model the endogenous preference of a user only using his/her social network information.\nSimilar to  which model the users' personality, sentiment and stance using their historical posts, we leverage the historical posts of a user to encode his/her preference implicitly.\nHowever, none of the previous fake news datasets contain such information.\nIn this paper, we select the FakeNewsNet dataset  which contains news content and its social engagement information on Twitter.\nThen we use the Twitter Developer API  to crawl historical tweets of all accounts that retweeted the news in FakeNewsNet.\n\nTo obtain rich historical information for user preference modeling, we crawl the recent two hundred tweets for each account, so as to near 20 million tweets being crawled in total.\nFor inaccessible users whose accounts are suspended or deleted, we use randomly sampled tweets from accessible users engaging the same news as its corresponding historical posts.\nBecause deleting the inaccessible users will break the intact news propagation cascading and results in a less effective exogenous context encoder. \nWe also remove the special characters, e.g., ``@'' characters and URLs, before applying text representation learning methods.\n\n\nTo encode the news textual information and user preferences, we employ two types of text representation learning approaches based on language pretraining.\nInstead of training on the local corpus, the word embeddings pretrained on a large corpus are supposed to encode more semantic similarities between different words and sentences.\nFor pretrained word2vec vectors, we choose the 680k 300-dimensional vectors pretrained by spaCy .  \nWe also employ pretrained BERT embeddings to encode the historical tweets and news content as a sequence  using bert-as-a-service .\n\n\nNext, we elaborate the details of applying the above text representation learning models. \nspaCy includes pretrained vectors for 680k words, and we average the vectors of existing words in combined recent 200 tweets to get user preference representation.\nThe news textual embedding is obtained similarly.\nFor the BERT model, we use the cased BERT-Large model to encode the news and user information.   \nThe news content is encoded using BERT with maximum input sequence length (i.e., 512 tokens).\nDue to BERT's input sequence length limitation, we could not use BERT to encode 200 tweets as one sequence, so we resort to encode each tweet separately and average them afterward to obtain a user's preference representation.\nGenerally, the tweet text is way shorter than the news text, we empirically set the max input sequence length of BERT as 16 tokens to accelerate the tweets encoding time. \n\n\n",
+      "roles": [],
+      "chars": 2735
+    },
+    {
+      "heading": "Exogenous Context Extraction",
+      "level": "subsection",
+      "text": "\n\n\nGiven a news piece on social media, the user exogenous context is composed of all users that engaged with the news. We utilize the retweet information of news pieces to build a news propagation graph.\nAs the toy example of the news propagation graph shown in Figure , it is a tree-structured graph where the root node represents the news piece, and other nodes represent users who share the root news.\nIn this paper, we investigate the fake news propagation on Twitter as a proof-of-concept use case.\nTo build propagation networks in Twitter, we follow a similar strategy used in .\nSpecifically, we define a new piece as $v_{1}$, and $\\{v_2, \\dotsc, v_n\\}$ as a list of users that retweeted $v_{1}$ ordered by time. We define two following rules to determine the news propagation path:\n\n\\begin{itemize}[leftmargin=*]\n    \\item For any account $v_i$, if $v_i$ retweets the same news later than at least one following accounts in $\\{v_1, \\dotsc, v_n\\}$, we estimate the news spreads from the account with the latest timestamp to account $v_i$.\n    Since the latest tweets are first presented in the timeline of the Twitter app, and thus have higher probabilities to be retweeted.\n    \n    \\item If account $v_i$ does not follow any accounts in the retweet sequences including the source account, we conservatively estimate the news spreads from the accounts with the most number of followers.\n    Because tweets from accounts with more followers have a higher chance to be viewed/retweeted by other users according to the Twitter content distributing rules. \n\\end{itemize}\nBased on the above rules, we can build the news propagation graphs on Twitter.\nNote that this approach can be applied to other social media platforms like Facebook as well.\n\n\n",
+      "roles": [],
+      "chars": 1749
+    },
+    {
+      "heading": "Information Fusion",
+      "level": "subsection",
+      "text": "\n\n\nPrevious works  have demonstrated that fusing the user features with a news propagation graph could boost the fake news detection performance.\nSince the GNN can encode both node feature and graph structure in an end-to-end manner, it is a good fit for our task.\nSpecifically, we propose a hierarchical information fusion approach.\nWe first fuse the endogenous and exogenous information using the GNN.\nWith a GNN, the news textual embedding and user preference embedding can be taken as node features.\nGiven the news propagation graph, most GNNs aggregate the features of its adjacent nodes to learn the embedding of a node.\nLike previous GNN-based graph classification models , we apply a readout function over all node embeddings to obtain the embedding of a news propagation graph.\nThe readout function makes the mean pooling operation over all node embeddings to get the graph embedding (i.e., user engagement embedding).\nSecond, since the news content usually contains more explicit signals regarding the news' credibility .\nWe fuse the news textual embedding and user engagement embedding by concatenation as the ultimate news embedding to enrich the news embedding information.\n\nThe fused news embedding is finally fed into a two-layer Multi-layer Perceptron (MLP) with two output neurons representing the predicted probabilities for fake and real news.\nThe model is trained using a binary cross-entropy loss function and is updated with SGD.\n\n\n\n[FLOAT] Dataset and graph statistics.\n  table [t]\n \n \n  Dataset and graph statistics. \n  0.98   !  \n  tabular  l|ccccc   \n \n  Dataset   |  tabular [c] @  c@     \\#Graphs  \n (  \\#Fake )  tabular  |  tabular [c] @  c@     \\#Total  \n   Nodes   tabular   |   tabular [c] @  c@     \\#Total  \n   Edges   tabular   |   tabular [c] @  c@     \\#Avg. Nodes  \n   per Graph   tabular    \n \n\n \n Politifact (POL) |   tabular [c] @  c@    314 \n (157)  tabular   | 41,054 | 40,740   | 131 \n\n \n Gossipcop (GOS)|   tabular [c] @  c@    5464 \n (2732)  tabular   | 314,262 | 308,798   | 58 \n\n \n\n  tabular  \n  tab:stat \n  table \n[/FLOAT]\n\n\n",
+      "roles": [],
+      "chars": 2074
+    },
+    {
+      "heading": "Experiments",
+      "level": "section",
+      "text": "\n\n\nIn the experiments, we want to address two following questions: \nRQ1: How are the performances of the proposed \\UPFD framework compared to previous works?\nRQ2: What are the contributions of endogenous/exogenous information and other variants of the proposed framework?\n\n",
+      "roles": [
+        "experiments"
+      ],
+      "chars": 273
+    },
+    {
+      "heading": "Dataset.",
+      "level": "subsubsection",
+      "text": "\nPrevious works have proposed a couple of fake news datasets with news pieces from different websites and their fact-checking information . \nTo investigate both the user preference and propagation pattern of fake news, we choose the FakeNewsNet dataset .\nIt contains fake and real news information from two fact-checking websites and the related social engagement from Twitter.\nThe dataset statistics are shown in Table .\n\n\n\n",
+      "roles": [
+        "data"
+      ],
+      "chars": 425
+    },
+    {
+      "heading": "Baselines",
+      "level": "subsubsection",
+      "text": "\n\nWe compare the \\UPFD with fake news detection models that utilize different information.\nMany baseline methods leverage extra information like image information which is not included in the FakeNewsNet .\nTo ensure a fair comparison, we implement the baselines only with the parts for encoding the news content, user comments, and news propagation graph. \nCSI  employs an LSTM to encode the news content information to detect fake news.\nSAFE  uses the TextCNN  to encode the news textual information.\nGCNFN  is the first fake news detection framework to encode the news propagation graph using GCN .\nIt takes the profile information and comment textual embeddings as the user feature.\nGNN-CL  encodes the news propagation graph using DiffPool , a GNN designed for graph classification.\nThe node features are extracted from user profile attributes on Twitter.\nThe list of ten profile feature names can be found in \nWe also add two baselines that apply MLP directly on news textual embeddings encoded by word2vec and BERT.\n\n\n\n",
+      "roles": [
+        "baselines"
+      ],
+      "chars": 1025
+    },
+    {
+      "heading": "Experimental Settings",
+      "level": "subsubsection",
+      "text": "\n\nWe implement all models using PyTorch, and all GNN models are implemented with PyTorch-Geometric package .\nWe use unified graph embedding size (128), batch size (128), optimizer (Adam), and L2 regularization weight (0.001), train-val-test split (20%-10%-70%) for all models.\nThe experimental results are averaged over five different runnings. \nOther hyper-parameters for each model are reported with the code.\n\n\n\n",
+      "roles": [
+        "experiments"
+      ],
+      "chars": 415
+    },
+    {
+      "heading": "RQ1: Performance Evaluation",
+      "level": "subsection",
+      "text": "\n\n\n\n[FLOAT] The fake news detection performance of baselines and our model. Stars denote statistically significant under the t-test ($\\ast \\; p\\leq0.05, \\ast\\ast\\; p\\leq0.01$, $\\ast\\ast\\ast\\; p\\leq0.001$).\n  table [h]\n \n \n  The fake news detection performance of baselines and our model. Stars denote statistically significant under the t-test ($  \\; p 0.05,   \\; p 0.01$, $   \\; p 0.001$). \n  0.98   !  \n  tabular  l|l|ll|ll   \n \n     |     Model    |     POL    |      GOS    \n \n \n |  | ACC | F1 | ACC | F1 \n\n \n\n     tabular [l] @  l@    News \n Only   tabular   | SAFE   zhou2020mathsf   | 73.30 | 72.87   | 77.37 |  77.19 \n\n | CSI   ruchansky2017csi   | 76.02 |  75.99   | 75.20 |  75.01 \n\n | BERT+MLP | 71.04 |  71.03   | 85.76 |  85.75  \n\n | word2vec+MLP  | 76.47 |  76.36   | 84.61 |  84.59  \n\n \n      tabular [l] @  l@    News + \n User   tabular   | GNN-CL   han2020graph   | 62.90 |  62.25   | 95.11 |  95.09 \n\n \n | GCNFN   monti2019fake  | 83.16 |  83.56   | 96.38 |  96.36  \n\n \n \n |   (ours) | $  84.62^    $ |  $  84.65^    $   | $  97.23^     $ |  $  97.22^      $  \n\n\n \n  tabular  \n  tab:previous \n  table \n[/FLOAT]\n\n\nTable  shows the fake news detection performance of \\UPFD and six baselines.\nFirst, we can observe that \\UPFD has the best performance comparing to all baselines.\n\\UPFD outperforms the best baseline GCNFN around 1% on both datasets with statistical significance.\nThe experimental results of \\UPFD and GCNFN demonstrate that the user comments (used by GCNFN) are also beneficial to fake news detection; and the user endogenous preference could impose additional information when user comment information is limited.\nSecond, since all baselines either encode the news content or user comments without considering the historical posts,\nwe can tell that leveraging the historical posts as user endogenous preferences could improve the fake news detection performance.\nNote that the \\UPFD with the best performance on the both datasets uses BERT as the text encoder and GraphSAGE as the graph encoder.\n\n\n\n\n[FLOAT] Fake news detection performance on two datasets with different node feature types and models. The bold (underlined) text indicates the best (second best) performances on each dataset.\n  table [h]\n \n  Fake news detection performance on two datasets with different node feature types and models. The bold (underlined) text indicates the best (second best) performances on each dataset. \n  0.99   !  \n  tabular  l|cc|cc||cc|cc   \n \n       Feature   |     POL   |     GOS  \n\n   \n   |    GraphSAGE    |   GCNFN  |    GraphSAGE    |   GCNFN \n\n \n  | ACC | F1 |  ACC | F1  | ACC | F1 | ACC | F1 \n\n \n  Profile   | 77.38  | 77.12  |  76.94  | 76.72 | 92.19 | 92.16  | 89.00   | 88.96\n\n   word2vec    | 80.54  | 80.41  |  80.54  | 80.41 |   96.81  |   96.80   | 94.97   | 94.95 \n\n  BERT  |   84.62   |   84.53   |     83.26   |   83.14  |    97.23  |   97.22   | 96.18   | 96.17\n\n   \n\n  tabular  \n  tab:overall \n  table \n[/FLOAT]\n \n\n\n\n\n",
+      "roles": [
+        "experiments",
+        "results"
+      ],
+      "chars": 2965
+    },
+    {
+      "heading": "Encoder Variants",
+      "level": "subsubsection",
+      "text": "\nAs we mentioned in Section , we employ different text encoders and GNNs to encode the endogenous and exogenous information.\nIn Table , we show the fake news detection performance of two GNN variants using three different node features.\nNote that ``word2vec'' and ``BERT'' represent features encoding the user endogenous preferences while the ``Profile'' feature is regarded as a baseline.\nGraphSAGE  is a GNN to learn node embeddings via aggregating neighbor nodes information and\nGCNFN  is a GNN-based fake news detection model which leverages two GCN layers to encode the news propagation graph.\n\nTable  shows that the endogenous features (word2vec and BERT) are consistently better than the profile feature, which only encodes the user profile information.\nWe also observe that GraphSAGE and BERT have the average best performance among other model and feature variants.\nIt suggests that BERT is better than word2vec for encoding textual features which has been verified on other NLP tasks .\nNote that the BERT performance could be further improved via fine-tuning, and we leave it as future work.\n\n\n\n[FLOAT] The fake news detection performance of different variants of \\UPFD framework. -END/-EXO represents the \\UPFD variant without endogenous/exogenous information.\n  figure [h]\n     \n      ablation.pdf \n      The fake news detection performance of different variants of   framework. -END/-EXO represents the   variant without endogenous/exogenous information. \n      fig:ablation \n  figure \n[/FLOAT]\n\n\n\n",
+      "roles": [
+        "ablation"
+      ],
+      "chars": 1511
+    },
+    {
+      "heading": "Framework Variants",
+      "level": "subsubsection",
+      "text": "\nTo verify the effectiveness of endogenous preference and exogenous context, we fix the text and graph encoder and design three \\UPFD variants that remove the endogenous information, exogenous information or both of them.\n\nSpecifically, we employ the GCNFN (word2vec) as the graph (text) encoder for both datasets, and remove news concatenation to ensure a fair comparison.\nThe \\UPFD variant without exogenous information (-EXO) is implemented by removing all edges in the news propagation graph.\nThus, -EXO encodes the news embedding solely based on node features without exchanging information between nodes.\nThe \\UPFD variant without endogenous information (-END) takes the user profile as node features and does not contain user endogenous preference information.\nThe \\UPFD variant without both endogenous and exogenous information (-END & -EXO) replaces the node features of the -EXO with user profile features.\n\nFigure  shows the fake news detection performance for different \\UPFD variants on two datasets.\nWe can find that removing either component from the \\UPFD will reduce its performance.\nMoreover, jointly encoding the endogenous and exogenous information attains the best performance.\nThe accuracy of \\UPFD/-EXO is 85.61%/81.63%, and the F1 score of \\UPFD/-EXO is 85.97%/81.15% on Politifact.\nThe accuracy of \\UPFD/-EXO is 95.47%/93.92%, and the F1 score of \\UPFD/-EXO is 95.46%/93.81% on Politifact.\nAll the experimental results are statistically significant under the t-test ($p\\leq0.01$).\nThis indicates that exogenous information (i.e., news propagation graph) is more informative on Politifact since removing it results in a larger performance drop.\nIt is obvious that endogenous information contributes more to performance gain than exogenous information.\nThis observation further verifies the necessity of modeling user endogenous preferences.\n",
+      "roles": [
+        "method",
+        "ablation"
+      ],
+      "chars": 1865
+    },
+    {
+      "heading": "Conclusion",
+      "level": "section",
+      "text": "\n\n\nIn this paper, we argues that user endogenous news consumption preference plays a vital role in the fake news detection problem.\nTo verify this argument, we collect the user historical posts to implicitly model the user endogenous preference and leverage the news propagation graph on social media as the exogenous social context of users.\nAn end-to-end fake news detection framework named \\UPFD is proposed to fuse the endogenous and exogenous information and predict the news' credibility on social media.\nExperimental results demonstrate the advantage of modeling the user endogenous preference.\n\n\n\n\n\n\n\n\n\n\n\n\\begin{acks}\n\nThis work is supported in part by NSF under grants III-1763325, III-1909323, and SaTC-1930941. Kai Shu is supported by the John S. and James L. Knight Foundation through a grant to the Institute for Data, Democracy & Politics at The George Washington University.\n\\end{acks}\n\n\n\n\n\n\n\n\n\n\\bibliographystyle{ACM-Reference-Format}\n\\bibliography{sample-base}\n\n\n\n\n\n\n\\end{document}\n\\endinput\n\n\n",
+      "roles": [
+        "limitations"
+      ],
+      "chars": 1011
+    }
+  ],
+  "flags": {
+    "runs_and_seeds": [
+      {
+        "section": "Experimental Settings",
+        "sentence": "The experimental results are averaged over five different runnings."
+      }
+    ],
+    "split_protocol": [
+      {
+        "section": "Experimental Settings",
+        "sentence": "We use unified graph embedding size (128), batch size (128), optimizer (Adam), and L2 regularization weight (0.001), train-val-test split (20%-10%-70%) for all models."
+      }
+    ],
+    "validation_only_reporting": [],
+    "variance_reported": [
+      {
+        "section": "Front matter",
+        "sentence": "\\end{abstract} \\begin{CCSXML} <ccs2012> <concept> <concept_id>10010147.10010257</concept_id> <concept_desc>Computing methodologies Machine learning</concept_desc> <concept_significance>300</concept_significance> </concept> <concept> <concept_id>10002951.10003260.10003282.10003292</concept_id> <concept_desc>Information systems Social networks</concept_desc> <concept_significance>500</concept_signif"
+      },
+      {
+        "section": "RQ1: Performance Evaluation",
+        "sentence": "Stars denote statistically significant under the t-test ($\\ast \\; p\\leq0.05, \\ast\\ast\\; p\\leq0.01$, $\\ast\\ast\\ast\\; p\\leq0.001$). table [h] The fake news detection performance of baselines and our model."
+      },
+      {
+        "section": "RQ1: Performance Evaluation",
+        "sentence": "Stars denote statistically significant under the t-test ($ \\; p 0.05, \\; p 0.01$, $ \\; p 0.001$). 0.98 ! tabular l|l|ll|ll | Model | POL | GOS | | ACC | F1 | ACC | F1 tabular [l] @ l@ News Only tabular | SAFE zhou2020mathsf | 73.30 | 72.87 | 77.37 | 77.19 | CSI ruchansky2017csi | 76.02 | 75.99 | 75.20 | 75.01 | BERT+MLP | 71.04 | 71.03 | 85.76 | 85.75 | word2vec+MLP | 76.47 | 76.36 | 84.61 | 84.59"
+      },
+      {
+        "section": "RQ1: Performance Evaluation",
+        "sentence": "\\UPFD outperforms the best baseline GCNFN around 1% on both datasets with statistical significance."
+      },
+      {
+        "section": "Framework Variants",
+        "sentence": "All the experimental results are statistically significant under the t-test ($p\\leq0.01$)."
+      }
+    ],
+    "structure_free_baseline": [
+      {
+        "section": "Information Fusion",
+        "sentence": "The fused news embedding is finally fed into a two-layer Multi-layer Perceptron (MLP) with two output neurons representing the predicted probabilities for fake and real news."
+      },
+      {
+        "section": "Baselines",
+        "sentence": "The list of ten profile feature names can be found in We also add two baselines that apply MLP directly on news textual embeddings encoded by word2vec and BERT."
+      },
+      {
+        "section": "RQ1: Performance Evaluation",
+        "sentence": "Stars denote statistically significant under the t-test ($ \\; p 0.05, \\; p 0.01$, $ \\; p 0.001$). 0.98 ! tabular l|l|ll|ll | Model | POL | GOS | | ACC | F1 | ACC | F1 tabular [l] @ l@ News Only tabular | SAFE zhou2020mathsf | 73.30 | 72.87 | 77.37 | 77.19 | CSI ruchansky2017csi | 76.02 | 75.99 | 75.20 | 75.01 | BERT+MLP | 71.04 | 71.03 | 85.76 | 85.75 | word2vec+MLP | 76.47 | 76.36 | 84.61 | 84.59"
+      }
+    ],
+    "ablation_or_control": [
+      {
+        "section": "Introduction",
+        "sentence": "We propose an end-to-end fake news detection framework named User Preference-aware Fake Detection (\\UPFD) to model endogenous preference and exogenous context jointly (as shown in Figure )."
+      },
+      {
+        "section": "Information Fusion",
+        "sentence": "Since the GNN can encode both node feature and graph structure in an end-to-end manner, it is a good fit for our task."
+      },
+      {
+        "section": "Encoder Variants",
+        "sentence": "[FLOAT] The fake news detection performance of different variants of \\UPFD framework. -END/-EXO represents the \\UPFD variant without endogenous/exogenous information. figure [h] ablation.pdf The fake news detection performance of different variants of framework. -END/-EXO represents the variant without endogenous/exogenous information. fig:ablation figure [/FLOAT]"
+      },
+      {
+        "section": "Framework Variants",
+        "sentence": "The \\UPFD variant without exogenous information (-EXO) is implemented by removing all edges in the news propagation graph."
+      },
+      {
+        "section": "Framework Variants",
+        "sentence": "Thus, -EXO encodes the news embedding solely based on node features without exchanging information between nodes."
+      },
+      {
+        "section": "Framework Variants",
+        "sentence": "The \\UPFD variant without endogenous information (-END) takes the user profile as node features and does not contain user endogenous preference information."
+      }
+    ],
+    "leakage_or_overlap": [],
+    "code_or_data_link": [
+      {
+        "section": "Front matter",
+        "sentence": "We release our code and data as a benchmark for GNN-based fake news detection: \\url{https://github.com/safe-graph/GNN-FakeNews}."
+      }
+    ],
+    "hardware_and_cost": [],
+    "stated_limitation": [
+      {
+        "section": "Endogenous Preference Encoding",
+        "sentence": "Due to BERT's input sequence length limitation, we could not use BERT to encode 200 tweets as one sequence, so we resort to encode each tweet separately and average them afterward to obtain a user's preference representation."
+      },
+      {
+        "section": "Encoder Variants",
+        "sentence": "Note that the BERT performance could be further improved via fine-tuning, and we leave it as future work."
+      }
+    ]
+  },
+  "notes": [],
+  "oa_pdf": null,
+  "missing_roles": [
+    "related_work"
+  ]
+}

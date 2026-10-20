@@ -1,0 +1,298 @@
+{
+ "constraints": {
+  "time_budget_weeks": 8,
+  "gpu_vram_gb": 8,
+  "gpu_hours_budget": 60,
+  "storage_gb": 50
+ },
+ "candidates": [
+  {
+   "id": "A",
+   "title": "As proposed: graph vs no-graph re-evaluation (original O1)",
+   "mode": "replication",
+   "estimates": {
+    "weeks": 4,
+    "min_vram_gb": 2,
+    "gpu_hours": 5,
+    "storage_gb": 3
+   },
+   "blockers": [],
+   "criteria": {
+    "scientific_relevance": {
+     "score": 3,
+     "evidence": [
+      "Benchmark validity question raised by [@karn2025structure; @tuan2026review]"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "novelty_or_replication_value": {
+     "score": 1,
+     "evidence": [
+      "Answered by [@dou2021upfd] (-EXO ablation, news-only baselines), [@karn2025structure] (MLP vs 5 GNNs with CIs) and [@kim2025dawn]"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "paper_and_code_availability": {
+     "score": 4,
+     "evidence": [
+      "github.com/safe-graph/GNN-FakeNews Apache-2.0; PyG loader and example"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "dataset_accessibility": {
+     "score": 3,
+     "evidence": [
+      "PyG loader, docs HTTP 200"
+     ],
+     "evidence_level": "verified",
+     "missing": [
+      "Data licence not stated"
+     ]
+    },
+    "compute_fit": {
+     "score": 5,
+     "evidence": [
+      "Graphs of 58-131 nodes on average; one-layer GNNs"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "implementation_simplicity": {
+     "score": 4,
+     "evidence": [
+      "PyG example script exists"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "time_fit": {
+     "score": 5,
+     "evidence": [
+      "About 4 weeks"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "reproducibility": {
+     "score": 1,
+     "evidence": [
+      "Official script ignores fixed split files, has no validation-based selection, and differs from the paper on pooling and weight decay"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "evaluation_clarity": {
+     "score": 2,
+     "evidence": [
+      "Metrics standard, but published numbers come from differing protocols and a batch-averaged F1"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "low_failure_risk": {
+     "score": 2,
+     "evidence": [
+      "The likely outcome, structure adds little, is already published"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    }
+   }
+  },
+  {
+   "id": "B",
+   "title": "Revised: users shared between training and test graphs in UPFD",
+   "mode": "extension",
+   "estimates": {
+    "weeks": 6,
+    "min_vram_gb": 2,
+    "gpu_hours": 10,
+    "storage_gb": 3
+   },
+   "blockers": [],
+   "criteria": {
+    "scientific_relevance": {
+     "score": 4,
+     "evidence": [
+      "UPFD is the standard PyG fake-news benchmark; the diagnostic suggests published comparisons may misattribute performance [@karn2025structure; @tuan2026review]"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "novelty_or_replication_value": {
+     "score": 3,
+     "evidence": [
+      "No user-overlap analysis found in the full texts of [@dou2021upfd; @karn2025structure; @kim2025dawn]; four related papers unread"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "paper_and_code_availability": {
+     "score": 4,
+     "evidence": [
+      "Same code and loader as A; overlap script written in this audit"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "dataset_accessibility": {
+     "score": 3,
+     "evidence": [
+      "Mappings and labels downloaded and parsed (under 60 MB)"
+     ],
+     "evidence_level": "verified",
+     "missing": [
+      "Feature files not yet checked; data licence not stated"
+     ]
+    },
+    "compute_fit": {
+     "score": 5,
+     "evidence": [
+      "Same CPU-scale models as A"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "implementation_simplicity": {
+     "score": 3,
+     "evidence": [
+      "Needs custom user-aware splits; strict disjointness may be infeasible on GossipCop (78.6% repeat-user nodes)"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "time_fit": {
+     "score": 4,
+     "evidence": [
+      "About 6 weeks including the one-week go/no-go checks"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "reproducibility": {
+     "score": 2,
+     "evidence": [
+      "Diagnostic is scripted and deterministic; upstream training code has the issues listed for A"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "evaluation_clarity": {
+     "score": 3,
+     "evidence": [
+      "Standard metrics; no published numbers exist under user-disjoint splits"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "low_failure_risk": {
+     "score": 4,
+     "evidence": [
+      "Diagnostic already shows a strong user signal; either result for model behaviour is reportable"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    }
+   }
+  },
+  {
+   "id": "C",
+   "title": "Fallback: replication of Karn and Jensen with held-out test",
+   "mode": "replication",
+   "estimates": {
+    "weeks": 5,
+    "min_vram_gb": 2,
+    "gpu_hours": 5,
+    "storage_gb": 3
+   },
+   "blockers": [],
+   "criteria": {
+    "scientific_relevance": {
+     "score": 3,
+     "evidence": [
+      "Most recent direct evidence on the question [@karn2025structure]"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "novelty_or_replication_value": {
+     "score": 2,
+     "evidence": [
+      "Unreviewed preprint with inconsistent numbers; replication value moderate, novelty low"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "paper_and_code_availability": {
+     "score": 2,
+     "evidence": [
+      "Paper open on arXiv; no code released"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "dataset_accessibility": {
+     "score": 3,
+     "evidence": [
+      "PyG loader"
+     ],
+     "evidence_level": "verified",
+     "missing": [
+      "Data licence not stated"
+     ]
+    },
+    "compute_fit": {
+     "score": 5,
+     "evidence": [
+      "CPU-scale"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "implementation_simplicity": {
+     "score": 3,
+     "evidence": [
+      "Reimplement five GNNs and perturbations from the description"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "time_fit": {
+     "score": 5,
+     "evidence": [
+      "About 5 weeks"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    },
+    "reproducibility": {
+     "score": 1,
+     "evidence": [
+      "No code, seeds or hyperparameters beyond batch size and weight decay"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "evaluation_clarity": {
+     "score": 3,
+     "evidence": [
+      "Published table with CIs to compare against, but it conflicts with the text"
+     ],
+     "evidence_level": "verified",
+     "missing": []
+    },
+    "low_failure_risk": {
+     "score": 4,
+     "evidence": [
+      "Confirming or failing to confirm is reportable"
+     ],
+     "evidence_level": "estimate",
+     "missing": []
+    }
+   }
+  }
+ ]
+}

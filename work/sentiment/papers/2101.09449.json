@@ -1,0 +1,41 @@
+{
+  "paper": {
+    "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+    "authors": [
+      "Rajdeep Mukherjee",
+      "Shreyas Shetty",
+      "Subrata Chattopadhyay",
+      "Subhadeep Maji",
+      "Samik Datta",
+      "Pawan Goyal"
+    ],
+    "year": 2021,
+    "date": "2021",
+    "venue": "Lecture Notes in Computer Science Advances in Information Retrieval",
+    "doi": "10.1007/978-3-030-72240-1_7",
+    "arxiv_id": "2101.09449",
+    "pmid": null,
+    "openalex_id": "W3122420389",
+    "s2_id": "21f59724d67b1e36d9e55a1a215d50c0fa55724b",
+    "url": "https://arxiv.org/abs/2101.09449",
+    "pdf_url": "https://arxiv.org/pdf/2101.09449v1",
+    "abstract": "With the exponential growth of online marketplaces and user-generated content therein, aspect-based sentiment analysis has become more important than ever. In this work, we critically review a representative sample of the models published during the past six years through the lens of a practitioner, with an eye towards deployment in production. First, our rigorous empirical evaluation reveals poor reproducibility: an average 4-5% drop in test accuracy across the sample. Second, to further bolster our confidence in empirical evaluation, we report experiments on two challenging data slices, and observe a consistent 12-55% drop in accuracy. Third, we study the possibility of transfer across domains and observe that as little as 10-25% of the domain-specific training dataset, when used in conjunction with datasets from other domains within the same locale, largely closes the gap between complete cross-domain and complete in-domain predictive performance. Lastly, we open-source two large-scale annotated review corpora from a large e-commerce portal in India in order to aid the study of replicability and transfer, with the hope that it will fuel further growth of the field.",
+    "citations": 22,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "12 pages, accepted at ECIR 2021",
+      "arxiv_category": "cs.CL",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": []
+}

@@ -1,0 +1,48 @@
+{
+  "paper": {
+    "title": "Syntax-BERT: Improving Pre-trained Transformers with Syntax Trees",
+    "authors": [
+      "Jiangang Bai",
+      "Yujing Wang",
+      "Yiren Chen",
+      "Yaming Yang",
+      "Jing Bai",
+      "Jing Yu",
+      "Yunhai Tong"
+    ],
+    "year": 2021,
+    "date": "2021",
+    "venue": "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+    "doi": "10.18653/v1/2021.eacl-main.262",
+    "arxiv_id": "2103.04350",
+    "pmid": null,
+    "openalex_id": "W3154449322",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2103.04350",
+    "pdf_url": "https://arxiv.org/pdf/2103.04350v1",
+    "abstract": "Pre-trained language models like BERT achieve superior performances in various NLP tasks without explicit consideration of syntactic information. Meanwhile, syntactic information has been proved to be crucial for the success of NLP applications. However, how to incorporate the syntax trees effectively and efficiently into pre-trained Transformers is still unsettled. In this paper, we address this problem by proposing a novel framework named Syntax-BERT. This framework works in a plug-and-play mode and is applicable to an arbitrary pre-trained checkpoint based on Transformer architecture. Experiments on various datasets of natural language understanding verify the effectiveness of syntax trees and achieve consistent improvement over multiple pre-trained models, including BERT, RoBERTa, and T5.",
+    "citations": 63,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "EACL2021",
+      "arxiv_category": "cs.CL",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

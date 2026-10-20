@@ -1,0 +1,42 @@
+{
+  "paper": {
+    "title": "Advanced Text Analytics -- Graph Neural Network for Fake News Detection in Social Media",
+    "authors": [
+      "Anantram Patel",
+      "Vijay Kumar Sutrakar"
+    ],
+    "year": 2025,
+    "date": "2025-05-23",
+    "venue": "2025 6th International Conference on Control, Communication and Computing (ICCC)",
+    "doi": "10.1109/iccc64910.2025.11077205",
+    "arxiv_id": "2502.16157",
+    "pmid": null,
+    "openalex_id": "W4412963872",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2502.16157",
+    "pdf_url": "https://arxiv.org/pdf/2502.16157v1",
+    "abstract": "Traditional Graph Neural Network (GNN) approaches for fake news detection (FND) often depend on auxiliary, non-textual data such as user interaction histories or content dissemination patterns. However, these data sources are not always accessible, limiting the effectiveness and applicability of such methods. Additionally, existing models frequently struggle to capture the detailed and intricate relationships within textual information, reducing their overall accuracy. In order to address these challenges Advanced Text Analysis Graph Neural Network (ATA-GNN) is proposed in this paper. The proposed model is designed to operate solely on textual data. ATA-GNN employs innovative topic modelling (clustering) techniques to identify typical words for each topic, leveraging multiple clustering dimensions to achieve a comprehensive semantic understanding of the text. This multi-layered design enables the model to uncover intricate textual patterns while contextualizing them within a broader semantic framework, significantly enhancing its interpretative capabilities. Extensive evaluations on widely used benchmark datasets demonstrate that ATA-GNN surpasses the performance of current GNN-based FND methods. These findings validate the potential of integrating advanced text clustering within GNN architectures to achieve more reliable and text-focused detection solutions.",
+    "citations": 3,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_category": "cs.LG",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

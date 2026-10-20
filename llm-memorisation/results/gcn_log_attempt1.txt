@@ -1,0 +1,5 @@
+C:\Users\eva\Desktop\6th semester\Projects\IKT\llm-memorisation\gcn_baseline.py:22: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:855.)
+  return torch.sparse_coo_tensor(ei, w, (n, n)).coalesce()
+S2019 nodes 169343 feat 128 classes 40 train/val/test 90941 29799 600
+  seed 0: val 0.708 test 0.677
+  seed 1: val 0.708 test 0.677

@@ -1,0 +1,294 @@
+{
+  "summary": {
+    "dev": {
+      "baseline": {
+        "targets": 4,
+        "found": 0,
+        "in_top_20": 0,
+        "recall_any": 0.0,
+        "recall_at_20": 0.0
+      },
+      "challenge": {
+        "targets": 4,
+        "found": 2,
+        "in_top_20": 1,
+        "recall_any": 0.5,
+        "recall_at_20": 0.25
+      },
+      "landscape": {
+        "targets": 4,
+        "found": 2,
+        "in_top_20": 1,
+        "recall_any": 0.5,
+        "recall_at_20": 0.25
+      },
+      "full": {
+        "targets": 4,
+        "found": 2,
+        "in_top_20": 1,
+        "recall_any": 0.5,
+        "recall_at_20": 0.25
+      }
+    },
+    "caveat": "Pooled over few topics and few known papers per topic; treat differences of one or two papers as noise. Live results depend on rate limits and index coverage on the day of the run."
+  },
+  "results": [
+    {
+      "id": "upfd-graph-vs-no-graph",
+      "split": "dev",
+      "n_targets": 4,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 71,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 71
+        },
+        "challenge": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "median_rank_of_found": 61.5,
+          "n_retrieved": 262,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": 122,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 262,
+          "expansion_errors": 2
+        },
+        "landscape": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "median_rank_of_found": 18.5,
+          "n_retrieved": 223,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": 3,
+              "found": true,
+              "in_top_k": true,
+              "in_must_read": true
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": 34,
+              "found": true,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false,
+              "in_must_read": false
+            }
+          ],
+          "n": 223,
+          "must_read": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "arxiv_id": "2512.06638",
+              "doi": "10.48550/arxiv.2512.06638"
+            },
+            {
+              "title": "Noise-Filtering Enhanced Graph Transformer for Robust Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.1109/tkde.2026.3677544"
+            },
+            {
+              "title": "Why Text Alone Is Not Enough: An Empirical Analysis of Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.36227/techrxiv.176827249.96394831/v1"
+            },
+            {
+              "title": "The Effects of Text Preprocessing Methods on Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.6798853"
+            },
+            {
+              "title": "DEVELOPMENT OF METHODS FOR DETECTION OF FAKE NEWS BASED ON GRAPH THEORY ANALYSIS",
+              "arxiv_id": null,
+              "doi": "10.28925/2663-4023.2026.32.1110"
+            },
+            {
+              "title": "The PolitiFact-Oslo Corpus: A New Dataset for Fake News Analysis and Detection",
+              "arxiv_id": null,
+              "doi": "10.3390/info14120627"
+            },
+            {
+              "title": "Assessing Reproducibility and Accessibility in Hate Speech and Fake News Detection Datasets: A Literature Review (2023-2024)",
+              "arxiv_id": null,
+              "doi": "10.1109/infoteh64129.2025.10959261"
+            },
+            {
+              "title": "Subject-Independent Sleep Apnea Detection from Single-Lead ECG: A Cross-Attention Network and a Measured Reproducibility Baseline",
+              "arxiv_id": null,
+              "doi": "10.2139/ssrn.7602311"
+            },
+            {
+              "title": "Beyond Reported Accuracy: A Verifiability-Focused, Multi-Axis Review of Content and Context Based Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.62411/jcta.17476"
+            },
+            {
+              "title": "Causal Intervention via Visual–Linguistic Filtering for Multimodal Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.1109/bigdia68682.2025.11383406"
+            },
+            {
+              "title": "Rethinking sketch-based 3D shape retrieval: A simple baseline and benchmark reconstruction",
+              "arxiv_id": null,
+              "doi": "10.1016/j.neucom.2024.128990"
+            },
+            {
+              "title": "Propagation-Based Fake News Detection Using Graph Neural Networks with Transformer",
+              "arxiv_id": null,
+              "doi": "10.1109/gcce53005.2021.9621803"
+            },
+            {
+              "title": "Innovative fake health news detection: Integrating emotional features into graph neural networks",
+              "arxiv_id": null,
+              "doi": "10.59720/25-130"
+            },
+            {
+              "title": "DECOR: Degree-Corrected Social Graph Refinement for Fake News Detection",
+              "arxiv_id": null,
+              "doi": "10.1145/3580305.3599298"
+            },
+            {
+              "title": "Fake News Detection through Graph-based Neural Networks: A Survey",
+              "arxiv_id": null,
+              "doi": "10.21203/rs.3.rs-3252100/v1"
+            },
+            {
+              "title": "Fake News Detection via Graph-Based Markov Chains",
+              "arxiv_id": null,
+              "doi": "10.22541/au.167235021.16154701/v1"
+            }
+          ],
+          "coverage_notes": [
+            "citation expansion had 3 error(s)",
+            "94 of 223 records have no abstract; evidence types for them rest on titles only"
+          ],
+          "bucket_sizes": {
+            "negative_result": 15,
+            "comparison": 48,
+            "reproducibility": 9,
+            "benchmark_critique": 4,
+            "stated_limitation": 19,
+            "survey": 25,
+            "method_proposal": 61
+          }
+        },
+        "full": {
+          "recall_any": 0.5,
+          "recall_at_20": 0.25,
+          "median_rank_of_found": 29.5,
+          "n_retrieved": 289,
+          "hits": [
+            {
+              "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+              "rank": 1,
+              "found": true,
+              "in_top_k": true
+            },
+            {
+              "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+              "rank": 58,
+              "found": true,
+              "in_top_k": false
+            },
+            {
+              "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            },
+            {
+              "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+              "rank": null,
+              "found": false,
+              "in_top_k": false
+            }
+          ]
+        }
+      },
+      "missed_by_all": [
+        "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+        "Enhancing Fake-News Detection with Node-Level Topological Features"
+      ]
+    }
+  ],
+  "sources": [
+    "openalex",
+    "arxiv",
+    "crossref"
+  ],
+  "configs": [
+    "baseline",
+    "challenge",
+    "landscape",
+    "full"
+  ]
+}

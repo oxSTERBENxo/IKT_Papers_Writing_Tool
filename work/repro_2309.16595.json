@@ -1,0 +1,269 @@
+{
+  "resolved": true,
+  "paper": {
+    "title": "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?",
+    "authors": [
+      "Jin Huang",
+      "Xingjian Zhang",
+      "Qiaozhu Mei",
+      "Jiaqi Ma"
+    ],
+    "year": 2023,
+    "date": "2023-09-28",
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv_id": "2309.16595",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/2309.16595",
+    "pdf_url": "https://arxiv.org/pdf/2309.16595v4",
+    "abstract": "Large language models (LLMs) are gaining increasing attention for their capability to process graphs with rich text attributes, especially in a zero-shot fashion. Recent studies demonstrate that LLMs obtain decent text classification performance on common text-rich graph benchmarks, and the performance can be improved by appending encoded structural information as natural languages into prompts. We aim to understand why the incorporation of structural information inherent in graph data can improve the prediction performance of LLMs. First, we rule out the concern of data leakage by curating a novel leakage-free dataset and conducting a comparative analysis alongside a previously widely-used dataset. Second, as past work usually encodes the ego-graph by describing the graph structure in natural language, we ask the question: do LLMs understand the graph structure in accordance with the intent of the prompt designers? Third, we investigate why LLMs can improve their performance after incorporating structural information. Our exploration of these questions reveals that (i) there is no substantial evidence that the performance of LLMs is significantly attributed to data leakage; (ii) instead of understanding prompts as graph structures as intended by the prompt designers, LLMs tend to process prompts more as contextual paragraphs and (iii) the most efficient elements of the local neighborhood included in the prompt are phrases that are pertinent to the node label, rather than the graph structure.",
+    "citations": null,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "Accepted to Transactions on Machine Learning Research (TMLR)",
+      "arxiv_category": "cs.LG"
+    }
+  },
+  "resolution_notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ],
+  "executed": false,
+  "disclaimer": "Automated pre-assessment only. No code was executed and no result was reproduced. 'found' means a file or phrase is present, not that it is complete or correct; 'not_found' means the automated check did not find it, not that it does not exist.",
+  "checklist": {
+    "full_text": {
+      "label": "Full paper publicly available",
+      "status": "verified",
+      "evidence": [
+        "https://arxiv.org/abs/2309.16595"
+      ],
+      "note": null
+    },
+    "code": {
+      "label": "Implementation available",
+      "status": "found",
+      "evidence": [
+        "https://github.com/TRAIS-Lab/LLM-Structured-Data"
+      ],
+      "note": "README cites the paper (official or third-party; check authorship)"
+    },
+    "license": {
+      "label": "Code licence",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No recognised licence; reuse rights are unclear."
+    },
+    "dependencies": {
+      "label": "Dependencies / environment specified",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "data_instructions": {
+      "label": "Dataset access and preprocessing instructions",
+      "status": "found",
+      "evidence": [
+        "README: \"...el_dist.png) ## 2. Unified Dataloader for Datasets and Raw Text ### Download Datasets and Raw Text We provide the dataset and raw text for `arxiv-2023...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "configs": {
+      "label": "Training configuration and hyperparameters",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "training": {
+      "label": "Training entry point",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "seeds": {
+      "label": "Random seeds / determinism controls",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "hardware": {
+      "label": "Hardware requirements stated",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "evaluation": {
+      "label": "Evaluation script or protocol",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "pretrained": {
+      "label": "Pretrained weights or checkpoints",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "reported_results": {
+      "label": "Published results to compare against",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "architecture": {
+      "label": "Model architecture fully specified",
+      "status": "manual_review",
+      "evidence": [],
+      "note": "Not determinable from metadata; read the paper's method and experiment sections."
+    },
+    "maintenance": {
+      "label": "Repository maintenance",
+      "status": "verified",
+      "evidence": [
+        "last push 2023-10-03",
+        "archived: False",
+        "open issues: 0",
+        "issues mentioning reproduction: 0"
+      ],
+      "note": null
+    },
+    "prior_reproductions": {
+      "label": "Existing reproduction attempts",
+      "status": "unavailable",
+      "evidence": [],
+      "note": "Needs an OpenAlex record for the paper, which was not found."
+    }
+  },
+  "code_candidates": [
+    {
+      "repo": "TRAIS-Lab/LLM-Structured-Data",
+      "url": "https://github.com/TRAIS-Lab/LLM-Structured-Data",
+      "relationship": "readme_cites_paper",
+      "checks": {
+        "license": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No recognised licence; reuse rights are unclear."
+        },
+        "dependencies": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "data_instructions": {
+          "status": "found",
+          "evidence": [
+            "README: \"...el_dist.png) ## 2. Unified Dataloader for Datasets and Raw Text ### Download Datasets and Raw Text We provide the dataset and raw text for `arxiv-2023...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "configs": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "training": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "seeds": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "hardware": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "evaluation": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "pretrained": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "reported_results": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "maintenance": {
+          "status": "verified",
+          "evidence": [
+            "last push 2023-10-03",
+            "archived: False",
+            "open issues: 0",
+            "issues mentioning reproduction: 0"
+          ],
+          "note": null
+        }
+      },
+      "errors": [],
+      "exists": true,
+      "stars": 30,
+      "forks": 3,
+      "open_issues": 0,
+      "archived": false,
+      "pushed_at": "2023-10-03T00:20:02Z",
+      "created_at": "2023-09-28T04:33:32Z",
+      "license": null,
+      "language": "Python",
+      "description": null,
+      "is_fork": false,
+      "n_files": 4237,
+      "tree_truncated": false,
+      "readme_chars": 3725,
+      "reproduction_issue_count": 0
+    }
+  ],
+  "huggingface_linked": {
+    "datasets": [],
+    "models": [],
+    "note": "Repos tagged with this arXiv ID. They cite the paper; they are not necessarily the data or weights it used."
+  },
+  "prior_reproduction_candidates": [],
+  "potential_blockers": [],
+  "missing": [
+    "Code licence",
+    "Dependencies / environment specified",
+    "Training configuration and hyperparameters",
+    "Training entry point",
+    "Random seeds / determinism controls",
+    "Hardware requirements stated",
+    "Evaluation script or protocol",
+    "Pretrained weights or checkpoints",
+    "Published results to compare against",
+    "Model architecture fully specified"
+  ],
+  "errors": [
+    {
+      "source": "github",
+      "kind": "rate_limited",
+      "message": "quota exhausted (X-RateLimit-Reset=1792252352). API rate limit exceeded for 146.255.74.195. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+      "status": 403,
+      "step": "github_search: \"Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?\" in:readme,description"
+    }
+  ]
+}

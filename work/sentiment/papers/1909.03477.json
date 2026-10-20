@@ -1,0 +1,44 @@
+{
+  "paper": {
+    "title": "Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks",
+    "authors": [
+      "Chen Zhang",
+      "Qiuchi Li",
+      "Dawei Song"
+    ],
+    "year": 2019,
+    "date": "2019",
+    "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    "doi": "10.18653/v1/d19-1464",
+    "arxiv_id": "1909.03477",
+    "pmid": null,
+    "openalex_id": "W2971220558",
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/1909.03477",
+    "pdf_url": "https://arxiv.org/pdf/1909.03477v2",
+    "abstract": "Due to their inherent capability in semantic alignment of aspects and their context words, attention mechanism and Convolutional Neural Networks (CNNs) are widely applied for aspect-based sentiment classification. However, these models lack a mechanism to account for relevant syntactical constraints and long-range word dependencies, and hence may mistakenly recognize syntactically irrelevant contextual words as clues for judging aspect sentiment. To tackle this problem, we propose to build a Graph Convolutional Network (GCN) over the dependency tree of a sentence to exploit syntactical information and word dependencies. Based on it, a novel aspect-specific sentiment classification framework is raised. Experiments on three benchmarking collections illustrate that our proposed model has comparable effectiveness to a range of state-of-the-art models, and further demonstrate that both syntactical information and long-range word dependencies are properly captured by the graph convolution structure.",
+    "citations": 777,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "openalex"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "11 pages, 4 figures, accepted to EMNLP 2019",
+      "arxiv_category": "cs.CL",
+      "abstract_source": "arxiv"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "constraints": {
+    "field": "NLP and graph theory (graph neural networks for text classification)",
+    "experience": "undergraduate, comfortable with Python",
+    "hardware": "one consumer GPU, 8 GB VRAM",
+    "gpu_vram_gb": 8,
+    "time_budget_weeks": 8,
+    "language": "Python",
+    "difficulty": "moderate",
+    "mode": "any",
+    "defaults_used": [
+      "experience",
+      "hardware",
+      "gpu_vram_gb",
+      "time_budget_weeks",
+      "language",
+      "difficulty",
+      "mode"
+    ]
+  },
+  "candidates": [
+    {
+      "id": "galke2022",
+      "title": "Bag-of-Words vs. Graph vs. Sequence (Galke & Scherp)",
+      "mode": "reproduction",
+      "estimates": {
+        "weeks": 4
+      },
+      "criteria": {
+        "scientific_relevance": {
+          "score": 4,
+          "evidence": [
+            "ACL 2022; 43 citations at retrieval"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "novelty_or_replication_value": {
+          "score": 4,
+          "evidence": [
+            "The result contradicts a line of graph-based work, so independent confirmation is informative"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        "paper_and_code_availability": {
+          "score": 4,
+          "evidence": [
+            "Open access on arXiv",
+            "https://github.com/lgalke/text-clf-baselines (licence MIT, 29 stars, last push 2026-04-21, 0 open issues)",
+            "requirements.txt, pyproject.toml and uv.lock are present"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "dataset_accessibility": {
+          "score": 3,
+          "evidence": [
+            "README sends the user to the TextGCN repository data folder, which responds (HTTP 200)"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "Licence of the benchmark files"
+          ]
+        },
+        "compute_fit": {
+          "score": 4,
+          "evidence": [
+            "The headline model is an MLP on bag-of-words; the BERT comparison is heavier and can be dropped"
+          ],
+          "evidence_level": "estimate",
+          "missing": [
+            "No hardware statement found"
+          ]
+        },
+        "implementation_simplicity": {
+          "score": 4,
+          "evidence": [
+            "Entry points exist: main.py, run_text_classification.py"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "time_fit": {
+          "score": 4,
+          "evidence": [
+            "About 4 weeks"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        "reproducibility": {
+          "score": 2,
+          "evidence": [
+            "No seed or determinism text and no config files were found by the automated check"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "evaluation_clarity": {
+          "score": 3,
+          "evidence": [
+            "Accuracy on standard benchmarks; no results table was detected in the README"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        "low_failure_risk": {
+          "score": 4,
+          "evidence": [
+            "Maintained repository with pinned dependencies"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      },
+      "novelty_evidence": {
+        "closest_read": "abstract",
+        "prior_overlap": "partial"
+      }
+    },
+    {
+      "id": "zhang2020",
+      "title": "TextING (Zhang et al.)",
+      "mode": "reproduction",
+      "estimates": {
+        "weeks": 5
+      },
+      "criteria": {
+        "scientific_relevance": {
+          "score": 4,
+          "evidence": [
+            "316 citations at retrieval"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "novelty_or_replication_value": {
+          "score": 3,
+          "evidence": [
+            "A common baseline in later papers"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        "paper_and_code_availability": {
+          "score": 3,
+          "evidence": [
+            "Open access on arXiv",
+            "https://github.com/CRIPAC-DIG/TextING (licence None, 182 stars, last push 2024-04-25, 15 open issues)",
+            "No licence and no dependency file found"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "dataset_accessibility": {
+          "score": 3,
+          "evidence": [
+            "README describes where corpus and label files go; build_graph.py is present"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "Where to download the corpora; their licence"
+          ]
+        },
+        "compute_fit": {
+          "score": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": [
+            "README says to raise hidden size and batch size 'as long as your memory allows'; no figure is given"
+          ]
+        },
+        "implementation_simplicity": {
+          "score": 3,
+          "evidence": [
+            "train.py with documented command-line options"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        "time_fit": {
+          "score": 3,
+          "evidence": [
+            "About 5 weeks"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        "reproducibility": {
+          "score": 2,
+          "evidence": [
+            "No dependency file and no seed handling found; hyperparameters are command-line flags"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "evaluation_clarity": {
+          "score": 4,
+          "evidence": [
+            "README states the configuration used for the reported results"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "low_failure_risk": {
+          "score": 3,
+          "evidence": [
+            "2 issue(s) mention reproduction"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      },
+      "novelty_evidence": {
+        "closest_read": "abstract",
+        "prior_overlap": "partial"
+      }
+    },
+    {
+      "id": "yao2019",
+      "title": "TextGCN (Yao et al.)",
+      "mode": "reproduction",
+      "estimates": {
+        "weeks": 6
+      },
+      "criteria": {
+        "scientific_relevance": {
+          "score": 5,
+          "evidence": [
+            "2145 citations at retrieval; the reference method of the area"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "novelty_or_replication_value": {
+          "score": 3,
+          "evidence": [
+            "Already re-implemented several times (two third-party repositories were found)"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        "paper_and_code_availability": {
+          "score": 3,
+          "evidence": [
+            "Open access on arXiv",
+            "https://github.com/yao8839836/text_gcn (licence None, 1390 stars, last push 2021-12-29, 112 open issues)",
+            "No licence"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "dataset_accessibility": {
+          "score": 4,
+          "evidence": [
+            "Data folder and preparation scripts are in the repository"
+          ],
+          "evidence_level": "verified",
+          "missing": [
+            "Licence of the benchmark files"
+          ]
+        },
+        "compute_fit": {
+          "score": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": [
+            "No hardware statement found; graph memory on the larger benchmarks is unknown"
+          ]
+        },
+        "implementation_simplicity": {
+          "score": 2,
+          "evidence": [
+            "README requires Python 2.7 or 3.6 and TensorFlow >= 1.4, a legacy stack"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "time_fit": {
+          "score": 3,
+          "evidence": [
+            "About 6 weeks, mostly environment work"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        "reproducibility": {
+          "score": 1,
+          "evidence": [
+            "No dependency file, no seed handling",
+            "5 issues mention reproduction"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "evaluation_clarity": {
+          "score": 4,
+          "evidence": [
+            "README has a 'Reproducing Results' section with the commands"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "low_failure_risk": {
+          "score": 2,
+          "evidence": [
+            "Unmaintained since 2021 with many open issues"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        }
+      },
+      "novelty_evidence": {
+        "closest_read": "abstract",
+        "prior_overlap": "partial"
+      }
+    },
+    {
+      "id": "abdalla2023",
+      "title": "BoW-based neural networks vs. cutting-edge models (Abdalla et al.)",
+      "mode": "reproduction",
+      "blockers": [
+        {
+          "type": "full_text",
+          "description": "No open-access copy of the paper was located, so the method cannot be checked against the code",
+          "evidence": [
+            "Sources list no open-access copy"
+          ]
+        }
+      ],
+      "criteria": {
+        "scientific_relevance": {
+          "score": 3,
+          "evidence": [
+            "Directly related to the bag-of-words versus graph question"
+          ],
+          "evidence_level": "estimate",
+          "missing": []
+        },
+        "paper_and_code_availability": {
+          "score": 1,
+          "evidence": [
+            "https://github.com/aliamer/BoW-Based-Neural-Networks-for-Text-Classification (licence None, 2 stars, last push 2023-06-15, 0 open issues)",
+            "No training or evaluation entry point, dependency file or licence was found"
+          ],
+          "evidence_level": "verified",
+          "missing": []
+        },
+        "dataset_accessibility": {
+          "score": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": [
+            "No dataset instructions found"
+          ]
+        },
+        "compute_fit": {
+          "score": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": [
+            "Unknown"
+          ]
+        },
+        "time_fit": {
+          "score": null,
+          "evidence": [],
+          "evidence_level": null,
+          "missing": [
+            "Unknown"
+          ]
+        }
+      },
+      "novelty_evidence": {
+        "closest_read": "abstract",
+        "prior_overlap": "partial"
+      }
+    }
+  ]
+}

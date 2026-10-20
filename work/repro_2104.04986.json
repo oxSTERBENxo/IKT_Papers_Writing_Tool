@@ -1,0 +1,285 @@
+{
+  "resolved": true,
+  "paper": {
+    "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+    "authors": [
+      "Junqi Dai",
+      "Hang Yan",
+      "Tianxiang Sun",
+      "Peng-Fei Liu",
+      "Xipeng Qiu"
+    ],
+    "year": 2021,
+    "date": "2021",
+    "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    "doi": "10.18653/v1/2021.naacl-main.146",
+    "arxiv_id": "2104.04986",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": "0b7b605a2d6e0cb1e53d1fa03311278e95f99260",
+    "url": "https://www.semanticscholar.org/paper/0b7b605a2d6e0cb1e53d1fa03311278e95f99260",
+    "pdf_url": "https://aclanthology.org/2021.naacl-main.146.pdf",
+    "abstract": "Aspect-based Sentiment Analysis (ABSA), aiming at predicting the polarities for aspects, is a fine-grained task in the field of sentiment analysis. Previous work showed syntactic information, e.g. dependency trees, can effectively improve the ABSA performance. Recently, pre-trained models (PTMs) also have shown their effectiveness on ABSA. Therefore, the question naturally arises whether PTMs contain sufficient syntactic information for ABSA so that we can obtain a good ABSA model only based on PTMs. In this paper, we firstly compare the induced trees from PTMs and the dependency parsing trees on several popular models for the ABSA task, showing that the induced tree from fine-tuned RoBERTa (FT-RoBERTa) outperforms the parser-provided tree. The further analysis experiments reveal that the FT-RoBERTa Induced Tree is more sentiment-word-oriented and could benefit the ABSA task. The experiments also show that the pure RoBERTa-based model can outperform or approximate to the previous SOTA performances on six datasets across four languages since it implicitly incorporates the task-oriented syntactic information.",
+    "citations": 197,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv",
+      "crossref",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "abstract_source": "arxiv",
+      "arxiv_comment": "Accepted by NAACL 2021",
+      "arxiv_category": "cs.CL"
+    }
+  },
+  "resolution_notes": [
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    }
+  ],
+  "executed": false,
+  "disclaimer": "Automated pre-assessment only. No code was executed and no result was reproduced. 'found' means a file or phrase is present, not that it is complete or correct; 'not_found' means the automated check did not find it, not that it does not exist.",
+  "checklist": {
+    "full_text": {
+      "label": "Full paper publicly available",
+      "status": "verified",
+      "evidence": [
+        "https://arxiv.org/abs/2104.04986"
+      ],
+      "note": null
+    },
+    "code": {
+      "label": "Implementation available",
+      "status": "found",
+      "evidence": [
+        "https://github.com/ROGERDJQ/RoBERTaABSA"
+      ],
+      "note": "linked from the paper's own metadata (likely official)"
+    },
+    "license": {
+      "label": "Code licence",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No recognised licence; reuse rights are unclear."
+    },
+    "dependencies": {
+      "label": "Dependencies / environment specified",
+      "status": "found",
+      "evidence": [
+        "README: \"...## Dependencies We recommend to create a virtual environment. ``` conda create -n absa conda activate absa ``` packages: - python 3.7 - pytorch 1....\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "data_instructions": {
+      "label": "Dataset access and preprocessing instructions",
+      "status": "found",
+      "evidence": [
+        "file: Perturbed-Masking/preprocess.py"
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "configs": {
+      "label": "Training configuration and hyperparameters",
+      "status": "found",
+      "evidence": [
+        "README: \"...ing the readme description in corresponding folders. ## Notes - The learning rate in the paper was written incorrectly and should be corrected to 2e-5...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "training": {
+      "label": "Training entry point",
+      "status": "found",
+      "evidence": [
+        "file: ASGCN/train.py",
+        "file: PWCN/train.py",
+        "file: RGAT/run.py",
+        "file: RGAT/trainer.py",
+        "file: Train/finetune.py"
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "seeds": {
+      "label": "Random seeds / determinism controls",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "hardware": {
+      "label": "Hardware requirements stated",
+      "status": "not_found",
+      "evidence": [],
+      "note": "Not found in a repository; check the paper and its appendix."
+    },
+    "evaluation": {
+      "label": "Evaluation script or protocol",
+      "status": "found",
+      "evidence": [
+        "file: ASGCN/infer.py",
+        "file: PWCN/infer.py",
+        "file: Perturbed-Masking/dependency/evaluation.py",
+        "README: \"...et in the implementation of our experiment, we use validation set to evaluate performance of different induced trees. ## Reference If you find th...\""
+      ],
+      "note": "Presence only; read it to confirm it is complete."
+    },
+    "pretrained": {
+      "label": "Pretrained weights or checkpoints",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "reported_results": {
+      "label": "Published results to compare against",
+      "status": "not_found",
+      "evidence": [],
+      "note": "No matching file or README text."
+    },
+    "architecture": {
+      "label": "Model architecture fully specified",
+      "status": "manual_review",
+      "evidence": [],
+      "note": "Not determinable from metadata; read the paper's method and experiment sections."
+    },
+    "maintenance": {
+      "label": "Repository maintenance",
+      "status": "verified",
+      "evidence": [
+        "last push 2023-03-08",
+        "archived: False",
+        "open issues: 2",
+        "issues mentioning reproduction: 2"
+      ],
+      "note": null
+    },
+    "prior_reproductions": {
+      "label": "Existing reproduction attempts",
+      "status": "unavailable",
+      "evidence": [],
+      "note": "Needs an OpenAlex record for the paper, which was not found."
+    }
+  },
+  "code_candidates": [
+    {
+      "repo": "ROGERDJQ/RoBERTaABSA",
+      "url": "https://github.com/ROGERDJQ/RoBERTaABSA",
+      "relationship": "linked_by_paper",
+      "checks": {
+        "license": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No recognised licence; reuse rights are unclear."
+        },
+        "dependencies": {
+          "status": "found",
+          "evidence": [
+            "README: \"...## Dependencies We recommend to create a virtual environment. ``` conda create -n absa conda activate absa ``` packages: - python 3.7 - pytorch 1....\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "data_instructions": {
+          "status": "found",
+          "evidence": [
+            "file: Perturbed-Masking/preprocess.py"
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "configs": {
+          "status": "found",
+          "evidence": [
+            "README: \"...ing the readme description in corresponding folders. ## Notes - The learning rate in the paper was written incorrectly and should be corrected to 2e-5...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "training": {
+          "status": "found",
+          "evidence": [
+            "file: ASGCN/train.py",
+            "file: PWCN/train.py",
+            "file: RGAT/run.py",
+            "file: RGAT/trainer.py",
+            "file: Train/finetune.py"
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "seeds": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "hardware": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "evaluation": {
+          "status": "found",
+          "evidence": [
+            "file: ASGCN/infer.py",
+            "file: PWCN/infer.py",
+            "file: Perturbed-Masking/dependency/evaluation.py",
+            "README: \"...et in the implementation of our experiment, we use validation set to evaluate performance of different induced trees. ## Reference If you find th...\""
+          ],
+          "note": "Presence only; read it to confirm it is complete."
+        },
+        "pretrained": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "reported_results": {
+          "status": "not_found",
+          "evidence": [],
+          "note": "No matching file or README text."
+        },
+        "maintenance": {
+          "status": "verified",
+          "evidence": [
+            "last push 2023-03-08",
+            "archived: False",
+            "open issues: 2",
+            "issues mentioning reproduction: 2"
+          ],
+          "note": null
+        }
+      },
+      "errors": [],
+      "exists": true,
+      "stars": 131,
+      "forks": 22,
+      "open_issues": 2,
+      "archived": false,
+      "pushed_at": "2023-03-08T08:57:51Z",
+      "created_at": "2021-04-01T10:34:19Z",
+      "license": null,
+      "language": "Python",
+      "description": "Implementation of paper  Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa.",
+      "is_fork": false,
+      "n_files": 95,
+      "tree_truncated": false,
+      "readme_chars": 6005,
+      "reproduction_issue_count": 2
+    }
+  ],
+  "huggingface_linked": {
+    "datasets": [],
+    "models": [],
+    "note": "Repos tagged with this arXiv ID. They cite the paper; they are not necessarily the data or weights it used."
+  },
+  "prior_reproduction_candidates": [],
+  "potential_blockers": [],
+  "missing": [
+    "Code licence",
+    "Random seeds / determinism controls",
+    "Hardware requirements stated",
+    "Pretrained weights or checkpoints",
+    "Published results to compare against",
+    "Model architecture fully specified"
+  ],
+  "errors": []
+}

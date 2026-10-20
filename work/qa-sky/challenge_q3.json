@@ -1,0 +1,3563 @@
+{
+  "claim": "Whether a frequency-encoded constellation visualization of clustered student questions helps instructors identify the most widely shared questions faster and more accurately than a ranked list",
+  "queries": [
+    "visualization student questions instructor",
+    "real-time classroom dashboard visualization questions",
+    "instructor dashboard student confusion visualization",
+    "question cluster visualization user study",
+    "teacher orchestration dashboard evaluation"
+  ],
+  "design_elements": [
+    "ranked list baseline",
+    "task completion time and accuracy",
+    "within-subjects user study"
+  ],
+  "design_queries": [
+    "ranked list baseline frequency-encoded constellation visualization",
+    "task completion time and accuracy frequency-encoded constellation visualization",
+    "within-subjects user study frequency-encoded constellation visualization"
+  ],
+  "anchor": "frequency-encoded constellation visualization",
+  "seeds": [],
+  "sources_ok": [
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [],
+  "sources_status": {
+    "arxiv": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 46,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "crossref": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 200,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 200,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "query_diversity": {
+    "n_queries": 5,
+    "distinct_terms": 14,
+    "mean_pairwise_term_overlap": 0.192,
+    "near_paraphrases": false
+  },
+  "n_papers_examined": 269,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 11,
+  "n_without_abstract": 88,
+  "n_from_citation_expansion": 25,
+  "n_possible_same_design": 0,
+  "n_design_matches_off_topic": 1,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "ceiling_lowered_because": [
+    "citation expansion partly failed (4 call(s): not_found)",
+    "40% of the ten closest records have no abstract"
+  ],
+  "interpretation": "No closely worded paper was retrieved, but only 1 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Ranked-List Visualization",
+        "authors": [
+          "Pranathi Mylavarapu",
+          "Adil Yalcin",
+          "Xan Gregg",
+          "Niklas Elmqvist"
+        ],
+        "year": 2019,
+        "date": "2019-05-02",
+        "venue": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems",
+        "doi": "10.1145/3290605.3300422",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/3290605.3300422",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 26,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "ranked list baseline frequency-encoded constellation visualization",
+            "position": 3
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.429,
+            "title_match": 0.429,
+            "retrieval_hits": 1,
+            "score": 1.518
+          }
+        }
+      },
+      "term_overlap": 0.145,
+      "tfidf_similarity": 0.362,
+      "design_elements_matched": [
+        "ranked list baseline"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Ranked-List Proportional Representation",
+        "authors": [
+          "Nicholas Stephanopoulos"
+        ],
+        "year": 2025,
+        "date": "2025",
+        "venue": null,
+        "doi": "10.2139/ssrn.5099845",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2139/ssrn.5099845",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "ranked list baseline frequency-encoded constellation visualization",
+            "position": 6
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.286,
+            "title_match": 0.286,
+            "retrieval_hits": 1,
+            "score": 0.982
+          }
+        }
+      },
+      "term_overlap": 0.124,
+      "tfidf_similarity": 0.233,
+      "design_elements_matched": [
+        "ranked list baseline"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Comparing Explanatory and Exploratory Explainable User Interfaces for AI-Supported Clinical Decision-Making: A Within-Subjects Study with Healthcare Professionals (Preprint)",
+        "authors": [
+          "Kent Fredriksdotter",
+          "Alejandro Kuratomi",
+          "Luis Quintero"
+        ],
+        "year": 2026,
+        "date": "2026-06-15",
+        "venue": null,
+        "doi": "10.2196/preprints.104490",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2196/preprints.104490",
+        "pdf_url": null,
+        "abstract": "BACKGROUND Explainable user interfaces (XUIs) for AI-supported clinical decision support systems aim to make model predictions interpretable for clinicians. Two paradigms have emerged: Explanatory XUIs, which deliver static feature-importance summaries and clinical interpretation text and Exploratory XUIs,providing interactive, multi-modal model interrogation. Despite growing interest, empirical evidence comparing both paradigms on decision accuracy, automation bias, and appropriate skepticism in clinicians using a fully automated AI system with deliberately embedded incorrect predictions remains limited. OBJECTIVE To compare an Explanatory and an Exploratory XUI for AI-supported sepsis risk assessment on decision performance, reliance behavior, user experience, and trust across clinicians. METHODS A within-subjects counterbalanced study was conducted with N=17 clinicians (6 physicians, 7 nurses/paramedics, 4 other healthcare professionals; varying intensive care unit (ICU) experience). Participants evaluated three patient cases per XUI condition using SepsisVision, a sepsis risk prediction system, each containing two correct (TP, TN) and one incorrect (FP or FN) prediction. Primary outcomes were post-AI decision accuracy, automation bias, and appropriate skepticism. Secondary outcomes included SUS usability, NASA-TLX workload, task time, trust, explanation satisfaction, and confidence. Within-person XUI comparisons used Wilcoxon signed-rank tests and between-subgroup comparisons (ICU vs. No ICU) used Mann-Whitney U tests, with effect sizes reported as r = |Z|/√N. Binary reliance outcomes were reported descriptively; sepsis experience was examined using Spearman rank correlation. Think-aloud protocols and follow-up discussions were analyzed thematically. RESULTS The Explanatory XUI achieved higher usability (SUS M=85.9 vs. M=71.3, P&lt;.001, r=.898), lower cognitive workload (P=.008, r=.659), and shorter task time (P=.005, r=.687). Post-AI decision accuracy did not differ between conditions (Explanatory M=72.5% vs. Exploratory M=74.5%; P=.756). This stability masked offsetting movements, as accuracy rose on AI-correct cases but fell on AI-incorrect cases (largest drop: Exploratory XUI (FP), -40%), reflecting movement toward the AI regardless of correctness. Automation bias occurred in both conditions (Explanatory 4/17, 23.5%; Exploratory 5/17, 29.4%). Appropriate skepticism was higher with the Explanatory XUI overall (64.7% vs. 47.1%), but moderated by ICU experience. ICU-experienced participants resisted the incorrect recommendation under both interfaces (appropriate skepticism 85.7%), whereas less-experienced participants showed reduced skepticism under the Exploratory XUI (50.0% to 20.0%). Post-AI confidence increased significantly in the Exploratory condition (P=.008, r=.84) but not the Explanatory condition, without accuracy gains in less-experienced users. Sepsis experience correlated strongly with appropriate skepticism in the Exploratory condition (r=+.820, P&lt;.001). CONCLUSIONS Average performance was equivalent across XUI types, but the two interfaces diverged by clinical expertise: the Exploratory XUI degraded appropriate skepticism among less-experienced clinicians and raised confidence without improving accuracy, consistent with miscalibrated reliance, while experienced clinicians were unaffected. Because most predictions were correct, this risk was invisible in aggregate accuracy. XUI designs that default to structured, low-burden explanations with progressive access to interactive features are recommended for mixed-expertise settings. CLINICALTRIAL Dnr 2022-01929-01 Etiksprövningsmyndigheten.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "within-subjects user study frequency-encoded constellation visualization",
+            "position": 7
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.429,
+            "title_match": 0.429,
+            "retrieval_hits": 1,
+            "score": 1.411
+          }
+        }
+      },
+      "term_overlap": 0.042,
+      "tfidf_similarity": 0.005,
+      "design_elements_matched": [
+        "task completion time and accuracy",
+        "within-subjects user study"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Supplemental Information 5: Ranked gene list for BSG-based GSEA",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.7717/peerj.20467/supp-5",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.7717/peerj.20467/supp-5",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "component",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "ranked list baseline frequency-encoded constellation visualization",
+            "position": 9
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.286,
+            "title_match": 0.286,
+            "retrieval_hits": 1,
+            "score": 0.982
+          }
+        }
+      },
+      "term_overlap": 0.124,
+      "tfidf_similarity": 0.167,
+      "design_elements_matched": [
+        "ranked list baseline"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Table S3: GSEA ranked gene list for FDMI",
+        "authors": [],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.7717/peerj.5048/supp-4",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.7717/peerj.5048/supp-4",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "component",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "ranked list baseline frequency-encoded constellation visualization",
+            "position": 5
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.286,
+            "title_match": 0.286,
+            "retrieval_hits": 1,
+            "score": 0.982
+          }
+        }
+      },
+      "term_overlap": 0.124,
+      "tfidf_similarity": 0.163,
+      "design_elements_matched": [
+        "ranked list baseline"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Characterization and Effects of CS2 Learning with GenAI, Visualization, and Human Support",
+        "authors": [
+          "Quinton Yong",
+          "Anthony Estey",
+          "Miguel Nacenta"
+        ],
+        "year": 2026,
+        "date": "2026-06-01",
+        "venue": "arXiv",
+        "doi": "10.1145/3765964.3811663",
+        "arxiv_id": "2606.02933",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2606.02933",
+        "pdf_url": "https://arxiv.org/pdf/2606.02933v1",
+        "abstract": "Generative AI (GenAI) is becoming a widely adopted learning support tool for both students and instructors, as it offers benefits such as personalized tutoring and scaffolded learning. However, recent research highlights potential drawbacks such as overreliance and metacognitive issues, especially in novice programmers. Most prior work focuses on introductory programming courses, and important questions remain about the underlying mechanisms behind the negative effects of GenAI and if findings can be generalized when students learn more advanced computer science concepts. To address this gap, we conducted a mixed-methods study comparing student interactions with GenAI to two traditional learning supports in a second-year algorithms course: algorithm visualization (AV) and human live tutoring (LT). Twelve students participated in three 90-minute study sessions focusing on sorting, tree, and graph algorithms. We recorded gaze and interaction data, and each session concluded with a test assessing their conceptual understanding of the topic. Our analysis classifies when during the problem-solving process participants sought help, and compares the interaction patterns across the three learning supports. Although GenAI produced a larger increase in self-efficacy compared to live tutoring, it was associated with noticeably lower results in learning outcomes. We found that participants did not use algorithm visualizations effectively, faced usage barriers when using GenAI to learn advanced topics, and that live tutoring yielded the highest learning outcomes.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "visualization student questions instructor",
+            "position": 6
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "visualization student questions instructor",
+            "position": 5
+          }
+        ],
+        "extra": {
+          "arxiv_comment": "Accepted at the ACM Conference on International Computing Education Research (ICER 2026)",
+          "arxiv_category": "cs.HC",
+          "abstract_source": "arxiv",
+          "rank": {
+            "query_match": 1.0,
+            "title_match": 0.25,
+            "retrieval_hits": 1,
+            "score": 2.375
+          }
+        }
+      },
+      "term_overlap": 0.303,
+      "tfidf_similarity": 0.094,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "A Review and Collation of Graphical Perception Knowledge for Visualization Recommendation",
+        "authors": [
+          "Ze-Hua Zeng",
+          "L. Battle"
+        ],
+        "year": 2021,
+        "date": "2021-09-03",
+        "venue": "International Conference on Human Factors in Computing Systems",
+        "doi": "10.1145/3544548.3581349",
+        "arxiv_id": "2109.01271",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "1ce7b6da1c80ca9e8b53d985a1eed4a33fd035df",
+        "url": "https://www.semanticscholar.org/paper/1ce7b6da1c80ca9e8b53d985a1eed4a33fd035df",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3544548.3581349",
+        "abstract": "Selecting appropriate visual encodings is critical to designing effective visualization recommendation systems, yet few findings from graphical perception are typically applied within these systems. We observe two significant limitations in translating graphical perception knowledge into actionable visualization recommendation rules/constraints: inconsistent reporting of findings and a lack of shared data across studies. How can we translate the graphical perception literature into a knowledge base for visualization recommendation? We present a review of 59 papers that study user perception and performance across ten visual analysis tasks. Through this study, we contribute a JSON dataset that collates existing theoretical and experimental knowledge and summarizes key study outcomes in graphical perception. We illustrate how this dataset can inform automated encoding decisions with three representative visualization recommendation systems. Based on our findings, we highlight open challenges and opportunities for the community in collating graphical perception knowledge for a range of visualization recommendation scenarios.",
+        "citations": 38,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1145/3290605.3300422"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.086,
+      "tfidf_similarity": 0.043,
+      "design_elements_matched": [
+        "within-subjects user study"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "MemoVis: A GenAI-Powered Tool for Creating Companion Reference Images for 3D Design Feedback",
+        "authors": [
+          "Chen Chen",
+          "Cuong Nguyen",
+          "Thibault Groueix",
+          "Vladimir G. Kim",
+          "Nadir Weibel"
+        ],
+        "year": 2024,
+        "date": "2024-09-09",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2409.06082",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2409.06082",
+        "pdf_url": null,
+        "abstract": "Providing asynchronous feedback is a critical step in the 3D design workflow. A common approach to providing feedback is to pair textual comments with companion reference images, which helps illustrate the gist of text. Ideally, feedback providers should possess 3D and image editing skills to create reference images that can effectively describe what they have in mind. However, they often lack such skills, so they have to resort to sketches or online images which might not match well with the current 3D design. To address this, we introduce MemoVis, a text editor interface that assists feedback providers in creating reference images with generative AI driven by the feedback comments. First, a novel real-time viewpoint suggestion feature, based on a vision-language foundation model, helps feedback providers anchor a comment with a camera viewpoint. Second, given a camera viewpoint, we introduce three types of image modifiers, based on pre-trained 2D generative models, to turn a text comment into an updated version of the 3D scene from that viewpoint. We conducted a within-subjects study with feedback providers, demonstrating the effectiveness of MemoVis. The quality and explicitness of the companion images were evaluated by another eight participants with prior 3D design experience.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "visualization student questions instructor review",
+            "position": 6
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.333,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 0.792
+          }
+        }
+      },
+      "term_overlap": 0.05,
+      "tfidf_similarity": 0.024,
+      "design_elements_matched": [
+        "within-subjects user study"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Voltix: A Web-Based Real-Time IoT Sensor Monitoring and Visualization Dashboard",
+        "authors": [
+          "Chittimenu Ganesh",
+          "Peddi Satya Naga Lovaraju",
+          "Lokesh Gundoju"
+        ],
+        "year": 2026,
+        "date": "2026-09-22",
+        "venue": null,
+        "doi": "10.22541/essoar.15009301/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.22541/essoar.15009301/v1",
+        "pdf_url": null,
+        "abstract": "Verifying that a newly wired sensor is functioning correctly is a recurring source of friction in student and hobbyist embedded-systems projects. In the absence of a dedicated visualization layer, developers typically fall back on a serial monitor, which offers only scrolling numeric text, no immediate visual feedback, no straightforward way to compare multiple sensors, and no mechanism for flagging anomalous readings or exporting results for a report. This paper presents Voltix, a browser-based dashboard for real-time acquisition, visualization, and logging of data from microcontrollerconnected sensors. Voltix connects directly to a microcontroller over USB from within the browser using the Web Serial API, eliminating the need for platform-specific drivers or a companion desktop application. Incoming readings are rendered as live, continuously updating charts using ApexCharts, with support for multiple concurrent sensor streams, user-configurable alert thresholds, per-user data isolation through Firebase Authentication and Firestore, and CSV export for offline analysis. The system was demonstrated using a DS18B20 digital temperature sensor and an HC-SR04 ultrasonic distance sensor connected to an Arduino Uno. Results show that both sensors streamed data to the dashboard without any driver installation, that live charts allowed rapid visual confirmation of correct sensor behaviour, and that configured thresholds correctly flagged out-of-range readings. Voltix demonstrates that a browsernative approach can meaningfully reduce the setup overhead that often dominates small IoT and embedded coursework projects.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "real-time classroom dashboard visualization questions",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "real-time classroom dashboard visualization questions survey",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "real-time classroom dashboard visualization questions review",
+            "position": 1
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "real-time classroom dashboard visualization questions",
+            "position": 1
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 3,
+            "score": 2.375
+          }
+        }
+      },
+      "term_overlap": 0.051,
+      "tfidf_similarity": 0.013,
+      "design_elements_matched": [
+        "within-subjects user study"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Task Mode: Dynamic Filtering for Task-Specific Web Navigation using LLMs",
+        "authors": [
+          "Ananya Gubbi Mohanbabu",
+          "Yotam Sechayk",
+          "Amy Pavel"
+        ],
+        "year": 2025,
+        "date": "2025-07-19",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2507.14769",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2507.14769",
+        "pdf_url": null,
+        "abstract": "Modern web interfaces are unnecessarily complex to use as they overwhelm users with excessive text and visuals unrelated to their current goals. This problem particularly impacts screen reader users (SRUs), who navigate content sequentially and may spend minutes traversing irrelevant elements before reaching desired information compared to vision users (VUs) who visually skim in seconds. We present Task Mode, a system that dynamically filters web content based on user-specified goals using large language models to identify and prioritize relevant elements while minimizing distractions. Our approach preserves page structure while offering multiple viewing modes tailored to different access needs. Our user study with 12 participants (6 VUs, 6 SRUs) demonstrates that our approach reduced task completion time for SRUs while maintaining performance for VUs, decreasing the completion time gap between groups from 2x to 1.2x. 11 of 12 participants wanted to use Task Mode in the future, reporting that Task Mode supported completing tasks with less effort and fewer distractions. This work demonstrates how designing new interactions simultaneously for visual and non-visual access can reduce rather than reinforce accessibility disparities in future technology created by human-computer interaction researchers and practitioners.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "task completion time and accuracy frequency-encoded constellation visualization",
+            "position": 1
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.375,
+            "title_match": 0.125,
+            "retrieval_hits": 1,
+            "score": 1.0
+          }
+        }
+      },
+      "term_overlap": 0.047,
+      "tfidf_similarity": 0.013,
+      "design_elements_matched": [
+        "task completion time and accuracy"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "YTCommentQA: Video Question Answerability in Instructional Videos",
+        "authors": [
+          "Saelyne Yang",
+          "Sunghyun Park",
+          "Yunseok Jang",
+          "Moontae Lee"
+        ],
+        "year": 2024,
+        "date": "2024-01-30",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2401.17343",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2401.17343",
+        "pdf_url": null,
+        "abstract": "Instructional videos provide detailed how-to guides for various tasks, with viewers often posing questions regarding the content. Addressing these questions is vital for comprehending the content, yet receiving immediate answers is difficult. While numerous computational models have been developed for Video Question Answering (Video QA) tasks, they are primarily trained on questions generated based on video content, aiming to produce answers from within the content. However, in real-world situations, users may pose questions that go beyond the video's informational boundaries, highlighting the necessity to determine if a video can provide the answer. Discerning whether a question can be answered by video content is challenging due to the multi-modal nature of videos, where visual and verbal information are intertwined. To bridge this gap, we present the YTCommentQA dataset, which contains naturally-generated questions from YouTube, categorized by their answerability and required modality to answer -- visual, script, or both. Experiments with answerability classification tasks demonstrate the complexity of YTCommentQA and emphasize the need to comprehend the combined role of visual and script information in video reasoning. The dataset is available at https://github.com/lgresearch/YTCommentQA.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "visualization student questions instructor",
+            "position": 6
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "visualization student questions instructor review",
+            "position": 8
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "visualization student questions instructor",
+            "position": 6
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.25,
+            "retrieval_hits": 2,
+            "score": 1.5
+          }
+        }
+      },
+      "term_overlap": 0.026,
+      "tfidf_similarity": 0.031,
+      "design_elements_matched": [
+        "within-subjects user study"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Using Choice to Increase Time On-Task, Task-Completion, and Accuracy for Students with Emotional/Behavior Disorders in a Residential Facility",
+        "authors": [
+          "Michelle L. Ramsey",
+          "Kristine Jolivette",
+          "DaShaunda Puckett Patterson",
+          "Christina Kennedy"
+        ],
+        "year": 2009,
+        "date": "2009",
+        "venue": "Education and Treatment of Children",
+        "doi": "10.1353/etc.0.0085",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1353/etc.0.0085",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 41,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "task completion time and accuracy frequency-encoded constellation visualization",
+            "position": 8
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.747
+          }
+        }
+      },
+      "term_overlap": 0.03,
+      "tfidf_similarity": 0.025,
+      "design_elements_matched": [
+        "task completion time and accuracy"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Trade-Off between Task Accuracy, Task Completion Time and Naturalness for Direct Object Manipulation in Virtual Reality",
+        "authors": [
+          "Jari Kangas",
+          "Sriram Kishore Kumar",
+          "Helena Mehtonen",
+          "Jorma Järnstedt",
+          "Roope Raisamo"
+        ],
+        "year": 2022,
+        "date": "2022-01-10",
+        "venue": "Multimodal Technologies and Interaction",
+        "doi": "10.3390/mti6010006",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/mti6010006",
+        "pdf_url": null,
+        "abstract": "Virtual reality devices are used for several application domains, such as medicine, entertainment, marketing and training. A handheld controller is the common interaction method for direct object manipulation in virtual reality environments. Using hands would be a straightforward way to directly manipulate objects in the virtual environment if hand-tracking technology were reliable enough. In recent comparison studies, hand-based systems compared unfavorably against the handheld controllers in task completion times and accuracy. In our controlled study, we compare these two interaction techniques with a new hybrid interaction technique which combines the controller tracking with hand gestures for a rigid object manipulation task. The results demonstrate that the hybrid interaction technique is the most preferred because it is intuitive, easy to use, fast, reliable and it provides haptic feedback resembling the real-world object grab. This suggests that there is a trade-off between naturalness, task accuracy and task completion time when using these direct manipulation interaction techniques, and participants prefer to use interaction techniques that provide a balance between these three factors.",
+        "citations": 42,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "task completion time and accuracy frequency-encoded constellation visualization",
+            "position": 4
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.748
+          }
+        }
+      },
+      "term_overlap": 0.042,
+      "tfidf_similarity": 0.011,
+      "design_elements_matched": [
+        "task completion time and accuracy"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Tracking User Interactions Within Visualizations",
+        "authors": [
+          "D.P. Groth",
+          "B.W. Murphy"
+        ],
+        "year": null,
+        "date": null,
+        "venue": "IEEE Symposium on Information Visualization",
+        "doi": "10.1109/infvis.2004.67",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/infvis.2004.67",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "within-subjects user study frequency-encoded constellation visualization",
+            "position": 2
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.429,
+            "title_match": 0.429,
+            "retrieval_hits": 1,
+            "score": 1.411
+          }
+        }
+      },
+      "term_overlap": 0.021,
+      "tfidf_similarity": 0.032,
+      "design_elements_matched": [
+        "within-subjects user study"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Are Agents Ready to Teach? A Multi-Stage Benchmark for Real-World Teaching Workflows",
+        "authors": [
+          "Zixin Chen",
+          "Peng Liu",
+          "Rui Sheng",
+          "Haobo Li",
+          "Jianhong Tu",
+          "Xiaodong Deng",
+          "Kashun Shum",
+          "Dayiheng Liu",
+          "Huamin Qu"
+        ],
+        "year": 2026,
+        "date": "2026-05-20",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2605.14322",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2605.14322",
+        "pdf_url": null,
+        "abstract": "Language agents are increasingly deployed in complex professional workflows, with tutoring emerging as a particularly high-stakes capability that remains largely unmeasured in existing benchmarks. Effective tutor agents require more than producing correct answers or executing accurate tool calls: a robust tutor must diagnose learner state, adapt support over time, make pedagogically justified decisions grounded in educational evidence, and execute interventions within realistic learning-management systems. We introduce EduAgentBench, a source-grounded benchmark for holistically evaluating tutor agents across the full scope of teaching work. It contains 150 quality-controlled tasks across three capability surfaces: professional pedagogical judgment, situated multi-turn tutoring, and Canvas-style teaching workflow completion. Tasks are constructed through a pedagogical-insight-driven pipeline and evaluated with complementary verification signals and human review. Across a comprehensive evaluation of frontier models, our findings reveal that current models are generally capable of bounded pedagogical judgment, but still fall short of professional teaching standards in situated tutoring and autonomous teaching-workflow execution. To our knowledge, EduAgentBench is the first theory-grounded and realistic benchmark for evaluating the holistic teaching capability of tutor agents, providing a measurement foundation for developing future tutor agents that can support realistic teaching work.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "teacher orchestration dashboard evaluation",
+            "position": 8
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "teacher orchestration dashboard evaluation review",
+            "position": 8
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "teacher orchestration dashboard evaluation",
+            "position": 7
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.333,
+            "title_match": 0.167,
+            "retrieval_hits": 2,
+            "score": 1.083
+          }
+        }
+      },
+      "term_overlap": 0.03,
+      "tfidf_similarity": 0.007,
+      "design_elements_matched": [
+        "task completion time and accuracy"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Usability evaluation of IOT based HVAC dashboard",
+        "authors": [
+          "Rubina Shrestha"
+        ],
+        "year": null,
+        "date": null,
+        "venue": null,
+        "doi": "10.58837/chula.the.2023.88",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.58837/chula.the.2023.88",
+        "pdf_url": null,
+        "abstract": "This thesis presents a usability evaluation of a smart Heating, Ventilation, and Air Conditioning (HVAC) dashboard interface through a cross-cultural study. The objective is to assess the usability problems and evaluate the user experience of the interface through quantitative and qualitative analysis. The study recruited 20 participants from three different countries, considering their familiarity and unfamiliarity with smart HVAC systems. The participants performed a set of tasks using the dashboard while providing think-aloud feedback. The quantitative evaluation measured effectiveness, efficiency, and user satisfaction based on the ISO:9241-11:2018, while the qualitative evaluation focused on identifying usability issues based on participant feedback and comparing them against established UI design heuristics. The results revealed challenges in task completion, particularly for tasks 2, 7, and 8. The time-based efficiency and post-task satisfaction scores also indicated issues with the current design. The qualitative analysis highlighted problems related to system status visibility, consistency, real world match, and lack of helpful information. The findings suggest potential improvements to the interface design, such as enhancing the landing page, using consistent titles, avoiding jargon, providing explanatory tooltips, and implementing better data filtering options. Despite more familiarity of usage of smart systems among Chinese and Thai, it is found that challenges are faced by participants of all nationalities and not just Nepalese which indicates a bad UI of the dashboard. Overall, this study contributes to understanding the usability challenges of smart HVAC dashboards by conducting a cross-cultural usability study and provides insights for enhancing user experience and system performance.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "dissertation",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "teacher orchestration dashboard evaluation",
+            "position": 7
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "teacher orchestration dashboard evaluation survey",
+            "position": 10
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "teacher orchestration dashboard evaluation review",
+            "position": 7
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 1.875
+          }
+        }
+      },
+      "term_overlap": 0.03,
+      "tfidf_similarity": 0.006,
+      "design_elements_matched": [
+        "task completion time and accuracy"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Efficient Onboard Vision-Language Inference in UAV-Enabled Low-Altitude Economy Networks via LLM-Enhanced Optimization",
+        "authors": [
+          "Yang Li",
+          "Ruichen Zhang",
+          "Yinqiu Liu",
+          "Guangyuan Liu",
+          "Abbas Jamalipour",
+          "Xianbin Wang",
+          "Dong In Kim"
+        ],
+        "year": 2025,
+        "date": "2025-10-11",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2510.10028",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2510.10028",
+        "pdf_url": "https://arxiv.org/pdf/2510.10028v2",
+        "abstract": "The rapid advancement of Low-Altitude Economy Networks (LAENets) has enabled a variety of applications, including aerial surveillance, environmental sensing, and semantic data collection. To support these scenarios, unmanned aerial vehicles (UAVs) equipped with onboard vision-language models (VLMs) offer a promising solution for real-time multimodal inference. However, ensuring both inference accuracy and communication efficiency remains a significant challenge due to limited onboard resources and dynamic network conditions. In this paper, we first propose a UAV-enabled LAENet system model that jointly captures UAV mobility, user-UAV communication, and the onboard visual question answering (VQA) pipeline. Based on this model, we formulate a mixed-integer non-convex optimization problem to minimize task latency and power consumption under user-specific accuracy constraints. To solve the problem, we design a hierarchical optimization framework composed of two parts: (i) an Alternating Resolution and Power Optimization (ARPO) algorithm for resource allocation under accuracy constraints, and (ii) a Large Language Model-augmented Reinforcement Learning Approach (LLaRA) for adaptive UAV trajectory optimization. The large language model (LLM) serves as an expert in refining reward design of reinforcement learning in an offline fashion, introducing no additional latency in real-time decision-making. Numerical results demonstrate the efficacy of our proposed framework in improving inference performance and communication efficiency under dynamic LAENet conditions.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "question cluster visualization user study",
+            "position": 9
+          }
+        ],
+        "extra": {
+          "arxiv_category": "cs.LG",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.0,
+            "retrieval_hits": 1,
+            "score": 1.125
+          }
+        }
+      },
+      "term_overlap": 0.026,
+      "tfidf_similarity": 0.008,
+      "design_elements_matched": [
+        "task completion time and accuracy"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Daisen: A Framework for Visualizing Detailed GPU Execution",
+        "authors": [
+          "Yifan Sun",
+          "Yixuan Zhang",
+          "Ali Mosallaei",
+          "Michael D. Shah",
+          "Cody Dunne",
+          "David Kaeli"
+        ],
+        "year": 2021,
+        "date": "2021-04-02",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2104.00828",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2104.00828",
+        "pdf_url": "https://arxiv.org/pdf/2104.00828v1",
+        "abstract": "Graphics Processing Units (GPUs) have been widely used to accelerate artificial intelligence, physics simulation, medical imaging, and information visualization applications. To improve GPU performance, GPU hardware designers need to identify performance issues by inspecting a huge amount of simulator-generated traces. Visualizing the execution traces can reduce the cognitive burden of users and facilitate making sense of behaviors of GPU hardware components. In this paper, we first formalize the process of GPU performance analysis and characterize the design requirements of visualizing execution traces based on a survey study and interviews with GPU hardware designers. We contribute data and task abstraction for GPU performance analysis. Based on our task analysis, we propose Daisen, a framework that supports data collection from GPU simulators and provides visualization of the simulator-generated GPU execution traces. Daisen features a data abstraction and trace format that can record simulator-generated GPU execution traces. Daisen also includes a web-based visualization tool that helps GPU hardware designers examine GPU execution traces, identify performance bottlenecks, and verify performance improvement. Our qualitative evaluation with GPU hardware designers demonstrates that the design of Daisen reflects the typical workflow of GPU hardware designers. Using Daisen, participants were able to effectively identify potential performance bottlenecks and opportunities for performance improvement. The open-sourced implementation of Daisen can be found at gitlab.com/akita/vis. Supplemental materials including a demo video, survey questions, evaluation study guide, and post-study evaluation survey are available at osf.io/j5ghq.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "question cluster visualization user study",
+            "position": 4
+          },
+          {
+            "source": "arxiv",
+            "strategy": "surveys",
+            "query": "question cluster visualization user study survey",
+            "position": 1
+          }
+        ],
+        "extra": {
+          "arxiv_comment": "EuroVis Camera Ready",
+          "arxiv_category": "cs.DC",
+          "abstract_source": "arxiv",
+          "rank": {
+            "query_match": 0.75,
+            "title_match": 0.0,
+            "retrieval_hits": 2,
+            "score": 1.75
+          }
+        }
+      },
+      "term_overlap": 0.211,
+      "tfidf_similarity": 0.071,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "BASELINE AND CONSTELLATION",
+        "authors": [],
+        "year": 2024,
+        "date": "2024-10-29",
+        "venue": "The Philosophy of Translation",
+        "doi": "10.2307/jj.20261332.7",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2307/jj.20261332.7",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "book-chapter",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "ranked list baseline frequency-encoded constellation visualization",
+            "position": 4
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.286,
+            "title_match": 0.286,
+            "retrieval_hits": 1,
+            "score": 0.982
+          }
+        }
+      },
+      "term_overlap": 0.068,
+      "tfidf_similarity": 0.21,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "VizQStudio: Iterative Visualization Literacy MCQs Design with Simulated Students",
+        "authors": [
+          "Zixin Chen",
+          "Yuhang Zeng",
+          "Sicheng Song",
+          "Yanna Lin",
+          "Xian Xu",
+          "Huamin Qu",
+          "Meng Xia"
+        ],
+        "year": 2026,
+        "date": "2026-03-01",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2603.00994",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2603.00994",
+        "pdf_url": "https://arxiv.org/pdf/2603.00994v1",
+        "abstract": "Multiple-choice questions (MCQs) are a widely used educational tool, particularly in domains such as visualization literacy that require broad conceptual coverage and support diverse real-world applications. However, designing high-quality visualization literacy MCQs remains challenging, as instructors must coordinate multimodal elements (e.g., charts, question stems, and distractors), address diverse visualization tasks, and accommodate learners with heterogeneous backgrounds. Existing visualization literacy assessments primarily rely on standardized, fixed item banks, offering limited support for iterative question design that adapts to differences in learners' abilities, backgrounds, and reasoning strategies. To address these challenges, we present VizQStudio, a visual analytics system that supports instructors in iteratively designing and refining visualization literacy MCQs using MLLM-powered simulated students. Instructors can specify diverse student profiles spanning demographics, knowledge levels, and learning-related traits. The system then visualizes how simulated students reason about and respond to different question components, helping instructors explore potential misconceptions, difficulty calibration, and design trade-offs prior to classroom deployment. We investigate VizQStudio through a mixed-method evaluation, including expert interviews, case studies, a classroom deployment, and a large-scale online study. Overall, this work reframes MLLM-based student simulation in assessment authoring as a design-time, exploratory aid. By examining both its value and limitations in realistic instructional settings, we surface design insights that inform how future systems can support instructor-centered, iterative, and responsible uses of AI for multimodal assessment design in visualization literacy and related domains.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "arxiv"
+        ],
+        "found_by": [
+          {
+            "source": "arxiv",
+            "strategy": "keyword",
+            "query": "visualization student questions instructor",
+            "position": 2
+          },
+          {
+            "source": "arxiv",
+            "strategy": "surveys",
+            "query": "visualization student questions instructor review",
+            "position": 1
+          },
+          {
+            "source": "arxiv",
+            "strategy": "recent",
+            "query": "visualization student questions instructor",
+            "position": 2
+          }
+        ],
+        "extra": {
+          "arxiv_comment": "TVCG fast track (PVIS 2026 TVCG Track) under review",
+          "arxiv_category": "cs.HC",
+          "abstract_source": "arxiv",
+          "rank": {
+            "query_match": 1.0,
+            "title_match": 0.5,
+            "retrieval_hits": 2,
+            "score": 2.75
+          }
+        }
+      },
+      "term_overlap": 0.181,
+      "tfidf_similarity": 0.092,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    }
+  ],
+  "possible_same_design": [],
+  "design_matches_off_topic": [
+    {
+      "paper": {
+        "title": "Comparing Explanatory and Exploratory Explainable User Interfaces for AI-Supported Clinical Decision-Making: A Within-Subjects Study with Healthcare Professionals (Preprint)",
+        "authors": [
+          "Kent Fredriksdotter",
+          "Alejandro Kuratomi",
+          "Luis Quintero"
+        ],
+        "year": 2026,
+        "date": "2026-06-15",
+        "venue": null,
+        "doi": "10.2196/preprints.104490",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.2196/preprints.104490",
+        "pdf_url": null,
+        "abstract": "BACKGROUND Explainable user interfaces (XUIs) for AI-supported clinical decision support systems aim to make model predictions interpretable for clinicians. Two paradigms have emerged: Explanatory XUIs, which deliver static feature-importance summaries and clinical interpretation text and Exploratory XUIs,providing interactive, multi-modal model interrogation. Despite growing interest, empirical evidence comparing both paradigms on decision accuracy, automation bias, and appropriate skepticism in clinicians using a fully automated AI system with deliberately embedded incorrect predictions remains limited. OBJECTIVE To compare an Explanatory and an Exploratory XUI for AI-supported sepsis risk assessment on decision performance, reliance behavior, user experience, and trust across clinicians. METHODS A within-subjects counterbalanced study was conducted with N=17 clinicians (6 physicians, 7 nurses/paramedics, 4 other healthcare professionals; varying intensive care unit (ICU) experience). Participants evaluated three patient cases per XUI condition using SepsisVision, a sepsis risk prediction system, each containing two correct (TP, TN) and one incorrect (FP or FN) prediction. Primary outcomes were post-AI decision accuracy, automation bias, and appropriate skepticism. Secondary outcomes included SUS usability, NASA-TLX workload, task time, trust, explanation satisfaction, and confidence. Within-person XUI comparisons used Wilcoxon signed-rank tests and between-subgroup comparisons (ICU vs. No ICU) used Mann-Whitney U tests, with effect sizes reported as r = |Z|/√N. Binary reliance outcomes were reported descriptively; sepsis experience was examined using Spearman rank correlation. Think-aloud protocols and follow-up discussions were analyzed thematically. RESULTS The Explanatory XUI achieved higher usability (SUS M=85.9 vs. M=71.3, P&lt;.001, r=.898), lower cognitive workload (P=.008, r=.659), and shorter task time (P=.005, r=.687). Post-AI decision accuracy did not differ between conditions (Explanatory M=72.5% vs. Exploratory M=74.5%; P=.756). This stability masked offsetting movements, as accuracy rose on AI-correct cases but fell on AI-incorrect cases (largest drop: Exploratory XUI (FP), -40%), reflecting movement toward the AI regardless of correctness. Automation bias occurred in both conditions (Explanatory 4/17, 23.5%; Exploratory 5/17, 29.4%). Appropriate skepticism was higher with the Explanatory XUI overall (64.7% vs. 47.1%), but moderated by ICU experience. ICU-experienced participants resisted the incorrect recommendation under both interfaces (appropriate skepticism 85.7%), whereas less-experienced participants showed reduced skepticism under the Exploratory XUI (50.0% to 20.0%). Post-AI confidence increased significantly in the Exploratory condition (P=.008, r=.84) but not the Explanatory condition, without accuracy gains in less-experienced users. Sepsis experience correlated strongly with appropriate skepticism in the Exploratory condition (r=+.820, P&lt;.001). CONCLUSIONS Average performance was equivalent across XUI types, but the two interfaces diverged by clinical expertise: the Exploratory XUI degraded appropriate skepticism among less-experienced clinicians and raised confidence without improving accuracy, consistent with miscalibrated reliance, while experienced clinicians were unaffected. Because most predictions were correct, this risk was invisible in aggregate accuracy. XUI designs that default to structured, low-burden explanations with progressive access to interactive features are recommended for mixed-expertise settings. CLINICALTRIAL Dnr 2022-01929-01 Etiksprövningsmyndigheten.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "within-subjects user study frequency-encoded constellation visualization",
+            "position": 7
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.429,
+            "title_match": 0.429,
+            "retrieval_hits": 1,
+            "score": 1.411
+          }
+        }
+      },
+      "term_overlap": 0.042,
+      "tfidf_similarity": 0.005,
+      "design_elements_matched": [
+        "task completion time and accuracy",
+        "within-subjects user study"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    }
+  ],
+  "found_via_citations": [
+    {
+      "paper": {
+        "title": "A Review and Collation of Graphical Perception Knowledge for Visualization Recommendation",
+        "authors": [
+          "Ze-Hua Zeng",
+          "L. Battle"
+        ],
+        "year": 2021,
+        "date": "2021-09-03",
+        "venue": "International Conference on Human Factors in Computing Systems",
+        "doi": "10.1145/3544548.3581349",
+        "arxiv_id": "2109.01271",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "1ce7b6da1c80ca9e8b53d985a1eed4a33fd035df",
+        "url": "https://www.semanticscholar.org/paper/1ce7b6da1c80ca9e8b53d985a1eed4a33fd035df",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3544548.3581349",
+        "abstract": "Selecting appropriate visual encodings is critical to designing effective visualization recommendation systems, yet few findings from graphical perception are typically applied within these systems. We observe two significant limitations in translating graphical perception knowledge into actionable visualization recommendation rules/constraints: inconsistent reporting of findings and a lack of shared data across studies. How can we translate the graphical perception literature into a knowledge base for visualization recommendation? We present a review of 59 papers that study user perception and performance across ten visual analysis tasks. Through this study, we contribute a JSON dataset that collates existing theoretical and experimental knowledge and summarizes key study outcomes in graphical perception. We illustrate how this dataset can inform automated encoding decisions with three representative visualization recommendation systems. Based on our findings, we highlight open challenges and opportunities for the community in collating graphical perception knowledge for a range of visualization recommendation scenarios.",
+        "citations": 38,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1145/3290605.3300422"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.086,
+      "tfidf_similarity": 0.043,
+      "design_elements_matched": [
+        "within-subjects user study"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Standardizing Reporting of Participant Compensation in HCI: A Systematic Literature Review and Recommendations for the Field",
+        "authors": [
+          "Jessica A. Pater",
+          "Amanda Coupe",
+          "Rachel Pfafman",
+          "Chanda Phelan",
+          "Tammy R. Toscos",
+          "Maia L. Jacobs"
+        ],
+        "year": 2021,
+        "date": "2021-05-06",
+        "venue": "International Conference on Human Factors in Computing Systems",
+        "doi": "10.1145/3411764.3445734",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "82578e0891de531a3e023d1b95b4710febaa8068",
+        "url": "https://www.semanticscholar.org/paper/82578e0891de531a3e023d1b95b4710febaa8068",
+        "pdf_url": null,
+        "abstract": "The user study is a fundamental method used in HCI. In designing user studies, we often use compensation strategies to incentivize recruitment. However, compensation can also lead to ethical issues, such as coercion. The CHI community has yet to establish best practices for participant compensation. Through a systematic review of manuscripts at CHI and other associated publication venues, we found high levels of variation in the compensation strategies used within the community and how we report on this aspect of the study methods. A qualitative analysis of justifications offered for compensation sheds light into how some researchers are currently contextualizing this practice. This paper provides a description of current compensation strategies and information that can inform the design of compensation strategies in future studies. The findings may be helpful to generate productive discourse in the HCI community towards the development of best practices for participant compensation in user studies.",
+        "citations": 61,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1145/3290605.3300422"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.0,
+      "tfidf_similarity": 0.0,
+      "design_elements_matched": [
+        "within-subjects user study"
+      ],
+      "is_survey_like": true,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    }
+  ],
+  "ranked": [
+    {
+      "title": "Ranked-List Visualization",
+      "arxiv_id": null,
+      "doi": "10.1145/3290605.3300422",
+      "year": 2019
+    },
+    {
+      "title": "Ranked-List Proportional Representation",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.5099845",
+      "year": 2025
+    },
+    {
+      "title": "Comparing Explanatory and Exploratory Explainable User Interfaces for AI-Supported Clinical Decision-Making: A Within-Subjects Study with Healthcare Professionals (Preprint)",
+      "arxiv_id": null,
+      "doi": "10.2196/preprints.104490",
+      "year": 2026
+    },
+    {
+      "title": "Supplemental Information 5: Ranked gene list for BSG-based GSEA",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.20467/supp-5",
+      "year": null
+    },
+    {
+      "title": "Table S3: GSEA ranked gene list for FDMI",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.5048/supp-4",
+      "year": null
+    },
+    {
+      "title": "Characterization and Effects of CS2 Learning with GenAI, Visualization, and Human Support",
+      "arxiv_id": "2606.02933",
+      "doi": "10.1145/3765964.3811663",
+      "year": 2026
+    },
+    {
+      "title": "A Review and Collation of Graphical Perception Knowledge for Visualization Recommendation",
+      "arxiv_id": "2109.01271",
+      "doi": "10.1145/3544548.3581349",
+      "year": 2021
+    },
+    {
+      "title": "MemoVis: A GenAI-Powered Tool for Creating Companion Reference Images for 3D Design Feedback",
+      "arxiv_id": "2409.06082",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Voltix: A Web-Based Real-Time IoT Sensor Monitoring and Visualization Dashboard",
+      "arxiv_id": null,
+      "doi": "10.22541/essoar.15009301/v1",
+      "year": 2026
+    },
+    {
+      "title": "Task Mode: Dynamic Filtering for Task-Specific Web Navigation using LLMs",
+      "arxiv_id": "2507.14769",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "YTCommentQA: Video Question Answerability in Instructional Videos",
+      "arxiv_id": "2401.17343",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Using Choice to Increase Time On-Task, Task-Completion, and Accuracy for Students with Emotional/Behavior Disorders in a Residential Facility",
+      "arxiv_id": null,
+      "doi": "10.1353/etc.0.0085",
+      "year": 2009
+    },
+    {
+      "title": "Trade-Off between Task Accuracy, Task Completion Time and Naturalness for Direct Object Manipulation in Virtual Reality",
+      "arxiv_id": null,
+      "doi": "10.3390/mti6010006",
+      "year": 2022
+    },
+    {
+      "title": "Tracking User Interactions Within Visualizations",
+      "arxiv_id": null,
+      "doi": "10.1109/infvis.2004.67",
+      "year": null
+    },
+    {
+      "title": "Are Agents Ready to Teach? A Multi-Stage Benchmark for Real-World Teaching Workflows",
+      "arxiv_id": "2605.14322",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Usability evaluation of IOT based HVAC dashboard",
+      "arxiv_id": null,
+      "doi": "10.58837/chula.the.2023.88",
+      "year": null
+    },
+    {
+      "title": "Efficient Onboard Vision-Language Inference in UAV-Enabled Low-Altitude Economy Networks via LLM-Enhanced Optimization",
+      "arxiv_id": "2510.10028",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Daisen: A Framework for Visualizing Detailed GPU Execution",
+      "arxiv_id": "2104.00828",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "BASELINE AND CONSTELLATION",
+      "arxiv_id": null,
+      "doi": "10.2307/jj.20261332.7",
+      "year": 2024
+    },
+    {
+      "title": "VizQStudio: Iterative Visualization Literacy MCQs Design with Simulated Students",
+      "arxiv_id": "2603.00994",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Engaging activities for teaching linear algebra",
+      "arxiv_id": "2401.10448",
+      "doi": "10.1080/10511970.2024.2310244",
+      "year": 2024
+    },
+    {
+      "title": "Shared Agency: The Agency Partnership Framework for Instructor-Student Collaboration",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.7334378",
+      "year": 2026
+    },
+    {
+      "title": "MAUDE-Dash: An Open-Source, Interactive Dashboard for Real-Time Post-Market Surveillance of Medical Devices",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-8398968/v1",
+      "year": 2026
+    },
+    {
+      "title": "Knowledge Navigator: LLM-guided Browsing Framework for Exploratory Search in Scientific Literature",
+      "arxiv_id": "2408.15836",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Table 1: Experimental results indicating gaze parameters, task completion time and accuracy.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3575/table-1",
+      "year": null
+    },
+    {
+      "title": "Supplemental Information 4: Eyetracker result data including gaze duration task completion time task accuracy scanpath length and saccade durations.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3575/supp-4",
+      "year": null
+    },
+    {
+      "title": "The Accuracy Of Task Completion In The Implementation Of PATEN",
+      "arxiv_id": null,
+      "doi": "10.21070/acopen.4.2021.1978",
+      "year": 2021
+    },
+    {
+      "title": "User Perceptions of Siloed Versus Time-Synchronized Data Architectures for AI-Based Digital Mental Health: Within-Subjects Scenario Study (Preprint)",
+      "arxiv_id": null,
+      "doi": "10.2196/preprints.111881",
+      "year": 2026
+    },
+    {
+      "title": "Task Completion Time",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-642-11257-7_2",
+      "year": 2010
+    },
+    {
+      "title": "Figure 9: Task completion time by class.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3953/fig-9",
+      "year": null
+    },
+    {
+      "title": "Figure 5—source data 1. Per subject time courses of mean classification accuracy for task separated by task type and cross-classification accuracy between task types.",
+      "arxiv_id": null,
+      "doi": "10.7554/elife.32816.011",
+      "year": null
+    },
+    {
+      "title": "Boosting Task Completion Rate for Time-Sensitive Mcs System",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.4635815",
+      "year": 2023
+    },
+    {
+      "title": "Supplemental Information 3: SPSS data subjects within study compared to Australian general population",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.3768/supp-3",
+      "year": null
+    },
+    {
+      "title": "Standardizing Reporting of Participant Compensation in HCI: A Systematic Literature Review and Recommendations for the Field",
+      "arxiv_id": null,
+      "doi": "10.1145/3411764.3445734",
+      "year": 2021
+    },
+    {
+      "title": "4. Baseline and Constellation",
+      "arxiv_id": null,
+      "doi": "10.12987/9780300280654-005",
+      "year": 2024
+    },
+    {
+      "title": "ChartAct: A Benchmark for Dynamic Chart Understanding",
+      "arxiv_id": "2605.26994",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "What Do Visualization Instructors Want Students to Learn? Introducing a Concept Inventory for Visualization Design",
+      "arxiv_id": "2608.20090",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Application of SMART Method and Dashboard Visualization for Student Code of Conduct Violations",
+      "arxiv_id": null,
+      "doi": "10.32520/stmsi.v13i5.4593",
+      "year": 2024
+    },
+    {
+      "title": "The Relationship Between Visualization Dashboard Design Quality and Data Interpretation Accuracy",
+      "arxiv_id": null,
+      "doi": "10.14293/pr2199.002451.v1",
+      "year": 2025
+    },
+    {
+      "title": "Task-Oriented Feature Compression for Multimodal Understanding via Device-Edge Co-Inference",
+      "arxiv_id": "2503.12926",
+      "doi": "10.1109/tmc.2025.3626724",
+      "year": 2025
+    },
+    {
+      "title": "Instructor and Student Resources",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003489733-9",
+      "year": 2024
+    },
+    {
+      "title": "RankViz: A visualization framework to assist interpretation of Learning to Rank algorithms",
+      "arxiv_id": null,
+      "doi": "10.1016/j.cag.2020.09.017",
+      "year": 2020
+    },
+    {
+      "title": "Using Astronomical Photographs to Investigate Misconceptions about Galaxies and Spectra: Question Development for Clicker Use",
+      "arxiv_id": "1508.00711",
+      "doi": "10.1103/physrevstper.11.020101",
+      "year": 2015
+    },
+    {
+      "title": "Constructing instructor-student and student-student authority relationships in technical writing classrooms",
+      "arxiv_id": null,
+      "doi": "10.31274/rtd-180814-81",
+      "year": 2004
+    },
+    {
+      "title": "Integrating Attendance Tracking and Emotion Detection for Enhanced Student Engagement in Smart Classrooms",
+      "arxiv_id": "2601.08049",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Figure 10: Visualization of the loitering trajectories ranked with the score of anomaly.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerjcs.1572/fig-10",
+      "year": null
+    },
+    {
+      "title": "Instructor and Student Experiences with In-Class Polling Options",
+      "arxiv_id": null,
+      "doi": "10.5703/1288284316913",
+      "year": 2019
+    },
+    {
+      "title": "Real-Time Monitoring of Health Security Attacks with R-based Data Visualization Dashboard",
+      "arxiv_id": null,
+      "doi": "10.1145/3584371.3613035",
+      "year": 2023
+    },
+    {
+      "title": "List of contributors 9",
+      "arxiv_id": null,
+      "doi": "10.3726/978-3-653-01293-4/3",
+      "year": null
+    },
+    {
+      "title": "Cite or Decline: A Strict Course-Grounded Chatbot for STEM Lecture Videos",
+      "arxiv_id": "2609.01846",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Hi-Token: Hierarchical Coordinate Tokenization for Generative Visual Grounding",
+      "arxiv_id": "2608.03471",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Can a Cybersecurity Question Answering Assistant Help Change User Behavior? An In Situ Study",
+      "arxiv_id": null,
+      "doi": "10.14722/usec.2025.23018",
+      "year": 2025
+    },
+    {
+      "title": "HAIChart: Human and AI Paired Visualization System",
+      "arxiv_id": "2406.11033",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Are Student Evaluations of Teachers (SETs) Related to Instructor, Student, or Course Characteristics?",
+      "arxiv_id": null,
+      "doi": "10.3102/ip.25.2192133",
+      "year": 2025
+    },
+    {
+      "title": "PaperBanana-Interact: Scientific Diagram Refinement with Multi-Turn Human Feedback",
+      "arxiv_id": "2608.30241",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "GeoDial: A Multimodal Conversational Tutoring Dataset for Geometry Problem-Solving with Visual Tutor Turns",
+      "arxiv_id": "2606.12419",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Du Bois Wrapped Bar Chart: Visualizing Categorical Data with Disproportionate Values",
+      "arxiv_id": "2001.03271",
+      "doi": "10.1145/3313831.3376365",
+      "year": 2020
+    },
+    {
+      "title": "Figure 2: The graphical visualization of frequency analysis of role within the organization (Q1).",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3008/fig-2",
+      "year": null
+    },
+    {
+      "title": "Developing a Learner-Centered Teaching Routine",
+      "arxiv_id": "2512.09952",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "VisJudge-Bench: Aesthetics and Quality Assessment of Visualizations",
+      "arxiv_id": "2510.22373",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "VisText: A Benchmark for Semantically Rich Chart Captioning",
+      "arxiv_id": "2307.05356",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Automated Feedback in Math Education: A Comparative Analysis of LLMs for Open-Ended Responses",
+      "arxiv_id": "2411.08910",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Figure 30: The graphical visualization of frequency analysis for user awareness of cybersecurity through Q17.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3008/fig-30",
+      "year": null
+    },
+    {
+      "title": "Transferability of Benefits of Instructor Trivia Questions Across Instructor and University Demographics",
+      "arxiv_id": null,
+      "doi": "10.18260/1-2--57709",
+      "year": null
+    },
+    {
+      "title": "Work in Progress: A Student-Instructor Survey on Student Use of Unsanctioned Online Resources",
+      "arxiv_id": null,
+      "doi": "10.18260/1-2--35602",
+      "year": null
+    },
+    {
+      "title": "ClusterLLM: Large Language Models as a Guide for Text Clustering",
+      "arxiv_id": "2305.14871",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Student-instructor conflict: The relationship between instructor communicative characteristics and student conflict-handling styles.",
+      "arxiv_id": null,
+      "doi": "10.33915/etd.11017",
+      "year": 2007
+    },
+    {
+      "title": "ResearchQA: Evaluating Scholarly Question Answering at Scale Across 75 Fields with Survey-Mined Questions and Rubrics",
+      "arxiv_id": "2509.00496",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Figure 32: The graphical visualization of frequency analysis for user familiarity with cybersecurity threats through Q19.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3008/fig-32",
+      "year": null
+    },
+    {
+      "title": "Instructor-Student Applications for Vector Line Integrals: Symbolic Scaffolding and Personalized Visualization as Cognitive Reward",
+      "arxiv_id": null,
+      "doi": "10.1109/acit69831.2026.11700178",
+      "year": 2026
+    },
+    {
+      "title": "SuperNOVA: Design Strategies and Opportunities for Interactive Visualization in Computational Notebooks",
+      "arxiv_id": "2305.03039",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Figure 33: The graphical visualization of frequency analysis for user awareness of bio-cybersecurity through Q20.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3008/fig-33",
+      "year": null
+    },
+    {
+      "title": "FAIR geovisualizations: definitions, challenges, and the road ahead",
+      "arxiv_id": "2111.07273",
+      "doi": "10.1080/13658816.2021.1983579",
+      "year": 2021
+    },
+    {
+      "title": "More Robots are Coming: Large Multimodal Models (ChatGPT) can Solve Visually Diverse Images of Parsons Problems",
+      "arxiv_id": "2311.04926",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Appendix D. Questions to Ask Your Instructor",
+      "arxiv_id": null,
+      "doi": "10.1515/9781400830411-010",
+      "year": 2008
+    },
+    {
+      "title": "A Survey of Perception-Based Visualization Studies by Task",
+      "arxiv_id": "2107.07477",
+      "doi": "10.1109/tvcg.2021.3098240",
+      "year": 2021
+    },
+    {
+      "title": "Beyond One Output: Visualizing and Comparing Distributions of Language Model Generations",
+      "arxiv_id": "2604.18724",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Generative Lecture: Making Lecture Videos Interactive with LLMs and AI Clone Instructors",
+      "arxiv_id": "2512.21796",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Contributions to multi-purpose GNSS positioning to support multi-frequency and multi-constellation with high accuracy and integrity",
+      "arxiv_id": null,
+      "doi": "10.5821/dissertation-2117-404065",
+      "year": null
+    },
+    {
+      "title": "Exploring the Representation of Cyber-Risk Data Through Sketching",
+      "arxiv_id": null,
+      "doi": "10.1109/vizsec60606.2023.00010",
+      "year": 2023
+    },
+    {
+      "title": "Long-Term and Long Baseline Multi-Constellation GNSS All in View Test - Using CGGTTS 2.E Files",
+      "arxiv_id": null,
+      "doi": "10.1109/eftf61992.2024.10722715",
+      "year": 2024
+    },
+    {
+      "title": "GRAPHICAL USER INTERFACE PERSONALIZATION: USER STUDY OF IMAGE FREQUENCY PREFERENCES",
+      "arxiv_id": null,
+      "doi": "10.33965/cgv2020_202011l009",
+      "year": 2020
+    },
+    {
+      "title": "Comparing instructor designed rubric aligned chatbot feedback and instructor feedback in higher education regarding student perceptions of clarity usefulness supportiveness and satisfaction",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-8888154/v1",
+      "year": 2026
+    },
+    {
+      "title": "Instructor Social Presence as a Tool for Student Engagement and Persistence",
+      "arxiv_id": null,
+      "doi": "10.5040/9781666995190.ch-004",
+      "year": 2022
+    },
+    {
+      "title": "Instructor Leadership Style and Student Achievement: Evidence from Higher Ed Online Sport Course",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-9675701/v1",
+      "year": 2026
+    },
+    {
+      "title": "SpaceNet: A Remote Sensing Dataset and Challenge Series",
+      "arxiv_id": "1807.01232",
+      "doi": null,
+      "year": 2018
+    },
+    {
+      "title": "DK-PRACTICE: An Intelligent Educational Platform for Personalized Learning Content Recommendations Based on Students Knowledge State",
+      "arxiv_id": "2501.10373",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Student Experiences of Confusion and Implications for Instructor Responses (Poster 19)",
+      "arxiv_id": null,
+      "doi": "10.3102/ip.25.2187527",
+      "year": 2025
+    },
+    {
+      "title": "The Growing Pains of Frontier Models: When Leaderboards Stop Separating and What to Measure Next",
+      "arxiv_id": "2605.18840",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Visual Analytics of Neuron Vulnerability to Adversarial Attacks on Convolutional Neural Networks",
+      "arxiv_id": "2303.02814",
+      "doi": "10.1145/3587470",
+      "year": 2023
+    },
+    {
+      "title": "StuGPTViz: A Visual Analytics Approach to Understand Student-ChatGPT Interactions",
+      "arxiv_id": "2407.12423",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Toward Ownership Understanding of Objects: Active Question Generation with Large Language Model and Probabilistic Generative Model",
+      "arxiv_id": "2509.12754",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "When Visuals Aren't the Problem: Evaluating Vision-Language Models on Misleading Data Visualizations",
+      "arxiv_id": "2603.22368",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Systematic evaluation of iterative deep neural networks for fast parallel MRI reconstruction with sensitivity‐weighted coil combination",
+      "arxiv_id": null,
+      "doi": "10.1002/mrm.28827",
+      "year": 2021
+    },
+    {
+      "title": "Williams college student course survey form: Instructor modified version",
+      "arxiv_id": null,
+      "doi": "10.1007/bf02985754",
+      "year": 2008
+    },
+    {
+      "title": "Lumos in the Night Sky: AI-enabled Visual Tool for Exploring Night-Time Light Patterns",
+      "arxiv_id": "2306.03195",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Teaching Program Decomposition in CS1: A Conceptual Framework for Improved Code Quality",
+      "arxiv_id": "2411.09463",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Figure 1—source data 2. Gene sets for hypoxia and glycolysis as ranked by GSEA of HAECs under disturbed flow.",
+      "arxiv_id": null,
+      "doi": "10.7554/elife.25217.005",
+      "year": null
+    },
+    {
+      "title": "HisVA: A Visual Analytics System for Studying History",
+      "arxiv_id": "2106.00764",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "How do Observable Users Decompose D3 Code? A Qualitative Study",
+      "arxiv_id": "2405.14341",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Student Attachment Stances, Instructor Immediacy, and Student–Instructor Relationships as Predictors of Achievement Expectancies in College Students",
+      "arxiv_id": null,
+      "doi": "10.1353/csd.0.0082",
+      "year": 2009
+    },
+    {
+      "title": "A user term visualization analysis based on a social question and answer log",
+      "arxiv_id": null,
+      "doi": "10.1016/j.ipm.2013.04.003",
+      "year": 2013
+    },
+    {
+      "title": "Relating visual attention and learning in an online instructional physics module",
+      "arxiv_id": "2602.08247",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Deep Literature Survey Automation with an Iterative Workflow",
+      "arxiv_id": "2510.21900",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning",
+      "arxiv_id": "2203.10244",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Survey Question Context",
+      "arxiv_id": null,
+      "doi": "10.1002/9780470146316.ch8",
+      "year": 2006
+    },
+    {
+      "title": "Accessible Visualization via Natural Language Descriptions: A Four-Level Model of Semantic Content",
+      "arxiv_id": "2110.04406",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Exploring Instructor Flexibility: The Decision to Grant or Reject Student Requests, the Instructor Ethical Perspective, and the Role of Student Engagement",
+      "arxiv_id": null,
+      "doi": "10.30707/etd2022.20221020070314936850.999963",
+      "year": 2022
+    },
+    {
+      "title": "Multimodal QUD: Inquisitive Questions from Scientific Figures",
+      "arxiv_id": "2604.23733",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "VitaLITy: Promoting Serendipitous Discovery of Academic Literature with Transformers & Visual Analytics",
+      "arxiv_id": "2108.03366",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Klaster Kelompok Belajar Siswa Menggunakan K-Means dan Visualisasi Dashboard Power BI di SMPN 9 Mandau Clustering Student Learning Groups Using the K-Means Algorithm and Power BI Dashboard Visualization at SMPN 9 Mandau",
+      "arxiv_id": null,
+      "doi": "10.29244/jika.13.1.14-26",
+      "year": 2026
+    },
+    {
+      "title": "The Effects of Instructor Personality and Other Instructor and Course Characteristics on Student Evaluations of Teaching Effectiveness",
+      "arxiv_id": null,
+      "doi": "10.58809/mxze4415",
+      "year": null
+    },
+    {
+      "title": "Enhancing Personalized Learning with Integrated Question Answering and Question Generation",
+      "arxiv_id": null,
+      "doi": "10.1201/9781003485698-12",
+      "year": 2025
+    },
+    {
+      "title": "Augmented Physics: Creating Interactive and Embedded Physics Simulations from Static Textbook Diagrams",
+      "arxiv_id": "2405.18614",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "ConfusionBench: An Expert-Validated Benchmark for Confusion Recognition and Localization in Educational Videos",
+      "arxiv_id": "2603.17267",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "FICGen: Frequency-Inspired Contextual Disentanglement for Layout-driven Degraded Image Generation",
+      "arxiv_id": "2509.01107",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Turning data into pedagogical action : designing the learning analytics cockpit, a teacher dashboard for feedback",
+      "arxiv_id": null,
+      "doi": "10.21248/gups.99144",
+      "year": null
+    },
+    {
+      "title": "What should I Ask: A Knowledge-driven Approach for Follow-up Questions Generation in Conversational Surveys",
+      "arxiv_id": "2205.10977",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "When Do LLM Personas Support Visualization Design? A Cross-Model Study of Color Assignment and Chart Choice",
+      "arxiv_id": "2607.02455",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "MapQA: A Dataset for Question Answering on Choropleth Maps",
+      "arxiv_id": "2211.08545",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Impact of Fingernails Length on Mobile Tactile Interaction",
+      "arxiv_id": null,
+      "doi": "10.1145/3613904.3642037",
+      "year": 2024
+    },
+    {
+      "title": "Data Visualization Methods",
+      "arxiv_id": null,
+      "doi": "10.1201/9781003570691-5",
+      "year": 2025
+    },
+    {
+      "title": "FlySearch: Exploring how vision-language models explore",
+      "arxiv_id": "2506.02896",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Leveraging Large Language Models for Actionable Course Evaluation Student Feedback to Lecturers",
+      "arxiv_id": "2407.01274",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Hyperellipsoid Cluster Merging using Hierarchical Analysis of Hyperellipsoid Cluster for Image Segmentation",
+      "arxiv_id": null,
+      "doi": "10.62527/joiv.9.5.2815",
+      "year": 2025
+    },
+    {
+      "title": "Guided Sensemaking: Agents in Collaborative Deliberation",
+      "arxiv_id": "2606.02260",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Self-Evolving Visual Questioner",
+      "arxiv_id": "2606.13929",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "DataPilot: Utilizing Quality and Usage Information for Subset Selection during Visual Data Preparation",
+      "arxiv_id": "2303.01575",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Service orchestration using enterprise service bus for real-time government executive dashboard system",
+      "arxiv_id": null,
+      "doi": "10.1109/icodse.2015.7436999",
+      "year": 2015
+    },
+    {
+      "title": "ChartQAPro: A More Diverse and Challenging Benchmark for Chart Question Answering",
+      "arxiv_id": "2504.05506",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "On Explaining Knowledge Distillation: Measuring and Visualising the Knowledge Transfer Process",
+      "arxiv_id": "2412.13943",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Integrating multi-modal learning analytics dashboard in K-12 education: insights for enhancing orchestration and teacher decision-making",
+      "arxiv_id": null,
+      "doi": "10.1186/s40561-025-00410-4",
+      "year": 2025
+    },
+    {
+      "title": "Smart Parking Occupancy Prediction using Bidirectional LSTM and Real-Time Dashboard Visualization",
+      "arxiv_id": null,
+      "doi": "10.1109/icicv68925.2026.11554735",
+      "year": 2026
+    },
+    {
+      "title": "SQ-LLaVA: Self-Questioning for Large Vision-Language Assistant",
+      "arxiv_id": "2403.11299",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Interactive Visual Study of Multiple Attributes Learning Model of X-Ray Scattering Images",
+      "arxiv_id": "2009.02256",
+      "doi": null,
+      "year": 2020
+    },
+    {
+      "title": "User Study of Emotional Visualization Dashboard for Educational Software",
+      "arxiv_id": null,
+      "doi": "10.29007/mcs1",
+      "year": 2018
+    },
+    {
+      "title": "InfographicVQA",
+      "arxiv_id": "2104.12756",
+      "doi": null,
+      "year": 2021
+    },
+    {
+      "title": "Can LLMs Design Good Questions Based on Context?",
+      "arxiv_id": "2501.03491",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Power Outage and Cause Detection Using Social Media: A Hybrid Architecture with Real-Time Visualization Dashboard",
+      "arxiv_id": null,
+      "doi": "10.1109/naps66256.2025.11272266",
+      "year": 2025
+    },
+    {
+      "title": "DiagramIR: An Automatic Pipeline for Educational Math Diagram Evaluation",
+      "arxiv_id": "2511.08283",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Table 7: User convenience survey question design.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3029/table-7",
+      "year": null
+    },
+    {
+      "title": "InfoVids: Reimagining the Viewer Experience with Alternative Visualization-Presenter Relationships",
+      "arxiv_id": "2505.03164",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Synthesize Step-by-Step: Tools, Templates and LLMs as Data Generators for Reasoning-Based Chart VQA",
+      "arxiv_id": "2403.16385",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Student Report Sheet",
+      "arxiv_id": null,
+      "doi": "10.1891/9780826157287.ap05",
+      "year": 2024
+    },
+    {
+      "title": "Benchmark It Yourself (BIY): Preparing a Dataset and Benchmarking AI Models for Scatterplot-Related Tasks",
+      "arxiv_id": "2510.06071",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Investigating Non-IT Students' Perceptions of Implementing Cloud Technology in Academic Service: A User Acceptance Perspective Study",
+      "arxiv_id": null,
+      "doi": "10.62527/joiv.10.1.3691",
+      "year": 2026
+    },
+    {
+      "title": "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+      "arxiv_id": "2407.09413",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "DashboardQA: Benchmarking Multimodal Agents for Question Answering on Interactive Dashboards",
+      "arxiv_id": "2508.17398",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Figure 15: Average user ratings for each question group in the evaluation survey.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3513/fig-15",
+      "year": null
+    },
+    {
+      "title": "Question Order Bias in a Survey on User Satisfaction with Public Services",
+      "arxiv_id": null,
+      "doi": "10.1257/rct.3326-1.0",
+      "year": 2018
+    },
+    {
+      "title": "Do You See What I See? A Qualitative Study Eliciting High-Level Visualization Comprehension",
+      "arxiv_id": "2402.15605",
+      "doi": "10.1145/3613904.3642813",
+      "year": 2024
+    },
+    {
+      "title": "Supporting Sensemaking of Large Language Model Outputs at Scale",
+      "arxiv_id": "2401.13726",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "RF-Analyzer: Can Vision-Language Models Learn RF Understanding from Synthetic Data?",
+      "arxiv_id": "2605.04676",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Humane Visual AI: Telling the Stories Behind a Medical Condition",
+      "arxiv_id": "2010.06296",
+      "doi": "10.1109/tvcg.2020.3030391",
+      "year": 2020
+    },
+    {
+      "title": "Improving User Experience in E-commerce Through Intelligent Demand Forecasting and Inventory Visualization",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-6197935/v1",
+      "year": 2025
+    },
+    {
+      "title": "Clinical Journal for Student Reflection",
+      "arxiv_id": null,
+      "doi": "10.1891/9780826157287.ap03",
+      "year": 2024
+    },
+    {
+      "title": "The Design and Organization of Educational Competitions with Anonymous and Real-Time Leaderboards in Academic and Industrial Settings",
+      "arxiv_id": "2402.07936",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "ComQA: A Community-sourced Dataset for Complex Factoid Question Answering with Paraphrase Clusters",
+      "arxiv_id": "1809.09528",
+      "doi": null,
+      "year": 2018
+    },
+    {
+      "title": "Visual Pattern-Driven Exploration of Big Data",
+      "arxiv_id": "1807.01364",
+      "doi": null,
+      "year": 2018
+    },
+    {
+      "title": "Estimation of parameters in stratified cluster sampling on randomized response technique for sensitive question survey",
+      "arxiv_id": null,
+      "doi": "10.3724/sp.j.1008.2009.00170",
+      "year": 2009
+    },
+    {
+      "title": "Perception-Driven Bias Detection in Machine Learning via Crowdsourced Visual Judgment",
+      "arxiv_id": "2506.11047",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "UFTDRDH: A novel user-oriented solution for full-text database retrieval in Chinese digital humanities",
+      "arxiv_id": null,
+      "doi": "10.1177/01655515221133529",
+      "year": 2022
+    },
+    {
+      "title": "Revisiting Channel Effectiveness: A Multi-Dimensional Evaluation with Primitive Visual Stimuli",
+      "arxiv_id": "2608.04435",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "The Visualization Dashboard: Introduction",
+      "arxiv_id": null,
+      "doi": "10.4135/9781529773217",
+      "year": 2016
+    },
+    {
+      "title": "Detecting Talent: A Student Chacklist for Identification of Giftedness and Talent",
+      "arxiv_id": null,
+      "doi": "10.5176/2251-1814_eel17.21",
+      "year": 2017
+    },
+    {
+      "title": "InfoChartQA: A Benchmark for Multimodal Question Answering on Infographic Charts",
+      "arxiv_id": "2505.19028",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Optimizing Data Delivery: Insights from User Preferences on Visuals, Tables, and Text",
+      "arxiv_id": "2411.07451",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "SweeperBot: Making 3D Browsing Accessible through View Analysis and Visual Question Answering",
+      "arxiv_id": "2511.14567",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "<scp>MathFlowLens</scp> Dashboard: Co‐Designing Teacher Orchestration Tools to Engage in Discourse Around Students' Mathematical Strategies",
+      "arxiv_id": null,
+      "doi": "10.1111/jcal.70025",
+      "year": 2025
+    },
+    {
+      "title": "When Prompts Become Pixels: Prompt-Region Grounding for Multimodal Reasoning",
+      "arxiv_id": "2608.04726",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "A User Study on the Usefulness of Visualization Support for Requirements Monitoring",
+      "arxiv_id": null,
+      "doi": "10.1109/vissoft.2019.00015",
+      "year": 2019
+    },
+    {
+      "title": "dittoViz: User Friendly Data Visualization",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.dittoviz",
+      "year": 2024
+    },
+    {
+      "title": "Do you \"see\" what I \"see\"? A Multi-panel Visual Question Answer Dataset for Large Language Model Chart Analysis",
+      "arxiv_id": "2610.14173",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "SIGHT: A Large Annotated Dataset on Student Insights Gathered from Higher Education Transcripts",
+      "arxiv_id": "2306.09343",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "From Artifacts to Outcomes: Comparison of HMD VR, Desktop, and Slides Lectures for Food Microbiology Laboratory Instruction",
+      "arxiv_id": "2304.09661",
+      "doi": "10.1145/3544548.3580913",
+      "year": 2023
+    },
+    {
+      "title": "John Hart Introduces the Visualization Dashboard",
+      "arxiv_id": null,
+      "doi": "10.4135/9781529773217.n1",
+      "year": 2016
+    },
+    {
+      "title": "vizClust: Visualization and Exploration of Cluster Transitions",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.vizclust",
+      "year": 2026
+    },
+    {
+      "title": "Orchestration tools to support the teacher during student collaboration: a review Der Einsatz von Orchestration Tools zur Unterstützung von Lehrkräften bei der Anleitung kooperativen Lernens: Eine Übersicht",
+      "arxiv_id": null,
+      "doi": "10.1007/s42010-019-00052-9",
+      "year": 2019
+    },
+    {
+      "title": "Relevant Aspects To Promote Teacher Awareness in the Pedagogical Orchestration of Learning Activities Where Students Move",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-175631/v1",
+      "year": 2021
+    },
+    {
+      "title": "HIViz: Interactive Dashboard for 'HIV' Data Visualization",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.hiviz",
+      "year": 2025
+    },
+    {
+      "title": "ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration",
+      "arxiv_id": "2511.21689",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Figure 8: FCM cluster and centroid visualization.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.2672/fig-8",
+      "year": null
+    },
+    {
+      "title": "User-centered Software Visualization Design for Professional Developers",
+      "arxiv_id": null,
+      "doi": "10.1109/vissoft64034.2024.00019",
+      "year": 2024
+    },
+    {
+      "title": "Review for \"Visualization of Confusion Matrices with Network Graphs\"",
+      "arxiv_id": null,
+      "doi": "10.1002/cem.3435/v1/review1",
+      "year": 2022
+    },
+    {
+      "title": "Intuitive visualization technique to support eye tracking data analysis",
+      "arxiv_id": null,
+      "doi": "10.1145/3205929.3205939",
+      "year": 2018
+    },
+    {
+      "title": "IEEE cluster 2013 visualization showcase",
+      "arxiv_id": null,
+      "doi": "10.1109/cluster.2013.6702607",
+      "year": 2013
+    },
+    {
+      "title": "Understanding User Perspectives on Data Visualization in mHealth Apps: A Survey Study",
+      "arxiv_id": null,
+      "doi": "10.1109/access.2023.3302325",
+      "year": 2023
+    },
+    {
+      "title": "gclink: Gene-Cluster Discovery, Annotation and Visualization",
+      "arxiv_id": null,
+      "doi": "10.32614/cran.package.gclink",
+      "year": 2025
+    },
+    {
+      "title": "Vista: Scene-Aware Optimization for Streaming Video Question Answering under Post-Hoc Queries",
+      "arxiv_id": "2602.08448",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Visually Prompted Benchmarks Are Surprisingly Fragile",
+      "arxiv_id": "2512.17875",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Situated visualization towards Manufacturing Maintenance Training: scoping review, design and user study",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.5574446",
+      "year": 2025
+    },
+    {
+      "title": "A user study on air conditioner’s airflow visualization in mobile AR",
+      "arxiv_id": null,
+      "doi": "10.1007/s12650-025-01078-1",
+      "year": 2025
+    },
+    {
+      "title": "QSTN: A Modular Framework for Robust Questionnaire Inference with Large Language Models",
+      "arxiv_id": "2512.08646",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "MassDash: A Web-Based Dashboard for Data-Independent Acquisition Mass Spectrometry Visualization",
+      "arxiv_id": null,
+      "doi": "10.1021/acs.jproteome.4c00026.s001",
+      "year": null
+    },
+    {
+      "title": "ML-Based Disaster Rescue Drone System UsingYOLOv8 and Real-Time Dashboard Visualization",
+      "arxiv_id": null,
+      "doi": "10.1109/gcon69192.2026.11649023",
+      "year": 2026
+    },
+    {
+      "title": "Real-Time Data Visualization and Energy Recovery: A Tailored Dashboard Solution for Small Electric Vehicles",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-031-94484-0_41",
+      "year": 2025
+    },
+    {
+      "title": "Designing Educational Analytics Tools Using Visualization Based on Behavioral, Motivational, and Social Network Data",
+      "arxiv_id": null,
+      "doi": "10.32603/2071-2340-2019-4-81-93",
+      "year": 2019
+    },
+    {
+      "title": "Designing a Dashboard for Transparency and Control of Conversational AI",
+      "arxiv_id": "2406.07882",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "MathTutorBench: A Benchmark for Measuring Open-ended Pedagogical Capabilities of LLM Tutors",
+      "arxiv_id": "2502.18940",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Sightation Counts: Leveraging Sighted User Feedback in Building a BLV-aligned Dataset of Diagram Descriptions",
+      "arxiv_id": "2503.13369",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Explain with Visual Keypoints Like a Real Mentor! A Benchmark for Multimodal Solution Explanation",
+      "arxiv_id": "2504.03197",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Do LLMs Work on Charts? Designing Few-Shot Prompts for Chart Question Answering and Summarization",
+      "arxiv_id": "2312.10610",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "triMorph: Bridging Shape-Change and Cross-Sensory Correspondences for Haptic Interaction",
+      "arxiv_id": null,
+      "doi": "10.1145/3772318.3791243",
+      "year": 2026
+    },
+    {
+      "title": "Modular Tangible User Interfaces: Impact of Module Shape and Bonding Strength on Interaction",
+      "arxiv_id": null,
+      "doi": "10.1145/3569009.3572731",
+      "year": 2023
+    },
+    {
+      "title": "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+      "arxiv_id": "2407.19474",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "From Charts to Code: A Hierarchical Benchmark for Multimodal Models",
+      "arxiv_id": "2510.17932",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Evaluating Alternative Glyph Design for Showing Large-Magnitude-Range Quantum Spins",
+      "arxiv_id": "2301.00002",
+      "doi": null,
+      "year": 2022
+    },
+    {
+      "title": "Cluster-Based Multi-Dimensional Visualization",
+      "arxiv_id": null,
+      "doi": "10.4018/978-1-59904-777-5.ch005",
+      "year": null
+    },
+    {
+      "title": "Real-Time Drill Bit Condition Monitoring Using YOLO-Based Object Detection on Raspberry Pi with a Web-Based Visualization Dashboard",
+      "arxiv_id": null,
+      "doi": "10.1109/acmlc70381.2026.11700486",
+      "year": 2026
+    },
+    {
+      "title": "Mini-VLAT: A Short and Effective Measure of Visualization Literacy",
+      "arxiv_id": "2304.07905",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Same View, Different Visions -- Visual Nature Content on Social Media",
+      "arxiv_id": "2605.24493",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration",
+      "arxiv_id": "2605.03042",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "A Study on the Visualization and Design of Data for Real-time Analysis Dashboard - Focusing on the Realization of the 'Smart City Data Real-Time Analysis Dashboard' Screen",
+      "arxiv_id": null,
+      "doi": "10.18555/kicpd.2021.66.006",
+      "year": 2021
+    },
+    {
+      "title": "Data Formulator 2: Iteratively Creating Rich Visualizations with AI",
+      "arxiv_id": "2408.16119",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "Text2Vis: A Challenging and Diverse Benchmark for Generating Multimodal Visualizations from Text",
+      "arxiv_id": "2507.19969",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "CHART-6: Human-Centered Evaluation of Data Visualization Understanding in Vision-Language Models",
+      "arxiv_id": "2505.17202",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Peer Review Report For: scClustViz – Single-cell RNAseq cluster assessment and visualization [version 2; peer review: 2 approved]",
+      "arxiv_id": null,
+      "doi": "10.5256/f1000research.20249.r45602",
+      "year": 2019
+    },
+    {
+      "title": "WEB-BASED SALES DATA VISUALIZATION DASHBOARD SYSTEM FOR PARFUMKU UMKM",
+      "arxiv_id": null,
+      "doi": "10.36341/rabit.v11i2.7619",
+      "year": 2026
+    },
+    {
+      "title": "Revisited: Comparison of Empirical Methods to Evaluate Visualizations Supporting Crafting and Assembly Purposes",
+      "arxiv_id": null,
+      "doi": "10.1109/tvcg.2020.3030400",
+      "year": 2020
+    },
+    {
+      "title": "CYBER THREAT INTELLIGENCE DASHBOARD: A REAL-TIME VISUALIZATION PLATFORM",
+      "arxiv_id": null,
+      "doi": "10.36713/epra22041",
+      "year": 2025
+    },
+    {
+      "title": "TailVis: Expressive Chart Refinement Preserving Data-Binding Integrity",
+      "arxiv_id": "2607.25386",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "ChartAB: A Benchmark for Chart Grounding & Dense Alignment",
+      "arxiv_id": "2510.26781",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "EmergInsight: a real-time dashboard for optimizing emergency care through data visualization and analytics",
+      "arxiv_id": null,
+      "doi": "10.1093/jamiaopen/ooag008",
+      "year": 2026
+    },
+    {
+      "title": "A comparative user study of visualization techniques for cluster analysis of multidimensional data sets",
+      "arxiv_id": null,
+      "doi": "10.1177/1473871620922166",
+      "year": 2020
+    },
+    {
+      "title": "CLEAR: Error Analysis via LLM-as-a-Judge Made Easy",
+      "arxiv_id": "2507.18392",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "ChartCheck: An Evidence-Based Fact-Checking Dataset over Real-World Chart Images",
+      "arxiv_id": "2311.07453",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Barnes-Hut-SNE",
+      "arxiv_id": "1301.3342",
+      "doi": null,
+      "year": 2013
+    },
+    {
+      "title": "Supporting Agile Classroom Orchestration with a Live Teacher Dashboard",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-031-85652-5_4",
+      "year": 2025
+    },
+    {
+      "title": "Implementing of clustering in learning analytics dashboard to support teacher in evaluation",
+      "arxiv_id": null,
+      "doi": "10.1063/5.0208235",
+      "year": 2024
+    },
+    {
+      "title": "Building a Real-Time Call Tracking Dashboard",
+      "arxiv_id": null,
+      "doi": "10.1007/978-1-4842-7074-5_7",
+      "year": 2021
+    },
+    {
+      "title": "Supporting teacher orchestration of across-spaces learning situations",
+      "arxiv_id": null,
+      "doi": "10.35376/10324/15288",
+      "year": 2015
+    },
+    {
+      "title": "The development of an teacher facing dashboard of AI courseware",
+      "arxiv_id": null,
+      "doi": "10.3102/ip.25.2189614",
+      "year": 2025
+    },
+    {
+      "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+      "arxiv_id": "2609.11115",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Teacher Evaluation Needs Identification Survey",
+      "arxiv_id": null,
+      "doi": "10.1037/t12525-000",
+      "year": 1982
+    },
+    {
+      "title": "Perceived importance of district developed teacher evaluation standards and criteria as measured by teacher values survey",
+      "arxiv_id": null,
+      "doi": "10.32469/10355/14396",
+      "year": null
+    },
+    {
+      "title": "Carbon Dashboard for Real-Time Embodied Emissions Tracking",
+      "arxiv_id": null,
+      "doi": "10.37547/tajiir/volume07issue07-05",
+      "year": 2025
+    },
+    {
+      "title": "Bringing Data to Life: An Interactive Dashboard for Real Time Insights and Anomaly Detection",
+      "arxiv_id": null,
+      "doi": "10.21275/sr25421203619",
+      "year": 2025
+    },
+    {
+      "title": "FROM DASHBOARD TO CLASSROOM: A CASE STUDY OF TEACHER-FACING DASHBOARD IMPACT ON LEARNING PERFORMANCE AND BEHAVIORS",
+      "arxiv_id": null,
+      "doi": "10.33965/celda2025_202509l018",
+      "year": 2025
+    },
+    {
+      "title": "The Development of a Teacher-Facing Dashboard of AI Courseware",
+      "arxiv_id": null,
+      "doi": "10.3102/2189614",
+      "year": 2025
+    },
+    {
+      "title": "Dashboard Orchestration of eBPF-based Programmable OT Networks",
+      "arxiv_id": null,
+      "doi": "10.1109/infocomwkshps65812.2025.11152767",
+      "year": 2025
+    },
+    {
+      "title": "From real-time city to asynchronicity",
+      "arxiv_id": null,
+      "doi": "10.7765/9781526122520.00021",
+      "year": 2018
+    },
+    {
+      "title": "Case study: visual debugging of cluster hardware",
+      "arxiv_id": null,
+      "doi": "10.1109/visual.2001.964543",
+      "year": null
+    },
+    {
+      "title": "Generating Pedagogically Meaningful Visuals for Math Word Problems: A New Benchmark and Analysis of Text-to-Image Models",
+      "arxiv_id": "2506.03735",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "Tangible mixed reality for remote design review: a study understanding user perception and acceptance",
+      "arxiv_id": null,
+      "doi": "10.1186/2213-7459-1-8",
+      "year": 2013
+    },
+    {
+      "title": "On separation of platform-independent particles in user interfaces",
+      "arxiv_id": null,
+      "doi": "10.1007/s10586-015-0471-7",
+      "year": 2015
+    },
+    {
+      "title": "PharmaCORE: Optimizing medical pharmacology education with an innovative instructional dashboard",
+      "arxiv_id": null,
+      "doi": "10.1080/0142159x.2024.2342540",
+      "year": 2024
+    },
+    {
+      "title": "HybridFireflyEkMeans: a novel approach to enhance collaborative filtering through optimized user clustering and gray sheep user separation",
+      "arxiv_id": null,
+      "doi": "10.1007/s10586-026-05993-2",
+      "year": 2026
+    },
+    {
+      "title": "The Orchestration Technique of Vernon L. Leidig",
+      "arxiv_id": null,
+      "doi": "10.1177/000313139104100213",
+      "year": 1991
+    },
+    {
+      "title": "Medicines optimisation dashboard survey",
+      "arxiv_id": null,
+      "doi": "10.1211/pj.2014.20066901",
+      "year": 2014
+    },
+    {
+      "title": "Data Storytelling and Dashboard Design",
+      "arxiv_id": null,
+      "doi": "10.1201/9781003570691-7",
+      "year": 2025
+    },
+    {
+      "title": "Beyond “Place Matters”: Making Spatial Analysis Accessible with Dashboard-Driven Geography",
+      "arxiv_id": null,
+      "doi": "10.1080/19338341.2026.2614084",
+      "year": 2026
+    },
+    {
+      "title": "SurveyBench: How Well Can LLM(-Agents) Write Academic Surveys?",
+      "arxiv_id": "2510.03120",
+      "doi": null,
+      "year": 2025
+    },
+    {
+      "title": "MVSS: A Unified Framework for Multi-View Structured Survey Generation",
+      "arxiv_id": "2601.09504",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "GPT-4V(ision) is a Human-Aligned Evaluator for Text-to-3D Generation",
+      "arxiv_id": "2401.04092",
+      "doi": null,
+      "year": 2024
+    },
+    {
+      "title": "EduPanel: A Three-Agent LLM Judge for Teaching Videos -- Reliability, Complementarity, and Human Trust Calibration",
+      "arxiv_id": "2607.18529",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Maestro: Reinforcement Learning to Orchestrate Hierarchical Model-Skill Ensembles",
+      "arxiv_id": "2605.22177",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Teaching Culture and Psychology",
+      "arxiv_id": null,
+      "doi": "10.4324/9781003356820",
+      "year": 2024
+    },
+    {
+      "title": "StarEmbed: Benchmarking Time Series Foundation Models on Astronomical Observations of Variable Stars",
+      "arxiv_id": "2510.06200",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards",
+      "arxiv_id": "2610.18860",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Making Large Multimodal Models Understand Arbitrary Visual Prompts",
+      "arxiv_id": "2312.00784",
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Imag-Eval: a language-grounded framework for interpretable Text-to-Image instruction following evaluation",
+      "arxiv_id": "2608.29210",
+      "doi": null,
+      "year": 2026
+    },
+    {
+      "title": "Design and Perception of a Soft Shape Change Beneath a Smartwatch",
+      "arxiv_id": null,
+      "doi": "10.1145/3676495",
+      "year": 2024
+    },
+    {
+      "title": "TPVis: A visual analytics system for exploring test case prioritization methods",
+      "arxiv_id": null,
+      "doi": "10.1016/j.cag.2024.104064",
+      "year": 2024
+    },
+    {
+      "title": "Design and Perception of a Soft Shape Change Beneath a Smartwatch: Conception et perception d’un changement de forme molle au dos d'une montre connectée",
+      "arxiv_id": null,
+      "doi": "10.1145/3649792.3649800",
+      "year": 2024
+    },
+    {
+      "title": "The State of Pilot Study Reporting in Crowdsourcing: A Reflection on Best Practices and Guidelines",
+      "arxiv_id": "2312.08090",
+      "doi": "10.1145/3641023",
+      "year": 2023
+    },
+    {
+      "title": "Understanding transitions in animated bar charts",
+      "arxiv_id": null,
+      "doi": "10.1007/s44267-023-00015-w",
+      "year": 2023
+    },
+    {
+      "title": "Impact of softness on users’ perception of curvature for future soft curvature-changing UIs",
+      "arxiv_id": null,
+      "doi": "10.1145/3544548.3581179",
+      "year": 2023
+    },
+    {
+      "title": "The quantitative research on length and area perception: A guidance on shape encoding in visual interface",
+      "arxiv_id": null,
+      "doi": "10.1016/j.displa.2022.102325",
+      "year": 2022
+    },
+    {
+      "title": "KeyTch: Combining the Keyboard with a Touchscreen for Rapid Command Selection on Toolbars",
+      "arxiv_id": null,
+      "doi": "10.1145/3411764.3445288",
+      "year": 2021
+    }
+  ],
+  "ranking": "claim",
+  "semantic_model": null,
+  "arxiv_match": "all",
+  "must_read": [
+    {
+      "title": "Ranked-List Visualization",
+      "year": 2019,
+      "arxiv_id": null,
+      "doi": "10.1145/3290605.3300422",
+      "pdf_url": null,
+      "why": "term overlap 0.145, design elements: ranked list baseline, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Ranked-List Proportional Representation",
+      "year": 2025,
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.5099845",
+      "pdf_url": null,
+      "why": "term overlap 0.124, design elements: ranked list baseline, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Comparing Explanatory and Exploratory Explainable User Interfaces for AI-Supported Clinical Decision-Making: A Within-Subjects Study with Healthcare Professionals (Preprint)",
+      "year": 2026,
+      "arxiv_id": null,
+      "doi": "10.2196/preprints.104490",
+      "pdf_url": null,
+      "why": "term overlap 0.042, design elements: task completion time and accuracy; within-subjects user study",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Supplemental Information 5: Ranked gene list for BSG-based GSEA",
+      "year": null,
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.20467/supp-5",
+      "pdf_url": null,
+      "why": "term overlap 0.124, design elements: ranked list baseline, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Table S3: GSEA ranked gene list for FDMI",
+      "year": null,
+      "arxiv_id": null,
+      "doi": "10.7717/peerj.5048/supp-4",
+      "pdf_url": null,
+      "why": "term overlap 0.124, design elements: ranked list baseline, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "A Review and Collation of Graphical Perception Knowledge for Visualization Recommendation",
+      "year": 2021,
+      "arxiv_id": "2109.01271",
+      "doi": "10.1145/3544548.3581349",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3544548.3581349",
+      "why": "term overlap 0.086, design elements: within-subjects user study, found only through the citation graph, survey-like",
+      "next": "fulltext --id 2109.01271"
+    },
+    {
+      "title": "Standardizing Reporting of Participant Compensation in HCI: A Systematic Literature Review and Recommendations for the Field",
+      "year": 2021,
+      "arxiv_id": null,
+      "doi": "10.1145/3411764.3445734",
+      "pdf_url": null,
+      "why": "term overlap 0.0, design elements: within-subjects user study, found only through the citation graph, survey-like",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    }
+  ],
+  "expansion_log": [
+    {
+      "expanded": "Ranked-List Visualization",
+      "citing_and_references": 25
+    },
+    {
+      "expanded": "Ranked-List Proportional Representation",
+      "citing_and_references": 0
+    },
+    {
+      "expanded": "Comparing Explanatory and Exploratory Explainable User Interfaces for AI-Supported Clinical Decision-Making: A Within-Subjects Study with Healthcare Professionals (Preprint)",
+      "citing_and_references": 0
+    }
+  ],
+  "expansion_errors": [
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404,
+      "step": "citations"
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404,
+      "step": "references"
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404,
+      "step": "citations"
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "not_found",
+      "message": "HTTP 404",
+      "status": 404,
+      "step": "references"
+    }
+  ],
+  "log": [
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "visualization student questions instructor",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "visualization student questions instructor",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "visualization student questions instructor",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "real-time classroom dashboard visualization questions",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "real-time classroom dashboard visualization questions",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "real-time classroom dashboard visualization questions",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "instructor dashboard student confusion visualization",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "instructor dashboard student confusion visualization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "instructor dashboard student confusion visualization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "question cluster visualization user study",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "question cluster visualization user study",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "question cluster visualization user study",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "teacher orchestration dashboard evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "teacher orchestration dashboard evaluation",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "teacher orchestration dashboard evaluation",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "visualization student questions instructor survey",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "visualization student questions instructor survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "visualization student questions instructor survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "visualization student questions instructor review",
+      "results": 3,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "visualization student questions instructor review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "visualization student questions instructor review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "real-time classroom dashboard visualization questions survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "real-time classroom dashboard visualization questions survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "real-time classroom dashboard visualization questions survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "real-time classroom dashboard visualization questions review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "real-time classroom dashboard visualization questions review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "real-time classroom dashboard visualization questions review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "instructor dashboard student confusion visualization survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "instructor dashboard student confusion visualization survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "instructor dashboard student confusion visualization survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "instructor dashboard student confusion visualization review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "instructor dashboard student confusion visualization review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "instructor dashboard student confusion visualization review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "question cluster visualization user study survey",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "question cluster visualization user study survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "question cluster visualization user study survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "question cluster visualization user study review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "question cluster visualization user study review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "question cluster visualization user study review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "teacher orchestration dashboard evaluation survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "teacher orchestration dashboard evaluation survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "teacher orchestration dashboard evaluation survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "teacher orchestration dashboard evaluation review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "teacher orchestration dashboard evaluation review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "teacher orchestration dashboard evaluation review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "visualization student questions instructor",
+      "results": 9,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "visualization student questions instructor",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "visualization student questions instructor",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "real-time classroom dashboard visualization questions",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "real-time classroom dashboard visualization questions",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "real-time classroom dashboard visualization questions",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "instructor dashboard student confusion visualization",
+      "results": 1,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "instructor dashboard student confusion visualization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "instructor dashboard student confusion visualization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "question cluster visualization user study",
+      "results": 9,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "question cluster visualization user study",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "question cluster visualization user study",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "teacher orchestration dashboard evaluation",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "teacher orchestration dashboard evaluation",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "teacher orchestration dashboard evaluation",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "ranked list baseline frequency-encoded constellation visualization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "ranked list baseline frequency-encoded constellation visualization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "ranked list baseline frequency-encoded constellation visualization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "task completion time and accuracy frequency-encoded constellation visualization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "task completion time and accuracy frequency-encoded constellation visualization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "task completion time and accuracy frequency-encoded constellation visualization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "within-subjects user study frequency-encoded constellation visualization",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "within-subjects user study frequency-encoded constellation visualization",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "within-subjects user study frequency-encoded constellation visualization",
+      "results": 10,
+      "error": null
+    }
+  ],
+  "date": "2026-10-19"
+}

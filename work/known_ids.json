@@ -1,0 +1,170 @@
+{
+ "2512.09974": {
+  "title": "Enhancing Fake-News Detection with Node-Level Topological Features",
+  "arxiv_id": "2512.09974",
+  "doi": "10.48550/arxiv.2512.09974",
+  "year": 2025
+ },
+ "2305.19523": {
+  "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+  "arxiv_id": "2305.19523",
+  "doi": null,
+  "year": 2023
+ },
+ "2601.19225": {
+  "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+  "arxiv_id": "2601.19225",
+  "doi": null,
+  "year": 2026
+ },
+ "2405.20139": {
+  "title": "GNN-RAG: Graph Neural Retrieval for Large Language Model Reasoning",
+  "arxiv_id": "2405.20139",
+  "doi": null,
+  "year": 2024
+ },
+ "2302.11640": {
+  "title": "A critical look at the evaluation of GNNs under heterophily: Are we really making progress?",
+  "arxiv_id": "2302.11640",
+  "doi": null,
+  "year": 2023
+ },
+ "2408.14134": {
+  "title": "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+  "arxiv_id": "2408.14134",
+  "doi": null,
+  "year": 2024
+ },
+ "2503.04822": {
+  "title": "HeTGB: A Comprehensive Benchmark for Heterophilic Text-Attributed Graphs",
+  "arxiv_id": "2503.04822",
+  "doi": null,
+  "year": 2025
+ },
+ "2603.26105": {
+  "title": "Are LLM-Enhanced Graph Neural Networks Robust against Poisoning Attacks?",
+  "arxiv_id": "2603.26105",
+  "doi": null,
+  "year": 2026
+ },
+ "2510.17185": {
+  "title": "Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses",
+  "arxiv_id": "2510.17185",
+  "doi": null,
+  "year": 2025
+ },
+ "2405.16405": {
+  "title": "Intruding with Words: Towards Understanding Graph Injection Attacks at the Text Level",
+  "arxiv_id": "2405.16405",
+  "doi": null,
+  "year": 2024
+ },
+ "2510.12233": {
+  "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+  "arxiv_id": "2510.12233",
+  "doi": null,
+  "year": 2025
+ },
+ "2411.12775": {
+  "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+  "arxiv_id": "2411.12775",
+  "doi": "10.1145/3701551.3703524",
+  "year": 2025
+ },
+ "2104.12259": {
+  "title": "User Preference-aware Fake News Detection",
+  "arxiv_id": "2104.12259",
+  "doi": "10.1145/3404835.3462990",
+  "year": 2021
+ },
+ "2104.04986": {
+  "title": "Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa",
+  "arxiv_id": "2104.04986",
+  "doi": "10.18653/v1/2021.naacl-main.146",
+  "year": 2021
+ },
+ "2406.08993": {
+  "title": "Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification",
+  "arxiv_id": "2406.08993",
+  "doi": "10.52202/079017-3098",
+  "year": 2024
+ },
+ "2502.00829": {
+  "title": "When Do LLMs Help With Node Classification? A Comprehensive Analysis",
+  "arxiv_id": "2502.00829",
+  "doi": null,
+  "year": 2025
+ },
+ "2407.07457": {
+  "title": "GLBench: A Comprehensive Benchmark for Graph with Large Language Models",
+  "arxiv_id": "2407.07457",
+  "doi": "10.52202/079017-1340",
+  "year": 2024
+ },
+ "2309.16595": {
+  "title": "Can LLMs Effectively Leverage Graph Structural Information through Prompts, and Why?",
+  "arxiv_id": "2309.16595",
+  "doi": null,
+  "year": 2023
+ },
+ "2307.03393": {
+  "title": "Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs",
+  "arxiv_id": "2307.03393",
+  "doi": "10.1145/3655103.3655110",
+  "year": 2024
+ },
+ "2212.12621": {
+  "title": "Nothing Stands Alone: Relational Fake News Detection with Hypergraph Neural Networks",
+  "arxiv_id": "2212.12621",
+  "doi": "10.1109/bigdata55660.2022.10020234",
+  "year": 2022
+ },
+ "2512.06638": {
+  "title": "The Impact of Data Characteristics on GNN Evaluation for Detecting Fake News",
+  "arxiv_id": "2512.06638",
+  "doi": null,
+  "year": 2025
+ },
+ "1909.03477": {
+  "title": "Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks",
+  "arxiv_id": "1909.03477",
+  "doi": "10.18653/v1/d19-1464",
+  "year": 2019
+ },
+ "2110.00171": {
+  "title": "BERT4GCN: Using BERT Intermediate Layers to Augment GCN for Aspect-based Sentiment Classification",
+  "arxiv_id": "2110.00171",
+  "doi": "10.18653/v1/2021.emnlp-main.724",
+  "year": 2021
+ },
+ "10.1007/978-3-031-26390-3_31": {
+  "title": "On the Current State of Reproducibility and Reporting of Uncertainty for Aspect-Based Sentiment Analysis",
+  "arxiv_id": null,
+  "doi": "10.1007/978-3-031-26390-3_31",
+  "year": 2023
+ },
+ "2101.09449": {
+  "title": "Reproducibility, Replicability and Beyond: Assessing Production Readiness of Aspect Based Sentiment Analysis in the Wild",
+  "arxiv_id": "2101.09449",
+  "doi": "10.1007/978-3-030-72240-1_7",
+  "year": 2021
+ },
+ "2008.09084": {
+  "title": "Do Syntax Trees Help Pre-trained Transformers Extract Information?",
+  "arxiv_id": "2008.09084",
+  "doi": null,
+  "year": 2020
+ },
+ "2109.03777": {
+  "title": "Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning the Necessity of Text-Graphs and the Surprising Strength of a Wide MLP",
+  "arxiv_id": "2109.03777",
+  "doi": "10.18653/v1/2022.acl-long.279",
+  "year": 2022
+ },
+ "1809.05679": {
+  "title": "Graph Convolutional Networks for Text Classification",
+  "arxiv_id": "1809.05679",
+  "doi": "10.1609/aaai.v33i01.33017370",
+  "year": 2019
+ }
+}

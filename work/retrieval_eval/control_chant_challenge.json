@@ -1,0 +1,2766 @@
+{
+  "claim": "Predicting the sentiment of Gregorian chant lyrics with graph neural networks over medieval monastery floor plans",
+  "queries": [
+    "monastery floor plan graph neural network chant sentiment",
+    "Gregorian chant lyrics sentiment graph",
+    "architectural floor plan graph emotion of liturgical music",
+    "medieval monastery layout predicts chant mood"
+  ],
+  "design_elements": [
+    "MLP baseline on the same node features",
+    "randomly rewired edges",
+    "shuffled node features",
+    "multiple random seeds"
+  ],
+  "design_queries": [
+    "MLP baseline on the same node features Predicting sentiment Gregorian",
+    "randomly rewired edges Predicting sentiment Gregorian",
+    "shuffled node features Predicting sentiment Gregorian",
+    "multiple random seeds Predicting sentiment Gregorian"
+  ],
+  "anchor": "Predicting sentiment Gregorian",
+  "seeds": [],
+  "sources_ok": [
+    "arxiv",
+    "crossref"
+  ],
+  "sources_failed": [],
+  "sources_status": {
+    "arxiv": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "crossref": {
+      "calls": 16,
+      "ok_calls": 16,
+      "results": 160,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "query_diversity": {
+    "n_queries": 4,
+    "distinct_terms": 18,
+    "mean_pairwise_term_overlap": 0.151,
+    "near_paraphrases": false
+  },
+  "n_papers_examined": 146,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 15,
+  "n_without_abstract": 72,
+  "n_from_citation_expansion": 44,
+  "n_possible_same_design": 1,
+  "high_overlap_by_year": {},
+  "signal": "close_prior_work_found",
+  "max_supported_novelty_confidence": "low",
+  "ceiling_lowered_because": [
+    "citation expansion partly failed (4 call(s): rate_limited)",
+    "70% of the ten closest records have no abstract"
+  ],
+  "interpretation": "Prior work close to the idea exists; 1 paper(s) mention 2+ of the stated design elements, so the same experiment may have been run under different words. Read them in full. Revise the idea to differ in a stated, checkable way, or reframe it as a replication or extension.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Heterogeneous Graph Neural Network for WiFi RSSI-Based Indoor Floor Classification",
+        "authors": [
+          "Houjin Lu",
+          "Seung-Hoon Hwang"
+        ],
+        "year": 2025,
+        "date": "2025-12-09",
+        "venue": "Electronics",
+        "doi": "10.3390/electronics14244845",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/electronics14244845",
+        "pdf_url": null,
+        "abstract": "Accurate indoor floor classification is essential for wireless positioning systems. However, the performance of conventional received signal strength indictor (RSSI)-based fingerprinting approaches is often limited by signal fluctuations and insufficient feature representation. To address these challenges, this paper introduces a heterogeneous graph neural network (GNN) framework that models WiFi signals using two types of nodes: reference points and Media Access Control (MAC) address. The edges between reference points and MAC addresses are weighted by normalized RSSI values, allowing the model to capture signal strength interactions and perform relation-aware message passing. Through this graph-based representation, the model can learn spatial and signal dependencies more effectively than conventional vector-based approaches. The proposed model was extensively evaluated under both benchmark and practical settings. On small-scale datasets, it achieved performance comparable to that of a conventional convolutional neural network trained on large-scale datasets, confirming its effectiveness with limited samples. In addition, the proposed model consistently outperformed other models under noisy conditions, achieving 93.88% accuracy on the widely used UJIIndoorLoc dataset and 97.3% accuracy in real-time experiments conducted at a test site. These values are significantly higher than those achieved using conventional machine learning (ML) baselines, highlighting the ability of the proposed model to handle real-world signal variations. These findings highlight that the heterogeneous GNN effectively captures spatial and signal-level dependencies, offering a robust and scalable solution for accurate indoor floor classification. Overall, this work presents a promising pathway for improving the performance and reliability of future wireless positioning systems.",
+        "citations": 4,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.677
+          }
+        }
+      },
+      "term_overlap": 0.22,
+      "tfidf_similarity": 0.071,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "FEATURE REPRESENTATION FOR FLOOR PLANS USING RANDOM VISIBILITY GRAPH AND GRAPH NEURAL NETWORK Random Visibility Graph とGraph Neural Networkを用いた間取りの特徴量表現",
+        "authors": [
+          "Keita KADO"
+        ],
+        "year": 2025,
+        "date": "2025-02-20",
+        "venue": "AIJ Journal of Technology and Design",
+        "doi": "10.3130/aijt.31.585",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4407732524",
+        "s2_id": null,
+        "url": "https://doi.org/10.3130/aijt.31.585",
+        "pdf_url": "https://www.jstage.jst.go.jp/article/aijt/31/77/31_585/_pdf",
+        "abstract": "Floor plans are widely used for representing residential spaces. This study aims to propose a feature representation method for floor plans, namely unstructured image data, using a Random Visibility Graph and Graph Neural Network. In this method, the feature representation is performed using Invariant Information Clustering. To prepare a dataset, the Random Visibility Graph is designed to derive multiple graphs from a single floor plan effectively. The obtained features formed shape-oriented clusters, rather than ordinary variables such as area. In addition, the similarity of features corresponds to the similarity of plans, including slight differences in the connectivity of rooms.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.625,
+            "retrieval_hits": 1,
+            "score": 2.0
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W2797934084",
+            "W2962898354",
+            "W2986336497",
+            "W3161781421",
+            "W4387782769"
+          ],
+          "related_works": [
+            "W2743652671",
+            "W3188793535",
+            "W2032709970",
+            "W2066813664",
+            "W2094166299",
+            "W2519024191",
+            "W2963183586",
+            "W2159176266",
+            "W1608416195",
+            "W4388826510"
+          ]
+        }
+      },
+      "term_overlap": 0.289,
+      "tfidf_similarity": 0.179,
+      "design_elements_matched": [
+        "multiple random seeds"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "CB-SAGE: A novel centrality based graph neural network for floor plan classification",
+        "authors": [
+          "Atul Kumar Verma",
+          "Mahipal Jadeja"
+        ],
+        "year": 2023,
+        "date": "2023-11",
+        "venue": "Engineering Applications of Artificial Intelligence",
+        "doi": "10.1016/j.engappai.2023.107121",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.engappai.2023.107121",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 16,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.625,
+            "retrieval_hits": 3,
+            "score": 2.342
+          }
+        }
+      },
+      "term_overlap": 0.289,
+      "tfidf_similarity": 0.243,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Gregorian chant",
+        "authors": [
+          "James W. McKinnon"
+        ],
+        "year": 2001,
+        "date": "2001",
+        "venue": "Oxford Music Online",
+        "doi": "10.1093/gmo/9781561592630.article.11726",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1093/gmo/9781561592630.article.11726",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "reference-entry",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "Gregorian chant lyrics sentiment graph"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "Gregorian chant lyrics sentiment graph survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "Gregorian chant lyrics sentiment graph review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.4,
+            "title_match": 0.4,
+            "retrieval_hits": 3,
+            "score": 1.575
+          }
+        }
+      },
+      "term_overlap": 0.148,
+      "tfidf_similarity": 0.356,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Optimized graph neural networks for spatial recognition to support automatic building information model semantic enrichment - Exploring node features enhancing strategies",
+        "authors": [
+          "Yian Chen",
+          "Huixian Jiang"
+        ],
+        "year": 2025,
+        "date": "2025-05-01",
+        "venue": "Engineering applications of artificial intelligence",
+        "doi": "10.1016/j.engappai.2025.110365",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "3ad04e6f8596d644e3f38008ad53c3cc817bba01",
+        "url": "https://www.semanticscholar.org/paper/3ad04e6f8596d644e3f38008ad53c3cc817bba01",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1016/j.engappai.2023.107121"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.163,
+      "tfidf_similarity": 0.089,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "Automatic Floor Plan Generation System Using Graph Neural Networks with Building Exterior Constraints and Room Attribute Information",
+        "authors": [
+          "Gen Urakawa",
+          "Tomohiro Fukuda",
+          "Nobuyoshi Yabuki"
+        ],
+        "year": 2025,
+        "date": "2025",
+        "venue": "eCAADe proceedings Proceedings of the 43rd International Conference on Education and Research in Computer Aided Architectural Design in Europe (eCAADe)  [Volume 1]",
+        "doi": "10.52842/conf.ecaade.2025.1.201",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.52842/conf.ecaade.2025.1.201",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "architectural floor plan graph emotion of liturgical music"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.625,
+            "retrieval_hits": 1,
+            "score": 2.0
+          }
+        }
+      },
+      "term_overlap": 0.289,
+      "tfidf_similarity": 0.191,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "A survey of aspect-based sentiment analysis classification with a focus on graph neural network methods",
+        "authors": [
+          "Akram Karimi Zarandi",
+          "Sayeh Mirzaei"
+        ],
+        "year": 2023,
+        "date": "2023-12-13",
+        "venue": "Multimedia Tools and Applications",
+        "doi": "10.1007/s11042-023-17701-y",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/s11042-023-17701-y",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 24,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment survey"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.73
+          }
+        }
+      },
+      "term_overlap": 0.241,
+      "tfidf_similarity": 0.232,
+      "design_elements_matched": [],
+      "is_survey_like": true,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "GLoc: GNN in Indoor Localization",
+        "authors": [
+          "Wenhao Zhang",
+          "Xingfa Shen",
+          "Sicong Xia"
+        ],
+        "year": 2025,
+        "date": "2025-06-01",
+        "venue": "IEEE Internet of Things Journal",
+        "doi": "10.1109/jiot.2025.3529901",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "c5ddf167979a69201f4c004a9b8efcaf0b8b69d5",
+        "url": "https://www.semanticscholar.org/paper/c5ddf167979a69201f4c004a9b8efcaf0b8b69d5",
+        "pdf_url": null,
+        "abstract": "Indoor positioning holds significant application value in fields, such as smart homes and industrial IoT. However, CNN-based positioning methods do not effectively utilize the topological structure of positional relationships between access points and smart devices. This limitation hampers their ability to accurately model and interpret the spatial dependencies inherent in indoor environments. This article proposes a GLoc algorithm, which is the first to introduce graph neural networks (GNNs) into Wi-Fi-based indoor positioning. The method models the positioning environment as a graph structure consisting of location nodes and signal feature edges, leveraging GNNs to capture spatial dependencies and signal distribution characteristics between different locations. On a 144-m2 dataset, GLoc demonstrates excellent positioning accuracy, with a median accuracy of 23 cm, and 90% of the estimates within a 97-cm range. Compared to existing techniques, GLoc also exhibits stronger robustness and higher positioning accuracy in dynamic environments. This method opens new possibilities for advancing indoor positioning technology and may spur progress in related fields.",
+        "citations": 11,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "10.3390/electronics14244845"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.163,
+      "tfidf_similarity": 0.037,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "BN-GRAPH: Data Augmentation Based Bangla Text Sentiment Analysis in Deep Graph Neural Network",
+        "authors": [
+          "Nitish Ranjan Bhowmik",
+          "M. Rubaiyat Hossain Mondal",
+          "Mohammad Arifuzzaman"
+        ],
+        "year": 2025,
+        "date": "2025-03-22",
+        "venue": "SN Computer Science",
+        "doi": "10.1007/s42979-025-03763-2",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/s42979-025-03763-2",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 3,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.67
+          }
+        }
+      },
+      "term_overlap": 0.241,
+      "tfidf_similarity": 0.206,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "The Floor Plan",
+        "authors": [],
+        "year": 2014,
+        "date": "2014",
+        "venue": "Architectural Drafting for Interior Designers",
+        "doi": "10.5040/9781501371332.ch-005",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.5040/9781501371332.ch-005",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "other",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "architectural floor plan graph emotion of liturgical music"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "architectural floor plan graph emotion of liturgical music survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "architectural floor plan graph emotion of liturgical music review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.286,
+            "title_match": 0.286,
+            "retrieval_hits": 3,
+            "score": 1.232
+          }
+        }
+      },
+      "term_overlap": 0.126,
+      "tfidf_similarity": 0.32,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "The 15-th century edition of the Pauline missal as a source for Gregorian chant history",
+        "authors": [
+          "Fryderyk Rozen"
+        ],
+        "year": 2024,
+        "date": "2024-01-04",
+        "venue": "Saeculum Christianum",
+        "doi": "10.21697/sc.2023.30.2.7",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21697/sc.2023.30.2.7",
+        "pdf_url": null,
+        "abstract": "There exist only few medieval codices containing musical notation for the Mass in the Pauline rite. The significant source for further research of the Pauline liturgical music is Missale Eremitarum S. Pauli printed by Johannes Amerbach about 1490. The objective of this article is to discuss the blank spaces left especially for the addition of handwritten neumes. The space for musical notation was prepared by the printer for parts of the Ordinarium Missae, in ceremonies of the Palm Sunday and Good Friday. In six remaining copies of the missal the neumes were inscribed in various ways. The study of the provenance shows that these copies were used in the monasteries in several countries.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "Gregorian chant lyrics sentiment graph"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.4,
+            "retrieval_hits": 1,
+            "score": 1.525
+          }
+        }
+      },
+      "term_overlap": 0.348,
+      "tfidf_similarity": 0.088,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Floor Plan Reconstruction from Sparse Views: Combining Graph Neural Network with Constrained Diffusion",
+        "authors": [
+          "Arnaud Gueze",
+          "Matthieu Ospici",
+          "Damien Rohmer",
+          "Marie-Paule Cani"
+        ],
+        "year": 2023,
+        "date": "2023-10-02",
+        "venue": "2023 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+        "doi": "10.1109/iccvw60793.2023.00173",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4387030427",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/iccvw60793.2023.00173",
+        "pdf_url": "https://hal.science/hal-04216274v1/document",
+        "abstract": "We address the challenging problem of floor plan reconstruction from sparse views and a room-connectivity graph. As a first stage, we construct a flexible graph-structure unifying the connectivity graph and the sparse observed data. Using our Graph Neural Network architecture, we can then refine the available information and predict unobserved room properties. In a second step, we introduce a Constrained Diffusion Model to reconstruct consistent floor plan matching the available information, despite of its sparsity. More precisely, we use a Cross-Attention mechanism armed with shape descriptors to guarantee that the generated floor plan reflects both the input room connectivity and the geometry observed in the sparse views.",
+        "citations": 13,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.625,
+            "retrieval_hits": 3,
+            "score": 2.334
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W1522301498",
+            "W1965142824",
+            "W2003938193",
+            "W2118376687",
+            "W2159498975",
+            "W2519887557",
+            "W2624431344",
+            "W2626778328",
+            "W2750779823",
+            "W2918342466",
+            "W2963341956",
+            "W2963433827",
+            "W2978508283",
+            "W3011182352",
+            "W3021945924",
+            "W3033239261",
+            "W3097432995",
+            "W3107547765",
+            "W3113177135",
+            "W3126899967",
+            "W3135367836",
+            "W3135714709",
+            "W3169575312",
+            "W3169622372",
+            "W3203247751",
+            "W3205705101",
+            "W3215707055",
+            "W4226208698",
+            "W4286611064",
+            "W4300425011",
+            "W4319453706",
+            "W4382243959",
+            "W4386066523",
+            "W4386071795",
+            "W6779789776",
+            "W6839042332",
+            "W6906815983",
+            "W7133197571",
+            "W7133244177"
+          ],
+          "related_works": [
+            "W2366107444",
+            "W4388145910",
+            "W2381570729",
+            "W1976205134",
+            "W4248336175",
+            "W2031260042",
+            "W2391445434",
+            "W3009369890",
+            "W4312490297",
+            "W2062212388"
+          ]
+        }
+      },
+      "term_overlap": 0.289,
+      "tfidf_similarity": 0.139,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "CubiGraph5K - Organizational Graph Generation for Structured Architectural Floor Plan Dataset",
+        "authors": [
+          "Yueheng Lu",
+          "Runjia Tian",
+          "Ao Li",
+          "Xiaoshi Wang",
+          "Garcia del Castillo Lopez Jose Luis"
+        ],
+        "year": 2021,
+        "date": "2021",
+        "venue": "CAADRIA proceedings Proceedings of the 26th Conference on Computer Aided Architectural Design Research in Asia (CAADRIA)",
+        "doi": "10.52842/conf.caadria.2021.1.081",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4285552738",
+        "s2_id": null,
+        "url": "https://doi.org/10.52842/conf.caadria.2021.1.081",
+        "pdf_url": "http://papers.cumincad.org/data/works/att/caadria2021_196.pdf",
+        "abstract": "In this paper, a novel synthetic workflow is presented for procedural generation of room relation graphs of floor plans from structured architectural datasets. Different from classical floor plan generation models, which are based on strong heuristics or low-level pixel operations, our method relies on parsing vectorized floor plans to generate their intended organizational graph for further graph-based deep learning. This research work presents the schema for the organizational graphs, describes the generation algorithms, and analyzes its time/space complexity. As a demonstration, a new dataset called CubiGraph5K is presented. This dataset is a collection of graph representations generated by the proposed algorithms, using the floor plans in the popular CubiCasa5K dataset as inputs. The aim of this contribution is to provide a matching dataset that could be used to train neural networks on enhanced floor plan parsing, analysis and generation in future research.",
+        "citations": 11,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "architectural floor plan graph emotion of liturgical music"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "architectural floor plan graph emotion of liturgical music survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "architectural floor plan graph emotion of liturgical music review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.571,
+            "title_match": 0.571,
+            "retrieval_hits": 3,
+            "score": 2.157
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W1587404451",
+            "W1966137794",
+            "W2116341502",
+            "W2552465644",
+            "W2606780347",
+            "W2933283617",
+            "W2963184176",
+            "W3021945924",
+            "W3107547765",
+            "W4255584597"
+          ],
+          "related_works": [
+            "W2280422768",
+            "W3143197806",
+            "W4252555497",
+            "W3121175838",
+            "W3016293053",
+            "W1690653314",
+            "W2401723157",
+            "W2065055572",
+            "W2784269775",
+            "W2952904874"
+          ]
+        }
+      },
+      "term_overlap": 0.289,
+      "tfidf_similarity": 0.136,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Floor plan recommendation system using graph neural network with spatial relationship dataset",
+        "authors": [
+          "Hyejin Park",
+          "Hyegyo Suh",
+          "Jaeil Kim",
+          "Seungyeon Choo"
+        ],
+        "year": 2023,
+        "date": "2023-07",
+        "venue": "Journal of Building Engineering",
+        "doi": "10.1016/j.jobe.2023.106378",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4360999343",
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.jobe.2023.106378",
+        "pdf_url": "https://doi.org/10.1016/j.jobe.2023.106378",
+        "abstract": "The purpose of this study was to develop a recommendation system that, in the pre-design phase, quickly and easily search adequate floor plans satisfying the client requirements about the spatial relationship type using artificial intelligence (AI) technology. In this study using a graph dataset representing the spatial relationship between entities, we propose a deep neural network approach using SimGNN and shallow networks with teacher–student learning to compute graph similarity, measured by graph edit distance, fast and accurately during the search operation in the recommendation system. The prediction errors between the GED score (ground truth) and the predicted score were small enough to employ the neural networks for the recommendation system instead of using GED, which takes a long calculation time. The proposed recommendation systems based deep networks also suggested floor plans satisfying given conditions on the spatial relationship with high accuracy.",
+        "citations": 27,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.625,
+            "retrieval_hits": 3,
+            "score": 2.351
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W644837422",
+            "W1541169153",
+            "W1808171078",
+            "W1821462560",
+            "W2104361451",
+            "W2116341502",
+            "W2117253428",
+            "W2251410821",
+            "W2579549467",
+            "W2888240501",
+            "W2907492528",
+            "W2963184176",
+            "W2964015378",
+            "W2986336497",
+            "W3008760144",
+            "W3021945924",
+            "W3044880755",
+            "W3107547765",
+            "W3183955218",
+            "W3186051981",
+            "W3194412829",
+            "W3214473339",
+            "W4233740036",
+            "W4237144788",
+            "W4249142012",
+            "W4255556797",
+            "W4285166399",
+            "W4285552738"
+          ],
+          "related_works": [
+            "W4390273403",
+            "W4386781444",
+            "W2150182025",
+            "W3092950680",
+            "W3197542405",
+            "W2056712470",
+            "W3125580266",
+            "W4288390103",
+            "W4317039510",
+            "W4238861846"
+          ]
+        }
+      },
+      "term_overlap": 0.289,
+      "tfidf_similarity": 0.132,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Graph Neural Network Based Living Comfort Prediction Using Real Estate Floor Plan Images",
+        "authors": [
+          "Ryota Kitabayashi",
+          "Taro Narahara",
+          "Toshihiko Yamasaki"
+        ],
+        "year": 2022,
+        "date": "2022-12-13",
+        "venue": "Proceedings of the 4th ACM International Conference on Multimedia in Asia",
+        "doi": "10.1145/3551626.3564970",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4311118053",
+        "s2_id": null,
+        "url": "https://doi.org/10.1145/3551626.3564970",
+        "pdf_url": null,
+        "abstract": "In recent years, machine learning has been widely used in the real estate field. However, most of these previous studies have been limited to analysis based on objective perspectives, such as analysis of the structure of the floor plan and rent estimation. On the other hand, we focus on the subjective \"living comfort\" of real estate properties and aim to predict people's impressions of properties based on information obtained from floor plan images. Specifically, by using deep learning to analyze floor plan images and graph structures reflecting the floor plans, it becomes possible to predict the attractiveness of each property in terms of spaciousness, modernity, privacy, and so on. As a result of the experiments, the effectiveness of using both the floor plan image and the corresponding graph structure for prediction was confirmed.",
+        "citations": 2,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.625,
+            "retrieval_hits": 3,
+            "score": 2.286
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W2108598243",
+            "W2194775991",
+            "W2736337626",
+            "W2779637370",
+            "W2795174655",
+            "W2963446712",
+            "W2964309882",
+            "W2984769683",
+            "W3003658961",
+            "W3010013945",
+            "W3021945924",
+            "W3163900440",
+            "W3167290312",
+            "W4288101107"
+          ],
+          "related_works": [
+            "W4200508654",
+            "W4375829797",
+            "W2577455382",
+            "W2398900508",
+            "W4245080958",
+            "W1966920876",
+            "W2362921324",
+            "W2359525282",
+            "W4376459996",
+            "W2947836062"
+          ]
+        }
+      },
+      "term_overlap": 0.289,
+      "tfidf_similarity": 0.129,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "A Random Forest Approach for Predicting the Microwave Drying Process of Amaranth Seeds",
+        "authors": [
+          "Silvia Bravo",
+          "Angel H. Moreno"
+        ],
+        "year": 2019,
+        "date": "2019-03",
+        "venue": "2019 IEEE 2nd International Conference on Information and Computer Technologies (ICICT)",
+        "doi": "10.1109/infoct.2019.8711122",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/infoct.2019.8711122",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 4,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "multiple random seeds Predicting sentiment Gregorian"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.677
+          }
+        }
+      },
+      "term_overlap": 0.09,
+      "tfidf_similarity": 0.072,
+      "design_elements_matched": [
+        "multiple random seeds"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Multi-Story Floor Plan Generation from Building Volumetric Design Using Graph Neural Network",
+        "authors": [
+          "Atsuya Ogura",
+          "Tomohiro Fukuda",
+          "Nobuyoshi Yabuki",
+          "Taro Narahara"
+        ],
+        "year": null,
+        "date": null,
+        "venue": "Kalpa Publications in Computing",
+        "doi": "10.29007/7sdt",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.29007/7sdt",
+        "pdf_url": null,
+        "abstract": "The automatic design of architectural floor plans using deep learning has been widely studied to assist architectural design. Traditionally, floor plans generated by deep learning have been limited to single floors. Recently, research has been developing the use of graph neural networks (GNNs), which applies deep learning to graph data to generate building volumes that consider the in-building spatial use. Although these studies aim to generate new building volumes, practical architectural design often requires the generation of floor plans within predefined building outlines, constrained by various legal and regulatory requirements. This study proposes a method for generating multi-story floor plans in a given building volume by using a graph convolutional network (GCN), which adapts convolutional operations to graph data representing the given building volume. The implemented GCN model successfully predicted, with an accuracy of 74.66%, the spatial use class for each node within the graph representing the building. This enables the generation of detailed floorplans across multiple floors. This research contributes to the design support of multi-story floor plans in a given building volume. Moreover, when integrated with the latest 3D generative AI technologies, this approach promises to advance the automatic creation of 3D building models with comprehensive interior designs, starting from scratch in volumes initially devoid of any interior information.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "monastery floor plan graph neural network chant sentiment review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.625,
+            "title_match": 0.625,
+            "retrieval_hits": 3,
+            "score": 2.25
+          }
+        }
+      },
+      "term_overlap": 0.289,
+      "tfidf_similarity": 0.12,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Exploring financial sentiment analysis via fine-tuning large language model and attributed graph neural network",
+        "authors": [
+          "Zongshen Mu",
+          "Yujie Wan",
+          "Yueting Zhuang",
+          "Jie Tan",
+          "Hong Cheng",
+          "Yueyang Wang"
+        ],
+        "year": 2026,
+        "date": "2026-07",
+        "venue": "Neural Networks",
+        "doi": "10.1016/j.neunet.2026.108620",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1016/j.neunet.2026.108620",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 7,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.693
+          }
+        }
+      },
+      "term_overlap": 0.241,
+      "tfidf_similarity": 0.164,
+      "design_elements_matched": [],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Faculty Opinions recommendation of Features predicting sentinel lymph node positivity in Merkel cell carcinoma.",
+        "authors": [
+          "Paul Nghiem",
+          "Jayasri Iyer"
+        ],
+        "year": 2011,
+        "date": "2011-02-16",
+        "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+        "doi": "10.3410/f.8516956.8993054",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3410/f.8516956.8993054",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "dataset",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "shuffled node features Predicting sentiment Gregorian"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.625
+          }
+        }
+      },
+      "term_overlap": 0.09,
+      "tfidf_similarity": 0.058,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    },
+    {
+      "paper": {
+        "title": "Letter to the editor regarding “Ultrasound features of breast cancer for predicting axillary lymph node metastasis”",
+        "authors": [
+          "Zeng Zeng"
+        ],
+        "year": 2018,
+        "date": "2018-10-26",
+        "venue": "Medical Oncology",
+        "doi": "10.1007/s12032-018-1216-2",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/s12032-018-1216-2",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "shuffled node features Predicting sentiment Gregorian"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.648
+          }
+        }
+      },
+      "term_overlap": 0.09,
+      "tfidf_similarity": 0.056,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": false
+    }
+  ],
+  "possible_same_design": [
+    {
+      "paper": {
+        "title": "Heterogeneous Graph Neural Network for WiFi RSSI-Based Indoor Floor Classification",
+        "authors": [
+          "Houjin Lu",
+          "Seung-Hoon Hwang"
+        ],
+        "year": 2025,
+        "date": "2025-12-09",
+        "venue": "Electronics",
+        "doi": "10.3390/electronics14244845",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/electronics14244845",
+        "pdf_url": null,
+        "abstract": "Accurate indoor floor classification is essential for wireless positioning systems. However, the performance of conventional received signal strength indictor (RSSI)-based fingerprinting approaches is often limited by signal fluctuations and insufficient feature representation. To address these challenges, this paper introduces a heterogeneous graph neural network (GNN) framework that models WiFi signals using two types of nodes: reference points and Media Access Control (MAC) address. The edges between reference points and MAC addresses are weighted by normalized RSSI values, allowing the model to capture signal strength interactions and perform relation-aware message passing. Through this graph-based representation, the model can learn spatial and signal dependencies more effectively than conventional vector-based approaches. The proposed model was extensively evaluated under both benchmark and practical settings. On small-scale datasets, it achieved performance comparable to that of a conventional convolutional neural network trained on large-scale datasets, confirming its effectiveness with limited samples. In addition, the proposed model consistently outperformed other models under noisy conditions, achieving 93.88% accuracy on the widely used UJIIndoorLoc dataset and 97.3% accuracy in real-time experiments conducted at a test site. These values are significantly higher than those achieved using conventional machine learning (ML) baselines, highlighting the ability of the proposed model to handle real-world signal variations. These findings highlight that the heterogeneous GNN effectively captures spatial and signal-level dependencies, offering a robust and scalable solution for accurate indoor floor classification. Overall, this work presents a promising pathway for improving the performance and reliability of future wireless positioning systems.",
+        "citations": 4,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "monastery floor plan graph neural network chant sentiment"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 1,
+            "score": 1.677
+          }
+        }
+      },
+      "term_overlap": 0.22,
+      "tfidf_similarity": 0.071,
+      "design_elements_matched": [
+        "MLP baseline on the same node features",
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": false
+    }
+  ],
+  "found_via_citations": [
+    {
+      "paper": {
+        "title": "Optimized graph neural networks for spatial recognition to support automatic building information model semantic enrichment - Exploring node features enhancing strategies",
+        "authors": [
+          "Yian Chen",
+          "Huixian Jiang"
+        ],
+        "year": 2025,
+        "date": "2025-05-01",
+        "venue": "Engineering applications of artificial intelligence",
+        "doi": "10.1016/j.engappai.2025.110365",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "3ad04e6f8596d644e3f38008ad53c3cc817bba01",
+        "url": "https://www.semanticscholar.org/paper/3ad04e6f8596d644e3f38008ad53c3cc817bba01",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "citations",
+            "query": "10.1016/j.engappai.2023.107121"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.163,
+      "tfidf_similarity": 0.089,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": false,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "GLoc: GNN in Indoor Localization",
+        "authors": [
+          "Wenhao Zhang",
+          "Xingfa Shen",
+          "Sicong Xia"
+        ],
+        "year": 2025,
+        "date": "2025-06-01",
+        "venue": "IEEE Internet of Things Journal",
+        "doi": "10.1109/jiot.2025.3529901",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "c5ddf167979a69201f4c004a9b8efcaf0b8b69d5",
+        "url": "https://www.semanticscholar.org/paper/c5ddf167979a69201f4c004a9b8efcaf0b8b69d5",
+        "pdf_url": null,
+        "abstract": "Indoor positioning holds significant application value in fields, such as smart homes and industrial IoT. However, CNN-based positioning methods do not effectively utilize the topological structure of positional relationships between access points and smart devices. This limitation hampers their ability to accurately model and interpret the spatial dependencies inherent in indoor environments. This article proposes a GLoc algorithm, which is the first to introduce graph neural networks (GNNs) into Wi-Fi-based indoor positioning. The method models the positioning environment as a graph structure consisting of location nodes and signal feature edges, leveraging GNNs to capture spatial dependencies and signal distribution characteristics between different locations. On a 144-m2 dataset, GLoc demonstrates excellent positioning accuracy, with a median accuracy of 23 cm, and 90% of the estimates within a 97-cm range. Compared to existing techniques, GLoc also exhibits stronger robustness and higher positioning accuracy in dynamic environments. This method opens new possibilities for advancing indoor positioning technology and may spur progress in related fields.",
+        "citations": 11,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "10.3390/electronics14244845"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.163,
+      "tfidf_similarity": 0.037,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    },
+    {
+      "paper": {
+        "title": "BLE Beacon-based floor detection for mobile robots in a multi-floor automation Laboratory",
+        "authors": [
+          "Haiping Wu",
+          "Hui Liu",
+          "Thomas Roddelkopf",
+          "K. Thurow"
+        ],
+        "year": 2023,
+        "date": "2023-05-11",
+        "venue": "Transportation Safety and Environment",
+        "doi": "10.1093/tse/tdad024",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": "8a78113e64f987506f9aab9a80e9db96603c5543",
+        "url": "https://www.semanticscholar.org/paper/8a78113e64f987506f9aab9a80e9db96603c5543",
+        "pdf_url": "https://academic.oup.com/tse/advance-article-pdf/doi/10.1093/tse/tdad024/50285721/tdad024.pdf",
+        "abstract": "As an important task of multi-floor localization, floor detection has elicited great attention. Wireless infrastructures like Wi-Fi and Bluetooth low-energy play important roles in floor detection. However, most floor detection research studies tend to focus on data modeling but pay little attention to the data collection system, which is the basis of wireless infrastructure-based floor detection. In fact, the floor detection task can be greatly simplified with proper data collection system design. In this paper, a floor detection solution is developed in a multi-floor life science automation lab. A data collection system consisting of BLE beacons, receiver node, and IoT cloud is provided. The features of the BLE beacon under different settings are evaluated in detail. A mean filter is designed to deal with the fluctuation of the RSSI data. A simple floor detection method without a training process was implemented and evaluated in more than 100 floor detection tests. The time delay and floor detection accuracy under different settings are discussed. Finally, floor detection is evaluated on the H20 multi-floor transportation robot. Two sensor nodes are installed on the robot at different heights. The floor detection performance with different installation heights is discussed. The experimental results indicate that the proposed floor detection method provides floor detection accuracy of 0.9877 to 1 with a time delay of 5 s.",
+        "citations": 8,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": null,
+        "sources": [
+          "semantic_scholar"
+        ],
+        "found_by": [
+          {
+            "source": "semantic_scholar",
+            "strategy": "references",
+            "query": "10.3390/electronics14244845"
+          }
+        ],
+        "extra": {}
+      },
+      "term_overlap": 0.057,
+      "tfidf_similarity": 0.036,
+      "design_elements_matched": [
+        "shuffled node features"
+      ],
+      "is_survey_like": false,
+      "has_abstract": true,
+      "found_only_via_citations": true
+    }
+  ],
+  "ranked": [
+    {
+      "title": "Heterogeneous Graph Neural Network for WiFi RSSI-Based Indoor Floor Classification",
+      "arxiv_id": null,
+      "doi": "10.3390/electronics14244845",
+      "year": 2025
+    },
+    {
+      "title": "FEATURE REPRESENTATION FOR FLOOR PLANS USING RANDOM VISIBILITY GRAPH AND GRAPH NEURAL NETWORK Random Visibility Graph とGraph Neural Networkを用いた間取りの特徴量表現",
+      "arxiv_id": null,
+      "doi": "10.3130/aijt.31.585",
+      "year": 2025
+    },
+    {
+      "title": "CB-SAGE: A novel centrality based graph neural network for floor plan classification",
+      "arxiv_id": null,
+      "doi": "10.1016/j.engappai.2023.107121",
+      "year": 2023
+    },
+    {
+      "title": "Gregorian chant",
+      "arxiv_id": null,
+      "doi": "10.1093/gmo/9781561592630.article.11726",
+      "year": 2001
+    },
+    {
+      "title": "Optimized graph neural networks for spatial recognition to support automatic building information model semantic enrichment - Exploring node features enhancing strategies",
+      "arxiv_id": null,
+      "doi": "10.1016/j.engappai.2025.110365",
+      "year": 2025
+    },
+    {
+      "title": "Automatic Floor Plan Generation System Using Graph Neural Networks with Building Exterior Constraints and Room Attribute Information",
+      "arxiv_id": null,
+      "doi": "10.52842/conf.ecaade.2025.1.201",
+      "year": 2025
+    },
+    {
+      "title": "A survey of aspect-based sentiment analysis classification with a focus on graph neural network methods",
+      "arxiv_id": null,
+      "doi": "10.1007/s11042-023-17701-y",
+      "year": 2023
+    },
+    {
+      "title": "GLoc: GNN in Indoor Localization",
+      "arxiv_id": null,
+      "doi": "10.1109/jiot.2025.3529901",
+      "year": 2025
+    },
+    {
+      "title": "BN-GRAPH: Data Augmentation Based Bangla Text Sentiment Analysis in Deep Graph Neural Network",
+      "arxiv_id": null,
+      "doi": "10.1007/s42979-025-03763-2",
+      "year": 2025
+    },
+    {
+      "title": "The Floor Plan",
+      "arxiv_id": null,
+      "doi": "10.5040/9781501371332.ch-005",
+      "year": 2014
+    },
+    {
+      "title": "The 15-th century edition of the Pauline missal as a source for Gregorian chant history",
+      "arxiv_id": null,
+      "doi": "10.21697/sc.2023.30.2.7",
+      "year": 2024
+    },
+    {
+      "title": "Floor Plan Reconstruction from Sparse Views: Combining Graph Neural Network with Constrained Diffusion",
+      "arxiv_id": null,
+      "doi": "10.1109/iccvw60793.2023.00173",
+      "year": 2023
+    },
+    {
+      "title": "CubiGraph5K - Organizational Graph Generation for Structured Architectural Floor Plan Dataset",
+      "arxiv_id": null,
+      "doi": "10.52842/conf.caadria.2021.1.081",
+      "year": 2021
+    },
+    {
+      "title": "Floor plan recommendation system using graph neural network with spatial relationship dataset",
+      "arxiv_id": null,
+      "doi": "10.1016/j.jobe.2023.106378",
+      "year": 2023
+    },
+    {
+      "title": "Graph Neural Network Based Living Comfort Prediction Using Real Estate Floor Plan Images",
+      "arxiv_id": null,
+      "doi": "10.1145/3551626.3564970",
+      "year": 2022
+    },
+    {
+      "title": "A Random Forest Approach for Predicting the Microwave Drying Process of Amaranth Seeds",
+      "arxiv_id": null,
+      "doi": "10.1109/infoct.2019.8711122",
+      "year": 2019
+    },
+    {
+      "title": "Multi-Story Floor Plan Generation from Building Volumetric Design Using Graph Neural Network",
+      "arxiv_id": null,
+      "doi": "10.29007/7sdt",
+      "year": null
+    },
+    {
+      "title": "Exploring financial sentiment analysis via fine-tuning large language model and attributed graph neural network",
+      "arxiv_id": null,
+      "doi": "10.1016/j.neunet.2026.108620",
+      "year": 2026
+    },
+    {
+      "title": "Faculty Opinions recommendation of Features predicting sentinel lymph node positivity in Merkel cell carcinoma.",
+      "arxiv_id": null,
+      "doi": "10.3410/f.8516956.8993054",
+      "year": 2011
+    },
+    {
+      "title": "Letter to the editor regarding “Ultrasound features of breast cancer for predicting axillary lymph node metastasis”",
+      "arxiv_id": null,
+      "doi": "10.1007/s12032-018-1216-2",
+      "year": 2018
+    },
+    {
+      "title": "Miniatures in Medieval Chant Manuscripts of the Trinity­Sergius Monastery",
+      "arxiv_id": null,
+      "doi": "10.25281/2072-3156-2014-0-5-102-107",
+      "year": 2014
+    },
+    {
+      "title": "Genome of Melody: Applying bioinformatics to study the evolution of Gregorian chant",
+      "arxiv_id": null,
+      "doi": "10.32942/x2g635",
+      "year": 2025
+    },
+    {
+      "title": "The Medieval Monastery and Its Landscape",
+      "arxiv_id": null,
+      "doi": "10.1093/oxfordhb/9780198744719.013.25",
+      "year": 2018
+    },
+    {
+      "title": "Oxford Medieval Texts: Historia Selebiensis Monasterii: The History of the Monastery of Selby",
+      "arxiv_id": null,
+      "doi": "10.1093/actrade/9780199675951.book.1",
+      "year": 2013
+    },
+    {
+      "title": "Hybrid Graph Neural Network-Based Aspect-Level Sentiment Classification",
+      "arxiv_id": null,
+      "doi": "10.3390/electronics13163263",
+      "year": 2024
+    },
+    {
+      "title": "A Graph Neural Network-Based Context-Aware Framework for Sentiment Analysis Classification in Chinese Microblogs",
+      "arxiv_id": null,
+      "doi": "10.3390/math13060997",
+      "year": 2025
+    },
+    {
+      "title": "Aspect-based sentiment analysis based on multi-granularity graph convolutional network",
+      "arxiv_id": null,
+      "doi": "10.1016/j.neunet.2025.107864",
+      "year": 2025
+    },
+    {
+      "title": "Predicting the Indian Stock Market: A Comparative Study of LSTM and Random Forest Models Using Integrated News Sentiment",
+      "arxiv_id": null,
+      "doi": "10.53739/samvad/2026/v32/174649",
+      "year": 2026
+    },
+    {
+      "title": "Solicitation of Knowledge Graph Enhanced Neural Network Objects Detection by Sentiment Analysis",
+      "arxiv_id": null,
+      "doi": "10.47191/ijmra/v4-i11-23",
+      "year": 2021
+    },
+    {
+      "title": "BLE Beacon-based floor detection for mobile robots in a multi-floor automation Laboratory",
+      "arxiv_id": null,
+      "doi": "10.1093/tse/tdad024",
+      "year": 2023
+    },
+    {
+      "title": "Predicting the Financial Success of Movies using Sentiment Analysis",
+      "arxiv_id": null,
+      "doi": "10.4135/9781526492852",
+      "year": 2019
+    },
+    {
+      "title": "On classes of infinite loaded graphs with randomly deleted edges",
+      "arxiv_id": null,
+      "doi": "10.2478/amns.2020.2.00048",
+      "year": 2020
+    },
+    {
+      "title": "Monastery of Lindisfarne",
+      "arxiv_id": null,
+      "doi": "10.1163/9789004181298_emp_sim_00310",
+      "year": null
+    },
+    {
+      "title": "Monastery of Lindisfarne",
+      "arxiv_id": null,
+      "doi": "10.1163/2213-2139_emp_sim_00310",
+      "year": null
+    },
+    {
+      "title": "Commodity Sentiment in Predicting Index Futures Returns",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.5055238",
+      "year": 2024
+    },
+    {
+      "title": "Medieval Russian Chant And The Contemporary Church",
+      "arxiv_id": null,
+      "doi": "10.2986/tren.015-0469",
+      "year": null
+    },
+    {
+      "title": "How many randomly colored edges make a randomly colored dense graph rainbow Hamiltonian or rainbow connected?",
+      "arxiv_id": null,
+      "doi": "10.1002/jgt.22461",
+      "year": 2019
+    },
+    {
+      "title": "Graph Neural Network-Based Sentiment-Driven Real Estate Recommender",
+      "arxiv_id": null,
+      "doi": "10.17485/ijst/v19i29.447",
+      "year": 2026
+    },
+    {
+      "title": "A Study on the Interaction and Influence between Gregorian Chant and Early Secular Songs",
+      "arxiv_id": null,
+      "doi": "10.32629/asc.v6i6.4730",
+      "year": 2026
+    },
+    {
+      "title": "Predicting sentiment toward transportation in social media using visual and textual features",
+      "arxiv_id": null,
+      "doi": "10.1109/itsc.2016.7795898",
+      "year": 2016
+    },
+    {
+      "title": "A Machine Learning Based Sentiment Analysis by Selecting Features for Predicting Customer Reviews",
+      "arxiv_id": null,
+      "doi": "10.1109/iccons.2018.8663153",
+      "year": 2018
+    },
+    {
+      "title": "A survey of sentiment analysis methods based on graph neural network",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-3173515/v1",
+      "year": 2023
+    },
+    {
+      "title": "Gregorian chant in the service of the church",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9780511807848.004",
+      "year": 2009
+    },
+    {
+      "title": "Convolutional Neural Network with Pyramid Attention Mechanism for Floor Plan Layout Interior Design",
+      "arxiv_id": null,
+      "doi": "10.1109/icdscnc62492.2024.10939188",
+      "year": 2024
+    },
+    {
+      "title": "Charlemagne’s Archetype of Gregorian Chant",
+      "arxiv_id": null,
+      "doi": "10.2307/j.ctv173f1bz.8",
+      "year": 2020
+    },
+    {
+      "title": "Predicting Social Media Engagement from Sentiment and Contextual Features Using Machine Learning",
+      "arxiv_id": null,
+      "doi": "10.63913/jds.v2i2.28",
+      "year": 2026
+    },
+    {
+      "title": "The beginnings of Gregorian chant; other rites and other sorts of chant",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9780511807848.005",
+      "year": 2009
+    },
+    {
+      "title": "Heterogeneous graph neural networks analysis: a survey of techniques, evaluations and applications",
+      "arxiv_id": null,
+      "doi": "10.1007/s10462-022-10375-2",
+      "year": 2022
+    },
+    {
+      "title": "GREGORIAN CHANT IN THE PRACTICE OF THE SAXON UNITARIANS IN TRANSYLVANIA. PART 1",
+      "arxiv_id": null,
+      "doi": "10.24193/subbmusica.2025.2.15",
+      "year": 2025
+    },
+    {
+      "title": "Introducing Gregorian Chant to a Malaysian Methodist Congregation: A Case Study",
+      "arxiv_id": null,
+      "doi": "10.3390/rel17020151",
+      "year": 2026
+    },
+    {
+      "title": "Achieving architectural logic in automated floor plan design: A multi-stage double DQN framework from topological graph synthesis to rectangular layout generation",
+      "arxiv_id": null,
+      "doi": "10.1016/j.foar.2026.04.010",
+      "year": 2026
+    },
+    {
+      "title": "Sentimental Matters - Predicting Literary Quality by Sentiment Analysis and Stylometric Features",
+      "arxiv_id": null,
+      "doi": "10.18653/v1/2023.wassa-1.2",
+      "year": 2023
+    },
+    {
+      "title": "Map of places from which important medieval chant manuscripts are preserved",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9780511807848.009",
+      "year": 2009
+    },
+    {
+      "title": "Melisma",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780197763483.001.0001",
+      "year": 2025
+    },
+    {
+      "title": "GREGORIAN CHANT IN THE PRACTICE OF THE SAXON UNITARIANS IN TRANSYLVANIA. PART 2",
+      "arxiv_id": null,
+      "doi": "10.24193/subbmusica.2025.spiss4.10",
+      "year": 2025
+    },
+    {
+      "title": "Track 50 Example of a Gregorian chant.",
+      "arxiv_id": null,
+      "doi": "10.5040/9781350932470",
+      "year": 2021
+    },
+    {
+      "title": "Vernacular Gregorian Chant and Lutheran Hymn-singing in Reformation-era Finland",
+      "arxiv_id": null,
+      "doi": "10.5117/9789089647375_ch05",
+      "year": 2025
+    },
+    {
+      "title": "Tradition and innovation in medieval chant: from the ninth to the sixteenth century",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9780511807848.006",
+      "year": 2009
+    },
+    {
+      "title": "CHAPTER 4 Charlemagne's Archetype of Gregorian Chant",
+      "arxiv_id": null,
+      "doi": "10.1515/9780691221939-006",
+      "year": 1998
+    },
+    {
+      "title": "Graph Neural Network, ChebNet, Graph Convolutional Network, and Graph Autoencoder: Tutorial and Survey",
+      "arxiv_id": null,
+      "doi": "10.31219/osf.io/9wk3y",
+      "year": 2024
+    },
+    {
+      "title": "Thinking about Gregorian chant in the Middle Ages, and notating it",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9780511807848.007",
+      "year": 2009
+    },
+    {
+      "title": "Dimensioning a Floor Plan and Elevation",
+      "arxiv_id": null,
+      "doi": "10.5040/9781501371332.ch-007",
+      "year": 2014
+    },
+    {
+      "title": "Generating floor plan diagrams using a self-organising adjacency graph",
+      "arxiv_id": null,
+      "doi": "10.1016/j.foar.2025.11.011",
+      "year": 2026
+    },
+    {
+      "title": "Robust Attributed Adjacency Graph Extraction Using Floor Plan Images",
+      "arxiv_id": null,
+      "doi": "10.52842/conf.caadria.2022.2.385",
+      "year": 2022
+    },
+    {
+      "title": "Hybridizing Neural Network with Multi-Verse, Black Hole, and Shuffled Complex Evolution Optimizer Algorithms Predicting the Dissolved Oxygen",
+      "arxiv_id": null,
+      "doi": "10.20944/preprints202101.0464.v1",
+      "year": 2021
+    },
+    {
+      "title": "Table 6: Stability study across 15 random seeds.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.3339/table-6",
+      "year": null
+    },
+    {
+      "title": "A Survey of Graph Neural Networks for Recommender Systems: Challenges, Methods, and Directions",
+      "arxiv_id": "2109.12843",
+      "doi": "10.1145/3568022",
+      "year": 2021
+    },
+    {
+      "title": "The Architectural Floor Plan",
+      "arxiv_id": null,
+      "doi": "10.5040/9781501361166.ch-005",
+      "year": 2022
+    },
+    {
+      "title": "Historia Selebiensis Monasterii: The History of the Monastery of Selby",
+      "arxiv_id": null,
+      "doi": "10.1093/oseo/instance.00263423",
+      "year": 1657
+    },
+    {
+      "title": "Optimal Floor Plan for Residential Houses leveraging Vaastu Shastra: A neural approach",
+      "arxiv_id": null,
+      "doi": "10.21203/rs.3.rs-2623039/v1",
+      "year": 2023
+    },
+    {
+      "title": "Automatic floor plan analysis: Datasets, methods, and applications (2000–2025)",
+      "arxiv_id": null,
+      "doi": "10.1016/j.autcon.2025.106378",
+      "year": 2025
+    },
+    {
+      "title": "A BIM-Embedded Computational Workflow for Spatial Graph Analysis of Architectural Floor Plans",
+      "arxiv_id": null,
+      "doi": "10.3390/architecture6020076",
+      "year": 2026
+    },
+    {
+      "title": "Isovist graph generating method for structural expression of a floor plan",
+      "arxiv_id": null,
+      "doi": "10.1177/14780771251362413",
+      "year": 2025
+    },
+    {
+      "title": "Algorithm for constructing an optimally connected rectangular floor plan",
+      "arxiv_id": null,
+      "doi": "10.1016/j.foar.2013.12.003",
+      "year": 2014
+    },
+    {
+      "title": "GNN: Core Branches, Integration Strategies and Applications",
+      "arxiv_id": null,
+      "doi": "10.32604/cmes.2025.075741",
+      "year": 2025
+    },
+    {
+      "title": "Problems of genre classification of Gregorian chant",
+      "arxiv_id": null,
+      "doi": "10.26176/otmroo.2024.46.2.004",
+      "year": 2024
+    },
+    {
+      "title": "How to generate a museum floor plan: LoRA for diffusion models, or GANs?",
+      "arxiv_id": null,
+      "doi": "10.1016/j.foar.2025.08.017",
+      "year": 2026
+    },
+    {
+      "title": "On the Trade-off Between Accuracy and Efficiency of Graph Neural Networks for Indoor Localization",
+      "arxiv_id": null,
+      "doi": "10.1109/blackseacom69760.2026.11598445",
+      "year": 2026
+    },
+    {
+      "title": "Latent distribution: Measuring floor plan typicality with isovist representation learning",
+      "arxiv_id": null,
+      "doi": "10.1016/j.foar.2025.05.006",
+      "year": 2025
+    },
+    {
+      "title": "A Wi-Fi Fingerprint Building-Floor Classification Method Based on an AP Co-occurrence SGAT",
+      "arxiv_id": null,
+      "doi": "10.1109/cisat71030.2026.11682561",
+      "year": 2026
+    },
+    {
+      "title": "Why floor plan object detection breaks under real scans: a controlled study of robustness limits",
+      "arxiv_id": null,
+      "doi": "10.1016/j.autcon.2026.107193",
+      "year": 2026
+    },
+    {
+      "title": "What did the dove sing to Pope Gregory? Ancestral melody reconstruction in Gregorian chant using Bayesian phylogenetics",
+      "arxiv_id": null,
+      "doi": "10.1101/2024.08.19.608653",
+      "year": 2024
+    },
+    {
+      "title": "The Gregorian Reform",
+      "arxiv_id": null,
+      "doi": "10.4324/9780415791182-rmeo180-1",
+      "year": 2022
+    },
+    {
+      "title": "Gregorian Reform",
+      "arxiv_id": null,
+      "doi": "10.1093/gao/9781884446054.article.t2216921",
+      "year": 2012
+    },
+    {
+      "title": "Songs Without Words",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780197763483.003.0001",
+      "year": 2025
+    },
+    {
+      "title": "Figure 5: Affective graph: represents sentiment connections between words with weighted edges, capturing emotional dependencies critical for sarcasm detection.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.2817/fig-5",
+      "year": null
+    },
+    {
+      "title": "On Gregorian Orality",
+      "arxiv_id": null,
+      "doi": "10.2307/j.ctv173f1bz.10",
+      "year": 2020
+    },
+    {
+      "title": "Predicting Returns using Production Networks and MLP",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.4602338",
+      "year": 2023
+    },
+    {
+      "title": "Survey of Architectural Floor Plan Retrieval Technology Based on 3ST Features",
+      "arxiv_id": null,
+      "doi": "10.3390/ai6040067",
+      "year": 2025
+    },
+    {
+      "title": "Sentiment analysis using graph-based Quickprop method for product quality enhancement",
+      "arxiv_id": null,
+      "doi": "10.1080/0954898x.2024.2410777",
+      "year": 2024
+    },
+    {
+      "title": "Study on the relationship between the seated area features and floor plan compositions of open reading spaces in public libraries in Japan",
+      "arxiv_id": null,
+      "doi": "10.1002/2475-8876.12346",
+      "year": 2023
+    },
+    {
+      "title": "Conclusions, Details, Examples",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780197763483.003.0009",
+      "year": 2025
+    },
+    {
+      "title": "Multi-Objective Graph Attention Networks for Residential Layout Classification and Evaluation",
+      "arxiv_id": null,
+      "doi": "10.1109/cac67268.2025.11486637",
+      "year": 2025
+    },
+    {
+      "title": "A novel dominating set and centrality based graph convolutional network for node classification",
+      "arxiv_id": null,
+      "doi": "10.1007/s11042-024-19525-w",
+      "year": 2024
+    },
+    {
+      "title": "Semantic Floorplan Segmentation Using Self-Constructing Graph Networks",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.4826376",
+      "year": 2024
+    },
+    {
+      "title": "A Gregorian Processional Antiphon",
+      "arxiv_id": null,
+      "doi": "10.2307/j.ctv173f1bz.6",
+      "year": 2020
+    },
+    {
+      "title": "Eigenvector centrality-enhanced graph network for attack detection in power distribution systems",
+      "arxiv_id": null,
+      "doi": "10.1016/j.epsr.2024.111339",
+      "year": 2025
+    },
+    {
+      "title": "Adjacency-driven floor plan generation with Pix2Pix: a hybrid user-centered workflow",
+      "arxiv_id": null,
+      "doi": "10.1007/s44223-026-00123-9",
+      "year": 2026
+    },
+    {
+      "title": "Sentiment Toward Same-Sex Divorce",
+      "arxiv_id": null,
+      "doi": "10.1007/978-1-4939-1899-7_9",
+      "year": 2014
+    },
+    {
+      "title": "Hierarchical Stagewise Training of Linked Deep Neural Networks for Multibuilding and Multifloor Indoor Localization Based on Wi-Fi RSSI Fingerprinting",
+      "arxiv_id": "2407.13288",
+      "doi": "10.1109/jsen.2024.3455554",
+      "year": 2024
+    },
+    {
+      "title": "Multi-Floor Indoor Localization Based on RBF Network With Initialization, Calibration, and Update",
+      "arxiv_id": null,
+      "doi": "10.1109/twc.2021.3089202",
+      "year": 2021
+    },
+    {
+      "title": "Predicting Neurological Recovery After Cardiac Arrest Using MLP and Histogram-Based RR Interval Features",
+      "arxiv_id": null,
+      "doi": "10.1109/cce67728.2025.11272035",
+      "year": 2025
+    },
+    {
+      "title": "Recurrent Neural Networks for Accurate RSSI Indoor Localization",
+      "arxiv_id": "1903.11703",
+      "doi": "10.1109/jiot.2019.2940368",
+      "year": 2019
+    },
+    {
+      "title": "Autonomous Multi-Floor Localization Based on Smartphone-Integrated Sensors and Pedestrian Indoor Network",
+      "arxiv_id": null,
+      "doi": "10.3390/rs15112933",
+      "year": 2023
+    },
+    {
+      "title": "Optimization and Evaluation of Multidetector Deep Neural Network for High-Accuracy Wi-Fi Fingerprint Positioning",
+      "arxiv_id": null,
+      "doi": "10.1109/jiot.2022.3147644",
+      "year": 2022
+    },
+    {
+      "title": "Table 4: Readability, sentiment &amp; emotion features.",
+      "arxiv_id": null,
+      "doi": "10.7717/peerj-cs.1127/table-4",
+      "year": null
+    },
+    {
+      "title": "Esuf: Extracting Sufficient Unimodal Feature with Mlp for Multimodal Sentiment Analysis",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.4495218",
+      "year": 2023
+    },
+    {
+      "title": "Data Augmentation Schemes for Deep Learning in an Indoor Positioning Application",
+      "arxiv_id": null,
+      "doi": "10.3390/electronics8050554",
+      "year": 2019
+    },
+    {
+      "title": "Review for \"The role of baseline 2‐[&lt;sup&gt;18&lt;/sup&gt;F]‐FDG‐PET/CT metrics and radiomics features in predicting primary gastric lymphoma diagnosis\"",
+      "arxiv_id": null,
+      "doi": "10.1002/hon.3266/v1/review1",
+      "year": 2023
+    },
+    {
+      "title": "Some Historical Considerations",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780197763483.003.0002",
+      "year": 2025
+    },
+    {
+      "title": "Predicting Mobile Commerce Adoption: The SEM-MLP Approach",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.5286450",
+      "year": 2025
+    },
+    {
+      "title": "A Dual Modeling Framework for Music Recommendation Via GraphSAGE and Deep Interest Networks (DIN)",
+      "arxiv_id": null,
+      "doi": "10.31449/inf.v50i13.9903",
+      "year": 2026
+    },
+    {
+      "title": "Introduction",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780190071530.003.0001",
+      "year": 2020
+    },
+    {
+      "title": "Advancement and development of graph-based reasoning method for human malicious behaviors identification based on graph contrastive representation learning",
+      "arxiv_id": null,
+      "doi": "10.1016/j.neucom.2025.132250",
+      "year": 2026
+    },
+    {
+      "title": "On modulation in Eastern and Western chant",
+      "arxiv_id": null,
+      "doi": "10.1017/s0961137125000026",
+      "year": 2025
+    },
+    {
+      "title": "TransFloor: Transparent floor localization for crowdsourcing instant delivery",
+      "arxiv_id": null,
+      "doi": null,
+      "year": 2023
+    },
+    {
+      "title": "Topological and geometric measures derived from space floor polygons for classification of spaces in buildings by function and form",
+      "arxiv_id": null,
+      "doi": "10.1016/j.jobe.2025.114455",
+      "year": 2025
+    },
+    {
+      "title": "Floor Identification in Large-Scale Environments With Wi-Fi Autonomous Block Models",
+      "arxiv_id": null,
+      "doi": "10.1109/tii.2021.3074153",
+      "year": 2022
+    },
+    {
+      "title": "Extreme Learning Machine for Accurate Indoor Localization Using RSSI Fingerprints in Multifloor Environments",
+      "arxiv_id": null,
+      "doi": "10.1109/jiot.2021.3071152",
+      "year": 2021
+    },
+    {
+      "title": "Multi-unit space function and space access element classification in apartment buildings using machine learning and graph deep learning",
+      "arxiv_id": null,
+      "doi": "10.1016/j.jobe.2025.113472",
+      "year": 2025
+    },
+    {
+      "title": "Multi-Floor Indoor Localization Based on Multi-Modal Sensors",
+      "arxiv_id": null,
+      "doi": "10.3390/s22114162",
+      "year": 2022
+    },
+    {
+      "title": "A WiFi indoor positioning method integrating dual-stream heterogeneous features and hierarchical support for local regression",
+      "arxiv_id": null,
+      "doi": "10.1088/2631-8695/aea8d1",
+      "year": 2026
+    },
+    {
+      "title": "A Survey on Indoor Positioning Systems for IoT-Based Applications",
+      "arxiv_id": null,
+      "doi": "10.1109/jiot.2022.3149048",
+      "year": 2022
+    },
+    {
+      "title": "Analysis of Sources of Large Positioning Errors in Deterministic Fingerprinting",
+      "arxiv_id": null,
+      "doi": "10.3390/s17122736",
+      "year": 2017
+    },
+    {
+      "title": "FCLoc: A Novel Indoor Wi-Fi Fingerprints Localization Approach to Enhance Robustness and Positioning Accuracy",
+      "arxiv_id": null,
+      "doi": "10.1109/jsen.2022.3229476",
+      "year": 2023
+    },
+    {
+      "title": "Psalter, liturgical",
+      "arxiv_id": null,
+      "doi": "10.1093/gmo/9781561592630.article.22489",
+      "year": 2001
+    },
+    {
+      "title": "Preface",
+      "arxiv_id": null,
+      "doi": "10.1017/cbo9780511807848.002",
+      "year": 2009
+    },
+    {
+      "title": "Dedication",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780197763483.002.0004",
+      "year": 2025
+    },
+    {
+      "title": "Preface",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780197763483.002.0006",
+      "year": 2025
+    },
+    {
+      "title": "Abbreviations",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780197763483.002.0007",
+      "year": 2025
+    },
+    {
+      "title": "Copyright Page",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780197763483.002.0003",
+      "year": 2025
+    },
+    {
+      "title": "Credits and Permissions",
+      "arxiv_id": null,
+      "doi": "10.1093/oso/9780197763483.002.0008",
+      "year": 2025
+    },
+    {
+      "title": "A Sobel-Gradient Mlp Baseline for Handwritten Character Recognition",
+      "arxiv_id": null,
+      "doi": "10.2139/ssrn.5394723",
+      "year": 2025
+    },
+    {
+      "title": "Keith? or Moliere Rewired",
+      "arxiv_id": null,
+      "doi": "10.5040/9781917537353.00000002",
+      "year": 2019
+    },
+    {
+      "title": "Robot-assisted RSSI data collection for indoor fingerprint-based positioning",
+      "arxiv_id": null,
+      "doi": "10.1016/j.icte.2025.11.001",
+      "year": 2025
+    },
+    {
+      "title": "A real-time fingerprint-based indoor positioning using deep learning and preceding states",
+      "arxiv_id": null,
+      "doi": "10.1016/j.eswa.2022.118889",
+      "year": 2022
+    },
+    {
+      "title": "The advantages of the Matthews correlation coefficient (MCC) over F1 score and accuracy in binary classification evaluation",
+      "arxiv_id": null,
+      "doi": "10.1186/s12864-019-6413-7",
+      "year": 2020
+    },
+    {
+      "title": "Performance Analysis of 3D Localization for a Launch Vehicle Using TOA, AOA, and TDOA",
+      "arxiv_id": null,
+      "doi": "10.1007/s11277-018-5862-7",
+      "year": 2018
+    },
+    {
+      "title": "AoA-Based Local Positioning System Using a Time-Modulated Array",
+      "arxiv_id": null,
+      "doi": "10.26866/jees.2017.17.4.181",
+      "year": 2017
+    },
+    {
+      "title": "A Feature-Scaling-Based $k$-Nearest Neighbor Algorithm for Indoor Positioning Systems",
+      "arxiv_id": null,
+      "doi": "10.1109/jiot.2015.2495229",
+      "year": 2016
+    },
+    {
+      "title": "Bayesian indoor positioning systems",
+      "arxiv_id": null,
+      "doi": "10.1109/infcom.2005.1498348",
+      "year": 2005
+    },
+    {
+      "title": "WLAN location determination in e-home via support vector classification",
+      "arxiv_id": null,
+      "doi": "10.1109/icnsc.2004.1297088",
+      "year": 2004
+    },
+    {
+      "title": "Advancing Automated Fire Safety Code Compliance: Automatic Annotation of BIM Door Elements",
+      "arxiv_id": null,
+      "doi": "10.1007/s10694-026-02010-1",
+      "year": 2026
+    },
+    {
+      "title": "Assessment of Tropical Cyclone Disaster Damage Based on Learnable Inter-City Interaction GNN",
+      "arxiv_id": null,
+      "doi": "10.1007/s13351-025-4239-6",
+      "year": 2025
+    },
+    {
+      "title": "Multiview Space Function Classification in Apartment Buildings Using Image Deep-Learning Semantic Segmentation",
+      "arxiv_id": null,
+      "doi": "10.1061/jccee5.cpeng-6294",
+      "year": 2025
+    },
+    {
+      "title": "Benchmarking methods for classifying space functions and access elements in multi-unit apartment buildings",
+      "arxiv_id": null,
+      "doi": "10.1016/j.autcon.2025.106237",
+      "year": 2025
+    }
+  ],
+  "must_read": [
+    {
+      "title": "Heterogeneous Graph Neural Network for WiFi RSSI-Based Indoor Floor Classification",
+      "year": 2025,
+      "arxiv_id": null,
+      "doi": "10.3390/electronics14244845",
+      "pdf_url": null,
+      "why": "term overlap 0.22, design elements: MLP baseline on the same node features; shuffled node features",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "FEATURE REPRESENTATION FOR FLOOR PLANS USING RANDOM VISIBILITY GRAPH AND GRAPH NEURAL NETWORK Random Visibility Graph とGraph Neural Networkを用いた間取りの特徴量表現",
+      "year": 2025,
+      "arxiv_id": null,
+      "doi": "10.3130/aijt.31.585",
+      "pdf_url": "https://www.jstage.jst.go.jp/article/aijt/31/77/31_585/_pdf",
+      "why": "term overlap 0.289, design elements: multiple random seeds",
+      "next": "read the open-access PDF"
+    },
+    {
+      "title": "CB-SAGE: A novel centrality based graph neural network for floor plan classification",
+      "year": 2023,
+      "arxiv_id": null,
+      "doi": "10.1016/j.engappai.2023.107121",
+      "pdf_url": null,
+      "why": "term overlap 0.289, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Gregorian chant",
+      "year": 2001,
+      "arxiv_id": null,
+      "doi": "10.1093/gmo/9781561592630.article.11726",
+      "pdf_url": null,
+      "why": "term overlap 0.148, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "Optimized graph neural networks for spatial recognition to support automatic building information model semantic enrichment - Exploring node features enhancing strategies",
+      "year": 2025,
+      "arxiv_id": null,
+      "doi": "10.1016/j.engappai.2025.110365",
+      "pdf_url": null,
+      "why": "term overlap 0.163, design elements: shuffled node features, found only through the citation graph, no abstract retrieved",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "GLoc: GNN in Indoor Localization",
+      "year": 2025,
+      "arxiv_id": null,
+      "doi": "10.1109/jiot.2025.3529901",
+      "pdf_url": null,
+      "why": "term overlap 0.163, design elements: shuffled node features, found only through the citation graph",
+      "next": "find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'"
+    },
+    {
+      "title": "BLE Beacon-based floor detection for mobile robots in a multi-floor automation Laboratory",
+      "year": 2023,
+      "arxiv_id": null,
+      "doi": "10.1093/tse/tdad024",
+      "pdf_url": "https://academic.oup.com/tse/advance-article-pdf/doi/10.1093/tse/tdad024/50285721/tdad024.pdf",
+      "why": "term overlap 0.057, design elements: shuffled node features, found only through the citation graph",
+      "next": "read the open-access PDF"
+    }
+  ],
+  "expansion_log": [
+    {
+      "expanded": "Heterogeneous Graph Neural Network for WiFi RSSI-Based Indoor Floor Classification",
+      "citing_and_references": 28
+    },
+    {
+      "expanded": "FEATURE REPRESENTATION FOR FLOOR PLANS USING RANDOM VISIBILITY GRAPH AND GRAPH NEURAL NETWORK Random Visibility Graph とGraph Neural Networkを用いた間取りの特徴量表現",
+      "citing_and_references": 0
+    },
+    {
+      "expanded": "CB-SAGE: A novel centrality based graph neural network for floor plan classification",
+      "citing_and_references": 16
+    }
+  ],
+  "expansion_errors": [
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "quota exhausted (X-RateLimit-Reset=45904). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?",
+      "status": 429,
+      "step": "citations_most_cited"
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "quota exhausted (X-RateLimit-Reset=45904). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?",
+      "status": 429,
+      "step": "citations_most_recent"
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "quota exhausted (X-RateLimit-Reset=45904). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?",
+      "status": 429,
+      "step": "references"
+    },
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429,
+      "step": "references"
+    }
+  ],
+  "log": [
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "monastery floor plan graph neural network chant sentiment",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "monastery floor plan graph neural network chant sentiment",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "Gregorian chant lyrics sentiment graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "Gregorian chant lyrics sentiment graph",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "architectural floor plan graph emotion of liturgical music",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "architectural floor plan graph emotion of liturgical music",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "medieval monastery layout predicts chant mood",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "medieval monastery layout predicts chant mood",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "monastery floor plan graph neural network chant sentiment survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "monastery floor plan graph neural network chant sentiment survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "monastery floor plan graph neural network chant sentiment review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "monastery floor plan graph neural network chant sentiment review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "Gregorian chant lyrics sentiment graph survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "Gregorian chant lyrics sentiment graph survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "Gregorian chant lyrics sentiment graph review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "Gregorian chant lyrics sentiment graph review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "architectural floor plan graph emotion of liturgical music survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "architectural floor plan graph emotion of liturgical music survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "architectural floor plan graph emotion of liturgical music review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "architectural floor plan graph emotion of liturgical music review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "medieval monastery layout predicts chant mood survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "medieval monastery layout predicts chant mood survey",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "medieval monastery layout predicts chant mood review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "medieval monastery layout predicts chant mood review",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "monastery floor plan graph neural network chant sentiment",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "monastery floor plan graph neural network chant sentiment",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "Gregorian chant lyrics sentiment graph",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "Gregorian chant lyrics sentiment graph",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "architectural floor plan graph emotion of liturgical music",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "architectural floor plan graph emotion of liturgical music",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "medieval monastery layout predicts chant mood",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "medieval monastery layout predicts chant mood",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "MLP baseline on the same node features Predicting sentiment Gregorian",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "MLP baseline on the same node features Predicting sentiment Gregorian",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "randomly rewired edges Predicting sentiment Gregorian",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "randomly rewired edges Predicting sentiment Gregorian",
+      "results": 9,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "shuffled node features Predicting sentiment Gregorian",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "shuffled node features Predicting sentiment Gregorian",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "multiple random seeds Predicting sentiment Gregorian",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "multiple random seeds Predicting sentiment Gregorian",
+      "results": 10,
+      "error": null
+    }
+  ],
+  "date": "2026-10-19"
+}

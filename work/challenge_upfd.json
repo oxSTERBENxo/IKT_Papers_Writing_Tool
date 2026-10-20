@@ -1,0 +1,1594 @@
+{
+  "claim": "A multi-seed re-evaluation of UPFD propagation-graph GNNs for fake news detection on PolitiFact and GossipCop showing whether the graph adds accuracy over a text-only classifier using a modern sentence encoder on the same news content",
+  "queries": [
+    "UPFD fake news detection reproducibility text-only baseline",
+    "propagation graph versus news content fake news detection ablation pretrained language model",
+    "do graph neural networks help fake news detection FakeNewsNet strong text baseline",
+    "GNN fake news detection evaluation variance small datasets PolitiFact",
+    "rethinking graph-based fake news detection benchmark"
+  ],
+  "sources_ok": [
+    "arxiv",
+    "crossref",
+    "huggingface"
+  ],
+  "sources_failed": [
+    "openalex",
+    "semantic_scholar"
+  ],
+  "sources_status": {
+    "openalex": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "arxiv": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 0,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "crossref": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 20,
+      "ok_calls": 20,
+      "results": 300,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "n_papers_examined": 165,
+  "n_high_overlap": 0,
+  "abstracts_fetched": 10,
+  "n_without_abstract": 49,
+  "high_overlap_by_year": {},
+  "signal": "no_close_match_in_this_search",
+  "max_supported_novelty_confidence": "low",
+  "interpretation": "No closely worded paper was retrieved, but only 0 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.",
+  "caveat": "Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers before making any claim, and report novelty as unverified.",
+  "closest": [
+    {
+      "paper": {
+        "title": "Graph with Sequence: Broad-Range Semantic Modeling for Fake News Detection",
+        "authors": [
+          "Junwei Yin",
+          "Min Gao",
+          "Kai Shu",
+          "Wentao Li",
+          "Yinqiu Huang",
+          "Zongwei Wang"
+        ],
+        "year": 2024,
+        "date": "2024-12-07",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2412.05672",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2412.05672",
+        "pdf_url": null,
+        "abstract": "The rapid proliferation of fake news on social media threatens social stability, creating an urgent demand for more effective detection methods. While many promising approaches have emerged, most rely on content analysis with limited semantic depth, leading to suboptimal comprehension of news content.To address this limitation, capturing broader-range semantics is essential yet challenging, as it introduces two primary types of noise: fully connecting sentences in news graphs often adds unnecessary structural noise, while highly similar but authenticity-irrelevant sentences introduce feature noise, complicating the detection process. To tackle these issues, we propose BREAK, a broad-range semantics model for fake news detection that leverages a fully connected graph to capture comprehensive semantics while employing dual denoising modules to minimize both structural and feature noise. The semantic structure denoising module balances the graph's connectivity by iteratively refining it between two bounds: a sequence-based structure as a lower bound and a fully connected graph as the upper bound. This refinement uncovers label-relevant semantic interrelations structures. Meanwhile, the semantic feature denoising module reduces noise from similar semantics by diversifying representations, aligning distinct outputs from the denoised graph and sequence encoders using KL-divergence to achieve feature diversification in high-dimensional space. The two modules are jointly optimized in a bi-level framework, enhancing the integration of denoised semantics into a comprehensive representation for detection. Extensive experiments across four datasets demonstrate that BREAK significantly outperforms existing fake news detection methods.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "propagation graph versus news content fake news detection ablation pretrained language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "rethinking graph-based fake news detection benchmark"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "propagation graph versus news content fake news detection ablation pretrained language model review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "propagation graph versus news content fake news detection ablation pretrained language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "rethinking graph-based fake news detection benchmark"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 4,
+            "score": 2.5
+          }
+        }
+      },
+      "term_overlap": 0.244,
+      "tfidf_similarity": 0.123,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Fake News Detection Using Text-Based Graph Convolutional Networks",
+        "authors": [
+          "Faisal A. Alshuwaier",
+          "Fawaz A. Alsulaiman"
+        ],
+        "year": 2026,
+        "date": "2026-05-30",
+        "venue": "Computers",
+        "doi": "10.3390/computers15060352",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/computers15060352",
+        "pdf_url": null,
+        "abstract": "Detecting fake news is a challenging task and an important area of research for social media researchers. This task also involves clarifying accountability mechanisms that demonstrate the credibility of quotable sources, such as networks that document the spread of misinformation. Deep learning techniques, particularly neural networks that rely on popular graph representation techniques such as graph convolutional networks (GCNs), are increasingly being utilized to detect fake news, fake accounts, and rumors spreading through social media. In this paper, features were extracted using TF-IDF, Bag-of-Words, and bigrams. The evaluation was conducted using the standard Kaggle/ISOT and GossipCop datasets, which include news headlines and published models. Using the extracted features, the proposed GCN-based model/classifier achieved a high detection accuracy of 95% by combining TF-IDF and Bag-of-Words representations. The results demonstrate that the extracted features improve the efficiency of the detection model.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "rethinking graph-based fake news detection benchmark"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "rethinking graph-based fake news detection benchmark survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "rethinking graph-based fake news detection benchmark review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "rethinking graph-based fake news detection benchmark"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 6,
+            "score": 2.5
+          }
+        }
+      },
+      "term_overlap": 0.215,
+      "tfidf_similarity": 0.117,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "BG-REAL: A Public Real-Data Anchored Benchmark for Background Manipulation Detection and Localization",
+        "authors": [
+          "Bugra Alperen Uluirmak",
+          "Rifat Kurban"
+        ],
+        "year": 2026,
+        "date": "2026-07-28",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2607.26232",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2607.26232",
+        "pdf_url": null,
+        "abstract": "Background manipulation is a practical but under-specified image-forensics setting: the manipulated evidence can sit outside the salient foreground object, while many evaluations emphasize object-centric copy-move, splicing, or generic synthetic edits. We introduce BG-REAL, a public real-data anchored benchmark package for background manipulation detection and localization. The current release is built from Open Images V7 instance-segmentation sources and contains 7,000 processed samples over 1,200 source groups, including 6,000 public-data anchored samples and 1,000 synthetic control samples. BG-REAL covers six edit families, matched authentic controls, source-group splits, mask and leakage QA, 599 human-assisted quality-control rows, three completed external baselines (TruFor, MVSS-Net, and HiFi-Net), and five-seed model evaluation. Beyond aggregate accuracy, we use matched-authentic-control diagnostics to measure how often baselines misclassify re-encoded authentic images as manipulated at a threshold fixed on held-out validation data; false-positive rates range from 0.57 (TruFor, the lowest) to 1.00 (several weak or mask-informed baselines), indicating that re-encoding artifacts are a shared shortcut risk across baselines rather than a problem specific to any one model. The release provides the construction pipeline, evaluation protocol, paper-ready figures, and reproduction documentation. We frame BG-REAL as a background-manipulation-focused complement to general image-manipulation-localization benchmarks, not as a fully real-only or general-purpose benchmark.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "UPFD fake news detection reproducibility text-only baseline"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "UPFD fake news detection reproducibility text-only baseline survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "UPFD fake news detection reproducibility text-only baseline review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "recent",
+            "query": "UPFD fake news detection reproducibility text-only baseline"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.375,
+            "title_match": 0.333,
+            "retrieval_hits": 3,
+            "score": 1.458
+          }
+        }
+      },
+      "term_overlap": 0.222,
+      "tfidf_similarity": 0.08,
+      "is_survey_like": true,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Implementation of Weight Adjusting GNN With Differentiable Pooling for User Preference-aware Fake News Detection",
+        "authors": [
+          "Jay Prakash Maurya",
+          "Vivek Richhariya",
+          "Bhupesh Gour",
+          "Vinesh Kumar"
+        ],
+        "year": 2024,
+        "date": "2024-02-09",
+        "venue": null,
+        "doi": "10.21203/rs.3.rs-3942141/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21203/rs.3.rs-3942141/v1",
+        "pdf_url": null,
+        "abstract": "Abstract In the last few years, false news has hurt people and society, drawing attention to classify and identify news as fake or True. Major fake news detection algorithms either largely trust textual information via learning the internal knowledge of the extracted news material or writing style, or they focus on mining news content. To differentiate between fake and real news, the proposed experiment processes news information as a graph neural network with an attention-based differentiable pooling model. This sets the way for the user preference-aware fake detection (UPFD) in a graph-based structure. The attention-based differentiable pooling approach allows GNNs to adaptively extract information from the network by focusing on the most relevant nodes for a given task. One significant improvement is in the way the input data is formatted for the learning schema; in paired scenarios, tweet vectors are essential. Each pair includes a potential fake vector and a true vector; the latter's classification accuracy depends on how similar or different it is from the former. In particular, when it comes to historical events, the novel way that knowledge sets are handled in graph form and arranged in pairs of related terms provides a unique method for determining the veracity of news. To improve validation accuracy and learning, the proposed GNN-DP model also presents a comparison between the standard layer and the embedding layer. Moreover, comprehensive analyses and direct comparisons of the graph convolutional network (GCN) model's performance have been achieved by experimental evaluations.",
+        "citations": 2,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 2.244
+          }
+        }
+      },
+      "term_overlap": 0.199,
+      "tfidf_similarity": 0.098,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Detecting fake news by enhanced text representation with multi-EDU-structure awareness",
+        "authors": [
+          "Yuhang Wang",
+          "Li Wang",
+          "Yanjie Yang",
+          "Yilin Zhang"
+        ],
+        "year": 2022,
+        "date": "2022-05-30",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2205.15139",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2205.15139",
+        "pdf_url": null,
+        "abstract": "Since fake news poses a serious threat to society and individuals, numerous studies have been brought by considering text, propagation and user profiles. Due to the data collection problem, these methods based on propagation and user profiles are less applicable in the early stages. A good alternative method is to detect news based on text as soon as they are released, and a lot of text-based methods were proposed, which usually utilized words, sentences or paragraphs as basic units. But, word is a too fine-grained unit to express coherent information well, sentence or paragraph is too coarse to show specific information. Which granularity is better and how to utilize it to enhance text representation for fake news detection are two key problems. In this paper, we introduce Elementary Discourse Unit (EDU) whose granularity is between word and sentence, and propose a multi-EDU-structure awareness model to improve text representation for fake news detection, namely EDU4FD. For the multi-EDU-structure awareness, we build the sequence-based EDU representations and the graph-based EDU representations. The former is gotten by modeling the coherence between consecutive EDUs with TextCNN that reflect the semantic coherence. For the latter, we first extract rhetorical relations to build the EDU dependency graph, which can show the global narrative logic and help deliver the main idea truthfully. Then a Relation Graph Attention Network (RGAT) is set to get the graph-based EDU representation. Finally, the two EDU representations are incorporated as the enhanced text representation for fake news detection, using a gated recursive unit combined with a global attention mechanism. Experiments on four cross-source fake news datasets show that our model outperforms the state-of-the-art text-based methods.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "propagation graph versus news content fake news detection ablation pretrained language model"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "rethinking graph-based fake news detection benchmark"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "propagation graph versus news content fake news detection ablation pretrained language model survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "propagation graph versus news content fake news detection ablation pretrained language model review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline review"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "rethinking graph-based fake news detection benchmark survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "rethinking graph-based fake news detection benchmark review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.375,
+            "retrieval_hits": 9,
+            "score": 2.208
+          }
+        }
+      },
+      "term_overlap": 0.179,
+      "tfidf_similarity": 0.115,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Twitter Fake News Detection Using Graph Neural Networks",
+        "authors": [
+          "Victor Sineglazov",
+          "Kyrylo Bylym"
+        ],
+        "year": 2023,
+        "date": "2023-12-27",
+        "venue": "Electronics and Control Systems",
+        "doi": "10.18372/1990-5548.78.18259",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.18372/1990-5548.78.18259",
+        "pdf_url": null,
+        "abstract": "This article is devoted to the intellectual processing of text information for the purpose of detecting rail news. To solve the given task, the use of deep graph neural networks is proposed. Fake news detection based on user preferences is augmented with deeper graph neural network topologies, including Hierarchical Graph Pooling with Structure Learning, to improve the graph convolution operation and capture richer contextual relationships in news graphs. The paper presents the possibilities of extending the framework of fake news detection based on user preferences using deep graph neural networks to improve fake news recognition. Evaluation on the FakeNewsNet dataset (a subset of Gossipcop) using the PyTorch Geometric and PyTorch Lightning frameworks demonstrates that the developed deep graph neural network model achieves 94% accuracy in fake news classification. The results show that deeper graph neural networks with integrated text and graph features offer promising options for reliable and accurate fake news detection, paving the way for improved information quality in social networks and beyond.",
+        "citations": 1,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.727,
+            "title_match": 0.667,
+            "retrieval_hits": 3,
+            "score": 2.519
+          }
+        }
+      },
+      "term_overlap": 0.166,
+      "tfidf_similarity": 0.111,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "A Hybrid GNN Model for Fake News Detection in Digital Media",
+        "authors": [
+          "Sathyanarayana K B",
+          "Shoieb Ahmed",
+          "H K Pradeep"
+        ],
+        "year": 2023,
+        "date": "2023-08-16",
+        "venue": null,
+        "doi": "10.21203/rs.3.rs-3257516/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21203/rs.3.rs-3257516/v1",
+        "pdf_url": null,
+        "abstract": "Abstract Newsflash intake from shared mass media is becoming progressively admired now. Public media brings benefits to subscribers precisely to the underlying nature of speedy spreading, inexpensive, and affluent access. In our work, we describe a strong system for recognizing false news summary in the Digital Media that utilizes valuable Graphical based model with Neural Networks. Simulated news is created moreover among rumourmongers or else in the administrative subjects, hence for the undertaking of trailing we have handled dual types of datasets within our methodology. They really are Politifact which contains data related to politics and Gossipicop that contains data related to gossipmongers. We have compiled 5464 samples of Gossipicop compared to 314 samples of Politifact as a greater number of rumourmongers are forged. Three-level Approach is proposed where GCNFN is implemented using two GCN layers and one mean-pooling layer as the graph encoder. The 320-dimensional node feature is composed of 300-dimensional comment word2vec embedding along with 20-dimensional profile features. As the graph coding the GNN-CL is implemented using DiffPool along with profile feature as the node feature. Anticipated Method is judge against the latest work and have established a higher level effectiveness of 94.9% with Ten-Fold verification.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 2.208
+          }
+        }
+      },
+      "term_overlap": 0.182,
+      "tfidf_similarity": 0.092,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "The PolitiFact-Oslo Corpus: A New Dataset for Fake News Analysis and Detection",
+        "authors": [
+          "Nele Põldvere",
+          "Zia Uddin",
+          "Aleena Thomas"
+        ],
+        "year": 2023,
+        "date": "2023-11-23",
+        "venue": "Information",
+        "doi": "10.3390/info14120627",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.3390/info14120627",
+        "pdf_url": null,
+        "abstract": "This study presents a new dataset for fake news analysis and detection, namely, the PolitiFact-Oslo Corpus. The corpus contains samples of both fake and real news in English, collected from the fact-checking website PolitiFact.com. It grew out of a need for a more controlled and effective dataset for fake news analysis and detection model development based on recent events. Three features make it uniquely placed for this: (i) the texts have been individually labelled for veracity by experts, (ii) they are complete texts that strictly correspond to the claims in question, and (iii) they are accompanied by important metadata such as text type (e.g., social media, news and blog). In relation to this, we present a pipeline for collecting quality data from major fact-checking websites, a procedure which can be replicated in future corpus building efforts. An exploratory analysis based on sentiment and part-of-speech information reveals interesting differences between fake and real news as well as between text types, thus highlighting the importance of adding contextual information to fake news corpora. Since the main application of the PolitiFact-Oslo Corpus is in automatic fake news detection, we critically examine the applicability of the corpus and another PolitiFact dataset built based on less strict criteria for various deep learning-based efficient approaches, such as Bidirectional Long Short-Term Memory (Bi-LSTM), LSTM fine-tuned transformers such as Bidirectional Encoder Representations from Transformers (BERT) and RoBERTa, and XLNet.",
+        "citations": 17,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "journal-article",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.556,
+            "title_match": 0.556,
+            "retrieval_hits": 3,
+            "score": 2.136
+          }
+        }
+      },
+      "term_overlap": 0.151,
+      "tfidf_similarity": 0.107,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "A Multimodal Adaptive Graph-based Intelligent Classification Model for Fake News",
+        "authors": [
+          "Junhao Xu"
+        ],
+        "year": 2026,
+        "date": "2026-01-20",
+        "venue": null,
+        "doi": "10.21203/rs.3.rs-7713904/v1",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.21203/rs.3.rs-7713904/v1",
+        "pdf_url": null,
+        "abstract": "Abstract Numerous studies have been proposed to detect fake news focusing on multi-modalities based on machine and/or deep learning. However, studies focusing on graph-based structures using geometric deep learning are lacking. To address this challenge, we introduce the Multimodal Adaptive Graph-based Intelligent Classification (aptly referred to as MAGIC) for fake news detection. Specifically, the Encoder Representations from Transformers was used for text vectorization whilst ResNet50 was used for images. A comprehensive information interaction graph was built using the adaptive Graph Attention Network before classifying the multimodal input through the Softmax function. MAGIC was trained and tested on two fake news datasets, that is, Fakeddit (English) and Multimodal Fake News Detection (Chinese), with the model achieving an accuracy of 98.8\\% and 86.3\\%, respectively. Ablation experiments also revealed MAGIC to yield superior performance across both the datasets. Findings show that a graph-based deep learning adaptive model is effective in detecting multimodal fake news, surpassing state-of-the-art methods.",
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "posted-content",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "rethinking graph-based fake news detection benchmark"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "propagation graph versus news content fake news detection ablation pretrained language model review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "rethinking graph-based fake news detection benchmark survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "rethinking graph-based fake news detection benchmark review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "propagation graph versus news content fake news detection ablation pretrained language model"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "rethinking graph-based fake news detection benchmark"
+          }
+        ],
+        "extra": {
+          "abstract_source": "crossref",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.5,
+            "retrieval_hits": 5,
+            "score": 2.333
+          }
+        }
+      },
+      "term_overlap": 0.162,
+      "tfidf_similarity": 0.092,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Leveraging Hypergraph Neural Network for Fake News Detection on UPFD Dataset",
+        "authors": [
+          "Vandana Rai",
+          "Sakshi Rai"
+        ],
+        "year": 2025,
+        "date": "2025",
+        "venue": "Studies in Smart Technologies Intelligent Vision and Computing",
+        "doi": "10.1007/978-981-96-4722-4_9",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://doi.org/10.1007/978-981-96-4722-4_9",
+        "pdf_url": null,
+        "abstract": null,
+        "citations": 0,
+        "is_oa": null,
+        "is_retracted": null,
+        "type": "book-chapter",
+        "sources": [
+          "crossref"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "UPFD fake news detection reproducibility text-only baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news detection reproducibility text-only baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "UPFD fake news detection reproducibility text-only baseline review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "UPFD fake news detection reproducibility text-only baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.5,
+            "title_match": 0.5,
+            "retrieval_hits": 3,
+            "score": 1.875
+          }
+        }
+      },
+      "term_overlap": 0.08,
+      "tfidf_similarity": 0.173,
+      "is_survey_like": false,
+      "has_abstract": false
+    },
+    {
+      "paper": {
+        "title": "Multi-view Fake News Detection method based on graph neural network",
+        "authors": [
+          "Zhiqiang Wang",
+          "Qianli Huang",
+          "Kaixin Wang",
+          "Junlai Luo",
+          "Zhenguo Dong"
+        ],
+        "year": 2025,
+        "date": "2025-09-30",
+        "venue": "KSII Transactions on Internet and Information Systems",
+        "doi": "10.3837/tiis.2025.09.016",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4414623217",
+        "s2_id": null,
+        "url": "https://doi.org/10.3837/tiis.2025.09.016",
+        "pdf_url": "https://itiis.org/digital-library/manuscript/file/103318/TIIS Vol 19, No 9-16.pdf",
+        "abstract": "The rapid growth of content on social media-ranging from videos and images to text-has made information highly accessible but also increasingly vulnerable to manipulation.Malicious entities exploit this openness to spread false news that influences public opinion, especially during critical events.This phenomenon has driven significant attention toward automatic fake news detection.Our proposed approach addresses this challenge by integrating structural, temporal, and semantic cues within a dynamic graph-based framework.Unlike traditional methods that rely solely on static features or standalone natural language processing, our model captures the evolving nature of social interactions and news propagation patterns over time.This enables a more comprehensive and context aware detection of fake news, outperforming existing static graph models in both accuracy and temporal sensitivity.Therefore, in this paper, we propose a novel method called Multi-view Fake News Detection (MvFD), which simultaneously captures the temporal interaction of entities in social networks, user preferences, and news content, and utilizes the captured signals for modeling.Experimental results demonstrate the effectiveness of the model on real-world datasets.",
+        "citations": 0,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "journal-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "rethinking graph-based fake news detection benchmark"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "rethinking graph-based fake news detection benchmark survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "rethinking graph-based fake news detection benchmark review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "rethinking graph-based fake news detection benchmark"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 4,
+            "score": 2.5
+          },
+          "abstract_source": "openalex"
+        }
+      },
+      "term_overlap": 0.158,
+      "tfidf_similarity": 0.089,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Advanced Text Analytics - Graph Neural Network for Fake News Detection in Social Media",
+        "authors": [
+          "Anantram Patel",
+          "Vijay Kumar Sutrakar"
+        ],
+        "year": 2025,
+        "date": "2025-05-23",
+        "venue": "2025 6th International Conference on Control, Communication and Computing (ICCC)",
+        "doi": "10.1109/iccc64910.2025.11077205",
+        "arxiv_id": "2502.16157",
+        "pmid": null,
+        "openalex_id": "W4412963872",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/iccc64910.2025.11077205",
+        "pdf_url": "https://arxiv.org/pdf/2502.16157",
+        "abstract": "Traditional Graph Neural Network (GNN) approaches for fake news detection (FND) often depend on auxiliary, non-textual data, such as user interaction histories or content dissemination patterns. However, these data sources are not always accessible, limiting the effectiveness and applicability of such methods. Additionally, existing models frequently struggle to capture the detailed and intricate relationships within textual information, reducing their overall accuracy. In order to address these challenges Advanced Text Analysis Graph Neural Network (ATA-GNN) is proposed in this paper. The proposed model is designed to operate solely on textual data. ATA-GNN employs innovative topic modelling (clustering) techniques to identify typical words for each topic, leveraging multiple clustering dimensions to achieve a comprehensive semantic understanding of the text. This multilayered design enables the model to uncover intricate textual patterns while contextualizing them within a broader semantic framework, significantly enhancing its interpretative capabilities. Extensive evaluations on widely-used benchmark datasets demonstrate that ATA-GNN surpasses the performance of current GNN-based FND methods. These findings validate the potential of integrating advanced text clustering within GNN architectures to achieve more reliable and text-focused detection solutions.",
+        "citations": 4,
+        "is_oa": true,
+        "is_retracted": false,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline review"
+          },
+          {
+            "source": "crossref",
+            "strategy": "recent",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 3,
+            "score": 2.427
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W569478347",
+            "W1880262756",
+            "W1924770834",
+            "W2151373442",
+            "W2164622009",
+            "W2519887557",
+            "W2624431344",
+            "W2629828191",
+            "W2770039499",
+            "W2798787718",
+            "W2962946486",
+            "W2963877803",
+            "W2970183009",
+            "W2997128522",
+            "W2997162759",
+            "W3017402509",
+            "W3035568641",
+            "W3070920170",
+            "W3106229813",
+            "W3153567752",
+            "W3166215705",
+            "W3175836411",
+            "W4212890525",
+            "W4224318954",
+            "W4293363567",
+            "W4294558607",
+            "W4386038364",
+            "W4388944864"
+          ],
+          "related_works": [
+            "W2899600512",
+            "W4236511752",
+            "W2970486633",
+            "W2615975817",
+            "W1440043730",
+            "W2752017774",
+            "W4312328042",
+            "W2146123582",
+            "W2309196980",
+            "W4232432449"
+          ]
+        }
+      },
+      "term_overlap": 0.153,
+      "tfidf_similarity": 0.087,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Editable Graph Neural Network for Node Classifications",
+        "authors": [
+          "Zirui Liu",
+          "Zhimeng Jiang",
+          "Shaochen Zhong",
+          "Kaixiong Zhou",
+          "Li Li",
+          "Rui Chen",
+          "Soo-Hyun Choi",
+          "Xia Hu"
+        ],
+        "year": 2023,
+        "date": "2023-05-24",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2305.15529",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2305.15529",
+        "pdf_url": null,
+        "abstract": "Despite Graph Neural Networks (GNNs) have achieved prominent success in many graph-based learning problem, such as credit risk assessment in financial networks and fake news detection in social networks. However, the trained GNNs still make errors and these errors may cause serious negative impact on society. Model editing, which corrects the model behavior on wrongly predicted target samples while leaving model predictions unchanged on unrelated samples, has garnered significant interest in the fields of computer vision and natural language processing. However, model editing for graph neural networks (GNNs) is rarely explored, despite GNNs' widespread applicability. To fill the gap, we first observe that existing model editing methods significantly deteriorate prediction accuracy (up to 50% accuracy drop) in GNNs while a slight accuracy drop in multi-layer perception (MLP). The rationale behind this observation is that the node aggregation in GNNs will spread the editing effect throughout the whole graph. This propagation pushes the node representation far from its original one. Motivated by this observation, we propose Editable Graph Neural Networks (EGNN), a neighbor propagation-free approach to correct the model prediction on misclassified nodes. Specifically, EGNN simply stitches an MLP to the underlying GNNs, where the weights of GNNs are frozen during model editing. In this way, EGNN disables the propagation during editing while still utilizing the neighbor propagation scheme for node prediction to obtain satisfactory results. Experiments demonstrate that EGNN outperforms existing baselines in terms of effectiveness (correcting wrong predictions with lower accuracy drop), generalizability (correcting wrong predictions for other similar nodes), and efficiency (low training time and memory) on various graph datasets.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "keyword",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.273,
+            "retrieval_hits": 3,
+            "score": 1.981
+          }
+        }
+      },
+      "term_overlap": 0.152,
+      "tfidf_similarity": 0.083,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Graph Neural Network Training with Data Tiering",
+        "authors": [
+          "Seung Won Min",
+          "Kun Wu",
+          "Mert Hidayetoğlu",
+          "Jinjun Xiong",
+          "Xiang Song",
+          "Wen-mei Hwu"
+        ],
+        "year": 2021,
+        "date": "2021-11-10",
+        "venue": "arXiv",
+        "doi": null,
+        "arxiv_id": "2111.05894",
+        "pmid": null,
+        "openalex_id": null,
+        "s2_id": null,
+        "url": "https://arxiv.org/abs/2111.05894",
+        "pdf_url": null,
+        "abstract": "Graph Neural Networks (GNNs) have shown success in learning from graph-structured data, with applications to fraud detection, recommendation, and knowledge graph reasoning. However, training GNN efficiently is challenging because: 1) GPU memory capacity is limited and can be insufficient for large datasets, and 2) the graph-based data structure causes irregular data access patterns. In this work, we provide a method to statistical analyze and identify more frequently accessed data ahead of GNN training. Our data tiering method not only utilizes the structure of input graph, but also an insight gained from actual GNN training process to achieve a higher prediction result. With our data tiering method, we additionally provide a new data placement and access strategy to further minimize the CPU-GPU communication overhead. We also take into account of multi-GPU GNN training as well and we demonstrate the effectiveness of our strategy in a multi-GPU system. The evaluation results show that our work reduces CPU-GPU traffic by 87-95% and improves the training speed of GNN over the existing solutions by 1.6-2.1x on graphs with hundreds of millions of nodes and billions of edges.",
+        "citations": null,
+        "is_oa": true,
+        "is_retracted": null,
+        "type": "preprint",
+        "sources": [
+          "huggingface"
+        ],
+        "found_by": [
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline survey"
+          },
+          {
+            "source": "huggingface",
+            "strategy": "surveys",
+            "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline review"
+          }
+        ],
+        "extra": {
+          "abstract_source": "huggingface",
+          "rank": {
+            "query_match": 0.444,
+            "title_match": 0.273,
+            "retrieval_hits": 2,
+            "score": 1.412
+          }
+        }
+      },
+      "term_overlap": 0.146,
+      "tfidf_similarity": 0.086,
+      "is_survey_like": false,
+      "has_abstract": true
+    },
+    {
+      "paper": {
+        "title": "Analysis of Fake News Detection using Graph Neural Network (GNN) and Deep Learning",
+        "authors": [
+          "Prajwal Hiremath",
+          "Srujan Sateesh Kalagi",
+          "Mohana"
+        ],
+        "year": 2023,
+        "date": "2023-12-11",
+        "venue": "2023 2nd International Conference on Automation, Computing and Renewable Systems (ICACRS)",
+        "doi": "10.1109/icacrs58579.2023.10405304",
+        "arxiv_id": null,
+        "pmid": null,
+        "openalex_id": "W4391265935",
+        "s2_id": null,
+        "url": "https://doi.org/10.1109/icacrs58579.2023.10405304",
+        "pdf_url": null,
+        "abstract": "The rise of fake news in social networks has become a significant concern, necessitating innovative strategies to combat misinformation. One such approach is the use of graph neural networks (GNNs) to trace and analyze false information dissemination. GNNs are specialized DL model capable of processing graph-structured data, making them ideal for capturing intricate dependencies and relationships in the spread of fake news. Proposed implementation starting with data preparation, where a carefully curated dataset is essential. The news stories are processed, tokenized, and transformed into a graph representation to better understand the relationships between words or entities. Graph construction enables the formulation of ML problems as graph classification tasks. Graph embedding, achieved through methods like word2vec or GNNs, plays a crucial role in representing each node as a low-dimensional vector, capturing its semantic significance within the network. This technique facilitates ML activities, such as node classification and link prediction. Combining graph embeddings and GNNs for classification allows for a more precise identification of true and false news, considering the structure and content of news propagation graphs. Finally, evaluating false news detection involves performance metrics such as accuracy. Proposed implementation obtained detection accuracy of 94%. Striking a balance between minimizing false positives and false negatives is crucial to combat misinformation effectively. By employing this approach, society can create a more trustworthy information environment, enabling individuals to make informed decisions and reducing the negative impact of fake news.",
+        "citations": 8,
+        "is_oa": false,
+        "is_retracted": false,
+        "type": "proceedings-article",
+        "sources": [
+          "crossref",
+          "openalex"
+        ],
+        "found_by": [
+          {
+            "source": "crossref",
+            "strategy": "keyword",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact survey"
+          },
+          {
+            "source": "crossref",
+            "strategy": "surveys",
+            "query": "GNN fake news detection evaluation variance small datasets PolitiFact review"
+          }
+        ],
+        "extra": {
+          "rank": {
+            "query_match": 0.667,
+            "title_match": 0.667,
+            "retrieval_hits": 3,
+            "score": 2.447
+          },
+          "abstract_source": "openalex",
+          "referenced_works": [
+            "W2624431344",
+            "W2751120625",
+            "W2896457183",
+            "W2918342466",
+            "W2963341956",
+            "W3041286073",
+            "W3081509497",
+            "W3124364749",
+            "W3201829457",
+            "W3216511633",
+            "W4223645190",
+            "W4294558607",
+            "W4377970413",
+            "W4378191324",
+            "W4378364695",
+            "W4378976611",
+            "W4379616675",
+            "W4379619682",
+            "W4380303372",
+            "W4380885064"
+          ],
+          "related_works": [
+            "W2731899572",
+            "W3215138031",
+            "W3009238340",
+            "W2939353110",
+            "W4321369474",
+            "W4360585206",
+            "W4285208911",
+            "W4213079790",
+            "W2248239756",
+            "W2773120646"
+          ]
+        }
+      },
+      "term_overlap": 0.142,
+      "tfidf_similarity": 0.085,
+      "is_survey_like": false,
+      "has_abstract": true
+    }
+  ],
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "UPFD fake news detection reproducibility text-only baseline",
+      "results": 0,
+      "error": {
+        "source": "openalex",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "UPFD fake news detection reproducibility text-only baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "UPFD fake news detection reproducibility text-only baseline",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "UPFD fake news detection reproducibility text-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "UPFD fake news detection reproducibility text-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "rethinking graph-based fake news detection benchmark",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "rethinking graph-based fake news detection benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "rethinking graph-based fake news detection benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "UPFD fake news detection reproducibility text-only baseline survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "UPFD fake news detection reproducibility text-only baseline survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "UPFD fake news detection reproducibility text-only baseline survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "UPFD fake news detection reproducibility text-only baseline review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "UPFD fake news detection reproducibility text-only baseline review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "UPFD fake news detection reproducibility text-only baseline review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "rethinking graph-based fake news detection benchmark survey",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "rethinking graph-based fake news detection benchmark survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "rethinking graph-based fake news detection benchmark survey",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "surveys",
+      "query": "rethinking graph-based fake news detection benchmark review",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "surveys",
+      "query": "rethinking graph-based fake news detection benchmark review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "surveys",
+      "query": "rethinking graph-based fake news detection benchmark review",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "UPFD fake news detection reproducibility text-only baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "UPFD fake news detection reproducibility text-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "UPFD fake news detection reproducibility text-only baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "propagation graph versus news content fake news detection ablation pretrained language model",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "do graph neural networks help fake news detection FakeNewsNet strong text baseline",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "GNN fake news detection evaluation variance small datasets PolitiFact",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "recent",
+      "query": "rethinking graph-based fake news detection benchmark",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "recent",
+      "query": "rethinking graph-based fake news detection benchmark",
+      "results": 15,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "recent",
+      "query": "rethinking graph-based fake news detection benchmark",
+      "results": 15,
+      "error": null
+    }
+  ],
+  "date": "2026-10-17"
+}

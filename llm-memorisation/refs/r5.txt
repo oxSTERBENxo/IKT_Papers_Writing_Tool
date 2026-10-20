@@ -1,0 +1,10 @@
+  1. When Structure Doesn't Help: LLMs Do Not Read Text-Attributed Graphs as Effectively as We Expected
+     Xu et al. 2025 | arXiv | cited ? | arXiv:2511.16767 OA | via arxiv
+     URL: https://arxiv.org/abs/2511.16767
+     PDF: https://arxiv.org/pdf/2511.16767v2
+
+Abstract: Graphs provide a unified representation of semantic content and relational structure, making them a natural fit for domains such as molecular modeling, citation networks, and social graphs. Meanwhile, large language models (LLMs) have excelled at understanding natural language and integrating cross-modal signals, sparking interest in their potential for graph reasoning. Recent work has explored this by either designing template-based graph templates or using graph neural networks (GNNs) to encode structural information. In this study, we investigate how different strategies for encoding graph structure affect LLM performance on text-attributed graphs. Surprisingly, our systematic experiments reveal that: (i) LLMs leveraging only node textual descriptions already achieve strong performance across tasks; and (ii) most structural encoding strategies offer marginal or even negative gains. We show that explicit structural priors are often unnecessary and, in some cases, counterproductive when powerful language models are involved. This represents a significant departure from traditional graph learning paradigms and highlights the need to rethink how structure should be represented and utilized in the LLM era. Our study is to systematically challenge the foundational assumption that structure is inherently beneficial for LLM-based graph reasoning, opening the door to new, semantics-driven approaches for graph learning.
+  note: semantic_scholar: rate_limited HTTP 429 after retries
+  note: openalex: rate_limited quota exhausted (X-RateLimit-Reset=2123). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?
+
+Full JSON written to llm-memorisation\refs\r5.json

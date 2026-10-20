@@ -1,0 +1,48 @@
+{
+  "paper": {
+    "title": "Severity Impact Discrepancy in Supply Chain Vulnerabilities: An Empirical Analysis Using the CISA Known Exploited Vulnerabilities (KEV) Database",
+    "authors": [
+      "Stephen Mujeye"
+    ],
+    "year": 2026,
+    "date": "2026-01-21",
+    "venue": "International Conference on Software Engineering and Information Management (ICSIM)",
+    "doi": "10.1145/3796315.3796349",
+    "arxiv_id": null,
+    "pmid": null,
+    "openalex_id": "W7160636277",
+    "s2_id": "e86b64e5a59839cb83f5a2edd04b5e30aff8fa9e",
+    "url": "https://doi.org/10.1145/3796315.3796349",
+    "pdf_url": "https://doi.org/10.1145/3796315.3796349",
+    "abstract": "The increasing interdependence of software ecosystems has intensified the systemic risks associated with supply chain vulnerabilities. Traditional severity metrics such as the Common Vulnerability Scoring System (CVSS) often fail to capture contextual risk arising from third-party dependencies, build pipelines, and open-source reuse. This study investigates whether vulnerabilities linked to software supply chain incidents differ systematically from other exploited vulnerabilities in the Cybersecurity and Infrastructure Security Agency's (CISA) Known Exploited Vulnerabilities (KEV) catalog. Using a quantitative comparative design, the research analyzed severity (CVSS), exploitability (EPSS), remediation timelines, and detection-to-listing delays across KEV-listed vulnerabilities from 2015 to 2025. While no statistically significant differences were observed, supply chain vulnerabilities showed slightly higher CVSS and EPSS scores, greater variance in remediation times, and longer recognition delays. These results suggest that conventional vulnerability metrics underrepresent systemic exposure within dependency networks. The study concludes that effective risk management requires context-aware assessment frameworks that integrate exploit telemetry, dependency metadata, and Software Bill of Materials (SBOM) information to improve prioritization and resilience across software supply chains.",
+    "citations": 0,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "conference-paper",
+    "sources": [
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W2213682369",
+        "W2804302282",
+        "W3111742303",
+        "W3119683254",
+        "W4221145571",
+        "W4323896853",
+        "W4360948905",
+        "W4362509003",
+        "W4394769265",
+        "W4400488607",
+        "W4400918252",
+        "W4410737897",
+        "W4413320161"
+      ],
+      "abstract_source": "semantic_scholar"
+    }
+  },
+  "notes": []
+}

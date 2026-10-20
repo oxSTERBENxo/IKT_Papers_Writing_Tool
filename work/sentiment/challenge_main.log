@@ -1,0 +1,81 @@
+  [openalex/keyword] 'does syntax help pretrained transformers aspect-based sentiment': 1 results
+  [arxiv/keyword] 'does syntax help pretrained transformers aspect-based sentiment': 0 results
+  [semantic_scholar/keyword] 'does syntax help pretrained transformers aspect-based sentiment': error rate_limited
+  [crossref/keyword] 'does syntax help pretrained transformers aspect-based sentiment': 15 results
+  [huggingface/keyword] 'does syntax help pretrained transformers aspect-based sentiment': 15 results
+  [openalex/keyword] 'dependency tree graph neural network on top of BERT ablation sentiment': 1 results
+  [arxiv/keyword] 'dependency tree graph neural network on top of BERT ablation sentiment': 0 results
+  [crossref/keyword] 'dependency tree graph neural network on top of BERT ablation sentiment': 15 results
+  [huggingface/keyword] 'dependency tree graph neural network on top of BERT ablation sentiment': 15 results
+  [openalex/keyword] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment': 0 results
+  [arxiv/keyword] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment': 0 results
+  [crossref/keyword] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment': 15 results
+  [huggingface/keyword] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment': 15 results
+  [openalex/keyword] 'syntax-agnostic versus syntax-aware models frozen encoder probing': 0 results
+  [arxiv/keyword] 'syntax-agnostic versus syntax-aware models frozen encoder probing': 0 results
+  [crossref/keyword] 'syntax-agnostic versus syntax-aware models frozen encoder probing': 15 results
+  [huggingface/keyword] 'syntax-agnostic versus syntax-aware models frozen encoder probing': 15 results
+  [openalex/keyword] 'random trees versus dependency trees graph convolution evaluation': 0 results
+  [arxiv/keyword] 'random trees versus dependency trees graph convolution evaluation': 0 results
+  [crossref/keyword] 'random trees versus dependency trees graph convolution evaluation': 15 results
+  [huggingface/keyword] 'random trees versus dependency trees graph convolution evaluation': 15 results
+  [openalex/surveys] 'does syntax help pretrained transformers aspect-based sentiment survey': 0 results
+  [arxiv/surveys] 'does syntax help pretrained transformers aspect-based sentiment survey': 0 results
+  [crossref/surveys] 'does syntax help pretrained transformers aspect-based sentiment survey': 15 results
+  [huggingface/surveys] 'does syntax help pretrained transformers aspect-based sentiment survey': 15 results
+  [openalex/surveys] 'does syntax help pretrained transformers aspect-based sentiment review': 1 results
+  [arxiv/surveys] 'does syntax help pretrained transformers aspect-based sentiment review': 0 results
+  [crossref/surveys] 'does syntax help pretrained transformers aspect-based sentiment review': 15 results
+  [huggingface/surveys] 'does syntax help pretrained transformers aspect-based sentiment review': 15 results
+  [openalex/surveys] 'dependency tree graph neural network on top of BERT ablation sentiment survey': 0 results
+  [arxiv/surveys] 'dependency tree graph neural network on top of BERT ablation sentiment survey': 0 results
+  [crossref/surveys] 'dependency tree graph neural network on top of BERT ablation sentiment survey': 15 results
+  [huggingface/surveys] 'dependency tree graph neural network on top of BERT ablation sentiment survey': 15 results
+  [openalex/surveys] 'dependency tree graph neural network on top of BERT ablation sentiment review': 1 results
+  [arxiv/surveys] 'dependency tree graph neural network on top of BERT ablation sentiment review': 0 results
+  [crossref/surveys] 'dependency tree graph neural network on top of BERT ablation sentiment review': 15 results
+  [huggingface/surveys] 'dependency tree graph neural network on top of BERT ablation sentiment review': 15 results
+  [openalex/surveys] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment survey': 0 results
+  [arxiv/surveys] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment survey': 0 results
+  [crossref/surveys] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment survey': 15 results
+  [huggingface/surveys] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment survey': 15 results
+  [openalex/surveys] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment review': 0 results
+  [arxiv/surveys] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment review': 0 results
+  [crossref/surveys] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment review': 15 results
+  [huggingface/surveys] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment review': 15 results
+  [openalex/surveys] 'syntax-agnostic versus syntax-aware models frozen encoder probing survey': 0 results
+  [arxiv/surveys] 'syntax-agnostic versus syntax-aware models frozen encoder probing survey': 0 results
+  [crossref/surveys] 'syntax-agnostic versus syntax-aware models frozen encoder probing survey': 15 results
+  [huggingface/surveys] 'syntax-agnostic versus syntax-aware models frozen encoder probing survey': 15 results
+  [openalex/surveys] 'syntax-agnostic versus syntax-aware models frozen encoder probing review': 0 results
+  [arxiv/surveys] 'syntax-agnostic versus syntax-aware models frozen encoder probing review': 0 results
+  [crossref/surveys] 'syntax-agnostic versus syntax-aware models frozen encoder probing review': 15 results
+  [huggingface/surveys] 'syntax-agnostic versus syntax-aware models frozen encoder probing review': 15 results
+  [openalex/surveys] 'random trees versus dependency trees graph convolution evaluation survey': 0 results
+  [arxiv/surveys] 'random trees versus dependency trees graph convolution evaluation survey': 0 results
+  [crossref/surveys] 'random trees versus dependency trees graph convolution evaluation survey': 15 results
+  [huggingface/surveys] 'random trees versus dependency trees graph convolution evaluation survey': 15 results
+  [openalex/surveys] 'random trees versus dependency trees graph convolution evaluation review': 0 results
+  [arxiv/surveys] 'random trees versus dependency trees graph convolution evaluation review': 0 results
+  [crossref/surveys] 'random trees versus dependency trees graph convolution evaluation review': 15 results
+  [huggingface/surveys] 'random trees versus dependency trees graph convolution evaluation review': 15 results
+  [openalex/recent] 'does syntax help pretrained transformers aspect-based sentiment': 1 results
+  [arxiv/recent] 'does syntax help pretrained transformers aspect-based sentiment': 0 results
+  [crossref/recent] 'does syntax help pretrained transformers aspect-based sentiment': 15 results
+  [huggingface/recent] 'does syntax help pretrained transformers aspect-based sentiment': 15 results
+  [openalex/recent] 'dependency tree graph neural network on top of BERT ablation sentiment': 1 results
+  [arxiv/recent] 'dependency tree graph neural network on top of BERT ablation sentiment': 0 results
+  [crossref/recent] 'dependency tree graph neural network on top of BERT ablation sentiment': 15 results
+  [huggingface/recent] 'dependency tree graph neural network on top of BERT ablation sentiment': 15 results
+  [openalex/recent] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment': 0 results
+  [arxiv/recent] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment': 0 results
+  [crossref/recent] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment': 15 results
+  [huggingface/recent] 'syntactic information unnecessary strong RoBERTa baseline aspect sentiment': 15 results
+  [openalex/recent] 'syntax-agnostic versus syntax-aware models frozen encoder probing': 0 results
+  [arxiv/recent] 'syntax-agnostic versus syntax-aware models frozen encoder probing': 0 results
+  [crossref/recent] 'syntax-agnostic versus syntax-aware models frozen encoder probing': 11 results
+  [huggingface/recent] 'syntax-agnostic versus syntax-aware models frozen encoder probing': 15 results
+  [openalex/recent] 'random trees versus dependency trees graph convolution evaluation': 0 results
+  [arxiv/recent] 'random trees versus dependency trees graph convolution evaluation': 0 results
+  [crossref/recent] 'random trees versus dependency trees graph convolution evaluation': 15 results
+  [huggingface/recent] 'random trees versus dependency trees graph convolution evaluation': 15 results

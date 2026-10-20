@@ -1,0 +1,4160 @@
+{
+  "queries": [
+    "benchmark text-attributed graph node classification language model embeddings GNN",
+    "are graph neural networks necessary text-attributed graphs simple baselines",
+    "LLM explanations as features node classification TAPE"
+  ],
+  "strategies": [
+    "keyword",
+    "foundational",
+    "reproducibility"
+  ],
+  "sources": [
+    "openalex",
+    "arxiv",
+    "semantic_scholar",
+    "crossref",
+    "huggingface"
+  ],
+  "from_year": 2023,
+  "to_year": null,
+  "sources_status": {
+    "openalex": {
+      "calls": 12,
+      "ok_calls": 12,
+      "results": 16,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "arxiv": {
+      "calls": 9,
+      "ok_calls": 9,
+      "results": 6,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "semantic_scholar": {
+      "calls": 1,
+      "ok_calls": 0,
+      "results": 0,
+      "errors": [
+        "rate_limited: HTTP 429 after retries"
+      ],
+      "stopped_after": "rate_limited",
+      "state": "failed"
+    },
+    "crossref": {
+      "calls": 9,
+      "ok_calls": 9,
+      "results": 90,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    },
+    "huggingface": {
+      "calls": 9,
+      "ok_calls": 9,
+      "results": 90,
+      "errors": [],
+      "stopped_after": null,
+      "state": "ok"
+    }
+  },
+  "n_retrieved": 202,
+  "n_after_dedup": 74,
+  "log": [
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN",
+      "results": 6,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN",
+      "results": 4,
+      "error": null
+    },
+    {
+      "source": "semantic_scholar",
+      "strategy": "keyword",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN",
+      "results": 0,
+      "error": {
+        "source": "semantic_scholar",
+        "kind": "rate_limited",
+        "message": "HTTP 429 after retries",
+        "status": 429
+      }
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "keyword",
+      "query": "LLM explanations as features node classification TAPE",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "keyword",
+      "query": "LLM explanations as features node classification TAPE",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "keyword",
+      "query": "LLM explanations as features node classification TAPE",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "keyword",
+      "query": "LLM explanations as features node classification TAPE",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "foundational",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN",
+      "results": 6,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "foundational",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "foundational",
+      "query": "LLM explanations as features node classification TAPE",
+      "results": 2,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "reproducibility",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "reproducibility",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "reproducibility",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "reproducibility",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "reproducibility",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN replication",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "reproducibility",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN replication",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "reproducibility",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN replication",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "reproducibility",
+      "query": "benchmark text-attributed graph node classification language model embeddings GNN replication",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "reproducibility",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "reproducibility",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "reproducibility",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "reproducibility",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "reproducibility",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines replication",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "reproducibility",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines replication",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "reproducibility",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines replication",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "reproducibility",
+      "query": "are graph neural networks necessary text-attributed graphs simple baselines replication",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "reproducibility",
+      "query": "LLM explanations as features node classification TAPE reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "reproducibility",
+      "query": "LLM explanations as features node classification TAPE reproducibility",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "reproducibility",
+      "query": "LLM explanations as features node classification TAPE reproducibility",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "reproducibility",
+      "query": "LLM explanations as features node classification TAPE reproducibility",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "openalex",
+      "strategy": "reproducibility",
+      "query": "LLM explanations as features node classification TAPE replication",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "arxiv",
+      "strategy": "reproducibility",
+      "query": "LLM explanations as features node classification TAPE replication",
+      "results": 0,
+      "error": null
+    },
+    {
+      "source": "crossref",
+      "strategy": "reproducibility",
+      "query": "LLM explanations as features node classification TAPE replication",
+      "results": 10,
+      "error": null
+    },
+    {
+      "source": "huggingface",
+      "strategy": "reproducibility",
+      "query": "LLM explanations as features node classification TAPE replication",
+      "results": 10,
+      "error": null
+    }
+  ],
+  "papers": [
+    {
+      "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+      "authors": [
+        "Xiaoxin He",
+        "Xavier Bresson",
+        "Thomas Laurent",
+        "Adam Perold",
+        "Yann LeCun",
+        "Bryan Hooi"
+      ],
+      "year": 2023,
+      "date": "2023-05-31",
+      "venue": "arXiv",
+      "doi": "10.48550/arxiv.2305.19523",
+      "arxiv_id": "2305.19523",
+      "pmid": null,
+      "openalex_id": "W4379087246",
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2305.19523",
+      "pdf_url": "https://arxiv.org/pdf/2305.19523",
+      "abstract": "Representation learning on text-attributed graphs (TAGs) has become a critical research problem in recent years. A typical example of a TAG is a paper citation graph, where the text of each paper serves as node attributes. Initial graph neural network (GNN) pipelines handled these text attributes by transforming them into shallow or hand-crafted features, such as skip-gram or bag-of-words features. Recent efforts have focused on enhancing these pipelines with language models (LMs), which typically demand intricate designs and substantial computational resources. With the advent of powerful large language models (LLMs) such as GPT or Llama2, which demonstrate an ability to reason and to utilize general knowledge, there is a growing need for techniques which combine the textual modelling abilities of LLMs with the structural learning capabilities of GNNs. Hence, in this work, we focus on leveraging LLMs to capture textual information as features, which can be used to boost GNN performance on downstream tasks. A key innovation is our use of explanations as features: we prompt an LLM to perform zero-shot classification, request textual explanations for its decision-making process, and design an LLM-to-LM interpreter to translate these explanations into informative features for downstream GNNs. Our experiments demonstrate that our method achieves state-of-the-art results on well-established TAG datasets, including Cora, PubMed, ogbn-arxiv, as well as our newly introduced dataset, tape-arxiv23. Furthermore, our method significantly speeds up training, achieving a 2.88 times improvement over the closest baseline on ogbn-arxiv. Lastly, we believe the versatility of the proposed method extends beyond TAGs and holds the potential to enhance other tasks involving graph-text data. Our codes and datasets are available at: https://github.com/XiaoxinHe/TAPE.",
+      "citations": 22,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "preprint",
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "openalex",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "arxiv",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "openalex",
+          "strategy": "foundational",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "arxiv",
+        "arxiv_comment": "In Proceedings of ICLR 2024",
+        "arxiv_category": "cs.LG",
+        "rank": {
+          "query_match": 1.0,
+          "title_match": 0.375,
+          "retrieval_hits": 10,
+          "score": 2.977
+        }
+      }
+    },
+    {
+      "title": "STAGE: Simplified Text-Attributed Graph Embeddings using Pre-trained LLMs",
+      "authors": [
+        "Aaron Zolnai-Lucas",
+        "Jack Boylan",
+        "Chris Hokamp",
+        "Parsa Ghaffari"
+      ],
+      "year": 2024,
+      "date": "2024-01-01",
+      "venue": "Proceedings of the 1st Workshop on Knowledge Graphs and Large Language Models (KaLLM 2024)",
+      "doi": "10.18653/v1/2024.kallm-1.10",
+      "arxiv_id": "2407.12860",
+      "pmid": null,
+      "openalex_id": "W4402683078",
+      "s2_id": null,
+      "url": "https://doi.org/10.18653/v1/2024.kallm-1.10",
+      "pdf_url": "https://aclanthology.org/2024.kallm-1.10.pdf",
+      "abstract": "We present Simplified Text-Attributed Graph Embeddings (STAGE), a straightforward yet effective method for enhancing node features in Graph Neural Network (GNN) models that encode Text-Attributed Graphs (TAGs). Our approach leverages Large-Language Models (LLMs) to generate embeddings for textual attributes. STAGE achieves competitive results on various node classification benchmarks while also maintaining a simplicity in implementation relative to current state-of-the-art (SoTA) techniques. We show that utilizing pre-trained LLMs as embedding generators provides robust features for ensemble GNN training, enabling pipelines that are simpler than current SoTA approaches which require multiple expensive training and prompting stages. We also implement diffusion-pattern GNNs in an effort to make this pipeline scalable to graphs beyond academic benchmarks.",
+      "citations": 4,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "arxiv",
+        "crossref",
+        "huggingface",
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "openalex",
+          "strategy": "foundational",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        },
+        {
+          "source": "arxiv",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "arxiv",
+        "arxiv_category": "cs.CL",
+        "rank": {
+          "query_match": 1.0,
+          "title_match": 0.4,
+          "retrieval_hits": 11,
+          "score": 2.952
+        }
+      }
+    },
+    {
+      "title": "Leveraging Large Language Models for Node Generation in Few-Shot Learning on Text-Attributed Graphs",
+      "authors": [
+        "Jianxiang Yu",
+        "Yuxiang Ren",
+        "Chenghua Gong",
+        "Jiaqi Tan",
+        "Xiang Li",
+        "Xuecang Zhang"
+      ],
+      "year": 2023,
+      "date": "2023-10-15",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2310.09872",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2310.09872",
+      "pdf_url": null,
+      "abstract": "Text-attributed graphs have recently garnered significant attention due to their wide range of applications in web domains. Existing methodologies employ word embedding models for acquiring text representations as node features, which are subsequently fed into Graph Neural Networks (GNNs) for training. Recently, the advent of Large Language Models (LLMs) has introduced their powerful capabilities in information retrieval and text generation, which can greatly enhance the text attributes of graph data. Furthermore, the acquisition and labeling of extensive datasets are both costly and time-consuming endeavors. Consequently, few-shot learning has emerged as a crucial problem in the context of graph learning tasks. In order to tackle this challenge, we propose a lightweight paradigm called LLM4NG, which adopts a plug-and-play approach to empower text-attributed graphs through node generation using LLMs. Specifically, we utilize LLMs to extract semantic information from the labels and generate samples that belong to these categories as exemplars. Subsequently, we employ an edge predictor to capture the structural information inherent in the raw dataset and integrate the newly generated samples into the original graph. This approach harnesses LLMs for enhancing class-level information and seamlessly introduces labeled nodes and edges without modifying the raw dataset, thereby facilitating the node classification task in few-shot scenarios. Extensive experiments demonstrate the outstanding performance of our proposed paradigm, particularly in low-shot scenarios. For instance, in the 1-shot setting of the ogbn-arxiv dataset, LLM4NG achieves a 76% improvement over the baseline model.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.9,
+          "title_match": 0.6,
+          "retrieval_hits": 5,
+          "score": 2.9
+        }
+      }
+    },
+    {
+      "title": "Graph Convolutional Networks for Few-Shot Node Classification Using LLM-Derived Entity and Explanation Features",
+      "authors": [
+        "Yixiao Zhang"
+      ],
+      "year": 2026,
+      "date": "2026-07",
+      "venue": "2026 9th International Conference on Computer Information Science and Application Technology (CISAT)",
+      "doi": "10.1109/cisat71030.2026.11682228",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/cisat71030.2026.11682228",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "proceedings-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.833,
+          "title_match": 0.833,
+          "retrieval_hits": 3,
+          "score": 2.875
+        }
+      }
+    },
+    {
+      "title": "Integrating structural and semantic signals in text-attributed graphs with BiGTex",
+      "authors": [
+        "Azadeh Beiranvand",
+        "S. Mehdi Vahidipour"
+      ],
+      "year": 2026,
+      "date": "2026-05-20",
+      "venue": "Machine Learning with Applications",
+      "doi": "10.1016/j.mlwa.2026.100921",
+      "arxiv_id": "2504.12474",
+      "pmid": null,
+      "openalex_id": "W4415449598",
+      "s2_id": null,
+      "url": "https://doi.org/10.1016/j.mlwa.2026.100921",
+      "pdf_url": "https://doi.org/10.1016/j.mlwa.2026.100921",
+      "abstract": "Text-attributed graphs (TAGs) present unique challenges in representation learning by requiring models to capture both the semantic richness of node-associated texts and the structural dependencies of the graph. While graph neural networks (GNNs) excel at modeling topological information, they lack the capacity to process unstructured text. Conversely, large language models (LLMs) are proficient in text understanding but are typically unaware of graph structure. In this work, we propose BiGTex (Bidirectional Graph Text), a novel architecture that tightly integrates GNNs and LLMs through stacked Graph-Text Fusion Units. Each unit allows for mutual attention between textual and structural representations, enabling information to flow in both directions, text influencing structure and structure guiding textual interpretation. The proposed architecture is trained using parameter-efficient fine-tuning (LoRA), keeping the LLM frozen while adapting to task-specific signals. Extensive experiments on five benchmark datasets demonstrate that BiGTex achieves state-of-the-art performance in node classification and generalizes effectively to link prediction. An ablation study further highlights the importance of soft prompting and bi-directional attention in the model's success.",
+      "citations": 2,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "article",
+      "sources": [
+        "huggingface",
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "openalex",
+          "strategy": "foundational",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.9,
+          "title_match": 0.375,
+          "retrieval_hits": 4,
+          "score": 2.711
+        }
+      }
+    },
+    {
+      "title": "A Survey of Unifying Large Language Models with Graph Learning: Concepts, Methods, and Recent Advancements for Text-attributed Graph",
+      "authors": [
+        "Lihui Liu"
+      ],
+      "year": 2026,
+      "date": "2026-03-05",
+      "venue": null,
+      "doi": "10.36227/techrxiv.177272839.92930143/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.36227/techrxiv.177272839.92930143/v1",
+      "pdf_url": null,
+      "abstract": "Graphs are ubiquitous and have been used in a wide range of applications. Before the rise of large language models (LLMs), graph neural networks (GNNs) were among the most popular methods for graph learning. Techniques such as node embedding, graph convolution, graph attention, and random walkbased methods have been widely adopted. When handling graphs with textual node attributes, shallow text embeddings are typically used as initial node representations. However, these embeddings often capture only limited general knowledge. In recent years, LLMs have demonstrated remarkable capabilities in natural language processing, opening new opportunities for handling text data. In this survey, we explore how to leverage LLMs for graph machine learning. We focus on different types of tasks, including node classification, link prediction, and graph-based question answering. Specifically, we investigate two main approaches: LLMs as Enhancers and LLMs as Predictors. In the first approach, LLMs enrich node textual attributes with their vast knowledge, after which graph learning methods are used to make predictions. In the second approach, graph data is treated as input for LLMs, which directly solve various graph-related tasks. Through a thorough investigation of these two directions, we share observations and new insights on integrating LLMs with graph learning.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "crossref",
+        "rank": {
+          "query_match": 0.9,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 2.675
+        }
+      }
+    },
+    {
+      "title": "SaVe-TAG: LLM-based Interpolation for Long-Tailed Text-Attributed Graphs",
+      "authors": [
+        "Leyao Wang",
+        "Yu Wang",
+        "Bo Ni",
+        "Yuying Zhao",
+        "Hanyu Wang",
+        "Yao Ma",
+        "Tyler Derr"
+      ],
+      "year": 2026,
+      "date": "2026-04-20",
+      "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+      "doi": "10.1145/3770854.3780311",
+      "arxiv_id": "2410.16882",
+      "pmid": null,
+      "openalex_id": "W4404261350",
+      "s2_id": null,
+      "url": "https://doi.org/10.1145/3770854.3780311",
+      "pdf_url": "https://doi.org/10.1145/3770854.3780311",
+      "abstract": "Real-world graph data often follows long-tailed distributions, making it difficult for Graph Neural Networks (GNNs) to generalize well across both head and tail classes. Recent advances in Vicinal Risk Minimization (VRM) have shown promise in mitigating class imbalance with numeric interpolation; however, existing approaches largely rely on embedding-space arithmetic, which fails to capture the rich semantics inherent in text-attributed graphs. In this work, we propose our method, SaVe-TAG (Semantic-aware Vicinal Risk Minimization for Long-Tailed Text-Attributed Graphs), a novel VRM framework that leverages Large Language Models (LLMs) to perform text-level interpolation, generating on-manifold, boundary-enriching synthetic samples for minority classes. To mitigate the risk of noisy generation, we introduce a confidence-based edge assignment mechanism that uses graph topology as a natural filter to ensure structural consistency. We provide theoretical justification for our method and conduct extensive experiments on benchmark datasets, showing that our approach consistently outperforms both numeric interpolation and prior long-tailed node classification baselines. Our results highlight the importance of integrating semantic and structural signals for balanced and effective learning on text-attributed graphs. The source code is publicly available at: https://github.com/LWang-Laura/SaVe-TAG.",
+      "citations": 1,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "arxiv",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "openalex",
+          "strategy": "foundational",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        }
+      ],
+      "extra": {
+        "abstract_source": "arxiv",
+        "arxiv_comment": "Accepted KDD 2026 Research Track Paper",
+        "arxiv_category": "cs.AI",
+        "rank": {
+          "query_match": 1.0,
+          "title_match": 0.375,
+          "retrieval_hits": 2,
+          "score": 2.648
+        }
+      }
+    },
+    {
+      "title": "DuConTE: Dual-Granularity Text Encoder with Topology-Constrained Attention for Text-attributed Graphs",
+      "authors": [
+        "Lexuan Liang",
+        "Tao Zou",
+        "Xuxiang Ta",
+        "Zekun Qiu"
+      ],
+      "year": 2026,
+      "date": "2026-04-19",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2604.17411",
+      "arxiv_id": "2604.17411",
+      "pmid": null,
+      "openalex_id": "W7155038183",
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2604.17411",
+      "pdf_url": "https://arxiv.org/pdf/2604.17411",
+      "abstract": "Text-attributed graphs integrate semantic information of node texts with topological structure, offering significant value in various applications such as document classification and information extraction. Existing approaches typically encode textual content using language models (LMs), followed by graph neural networks (GNNs) to process structural information. However, during the LM-based text encoding phase, most methods not only perform semantic interaction solely at the word-token granularity, but also neglect the structural dependencies among texts from different nodes. In this work, we propose DuConTE, a dual-granularity text encoder with topology-constrained attention. The model employs a cascaded architecture of two pretrained LMs, encoding semantics first at the word-token granularity and then at the node granularity. During the self-attention computation in each LM, we dynamically adjust the attention mask matrix based on node connectivity, guiding the model to learn semantic correlations informed by the graph structure. Furthermore, when composing node representations from word-token embeddings, we separately evaluate the importance of tokens under the center-node context and the neighborhood context, enabling the capture of more contextually relevant semantic information. Extensive experiments on multiple benchmark datasets demonstrate that DuConTE achieves state-of-the-art performance on the majority of them.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "preprint",
+      "sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "arxiv",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "openalex",
+          "strategy": "foundational",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        }
+      ],
+      "extra": {
+        "abstract_source": "arxiv",
+        "arxiv_comment": "25 pages, 4 figures",
+        "arxiv_category": "cs.CL",
+        "rank": {
+          "query_match": 1.0,
+          "title_match": 0.375,
+          "retrieval_hits": 2,
+          "score": 2.625
+        }
+      }
+    },
+    {
+      "title": "An Effective Approach for Node Classification in Textual Graphs",
+      "authors": [
+        "Rituparna Datta",
+        "Nibir Chandra Mandal"
+      ],
+      "year": 2025,
+      "date": "2025-08-07",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2508.05836",
+      "arxiv_id": "2508.05836",
+      "pmid": null,
+      "openalex_id": "W4415191806",
+      "s2_id": null,
+      "url": "http://arxiv.org/abs/2508.05836",
+      "pdf_url": "https://arxiv.org/pdf/2508.05836",
+      "abstract": "Textual Attribute Graphs (TAGs) are critical for modeling complex networks like citation networks, but effective node classification remains challenging due to difficulties in integrating rich semantics from text with structural graph information. Existing methods often struggle with capturing nuanced domain-specific terminology, modeling long-range dependencies, adapting to temporal evolution, and scaling to massive datasets. To address these issues, we propose a novel framework that integrates TAPE (Text-Attributed Graph Representation Enhancement) with Graphormer. Our approach leverages a large language model (LLM), specifically ChatGPT, within the TAPE framework to generate semantically rich explanations from paper content, which are then fused into enhanced node representations. These embeddings are combined with structural features using a novel integration layer with learned attention weights. Graphormer's path-aware position encoding and multi-head attention mechanisms are employed to effectively capture long-range dependencies across the citation network. We demonstrate the efficacy of our framework on the challenging ogbn-arxiv dataset, achieving state-of-the-art performance with a classification accuracy of 0.772, significantly surpassing the best GCN baseline of 0.713. Our method also yields strong results in precision (0.671), recall (0.577), and F1-score (0.610). We validate our approach through comprehensive ablation studies that quantify the contribution of each component, demonstrating the synergy between semantic and structural information. Our framework provides a scalable and robust solution for node classification in dynamic TAGs, offering a promising direction for future research in knowledge systems and scientific discovery.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "preprint",
+      "sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "arxiv",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "openalex",
+          "strategy": "foundational",
+          "query": "LLM explanations as features node classification TAPE"
+        }
+      ],
+      "extra": {
+        "abstract_source": "arxiv",
+        "arxiv_category": "cs.LG",
+        "rank": {
+          "query_match": 1.0,
+          "title_match": 0.333,
+          "retrieval_hits": 2,
+          "score": 2.583
+        }
+      }
+    },
+    {
+      "title": "Bootstrapping Heterophily Graph Representation Learning via a Large Language Model-Based Approach",
+      "authors": [
+        "W. Huang",
+        "Fengge Wu",
+        "Hang Gao",
+        "Junsuo Zhao"
+      ],
+      "year": 2025,
+      "date": "2025-11-03",
+      "venue": "Proceedings - International Conference on Tools with Artificial Intelligence, TAI",
+      "doi": "10.1109/ictai66417.2025.00024",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "W4417339523",
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/ictai66417.2025.00024",
+      "pdf_url": null,
+      "abstract": "Graph Neural Networks (GNNs) excel in homophilic graphs but struggle with heterophilic graphs where connected nodes exhibit divergent characteristics. Existing methods underutilize semantic information in node attributes, a key factor for interpreting heterophilic interactions. To bridge this gap, we propose LLM-Enhanced Graph Neural Network for Heterophily (LEGNNH), a novel framework that synergizes large language model (LLM) with spectral graph convolutions for node classification in heterophilic graphs. LEGNNH operates in three stages: (1) Task-aware semantic embedding using LLMs with instruction-based prompting to encode raw node text; (2) Multi-channel spectral filtering dynamically aggregating local patterns via adaptive low-pass, high-pass, and identity filters; (3) A hierarchical attention module selectively integrates higher-order neighborhood semantics while suppressing noise propagation from label-discordant connections. Addressing the scarcity of heterophilic benchmarks, we contribute two text-attributed graph datasets (YelpNYC and Amazon-Review) with explicit feature-label heterophily. Extensive experiments on seven benchmarks show LEGNNH achieves state-of-the-art performance (average rank 1.86 across 10 baselines), outperforming the best heterophily-specific model by$\\mathbf{1. 3 1 - 5. 3 3 \\%}$accuracy on key datasets.",
+      "citations": 0,
+      "is_oa": false,
+      "is_retracted": false,
+      "type": "conference-paper",
+      "sources": [
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "openalex",
+          "strategy": "foundational",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        }
+      ],
+      "extra": {
+        "abstract_source": "openalex",
+        "rank": {
+          "query_match": 1.0,
+          "title_match": 0.3,
+          "retrieval_hits": 1,
+          "score": 2.425
+        }
+      }
+    },
+    {
+      "title": "GAugLLM: Improving Graph Contrastive Learning for Text-Attributed Graphs with Large Language Models",
+      "authors": [
+        "Yi Fang",
+        "Dongzhe Fan",
+        "Daochen Zha",
+        "Qiaoyu Tan"
+      ],
+      "year": 2024,
+      "date": "2024-06-17",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2406.11945",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2406.11945",
+      "pdf_url": null,
+      "abstract": "This work studies self-supervised graph learning for text-attributed graphs (TAGs) where nodes are represented by textual attributes. Unlike traditional graph contrastive methods that perturb the numerical feature space and alter the graph's topological structure, we aim to improve view generation through language supervision. This is driven by the prevalence of textual attributes in real applications, which complement graph structures with rich semantic information. However, this presents challenges because of two major reasons. First, text attributes often vary in length and quality, making it difficulty to perturb raw text descriptions without altering their original semantic meanings. Second, although text attributes complement graph structures, they are not inherently well-aligned. To bridge the gap, we introduce GAugLLM, a novel framework for augmenting TAGs. It leverages advanced large language models like Mistral to enhance self-supervised graph learning. Specifically, we introduce a mixture-of-prompt-expert technique to generate augmented node features. This approach adaptively maps multiple prompt experts, each of which modifies raw text attributes using prompt engineering, into numerical feature space. Additionally, we devise a collaborative edge modifier to leverage structural and textual commonalities, enhancing edge augmentation by examining or building connections between nodes. Empirical results across five benchmark datasets spanning various domains underscore our framework's ability to enhance the performance of leading contrastive methods as a plug-in tool. Notably, we observe that the augmented features and graph structure can also enhance the performance of standard generative methods, as well as popular graph neural networks. The open-sourced implementation of our GAugLLM is available at Github.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.7,
+          "title_match": 0.5,
+          "retrieval_hits": 5,
+          "score": 2.4
+        }
+      }
+    },
+    {
+      "title": "Chimaera: A Mixture-of-Graph-Experts Architecture for Cross-Task and Cross-Dataset Graph Learning",
+      "authors": [
+        "Jonathan Frank",
+        "David Richerby",
+        "Ansgar Scherp A"
+      ],
+      "year": 2026,
+      "date": "2026-09-08",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2609.08709",
+      "arxiv_id": "2609.08709",
+      "pmid": null,
+      "openalex_id": "W7212085090",
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2609.08709",
+      "pdf_url": "https://arxiv.org/pdf/2609.08709",
+      "abstract": "Designing foundation models for graphs is challenging due to the irregular structure of graphs and the different sizes and characteristics of embeddings. Chimaera integrates mixture-of-experts with graph foundation models (GFM). It integrates different GFM architectures, such as graph prompts and linear GNN models. Large language models are used to generate embeddings, and experts can be trained and combined following different strategies, GFMs, embeddings, etc. Furthermore, Chimaera extends existing linear GNNs to support link-level and graph-level tasks in addition to node-level tasks. Empirical analyses are performed on same-task and cross-task experiments with node, link, and graph classification tasks using six benchmark text-attributed graph datasets. The experiments demonstrate the effectiveness of Chimaera and its capabilities for transfer across tasks and datasets. Further insights include the need to use both large and small language models to generate embeddings for the experts, a strong cross-task transferability of simple but effective linear GNNs, and using few samples only to provide strong results.",
+      "citations": 0,
+      "is_oa": true,
+      "is_retracted": false,
+      "type": "preprint",
+      "sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "found_by": [
+        {
+          "source": "openalex",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "arxiv",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "openalex",
+          "strategy": "foundational",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        }
+      ],
+      "extra": {
+        "abstract_source": "arxiv",
+        "arxiv_comment": "Accepted at WI-IAT 2026",
+        "arxiv_category": "cs.LG",
+        "rank": {
+          "query_match": 1.0,
+          "title_match": 0.125,
+          "retrieval_hits": 2,
+          "score": 2.375
+        }
+      }
+    },
+    {
+      "title": "FinSCRA: An LLM-Powered Multi-Chain Reasoning Framework for Interpretable Node Classification on Text-Attributed Graphs",
+      "authors": [
+        "Pengfei Pan",
+        "Lizi Chen",
+        "Qi He",
+        "Han Wang",
+        "Keyu Yuan",
+        "Wenchao Zhang"
+      ],
+      "year": 2026,
+      "date": "2026-02-25",
+      "venue": null,
+      "doi": "10.22541/au.177204304.42015977/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.22541/au.177204304.42015977/v1",
+      "pdf_url": null,
+      "abstract": "Text-attributed graph node classification is still a challenge since it needs to reason about the topology structure simultaneously with the free-text semantics. Although graph neural network can perform well on structural propagation,they tend to be blind for the details in the text associated with nodes. On the other hand, LLMs have excellent NLU skills and are weak on structured,multi-hop reasoning over network agents.To address the above gap, in this work we propose FinSCRA, a novel LLM-powered multi-chain reasoning framework to inject domain-aware reasoning capability into a financial LLM with parameters efficient fine-tuning. Specifically, our framework designs a hierarchy of structured reasoning chains (singlehint,parallel, cascaded, and hybrid methods to extract and fuse the semantic signals like sentiment, correlation, and risk signals in the nodes' text.A fusion layer based on fuzzy logic fuses the results of different reasoning lines for better robustness and explainability.While FinSCRA is generic and can be applied to other types of text-attributed graphs, here we assess its performance on credit risk analysis in supply chain networks,on the task of entity relation extraction, in which entities are related through their financial relation and described with rich text reports; we show experimentally on realworld datasets that our model FinSCRA greatly outperforms graphbased as well as LLM-based baselines,as an accurate and explainable technique to perform node classification over complex networked systems.We release our code and models for further research on LLM-grap.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "crossref",
+        "rank": {
+          "query_match": 0.75,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 2.375
+        }
+      }
+    },
+    {
+      "title": "Label-free Node Classification on Graphs with Large Language Models (LLMS)",
+      "authors": [
+        "Zhikai Chen",
+        "Haitao Mao",
+        "Hongzhi Wen",
+        "Haoyu Han",
+        "Wei Jin",
+        "Haiyang Zhang",
+        "Hui Liu",
+        "Jiliang Tang"
+      ],
+      "year": 2023,
+      "date": "2023-10-07",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2310.04668",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2310.04668",
+      "pdf_url": null,
+      "abstract": "In recent years, there have been remarkable advancements in node classification achieved by Graph Neural Networks (GNNs). However, they necessitate abundant high-quality labels to ensure promising performance. In contrast, Large Language Models (LLMs) exhibit impressive zero-shot proficiency on text-attributed graphs. Yet, they face challenges in efficiently processing structural data and suffer from high inference costs. In light of these observations, this work introduces a label-free node classification on graphs with LLMs pipeline, LLM-GNN. It amalgamates the strengths of both GNNs and LLMs while mitigating their limitations. Specifically, LLMs are leveraged to annotate a small portion of nodes and then GNNs are trained on LLMs' annotations to make predictions for the remaining large portion of nodes. The implementation of LLM-GNN faces a unique challenge: how can we actively select nodes for LLMs to annotate and consequently enhance the GNN training? How can we leverage LLMs to obtain annotations of high quality, representativeness, and diversity, thereby enhancing GNN performance with less cost? To tackle this challenge, we develop an annotation quality heuristic and leverage the confidence scores derived from LLMs to advanced node selection. Comprehensive experimental results validate the effectiveness of LLM-GNN. In particular, LLM-GNN can achieve an accuracy of 74.9% on a vast-scale dataset \\products with a cost less than 1 dollar.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.8,
+          "title_match": 0.5,
+          "retrieval_hits": 2,
+          "score": 2.35
+        }
+      }
+    },
+    {
+      "title": "Can LLMs Convert Graphs to Text-Attributed Graphs?",
+      "authors": [
+        "Zehong Wang",
+        "Sidney Liu",
+        "Zheyuan Zhang",
+        "Tianyi Ma",
+        "Chuxu Zhang",
+        "Yanfang Ye"
+      ],
+      "year": 2024,
+      "date": "2024-12-13",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2412.10136",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2412.10136",
+      "pdf_url": null,
+      "abstract": "Graphs are ubiquitous structures found in numerous real-world applications, such as drug discovery, recommender systems, and social network analysis. To model graph-structured data, graph neural networks (GNNs) have become a popular tool. However, existing GNN architectures encounter challenges in cross-graph learning where multiple graphs have different feature spaces. To address this, recent approaches introduce text-attributed graphs (TAGs), where each node is associated with a textual description, which can be projected into a unified feature space using textual encoders. While promising, this method relies heavily on the availability of text-attributed graph data, which is difficult to obtain in practice. To bridge this gap, we propose a novel method named Topology-Aware Node description Synthesis (TANS), leveraging large language models (LLMs) to convert existing graphs into text-attributed graphs. The key idea is to integrate topological information into LLMs to explain how graph topology influences node semantics. We evaluate our TANS on text-rich, text-limited, and text-free graphs, demonstrating its applicability. Notably, on text-free graphs, our method significantly outperforms existing approaches that manually design node features, showcasing the potential of LLMs for preprocessing graph-structured data in the absence of textual information. The code and data are available at https://github.com/Zehong-Wang/TANS.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.7,
+          "title_match": 0.375,
+          "retrieval_hits": 6,
+          "score": 2.275
+        }
+      }
+    },
+    {
+      "title": "HyperBERT: Mixing Hypergraph-Aware Layers with Language Models for Node Classification on Text-Attributed Hypergraphs",
+      "authors": [
+        "Adrián Bazaga",
+        "Pietro Lio",
+        "Gos Micklem"
+      ],
+      "year": 2024,
+      "date": "2024",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+      "doi": "10.18653/v1/2024.findings-emnlp.537",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.18653/v1/2024.findings-emnlp.537",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 4,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "proceedings-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.6,
+          "title_match": 0.6,
+          "retrieval_hits": 3,
+          "score": 2.227
+        }
+      }
+    },
+    {
+      "title": "CaseGNN: Graph Neural Networks for Legal Case Retrieval with Text-Attributed Graphs",
+      "authors": [
+        "Yanran Tang",
+        "Ruihong Qiu",
+        "Yilun Liu",
+        "Xue Li",
+        "Zi Huang"
+      ],
+      "year": 2024,
+      "date": "2024",
+      "venue": "Lecture Notes in Computer Science Advances in Information Retrieval",
+      "doi": "10.1007/978-3-031-56060-6_6",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1007/978-3-031-56060-6_6",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 14,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "book-chapter",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.625,
+          "title_match": 0.625,
+          "retrieval_hits": 2,
+          "score": 2.213
+        }
+      }
+    },
+    {
+      "title": "Adaptive Distillation For LM-GNN Alignment in Semi-Supervised Text-Attributed Graph Node Classification",
+      "authors": [
+        "Xingyu Wu",
+        "Jintao Chen",
+        "Xuanye Zheng",
+        "Chenkai Pan",
+        "Yuxiang Cai",
+        "Sun Bing",
+        "Ge Su",
+        "Shengye Pang",
+        "Xuhong Zhang"
+      ],
+      "year": 2026,
+      "date": "2026-05-03",
+      "venue": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp55912.2026.11462506",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/icassp55912.2026.11462506",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "proceedings-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.6,
+          "title_match": 0.6,
+          "retrieval_hits": 3,
+          "score": 2.175
+        }
+      }
+    },
+    {
+      "title": "UniGraph: Learning a Unified Cross-Domain Foundation Model for Text-Attributed Graphs",
+      "authors": [
+        "Yufei He",
+        "Yuan Sui",
+        "Xiaoxin He",
+        "Bryan Hooi"
+      ],
+      "year": 2024,
+      "date": "2024-02-21",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2402.13630",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2402.13630",
+      "pdf_url": null,
+      "abstract": "Foundation models like ChatGPT and GPT-4 have revolutionized artificial intelligence, exhibiting remarkable abilities to generalize across a wide array of tasks and applications beyond their initial training objectives. However, graph learning has predominantly focused on single-graph models, tailored to specific tasks or datasets, lacking the ability to transfer learned knowledge to different domains. This limitation stems from the inherent complexity and diversity of graph structures, along with the different feature and label spaces specific to graph data. In this paper, we recognize text as an effective unifying medium and employ Text-Attributed Graphs (TAGs) to leverage this potential. We present our UniGraph framework, designed to learn a foundation model for TAGs, which is capable of generalizing to unseen graphs and tasks across diverse domains. Unlike single-graph models that use pre-computed node features of varying dimensions as input, our approach leverages textual features for unifying node representations, even for graphs such as molecular graphs that do not naturally have textual features. We propose a novel cascaded architecture of Language Models (LMs) and Graph Neural Networks (GNNs) as backbone networks. Additionally, we propose the first pre-training algorithm specifically designed for large-scale self-supervised learning on TAGs, based on Masked Graph Modeling. We introduce graph instruction tuning using Large Language Models (LLMs) to enable zero-shot prediction ability. Our comprehensive experiments across various graph learning tasks and domains demonstrate the model's effectiveness in self-supervised representation learning on unseen graphs, few-shot in-context transfer, and zero-shot transfer, even surpassing or matching the performance of GNNs that have undergone supervised training on target datasets.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.7,
+          "title_match": 0.4,
+          "retrieval_hits": 3,
+          "score": 2.175
+        }
+      }
+    },
+    {
+      "title": "Exploiting Text Semantics for Few and Zero Shot Node Classification on Text-attributed Graph",
+      "authors": [
+        "Yuxiang Wang",
+        "Xiao Yan",
+        "Shiyu Jin",
+        "Quanqing Xu",
+        "Chuang Hu",
+        "Yuanyuan Zhu",
+        "Bo Du",
+        "Jia Wu",
+        "Jiawei Jiang"
+      ],
+      "year": 2025,
+      "date": "2025-09",
+      "venue": "Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence",
+      "doi": "10.24963/ijcai.2025/385",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.24963/ijcai.2025/385",
+      "pdf_url": null,
+      "abstract": "Text-attributed graph (TAG) provides a text description for each graph node, and few- and zero-shot node classification on TAGs have many applications in fields such as academia and social networks. Existing work utilizes various graph-based augmentation techniques to train the node and text embeddings, while text-based augmentations are largely unexplored. In this paper, we propose Text Semantics Augmentation (TSA) to improve accuracy by introducing more text semantic supervision signals. Specifically, we design two augmentation techniques, i.e., positive semantics matching and negative semantics contrast, to provide more reference texts for each graph node or text description. Positive semantic matching retrieves texts with similar embeddings to match with a graph node. Negative semantic contrast adds a negative prompt to construct a text description with the opposite semantics, which is contrasted with the original node and text. We evaluate TSA on 5 datasets and compare with 13 state-of-the-art baselines. The results show that TSA consistently outperforms all baselines, and its accuracy improvements over the best-performing baseline are usually over 5%. The code is at https://github.com/wyx11112/TSA.",
+      "citations": 2,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "proceedings-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "crossref",
+        "rank": {
+          "query_match": 0.625,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 2.161
+        }
+      }
+    },
+    {
+      "title": "A Unified Benchmark for Evaluating Knowledge Graph Construction Methods and Graph Neural Networks",
+      "authors": [
+        "Othmane Kabal",
+        "Mounira Harzallah",
+        "Fabrice Guillet",
+        "Hideaki Takeda",
+        "Ryutaro Ichise"
+      ],
+      "year": 2026,
+      "date": "2026-05-06",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2605.05476",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2605.05476",
+      "pdf_url": null,
+      "abstract": "Knowledge graphs automatically constructed from text are increasingly used in real-world applications. However, their inherent noise, fragmentation, and semantic inconsistencies significantly affect the performance of Graph Neural Networks (GNNs) on downstream tasks. Assessing their performance and robustness remains difficult, as it is often unclear whether observed results stem from the learning model or from the quality of the constructed graph itself. In this work, we introduce a dual-purpose benchmark designed to jointly evaluate (i) the performance of GNNs on noisy, text-derived graphs and (ii) the effectiveness of graph construction methods on a downstream task. The benchmark is built in the biomedical domain from a single textual corpus and includes two automatically constructed graphs generated using different extraction methods, alongside a high-quality reference graph curated by experts that serves as an upper performance bound. This design enables controlled comparison of construction methods and systematic evaluation of GNN robustness through semi-supervised node classification. We further provide a standardized, reproducible, and extensible evaluation framework, facilitating the integration of new graph extraction methods and learning models.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.7,
+          "title_match": 0.375,
+          "retrieval_hits": 3,
+          "score": 2.15
+        }
+      }
+    },
+    {
+      "title": "TEG-DB: A Comprehensive Dataset and Benchmark of Textual-Edge Graphs",
+      "authors": [
+        "Zhuofeng Li",
+        "Zixing Gou",
+        "Xiangnan Zhang",
+        "Zhongyuan Liu",
+        "Sirui Li",
+        "Yuntong Hu",
+        "Chen Ling",
+        "Zheng Zhang",
+        "Liang Zhao"
+      ],
+      "year": 2024,
+      "date": "2024-06-14",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2406.10310",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2406.10310",
+      "pdf_url": null,
+      "abstract": "Text-Attributed Graphs (TAGs) augment graph structures with natural language descriptions, facilitating detailed depictions of data and their interconnections across various real-world settings. However, existing TAG datasets predominantly feature textual information only at the nodes, with edges typically represented by mere binary or categorical attributes. This lack of rich textual edge annotations significantly limits the exploration of contextual relationships between entities, hindering deeper insights into graph-structured data. To address this gap, we introduce Textual-Edge Graphs Datasets and Benchmark (TEG-DB), a comprehensive and diverse collection of benchmark textual-edge datasets featuring rich textual descriptions on nodes and edges. The TEG-DB datasets are large-scale and encompass a wide range of domains, from citation networks to social networks. In addition, we conduct extensive benchmark experiments on TEG-DB to assess the extent to which current techniques, including pre-trained language models, graph neural networks, and their combinations, can utilize textual node and edge information. Our goal is to elicit advancements in textual-edge graph research, specifically in developing methodologies that exploit rich textual node and edge descriptions to enhance graph analysis and provide deeper insights into complex real-world networks. The entire TEG-DB project is publicly accessible as an open-source repository on Github, accessible at https://github.com/Zhuofeng-Li/TEG-Benchmark.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.7,
+          "title_match": 0.2,
+          "retrieval_hits": 5,
+          "score": 2.1
+        }
+      }
+    },
+    {
+      "title": "Language Models are Graph Learners",
+      "authors": [
+        "Zhe Xu",
+        "Kaveh Hassani",
+        "Si Zhang",
+        "Hanqing Zeng",
+        "Michihiro Yasunaga",
+        "Limei Wang",
+        "Dongqi Fu",
+        "Ning Yao",
+        "Bo Long",
+        "Hanghang Tong"
+      ],
+      "year": 2024,
+      "date": "2024-10-03",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2410.02296",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2410.02296",
+      "pdf_url": null,
+      "abstract": "Language Models (LMs) are increasingly challenging the dominance of domain-specific models, including Graph Neural Networks (GNNs) and Graph Transformers (GTs), in graph learning tasks. Following this trend, we propose a novel approach that empowers off-the-shelf LMs to achieve performance comparable to state-of-the-art GNNs on node classification tasks, without requiring any architectural modification. By preserving the LM's original architecture, our approach retains a key benefit of LM instruction tuning: the ability to jointly train on diverse datasets, fostering greater flexibility and efficiency. To achieve this, we introduce two key augmentation strategies: (1) Enriching LMs' input using topological and semantic retrieval methods, which provide richer contextual information, and (2) guiding the LMs' classification process through a lightweight GNN classifier that effectively prunes class candidates. Our experiments on real-world datasets show that backbone Flan-T5 models equipped with these augmentation strategies outperform state-of-the-art text-output node classifiers and are comparable to top-performing vector-output node classifiers. By bridging the gap between specialized task-specific node classifiers and general LMs, this work paves the way for more versatile and widely applicable graph learning models. We will open-source the code upon publication.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.7,
+          "title_match": 0.3,
+          "retrieval_hits": 3,
+          "score": 2.075
+        }
+      }
+    },
+    {
+      "title": "Graph Language Models",
+      "authors": [
+        "Moritz Plenz",
+        "Anette Frank"
+      ],
+      "year": 2024,
+      "date": "2024-01-13",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2401.07105",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2401.07105",
+      "pdf_url": null,
+      "abstract": "While Language Models have become workhorses for NLP, their interplay with textual knowledge graphs (KGs) - structured memories of general or domain knowledge - is actively researched. Current embedding methodologies for such graphs typically either (i) linearize graphs for embedding them using sequential Language Models (LMs), which underutilize structural information, or (ii) use Graph Neural Networks (GNNs) to preserve graph structure, while GNNs cannot represent textual features as well as a pre-trained LM could. In this work we introduce a novel language model, the Graph Language Model (GLM), that integrates the strengths of both approaches, while mitigating their weaknesses. The GLM parameters are initialized from a pretrained LM, to facilitate nuanced understanding of individual concepts and triplets. Simultaneously, its architectural design incorporates graph biases, thereby promoting effective knowledge distribution within the graph. Empirical evaluations on relation classification tasks on ConceptNet subgraphs reveal that GLM embeddings surpass both LM- and GNN-based baselines in supervised and zero-shot settings.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.6,
+          "title_match": 0.3,
+          "retrieval_hits": 6,
+          "score": 2.0
+        }
+      }
+    },
+    {
+      "title": "Enhancing vulnerability detection by fusing code semantic features with LLM-generated explanations",
+      "authors": [
+        "Zhenzhou Tian",
+        "Minghao Li",
+        "Jiaze Sun",
+        "Yanping Chen",
+        "Lingwei Chen"
+      ],
+      "year": 2026,
+      "date": "2026-01",
+      "venue": "Information Fusion",
+      "doi": "10.1016/j.inffus.2025.103450",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1016/j.inffus.2025.103450",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 13,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "journal-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 1.961
+        }
+      }
+    },
+    {
+      "title": "Weisfeiler–Lehman goes dynamic: An analysis of the expressive power of Graph Neural Networks for attributed and dynamic graphs",
+      "authors": [
+        "Silvia Beddar-Wiesing",
+        "Giuseppe Alessio D’Inverno",
+        "Caterina Graziani",
+        "Veronica Lachi",
+        "Alice Moallemy-Oureh",
+        "Franco Scarselli",
+        "Josephine Maria Thomas"
+      ],
+      "year": 2024,
+      "date": "2024-05",
+      "venue": "Neural Networks",
+      "doi": "10.1016/j.neunet.2024.106213",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1016/j.neunet.2024.106213",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 9,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "journal-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 1.95
+        }
+      }
+    },
+    {
+      "title": "LLM as GNN: Graph Vocabulary Learning for Text-Attributed Graph Foundation Models",
+      "authors": [
+        "Xi Zhu",
+        "Haochen Xue",
+        "Ziwei Zhao",
+        "Wujiang Xu",
+        "Jingyuan Huang",
+        "Minghao Guo",
+        "Qifan Wang",
+        "Kaixiong Zhou",
+        "Yongfeng Zhang"
+      ],
+      "year": 2025,
+      "date": "2025",
+      "venue": null,
+      "doi": "10.2139/ssrn.5162133",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.2139/ssrn.5162133",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 8,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 1.947
+        }
+      }
+    },
+    {
+      "title": "LLM-Empowered Few-Shot Node Classification on Incomplete Graphs with Real Node Degrees",
+      "authors": [
+        "Yun Li",
+        "Yi Yang",
+        "Jiaqi Zhu",
+        "Hui Chen",
+        "Hongan Wang"
+      ],
+      "year": 2024,
+      "date": "2024-10-21",
+      "venue": "Proceedings of the 33rd ACM International Conference on Information and Knowledge Management",
+      "doi": "10.1145/3627673.3679861",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1145/3627673.3679861",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 7,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "proceedings-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 1.943
+        }
+      }
+    },
+    {
+      "title": "Unifying Text Semantics and Graph Structures for Temporal Text-attributed Graphs with Large Language Models",
+      "authors": [
+        "Siwei Zhang",
+        "Yun Xiong",
+        "Yateng Tang",
+        "Jiarong Xu",
+        "Xi Chen",
+        "Zehao Gu",
+        "Xuehao Zheng",
+        "Zi'an Jia",
+        "Jiawei Zhang"
+      ],
+      "year": 2025,
+      "date": "2025",
+      "venue": "Advances in Neural Information Processing Systems 38",
+      "doi": "10.52202/085713-1761",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.52202/085713-1761",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 3,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "proceedings-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 1.92
+        }
+      }
+    },
+    {
+      "title": "GraphICL: Unlocking Graph Learning Potential in LLMs through Structured Prompt Design",
+      "authors": [
+        "Yuanfu Sun",
+        "Zhengnan Ma",
+        "Yi Fang",
+        "Jing Ma",
+        "Qiaoyu Tan"
+      ],
+      "year": 2025,
+      "date": "2025-01-27",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2501.15755",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2501.15755",
+      "pdf_url": null,
+      "abstract": "The growing importance of textual and relational systems has driven interest in enhancing large language models (LLMs) for graph-structured data, particularly Text-Attributed Graphs (TAGs), where samples are represented by textual descriptions interconnected by edges. While research has largely focused on developing specialized graph LLMs through task-specific instruction tuning, a comprehensive benchmark for evaluating LLMs solely through prompt design remains surprisingly absent. Without such a carefully crafted evaluation benchmark, most if not all, tailored graph LLMs are compared against general LLMs using simplistic queries (e.g., zero-shot reasoning with LLaMA), which can potentially camouflage many advantages as well as unexpected predicaments of them. To achieve more general evaluations and unveil the true potential of LLMs for graph tasks, we introduce Graph In-context Learning (GraphICL) Benchmark, a comprehensive benchmark comprising novel prompt templates designed to capture graph structure and handle limited label knowledge. Our systematic evaluation shows that general-purpose LLMs equipped with our GraphICL outperform state-of-the-art specialized graph LLMs and graph neural network models in resource-constrained settings and out-of-domain tasks. These findings highlight the significant potential of prompt engineering to enhance LLM performance on graph learning tasks without training and offer a strong baseline for advancing research in graph LLMs.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.75,
+          "title_match": 0.167,
+          "retrieval_hits": 2,
+          "score": 1.917
+        }
+      }
+    },
+    {
+      "title": "ROI+Context Graph Neural Networks for Thyroid Nodule Classification: Baselines, Cross-Validation Protocol, and Reproducibility",
+      "authors": [
+        "Mehmet Yavuz",
+        "Nejat Yumuşak"
+      ],
+      "year": 2025,
+      "date": "2025-12-29",
+      "venue": "Electronics",
+      "doi": "10.3390/electronics15010151",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.3390/electronics15010151",
+      "pdf_url": null,
+      "abstract": "Accurate differentiation of malignant from benign thyroid nodules on ultrasound remains challenging and existing deep models typically operate on isolated ROI crops or whole images, ignoring structured peri-lesional context. We present a simple, reproducible graph neural network (GNN) baseline that represents each thyroid ultrasound image as a small graph with one lesion region-of-interest (ROI) node and multiple peri-lesional context nodes, aggregates node embeddings with attention pooling, and predicts malignancy. A ResNet-50 encoder (ImageNet initialization) provides visual features, and lightweight geometry (relative offsets, size ratio, IoU) augments nodes. Using the public TN5000 dataset, we obtain a single-split validation accuracy of 0.904, AUROC 0.942, and AUPRC 0.979 on the official train/validation split, and a more robust 5-fold × 3-seed cross-validation AUROC of 0.906 and AUPRC of 0.954. We also report calibration analysis with temperature scaling to encourage transparent, robust evaluation of thyroid ultrasound classifiers. To our knowledge this is the first ROI+context GNN study on TN5000, providing a transparent baseline and cross-validation protocol.",
+      "citations": 2,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "journal-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.625,
+          "title_match": 0.5,
+          "retrieval_hits": 1,
+          "score": 1.911
+        }
+      }
+    },
+    {
+      "title": "Clustering Node Attributed Networks with Graph Neural Networks and Self Learning",
+      "authors": [
+        "Rodrigo Luna",
+        "Daniel Ratton Figueiredo"
+      ],
+      "year": 2026,
+      "date": "2026-06-04",
+      "venue": null,
+      "doi": "10.21203/rs.3.rs-9902966/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.21203/rs.3.rs-9902966/v1",
+      "pdf_url": null,
+      "abstract": "Abstract Graph clustering -- partitioning the node set of a graph into disjoint subsets that reflect some latent information -- is a fundamental problem as it finds applications in a myriad of different scenarios. While this classic problem has been tackled for decades by different communities, a recent variation of the problem driven by real data considers the scenario where nodes have attributes that are also informative. This has triggered novel methods that simultaneously leverage network information (edges) and node information (attributed) in the design of novel clustering algorithms. This work proposes a novel framework that builds on prior works that have applied graph neural networks (GNN) to graph clustering. The proposed framework operates in rounds of self learning in a fully unsupervised setting. In each round, a GNN generates representations for nodes that are used to cluster the nodes. This clustering influences the graph used to generate the node representation in the next round. Moreover, a context graph built in each round using the original graph is used to generate the node representations. Empirical results show that the proposed methodology extracts information from both network edges and node attributes in synthetic data, outperforming algorithms focused solely on the network or attributes when neither are very informative. Multiple rounds of learning also improve the performance and always outperforms a long single round of training (i.e., classic GNN graph clustering). When considering real datasets, empirical results indicate that the proposed methodology is competitive to state-of-the-art methods when cluster sizes are balanced.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "crossref",
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 1.875
+        }
+      }
+    },
+    {
+      "title": "Spectral Graph Neural Networks are Incomplete on Graphs with a Simple Spectrum",
+      "authors": [
+        "Snir Hordan",
+        "Maya Bechler-Speicher",
+        "Gur Lifshitz",
+        "Nadav Dym"
+      ],
+      "year": 2025,
+      "date": "2025",
+      "venue": "Advances in Neural Information Processing Systems 38",
+      "doi": "10.52202/085713-3631",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.52202/085713-3631",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "proceedings-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 1.875
+        }
+      }
+    },
+    {
+      "title": "Textual explanations for image classification using multimodal LLM",
+      "authors": [
+        "Tomasz LEŚ"
+      ],
+      "year": 2025,
+      "date": "2025-04-30",
+      "venue": "PRZEGLĄD ELEKTROTECHNICZNY",
+      "doi": "10.15199/48.2025.04.15",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.15199/48.2025.04.15",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "journal-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 1.875
+        }
+      }
+    },
+    {
+      "title": "VulLIC: Vulnerability classification method based on LLM code explanations and images",
+      "authors": [
+        "Jiadong Ren",
+        "Yuzheng Li",
+        "Shuailin Yang",
+        "Jiazheng Li",
+        "Dekai Zhang"
+      ],
+      "year": 2026,
+      "date": "2026-03-21",
+      "venue": "Software Quality Journal",
+      "doi": "10.1007/s11219-026-09741-y",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1007/s11219-026-09741-y",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "journal-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 3,
+          "score": 1.875
+        }
+      }
+    },
+    {
+      "title": "Cascading Failure Prediction in Power Grid Using Node and Edge Attributed Graph Neural Networks",
+      "authors": [
+        "Karuna Bhaila",
+        "Xintao Wu"
+      ],
+      "year": 2024,
+      "date": "2024-06-30",
+      "venue": "2024 International Joint Conference on Neural Networks (IJCNN)",
+      "doi": "10.1109/ijcnn60899.2024.10650986",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/ijcnn60899.2024.10650986",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 4,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "proceedings-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 2,
+          "score": 1.802
+        }
+      }
+    },
+    {
+      "title": "Graph Relation Networks for Few-shot Node Classification on Attributed Networks",
+      "authors": [
+        "魏丽 里",
+        "刘勇 刘",
+        "魏张 张"
+      ],
+      "year": 2023,
+      "date": "2023-01-10",
+      "venue": null,
+      "doi": "10.21203/rs.3.rs-2457421/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.21203/rs.3.rs-2457421/v1",
+      "pdf_url": null,
+      "abstract": "Abstract Few-shot learning has been solving classification problems with few labels in the image and text domains, which has achieved great success in such Euclidean domains. However, a large amount of data can be represented as attributed networks defined by non-Euclidean domains, and fewer studies have successfully applied few-shot learning to attributed networks. Firstly, they ignore the relationship between nodes, so they can not obtain an adequate and accurate representation of nodes. Secondly, the use of an artificial set distance function to measure the similarity between nodes is defective. Because some special samples can cause perturbation to the classifier. In order to solve the above problems, we propose a new framework based on relation networks - graph relation networks (GRN). Specifically, GRN first sets up an episode training mechanism to simulate a real-world few-shot scenario, then uses graph attention networks to obtain a representation of each node with importance scores, and finally learns to compare the similarity of unclassified and classified nodes through the relation network. We conduct extensive experiments on real-world datasets. The experimental results show that the method improves the performance of graph node classification.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "crossref",
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.4,
+          "retrieval_hits": 3,
+          "score": 1.775
+        }
+      }
+    },
+    {
+      "title": "GraphCLIP: Enhancing Transferability in Graph Foundation Models for Text-Attributed Graphs",
+      "authors": [
+        "Yun Zhu",
+        "Haizhou Shi",
+        "Xiaotang Wang",
+        "Yongchao Liu",
+        "Yaoke Wang",
+        "Boci Peng",
+        "Chuntao Hong",
+        "Siliang Tang"
+      ],
+      "year": 2024,
+      "date": "2024-10-14",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2410.10329",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2410.10329",
+      "pdf_url": null,
+      "abstract": "Recently, research on Text-Attributed Graphs (TAGs) has gained significant attention due to the prevalence of free-text node features in real-world applications and the advancements in Large Language Models (LLMs) that bolster TAG methodologies. However, current TAG approaches face two primary challenges: (i) Heavy reliance on label information and (ii) Limited cross-domain zero/few-shot transferability. These issues constrain the scaling of both data and model size, owing to high labor costs and scaling laws, complicating the development of graph foundation models with strong transferability. In this work, we propose the GraphCLIP framework to address these challenges by learning graph foundation models with strong cross-domain zero/few-shot transferability through a self-supervised contrastive graph-summary pretraining method. Specifically, we generate and curate large-scale graph-summary pair data with the assistance of LLMs, and introduce a novel graph-summary pretraining method, combined with invariant learning, to enhance graph foundation models with strong cross-domain zero-shot transferability. For few-shot learning, we propose a novel graph prompt tuning technique aligned with our pretraining objective to mitigate catastrophic forgetting and minimize learning costs. Extensive experiments show the superiority of GraphCLIP in both zero-shot and few-shot settings, while evaluations across various downstream tasks confirm the versatility of GraphCLIP. Our code is available at: https://github.com/ZhuYun97/GraphCLIP",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.6,
+          "title_match": 0.4,
+          "retrieval_hits": 1,
+          "score": 1.725
+        }
+      }
+    },
+    {
+      "title": "GILT: An LLM-Free, Tuning-Free Graph Foundational Model for In-Context Learning",
+      "authors": [
+        "Weishuo Ma",
+        "Yanbo Wang",
+        "Xiyuan Wang",
+        "Lei Zou",
+        "Muhan Zhang"
+      ],
+      "year": 2026,
+      "date": "2026-05-22",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2510.04567",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2510.04567",
+      "pdf_url": null,
+      "abstract": "Graph Neural Networks (GNNs) are powerful tools for processing relational data but often struggle to generalize to unseen graphs, giving rise to the development of Graph Foundational Models (GFMs). However, current GFMs are challenged by the extreme heterogeneity of graph data, where each graph can possess a unique feature space, label set, and topology. To address this, two main paradigms have emerged. The first leverages Large Language Models (LLMs), but is fundamentally text-dependent, thus struggles to handle the numerical features in vast graphs. The second pre-trains a structure-based model, but the adaptation to new tasks typically requires a costly, per-graph tuning stage, creating a critical efficiency bottleneck. In this work, we move beyond these limitations and introduce Graph In-context Learning Transformer (GILT), a framework built on an LLM-free and tuning-free architecture. GILT introduces a novel token-based framework for in-context learning (ICL) on graphs, reframing classification tasks spanning node, edge and graph levels in a unified framework. This mechanism is the key to handling heterogeneity, as it is designed to operate on generic numerical features. Further, its ability to understand class semantics dynamically from the context enables tuning-free adaptation. Comprehensive experiments show that GILT achieves stronger few-shot performance with significantly less time than LLM-based or tuning-based baselines, validating the effectiveness of our approach. Our code is available at: https://github.com/yiming421/inductnode/.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.7,
+          "title_match": 0.2,
+          "retrieval_hits": 1,
+          "score": 1.725
+        }
+      }
+    },
+    {
+      "title": "Multi-Disease AI Diagnosis System Using Minimal Code and LLM-Powered Explanations",
+      "authors": [
+        "Atulya Thakur"
+      ],
+      "year": 2025,
+      "date": "2025-07-16",
+      "venue": null,
+      "doi": "10.22541/au.175269957.75269693/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.22541/au.175269957.75269693/v1",
+      "pdf_url": null,
+      "abstract": "This paper presents a novel approach to multi-disease diagnosis using a lightweight neural network architecture combined with large language model (LLM) powered explanations. We demonstrate how modern AI assistants can enable rapid development of functional healthcare AI systems with minimal code implementation. Our system achieves 72% accuracy on synthetic multi-disease classification tasks (Diabetes, Parkinson's Disease, and Healthy classifications) while providing human-readable explanations for each diagnosis through an integrated LLM reasoning module. The complete system, implemented in under 500 lines of code, demonstrates end-to-end functionality from data generation to model deployment, showcasing the potential for democratizing AI healthcare development. Key contributions include: (1) a streamlined architecture combining neural networks with LLM explanations, (2) automatic symbolic rule extraction for high-confidence predictions, (3) a deployable model export system, and (4) transparent documentation of AI-assisted development methodologies.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "crossref",
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.333,
+          "retrieval_hits": 3,
+          "score": 1.708
+        }
+      }
+    },
+    {
+      "title": "Editable Graph Neural Network for Node Classifications",
+      "authors": [
+        "Zirui Liu",
+        "Zhimeng Jiang",
+        "Shaochen Zhong",
+        "Kaixiong Zhou",
+        "Li Li",
+        "Rui Chen",
+        "Soo-Hyun Choi",
+        "Xia Hu"
+      ],
+      "year": 2023,
+      "date": "2023-05-24",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2305.15529",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2305.15529",
+      "pdf_url": null,
+      "abstract": "Despite Graph Neural Networks (GNNs) have achieved prominent success in many graph-based learning problem, such as credit risk assessment in financial networks and fake news detection in social networks. However, the trained GNNs still make errors and these errors may cause serious negative impact on society. Model editing, which corrects the model behavior on wrongly predicted target samples while leaving model predictions unchanged on unrelated samples, has garnered significant interest in the fields of computer vision and natural language processing. However, model editing for graph neural networks (GNNs) is rarely explored, despite GNNs' widespread applicability. To fill the gap, we first observe that existing model editing methods significantly deteriorate prediction accuracy (up to 50% accuracy drop) in GNNs while a slight accuracy drop in multi-layer perception (MLP). The rationale behind this observation is that the node aggregation in GNNs will spread the editing effect throughout the whole graph. This propagation pushes the node representation far from its original one. Motivated by this observation, we propose Editable Graph Neural Networks (EGNN), a neighbor propagation-free approach to correct the model prediction on misclassified nodes. Specifically, EGNN simply stitches an MLP to the underlying GNNs, where the weights of GNNs are frozen during model editing. In this way, EGNN disables the propagation during editing while still utilizing the neighbor propagation scheme for node prediction to obtain satisfactory results. Experiments demonstrate that EGNN outperforms existing baselines in terms of effectiveness (correcting wrong predictions with lower accuracy drop), generalizability (correcting wrong predictions for other similar nodes), and efficiency (low training time and memory) on various graph datasets.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.6,
+          "title_match": 0.375,
+          "retrieval_hits": 1,
+          "score": 1.7
+        }
+      }
+    },
+    {
+      "title": "Graph Neural Networks: Techniques and Applications for Data Structured as Graphs",
+      "authors": [
+        "Arimondo Scrivano"
+      ],
+      "year": 2025,
+      "date": "2025-08-20",
+      "venue": null,
+      "doi": "10.31224/5145",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.31224/5145",
+      "pdf_url": null,
+      "abstract": "Graph neural networks (GNNs) have emerged as a powerful tool for machine learning tasks on data structured as graphs, demonstrating sig- nificant advancements across domains such as social network analysis, molecular chemistry, and recommendation systems. This review provides a comprehensive examination of the foundational techniques in GNNs, en- compassing graph convolutional networks, graph attention networks, and spatio-temporal graph neural networks. It explores the algorithms’ ability to leverage graph structures for learning representations that capture the dependencies among the nodes and edges in the data. Additionally, we highlight the broad spectrum of applications in which GNNs are being em- ployed, from graph classification and node classification to link prediction and anomaly detection. The paper also discusses key challenges faced by GNNs, such as scalability, interpretability, and the need for more sophis- ticated models to handle dynamic and heterogeneous graph data. Finally, future directions for research are suggested, focusing on integrating GNNs with other deep learning architectures and enhancing their applicability to diverse scientific domains.",
+      "citations": 1,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "crossref",
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.375,
+          "retrieval_hits": 2,
+          "score": 1.648
+        }
+      }
+    },
+    {
+      "title": "LLM as Graph Kernel: Rethinking Message Passing on Text-Rich Graphs",
+      "authors": [
+        "Ying Zhang",
+        "Hang Yu",
+        "Haipeng Zhang",
+        "Peng Di"
+      ],
+      "year": 2026,
+      "date": "2026-03-16",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2603.14937",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2603.14937",
+      "pdf_url": null,
+      "abstract": "Text-rich graphs, which integrate complex structural dependencies with abundant textual information, are ubiquitous yet remain challenging for existing learning paradigms. Conventional methods and even LLM-hybrids compress rich text into static embeddings or summaries before structural reasoning, creating an information bottleneck and detaching updates from the raw content. We argue that in text-rich graphs, the text is not merely a node attribute but the primary medium through which structural relationships are manifested. We introduce RAMP, a Raw-text Anchored Message Passing approach that moves beyond using LLMs as mere feature extractors and instead recasts the LLM itself as a graph-native aggregation operator. RAMP exploits the text-rich nature of the graph via a novel dual-representation scheme: it anchors inference on each node's raw text during each iteration while propagating dynamically optimized messages from neighbors. It further handles both discriminative and generative tasks under a single unified generative formulation. Extensive experiments show that RAMP effectively bridges the gap between graph propagation and deep text reasoning, achieving competitive performance and offering new insights into the role of LLMs as graph kernels for general-purpose graph learning.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.25,
+          "retrieval_hits": 3,
+          "score": 1.625
+        }
+      }
+    },
+    {
+      "title": "Can LLM-Generated Textual Explanations Enhance Model Classification Performance? An Empirical Study",
+      "authors": [
+        "Mahdi Dhaini",
+        "Juraj Vladika",
+        "Ege Erdogan",
+        "Zineb Attaoui",
+        "Gjergji Kasneci"
+      ],
+      "year": 2025,
+      "date": "2025-08-13",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2508.09776",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2508.09776",
+      "pdf_url": null,
+      "abstract": "In the rapidly evolving field of Explainable Natural Language Processing (NLP), textual explanations, i.e., human-like rationales, are pivotal for explaining model predictions and enriching datasets with interpretable labels. Traditional approaches rely on human annotation, which is costly, labor-intensive, and impedes scalability. In this work, we present an automated framework that leverages multiple state-of-the-art large language models (LLMs) to generate high-quality textual explanations. We rigorously assess the quality of these LLM-generated explanations using a comprehensive suite of Natural Language Generation (NLG) metrics. Furthermore, we investigate the downstream impact of these explanations on the performance of pre-trained language models (PLMs) and LLMs across natural language inference tasks on two diverse benchmark datasets. Our experiments demonstrate that automated explanations exhibit highly competitive effectiveness compared to human-annotated explanations in improving model performance. Our findings underscore a promising avenue for scalable, automated LLM-based textual explanation generation for extending NLP datasets and enhancing model performance.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.5,
+          "retrieval_hits": 1,
+          "score": 1.625
+        }
+      }
+    },
+    {
+      "title": "Attributed Multi-Order Graph Convolutional Network for Heterogeneous Graphs",
+      "authors": [
+        "Zhaoliang Chen",
+        "Zhihao Wu",
+        "Luying Zhong",
+        "Claudia Plant",
+        "Shiping Wang",
+        "Wenzhong Guo"
+      ],
+      "year": 2024,
+      "date": "2024-06",
+      "venue": "Neural Networks",
+      "doi": "10.1016/j.neunet.2024.106225",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1016/j.neunet.2024.106225",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 17,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "journal-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.375,
+          "title_match": 0.375,
+          "retrieval_hits": 3,
+          "score": 1.594
+        }
+      }
+    },
+    {
+      "title": "Addressing Imbalance in Graph Datasets: Introducing Gate-Gnn with Graph Ensemble Weight Attention and Transfer Learning for Enhanced Node Classification",
+      "authors": [
+        "Abdul  J. Fofanah"
+      ],
+      "year": 2023,
+      "date": "2023",
+      "venue": null,
+      "doi": "10.2139/ssrn.4676408",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.2139/ssrn.4676408",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.4,
+          "title_match": 0.4,
+          "retrieval_hits": 3,
+          "score": 1.575
+        }
+      }
+    },
+    {
+      "title": "Ag-Gnn: Adaptive Gating Mechanism for Robust Node Classification Under Heterogeneous Graph Structures",
+      "authors": [
+        "Ahmed Begga",
+        "Francisco Javier Escolano",
+        "Miguel Ángel Lozano"
+      ],
+      "year": 2024,
+      "date": "2024",
+      "venue": null,
+      "doi": "10.2139/ssrn.5051507",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.2139/ssrn.5051507",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.4,
+          "title_match": 0.4,
+          "retrieval_hits": 3,
+          "score": 1.575
+        }
+      }
+    },
+    {
+      "title": "Eatsa-Gnn: Edge-Aware and Two-Stage Attention for Enhancing Graph Neural Networks Based on Teacher-Student Mechanisms for Graph Node Classification",
+      "authors": [
+        "Abdul  J. Fofanah",
+        "Alpha  Omar Leigh"
+      ],
+      "year": 2024,
+      "date": "2024",
+      "venue": null,
+      "doi": "10.2139/ssrn.4840883",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.2139/ssrn.4840883",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "benchmark text-attributed graph node classification language model embeddings GNN replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.4,
+          "title_match": 0.4,
+          "retrieval_hits": 3,
+          "score": 1.575
+        }
+      }
+    },
+    {
+      "title": "From Embeddings to Explanations: Reviewing Semantic Modeling in LLM-Centered Interactive Systems",
+      "authors": [
+        "Shannon Waller"
+      ],
+      "year": 2025,
+      "date": "2025-08-07",
+      "venue": null,
+      "doi": "10.36227/techrxiv.175459795.51786683/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.36227/techrxiv.175459795.51786683/v1",
+      "pdf_url": null,
+      "abstract": "This review examines semantic modeling in large language model (LLM)centered interactive systems, focusing on embeddings, knowledge integration, and explanation generation. We summarize how LLMs produce contextual embeddings for semantic understanding, including applications in dense retrieval and label embedding. We then survey methods for integrating structured and multi-modal knowledge, with emphasis on knowledge graphs and retrieval-augmented generation (RAG). Finally, we analyze explanation techniques such as chain-of-thought prompting and self-rationalization in dialogue systems. Empirical studies in domains like finance and health informatics demonstrate how semantic modeling supports interpretability and factual grounding. All findings are drawn from published academic literature.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "crossref",
+        "rank": {
+          "query_match": 0.4,
+          "title_match": 0.333,
+          "retrieval_hits": 3,
+          "score": 1.508
+        }
+      }
+    },
+    {
+      "title": "GAFGCN: A graph augmented fusion network for enhanced deep clustering in attributed graphs",
+      "authors": [
+        "Yingming Jiang",
+        "Haiyan Guo"
+      ],
+      "year": 2026,
+      "date": "2026-11",
+      "venue": "Neural Networks",
+      "doi": "10.1016/j.neunet.2026.109173",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1016/j.neunet.2026.109173",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "journal-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.375,
+          "title_match": 0.375,
+          "retrieval_hits": 3,
+          "score": 1.5
+        }
+      }
+    },
+    {
+      "title": "LLM-aided explanations of EDA synthesis errors",
+      "authors": [
+        "Siyu Qiu",
+        "Benjamin Tan",
+        "Hammond Pearce"
+      ],
+      "year": 2024,
+      "date": "2024-06-28",
+      "venue": "2024 IEEE LLM Aided Design Workshop (LAD)",
+      "doi": "10.1109/lad62341.2024.10691721",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1109/lad62341.2024.10691721",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 19,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "proceedings-article",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.333,
+          "retrieval_hits": 3,
+          "score": 1.473
+        }
+      }
+    },
+    {
+      "title": "Auditing LLM Explanations of Biosignal Alerts",
+      "authors": [
+        "Md Tanvir Hasan Turja"
+      ],
+      "year": 2026,
+      "date": "2026",
+      "venue": null,
+      "doi": "10.2139/ssrn.7508418",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.2139/ssrn.7508418",
+      "pdf_url": null,
+      "abstract": "Continuous wearable monitoring generates more alerts than clinical workflows can absorb, and LLM-generated explanations could close the gap only if their evaluation measures what it claims to measure. We propose an audit battery and demonstrate it end-to-end on one local pipeline: unsupervised detection on 30-second wearable windows, alert-triggered retrieval over a 206-document peer-reviewed corpus, and grounded generation with checkable citations. Five instruments target quiet failure modes: pre-registered contamination-hard protocols (WESAD leave-one-subject-out; MIT-BIH inter-patient DS1 to DS2; PTB-XL validation-frozen thresholds), cluster-aware inference, corruption-validated LLM judges, condition-blind query controls, and a retrieval-poisoning probe. On this system the battery reverses the inherited headlines. Intra-patient evaluation manufactured a 0.899 AUC from a detector that is chance under the inter-patient protocol (0.502, record CI [0.32, 0.75]); WESAD detector differences are not resolvable at the subject level (minimum detectable difference about 0.09). Query vocabulary manufactured over a third of the stress-concordance headline (94% falls to 68-72% blind, 58-60% strict-blind); with retrieval removed entirely, the generator still names stress for 76% of events, so most stress naming is parametric prior and retrieval contributes 12-18 points. Pathology naming stays below 25% in every arm. One planted corpus chunk, in context, steers urgent-care recommendations into 48-49 of 50 alerts across three runs and is certified fully grounded by a validated judge in 31-33 of 38-39 parsed outputs, while naive store seeding retrieves for almost no alerts (0/50 audited; 4% of an alternative stream). The battery is cheap and artifact-verified; demonstrated on one system, it is a candidate protocol, not yet a standard.",
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "posted-content",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "crossref",
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.333,
+          "retrieval_hits": 3,
+          "score": 1.375
+        }
+      }
+    },
+    {
+      "title": "Causally Grounded Mechanistic Interpretability for LLMs with Faithful Natural-Language Explanations",
+      "authors": [
+        "Ajay Pravin Mahale"
+      ],
+      "year": 2026,
+      "date": "2026-02-13",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2603.09988",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2603.09988",
+      "pdf_url": null,
+      "abstract": "Mechanistic interpretability identifies internal circuits responsible for model behaviors, yet translating these findings into human-understandable explanations remains an open problem. We present a pipeline that bridges circuit-level analysis and natural language explanations by (i) identifying causally important attention heads via activation patching, (ii) generating explanations using both template-based and LLM-based methods, and (iii) evaluating faithfulness using ERASER-style metrics adapted for circuit-level attribution. We evaluate on the Indirect Object Identification (IOI) task in GPT-2 Small (124M parameters), identifying six attention heads accounting for 61.4% of the logit difference. Our circuit-based explanations achieve 100% sufficiency but only 22% comprehensiveness, revealing distributed backup mechanisms. LLM-generated explanations outperform template baselines by 64% on quality metrics. We find no correlation (r = 0.009) between model confidence and explanation faithfulness, and identify three failure categories explaining when explanations diverge from mechanisms.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.333,
+          "retrieval_hits": 3,
+          "score": 1.375
+        }
+      }
+    },
+    {
+      "title": "LML: Language Model Learning a Dataset for Data-Augmented Prediction",
+      "authors": [
+        "Praneeth Vadlapati"
+      ],
+      "year": 2024,
+      "date": "2024-09-27",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2409.18957",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2409.18957",
+      "pdf_url": null,
+      "abstract": "This paper introduces a new approach to using Large Language Models (LLMs) for classification tasks, which are typically handled using Machine Learning (ML) models. Unlike ML models that rely heavily on data cleaning and feature engineering, this method streamlines the process using LLMs. This paper proposes a new concept called \"Language Model Learning (LML)\" powered by a new method called \"Data-Augmented Prediction (DAP)\". The classification is performed by LLMs using a method similar to humans manually exploring and understanding the data and deciding classifications using data as a reference. Training data is summarized and evaluated to determine the features that lead to the classification of each label the most. In the process of DAP, the system uses the data summary to automatically create a query, which is used to retrieve relevant rows from the dataset. A classification is generated by the LLM using data summary and relevant rows, ensuring satisfactory accuracy even with complex data. Usage of data summary and similar data in DAP ensures context-aware decision-making. The proposed method uses the words \"Act as an Explainable Machine Learning Model\" in the prompt to enhance the interpretability of the predictions by allowing users to review the logic behind each prediction. In some test cases, the system scored an accuracy above 90%, proving the effectiveness of the system and its potential to outperform conventional ML models in various scenarios. The code is available at https://github.com/Pro-GenAI/LML-DAP",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.2,
+          "retrieval_hits": 1,
+          "score": 1.325
+        }
+      }
+    },
+    {
+      "title": "Are Large Language Models Post Hoc Explainers?",
+      "authors": [
+        "Nicholas Kroeger",
+        "Dan Ley",
+        "Satyapriya Krishna",
+        "Chirag Agarwal",
+        "Himabindu Lakkaraju"
+      ],
+      "year": 2023,
+      "date": "2023-10-09",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2310.05797",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2310.05797",
+      "pdf_url": null,
+      "abstract": "Large Language Models (LLMs) are increasingly used as powerful tools for a plethora of natural language processing (NLP) applications. A recent innovation, in-context learning (ICL), enables LLMs to learn new tasks by supplying a few examples in the prompt during inference time, thereby eliminating the need for model fine-tuning. While LLMs have been utilized in several applications, their applicability in explaining the behavior of other models remains relatively unexplored. Despite the growing number of new explanation techniques, many require white-box access to the model and/or are computationally expensive, highlighting a need for next-generation post hoc explainers. In this work, we present the first framework to study the effectiveness of LLMs in explaining other predictive models. More specifically, we propose a novel framework encompassing multiple prompting strategies: i) Perturbation-based ICL, ii) Prediction-based ICL, iii) Instruction-based ICL, and iv) Explanation-based ICL, with varying levels of information about the underlying ML model and the local neighborhood of the test sample. We conduct extensive experiments with real-world benchmark datasets to demonstrate that LLM-generated explanations perform on par with state-of-the-art post hoc explainers using their ability to leverage ICL examples and their internal knowledge in generating model explanations. On average, across four datasets and two ML models, we observe that LLMs identify the most important feature with 72.19% accuracy, opening up new frontiers in explainable artificial intelligence (XAI) to explore LLM-based explanation frameworks.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.2,
+          "retrieval_hits": 1,
+          "score": 1.325
+        }
+      }
+    },
+    {
+      "title": "Idiosyncrasies in Large Language Models",
+      "authors": [
+        "Mingjie Sun",
+        "Yida Yin",
+        "Zhiqiu Xu",
+        "J. Zico Kolter",
+        "Zhuang Liu"
+      ],
+      "year": 2025,
+      "date": "2025-02-17",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2502.12150",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2502.12150",
+      "pdf_url": null,
+      "abstract": "In this work, we unveil and study idiosyncrasies in Large Language Models (LLMs) -- unique patterns in their outputs that can be used to distinguish the models. To do so, we consider a simple classification task: given a particular text output, the objective is to predict the source LLM that generates the text. We evaluate this synthetic task across various groups of LLMs and find that simply fine-tuning existing text embedding models on LLM-generated texts yields excellent classification accuracy. Notably, we achieve 97.1% accuracy on held-out validation data in the five-way classification problem involving ChatGPT, Claude, Grok, Gemini, and DeepSeek. Our further investigation reveals that these idiosyncrasies are rooted in word-level distributions. These patterns persist even when the texts are rewritten, translated, or summarized by an external LLM, suggesting that they are also encoded in the semantic content. Additionally, we leverage LLM as judges to generate detailed, open-ended descriptions of each model's idiosyncrasies. Finally, we discuss the broader implications of our findings, particularly for training on synthetic data and inferring model similarity. Code is available at https://github.com/locuslab/llm-idiosyncrasies.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.5,
+          "title_match": 0.2,
+          "retrieval_hits": 1,
+          "score": 1.325
+        }
+      }
+    },
+    {
+      "title": "Review for \"A reproducibility study of atomistic line graph neural networks for materials property prediction\"",
+      "authors": [],
+      "year": 2024,
+      "date": "2024-03-19",
+      "venue": null,
+      "doi": "10.1039/d4dd00064a/v1/review1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1039/d4dd00064a/v1/review1",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "peer-review",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines reproducibility"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.375,
+          "title_match": 0.375,
+          "retrieval_hits": 1,
+          "score": 1.25
+        }
+      }
+    },
+    {
+      "title": "Challenges in Large‐Scale Graph Neural Networks in Topological Indices on Family of Graphs",
+      "authors": [
+        "J. Senbagamalar",
+        "M.S. Ramani"
+      ],
+      "year": 2026,
+      "date": "2026-09-04",
+      "venue": "Graph Neural Networks",
+      "doi": "10.1002/9781394422791.ch7",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://doi.org/10.1002/9781394422791.ch7",
+      "pdf_url": null,
+      "abstract": null,
+      "citations": 0,
+      "is_oa": null,
+      "is_retracted": null,
+      "type": "other",
+      "sources": [
+        "crossref"
+      ],
+      "found_by": [
+        {
+          "source": "crossref",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.375,
+          "title_match": 0.375,
+          "retrieval_hits": 1,
+          "score": 1.25
+        }
+      }
+    },
+    {
+      "title": "Rethinking Interpretability in the Era of Large Language Models",
+      "authors": [
+        "Chandan Singh",
+        "Jeevana Priya Inala",
+        "Michel Galley",
+        "Rich Caruana",
+        "Jianfeng Gao"
+      ],
+      "year": 2024,
+      "date": "2024-01-30",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2402.01761",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2402.01761",
+      "pdf_url": null,
+      "abstract": "Interpretable machine learning has exploded as an area of interest over the last decade, sparked by the rise of increasingly large datasets and deep neural networks. Simultaneously, large language models (LLMs) have demonstrated remarkable capabilities across a wide array of tasks, offering a chance to rethink opportunities in interpretable machine learning. Notably, the capability to explain in natural language allows LLMs to expand the scale and complexity of patterns that can be given to a human. However, these new capabilities raise new challenges, such as hallucinated explanations and immense computational costs. In this position paper, we start by reviewing existing methods to evaluate the emerging field of LLM interpretation (both interpreting LLMs and using LLMs for explanation). We contend that, despite their limitations, LLMs hold the opportunity to redefine interpretability with a more ambitious scope across many applications, including in auditing LLMs themselves. We highlight two emerging research priorities for LLM interpretation: using LLMs to directly analyze new datasets and to generate interactive explanations.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.2,
+          "retrieval_hits": 3,
+          "score": 1.242
+        }
+      }
+    },
+    {
+      "title": "Are Large Language Models Good Classifiers? A Study on Edit Intent Classification in Scientific Document Revisions",
+      "authors": [
+        "Qian Ruan",
+        "Ilia Kuznetsov",
+        "Iryna Gurevych"
+      ],
+      "year": 2024,
+      "date": "2024-10-02",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2410.02028",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2410.02028",
+      "pdf_url": null,
+      "abstract": "Classification is a core NLP task architecture with many potential applications. While large language models (LLMs) have brought substantial advancements in text generation, their potential for enhancing classification tasks remains underexplored. To address this gap, we propose a framework for thoroughly investigating fine-tuning LLMs for classification, including both generation- and encoding-based approaches. We instantiate this framework in edit intent classification (EIC), a challenging and underexplored classification task. Our extensive experiments and systematic comparisons with various training approaches and a representative selection of LLMs yield new insights into their application for EIC. We investigate the generalizability of these findings on five further classification tasks. To demonstrate the proposed methods and address the data shortage for empirical edit analysis, we use our best-performing EIC model to create Re3-Sci2.0, a new large-scale dataset of 1,780 scientific document revisions with over 94k labeled edits. The quality of the dataset is assessed through human evaluation. The new dataset enables an in-depth empirical study of human editing behavior in academic writing. We make our experimental framework, models and data publicly available.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.4,
+          "title_match": 0.3,
+          "retrieval_hits": 1,
+          "score": 1.225
+        }
+      }
+    },
+    {
+      "title": "A BERTology View of LLM Orchestrations: Token- and Layer-Selective Probes for Efficient Single-Pass Classification",
+      "authors": [
+        "Gonzalo Ariel Meyoyan",
+        "Luciano Del Corro"
+      ],
+      "year": 2026,
+      "date": "2026-01-19",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2601.13288",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2601.13288",
+      "pdf_url": null,
+      "abstract": "Production LLM systems often rely on separate models for safety and other classification-heavy steps, increasing latency, VRAM footprint, and operational complexity. We instead reuse computation already paid for by the serving LLM: we train lightweight probes on its hidden states and predict labels in the same forward pass used for generation. We frame classification as representation selection over the full token-layer hidden-state tensor, rather than committing to a fixed token or fixed layer (e.g., first-token logits or final-layer pooling). To implement this, we introduce a two-stage aggregator that (i) summarizes tokens within each layer and (ii) aggregates across layer summaries to form a single representation for classification. We instantiate this template with direct pooling, a 100K-parameter scoring-attention gate, and a downcast multi-head self-attention (MHA) probe with up to 35M trainable parameters. Across safety and sentiment benchmarks our probes improve over logit-only reuse (e.g., MULI) and are competitive with substantially larger task-specific baselines, while preserving near-serving latency and avoiding the VRAM and latency costs of a separate guard-model pipeline.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.333,
+          "retrieval_hits": 1,
+          "score": 1.125
+        }
+      }
+    },
+    {
+      "title": "Applications of Large Language Model Reasoning in Feature Generation",
+      "authors": [
+        "Dharani Chandra"
+      ],
+      "year": 2025,
+      "date": "2025-03-15",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2503.11989",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2503.11989",
+      "pdf_url": null,
+      "abstract": "Large Language Models (LLMs) have revolutionized natural language processing through their state of art reasoning capabilities. This paper explores the convergence of LLM reasoning techniques and feature generation for machine learning tasks. We examine four key reasoning approaches: Chain of Thought, Tree of Thoughts, Retrieval-Augmented Generation, and Thought Space Exploration. Our analysis reveals how these approaches can be used to identify effective feature generation rules without having to manually specify search spaces. The paper categorizes LLM-based feature generation methods across various domains including finance, healthcare, and text analytics. LLMs can extract key information from clinical notes and radiology reports in healthcare, by enabling more efficient data utilization. In finance, LLMs facilitate text generation, summarization, and entity extraction from complex documents. We analyze evaluation methodologies for assessing feature quality and downstream performance, with particular attention to OCTree's decision tree reasoning approach that provides language-based feedback for iterative improvements. Current challenges include hallucination, computational efficiency, and domain adaptation. As of March 2025, emerging approaches include inference-time compute scaling, reinforcement learning, and supervised fine-tuning with model distillation. Future directions point toward multimodal feature generation, self-improving systems, and neuro-symbolic approaches. This paper provides a detailed overview of an emerging field that promises to automate and enhance feature engineering through language model reasoning.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.2,
+          "retrieval_hits": 2,
+          "score": 1.117
+        }
+      }
+    },
+    {
+      "title": "Do LLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+      "authors": [
+        "Seyedali Mohammadi",
+        "Bhaskara Hanuma Vedula",
+        "Hemank Lamba",
+        "Edward Raff",
+        "Ponnurangam Kumaraguru",
+        "Francis Ferraro",
+        "Manas Gaur"
+      ],
+      "year": 2025,
+      "date": "2025-09-02",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2509.02452",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2509.02452",
+      "pdf_url": null,
+      "abstract": "Do LLMs genuinely incorporate external definitions, or do they primarily rely on their parametric knowledge? To address these questions, we conduct controlled experiments across multiple explanation benchmark datasets (general and domain-specific) and label definition conditions, including expert-curated, LLM-generated, perturbed, and swapped definitions. Our results reveal that while explicit label definitions can enhance accuracy and explainability, their integration into an LLM's task-solving processes is neither guaranteed nor consistent, suggesting reliance on internalized representations in many cases. Models often default to their internal representations, particularly in general tasks, whereas domain-specific tasks benefit more from explicit definitions. These findings underscore the need for a deeper understanding of how LLMs process external knowledge alongside their pre-existing capabilities.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        },
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "abstract_source": "huggingface",
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.167,
+          "retrieval_hits": 2,
+          "score": 1.083
+        }
+      }
+    },
+    {
+      "title": "H4G: Unlocking Faithful Inference for Zero-Shot Graph Learning in Hyperbolic Space",
+      "authors": [
+        "Heng Zhang",
+        "Tianyi Zhang",
+        "Zijun Liu",
+        "Yuling Shi",
+        "Yaomin Shen",
+        "Haochen You",
+        "Haichuan Hu",
+        "Lubin Gan",
+        "Jin Huang"
+      ],
+      "year": 2025,
+      "date": "2025-10-14",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2510.12094",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2510.12094",
+      "pdf_url": null,
+      "abstract": "Text-attributed graphs are widely used across domains, offering rich opportunities for zero-shot learning via graph-text alignment. However, existing methods struggle with tasks requiring fine-grained pattern recognition, particularly on heterophilic graphs. Through empirical and theoretical analysis, we identify an over-abstraction problem: current approaches operate at excessively large hyperbolic radii, compressing multi-scale structural information into uniform high-level abstractions. This abstraction-induced information loss obscures critical local patterns essential for accurate predictions. By analyzing embeddings in hyperbolic space, we demonstrate that optimal graph learning requires faithful preservation of fine-grained structural details, better retained by representations positioned closer to the origin. To address this, we propose H4G, a framework that systematically reduces embedding radii using learnable block-diagonal scaling matrices and M\\\"obius matrix multiplication. This approach restores access to fine-grained patterns while maintaining global receptive ability with minimal computational overhead. Experiments show H4G achieves state-of-the-art zero-shot performance with 12.8\\% improvement on heterophilic graphs and 8.4\\% on homophilic graphs, confirming that radius reduction enables faithful multi-scale representation for advancing zero-shot graph learning.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "are graph neural networks necessary text-attributed graphs simple baselines replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.4,
+          "title_match": 0.125,
+          "retrieval_hits": 1,
+          "score": 1.05
+        }
+      }
+    },
+    {
+      "title": "Large Language Models as Attribution Regularizers for Efficient Model Training",
+      "authors": [
+        "Davor Vukadin",
+        "Marin Šilić",
+        "Goran Delač"
+      ],
+      "year": 2025,
+      "date": "2025-02-27",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2502.20268",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2502.20268",
+      "pdf_url": null,
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable performance across diverse domains. However, effectively leveraging their vast knowledge for training smaller downstream models remains an open challenge, especially in domains like tabular data learning, where simpler models are often preferred due to interpretability and efficiency. In this paper, we introduce a novel yet straightforward method for incorporating LLM-generated global task feature attributions into the training process of smaller networks. Specifically, we propose an attribution-matching regularization term that aligns the training dynamics of the smaller model with the insights provided by the LLM. By doing so, our approach yields superior performance in few-shot learning scenarios. Notably, our method requires only black-box API access to the LLM, making it easy to integrate into existing training pipelines with minimal computational overhead. Furthermore, we demonstrate how this method can be used to address common issues in real-world datasets, such as skewness and bias. By integrating high-level knowledge from LLMs, our approach improves generalization, even when training data is limited or imbalanced. We validate its effectiveness through extensive experiments across multiple tasks, demonstrating improved learning efficiency and model robustness.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.2,
+          "retrieval_hits": 1,
+          "score": 0.992
+        }
+      }
+    },
+    {
+      "title": "Sparse Autoencoders Reveal Universal Feature Spaces Across Large Language Models",
+      "authors": [
+        "Michael Lan",
+        "Philip Torr",
+        "Austin Meek",
+        "Ashkan Khakzar",
+        "David Krueger",
+        "Fazl Barez"
+      ],
+      "year": 2024,
+      "date": "2024-10-09",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2410.06981",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2410.06981",
+      "pdf_url": null,
+      "abstract": "We investigate feature universality in large language models (LLMs), a research field that aims to understand how different models similarly represent concepts in the latent spaces of their intermediate layers. Demonstrating feature universality allows discoveries about latent representations to generalize across several models. However, comparing features across LLMs is challenging due to polysemanticity, in which individual neurons often correspond to multiple features rather than distinct ones. This makes it difficult to disentangle and match features across different models. To address this issue, we employ a method known as dictionary learning by using sparse autoencoders (SAEs) to transform LLM activations into more interpretable spaces spanned by neurons corresponding to individual features. After matching feature neurons across models via activation correlation, we apply representational space similarity metrics like Singular Value Canonical Correlation Analysis to analyze these SAE features across different LLMs. Our experiments reveal significant similarities in SAE feature spaces across various LLMs, providing new evidence for feature universality.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.2,
+          "retrieval_hits": 1,
+          "score": 0.992
+        }
+      }
+    },
+    {
+      "title": "How Reproducible Are Evaluation Conclusions? A Self-Audit of LLM-Inferred Prompt Structure",
+      "authors": [
+        "Dipankar Sarkar"
+      ],
+      "year": 2026,
+      "date": "2026-09-24",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2609.30074",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2609.30074",
+      "pdf_url": null,
+      "abstract": "Evaluations of LLM systems routinely average over small prompt sets and report models as a ranked table. We ask how much confidence such a table deserves, using LLM-based prompt-structure inference as the case study: eight open model variants across five families and 8B to 675B parameters, caching disabled, 293 raw intermediate representations persisted. The measured phenomenon is unstable to begin with. Identical calls do not reliably recover identical structure, with mean node-set Jaccard from 0.39 to 0.96 and 72% of prompt-model cells never node-set-perfect. Auditing the evaluation weakens its conclusions further, and this is our main contribution. Under a joint cluster bootstrap over prompts, only the bottom of the ranking is firm: the two least reproducible models hold rank in 99% and 86% of replicates, the middle four in 27% to 48%, and the top two in 68% each, so the table identifies the worst model reliably but does not reliably identify the best. Two equally defensible rules for merging repeated campaigns change four of eight rows and move the study-wide headline by 7 percentage points. Checking the inferred structure against ground-truth annotations shows reproducibility cannot be read as accuracy. And four of the eight endpoints were withdrawn within ten weeks of measurement, so the study as specified can no longer be run. Small-sample LLM evaluations can therefore look far more definitive than their evidence supports. We recommend reporting rank stability, per-cell provenance, executed sensitivity comparisons, raw per-run outputs, and a measurement date alongside any ranking.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.167,
+          "retrieval_hits": 1,
+          "score": 0.958
+        }
+      }
+    },
+    {
+      "title": "Invar-RAG: Invariant LLM-aligned Retrieval for Better Generation",
+      "authors": [
+        "Ziwei Liu",
+        "Liang Zhang",
+        "Qian Li",
+        "Jianghua Wu",
+        "Guangxu Zhu"
+      ],
+      "year": 2024,
+      "date": "2024-11-11",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2411.07021",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2411.07021",
+      "pdf_url": null,
+      "abstract": "Retrieval-augmented generation (RAG) has shown impressive capability in providing reliable answer predictions and addressing hallucination problems. A typical RAG implementation uses powerful retrieval models to extract external information and large language models (LLMs) to generate answers. In contrast, recent LLM-based retrieval has gained attention for its substantial improvements in information retrieval (IR) due to the LLMs' semantic understanding capability. However, directly applying LLM to RAG systems presents challenges. This may cause feature locality problems as massive parametric knowledge can hinder effective usage of global information across the corpus; for example, an LLM-based retriever often inputs document summaries instead of full documents. Moreover, various pre-trained tasks in LLMs introduce variance, further weakening performance as a retriever. To address these issues, we propose a novel two-stage fine-tuning architecture called Invar-RAG. In the retrieval stage, an LLM-based retriever is constructed by integrating LoRA-based representation learning to tackle feature locality issues. To enhance retrieval performance, we develop two patterns (invariant and variant patterns) and an invariance loss to reduce LLM variance. In the generation stage, a refined fine-tuning method is employed to improve LLM accuracy in generating answers based on retrieved information. Experimental results show that Invar-RAG significantly outperforms existing baselines across three open-domain question answering (ODQA) datasets. Code is available in the Supplementary Material for reproducibility.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.333,
+          "title_match": 0.167,
+          "retrieval_hits": 1,
+          "score": 0.958
+        }
+      }
+    },
+    {
+      "title": "Patchscope: A Unifying Framework for Inspecting Hidden Representations of Language Models",
+      "authors": [
+        "Asma Ghandeharioun",
+        "Avi Caciularu",
+        "Adam Pearce",
+        "Lucas Dixon",
+        "Mor Geva"
+      ],
+      "year": 2024,
+      "date": "2024-01-11",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2401.06102",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2401.06102",
+      "pdf_url": null,
+      "abstract": "Inspecting the information encoded in hidden representations of large language models (LLMs) can explain models' behavior and verify their alignment with human values. Given the capabilities of LLMs in generating human-understandable text, we propose leveraging the model itself to explain its internal representations in natural language. We introduce a framework called Patchscopes and show how it can be used to answer a wide range of research questions about an LLM's computation. We show that prior interpretability methods based on projecting representations into the vocabulary space and intervening on the LLM computation, can be viewed as special instances of this framework. Moreover, several of their shortcomings such as failure in inspecting early layers or lack of expressivity can be mitigated by a Patchscope. Beyond unifying prior inspection techniques, Patchscopes also opens up new possibilities such as using a more capable model to explain the representations of a smaller model, and unlocks new applications such as self-correction in multi-hop reasoning.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.3,
+          "title_match": 0.2,
+          "retrieval_hits": 1,
+          "score": 0.925
+        }
+      }
+    },
+    {
+      "title": "Low-Perplexity LLM-Generated Sequences and Where To Find Them",
+      "authors": [
+        "Arthur Wuhrmann",
+        "Anastasiia Kucherenko",
+        "Andrei Kucharavy"
+      ],
+      "year": 2025,
+      "date": "2025-07-02",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2507.01844",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2507.01844",
+      "pdf_url": null,
+      "abstract": "As Large Language Models (LLMs) become increasingly widespread, understanding how specific training data shapes their outputs is crucial for transparency, accountability, privacy, and fairness. To explore how LLMs leverage and replicate their training data, we introduce a systematic approach centered on analyzing low-perplexity sequences - high-probability text spans generated by the model. Our pipeline reliably extracts such long sequences across diverse topics while avoiding degeneration, then traces them back to their sources in the training data. Surprisingly, we find that a substantial portion of these low-perplexity spans cannot be mapped to the corpus. For those that do match, we quantify the distribution of occurrences across source documents, highlighting the scope and nature of verbatim recall and paving a way toward better understanding of how LLMs training data impacts their behavior.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.3,
+          "title_match": 0.167,
+          "retrieval_hits": 1,
+          "score": 0.892
+        }
+      }
+    },
+    {
+      "title": "From Understanding to Utilization: A Survey on Explainability for Large Language Models",
+      "authors": [
+        "Haoyan Luo",
+        "Lucia Specia"
+      ],
+      "year": 2024,
+      "date": "2024-01-23",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2401.12874",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2401.12874",
+      "pdf_url": null,
+      "abstract": "This survey paper delves into the burgeoning field of explainability for Large Language Models (LLMs), a critical yet challenging aspect of natural language processing. With LLMs playing a pivotal role in various applications, their \"black-box\" nature raises concerns about transparency and ethical use. This paper emphasizes the necessity for enhanced explainability in LLMs, addressing both the general public's trust and the technical community's need for a deeper understanding of these models. We concentrate on pre-trained Transformer-based LLMs, such as LLaMA, which present unique interpretability challenges due to their scale and complexity. Our review categorizes existing explainability methods and discusses their application in improving model transparency and reliability. We also discuss representative evaluation methods, highlighting their strengths and limitations. The goal of this survey is to bridge the gap between theoretical understanding and practical application, offering insights for future research and development in the field of LLM explainability.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "keyword",
+          "query": "LLM explanations as features node classification TAPE"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.2,
+          "title_match": 0.2,
+          "retrieval_hits": 1,
+          "score": 0.725
+        }
+      }
+    },
+    {
+      "title": "Talking Heads: Understanding Inter-layer Communication in Transformer Language Models",
+      "authors": [
+        "Jack Merullo",
+        "Carsten Eickhoff",
+        "Ellie Pavlick"
+      ],
+      "year": 2024,
+      "date": "2024-06-13",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2406.09519",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2406.09519",
+      "pdf_url": null,
+      "abstract": "Although it is known that transformer language models (LMs) pass features from early layers to later layers, it is not well understood how this information is represented and routed by the model. By analyzing particular mechanism LMs use to accomplish this, we find that it is also used to recall items from a list, and show that this mechanism can explain an otherwise arbitrary-seeming sensitivity of the model to the order of items in the prompt. Specifically, we find that models write into low-rank subspaces of the residual stream to represent features which are then read out by specific later layers, forming low-rank communication channels between layers. By decomposing attention head weight matrices with the Singular Value Decomposition (SVD), we find that previously described interactions between heads separated by one or more layers can be predicted via analysis of their weight matrices. We show that it is possible to manipulate the internal model representations as well as edit model weights based on the mechanism we discover in order to significantly improve performance on our synthetic Laundry List task, which requires recall from a list, often improving task accuracy by over 20%. Our analysis reveals a surprisingly intricate interpretable structure learned from language model pretraining, and helps us understand why sophisticated LMs sometimes fail in simple domains, facilitating future analysis of more complex behaviors.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE replication"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.2,
+          "title_match": 0.2,
+          "retrieval_hits": 1,
+          "score": 0.725
+        }
+      }
+    },
+    {
+      "title": "ReproRepo: Scaling Reproducibility Audits with GitHub Repository Issues",
+      "authors": [
+        "Shanda Li",
+        "Qiuhong Anna Wei",
+        "Jingwu Tang",
+        "Valerie Chen",
+        "Nihar B Shah",
+        "Tim Dettmers",
+        "Yiming Yang",
+        "Ameet Talwalkar"
+      ],
+      "year": 2026,
+      "date": "2026-06-16",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2606.18237",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2606.18237",
+      "pdf_url": null,
+      "abstract": "Reproducing research results from papers and released code is central to scientific progress. Existing works have introduced benchmarks to evaluate whether LLM agents can assist with reproducibility, but they are difficult to scale due to their reliance on substantial manual effort for data curation and evaluation. We introduce ReproRepo, a scalable framework for reproducibility evaluation that leverages human-raised GitHub issues as naturally occurring supervision on realistic reproduction blockers. We instantiate ReproRepo on 1,149 recent machine learning papers from major conferences and evaluate four frontier model-agent configurations. Our results show that LLM agents, even without executing code, can identify many real-world reproducibility problems from paper-repository pairs: the best agent in our study, namely Codex with GPT-5.5, surfaces at least one semantically related human-reported blocker for ~90% of papers in the study. Further analysis shows that agents are particularly effective for surfacing visible failures and identifying the right semantic region, but may still be insufficient in exact localization. ReproRepo can serve as a reusable, scalable framework for future evaluations of LLM agents on real-world reproducibility auditing. Our code is released at https://github.com/LithiumDA/ReproRepo.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.2,
+          "title_match": 0.0,
+          "retrieval_hits": 1,
+          "score": 0.525
+        }
+      }
+    },
+    {
+      "title": "Where Does Retrieval-Based Open-Ended Evaluation Fail? Automatic Taxonomy Induction from Long-Form Medical Answer Factuality Verification",
+      "authors": [
+        "Heyuan Huang",
+        "Jirui Dai",
+        "Alexandra DeLucia",
+        "Sonal Joshi",
+        "Mahsa Yarmohammadi",
+        "Jie Gao",
+        "Bernal Jiménez Gutiérrez",
+        "Mark Dredze"
+      ],
+      "year": 2026,
+      "date": "2026-09-24",
+      "venue": "arXiv",
+      "doi": null,
+      "arxiv_id": "2609.30467",
+      "pmid": null,
+      "openalex_id": null,
+      "s2_id": null,
+      "url": "https://arxiv.org/abs/2609.30467",
+      "pdf_url": null,
+      "abstract": "Retrieval-based factuality evaluation, where LLM-generated claims are verified against evidence from authoritative medical corpora, has become the dominant paradigm for scalable hallucination detection in high-stakes clinical settings. Despite the urgency of reliable and transparent medical fact verification, most systems measure performance with aggregate metrics like F1, which obscure where and why failures occur. Existing RAG diagnostics require gold answers or annotated gold evidence, neither of which exists in this regime. We introduce two comprehensive taxonomies, grounded in a case study on the open-ended MedExpert dataset and 3 closed-ended datasets, decomposing failures into retrieval-stage errors along five quality dimensions, and verifier-reasoning errors into six consecutive steps. We adapt an automatic pattern induction pipeline using LLM-as-Judge to label evidence quality and classify verifier reasoning errors at scale, and then stress-test our findings across 4 retrieval methods and 6 frontier verifier models. Our analysis reveals that scaling model size, adding reasoning effort, expanding to authoritative web sources, and applying medical fine-tuning do not resolve these failure modes, demonstrating that they represent fundamental limitations of the retrieve-then-verify paradigm in open-ended medical settings rather than artifacts of outdated systems. We release our code and data at https://anonymous.4open.science/r/Medical_RAG_eval-4AB5 for the full reproducibility of our results.",
+      "citations": null,
+      "is_oa": true,
+      "is_retracted": null,
+      "type": "preprint",
+      "sources": [
+        "huggingface"
+      ],
+      "found_by": [
+        {
+          "source": "huggingface",
+          "strategy": "reproducibility",
+          "query": "LLM explanations as features node classification TAPE reproducibility"
+        }
+      ],
+      "extra": {
+        "rank": {
+          "query_match": 0.167,
+          "title_match": 0.0,
+          "retrieval_hits": 1,
+          "score": 0.458
+        }
+      }
+    }
+  ],
+  "date": "2026-10-17"
+}

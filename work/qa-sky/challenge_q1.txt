@@ -1,0 +1,138 @@
+  [arxiv/keyword] 'clustering student questions evaluation': 10 results
+  [crossref/keyword] 'clustering student questions evaluation': 10 results
+  [huggingface/keyword] 'clustering student questions evaluation': 10 results
+  [arxiv/keyword] 'student question grouping human agreement': 1 results
+  [crossref/keyword] 'student question grouping human agreement': 9 results
+  [huggingface/keyword] 'student question grouping human agreement': 10 results
+  [arxiv/keyword] 'short text clustering student questions embeddings': 0 results
+  [crossref/keyword] 'short text clustering student questions embeddings': 10 results
+  [huggingface/keyword] 'short text clustering student questions embeddings': 10 results
+  [arxiv/keyword] 'LLM question similarity clustering education': 2 results
+  [crossref/keyword] 'LLM question similarity clustering education': 10 results
+  [huggingface/keyword] 'LLM question similarity clustering education': 10 results
+  [arxiv/keyword] 'duplicate student questions detection forum': 0 results
+  [crossref/keyword] 'duplicate student questions detection forum': 10 results
+  [huggingface/keyword] 'duplicate student questions detection forum': 10 results
+  [arxiv/surveys] 'clustering student questions evaluation survey': 1 results
+  [crossref/surveys] 'clustering student questions evaluation survey': 10 results
+  [huggingface/surveys] 'clustering student questions evaluation survey': 10 results
+  [arxiv/surveys] 'clustering student questions evaluation review': 1 results
+  [crossref/surveys] 'clustering student questions evaluation review': 10 results
+  [huggingface/surveys] 'clustering student questions evaluation review': 10 results
+  [arxiv/surveys] 'student question grouping human agreement survey': 0 results
+  [crossref/surveys] 'student question grouping human agreement survey': 9 results
+  [huggingface/surveys] 'student question grouping human agreement survey': 10 results
+  [arxiv/surveys] 'student question grouping human agreement review': 0 results
+  [crossref/surveys] 'student question grouping human agreement review': 9 results
+  [huggingface/surveys] 'student question grouping human agreement review': 10 results
+  [arxiv/surveys] 'short text clustering student questions embeddings survey': 0 results
+  [crossref/surveys] 'short text clustering student questions embeddings survey': 10 results
+  [huggingface/surveys] 'short text clustering student questions embeddings survey': 10 results
+  [arxiv/surveys] 'short text clustering student questions embeddings review': 0 results
+  [crossref/surveys] 'short text clustering student questions embeddings review': 10 results
+  [huggingface/surveys] 'short text clustering student questions embeddings review': 10 results
+  [arxiv/surveys] 'LLM question similarity clustering education survey': 0 results
+  [crossref/surveys] 'LLM question similarity clustering education survey': 10 results
+  [huggingface/surveys] 'LLM question similarity clustering education survey': 10 results
+  [arxiv/surveys] 'LLM question similarity clustering education review': 0 results
+  [crossref/surveys] 'LLM question similarity clustering education review': 10 results
+  [huggingface/surveys] 'LLM question similarity clustering education review': 10 results
+  [arxiv/surveys] 'duplicate student questions detection forum survey': 0 results
+  [crossref/surveys] 'duplicate student questions detection forum survey': 10 results
+  [huggingface/surveys] 'duplicate student questions detection forum survey': 10 results
+  [arxiv/surveys] 'duplicate student questions detection forum review': 0 results
+  [crossref/surveys] 'duplicate student questions detection forum review': 10 results
+  [huggingface/surveys] 'duplicate student questions detection forum review': 10 results
+  [arxiv/recent] 'clustering student questions evaluation': 10 results
+  [crossref/recent] 'clustering student questions evaluation': 10 results
+  [huggingface/recent] 'clustering student questions evaluation': 10 results
+  [arxiv/recent] 'student question grouping human agreement': 1 results
+  [crossref/recent] 'student question grouping human agreement': 10 results
+  [huggingface/recent] 'student question grouping human agreement': 10 results
+  [arxiv/recent] 'short text clustering student questions embeddings': 0 results
+  [crossref/recent] 'short text clustering student questions embeddings': 10 results
+  [huggingface/recent] 'short text clustering student questions embeddings': 10 results
+  [arxiv/recent] 'LLM question similarity clustering education': 2 results
+  [crossref/recent] 'LLM question similarity clustering education': 10 results
+  [huggingface/recent] 'LLM question similarity clustering education': 10 results
+  [arxiv/recent] 'duplicate student questions detection forum': 0 results
+  [crossref/recent] 'duplicate student questions detection forum': 10 results
+  [huggingface/recent] 'duplicate student questions detection forum': 10 results
+  [arxiv/keyword] 'agreement with instructor groupings Evaluating clustering instructor clustering': 1 results
+  [crossref/keyword] 'agreement with instructor groupings Evaluating clustering instructor clustering': 10 results
+  [huggingface/keyword] 'agreement with instructor groupings Evaluating clustering instructor clustering': 10 results
+  [arxiv/keyword] 'adjusted rand index Evaluating clustering instructor clustering': 0 results
+  [crossref/keyword] 'adjusted rand index Evaluating clustering instructor clustering': 10 results
+  [huggingface/keyword] 'adjusted rand index Evaluating clustering instructor clustering': 10 results
+  [arxiv/keyword] 'clustering threshold sensitivity Evaluating clustering instructor clustering': 0 results
+  [crossref/keyword] 'clustering threshold sensitivity Evaluating clustering instructor clustering': 10 results
+  [huggingface/keyword] 'clustering threshold sensitivity Evaluating clustering instructor clustering': 10 results
+Claim: Evaluating how well embedding and LLM clustering of live student lecture questions agrees with instructor groupings, and how sensitive the most frequent question cluster is to the clustering threshold
+Queries tried: 5 | papers examined: 283 | high wording overlap: 0 {} | title-only records: 101
+Sources ok: arxiv, crossref, huggingface | failed: none
+Query diversity: 16 distinct terms, mean pairwise overlap 0.242
+Citation expansion: 38 paper(s) found only via citations | 2 expansion error(s)
+Design elements checked: 3 | papers matching 2+ elements: 0
+
+SIGNAL: no_close_match_in_this_search
+Highest novelty confidence this search can support: low
+  ceiling limited: citation expansion partly failed (2 call(s): not_found)
+  ceiling limited: 70% of the ten closest records have no abstract
+No closely worded paper was retrieved, but only 0 retrieved paper(s) were even loosely related, so the queries probably missed the relevant literature. Reword the queries and follow the citations of the nearest known paper before concluding anything.
+CAVEAT: Absence of a close match is not evidence of novelty. This search covered only the listed sources and queries, matched on wording rather than meaning, and did not read full texts. Read the closest papers (full text where accessible) before making any claim, and report novelty as unverified.
+
+Closest retrieved work (read these before keeping the idea):
+  1. Quality Threshold Clustering
+     ? n.d. | SpringerReference | cited 0 | doi:10.1007/springerreference_179398 | via crossref | overlap 0.095 tfidf 0.28 | NO ABSTRACT (title match only) | design: clustering threshold sensitivity
+  2. Factions Within, Uncertain Across: Within-Document Reader Sub-Groups in Social Highlighting
+     Nakayashiki et al. 2026 | arXiv | cited ? | arXiv:2606.11613 OA | via huggingface | overlap 0.246 tfidf 0.067 | design: agreement with instructor groupings
+  3. Multi-Method Analysis of Mathematics Placement Assessments: Classical, Machine Learning, and Clustering Appro…
+     Allagan et al. 2025 | arXiv | cited ? | arXiv:2511.04667 OA | via arxiv | overlap 0.233 tfidf 0.065 | design: clustering threshold sensitivity
+  4. Supplemental Information 2: Clustering threshold.
+     ? n.d. | venue n/a | cited 0 | doi:10.7717/peerj.4588/supp-2 | via crossref | overlap 0.095 tfidf 0.181 | NO ABSTRACT (title match only) | design: clustering threshold sensitivity
+  5. Clustering Edge Values for Threshold Selection
+     Milgram et al. 1977 | venue n/a | cited 1 | doi:10.21236/ada049592 | via crossref | overlap 0.095 tfidf 0.164 | NO ABSTRACT (title match only) | design: clustering threshold sensitivity
+  6. Table 2: Comparison of the clustering properties when varying the distance metric, the distance threshold or …
+     ? n.d. | venue n/a | cited 0 | doi:10.7717/peerj.11348/table-2 | via crossref | overlap 0.095 tfidf 0.133 | NO ABSTRACT (title match only) | design: clustering threshold sensitivity
+  7. Table 3: Effect of the strict clustering mode on the clustering properties when varying the distance threshol…
+     ? n.d. | venue n/a | cited 0 | doi:10.7717/peerj.11348/table-3 | via crossref | overlap 0.095 tfidf 0.131 | NO ABSTRACT (title match only) | design: clustering threshold sensitivity
+  8. Quality Threshold Clustering of Molecular Dynamics: A Word of Caution
+     ? n.d. | venue n/a | cited 0 | doi:10.1021/acs.jcim.9b00558.s001 | via crossref | overlap 0.095 tfidf 0.131 | NO ABSTRACT (title match only) | design: clustering threshold sensitivity
+  9. CSTS: A Benchmark for the Discovery of Correlation Structures in Time Series Clustering
+     Degen et al. 2025 | arXiv | cited ? | arXiv:2505.14596 OA | via huggingface | overlap 0.163 tfidf 0.058 | survey-like | design: clustering threshold sensitivity
+ 10. Extended Quality (eQual): Radial Threshold Clustering Based on nary Similarity
+     ? n.d. | venue n/a | cited 0 | doi:10.1021/acs.jcim.4c02341.s001 | via crossref | overlap 0.095 tfidf 0.116 | NO ABSTRACT (title match only) | design: clustering threshold sensitivity
+ 11. ExKMC: Expanding Explainable k-Means Clustering
+     Frost et al. 2020 | arXiv | cited ? | arXiv:2006.02399 OA | via huggingface | overlap 0.136 tfidf 0.067 | design: clustering threshold sensitivity
+ 12. Algorithm 1 : Description of Euclidean similarity clustering (ESC) algorithm. t: similarity threshold.
+     ? n.d. | venue n/a | cited 0 | doi:10.7717/peerj-cs.3309/table-19 | via crossref | overlap 0.095 tfidf 0.105 | NO ABSTRACT (title match only) | design: clustering threshold sensitivity
+ 13. Spatially Aware Adjusted Rand Index for Evaluating Spatial Transcriptomics Clustering
+     Yan et al. 2025 | Biometrics | cited 2 | doi:10.1101/2025.03.25.645156 | via crossref | overlap 0.126 tfidf 0.054 | design: adjusted rand index
+ 14. Writing Sensitive Questions and Questions for Sensitive Populations
+     Peytcheva et al. 2025 | A Practical Guide to Survey Questionnai… | cited 0 | doi:10.4324/9781003367826-8 | via crossref | overlap 0.115 tfidf 0.313 | NO ABSTRACT (title match only)
+ 15. Foundations for NLP-assisted formative assessment feedback for short-answer tasks in large-enrollment classes
+     Lloyd et al. 2022 | arXiv | cited ? | arXiv:2205.02829 OA | via arxiv | overlap 0.134 tfidf 0.043 | design: agreement with instructor groupings
+ 16. Grouping Byzantine Agreement
+     Yan et al. 2005 | Computer Standards &amp; Interfaces | cited 17 | doi:10.1016/j.csi.2004.09.001 | via crossref | overlap 0.056 tfidf 0.101 | NO ABSTRACT (title match only) | design: agreement with instructor groupings
+ 17. Adjusted Rand Index-Guided DPSO for Clustering and Data Routing in Wireless Sensor Networks
+     Dine et al. 2026 | Sensors | cited 0 | doi:10.3390/s26123700 | via crossref | overlap 0.114 tfidf 0.033 | design: adjusted rand index
+ 18. Cite or Decline: A Strict Course-Grounded Chatbot for STEM Lecture Videos
+     Ahmed et al. 2026 | arXiv | cited ? | arXiv:2609.01846 OA | via huggingface | overlap 0.246 tfidf 0.136
+ 19. What is Cluster Grouping?
+     Gentry 2021 | Total School Cluster Grouping &amp; Dif… | cited 0 | doi:10.4324/9781003239239-2 | via crossref | overlap 0.098 tfidf 0.275 | NO ABSTRACT (title match only)
+ 20. 7. Gruppierung nach Übereinstimmungsquoten / Grouping by Percentages of Agreement
+     ? 2017 | Die Apokalypse | cited 0 | doi:10.1515/9783110548433-009 | via crossref | overlap 0.056 tfidf 0.06 | NO ABSTRACT (title match only) | design: agreement with instructor groupings
+
+Must read before deciding (full text where accessible):
+  1. Quality Threshold Clustering (None) | term overlap 0.095, design elements: clustering threshold sensitivity, no abstract retrieved
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  2. Factions Within, Uncertain Across: Within-Document Reader Sub-Groups in Social Highlighting (2026) | term overlap 0.246, design elements: agreement with instructor groupings
+     next: fulltext --id 2606.11613
+  3. Multi-Method Analysis of Mathematics Placement Assessments: Classical, Machine Learning, and Cluste… (2025) | term overlap 0.233, design elements: clustering threshold sensitivity
+     next: fulltext --id 2511.04667
+  4. Supplemental Information 2: Clustering threshold. (None) | term overlap 0.095, design elements: clustering threshold sensitivity, no abstract retrieved
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+  5. Clustering Edge Values for Threshold Selection (1977) | term overlap 0.095, design elements: clustering threshold sensitivity, no abstract retrieved
+     next: find an accessible copy; otherwise record read_level 'abstract' or 'not_accessible'
+
+Full JSON written to work\qa-sky\challenge_q1.json

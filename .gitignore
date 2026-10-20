@@ -1,0 +1,21 @@
+# Virtual environments
+.venv/
+.venv-*/
+venv/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE / local settings
+.idea/
+.vscode/
+.claude/settings.local.json
+
+# Large downloaded datasets (re-download with the scripts)
+cvss-kev/data/
+llm-memorisation/data/
+
+# Secrets
+.env

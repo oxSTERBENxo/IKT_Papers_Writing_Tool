@@ -1,0 +1,74 @@
+{
+  "paper": {
+    "title": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+    "authors": [
+      "Junghoon Kim",
+      "Junmo Lee",
+      "Yeonjun In",
+      "Kanghoon Yoon",
+      "Chanyoung Park"
+    ],
+    "year": 2025,
+    "date": "2025-02-26",
+    "venue": "Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining",
+    "doi": "10.1145/3701551.3703524",
+    "arxiv_id": "2411.12775",
+    "pmid": null,
+    "openalex_id": "W4404648464",
+    "s2_id": "9a950b08f53204c1afac42b6d77206b4b3cd3a73",
+    "url": "https://doi.org/10.1145/3701551.3703524",
+    "pdf_url": "https://doi.org/10.1145/3701551.3703524",
+    "abstract": "Social graph-based fake news detection aims to identify news articles containing false information by utilizing social contexts, e.g., user information, tweets and comments. However, conventional methods are evaluated under less realistic scenarios, where the model has access to future knowledge on article-related and context-related data during training. In this work, we newly formalize a more realistic evaluation scheme that mimics real-world scenarios, where the data is temporality-aware and the detection model can only be trained on data collected up to a certain point in time. We show that the discriminative capabilities of conventional methods decrease sharply under this new setting, and further propose DAWN, a method more applicable to such scenarios. Our empirical findings indicate that later engagements (e.g., consuming or reposting news) contribute more to noisy edges that link real news-fake news pairs in the social graph. Motivated by this, we utilize feature representations of engagement earliness to guide an edge weight estimator to suppress the weights of such noisy edges, thereby enhancing the detection performance of DAWN. Through extensive experiments, we demonstrate that DAWN outperforms existing fake news detection methods under real-world environments. The source code is available at https://github.com/LeeJunmo/DAWN.",
+    "citations": 8,
+    "is_oa": true,
+    "is_retracted": false,
+    "type": "conference-paper",
+    "sources": [
+      "crossref",
+      "openalex",
+      "semantic_scholar"
+    ],
+    "found_by": [],
+    "extra": {
+      "referenced_works": [
+        "W1942609315",
+        "W2290394509",
+        "W2582561810",
+        "W2742330194",
+        "W2898550644",
+        "W2951307134",
+        "W2984488829",
+        "W2998122931",
+        "W3045984998",
+        "W3070920170",
+        "W3081203761",
+        "W3093115118",
+        "W3153567752",
+        "W3199505005",
+        "W4212890525",
+        "W4288079542",
+        "W4383175621",
+        "W4385565641",
+        "W4386150593",
+        "W4387224341",
+        "W4387848833",
+        "W4396723512",
+        "W4401201470"
+      ],
+      "related_works": [
+        "W4391375266",
+        "W2899084033",
+        "W2748952813",
+        "W1848835803",
+        "W2765925719",
+        "W2365208004",
+        "W1991158085",
+        "W2767850486",
+        "W4247418548",
+        "W4229070146"
+      ],
+      "abstract_source": "semantic_scholar"
+    }
+  },
+  "notes": []
+}

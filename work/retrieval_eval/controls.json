@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "challenge_signal": {
+      "control": {
+        "baseline": {
+          "fixtures": 2,
+          "flagged_prior_work": 0
+        },
+        "challenge": {
+          "fixtures": 2,
+          "flagged_prior_work": 1
+        }
+      }
+    },
+    "caveat": "Pooled over few topics and few known papers per topic; treat differences of one or two papers as noise. Live results depend on rate limits and index coverage on the day of the run."
+  },
+  "results": [
+    {
+      "id": "absa-beekeeping-hive-graphs",
+      "split": "control",
+      "n_targets": 0,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 73,
+          "hits": [],
+          "signal": "no_close_match_in_this_search",
+          "failed": [
+            "arxiv"
+          ],
+          "n": 73
+        },
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 134,
+          "hits": [],
+          "signal": "no_close_match_in_this_search",
+          "failed": [
+            "arxiv"
+          ],
+          "n": 134,
+          "expansion_errors": 5
+        }
+      },
+      "missed_by_all": []
+    },
+    {
+      "id": "gnn-chant-floorplans",
+      "split": "control",
+      "n_targets": 0,
+      "configs": {
+        "baseline": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 76,
+          "hits": [],
+          "signal": "no_close_match_in_this_search",
+          "failed": [],
+          "n": 76
+        },
+        "challenge": {
+          "recall_any": 0.0,
+          "recall_at_20": 0.0,
+          "median_rank_of_found": null,
+          "n_retrieved": 139,
+          "hits": [],
+          "signal": "close_prior_work_found",
+          "failed": [],
+          "n": 139,
+          "expansion_errors": 3
+        }
+      },
+      "missed_by_all": []
+    }
+  ],
+  "sources": [
+    "arxiv",
+    "crossref"
+  ],
+  "configs": [
+    "baseline",
+    "challenge"
+  ]
+}

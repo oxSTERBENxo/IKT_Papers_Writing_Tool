@@ -1,0 +1,24 @@
+[
+  {
+    "source": "zenodo",
+    "id": "5115573",
+    "url": "https://zenodo.org/records/5115573",
+    "name": "Dataset MOOC Forum edX",
+    "doi": "10.5281/zenodo.5115573",
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "publication_date": "2021-07-20",
+    "n_files": 1,
+    "total_bytes": 556388439,
+    "file_names": [
+      "filtered_forum_data_v2.mongo"
+    ],
+    "description": " This dataset contains the information from the forum of&nbsp;three MOOCs on programming (multiple editions) offered through the edX platform. These MOOCs are offered in the Spanish and English versions. ",
+    "ref": "5115573",
+    "exists": true,
+    "missing": [],
+    "blockers": [],
+    "notes": [],
+    "storage_estimate": "530.6 MB across 1 file(s)"
+  }
+]

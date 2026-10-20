@@ -1,0 +1,46 @@
+{
+  "paper": {
+    "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+    "authors": [
+      "Thomas N. Kipf",
+      "Max Welling"
+    ],
+    "year": 2016,
+    "date": "2016-09-09",
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv_id": "1609.02907",
+    "pmid": null,
+    "openalex_id": null,
+    "s2_id": null,
+    "url": "https://arxiv.org/abs/1609.02907",
+    "pdf_url": "https://arxiv.org/pdf/1609.02907v4",
+    "abstract": "We present a scalable approach for semi-supervised learning on graph-structured data that is based on an efficient variant of convolutional neural networks which operate directly on graphs. We motivate the choice of our convolutional architecture via a localized first-order approximation of spectral graph convolutions. Our model scales linearly in the number of graph edges and learns hidden layer representations that encode both local graph structure and features of nodes. In a number of experiments on citation networks and on a knowledge graph dataset we demonstrate that our approach outperforms related methods by a significant margin.",
+    "citations": null,
+    "is_oa": true,
+    "is_retracted": null,
+    "type": "preprint",
+    "sources": [
+      "arxiv"
+    ],
+    "found_by": [],
+    "extra": {
+      "arxiv_comment": "Published as a conference paper at ICLR 2017",
+      "arxiv_category": "cs.LG"
+    }
+  },
+  "notes": [
+    {
+      "source": "semantic_scholar",
+      "kind": "rate_limited",
+      "message": "HTTP 429 after retries",
+      "status": 429
+    },
+    {
+      "source": "openalex",
+      "kind": "rate_limited",
+      "message": "quota exhausted (X-RateLimit-Reset=2112). Insufficient budget. This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address, and that budget is used up ($0 remaining; resets at midnight UTC). Use your own key instead: add ?",
+      "status": 429
+    }
+  ]
+}
