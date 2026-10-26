@@ -1,6 +1,6 @@
 ---
 name: scientific-research-assistant
-description: Evidence-backed help with scientific research planning for students and researchers. Use whenever the user wants to find a research topic, thesis idea or research gap; asks what is underexplored or already done in a field; wants papers they can reproduce or replicate (with code, data and modest hardware); asks whether a specific paper's experiments are reproducible; wants a simple extension of a published paper; needs datasets, baselines, a methodology, a hypothesis or a research proposal; or wants research ideas compared for feasibility. Runs real literature searches (OpenAlex, arXiv, Crossref, Semantic Scholar, PubMed, Hugging Face, GitHub, Zenodo), follows citation graphs, reads open full texts, tries to disprove novelty claims, checks for train/test leakage and weak baselines, verifies code, datasets and citations, scores feasibility with hard blockers, gives each shortlisted question a go / conditional-go / no-go decision, and writes Markdown, LaTeX and JSON reports. Use it even when the user only says something like "I'm interested in X and Y, what could I work on?" or "is this idea new?".
+description: Evidence-backed help with scientific research planning for students and researchers. Use whenever the user wants to find a research topic, thesis idea or research gap; asks what is underexplored or already done in a field; wants papers they can reproduce or replicate (with code, data and modest hardware); asks whether a specific paper's experiments are reproducible; wants a simple extension of a published paper; needs datasets, baselines, a methodology, a hypothesis or a research proposal; or wants research ideas compared for feasibility; or wants to continue, review or approve the next step of a research project from an earlier session. Keeps a project file where the user approves, rejects or revises each research decision (scope, question, methodology, execution, results, manuscript), and builds papers (Markdown to DOCX and PDF) whose numbers trace to results files and whose references are verified. Runs real literature searches (OpenAlex, arXiv, Crossref, Semantic Scholar, PubMed, Hugging Face, GitHub, Zenodo), follows citation graphs, reads open full texts, tries to disprove novelty claims, checks for train/test leakage and weak baselines, verifies code, datasets and citations, scores feasibility with hard blockers, gives each shortlisted question a go / conditional-go / no-go decision, and writes Markdown, LaTeX and JSON reports. Use it even when the user only says something like "I'm interested in X and Y, what could I work on?" or "is this idea new?".
 ---
 
 # Scientific Research Assistant
@@ -60,6 +60,39 @@ Ask only for what is missing and changes the answer, in one short message. The r
 | Research mode | any (reproduction, replication, extension or original) |
 | Venue | none |
 
+## Projects and human decision checkpoints
+
+The user makes the research decisions; you prepare them. When the user is going to carry out research over more than one sitting (a thesis topic, a reproduction, a study), start a project with `project init`. It keeps one `project.json` with six ordered gates:
+
+`scope` → `question` → `methodology` → `execution` → `results` → `manuscript`
+
+At each gate:
+1. Do the work for the gate.
+2. Run `checkpoint propose <gate>` with the summary, decision items, open risks, a recommendation and the files the decision rests on.
+3. Show the proposal to the user and **stop the turn**. At a real fork (scope, question, methodology, a dataset or test choice), give 2 to 4 concrete options with the recommended one first, through `AskUserQuestion` when it is available.
+4. When the user replies, record it with their own words in `--said`: `approve --version N`, `reject`, or `revise` (then propose the revised version).
+
+Never approve for the user. A question, a doubt or a new topic is not an approval. Changing an approved gate or one of its attached files makes that approval and every later one stale, so the user must approve again. `checkpoint require` blocks work whose gate is not approved and current.
+
+Three gates have extra rules.
+
+**`execution`:**
+- The approval is an **authorization**. Run the approved plan with `project run --evidence <outputs> [--input <data>] -- <command>`. It refuses without the approvals and records the run as **completion** evidence: exit code, output hashes and a run manifest (`runs/run-*.json`: command, times, Python and package versions, git revision, approval versions, input and output hashes).
+- `results` can be proposed only after a successful recorded run.
+- A hook blocks running a project's scripts directly. It is a guard rail, not a sandbox; its limits are listed in `references/checkpoints.md`.
+- For work that runs nothing, the user may agree to `checkpoint not-applicable execution --reason "…" --said "…"`. Never mark it silently, and remember that it authorizes no computation.
+
+**`results`:** proposed with `--finding`, `--limitation` and `--interpretation`, plus the results files. The user reviews what the numbers mean, not just that files exist.
+
+**`manuscript`:**
+- Drafts never need approval.
+- `manuscript review` proposes the gate.
+- Only `manuscript build --final` (and any submission or publication) requires it. See `references/manuscript.md`.
+
+Free of approvals: searches, reading, drafting, draft builds and every check or validation (`report --check`, `manuscript check`).
+
+**At the start of any session that continues research, run `project list` and `project status` before anything else**, and re-present pending proposals with `checkpoint show`. One-off questions ("is this idea new?") need no project. The full protocol (what each gate covers, how to map replies to commands, the presentation format, resuming) is in `references/checkpoints.md`; read it when you start or resume a project.
+
 ## Choose the workflow
 
 | The user wants | Workflow | Read first |
@@ -89,6 +122,10 @@ Requests often chain: "a topic I can finish in a month" is A, then scoring, then
 | `score --input` | Rank candidates from per-criterion scores with evidence; blockers cannot be outvoted. |
 | `verify-refs --input` | Check that every paper in a report JSON resolves and its title matches. |
 | `report --input` | Validate the report JSON and write Markdown, LaTeX (`--format md,latex`) and BibTeX. |
+| `project init / status / list / log` | Create a research project, show where it stands and the next step (start of every resumed session), find projects, show the decision history. |
+| `checkpoint propose / show / approve / reject / revise / require / not-applicable` | Human decision gates; see `references/checkpoints.md`. `require` exits 3 (BLOCKED) unless the gates are approved and still current. |
+| `project run --evidence F -- <cmd>` | Run an analysis under the approved methodology and execution, and record the completion evidence. |
+| `manuscript init / cite / verify-refs / check / build / review` | Paper workspaces: scaffold, add verified references, check number and citation traceability, build DOCX/PDF drafts, propose the manuscript gate, and build the final version after approval. `check-numbers` audits any Markdown file read-only. See `references/manuscript.md`. |
 | `obsidian-export --input` | Copy finished reports into an Obsidian vault as linked notes (project notes, paper notes for verified references, a Research Dashboard). Optional; see "Obsidian export" below. |
 
 A typical search. Each `--concept` is a group of synonyms separated by `|`; every combination across groups is searched. Strategies: `keyword`, `recent`, `foundational`, `limitations`, `surveys`, `reproducibility`. Domains: `cs`, `biomed`, `general`.
@@ -116,18 +153,18 @@ Deep pass on a shortlist of 3 to 5 (`references/adversarial-verification.md`):
 4. Attack leakage, baselines and protocol, using `leakage` on the data where it is small enough.
 5. Record a go / conditional-go / no-go decision.
 
-Then check data and code for the survivors, run `score`, and write the report. Details: `references/gap-discovery.md`.
+Then check data and code for the survivors, run `score`, and write the report. In a project, attach the report to the `question` checkpoint and let the user choose. Details: `references/gap-discovery.md`.
 
-**B. Reproducibility.** Find candidates (or take the user's paper) → `repro` each → `fulltext` and read the paper for the items marked `manual_review`; compare the code with the paper (splits, model selection, metric computation) → `dataset-verify` the data, and `leakage` if the split might leak → decide whether the project is a reproduction, replication or extension → `score` with the user's hardware and time → report. Details: `references/reproducibility.md`.
+**B. Reproducibility.** Find candidates (or take the user's paper) → `repro` each → `fulltext` and read the paper for the items marked `manual_review`; compare the code with the paper (splits, model selection, metric computation) → `dataset-verify` the data, and `leakage` if the split might leak → decide whether the project is a reproduction, replication or extension → `score` with the user's hardware and time → report (in a project: the `question` checkpoint). Details: `references/reproducibility.md`.
 
-**C. Project design.** State the problem and a falsifiable hypothesis → pick the simplest valid method and baselines → fix variables, splits, metrics, seeds and the statistical comparison before any run → write the proposal. Details: `references/project-design.md`.
+**C. Project design.** State the problem and a falsifiable hypothesis → pick the simplest valid method and baselines → fix variables, splits, metrics, seeds and the statistical comparison before any run → write the proposal (in a project: the `methodology` checkpoint, with the proposal attached). Details: `references/project-design.md`.
 
 ## Producing the report
 
 1. Write a report JSON following `references/report-schema.md`. Types: `literature_review`, `opportunity_report`, `reproducibility_report`, `research_proposal`.
 2. `verify-refs --input report.json` (writes verification results into the file).
 3. `score --input scoring.json --out ranking.json` if candidates are being compared.
-4. `report --input report.json --ranking ranking.json --out-dir research-reports --format md,latex`.
+4. `report --input report.json --ranking ranking.json --out-dir research-reports --format md,latex`. In a project, add `--project P` and write into the project folder; the command refuses a research proposal until `scope` and `question` are approved.
 5. Optional: `obsidian-export --input report.json` (or `report ... --obsidian`) if the user keeps notes in Obsidian.
 
 The validator refuses to render when:
@@ -172,6 +209,8 @@ python "<skill-dir>/scripts/sra.py" obsidian-export --input research-reports/x/r
 
 ### Experiments that were run
 
+New papers are built with `manuscript` (see `references/manuscript.md`): numbers come from `results.json` placeholders, references from `refs/` records verified by `manuscript cite`, and the final build is gated by the `manuscript` checkpoint.
+
 `obsidian-export` covers reports only. When a project goes on to run experiments and write a paper, also write a project note by hand in `Projects/` of the same folder. Leave out `sra_*` frontmatter keys, so the exporter never touches it.
 
 Put an `[!abstract] At a glance` box at the top, so the project can be understood in a minute:
@@ -198,4 +237,4 @@ As with reports, every number in the note must come from the project's own resul
 
 ## Limits on what to do without asking
 
-Do not download datasets larger than about 1 GB, start model training, or run anything that needs paid compute without the user's explicit go-ahead. Assessing a paper never requires either. Data-level leakage checks usually need only split and index files. Fetch those selectively (HTTP range requests on a zip), and ask before fetching large feature files.
+Do not download datasets larger than about 1 GB, start model training, or run anything that needs paid compute without the user's explicit go-ahead. In a project, that go-ahead is the approved `execution` gate, and the run goes through `project run`, which checks it. Assessing a paper never requires either. Data-level leakage checks usually need only split and index files. Fetch those selectively (HTTP range requests on a zip), and ask before fetching large feature files.

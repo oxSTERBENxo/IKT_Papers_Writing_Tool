@@ -1,0 +1,15 @@
+{
+  "$comment": "Repository-wide paper defaults for the scientific-research-assistant `manuscript` commands. Each paper's paper.json overrides these. Paths are relative to this folder.",
+  "author": "Eva Knezhevikj",
+  "affiliation": "",
+  "date": "auto",
+  "date_format": "%B %Y",
+  "lang": "en-GB",
+  "outputs": ["docx", "pdf"],
+  "pandoc": "auto",
+  "browser": "auto",
+  "numbers": {
+    "allow_years": true,
+    "ignore_integers_upto": 10
+  }
+}

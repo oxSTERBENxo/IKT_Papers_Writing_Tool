@@ -1,0 +1,22 @@
+@page { size: A4; margin: 22mm 20mm 22mm 20mm; }
+html { font-family: "Cambria", "Georgia", serif; font-size: 10.5pt; line-height: 1.45; color: #111; background: #fff; }
+body { max-width: none; margin: 0; padding: 0; }
+header#title-block-header { text-align: center; margin-bottom: 18pt; }
+h1.title { font-size: 17pt; line-height: 1.25; margin: 0 0 8pt; }
+p.author, p.date { text-align: center; margin: 2pt 0; font-size: 10.5pt; color: #333; }
+h1 { font-size: 13pt; margin: 18pt 0 6pt; break-after: avoid; }
+h2 { font-size: 11.5pt; margin: 12pt 0 4pt; break-after: avoid; }
+p { margin: 0 0 6pt; text-align: justify; hyphens: auto; }
+ul, ol { margin: 0 0 6pt 18pt; padding: 0; }
+li { margin-bottom: 2pt; }
+table { border-collapse: collapse; width: 100%; margin: 6pt 0 10pt; font-size: 8.8pt; break-inside: avoid; }
+th, td { padding: 3pt 5pt; border-bottom: 0.5pt solid #bbb; vertical-align: top; }
+thead th { border-top: 1pt solid #111; border-bottom: 1pt solid #111; text-align: left; }
+tbody tr:last-child td { border-bottom: 1pt solid #111; }
+figure { margin: 10pt 0 12pt; text-align: center; break-inside: avoid; }
+figure img { max-width: 82%; max-height: 95mm; }
+figcaption { font-size: 9pt; color: #333; margin-top: 4pt; text-align: center; }
+math[display="block"] { margin: 6pt 0; }
+code { font-family: "Consolas", monospace; font-size: 9pt; }
+a { color: #1a4f9c; text-decoration: none; word-break: break-all; }
+h1#references ~ p { padding-left: 18pt; text-indent: -18pt; text-align: left; font-size: 9.5pt; }

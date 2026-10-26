@@ -9,7 +9,7 @@ import os
 import sys
 from pathlib import Path
 
-from . import (__version__, datasets, fulltext, landscape, leakage, novelty, report, repro, retrieval_eval,
+from . import (__version__, checkpoints, datasets, fulltext, landscape, leakage, novelty, report, repro, retrieval_eval,
                scoring, search, verify)
 from .http import HttpClient, SourceError
 from .models import Paper, parse_identifier
@@ -508,6 +508,19 @@ def cmd_verify_refs(args, client) -> int:
 
 def cmd_report(args, client) -> int:
     data = read_json(args.input)
+    if args.project:
+        project = checkpoints.load(checkpoints.resolve(args.project))
+        problems = checkpoints.require(project, checkpoints.REPORT_GATES.get(data.get("type"), []))
+        if problems and args.check:
+            print("note: validation only. Rendering this report for the project would need: "
+                  + "; ".join(problems))
+        elif problems:
+            print(f"BLOCKED by project checkpoints: a {data.get('type')} for this project needs the user's "
+                  "approval first.")
+            for problem in problems:
+                print(f"  - {problem}")
+            print(f"Next: {checkpoints.next_step(project)}")
+            return 3
     if args.ranking:
         data["ranking"] = read_json(args.ranking)
     errors, warnings = report.validate(data)
@@ -582,6 +595,294 @@ def cmd_obsidian_export(args, client) -> int:
     _print_obsidian(summary)
     return 0
 
+
+def cmd_project(args, client) -> int:
+    cp = checkpoints
+    if args.action == "init":
+        if not args.name:
+            raise ValueError("project init needs --name")
+        directory = args.dir or str(Path(args.root) / report.slugify(args.name))
+        gates = [g.strip() for g in args.gates.split(",")] if args.gates else None
+        project = cp.init(directory, args.name, args.question or "", gates)
+        print(f"Created {project['_file']}")
+        print(f"Gates: {' -> '.join(project['gates'])}")
+        print(f"Next: {cp.next_step(project)}")
+        return 0
+    if args.action == "list":
+        root = args.root if args.root != "research-projects" else "."
+        found = cp.find_projects(root)
+        if not found:
+            print(f"No research projects under {Path(root).resolve()}.")
+            return 0
+        for f in found:
+            project = cp.load(f)
+            states = cp.evaluate(project)
+            done = sum(1 for g in project["gates"] if states[g]["state"] in cp.SATISFIED)
+            print(f"{project['name']}: {done}/{len(project['gates'])} gates settled | updated "
+                  f"{project.get('updated', '?')[:16]} | {f.parent}")
+        return 0
+    project = cp.load(cp.resolve(args.project))
+    if args.action == "status":
+        if args.json:
+            states = cp.evaluate(project)
+            print(json.dumps({"project": project["name"], "file": project["_file"], "question": project["question"],
+                              "gates": {g: states[g] for g in project["gates"]},
+                              "next": cp.next_step(project, states)}, indent=2, ensure_ascii=False))
+        else:
+            print("\n".join(cp.status_lines(project)))
+        return 0
+    if args.action == "run":
+        return _project_run(args, project)
+    for e in project["log"][-args.last:]:  # log
+        where = f"{e['gate']} v{e['version']}" if e["gate"] else ""
+        print(f"{e['at']}  {e['event']:<19} {where:<16} {e['detail']}")
+    return 0
+
+
+def _project_run(args, project) -> int:
+    """Run a command only under an approved methodology and execution, and record the evidence."""
+    import shlex
+    import subprocess
+    import time
+    from . import runmanifest as rm
+    cp = checkpoints
+    command = list(getattr(args, "cmd", None) or [])
+    if not command:
+        raise ValueError("project run needs a command after --, e.g. project run --evidence results/results.json "
+                         "-- python analysis.py")
+    needed = [g for g in ("methodology", "execution") if g in project["gates"]]
+    problems = cp.require(project, needed)
+    if problems:
+        print("BLOCKED. This run needs the user's authorization first:")
+        for problem in problems:
+            print(f"  - {problem}")
+        print(f"Next: {cp.next_step(project)}")
+        return 3
+    base = cp.base_dir(project)
+    runs = base / "runs"
+    runs.mkdir(exist_ok=True)
+    stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    n = 1
+    while (runs / f"run-{stamp}.log").exists() or (runs / f"run-{stamp}.json").exists():
+        n += 1
+        stamp = f"{stamp.split('_')[0]}_{n}"
+    log, manifest_path = runs / f"run-{stamp}.log", runs / f"run-{stamp}.json"
+    shown = " ".join(shlex.quote(c) for c in command)
+    states = cp.evaluate(project)
+    approvals = {}
+    for g in project["gates"][: project["gates"].index("execution") + 1]:
+        st = states[g]
+        d = st.get("decision") or {}
+        approvals[g] = {"state": st["state"], "version": st.get("version"), "by": d.get("by"), "at": d.get("at"),
+                        "decision_hash": cp.content_hash(d) if d else None}
+    inputs = {}
+    meth = states.get("methodology", {})
+    if meth.get("version"):
+        inputs.update(project["checkpoints"]["methodology"]["versions"][meth["version"] - 1]["artifacts"])
+    inputs = {k: rm.file_hash(cp._artifact_path(project, k)) if cp._artifact_path(project, k).is_file() else None
+              for k in inputs}
+    inputs.update(rm.hashes(args.input, base))
+    run_command = rm.resolve_command(command, base)
+    print(f"Authorized by methodology v{states['methodology']['version']} and execution "
+          f"v{states['execution']['version']}. Running in {base}:\n  {shown}")
+    env = rm.environment(run_command, base)
+    git = rm.git_state(base)
+    started = rm.utc_now()
+    start = time.time()
+    with open(log, "w", encoding="utf-8") as fh:
+        fh.write(f"# {shown}\n# started {started}\n")
+        fh.flush()
+        try:
+            proc = subprocess.run(run_command, cwd=base, stdout=fh, stderr=subprocess.STDOUT)
+            code = proc.returncode
+        except OSError as exc:
+            fh.write(f"could not start: {exc}\n")
+            code = 127
+    finished = rm.utc_now()
+    duration = round(time.time() - start, 2)
+    evidence = [str(base / e) if not Path(e).is_absolute() else e for e in (args.evidence or [])]
+    missing = [e for e in evidence if not Path(e).is_file()]
+    if code == 0 and missing:
+        print("The command exited 0 but these evidence files do not exist: " + ", ".join(missing))
+        code = 1
+    manifest = {"command": command, "cwd": str(base), "exit_code": code, "started_at": started,
+                "finished_at": finished, "duration_s": duration, "log": log.relative_to(base).as_posix(),
+                "approvals": approvals, "environment": env, "git": git, "inputs": inputs,
+                "outputs": rm.hashes(evidence, base), "missing_outputs": missing}
+    digest = rm.write(manifest_path, manifest)
+    record = cp.record_completion(project, "execution", shown, code, evidence if code == 0 else [],
+                                  duration, log.relative_to(base).as_posix(),
+                                  manifest={"path": manifest_path.relative_to(base).as_posix(), "sha256": digest})
+    tail = log.read_text(encoding="utf-8", errors="replace").splitlines()[-15:]
+    print("\n".join(f"  | {line}" for line in tail))
+    py = env.get("python")
+    print(f"Run manifest: {manifest_path} (python {py or 'not probed'}, "
+          f"{len(env.get('packages') or {})} packages, git {(git or {}).get('revision', 'none')[:10]}"
+          f"{' dirty' if git and git['dirty'] else ''}, {len(inputs)} inputs, {len(manifest['outputs'])} outputs)")
+    if code == 0:
+        print(f"Run completed in {duration} s. Evidence recorded: "
+              + (", ".join(record["evidence"]) or "none (pass --evidence for the output files)"))
+    else:
+        print(f"Run FAILED (exit {code}) after {duration} s; log: {log}. Recorded as a failed run.")
+    print(f"Next: {cp.next_step(cp.load(project['_file']))}")
+    return 0 if code == 0 else 1
+
+
+def cmd_checkpoint(args, client) -> int:
+    cp = checkpoints
+    project = cp.load(cp.resolve(args.project))
+    if args.action != "require" and not args.gate:
+        raise ValueError(f"checkpoint {args.action} needs a gate: one of {', '.join(project['gates'])}")
+    if args.action == "propose":
+        v = cp.propose(project, args.gate, args.summary or "", args.item, args.risk, args.recommendation or "",
+                       args.artifact, args.addresses or "", args.finding, args.limitation,
+                       args.interpretation or "", args.option)
+        print(f"Proposed '{args.gate}' v{v['version']} ({cp.short(v['content_hash'])}). It is awaiting the "
+              "user's review.")
+        if v["invalidated"]:
+            print("These approvals are no longer current and need the user again: " + ", ".join(v["invalidated"]))
+        print("\nShow this to the user, ask them to approve, reject or say what to change, and stop until they "
+              "reply.\n")
+        print("\n".join(cp.show_lines(cp.load(project["_file"]), args.gate)))
+        return 0
+    if args.action == "show":
+        print("\n".join(cp.show_lines(project, args.gate, args.version)))
+        return 0
+    if args.action == "require":
+        gates = ([args.gate] if args.gate else []) + list(args.gates)
+        if not gates:
+            raise ValueError("checkpoint require needs at least one gate")
+        unknown = [g for g in gates if g not in checkpoints.GATES]
+        if unknown:
+            raise ValueError(f"unknown gate(s) {unknown}; choose from {checkpoints.DEFAULT_GATES}")
+        problems = cp.require(project, gates)
+        if problems:
+            print("BLOCKED. Do not continue until the user has decided:")
+            for problem in problems:
+                print(f"  - {problem}")
+            print(f"Next: {cp.next_step(project)}")
+            return 3
+        print("OK: " + ", ".join(g for g in gates if g in project["gates"]) + " approved and current.")
+        return 0
+    if args.action == "not-applicable":
+        d = cp.mark_not_applicable(project, args.gate, args.reason or "", args.said, args.by)
+        print(f"'{args.gate}' marked not applicable on the user's words: \"{d['said']}\" (reason: {d['note']}). "
+              "This does not authorize any computation.")
+        if d["invalidated"]:
+            print("These approvals are no longer current: " + ", ".join(d["invalidated"]))
+        print(f"Next: {cp.next_step(cp.load(project['_file']))}")
+        return 0
+    if args.action == "approve":
+        d = cp.approve(project, args.gate, args.version, args.said, args.by, args.note or "")
+        print(f"Approved '{args.gate}' v{d['version']} on the user's words: \"{d['said']}\"")
+    elif args.action == "reject":
+        d = cp.reject(project, args.gate, args.said, args.reason or "", args.by, args.version)
+        print(f"Rejected '{args.gate}' v{d['version']}: \"{d['note'] or d['said']}\"")
+    else:  # revise
+        d = cp.request_revision(project, args.gate, args.said, args.request or "", args.by, args.version)
+        print(f"Revision of '{args.gate}' v{d['version']} requested: \"{d['note'] or d['said']}\"")
+    print(f"Next: {cp.next_step(cp.load(project['_file']))}")
+    return 0
+
+
+
+def cmd_hook(args, client) -> int:
+    from . import hook
+    return hook.main()
+
+
+def _print_issues(rep: dict, limit: int = 40) -> None:
+    c = rep["number_counts"]
+    print(f"Numbers: {len(rep['placeholders'])} placeholders filled from results; typed numbers: {c['matched']} "
+          f"equal a result, {c['untraced']} untraced, {c['allowed']} allowed, {c['year']} years, {c['label']} "
+          f"labels, {c['small_integer']} small integers ignored")
+    print(f"Citations: {len(rep['citations'])} works cited: "
+          + (", ".join(f"{x['key']} ({x['status']})" for x in rep["citations"]) or "none"))
+    shown = sorted(rep["issues"], key=lambda i: i["level"] != "error")
+    for i in shown[:limit]:
+        print(f"  {i['level'].upper():<7} {i['kind']:<16} {i['message']}")
+    if len(shown) > limit:
+        print(f"  ... {len(shown) - limit} more (use --json)")
+    print(f"{rep['errors']} blocking issue(s), {rep['warnings']} warning(s). Drafts build regardless; the final "
+          "build needs 0 blocking issues and an approved manuscript.")
+
+
+def cmd_manuscript(args, client) -> int:
+    from . import manuscript as ms
+    if args.action == "init":
+        if not args.title:
+            raise ValueError("manuscript init needs --title")
+        made = ms.init(args.dir or ".", args.title, args.author, args.project, args.name)
+        print(f"Paper workspace {made['workspace']}")
+        print("Created: " + ", ".join(made["created"]))
+        print(f"Project: {made['project']}")
+        return 0
+    if args.action == "check-numbers":
+        # Read-only audit of any Markdown file against results files; nothing is written.
+        if not args.paper or not args.results:
+            raise ValueError("check-numbers needs --paper and at least one --results")
+        cfg = dict(ms.DEFAULTS)
+        cfg["_ws"] = Path(".").resolve()
+        cfg["results"] = {f"r{i}" if i else "res": str(Path(r).resolve()) for i, r in enumerate(args.results)}
+        results, problems = ms.load_results(cfg)
+        for problem in problems:
+            print(f"ERROR: {problem}")
+        text = Path(args.paper).read_text(encoding="utf-8")
+        found = ms.scan_numbers(text, results, cfg)
+        counts = {}
+        for n in found:
+            counts[n["status"]] = counts.get(n["status"], 0) + 1
+        print(f"{args.paper}: " + ", ".join(f"{v} {k}" for k, v in sorted(counts.items())))
+        for n in found:
+            if n["status"] == "untraced":
+                print(f"  untraced  line {n['line']:>4}: {n['text']}")
+        write_out(args.out, {"numbers": found, "counts": counts})
+        return 1 if counts.get("untraced") else 0
+    cfg = ms.load_config(ms.find_workspace(args.workspace))
+    if args.action == "cite":
+        if not args.id or not args.key:
+            raise ValueError("manuscript cite needs --id and --key")
+        data = ms.cite(cfg, args.id, args.key, client, args.overwrite)
+        v = data["verification"]
+        print(f"refs/{args.key}.json: {data['paper'].get('title')} ({data['paper'].get('year')})")
+        print(f"  verification: {v['status']} via {v.get('via')}" + (f" | {v.get('note')}" if v.get("note") else ""))
+        if v["status"] != "verified":
+            print("  This reference cannot appear in a final build until it is verified.")
+        return 0 if v["status"] in ms.VERIFIED_OK | ms.VERIFIED_WEAK else 1
+    if args.action == "verify-refs":
+        counts = ms.verify_refs(cfg, client)
+        print("Verification: " + (", ".join(f"{n} {k}" for k, n in sorted(counts.items())) or "no references"))
+        return 0 if set(counts) <= ms.VERIFIED_OK | ms.VERIFIED_WEAK else 1
+    if args.action == "check":
+        rep = ms.check(cfg)
+        if args.json:
+            print(json.dumps(rep, indent=2, ensure_ascii=False, default=str))
+        else:
+            _print_issues(rep)
+        return 0 if not rep["errors"] else 1
+    formats = [f.strip() for f in args.formats.split(",")] if args.formats else None
+    if args.action == "build":
+        res = ms.build(cfg, final=args.final, formats=formats)
+        print(("FINAL build" if args.final else "Draft build (marked DRAFT)") + ": "
+              + ", ".join(Path(o).name for o in res["outputs"]) + f" in {Path(res['outputs'][0]).parent}")
+        for skipped in res["skipped"]:
+            print(f"  skipped {skipped}")
+        _print_issues(res["check"], limit=12)
+        if res.get("manifest"):
+            print(f"Manifest: {res['manifest']}")
+        return 0
+    if args.action == "review":
+        res = ms.review(cfg, args.summary or "", args.risk)
+        v = res["version"]
+        print(f"Draft written: {', '.join(Path(o).name for o in res['draft']['outputs'])}")
+        print(f"Proposed 'manuscript' v{v['version']} ({checkpoints.short(v['content_hash'])}) with "
+              f"{len(v['artifacts'])} input files attached.")
+        print("\nShow this to the user with the draft, ask them to approve, reject or say what to change, and stop "
+              "until they reply.\n")
+        project = ms.project_for(cfg)
+        print("\n".join(checkpoints.show_lines(project, "manuscript")))
+        return 0
+    return 2
 
 # -- parser -----------------------------------------------------------------
 def build_parser() -> argparse.ArgumentParser:
@@ -668,6 +969,77 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--out")
     p.set_defaults(func=cmd_retrieval_eval)
 
+    p = sub.add_parser("project", help="research project state: init, status (resume), list, log, run (the only command that executes project code)")
+    p.add_argument("action", choices=["init", "status", "list", "log", "run"])
+    p.add_argument("--project", help="project folder or its project.json (default: SRA_PROJECT, then the "
+                   "current folder)")
+    p.add_argument("--name", help="init: project name")
+    p.add_argument("--question", help="init: the research question or interest, in the user's words")
+    p.add_argument("--root", default="research-projects", help="init: parent folder (default research-projects); "
+                   "list: folder to search (default: the current folder)")
+    p.add_argument("--dir", help="init: exact project folder instead of <root>/<slug of name>")
+    p.add_argument("--gates", help="init: comma list, a subset of " + ",".join(checkpoints.DEFAULT_GATES))
+    p.add_argument("--json", action="store_true", help="status: machine-readable output")
+    p.add_argument("--last", type=int, default=30, help="log: number of entries")
+    p.add_argument("--input", action="append", help="run: an input file (data) whose hash goes in the run "
+                   "manifest (repeatable); approved methodology files are included automatically")
+    p.add_argument("--evidence", action="append", help="run: an output file the run must produce; its hash is "
+                   "recorded as completion evidence (repeatable)")
+    p.set_defaults(func=cmd_project)
+
+    p = sub.add_parser("checkpoint", help="human decision checkpoints: propose, approve, reject, revise, show, "
+                       "require, not-applicable")
+    p.add_argument("action", choices=["propose", "approve", "reject", "revise", "show", "require",
+                                      "not-applicable"])
+    p.add_argument("gate", nargs="?", choices=checkpoints.DEFAULT_GATES)
+    p.add_argument("gates", nargs="*", help="require: further gates")
+    p.add_argument("--project", help="project folder or its project.json")
+    p.add_argument("--summary", help="propose: what is being decided, in plain words")
+    p.add_argument("--item", action="append", help="propose: one decision point (repeatable)")
+    p.add_argument("--risk", action="append", help="propose: an open risk or caveat (repeatable)")
+    p.add_argument("--recommendation", help="propose: what you recommend and why")
+    p.add_argument("--artifact", action="append", help="propose: a file the decision rests on; its hash is "
+                   "recorded and editing it invalidates the approval (repeatable)")
+    p.add_argument("--addresses", help="propose: which revision request or rejection this version answers")
+    p.add_argument("--version", type=int, help="approve (required), reject, revise, show: the version number")
+    p.add_argument("--said", help="approve, reject, revise: the user's own words, quoted")
+    p.add_argument("--by", default="user", help="who decided (default: user)")
+    p.add_argument("--note", help="approve: optional note")
+    p.add_argument("--reason", help="reject: the reason; not-applicable: why the gate does not apply")
+    p.add_argument("--finding", action="append", help="propose results: one finding (repeatable, required)")
+    p.add_argument("--limitation", action="append", help="propose results: one limitation (repeatable, required)")
+    p.add_argument("--interpretation", help="propose results: what the findings mean (required)")
+    p.add_argument("--option", action="append", help="propose: a numbered choice shown to the user with this "
+                   "version (repeatable, recommended first); saved so \"option 2\" can be resolved later")
+    p.add_argument("--request", help="revise: what should change")
+    p.set_defaults(func=cmd_checkpoint)
+
+    p = sub.add_parser("manuscript", help="paper workspaces: init, cite, verify-refs, check, build, review, "
+                       "check-numbers")
+    p.add_argument("action", choices=["init", "cite", "verify-refs", "check", "build", "review", "check-numbers"])
+    p.add_argument("--workspace", help="paper workspace folder (default: the folder with paper.json at or above "
+                   "the current one)")
+    p.add_argument("--dir", help="init: workspace folder (default: current folder)")
+    p.add_argument("--title", help="init: paper title")
+    p.add_argument("--author", help="init: author (default: research.json)")
+    p.add_argument("--name", help="init: project name, when a new project is created")
+    p.add_argument("--project", help="init: existing project folder the paper belongs to")
+    p.add_argument("--id", help="cite: DOI, arXiv ID, PMID, URL or exact title")
+    p.add_argument("--key", help="cite: citation key used as [@key]")
+    p.add_argument("--overwrite", action="store_true", help="cite: replace an existing refs/<key>.json")
+    p.add_argument("--final", action="store_true", help="build: the final version (needs the approved manuscript)")
+    p.add_argument("--formats", help="build: comma list of docx,pdf,html (default: paper.json outputs)")
+    p.add_argument("--summary", help="review: one sentence for the checkpoint")
+    p.add_argument("--risk", action="append", help="review: an open risk to show the user (repeatable)")
+    p.add_argument("--json", action="store_true", help="check: full machine-readable report")
+    p.add_argument("--paper", help="check-numbers: any Markdown file (read only)")
+    p.add_argument("--results", action="append", help="check-numbers: results JSON (repeatable)")
+    p.add_argument("--out", help="check-numbers: write the full JSON here")
+    p.set_defaults(func=cmd_manuscript)
+
+    p = sub.add_parser("hook", help="Claude Code PreToolUse hook (reads the event on stdin)")
+    p.set_defaults(func=cmd_hook)
+
     p = sub.add_parser("obsidian-export", help="export report JSON files to an Obsidian vault as linked notes")
     p.add_argument("--input", required=True, action="append", help="report JSON (repeat for several)")
     p.add_argument("--vault", help="vault folder (default: SRA_OBSIDIAN_VAULT)")
@@ -738,6 +1110,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--name", help="output file stem (default: slug of the title)")
     p.add_argument("--check", action="store_true", help="validate only")
     p.add_argument("--force", action="store_true", help="render despite integrity errors, with a banner")
+    p.add_argument("--project", help="research project folder: refuse to render unless the gates this report "
+                   "type needs are approved (see `checkpoint`)")
     p.add_argument("--obsidian", action="store_true", help="also export to the Obsidian vault (see obsidian-export); "
                    "automatic when SRA_OBSIDIAN_AUTO=1")
     p.add_argument("--vault", help="Obsidian vault folder (default: SRA_OBSIDIAN_VAULT)")
@@ -751,7 +1125,13 @@ def main(argv: list[str] | None = None) -> int:
     for stream in (sys.stdout, sys.stderr):
         if hasattr(stream, "reconfigure"):
             stream.reconfigure(encoding="utf-8", errors="replace")
+    argv = list(sys.argv[1:] if argv is None else argv)
+    trailing = []
+    if "--" in argv:  # `project run ... -- <command>`: the command is not parsed as options
+        cut = argv.index("--")
+        argv, trailing = argv[:cut], argv[cut + 1:]
     args = build_parser().parse_args(argv)
+    args.cmd = trailing
     client = HttpClient(timeout=args.timeout, cache_dir=None if args.no_cache else "default")
     try:
         return args.func(args, client)

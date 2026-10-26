@@ -4,6 +4,8 @@ A Claude Code skill that helps students and researchers find research gaps, pick
 
 It has two parts: instructions for Claude (`SKILL.md` and `references/`) and a Python toolkit (`scripts/sra.py`) that does the searching, checking, scoring and report rendering.
 
+**New here? Start with [`QUICKSTART.md`](QUICKSTART.md):** what to say to Claude, the commands behind it, and one complete worked example from a new project to the final DOCX and PDF.
+
 ## Install
 
 Requirements: Python, standard library only; no third-party packages. Written for 3.9 or newer, tested on 3.11 and 3.14 under Windows 11 (3.9 and 3.10 are untested).
@@ -47,6 +49,9 @@ Talk to Claude Code normally; no commands to memorise:
 - "Find a simple extension to this published paper."
 - "Compare these three research ideas and recommend the most feasible."
 - "I have a scientific question but don't know which methodology to use."
+- "Continue my research project." / "Where did we leave off?" / "Approved, go ahead."
+
+For research that spans several sessions, Claude keeps a project (`research-projects/<name>/project.json`). Each research decision (scope, question, methodology, execution, results, manuscript) is proposed to you and waits for your reply: approve, reject, or say what to change. Changing an approved decision, or editing a file it rests on, makes it and every later decision need your approval again. Analyses run through `project run`, which checks the approvals and records the run. Papers are built with `manuscript` (Markdown to DOCX and PDF): numbers come from `results.json` placeholders, references from verified records, and only the final build needs the approved manuscript. A new session starts from `project status`. Details: `references/checkpoints.md`, `references/manuscript.md`.
 
 Claude asks only for constraints that are missing and matter, and otherwise uses stated defaults (8 weeks, one 8 GB GPU, Python). Reports are written to `research-reports/` as Markdown, with optional LaTeX plus BibTeX and the underlying JSON.
 
@@ -66,6 +71,19 @@ python $S score --input scoring.json --out ranking.json
 python $S verify-refs --input report.json
 python $S report --input report.json --ranking ranking.json --format md,latex
 python $S obsidian-export --input report.json --vault "D:\Obsidian\MyVault" --dry-run   # then without --dry-run
+python $S project init --name "BoW vs text graphs" --question "..."                  # research-projects/bow-vs-text-graphs/
+python $S checkpoint propose scope --project research-projects/bow-vs-text-graphs --summary "..." --item "..." --risk "..."
+python $S checkpoint approve scope --project research-projects/bow-vs-text-graphs --version 1 --said "yes, go ahead"
+python $S project status --project research-projects/bow-vs-text-graphs          # resume: states and the next step
+python $S checkpoint require methodology execution --project research-projects/bow-vs-text-graphs   # exit 3 = blocked
+python $S project run --project P --evidence results/results.json -- python analysis.py   # authorized run, recorded
+python $S manuscript init --dir papers/x --title "..."      # paper workspace (+ project unless inside one)
+python $S manuscript cite --id 10.1145/2630069 --key allodi2014
+python $S manuscript check                                 # untraced numbers, unverified references, TODOs
+python $S manuscript build                                 # draft .md/.docx/.pdf in build/, marked DRAFT
+python $S manuscript review                                # proposes the manuscript checkpoint
+python $S manuscript build --final                         # only after the user approved the manuscript
+python $S manuscript check-numbers --paper cvss-kev/paper.md --results cvss-kev/results/results.json   # read-only audit
 ```
 
 ## Layout
@@ -80,9 +98,11 @@ references/                loaded by Claude only when a step needs them
   scoring-rubric.md          criteria, anchors, blockers, input format
   report-schema.md           report JSON format and validator rules
   sources.md                 sources, keys, rate limits, failure handling
+  checkpoints.md             research projects and the human decision gates
+  manuscript.md              paper workspaces, placeholders, citations, the DOCX/PDF build
 scripts/sra.py             command-line entry point
-scripts/sra/               http client, source clients, search, landscape, novelty, fulltext, leakage, retrieval_eval, repro, datasets, scoring, verify, report, obsidian
-templates/                 Markdown layouts per report type and the LaTeX preamble
+scripts/sra/               http client, source clients, search, landscape, novelty, fulltext, leakage, retrieval_eval, repro, datasets, scoring, verify, report, obsidian, checkpoints, manuscript, hook
+templates/                 Markdown layouts per report type, the LaTeX preamble, manuscript/ (paper workspace + print CSS)
 tests/                     offline unit tests and opt-in live tests
 examples/nlp-graph-theory/ worked example with every intermediate file
 evals/evals.json           prompts for evaluating the skill end to end
@@ -124,6 +144,49 @@ Retrieval evaluation (`evals/retrieval/`) uses one fixture per topic. Each fixtu
 - **heldout:** seven other topics from the first opportunity report.
 
 Most fixtures reuse the claim and queries recorded before the answers were known. Recall over a few dozen papers is a rough estimate: it can show that a configuration misses papers, but not that novelty detection is reliable. A live run of all fixtures makes several hundred requests and takes about 30-60 minutes without API keys; responses are cached for a day.
+
+Results on 2026-10-26 (v1.0 release candidate):
+
+- Offline: 275 tests run on Python 3.14 and 3.11, all pass; 13 live tests are skipped offline.
+- New: the run manifest and a relative interpreter path in `project run`; the hook's JSON deny protocol and its fail-open settings command; options saved with a proposal; a final build that refuses rather than skip DOCX or PDF.
+- Checked in fresh `claude -p` sessions on a copy of the workspace:
+  - the hook blocks a direct script run through both the Bash and PowerShell tools;
+  - a project started in plain language stops at scope with four options;
+  - a reply in a new session is recorded in the user's words;
+  - a doubtful reply records nothing;
+  - a stale manuscript is re-proposed, and approved in a later session to build the final DOCX and PDF.
+- The `QUICKSTART.md` example was run as written.
+
+Results on 2026-10-26 (six gates and paper infrastructure):
+
+- Offline: 269 tests run on Python 3.14, all pass; 13 live tests are skipped offline.
+- `tests/test_gate_rules.py` (21 tests):
+  - execution marked not applicable (needs a reason and the user's words; never authorizes computation; reopening it makes later gates stale);
+  - authorization versus completion (no results without a successful recorded run; runs are bound to the authorization they ran under; edited evidence or a newer run makes approved results stale);
+  - the results review fields;
+  - `project run`;
+  - the schema upgrade;
+  - free `report --check`;
+  - the shell hook (blocks direct script runs in project folders, follows `cd`, leaves ordinary commands alone, fails open).
+- `tests/test_manuscript.py` (23 tests):
+  - configuration merging and scaffolding;
+  - placeholders and formats;
+  - the untraced-number scan;
+  - APA citations and reference lists;
+  - `cite` through faked APIs;
+  - every check issue;
+  - draft builds with a fake pandoc and browser;
+  - final builds refused without approval, after edits, and for inputs added after approval.
+- Three earlier checkpoint tests were adjusted, because the requested refinements changed the behaviour they asserted: results now need a completed run and a review, `report --check` is no longer blocked, and projects have six gates.
+- Five deliberately broken versions of the new rules were each caught by at least one test.
+
+Results on 2026-10-22 (human decision checkpoints):
+
+- Offline: 225 tests run on Python 3.14, all pass; 13 live tests are skipped offline. `tests/test_checkpoints.py` (18 tests, also passing on 3.10 and 3.11) covers:
+  - **approval enforcement:** a proposal is not an approval; approval needs the user's words and the version they saw; gates go in order; rejection and revision block; a file edited between proposal and approval cannot be approved; `report --project` refuses a proposal without the `question` gate;
+  - **invalidation:** a new methodology version supersedes its approval and makes `execution` stale until re-approved; editing or deleting an attached plan file makes it and all later gates stale; reopening the question makes every later gate stale;
+  - **resume:** each step runs in a separate process, so only `project.json` carries state. A later "session" finds the project with `project list`, sees the pending decision and next step in `status`, re-reads the full proposal with `show`, and records the reply.
+- Each of four deliberately broken versions of the rules (stale approvals counted as approved, file-change check removed, `--said` not required, attached-file hashes ignored) fails at least two of these tests.
 
 Results on 2026-10-19 (literature-first discovery update):
 
@@ -199,6 +262,10 @@ All summaries in it rest on abstracts and repository metadata, and are labelled 
 - Without keys, OpenAlex and GitHub quotas allow only a handful of full workflows per day.
 - English-language queries and sources only. Coverage outside computer science and biomedicine is thinner.
 - Feasibility scores are assigned by Claude from evidence; the tool enforces evidence and blockers but cannot check that a score is reasonable.
+- The execution hook is a guard rail, not a sandbox: it inspects only Claude's own shell commands that name a project script (see `references/checkpoints.md`).
+- The run manifest records versions and hashes; it does not snapshot data or packages.
+- The manuscript number check cannot trace derived values (differences, complements, ratios) and has no notion of numbers quoted from the literature: both appear as untraced.
+- `manuscript init` creates new workspaces; it does not adopt an existing paper folder that already has a `paper.md`.
 
 ## Possible improvements
 

@@ -45,6 +45,12 @@ def verify_paper(client, paper: dict) -> dict:
     result = None
     if arxiv_id:
         result = run(lambda: arxiv.get_paper(client, arxiv_id), "arxiv")
+        if result and result["status"] == "title_mismatch" and doi and not arxiv_from_doi(doi):
+            # A preprint is often titled differently from the published version: check the publisher DOI too.
+            published = run(lambda: crossref.get_work(client, doi), "crossref")
+            if published and published["status"] == "verified":
+                published["note"] = f"arXiv preprint {arxiv_id} has a different title: {result['resolved_title']!r}"
+                result = published
     if result is None and doi and not arxiv_from_doi(doi):
         result = run(lambda: crossref.get_work(client, doi), "crossref")
         if result is None:
