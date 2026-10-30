@@ -1,0 +1,18 @@
+{
+  "$comment": "Copy this file to research.json and fill in your name. Repository-wide paper defaults for the `manuscript` commands; each paper's paper.json overrides them. Paths are relative to this folder.",
+  "author": "",
+  "affiliation": "",
+  "date": "auto",
+  "date_format": "%B %Y",
+  "lang": "en-GB",
+  "outputs": [
+    "docx",
+    "pdf"
+  ],
+  "pandoc": "auto",
+  "browser": "auto",
+  "numbers": {
+    "allow_years": true,
+    "ignore_integers_upto": 10
+  }
+}

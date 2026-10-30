@@ -1,6 +1,6 @@
 # Research workspace rules
 
-This repository holds research projects and papers, plus the `scientific-research-assistant` skill (`.claude/skills/scientific-research-assistant/`) that supports them. The skill's `SKILL.md` has the detailed workflow; these are the rules that apply to every project here.
+This repository holds the `scientific-research-assistant` skill (`.claude/skills/scientific-research-assistant/`) and the research projects and papers you make with it. The skill's `SKILL.md` has the detailed workflow; these are the rules that apply to every project here.
 
 The toolkit is `python .claude/skills/scientific-research-assistant/scripts/sra.py <command>`, shown below as `sra`. New here? Read `.claude/skills/scientific-research-assistant/QUICKSTART.md`.
 
@@ -21,7 +21,7 @@ If the user continues earlier research ("continue", "where were we", "I approveâ
 ## Papers
 
 - **Workspace:** `sra manuscript init --dir <folder> --title "â€¦"` creates `paper.json`, `paper.md`, `ANALYSIS_PLAN.md`, `analysis.py`, `refs/`, `results/` and `figures/`. It also creates the project, unless the folder already sits inside one.
-- **Author line:** "Eva Knezhevikj", with no course or semester. Defaults live in `research.json`.
+- **Author line:** comes from `research.json` (copy `research.example.json` and fill in `author`), or from each paper's `paper.json`.
 - **Deliverables:** `.md`, `.docx` and `.pdf`.
   - Drafts: `sra manuscript build` writes `build/paper.draft.*`, marked DRAFT.
   - Final: `sra manuscript review` proposes the manuscript gate. After the user approves, `sra manuscript build --final` writes `final/` with a `MANIFEST.json`.
@@ -37,11 +37,12 @@ If the user continues earlier research ("continue", "where were we", "I approveâ
 
 ## Do not change finished work
 
-`cvss-kev/` and `llm-memorisation/` are finished papers. `research-reports/` and the skill's `examples/` are finished reports. Read them; do not edit, rebuild or "fix" them unless the user asks. Read-only audits are fine, for example `sra manuscript check-numbers --paper cvss-kev/paper.md --results cvss-kev/results/results.json`.
+The skill's `examples/` are finished reports, and so is any paper with an approved `final/` folder. Read them; do not edit, rebuild or "fix" them unless the user asks. Read-only audits are fine, for example `sra manuscript check-numbers --paper <dir>/paper.md --results <dir>/results/results.json`.
+
+Personal rules (your author name, your own finished projects) go in `CLAUDE.local.md`, which is gitignored.
 
 ## Environment
 
-- Windows 11; PowerShell and Git Bash are both available.
 - The skill's Python core uses the standard library only.
 - pandoc comes from `pypandoc_binary` in the root `.venv` (`.venv\Scripts\python -m pip install pypandoc_binary==1.17`; gitignored). It is found automatically, after `research.json`, `SRA_PANDOC` and PATH. PDFs print through Edge, headless.
 - If `manuscript check` warns `final_outdated`, the files in `final/` no longer match the approved sources. Tell the user; do not rebuild or delete them without their approval.

@@ -19,3 +19,19 @@ llm-memorisation/data/
 
 # Secrets
 .env
+
+# Personal settings (copy research.example.json to research.json)
+research.json
+CLAUDE.local.md
+
+# Your own research output: projects, papers and reports made with the skill.
+# The repository ships only the skill; keep generated work local.
+research-projects/
+research-reports/
+papers/
+work/
+cvss-kev/
+llm-memorisation/
+starry-sky/
+promo-video/
+main.py
